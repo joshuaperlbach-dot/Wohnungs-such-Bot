@@ -1,0 +1,307 @@
+{
+ "offers": {
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/",
+   "title": "2-Zimmer-Wohnung in Friedrichshain",
+   "address": "Kleine Andreasstrasse 11, 10243 Berlin",
+   "text": "Die Wohnung liegt in unmittelbarer Nähe zum Strausberger Platz und zum Ostbahnhof. Gute Verkehrsanbindungen und Einkaufsmöglichkeiten vorhanden.\r\nDie Wohnung liegt im 4. Obergeschoss (0503) und das Haus verfügt über keinen Aufzug.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-6660f285eafda00e7285387676a019d8.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-b827f2bcaf25c072afc14c02a7a926ad.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-62e99f40c57b8df7c12c56c06c86b45e.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-fb1033321ac8cc3d54ec8feaf2239442.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-8b67cebaedfff804dfe4259c21f78265.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-adba1a71d8bbae10e7db735b9db4f8e1.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 2,
+   "price": 731.42,
+   "cold": 496.42,
+   "size": 56.78,
+   "floor": 4,
+   "year": 1958,
+   "stars": 4,
+   "why": "56.78 m², ~1.7 km zur Arbeit (Luftlinie), Kiez mittel (74 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1958",
+   "points": 74,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.3,
+     16
+    ],
+    "Lage": [
+     10.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     6.2,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "requested": "gesendet",
+   "online_since": "2026-10-13T17:46:50Z",
+   "requested_at": "2026-10-13T17:46:50Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-1/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-1/",
+   "title": "2-Zimmer-Wohnung in Friedrichshain",
+   "address": "Kleine Markusstrasse 8, 10243 Berlin",
+   "text": "Die Wohnung liegt in unmittelbarer Nähe zum Strausberger Platz und zum Ostbahnhof. Gute Einkaufsmöglichkeiten und Verkehrsanbindungen vorhanden.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-c23bd3abea189f4ef7f3d84e030c8807.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-7f6eacb9688924edc61bd03b675dc431.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-aff0d54f11f1aec58e683c564e67fec5.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-39b887179b4d5a0a916acf06fb66bcf6.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-024c5bc6d8891046c2c8cfb9fb3bb6c5.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-2b97a1b2eff69cb2a7716ba462539ff2.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 2,
+   "price": 689.25,
+   "cold": 456.25,
+   "size": 55.2,
+   "floor": 0,
+   "year": 1958,
+   "stars": 3,
+   "why": "55.2 m², ~1.6 km zur Arbeit (Luftlinie), Kiez wenig los (40 Lokale/Läden), Ringbahn weit, EG, Baujahr 1958",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.1,
+     16
+    ],
+    "Lage": [
+     10.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     5.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-13T17:46:50Z"
+  },
+  "ibw-22866": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1400-57002-0160-0103.html",
+   "title": "Singlewohnung Nähe Tierpark - Nachmieter gesucht!",
+   "address": "Zornstraße 2, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791887534-ZqOtLrvES9.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 553.29,
+   "cold": 420.44,
+   "size": 41.91,
+   "floor": 1,
+   "levels": 5,
+   "year": 1940,
+   "stars": 3,
+   "why": "41.91 m², ~6.7 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Park nah, Ringbahn weit, 1. Etage, Baujahr 1940",
+   "points": 61,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.6,
+     16
+    ],
+    "Lage": [
+     2.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     2.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-13T10:32:15Z"
+  },
+  "ibw-22833": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-10803-0002-0101.html",
+   "title": "Singles aufgepasst: Schöne Wohnung in ruhiger Lage",
+   "address": "Nalepastraße 220, 12459 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791875104-M4voF6pHPQ.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 340.96,
+   "cold": 245.98,
+   "size": 26.91,
+   "floor": 1,
+   "levels": 4,
+   "year": 1920,
+   "stars": 2,
+   "why": "26.91 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Ringbahn weit, 1. Etage, Baujahr 1920",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.4,
+     16
+    ],
+    "Lage": [
+     0.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-13T07:05:04Z"
+  }
+ },
+ "updated": "2026-10-13T17:47:00Z",
+ "last_manual": "2026-10-13T17:47:00Z",
+ "ibw_seeded": true
+}
