@@ -98,7 +98,11 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Ringbahn: feste Liste der 27 Halte in `rating.py`, braucht kein Netz.
 
 ## Bekannte Schwächen / ungetestet
-- Das echte Senden wurde noch nicht gegen die Live-Seite getestet (bisher keine passenden Angebote). Beim ersten echten Treffer Status und Meldung prüfen.
+- Echtes Senden funktioniert: Am 13.10.2026 ging die erste Anfrage raus (Kleine Andreasstraße 11, Status "gesendet"),
+  WBM hat per Mail geantwortet. Es war eine Absage mit dem Satz "Die Auswahl der möglichen Teilnehmer erfolgte auf
+  Basis des zeitlichen Anfrageneingangs": WBM vergibt Besichtigungen also nach Reihenfolge, nicht per Los.
+  Das Angebot war rund 20 Minuten nach dem Fund schon wieder offline. Geschwindigkeit entscheidet, der Bot muss
+  im Minutentakt laufen (externer Anstoß, siehe Zeitplan unten).
 - Adresse wird aus dem Kartentext geraten (Straße + Hausnummer, Fallback nur PLZ).
 - Etage "DG" (Dachgeschoss) hat keine Zahl und zählt als unbekannt.
 - Bezirk wird per Textanfang erkannt, unbekannte Labels werden nur gemeldet, nicht angefragt.
