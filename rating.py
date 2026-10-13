@@ -43,8 +43,8 @@ RINGBAHN = [
 
 # Gewichte (Summe 100)
 W = {
-    "Kosten": 25, "Lage": 15, "Ringbahn": 10, "ÖPNV": 5, "Bezirk": 5,
-    "Größe": 12, "Zimmer": 8, "Außenbereich": 10, "Aufzug": 10,
+    "Kosten": 22, "Lage": 12, "Ringbahn": 8, "ÖPNV": 3, "Bezirk": 10, "Baujahr": 10,
+    "Größe": 12, "Zimmer": 8, "Außenbereich": 8, "Aufzug": 7,
 }
 
 
@@ -171,19 +171,34 @@ def price_score(price):
 
 
 def size_score(size):
-    """Traum: 60-70 m². Kleiner/größer gibt langsam Abzug."""
-    if size is None:
-        return 0.5
-    if size < 60:
-        return clamp01((size - 35) / 25)
-    if size <= 70:
-        return 1.0
-    return clamp01(1 - (size - 70) / 30)
+    """Je mehr Platz, desto besser: 35 m² = 0, ab 70 m² volle Punkte."""
+    return lin(size, 70, 35) if size is not None else 0.5
 
 
 def rooms_score(rooms):
-    """Traum: zwei Zimmer (ein kleines, ein großes)."""
-    return {2: 1.0, 1: 0.5}.get(rooms, 0.3) if rooms is not None else 0.5
+    """Zwei Zimmer sind besser als eins."""
+    if rooms is None:
+        return 0.5
+    return 1.0 if rooms >= 2 else 0.75 if rooms > 1 else 0.4
+
+
+def year_score(year):
+    """Altbau (bis 1949) ist der Traum, Neubau gut, die Plattenbau-Jahre schwach.
+    Das Baujahr ist nur ein Anhaltspunkt für die Bauart."""
+    if year is None:
+        return 0.5
+    if year < 1950:
+        return 1.0
+    if year >= 2000:
+        return 0.7
+    if year >= 1991:
+        return 0.5
+    return 0.1 if year >= 1960 else 0.4
+
+
+def parse_year(text):
+    m = re.search(r"Baujahr:?\s*(\d{4})", text)
+    return int(m.group(1)) if m else None
 
 
 def lift_score(floor, feats):
@@ -204,10 +219,10 @@ def district_score(district_text):
         return 1.0
     if any(t.startswith(d) for d in ("Pankow", "Friedrichshain", "Kreuzberg", "Mitte")):
         return 0.7
-    return 0.5  # "kann auch mal woanders wohnen"
+    return 0.3  # geht auch, ist aber nicht der Wunsch
 
 
-def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text=""):
+def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text="", year=None):
     """Gibt (Sterne 1-5, Punkte 0-100, Teilwerte) zurück. None = unbekannt -> neutral 0,5."""
     s = {
         "Kosten": price_score(price),
@@ -215,6 +230,7 @@ def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text=
         "Ringbahn": ring if ring is not None else 0.5,
         "ÖPNV": clamp01(stops / 6) if stops is not None else 0.5,
         "Bezirk": district_score(district_text),
+        "Baujahr": year_score(year),
         "Größe": size_score(size),
         "Zimmer": rooms_score(rooms),
         "Außenbereich": 1.0 if (feats["balkon"] or feats["garten"]) else 0.0,
@@ -241,14 +257,15 @@ def rate_listing(listing, expose_text=""):
     floor = parse_floor(expose_text) if expose_text else None
     coord = locate(text)
     stops = count_transit(coord) if coord else None
-    return rate(listing["price"], size, listing.get("rooms"), feats, coord, floor, text, stops)
+    return rate(listing["price"], size, listing.get("rooms"), feats, coord, floor, text, stops,
+                parse_year(expose_text))
 
 
-def rate(price, size, rooms, feats, coord, floor, district_text="", stops=None):
+def rate(price, size, rooms, feats, coord, floor, district_text="", stops=None, year=None):
     """Bewertung aus fertigen Werten (ohne Netz). Gibt (Sterne-Text, Kurzbegründung) zurück."""
     dist = haversine_km(coord, WORK) if coord else None
     ring = ring_score(coord) if coord else None
-    n, points, _ = score(price, size, rooms, feats, dist, stops, ring, floor, district_text)
+    n, points, _ = score(price, size, rooms, feats, dist, stops, ring, floor, district_text, year)
     bits = []
     if size:
         bits.append(f"{size:g} m²")
@@ -264,4 +281,6 @@ def rate(price, size, rooms, feats, coord, floor, district_text="", stops=None):
         bits.append("Aufzug")
     if floor is not None:
         bits.append("EG" if floor == 0 else f"{floor}. Etage")
+    if year is not None:
+        bits.append(f"Baujahr {year}")
     return f"{stars_text(n)} ({n}/5)", ", ".join(bits)

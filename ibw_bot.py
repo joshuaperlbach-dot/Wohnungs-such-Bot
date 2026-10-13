@@ -112,6 +112,7 @@ def parse_item(item, text):
         "price": num(details.get("Gesamtmiete")) or num(item.get("rentGross")),
         "wbs": None if not wbs_text else "nicht" not in wbs_text,
         "floor": item.get("level") if isinstance(item.get("level"), int) else None,
+        "year": int(year) if (year := num(item.get("constructionYear"))) and 1800 < year < 2100 else None,
         "coord": coord,
         "bezirk": addr.get("district") or "",
         "plz": str(addr.get("zipCode") or ""),
@@ -121,11 +122,26 @@ def parse_item(item, text):
     }
 
 
+def title_says_wbs(title):
+    """WBS im Titel, ohne dass er verneint wird ("ohne WBS", "kein WBS", "WBS nicht nötig")."""
+    return bool(re.search(r"WBS|Wohnberechtigung", title, re.I)
+                and not re.search(r"\b(ohne|kein|keine|keinen|nicht)\b", title, re.I))
+
+
+def page_says_wbs(html):
+    """Die Seite der Gesellschaft kennzeichnet WBS-Wohnungen teils nur mit einem Bild-Etikett
+    wie "220er" (degewo), auch wenn inberlinwohnen "nicht erforderlich" sagt."""
+    return any(re.fullmatch(r"\s*(100|140|160|180|220)er\s*", cap.get_text())
+               for cap in BeautifulSoup(html, "html.parser").find_all("figcaption"))
+
+
 def matches(l):
     """Im Zweifel lieber melden als verpassen: unbekannte Werte schließen nicht aus."""
     if l["company"] in SKIP_COMPANIES or l["district"] is False:
         return False
-    if l["wbs"] and not ALLOW_WBS:
+    if (l["wbs"] or title_says_wbs(l["title"])) and not ALLOW_WBS:
+        return False
+    if re.search(r"Senioren|ab \d\d Jahre", l["title"], re.I):
         return False
     if l["rooms"] is not None and not (MIN_ROOMS <= l["rooms"] <= MAX_ROOMS):
         return False
@@ -138,7 +154,7 @@ def rate(l):
     """(Anzahl Sterne, Sterne-Text, Kurzbegründung). Braucht kein Netz."""
     where = "Prenzlauer Berg" if l["plz"] in PRENZLAUER_BERG_PLZ else l["bezirk"]
     stars, why = rating.rate(l["price"], l["size"], l["rooms"], rating.parse_features(l["text"]),
-                             l["coord"], l["floor"], where)
+                             l["coord"], l["floor"], where, year=l["year"])
     return stars.count("★"), stars, why
 
 
@@ -148,6 +164,14 @@ def describe(l, stars, why):
     if why:
         line += f"\n{why}"
     return f"{line}\n{l['address']}, {l['plz']} {l['bezirk']}\n{l['url']}"
+
+
+def hidden_wbs(l):
+    """Seite der Gesellschaft auf ein WBS-Etikett prüfen (nur für Treffer, also selten)."""
+    try:
+        return page_says_wbs(wbm_bot.HTTP.get(l["url"], timeout=20).text)
+    except requests.RequestException:
+        return False
 
 
 def fetch_new(seen, first_run):
@@ -191,7 +215,7 @@ def main():
     for l in new:
         if matches(l):
             n, stars, why = rate(l)
-            if n >= MIN_STARS:
+            if n >= MIN_STARS and not (hidden_wbs(l) and not ALLOW_WBS):
                 hits.append((n, l, stars, why))
     hits.sort(key=lambda h: -h[0])  # beste zuerst
 

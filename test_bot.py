@@ -130,7 +130,7 @@ def test_rating_parsing_and_score():
     assert c[0].endswith("10115 Berlin") and "29" in c[0] and c[-1] == "10115 Berlin", c
     kein = {"balkon": False, "garten": False, "aufzug": False}
     top = {"balkon": True, "garten": False, "aufzug": True}
-    gut = rating.score(650, 65, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg")
+    gut = rating.score(650, 70, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg", 1910)
     schlecht = rating.score(990, 30, 1, kein, 9.0, 0, 0.0, 6, "Spandau")
     assert gut[0] == 5 and gut[1] == 100 and schlecht[0] == 1, (gut, schlecht)
     neutral = rating.score(None, None, None, kein, None, None, None, None)
@@ -138,9 +138,9 @@ def test_rating_parsing_and_score():
     # Preis: bis 850 okay, darüber höchstens 4 Sterne (außer fast perfekt), 1000 = Ende
     assert rating.price_score(700) == 1.0 and rating.price_score(1000) == 0.0
     assert rating.price_score(850) > rating.price_score(900) > rating.price_score(1000)
-    teuer = rating.score(930, 65, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg")
+    teuer = rating.score(930, 70, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg", 1910)
     assert teuer[0] == 4, teuer
-    fast_perfekt = rating.score(860, 65, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg")
+    fast_perfekt = rating.score(860, 70, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg", 1910)
     assert fast_perfekt[0] == 5, fast_perfekt
     # Aufzug: bis 2. Stock unwichtig, ab 3. Stock je höher desto wichtiger, Garten ersetzt ihn
     assert rating.lift_score(1, kein) >= 0.85
@@ -148,9 +148,16 @@ def test_rating_parsing_and_score():
     assert rating.lift_score(5, top) == 1.0
     assert rating.lift_score(4, {"balkon": False, "garten": True, "aufzug": False}) == 1.0
     # Größe: 60-70 m² ideal, Zimmer: 2 ideal
-    assert rating.size_score(65) == 1.0 > rating.size_score(45) > rating.size_score(35)
-    assert rating.size_score(65) > rating.size_score(90)
-    assert rating.rooms_score(2) > rating.rooms_score(1)
+    # Größe: je mehr Platz desto besser (ab 70 m² volle Punkte), Zimmer: 2 besser als 1
+    assert rating.size_score(90) == rating.size_score(70) == 1.0 > rating.size_score(45) > rating.size_score(35) == 0.0
+    assert rating.rooms_score(2) > rating.rooms_score(1.5) > rating.rooms_score(1)
+    # Bauart über das Baujahr: Altbau vor Neubau vor Plattenbau-Jahren
+    assert rating.year_score(1910) > rating.year_score(2020) > rating.year_score(None) > rating.year_score(1978)
+    assert rating.parse_year("Energiekennzahlen Baujahr: 1930 Heizungsart") == 1930 and rating.parse_year("nix") is None
+    # Altbau in Prenzlauer Berg schlägt sonst gleiche Platte in Lichtenberg deutlich
+    altbau = rating.score(700, 58, 2, top, 5.0, 4, 1.0, 2, "Prenzlauer Berg", 1930)
+    platte = rating.score(700, 58, 2, top, 5.0, 4, 1.0, 2, "Lichtenberg", 1978)
+    assert altbau[1] - platte[1] >= 15 and altbau[0] > platte[0], (altbau[:2], platte[:2])
     assert rating.district_score("Prenzlauer Berg 2 Zimmer") > rating.district_score("Mitte") > rating.district_score("Treptow")
 
 
@@ -406,6 +413,14 @@ def test_ibw_parse_and_filter():
     wrong = ibw_bot.parse_page(ibw_card(9, lat="41.0", lon="-12.5"))[0]
     assert wrong["coord"] is None and "km zur Arbeit" not in ibw_bot.rate(wrong)[2]
     assert [l["id"] for l in ls if ibw_bot.matches(l)] == [1, 8]
+    # WBS, das inberlinwohnen nicht meldet: im Titel oder als Bild-Etikett bei der Gesellschaft
+    assert ibw_bot.title_says_wbs("Ein WBS bis zu 220 % ist erforderlich!") and ibw_bot.title_says_wbs("mit WBS-Berechtigung 160-220")
+    assert not ibw_bot.title_says_wbs("2-Zimmer-Wohnung (ohne WBS)") and not ibw_bot.title_says_wbs("Schöne Wohnung")
+    assert not ibw_bot.matches({**a, "title": "Familienwohnung, WBS 160 erforderlich"})
+    assert not ibw_bot.matches({**a, "title": "Seniorenresidenz, erst ab 60 Jahren"})
+    assert ibw_bot.page_says_wbs("<figure><img><figcaption class='c'>\n 220er\n</figcaption></figure>")
+    assert not ibw_bot.page_says_wbs("<figcaption>Wohnzimmer</figcaption><p>Nalepastraße 220er Block</p>")
+    assert a["year"] is None and ibw_bot.parse_item({"id": 1, "constructionYear": "1930"}, "")["year"] == 1930
     n, stars, why = ibw_bot.rate(a)  # Prenzlauer Berg, nah an der Ringbahn, Balkon
     assert n >= 4 and "Ringbahn nah" in why and "Balkon" in why, (stars, why)
     assert "Teststraße 9, 10439 Pankow" in ibw_bot.describe(a, stars, why)
@@ -417,6 +432,8 @@ def test_ibw_main_first_run_then_only_new():
     calls = []
 
     def get(url, params=None, **kw):
+        if params is None:  # Seite der Gesellschaft: Angebot 11 hat dort ein WBS-Etikett
+            return mock.Mock(text="<figcaption>220er</figcaption>" if url.endswith("/11") else "", status_code=200)
         calls.append(params["page"])
         return mock.Mock(text=pages.get(params["page"], ""), status_code=200)
 
@@ -427,7 +444,7 @@ def test_ibw_main_first_run_then_only_new():
         with mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.notify", side_effect=msgs.append), \
                 mock.patch("ibw_bot.time.sleep"):
             ibw_bot.main()  # erster Lauf: alle Seiten, eine Sammelmeldung
-            assert calls == [1, 2, 3] and len(msgs) == 1 and "2 passende Angebote" in msgs[0], (calls, msgs)
+            assert calls == [1, 2, 3] and len(msgs) == 1 and "1 passende Angebote" in msgs[0], (calls, msgs)
             assert json.loads(ibw_bot.SEEN_FILE.read_text()) == [10, 11, 12]
             ibw_bot.main()  # nichts Neues: nur Seite 1, keine Meldung
             assert calls == [1, 2, 3, 1] and len(msgs) == 1

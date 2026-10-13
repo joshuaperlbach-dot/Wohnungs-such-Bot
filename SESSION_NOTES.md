@@ -56,6 +56,8 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Filter wie beim WBM-Bot (Konstanten aus `wbm_bot.py`), aber nur Bezirk statt Ortsteil bekannt (`ALLOWED_BEZIRKE`).
   Deshalb zusätzlich: nur melden ab `MIN_STARS` = 3 Sternen. WBM-Angebote werden übersprungen (macht `wbm_bot.py`).
 - Bewertung ohne Netz (Koordinaten kommen von der Seite). Prenzlauer Berg wird über die PLZ erkannt.
+- WBS-Angabe der Seite ist unzuverlässig: zusätzlich Titel prüfen und bei Treffern die Seite der Gesellschaft
+  (degewo kennzeichnet WBS-Wohnungen nur mit einem Bild-Etikett wie "220er"). Der Nutzer liegt knapp über WBS 220.
 - Nächster Ausbau: automatische Anfrage je Gesellschaft (jede hat ein eigenes Formular/Portal).
 
 ## Kriterien und Bewertung
@@ -66,7 +68,10 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Aufzug nur ab 3. Stock wichtig (je höher, desto mehr), Garten ersetzt Aufzug.
 - Traumwohnung: 60-70 m², zwei Zimmer (ein kleines, ein großes), Küche, Bad, Balkon, nahe Ringbahn, am liebsten Prenzlauer Berg.
 - Arbeitsweg: Luftlinie zum Moritzplatz (keine echte Fahrzeit).
-- Gewichte (Summe 100): Kosten 25, Lage 15, Ringbahn 10, ÖPNV 5, Bezirk 5, Größe 12, Zimmer 8, Außenbereich 10, Aufzug 10.
+- Gewichte (Summe 100): Kosten 22, Lage 12, Ringbahn 8, ÖPNV 3, Bezirk 10, Baujahr 10, Größe 12, Zimmer 8, Außenbereich 8, Aufzug 7.
+- Nutzerwunsch (13.10.2026): Altbau in Prenzlauer Berg schlägt Plattenbau in Lichtenberg, 2 Zimmer besser als 1,
+  je mehr Platz desto besser. Bauart wird über das Baujahr geschätzt (bis 1949 top, 1960-1990 schwach).
+- Automatische Anfrage (WBM) erst ab 4 Sternen (`MIN_STARS_SEND`), gemeldet wird jeder Treffer.
 - Sterne ab Punkten: 5 >= 85, 4 >= 70, 3 >= 55, 2 >= 40.
 - Bewusst NICHT bewertet: Lärm (unwichtig, "laut sein können" lässt sich vorher nicht prüfen).
 - Kaltmiete: Obergrenze 900 € kalt (`MAX_KALTMIETE`), aus dem Exposé gelesen; unbekannt = kein Ausschluss.
