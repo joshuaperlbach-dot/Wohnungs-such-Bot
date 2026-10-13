@@ -690,6 +690,43 @@ def test_push_opens_offer_and_marks_urgent():
     assert post.call_args[1]["headers"]["Click"].endswith("#accordion-nl-rent-details")
 
 
+def test_page_watcher():
+    import watch
+    from datetime import datetime, timedelta, timezone
+    now = datetime(2026, 10, 13, 20, 0, tzinfo=timezone.utc)
+    page = "<html><nav>Menü 1</nav><main><h1>Wohnungssuche</h1><p>{}</p><script>var t={};</script></main><footer>x</footer></html>"
+    text = ["Derzeit haben wir leider keine freien Wohnungen für neue Mitglieder im Angebot."]
+    calls, msgs = [], []
+
+    def get(url, **kw):
+        calls.append(url)
+        return mock.Mock(text=page.format(text[0], len(calls)), status_code=200)  # Skript ändert sich jedes Mal
+
+    state = {}
+    with mock.patch("wbm_bot.HTTP.get", get):
+        assert watch.check("WGLi", "https://www.wgli.de/wohnungssuche/", state, now) is None  # erster Blick: nur merken
+        assert watch.check("WGLi", "u", state, now + timedelta(minutes=10)) is None and len(calls) == 1  # zu früh
+        assert watch.check("WGLi", "u", state, now + timedelta(minutes=31)) is None and len(calls) == 2  # unverändert
+        text[0] = "Ab sofort nehmen wir wieder Bewerbungen für freie Wohnungen entgegen, hier bewerben."
+        note = watch.check("WGLi", "https://www.wgli.de/wohnungssuche/", state, now + timedelta(minutes=62))
+        assert note and "geändert" in note and note.endswith("https://www.wgli.de/wohnungssuche/"), note
+        assert watch.check("WGLi", "u", state, now + timedelta(minutes=93)) is None  # nur einmal melden
+    # Seite kaputt oder nicht erreichbar: keine Meldung, gemerkter Stand bleibt
+    saved = dict(state["WGLi"])
+    with mock.patch("wbm_bot.HTTP.get", lambda url, **kw: mock.Mock(text="<main>Fehler</main>", status_code=503)):
+        assert watch.check("WGLi", "u", state, now + timedelta(hours=3)) is None and state["WGLi"] == saved
+    with tempfile.TemporaryDirectory() as td:
+        watch.STATE_FILE = Path(td) / "watch.json"
+        with mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.notify", side_effect=msgs.append):
+            watch.main()
+            text[0] = "Neue Regeln für die Mitgliedschaft und die Vergabe von Wohnungen ab Januar."
+            s2 = json.loads(watch.STATE_FILE.read_text())
+            s2["WGLi Wohnungssuche"]["checked"] = "2026-01-01T00:00:00Z"
+            watch.STATE_FILE.write_text(json.dumps(s2))
+            watch.main()
+        assert len(msgs) == 1 and msgs[0].startswith("WGLi Wohnungssuche"), msgs
+
+
 def test_howoge_request():
     import howoge
     l = {"url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-1-1.html?t=ibw"}

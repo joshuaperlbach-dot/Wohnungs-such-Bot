@@ -46,10 +46,16 @@ jobs:
           MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python mail_check.py
+      - name: Seiten-Wächter (WGLi)
+        if: always()
+        timeout-minutes: 1
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python watch.py
       - name: Gesehene Angebote speichern
         if: always()            # auch nach Absturz/Timeout, sonst gehen Anfragen doppelt raus
         run: |
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
-          for f in seen.json seen_ibw.json mail_seen.json stats.json docs/offers.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in seen.json seen_ibw.json mail_seen.json watch.json stats.json docs/offers.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet || (git commit -m "seen aktualisiert" && git pull --rebase && git push)

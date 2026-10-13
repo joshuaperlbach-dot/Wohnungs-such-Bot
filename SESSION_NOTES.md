@@ -19,6 +19,8 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - `mail_check.py`: liest die Antworten der Gesellschaften aus dem Postfach (nur lesend, IMAP) und trägt
   Absage/Einladung in die Handy-Ansicht ein; bei Einladung Push. Merkt sich Mails als Fingerabdruck in `mail_seen.json`.
 - `howoge.py`: automatische Besichtigungsanfrage bei der HOWOGE (aufgerufen von `ibw_bot.py`). Siehe unten.
+- `watch.py`: Seiten-Wächter. Prüft alle 30 Minuten den Text der WGLi-Wohnungssuche (Wohnungsgenossenschaft
+  Lichtenberg, hat keine Angebote online) und meldet per Push, wenn er sich ändert. Zustand in `watch.json`.
 - `test_bot.py`: Tests mit Mocks (`python3 test_bot.py`), kein Netzwerk nötig.
 - `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
   Führt erst `wbm_bot.py`, dann `ibw_bot.py` aus. Committet `seen.json`, `seen_ibw.json` und `stats.json` zurück ins Repo.
@@ -76,7 +78,8 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
     Bezirk sicher passend, kein WBS, max. 3 pro Lauf, nie doppelt. Echtes Senden und die Bestätigungsmail sind
     noch nicht live geprüft (Trockenlauf gegen die echte Seite klappt).
   - degewo: Formular hat ein Captcha (Friendly Captcha). Wird bewusst nicht umgangen, dort nur melden.
-  - Gewobag, Stadt und Land, Gesobau, Berlinovo: noch nicht angesehen.
+  - Gewobag, Stadt und Land: Formular von Wohnungshelden mit reCAPTCHA, ebenfalls nur melden.
+  - Gesobau, Berlinovo: noch nicht angesehen.
 
 ## Handy-Ansicht (`docs/index.html`)
 - Adresse: https://joshuaperlbach-dot.github.io/Wohnungs-such-Bot/ (öffentlich, aber `noindex`; enthält nur
