@@ -68,7 +68,14 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Aufzug nur ab 3. Stock wichtig (je höher, desto mehr), Garten ersetzt Aufzug.
 - Traumwohnung: 60-70 m², zwei Zimmer (ein kleines, ein großes), Küche, Bad, Balkon, nahe Ringbahn, am liebsten Prenzlauer Berg.
 - Arbeitsweg: Luftlinie zum Moritzplatz (keine echte Fahrzeit).
-- Gewichte (Summe 100): Kosten 22, Lage 12, Ringbahn 8, ÖPNV 3, Bezirk 10, Baujahr 10, Größe 12, Zimmer 8, Außenbereich 8, Aufzug 7.
+- Gewichte (Summe 100): Kosten 20, Kiez 16, Lage 10, Ringbahn 6, ÖPNV 3, Bezirk 3, Baujahr 9, Hochhaus 5,
+  Größe 10, Zimmer 7, Außenbereich 6, Aufzug 5.
+- Kiez-Wert (Nutzerwunsch 13.10.2026: "Lage zählt mehr als Bezirk, lebendige Ecke statt Wohnsiedlung,
+  Hochhaussiedlung am schlimmsten"): Lokale und Läden im 500-m-Umkreis plus Park in der Nähe, aus `kiez.json`.
+  Die Datei baut `build_kiez.py` einmalig aus der Berlin-Karte von OpenStreetMap (Geofabrik), der Bot braucht
+  dafür kein Netz. Overpass war am 13.10.2026 durchgehend nicht erreichbar (504) und wird nicht mehr benutzt.
+  Richtwerte: Kollwitzplatz ~430, Boxhagener Platz ~580, Wedding ~100, Gropiusstadt ~15.
+- Hochhaus: Etagenzahl des Hauses (nur bei inberlinwohnen bekannt), ab 9 Etagen deutlicher Abzug.
 - Nutzerwunsch (13.10.2026): Altbau in Prenzlauer Berg schlägt Plattenbau in Lichtenberg, 2 Zimmer besser als 1,
   je mehr Platz desto besser. Bauart wird über das Baujahr geschätzt (bis 1949 top, 1960-1990 schwach).
 - Automatische Anfrage (WBM) erst ab 4 Sternen (`MIN_STARS_SEND`), gemeldet wird jeder Treffer.
@@ -79,7 +86,6 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 
 ## Bekannte Schwächen / ungetestet
 - Das echte Senden wurde noch nicht gegen die Live-Seite getestet (bisher keine passenden Angebote). Beim ersten echten Treffer Status und Meldung prüfen.
-- Overpass (Haltestellen im Umkreis, 5 von 100 Punkten) antwortet oft nicht (504/Timeout); dann zählt der Wert neutral.
 - Adresse wird aus dem Kartentext geraten (Straße + Hausnummer, Fallback nur PLZ).
 - Etage "DG" (Dachgeschoss) hat keine Zahl und zählt als unbekannt.
 - Bezirk wird per Textanfang erkannt, unbekannte Labels werden nur gemeldet, nicht angefragt.

@@ -1,13 +1,16 @@
 """Sternebewertung für Wohnungsangebote (1-5 Sterne).
 
-Alles hier ist "best effort": Schlägt ein Netzwerkaufruf fehl, bekommt das
-Kriterium einen neutralen Wert und der Bot läuft normal weiter.
+Alles hier ist "best effort": Fehlt ein Wert, bekommt das Kriterium einen neutralen
+Wert und der Bot läuft normal weiter. Netz braucht nur die Adresssuche (Nominatim);
+Kiez, Haltestellen und Ringbahn kommen aus kiez.json bzw. festen Listen.
 
 Alle Wünsche stehen in den Konstanten und der Funktion score() - dort anpassen.
 """
+import json
 import math
 import re
 import time
+from pathlib import Path
 
 import requests
 
@@ -43,8 +46,8 @@ RINGBAHN = [
 
 # Gewichte (Summe 100)
 W = {
-    "Kosten": 22, "Lage": 12, "Ringbahn": 8, "ÖPNV": 3, "Bezirk": 10, "Baujahr": 10,
-    "Größe": 12, "Zimmer": 8, "Außenbereich": 8, "Aufzug": 7,
+    "Kosten": 20, "Kiez": 16, "Lage": 10, "Ringbahn": 6, "ÖPNV": 3, "Bezirk": 3,
+    "Baujahr": 9, "Hochhaus": 5, "Größe": 10, "Zimmer": 7, "Außenbereich": 6, "Aufzug": 5,
 }
 
 
@@ -135,21 +138,39 @@ def locate(text):
     return None
 
 
-def _overpass(query):
-    try:
-        r = requests.post("https://overpass-api.de/api/interpreter", data={"data": query},
-                          headers=UA, timeout=10)  # kurz halten: läuft jetzt vor dem Senden
-        return int(r.json()["elements"][0]["tags"]["total"])
-    except Exception:
+KIEZ_FILE = Path(__file__).with_name("kiez.json")  # gebaut von build_kiez.py
+_kiez_data = None
+
+
+def kiez(coord):
+    """Umgebung aus kiez.json (OpenStreetMap, kein Netz nötig): (Lokale und Läden im
+    500-m-Umkreis, Meter bis zum nächsten Park/Wald, Haltestellen im 500-m-Umkreis).
+    None, wenn die Datei fehlt."""
+    global _kiez_data
+    if _kiez_data is None:
+        try:
+            _kiez_data = json.loads(KIEZ_FILE.read_text())
+            _kiez_data["parks"] = set(_kiez_data["parks"])
+        except (OSError, ValueError):
+            _kiez_data = {}
+    k = _kiez_data
+    if not k:
         return None
-
-
-def count_transit(coord, radius=500):
+    (lat0, lon0), (dlat, dlon) = k["origin"], k["cell"]
     lat, lon = coord
-    return _overpass(
-        f'[out:json][timeout:20];('
-        f'node["railway"~"station|subway_entrance|tram_stop"](around:{radius},{lat},{lon});'
-        f'node["highway"="bus_stop"](around:{radius},{lat},{lon}););out count;')
+    i0, j0 = int((lat - lat0) / dlat), int((lon - lon0) / dlon)
+    places = stops = 0
+    park_m = 9999
+    for i in range(i0 - 7, i0 + 8):
+        for j in range(j0 - 7, j0 + 8):
+            m = 1000 * haversine_km(coord, (lat0 + (i + 0.5) * dlat, lon0 + (j + 0.5) * dlon))
+            key = f"{i},{j}"
+            if m <= 500:
+                places += k["places"].get(key, 0)
+                stops += k["stops"].get(key, 0)
+            if key in k["parks"]:
+                park_m = min(park_m, m)
+    return places, round(park_m), stops
 
 
 def ring_score(coord):
@@ -213,6 +234,22 @@ def lift_score(floor, feats):
     return {3: 0.5, 4: 0.25}.get(floor, 0.0)  # ab 5. Stock ohne Aufzug: 0
 
 
+def kiez_score(places, park_m):
+    """Lebendiger Kiez statt Wohnsiedlung: ab ca. 300 Lokalen und Läden im 500-m-Umkreis
+    volle Punkte, unter ca. 15 keine (zum Vergleich: Kollwitzplatz ~430, Gropiusstadt ~15).
+    Ein Park in der Nähe zählt ein Fünftel."""
+    life = lin(math.log10(places + 1), math.log10(301), math.log10(16))
+    park = 1.0 if park_m <= 300 else 0.5 if park_m <= 600 else 0.0
+    return 0.8 * life + 0.2 * park
+
+
+def highrise_score(levels):
+    """Hochhaus gibt Abzug: bis 6 Etagen gut, ab 12 keine Punkte."""
+    if levels is None:
+        return 0.5
+    return 1.0 if levels <= 6 else 0.6 if levels <= 8 else 0.3 if levels <= 11 else 0.0
+
+
 def district_score(district_text):
     t = district_text or ""
     if t.startswith("Prenzlauer Berg"):
@@ -222,15 +259,19 @@ def district_score(district_text):
     return 0.3  # geht auch, ist aber nicht der Wunsch
 
 
-def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text="", year=None):
-    """Gibt (Sterne 1-5, Punkte 0-100, Teilwerte) zurück. None = unbekannt -> neutral 0,5."""
+def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text="", year=None,
+          around=None, levels=None):
+    """Gibt (Sterne 1-5, Punkte 0-100, Teilwerte) zurück. None = unbekannt -> neutral 0,5.
+    around = (Lokale und Läden im Umkreis, Meter zum Park)."""
     s = {
         "Kosten": price_score(price),
+        "Kiez": kiez_score(*around) if around is not None else 0.5,
         "Lage": lin(dist_km, 2, 8) if dist_km is not None else 0.5,
         "Ringbahn": ring if ring is not None else 0.5,
-        "ÖPNV": clamp01(stops / 6) if stops is not None else 0.5,
+        "ÖPNV": clamp01(stops / 15) if stops is not None else 0.5,
         "Bezirk": district_score(district_text),
         "Baujahr": year_score(year),
+        "Hochhaus": highrise_score(levels),
         "Größe": size_score(size),
         "Zimmer": rooms_score(rooms),
         "Außenbereich": 1.0 if (feats["balkon"] or feats["garten"]) else 0.0,
@@ -256,21 +297,31 @@ def rate_listing(listing, expose_text=""):
     feats = parse_features(text + " " + expose_text)
     floor = parse_floor(expose_text) if expose_text else None
     coord = locate(text)
-    stops = count_transit(coord) if coord else None
-    return rate(listing["price"], size, listing.get("rooms"), feats, coord, floor, text, stops,
+    return rate(listing["price"], size, listing.get("rooms"), feats, coord, floor, text,
                 parse_year(expose_text))
 
 
-def rate(price, size, rooms, feats, coord, floor, district_text="", stops=None, year=None):
+def rate(price, size, rooms, feats, coord, floor, district_text="", year=None, levels=None):
     """Bewertung aus fertigen Werten (ohne Netz). Gibt (Sterne-Text, Kurzbegründung) zurück."""
     dist = haversine_km(coord, WORK) if coord else None
     ring = ring_score(coord) if coord else None
-    n, points, _ = score(price, size, rooms, feats, dist, stops, ring, floor, district_text, year)
+    area = kiez(coord) if coord else None
+    around, stops = (area[:2], area[2]) if area else (None, None)
+    if levels is None and floor is not None and floor >= 6:
+        levels = floor + 1  # Haus hat mindestens so viele Etagen
+    n, points, _ = score(price, size, rooms, feats, dist, stops, ring, floor, district_text, year,
+                         around, levels)
     bits = []
     if size:
         bits.append(f"{size:g} m²")
     if dist is not None:
         bits.append(f"~{dist:.1f} km zur Arbeit (Luftlinie)")
+    if around:
+        places, park_m = around
+        mood = "lebendig" if places >= 200 else "mittel" if places >= 60 else "wenig los"
+        bits.append(f"Kiez {mood} ({places} Lokale/Läden)" + (", Park nah" if park_m <= 300 else ""))
+    elif coord:
+        bits.append("Kiez unbekannt")
     if ring is not None:
         bits.append("Ringbahn nah" if ring == 1.0 else "Ringbahn mittel" if ring == 0.5 else "Ringbahn weit")
     if feats["balkon"]:
@@ -283,4 +334,6 @@ def rate(price, size, rooms, feats, coord, floor, district_text="", stops=None, 
         bits.append("EG" if floor == 0 else f"{floor}. Etage")
     if year is not None:
         bits.append(f"Baujahr {year}")
+    if levels is not None and levels >= 9:
+        bits.append(f"Hochhaus ({levels} Etagen)")
     return f"{stars_text(n)} ({n}/5)", ", ".join(bits)

@@ -130,7 +130,7 @@ def test_rating_parsing_and_score():
     assert c[0].endswith("10115 Berlin") and "29" in c[0] and c[-1] == "10115 Berlin", c
     kein = {"balkon": False, "garten": False, "aufzug": False}
     top = {"balkon": True, "garten": False, "aufzug": True}
-    gut = rating.score(650, 70, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg", 1910)
+    gut = rating.score(650, 70, 2, top, 1.0, 20, 1.0, 2, "Prenzlauer Berg", 1910, (400, 100), 5)
     schlecht = rating.score(990, 30, 1, kein, 9.0, 0, 0.0, 6, "Spandau")
     assert gut[0] == 5 and gut[1] == 100 and schlecht[0] == 1, (gut, schlecht)
     neutral = rating.score(None, None, None, kein, None, None, None, None)
@@ -138,9 +138,9 @@ def test_rating_parsing_and_score():
     # Preis: bis 850 okay, darüber höchstens 4 Sterne (außer fast perfekt), 1000 = Ende
     assert rating.price_score(700) == 1.0 and rating.price_score(1000) == 0.0
     assert rating.price_score(850) > rating.price_score(900) > rating.price_score(1000)
-    teuer = rating.score(930, 70, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg", 1910)
+    teuer = rating.score(930, 70, 2, top, 1.0, 20, 1.0, 2, "Prenzlauer Berg", 1910, (400, 100), 5)
     assert teuer[0] == 4, teuer
-    fast_perfekt = rating.score(860, 70, 2, top, 1.0, 8, 1.0, 2, "Prenzlauer Berg", 1910)
+    fast_perfekt = rating.score(860, 70, 2, top, 1.0, 20, 1.0, 2, "Prenzlauer Berg", 1910, (400, 100), 5)
     assert fast_perfekt[0] == 5, fast_perfekt
     # Aufzug: bis 2. Stock unwichtig, ab 3. Stock je höher desto wichtiger, Garten ersetzt ihn
     assert rating.lift_score(1, kein) >= 0.85
@@ -155,9 +155,18 @@ def test_rating_parsing_and_score():
     assert rating.year_score(1910) > rating.year_score(2020) > rating.year_score(None) > rating.year_score(1978)
     assert rating.parse_year("Energiekennzahlen Baujahr: 1930 Heizungsart") == 1930 and rating.parse_year("nix") is None
     # Altbau in Prenzlauer Berg schlägt sonst gleiche Platte in Lichtenberg deutlich
-    altbau = rating.score(700, 58, 2, top, 5.0, 4, 1.0, 2, "Prenzlauer Berg", 1930)
-    platte = rating.score(700, 58, 2, top, 5.0, 4, 1.0, 2, "Lichtenberg", 1978)
-    assert altbau[1] - platte[1] >= 15 and altbau[0] > platte[0], (altbau[:2], platte[:2])
+    # Altbau im lebendigen Kiez schlägt sonst gleiche Platte in der Hochhaussiedlung deutlich
+    altbau = rating.score(700, 58, 2, top, 5.0, 12, 1.0, 2, "Prenzlauer Berg", 1930, (400, 100), 5)
+    platte = rating.score(700, 58, 2, top, 5.0, 12, 1.0, 2, "Lichtenberg", 1978, (20, 100), 11)
+    assert altbau[1] - platte[1] >= 20 and altbau[0] > platte[0], (altbau[:2], platte[:2])
+    # Kiez: lebendig vor mittel vor Wohnsiedlung, Park in der Nähe hilft; Hochhaus gibt Abzug
+    assert rating.kiez_score(430, 40) == 1.0 > rating.kiez_score(96, 140) > rating.kiez_score(14, 9999) == 0.0
+    assert rating.kiez_score(96, 140) > rating.kiez_score(96, 900)
+    assert rating.highrise_score(5) > rating.highrise_score(8) > rating.highrise_score(11) > rating.highrise_score(20)
+    # kiez.json: Kollwitzplatz ist lebendig, Gropiusstadt nicht; funktioniert ohne Netz
+    koll, gropius = rating.kiez((52.5363, 13.4177)), rating.kiez((52.4250, 13.4630))
+    assert koll[0] > 200 and koll[1] <= 300 and gropius[0] < 60, (koll, gropius)
+    assert sum(rating.W.values()) == 100
     assert rating.district_score("Prenzlauer Berg 2 Zimmer") > rating.district_score("Mitte") > rating.district_score("Treptow")
 
 

@@ -112,6 +112,7 @@ def parse_item(item, text):
         "price": num(details.get("Gesamtmiete")) or num(item.get("rentGross")),
         "wbs": None if not wbs_text else "nicht" not in wbs_text,
         "floor": item.get("level") if isinstance(item.get("level"), int) else None,
+        "levels": item.get("levelsTotal") if isinstance(item.get("levelsTotal"), int) else None,
         "year": int(year) if (year := num(item.get("constructionYear"))) and 1800 < year < 2100 else None,
         "coord": coord,
         "bezirk": addr.get("district") or "",
@@ -154,7 +155,7 @@ def rate(l):
     """(Anzahl Sterne, Sterne-Text, Kurzbegründung). Braucht kein Netz."""
     where = "Prenzlauer Berg" if l["plz"] in PRENZLAUER_BERG_PLZ else l["bezirk"]
     stars, why = rating.rate(l["price"], l["size"], l["rooms"], rating.parse_features(l["text"]),
-                             l["coord"], l["floor"], where, year=l["year"])
+                             l["coord"], l["floor"], where, year=l["year"], levels=l["levels"])
     return stars.count("★"), stars, why
 
 
