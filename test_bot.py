@@ -342,6 +342,82 @@ def test_over_limit_best_stars_first_rest_next_run():
             assert len(sent) == 5, sent  # danach nichts mehr, nie doppelt
 
 
+def ibw_card(id, company="degewo", rooms="2,0", net="600,00", total="750,00 €", wbs="nicht erforderlich",
+             bezirk="Pankow", plz="10439", lat="52.5480", lon="13.4190"):
+    """Nachbau einer Karte von inberlinwohnen.de (Livewire-Format wie auf der echten Seite)."""
+    arr = {"s": "arr"}
+    item = {
+        "id": id, "title": "Schöne Wohnung", "deeplink": f"https://example.org/{id}", "rooms": rooms,
+        "area": "58,25", "level": 2, "rentNet": net, "rentGross": 700.0,
+        "company": [{"intern": company, "name": company}, arr],
+        "address": [{"street": "Teststraße", "number": "9", "zipCode": plz, "district": bezirk,
+                     "lat": lat, "lon": lon}, arr],
+        "details": [[[[{"label": "Gesamtmiete", "value": total}, arr], [{"label": "WBS", "value": wbs}, arr]], arr], arr],
+    }
+    snap = json.dumps({"data": {"item": [item, arr]}}).replace("'", "&#39;")
+    return f"<div id='apartment-{id}' wire:snapshot='{snap}'>Gesamtmiete: {total} Balkon / Loggia / Terrasse</div>"
+
+
+def test_ibw_parse_and_filter():
+    import ibw_bot
+    html = "".join([
+        ibw_card(1),
+        ibw_card(2, wbs="erforderlich"),
+        ibw_card(3, company="wbm"),                  # macht der WBM-Bot
+        ibw_card(4, bezirk="Spandau"),
+        ibw_card(5, rooms="3,0"),
+        ibw_card(6, total="1.074,60 €"),
+        ibw_card(7, net="910,00", total="940,00 €"),  # zu teuer kalt
+        ibw_card(8, bezirk="Lichtenberg", plz="10319"),
+    ])
+    ls = ibw_bot.parse_page(html)
+    assert [l["id"] for l in ls] == [1, 2, 3, 4, 5, 6, 7, 8]
+    a = ls[0]
+    assert (a["rooms"], a["price"], a["cold"], a["size"], a["wbs"], a["floor"]) == (2, 750.0, 600.0, 58.25, False, 2), a
+    assert a["coord"] == (52.548, 13.419) and a["company"] == "degewo" and a["url"] == "https://example.org/1"
+    assert ls[5]["price"] == 1074.60 and ls[1]["wbs"] is True
+    assert [l["id"] for l in ls if ibw_bot.matches(l)] == [1, 8]
+    n, stars, why = ibw_bot.rate(a)  # Prenzlauer Berg, nah an der Ringbahn, Balkon
+    assert n >= 4 and "Ringbahn nah" in why and "Balkon" in why, (stars, why)
+    assert "Teststraße 9, 10439 Pankow" in ibw_bot.describe(a, stars, why)
+
+
+def test_ibw_main_first_run_then_only_new():
+    import ibw_bot
+    pages = {1: ibw_card(12) + ibw_card(11), 2: ibw_card(10, bezirk="Spandau"), 3: ""}
+    calls = []
+
+    def get(url, params=None, **kw):
+        calls.append(params["page"])
+        return mock.Mock(text=pages.get(params["page"], ""), status_code=200)
+
+    msgs = []
+    with tempfile.TemporaryDirectory() as td:
+        ibw_bot.SEEN_FILE = Path(td) / "seen_ibw.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        with mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.notify", side_effect=msgs.append), \
+                mock.patch("ibw_bot.time.sleep"):
+            ibw_bot.main()  # erster Lauf: alle Seiten, eine Sammelmeldung
+            assert calls == [1, 2, 3] and len(msgs) == 1 and "2 passende Angebote" in msgs[0], (calls, msgs)
+            assert json.loads(ibw_bot.SEEN_FILE.read_text()) == [10, 11, 12]
+            ibw_bot.main()  # nichts Neues: nur Seite 1, keine Meldung
+            assert calls == [1, 2, 3, 1] and len(msgs) == 1
+            pages[1] = ibw_card(13) + ibw_card(12)
+            ibw_bot.main()  # ein neues Angebot: einzeln melden, bis zur ersten Seite ohne Neues
+            assert len(msgs) == 2 and "example.org/13" in msgs[1], msgs
+            ibw_bot.main()
+            assert len(msgs) == 2  # nie doppelt
+            # Seite kaputt: Fehler und genau eine Störungsmeldung
+            pages[1] = "<html>Wartung</html>"
+            for _ in range(2):
+                try:
+                    ibw_bot.main()
+                    assert False, "sollte abbrechen"
+                except SystemExit as e:
+                    assert e.code == 1
+            assert len(msgs) == 3 and "nicht sauber lesbar" in msgs[2], msgs
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

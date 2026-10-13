@@ -12,9 +12,11 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - `wbm_bot.py`: Hauptskript. Angebote von `https://www.wbm.de/wohnungen-berlin/angebote/` parsen,
   filtern, Anfrage senden, melden, Statistik.
 - `rating.py`: Sternebewertung (1-5) mit Kurzbegründung. Alle Gewichte und Wünsche stehen als Konstanten oben.
+- `ibw_bot.py`: zweiter Bot für `https://www.inberlinwohnen.de/wohnungsfinder/` (alle landeseigenen
+  Gesellschaften plus Berlinovo, ca. 450 Angebote). Nur finden und melden, keine Anfrage. Siehe unten.
 - `test_bot.py`: Tests mit Mocks (`python3 test_bot.py`), kein Netzwerk nötig.
 - `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
-  Committet `seen.json` und `stats.json` zurück ins Repo.
+  Führt erst `wbm_bot.py`, dann `ibw_bot.py` aus. Committet `seen.json`, `seen_ibw.json` und `stats.json` zurück ins Repo.
 - `seen.json`: bereits gemeldete/angefragte Angebote (verhindert Doppelanfragen).
 - `stats.json`: Tageszähler (gescannte Angebote, gesendete Anfragen, Tag des letzten Berichts).
 
@@ -46,6 +48,16 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
    gelesene Anzahl ab oder ist die Seite nicht lesbar, gibt es höchstens eine Push-Meldung pro Tag.
    Eine wirklich leere Angebotsliste ist kein Fehler.
 
+## inberlinwohnen-Bot (`ibw_bot.py`)
+- Jede Karte enthält ihre Daten als JSON (`wire:snapshot`, Livewire): Zimmer, Fläche, Kaltmiete, Etage,
+  Gesellschaft, Link zur Gesellschaft, Adresse mit Bezirk und Koordinaten. Gesamtmiete und WBS stehen in `details`.
+- 10 Angebote pro Seite, neueste zuerst, weitere Seiten per `?page=N`. Der Bot blättert, bis eine Seite nichts
+  Neues enthält. Erster Lauf (ohne `seen_ibw.json`): alle Seiten (ca. 1 Minute), eine Sammelmeldung mit den besten 10.
+- Filter wie beim WBM-Bot (Konstanten aus `wbm_bot.py`), aber nur Bezirk statt Ortsteil bekannt (`ALLOWED_BEZIRKE`).
+  Deshalb zusätzlich: nur melden ab `MIN_STARS` = 3 Sternen. WBM-Angebote werden übersprungen (macht `wbm_bot.py`).
+- Bewertung ohne Netz (Koordinaten kommen von der Seite). Prenzlauer Berg wird über die PLZ erkannt.
+- Nächster Ausbau: automatische Anfrage je Gesellschaft (jede hat ein eigenes Formular/Portal).
+
 ## Kriterien und Bewertung
 - Filter: 1-2 Zimmer, max. 950 € Warmmiete, ohne WBS.
   Bezirke: Charlottenburg, Friedrichshain, Kreuzberg, Lichtenberg, Mitte, Neukölln, Pankow, Prenzlauer Berg, Tiergarten, Treptow, Wedding.
@@ -72,6 +84,7 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 ## Ideen / nächste Schritte
 - Gewichte nach Feedback des Nutzers nachjustieren (welche Wohnungen gut/schlecht waren).
 - Energieklasse und Heizkosten aus dem Exposé in die Kosten einrechnen.
-- Weitere Gesellschaften als Module: Gewobag (Suchauftrag besteht), Gesobau (über Immomio), degewo, Howoge, Stadt und Land.
+- Automatische Anfrage für weitere Gesellschaften (gefunden werden sie schon über `ibw_bot.py`):
+  Howoge und degewo zuerst (die meisten Angebote), dann Gewobag, Stadt und Land, Gesobau (über Immomio).
 - Optional: Anfrage-Button in der Push-Meldung (ntfy-Aktion + GitHub-Token), statt vollautomatisch.
 - Echte Fahrzeit zur Arbeit statt Luftlinie.

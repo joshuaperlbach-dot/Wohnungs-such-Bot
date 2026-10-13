@@ -1,0 +1,210 @@
+#!/usr/bin/env python3
+"""Wohnungsbot für inberlinwohnen.de.
+
+Die Seite bündelt die Angebote der landeseigenen Gesellschaften (degewo, Gesobau,
+Gewobag, Howoge, Stadt und Land, WBM, dazu Berlinovo). Dieser Bot findet und meldet nur:
+neue passende Angebote kommen als Push mit Sternen und Link zur Gesellschaft.
+Angefragt wird hier nichts. WBM-Angebote übernimmt weiter wbm_bot.py (mit Anfrage).
+
+Kriterien (Zimmer, Miete, WBS) kommen aus wbm_bot.py, die Bewertung aus rating.py.
+"""
+import json
+import re
+import sys
+import time
+from datetime import datetime
+from pathlib import Path
+
+import requests
+from bs4 import BeautifulSoup
+
+import rating
+import wbm_bot
+from wbm_bot import ALLOW_WBS, MAX_KALTMIETE, MAX_ROOMS, MAX_WARMMIETE, MIN_ROOMS
+
+URL = "https://www.inberlinwohnen.de/wohnungsfinder/"
+SEEN_FILE = Path(__file__).with_name("seen_ibw.json")
+MAX_PAGES = 80          # 10 Angebote pro Seite, neueste zuerst
+MIN_STARS = 3           # schlechter bewertete Angebote nicht melden
+FIRST_RUN_TOP = 10      # erster Lauf: nur die besten als eine Sammelmeldung
+SKIP_COMPANIES = {"wbm"}  # macht wbm_bot.py
+
+# Die Seite nennt nur den Bezirk, nicht den Ortsteil. Erlaubt sind die Bezirke,
+# in denen die gewünschten Ortsteile aus wbm_bot.ALLOWED_DISTRICTS liegen.
+ALLOWED_BEZIRKE = [
+    "Charlottenburg-Wilmersdorf", "Friedrichshain-Kreuzberg", "Lichtenberg", "Mitte",
+    "Neukölln", "Pankow", "Treptow-Köpenick",
+]
+OTHER_BEZIRKE = [
+    "Spandau", "Reinickendorf", "Marzahn-Hellersdorf", "Steglitz-Zehlendorf",
+    "Tempelhof-Schöneberg",
+]
+# Für die Bewertung: Postleitzahlen, die ganz in Prenzlauer Berg liegen
+PRENZLAUER_BERG_PLZ = {"10405", "10407", "10409", "10435", "10437", "10439"}
+
+
+def plain(v):
+    """Livewire verpackt Werte als [wert, {"s": ...}] - auspacken."""
+    if isinstance(v, list) and len(v) == 2 and isinstance(v[1], dict) and "s" in v[1]:
+        return plain(v[0])
+    if isinstance(v, list):
+        return [plain(x) for x in v]
+    if isinstance(v, dict):
+        return {k: plain(x) for k, x in v.items()}
+    return v
+
+
+def num(v):
+    """'1.074,60 €' / '2,0' / 680.32 -> Zahl; None wenn nicht lesbar."""
+    if isinstance(v, (int, float)):
+        return float(v)
+    m = re.search(r"\d[\d.]*(?:,\d+)?", str(v or ""))
+    return float(m.group(0).replace(".", "").replace(",", ".")) if m else None
+
+
+def district_ok(district):
+    """True = gewünscht, False = nicht gewünscht, None = nicht erkennbar."""
+    if district in ALLOWED_BEZIRKE:
+        return True
+    if district in OTHER_BEZIRKE:
+        return False
+    return None
+
+
+def parse_page(html):
+    """Alle Angebote einer Ergebnisseite. Die Daten stecken als JSON in jeder Karte."""
+    listings = []
+    for card in BeautifulSoup(html, "html.parser").select('[id^="apartment-"][wire\\:snapshot]'):
+        try:
+            item = plain(json.loads(card["wire:snapshot"])["data"]["item"])
+            listings.append(parse_item(item, card.get_text(" ", strip=True)))
+        except (KeyError, TypeError, ValueError) as e:
+            print(f"Karte {card.get('id')} nicht lesbar: {e}", file=sys.stderr)
+    return listings
+
+
+def parse_item(item, text):
+    addr = item.get("address") or {}
+    # Sichtbare Zeilen der Karte ("Gesamtmiete", "WBS", ...) als label -> wert
+    details = {}
+    for group in item.get("details") or []:
+        for d in group if isinstance(group, list) else [group]:
+            if isinstance(d, dict) and d.get("label"):
+                details[d["label"]] = d.get("value")
+    wbs_text = str(details.get("WBS") or "").lower()
+    rooms = num(item.get("rooms"))
+    try:
+        coord = (float(addr["lat"]), float(addr["lon"]))
+    except (KeyError, TypeError, ValueError):
+        coord = None
+    return {
+        "id": int(item["id"]),
+        "url": item.get("deeplink") or URL,
+        "title": item.get("title") or "",
+        "company": ((item.get("company") or {}).get("intern") or "").strip().lower(),
+        "rooms": int(rooms) if rooms is not None and rooms.is_integer() else rooms,
+        "size": num(item.get("area")),
+        "cold": num(item.get("rentNet")),
+        # Gesamtmiete (mit Heizung) steht nur in den sichtbaren Zeilen
+        "price": num(details.get("Gesamtmiete")) or num(item.get("rentGross")),
+        "wbs": None if not wbs_text else "nicht" not in wbs_text,
+        "floor": item.get("level") if isinstance(item.get("level"), int) else None,
+        "coord": coord,
+        "bezirk": addr.get("district") or "",
+        "plz": str(addr.get("zipCode") or ""),
+        "address": f"{addr.get('street', '')} {addr.get('number', '')}".strip(),
+        "district": district_ok(addr.get("district")),
+        "text": text,
+    }
+
+
+def matches(l):
+    """Im Zweifel lieber melden als verpassen: unbekannte Werte schließen nicht aus."""
+    if l["company"] in SKIP_COMPANIES or l["district"] is False:
+        return False
+    if l["wbs"] and not ALLOW_WBS:
+        return False
+    if l["rooms"] is not None and not (MIN_ROOMS <= l["rooms"] <= MAX_ROOMS):
+        return False
+    if (l["price"] or 0) > MAX_WARMMIETE or (l["cold"] or 0) > MAX_KALTMIETE:
+        return False
+    return True
+
+
+def rate(l):
+    """(Anzahl Sterne, Sterne-Text, Kurzbegründung). Braucht kein Netz."""
+    where = "Prenzlauer Berg" if l["plz"] in PRENZLAUER_BERG_PLZ else l["bezirk"]
+    stars, why = rating.rate(l["price"], l["size"], l["rooms"], rating.parse_features(l["text"]),
+                             l["coord"], l["floor"], where)
+    return stars.count("★"), stars, why
+
+
+def describe(l, stars, why):
+    price = f"{l['price']:.0f} € warm" if l["price"] else "Miete unbekannt"
+    line = f"{stars}  {l['company'] or 'Angebot'}: {l['rooms']} Zi, {price}"
+    if why:
+        line += f"\n{why}"
+    return f"{line}\n{l['address']}, {l['plz']} {l['bezirk']}\n{l['url']}"
+
+
+def fetch_new(seen, first_run):
+    """Seiten durchgehen, bis eine Seite nichts Neues mehr enthält (neueste stehen vorn).
+    Gibt (neue Angebote, Problem) zurück."""
+    new = {}
+    for page in range(1, MAX_PAGES + 1):
+        try:
+            resp = wbm_bot.HTTP.get(URL, params={"page": page}, timeout=30)
+        except requests.RequestException as e:
+            return list(new.values()), type(e).__name__
+        if resp.status_code != 200:
+            return list(new.values()), f"HTTP {resp.status_code}"
+        listings = parse_page(resp.text)
+        if not listings:
+            # Seite 1 ohne Karten: Aufbau geändert (oder wirklich leer, bei 6 Gesellschaften unwahrscheinlich)
+            return list(new.values()), "keine Angebote lesbar" if page == 1 else None
+        fresh = [l for l in listings if l["id"] not in seen and l["id"] not in new]
+        new.update((l["id"], l) for l in fresh)
+        if not fresh and not first_run:
+            break
+        time.sleep(0.5)
+    return list(new.values()), None
+
+
+def main():
+    now = datetime.now(wbm_bot.TZ)
+    stats = wbm_bot.load_stats(now.strftime("%Y-%m-%d"))
+    first_run = not SEEN_FILE.exists()
+    seen = set() if first_run else set(json.loads(SEEN_FILE.read_text()))
+
+    new, problem = fetch_new(seen, first_run)
+    if problem:
+        wbm_bot.alert(stats, f"inberlinwohnen-Bot: Seite nicht sauber lesbar ({problem}). Bitte prüfen.",
+                      key="alert_day_ibw")
+        wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
+        if not new or first_run:  # unvollständiger erster Lauf: beim nächsten Mal neu
+            sys.exit(1)
+
+    hits = []
+    for l in new:
+        if matches(l):
+            n, stars, why = rate(l)
+            if n >= MIN_STARS:
+                hits.append((n, l, stars, why))
+    hits.sort(key=lambda h: -h[0])  # beste zuerst
+
+    if first_run and hits:
+        # Alles ist "neu": eine Sammelmeldung statt vieler einzelner
+        top = hits[:FIRST_RUN_TOP]
+        wbm_bot.notify(f"inberlinwohnen-Bot gestartet: {len(hits)} passende Angebote online, "
+                       f"die besten {len(top)}:\n\n" + "\n\n".join(describe(l, s, w) for _, l, s, w in top))
+    else:
+        for _, l, stars, why in hits:
+            wbm_bot.notify(describe(l, stars, why))
+
+    seen |= {l["id"] for l in new}
+    SEEN_FILE.write_text(json.dumps(sorted(seen)))
+    print(f"[inberlinwohnen] {len(new)} neue Angebote geprüft, {len(hits)} Treffer gemeldet.")
+
+
+if __name__ == "__main__":
+    main()

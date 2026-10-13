@@ -240,11 +240,15 @@ def rate_listing(listing, expose_text=""):
     feats = parse_features(text + " " + expose_text)
     floor = parse_floor(expose_text) if expose_text else None
     coord = locate(text)
-    dist = haversine_km(coord, WORK) if coord else None
     stops = count_transit(coord) if coord else None
+    return rate(listing["price"], size, listing.get("rooms"), feats, coord, floor, text, stops)
+
+
+def rate(price, size, rooms, feats, coord, floor, district_text="", stops=None):
+    """Bewertung aus fertigen Werten (ohne Netz). Gibt (Sterne-Text, Kurzbegründung) zurück."""
+    dist = haversine_km(coord, WORK) if coord else None
     ring = ring_score(coord) if coord else None
-    n, points, _ = score(listing["price"], size, listing.get("rooms"), feats, dist, stops,
-                         ring, floor, text)
+    n, points, _ = score(price, size, rooms, feats, dist, stops, ring, floor, district_text)
     bits = []
     if size:
         bits.append(f"{size:g} m²")

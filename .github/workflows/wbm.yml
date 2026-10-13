@@ -15,7 +15,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,10 +29,16 @@ jobs:
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python wbm_bot.py
+      - name: inberlinwohnen-Bot ausführen
+        if: always()            # unabhängig vom WBM-Bot
+        timeout-minutes: 4
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python ibw_bot.py
       - name: Gesehene Angebote speichern
         if: always()            # auch nach Absturz/Timeout, sonst gehen Anfragen doppelt raus
         run: |
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
-          for f in seen.json stats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in seen.json seen_ibw.json stats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet || (git commit -m "seen aktualisiert" && git pull --rebase && git push)

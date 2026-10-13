@@ -258,12 +258,12 @@ def notify(msg):
             pass
 
 
-def alert(stats, msg):
+def alert(stats, msg, key="alert_day"):
     """Störung melden: aufs Handy höchstens einmal pro Tag."""
     print(msg, file=sys.stderr)
-    if stats.get("alert_day") != stats["day"]:
+    if stats.get(key) != stats["day"]:
         notify(msg)
-        stats["alert_day"] = stats["day"]
+        stats[key] = stats["day"]
 
 
 def save_seen(seen):
