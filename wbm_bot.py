@@ -106,6 +106,22 @@ def parse_listings(html):
     return list(listings.values())
 
 
+def check_page(html, listings):
+    """None = alles gut (auch wenn gerade wirklich keine Angebote online sind),
+    sonst das Problem als kurzer Text."""
+    soup = BeautifulSoup(html, "html.parser")
+    # Die Seite nennt die Anzahl selbst in einer Überschrift ("8 Mietwohnungen in Berlin")
+    for h in soup.find_all(["h1", "h2"]):
+        m = re.match(r"\s*(\d+)\s+Mietwohnung", h.get_text(" ", strip=True))
+        if m and int(m.group(1)) != len(listings):
+            return f"Seite nennt {m.group(1)} Angebote, gelesen {len(listings)}"
+    if listings:
+        return None
+    if soup.select_one(".tx-openimmo") and "Warmmiete" not in html:
+        return None  # Angebotsliste ist da, nur leer
+    return "Seitenaufbau evtl. geändert"
+
+
 def matches(l):
     """Für Benachrichtigung: im Zweifel lieber melden als verpassen."""
     if l.get("district") is False:
@@ -224,6 +240,14 @@ def notify(msg):
             pass
 
 
+def alert(stats, msg):
+    """Störung melden: aufs Handy höchstens einmal pro Tag."""
+    print(msg, file=sys.stderr)
+    if stats.get("alert_day") != stats["day"]:
+        notify(msg)
+        stats["alert_day"] = stats["day"]
+
+
 def save_seen(seen):
     SEEN_FILE.write_text(json.dumps(sorted(seen), indent=1))
 
@@ -255,14 +279,21 @@ def main():
         print(f"Fehlende Variablen: {', '.join(missing)}", file=sys.stderr)
         sys.exit(2)
 
-    html = HTTP.get(URL, timeout=20).text
-    listings = parse_listings(html)
-    if not listings:
-        print("Keine Angebote gefunden - Seitenaufbau evtl. geändert.", file=sys.stderr)
-        sys.exit(1)
-
     now = datetime.now(TZ)
     stats = load_stats(now.strftime("%Y-%m-%d"))
+    try:
+        resp = HTTP.get(URL, timeout=20)
+        html = resp.text if resp.status_code == 200 else ""
+        problem = None if html else f"HTTP {resp.status_code}"
+    except requests.RequestException as e:
+        html, problem = "", type(e).__name__
+    listings = parse_listings(html)
+    problem = problem or check_page(html, listings)
+    if problem:
+        alert(stats, f"WBM-Bot: Angebotsseite nicht sauber lesbar ({problem}). Bitte prüfen.")
+        if not listings:
+            STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
+            sys.exit(1)
     stats["scanned"] = sorted(set(stats["scanned"]) | {l["url"] for l in listings})
 
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()

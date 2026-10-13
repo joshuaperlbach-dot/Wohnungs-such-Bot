@@ -257,6 +257,41 @@ def test_wbs_from_expose_field():
         assert seen == ["mit", "ohne"], seen  # "offen" bleibt offen, wird nicht angefragt
 
 
+def test_empty_page_vs_broken_page():
+    import requests
+    frame = "<h1>Wohnungsangebote</h1><h2>{n} Mietwohnungen in Berlin</h2><div class='tx-openimmo search'>{body}</div>"
+    one = card("e", "Schöne 2 Zimmer", "1.940,00", "60", 2)
+    assert wbm_bot.check_page(frame.format(n=0, body=""), []) is None  # wirklich leer
+    assert wbm_bot.check_page(frame.format(n=1, body=one), parse_listings(one)) is None
+    assert "2 Angebote" in wbm_bot.check_page(frame.format(n=2, body=one), parse_listings(one))
+    assert wbm_bot.check_page("<html>Wartungsarbeiten</html>", [])
+    assert wbm_bot.check_page("<div class='tx-openimmo'>850,00 € Warmmiete</div>", [])  # Karten nicht erkannt
+
+    def run(get, runs=1):
+        msgs, codes = [], []
+        with tempfile.TemporaryDirectory() as td:
+            wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+            wbm_bot.STATS_FILE = Path(td) / "stats.json"
+            with mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.notify", side_effect=msgs.append), \
+                    mock.patch("wbm_bot.SUMMARY_HOUR", 25):
+                for _ in range(runs):
+                    try:
+                        wbm_bot.main()
+                        codes.append(0)
+                    except SystemExit as e:
+                        codes.append(e.code)
+        return msgs, codes
+
+    # leer: normaler Lauf, keine Meldung
+    assert run(lambda url, **kw: mock.Mock(text=frame.format(n=0, body=""), status_code=200)) == ([], [0])
+    # kaputt, Serverfehler, Netz weg: Fehler, aber nur eine Push-Meldung pro Tag
+    for get in (lambda url, **kw: mock.Mock(text="<html>Wartung</html>", status_code=200),
+                lambda url, **kw: mock.Mock(text="", status_code=503),
+                mock.Mock(side_effect=requests.ConnectionError("weg"))):
+        msgs, codes = run(get, runs=2)
+        assert codes == [1, 1] and len(msgs) == 1 and "nicht sauber lesbar" in msgs[0], (msgs, codes)
+
+
 def test_over_limit_best_stars_first_rest_next_run():
     many = "<div class='list'>" + "".join(
         card(f"w{i}", "Schöne 2 Zimmer", "800,00", "60", 2) for i in range(5)) + "</div>"
