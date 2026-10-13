@@ -100,6 +100,10 @@ def test_rating_parsing_and_score():
     f = rating.parse_features("Bad mit Dusche Aufzug Neubau Balkon")
     assert f == {"balkon": True, "garten": False, "aufzug": True}
     assert rating.parse_features("Wohnung mit Garten")["garten"]
+    assert rating.parse_features("EG mit Mietergarten")["garten"]
+    assert rating.parse_features("Wohnung mit Gartenanteil")["garten"]
+    for kein_garten in ("Tiergarten 2 Zimmer", "Kindergarten nebenan", "Gartenstraße 5, 10115 Berlin"):
+        assert not rating.parse_features(kein_garten)["garten"], kein_garten
     assert rating.parse_floor("Wohnung im 3. OG mit Blick") == 3
     assert rating.parse_floor("Lage: Erdgeschoss") == 0
     assert rating.parse_floor("nichts dazu") is None

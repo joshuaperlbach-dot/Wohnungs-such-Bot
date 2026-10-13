@@ -57,7 +57,9 @@ def parse_features(text):
     t = text.lower()
     return {
         "balkon": any(w in t for w in ("balkon", "terrasse", "loggia")),
-        "garten": "garten" in t,
+        # nur echter Garten: nicht Tiergarten, Kindergarten, Gartenstraße ...
+        "garten": bool(re.search(
+            r"\b(?:mieter|gemeinschafts|dach|privat)?garten(?!str|weg|platz|allee|stadt)", t)),
         "aufzug": "aufzug" in t or "fahrstuhl" in t,
     }
 
