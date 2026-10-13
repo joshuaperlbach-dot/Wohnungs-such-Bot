@@ -285,6 +285,16 @@ def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text=
     return stars, round(points), s
 
 
+class Rated(tuple):
+    """Ergebnis einer Bewertung: verhält sich wie (Sterne-Text, Kurzbegründung), kennt dazu
+    .stars, .points und .parts ({Kriterium: [erreichte Punkte, mögliche Punkte]}) für die App."""
+
+    def __new__(cls, text, why, stars=0, points=0, parts=None):
+        self = super().__new__(cls, (text, why))
+        self.stars, self.points, self.parts = stars, points, parts or {}
+        return self
+
+
 def stars_text(n):
     return "★" * n + "☆" * (5 - n)
 
@@ -309,8 +319,9 @@ def rate(price, size, rooms, feats, coord, floor, district_text="", year=None, l
     around, stops = (area[:2], area[2]) if area else (None, None)
     if levels is None and floor is not None and floor >= 6:
         levels = floor + 1  # Haus hat mindestens so viele Etagen
-    n, points, _ = score(price, size, rooms, feats, dist, stops, ring, floor, district_text, year,
+    n, points, s = score(price, size, rooms, feats, dist, stops, ring, floor, district_text, year,
                          around, levels)
+    parts = {k: [round(W[k] * v, 1), W[k]] for k, v in s.items()}
     bits = []
     if size:
         bits.append(f"{size:g} m²")
@@ -336,4 +347,4 @@ def rate(price, size, rooms, feats, coord, floor, district_text="", year=None, l
         bits.append(f"Baujahr {year}")
     if levels is not None and levels >= 9:
         bits.append(f"Hochhaus ({levels} Etagen)")
-    return f"{stars_text(n)} ({n}/5)", ", ".join(bits)
+    return Rated(f"{stars_text(n)} ({n}/5)", ", ".join(bits), n, points, parts)

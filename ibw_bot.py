@@ -18,6 +18,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+import offers
 import rating
 import wbm_bot
 from wbm_bot import ALLOW_WBS, MAX_KALTMIETE, MAX_ROOMS, MAX_WARMMIETE, MIN_ROOMS
@@ -120,6 +121,9 @@ def parse_item(item, text):
         "address": f"{addr.get('street', '')} {addr.get('number', '')}".strip(),
         "district": district_ok(addr.get("district")),
         "text": text,
+        "online_since": item.get("createdAt"),
+        "image": f"https://www.inberlinwohnen.de/img/{item['imagePath']}?q=80&w=900&fm=jpg"
+                 if item.get("imagePath") else None,
     }
 
 
@@ -151,12 +155,30 @@ def matches(l):
     return True
 
 
-def rate(l):
-    """(Anzahl Sterne, Sterne-Text, Kurzbegründung). Braucht kein Netz."""
+def rated(l):
+    """Bewertung als rating.Rated. Braucht kein Netz."""
     where = "Prenzlauer Berg" if l["plz"] in PRENZLAUER_BERG_PLZ else l["bezirk"]
-    stars, why = rating.rate(l["price"], l["size"], l["rooms"], rating.parse_features(l["text"]),
-                             l["coord"], l["floor"], where, year=l["year"], levels=l["levels"])
-    return stars.count("★"), stars, why
+    return rating.rate(l["price"], l["size"], l["rooms"], rating.parse_features(l["text"]),
+                       l["coord"], l["floor"], where, year=l["year"], levels=l["levels"])
+
+
+def rate(l):
+    """(Anzahl Sterne, Sterne-Text, Kurzbegründung)."""
+    r = rated(l)
+    return r.stars, r[0], r[1]
+
+
+def app_offer(l, r):
+    """Ein Angebot so, wie es die Handy-Ansicht (docs/index.html) braucht."""
+    return {
+        "source": "ibw", "company": l["company"], "url": l["url"], "title": l["title"],
+        "address": f"{l['address']}, {l['plz']} Berlin", "bezirk": l["bezirk"],
+        "images": [l["image"]] if l["image"] else [],
+        "rooms": l["rooms"], "price": l["price"], "cold": l["cold"], "size": l["size"],
+        "floor": l["floor"], "levels": l["levels"], "year": l["year"],
+        "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
+        "online_since": l["online_since"],
+    }
 
 
 def describe(l, stars, why):
@@ -203,8 +225,11 @@ def main():
     stats = wbm_bot.load_stats(now.strftime("%Y-%m-%d"))
     first_run = not SEEN_FILE.exists()
     seen = set() if first_run else set(json.loads(SEEN_FILE.read_text()))
+    store = offers.load()
+    # Handy-Ansicht zum ersten Mal füllen: einmal alle Seiten ansehen
+    seed = not store.get("ibw_seeded")
 
-    new, problem = fetch_new(seen, first_run)
+    new, problem = fetch_new(set() if seed else seen, first_run or seed)
     if problem:
         wbm_bot.alert(stats, f"inberlinwohnen-Bot: Seite nicht sauber lesbar ({problem}). Bitte prüfen.",
                       key="alert_day_ibw")
@@ -214,11 +239,21 @@ def main():
 
     hits = []
     for l in new:
-        if matches(l):
-            n, stars, why = rate(l)
-            if n >= MIN_STARS and not (hidden_wbs(l) and not ALLOW_WBS):
-                hits.append((n, l, stars, why))
+        fresh = l["id"] not in seen
+        since = offers.parse_time(l["online_since"])
+        recent = since is None or now - since < offers.KEEP_UNREQUESTED
+        if not matches(l) or not (fresh or recent):
+            continue
+        if hidden_wbs(l) and not ALLOW_WBS:
+            continue
+        r = rated(l)
+        if recent:  # in die Handy-Ansicht kommt jeder Treffer, egal wie viele Sterne
+            offers.add(store, f"ibw-{l['id']}", app_offer(l, r), now)
+        if fresh and r.stars >= MIN_STARS:
+            hits.append((r.stars, l, r[0], r[1]))
     hits.sort(key=lambda h: -h[0])  # beste zuerst
+    store["ibw_seeded"] = store.get("ibw_seeded") or not problem
+    offers.save(store, now)
 
     if first_run and hits:
         # Alles ist "neu": eine Sammelmeldung statt vieler einzelner
@@ -231,7 +266,7 @@ def main():
 
     seen |= {l["id"] for l in new}
     SEEN_FILE.write_text(json.dumps(sorted(seen)))
-    print(f"[inberlinwohnen] {len(new)} neue Angebote geprüft, {len(hits)} Treffer gemeldet.")
+    print(f"[inberlinwohnen] {len(new)} Angebote geprüft, {len(hits)} Treffer gemeldet.")
 
 
 if __name__ == "__main__":

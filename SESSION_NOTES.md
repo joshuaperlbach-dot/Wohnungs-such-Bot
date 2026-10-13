@@ -14,6 +14,8 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - `rating.py`: Sternebewertung (1-5) mit Kurzbegründung. Alle Gewichte und Wünsche stehen als Konstanten oben.
 - `ibw_bot.py`: zweiter Bot für `https://www.inberlinwohnen.de/wohnungsfinder/` (alle landeseigenen
   Gesellschaften plus Berlinovo, ca. 450 Angebote). Nur finden und melden, keine Anfrage. Siehe unten.
+- `offers.py` + `docs/`: Handy-Ansicht. Beide Bots tragen ihre Treffer in `docs/offers.json` ein,
+  `docs/index.html` zeigt sie an (GitHub Pages, Quelle: Branch main, Ordner /docs). Siehe unten.
 - `test_bot.py`: Tests mit Mocks (`python3 test_bot.py`), kein Netzwerk nötig.
 - `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
   Führt erst `wbm_bot.py`, dann `ibw_bot.py` aus. Committet `seen.json`, `seen_ibw.json` und `stats.json` zurück ins Repo.
@@ -60,6 +62,17 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
   (degewo kennzeichnet WBS-Wohnungen nur mit einem Bild-Etikett wie "220er"). Der Nutzer liegt knapp über WBS 220.
 - Nächster Ausbau: automatische Anfrage je Gesellschaft (jede hat ein eigenes Formular/Portal).
 
+## Handy-Ansicht (`docs/index.html`)
+- Adresse: https://joshuaperlbach-dot.github.io/Wohnungs-such-Bot/ (öffentlich, aber `noindex`; enthält nur
+  öffentliche Angebote und ob angefragt wurde, keine persönlichen Daten).
+- Liste aller Treffer mit Sternen, Klick öffnet Bilder, Eckdaten, Sterne-Aufschlüsselung und Beschreibung.
+- Button: grün = Anfrage raus (vom Bot oder von Hand markiert), grau = nicht angefragt,
+  rötlich = seit über 2 Stunden online und nicht angefragt.
+- Von Hand markieren speichert nur im Browser des Geräts (`localStorage`); die Seite kann nichts ins Repo schreiben.
+- Nicht angefragte Angebote fliegen nach 24 Stunden raus, angefragte nach 30 Tagen (`offers.py`).
+- `offers.json` wird bei jedem Lauf neu geschrieben (Feld `updated`); die Seite warnt, wenn der Bot über 45 Minuten
+  nicht gelaufen ist.
+
 ## Kriterien und Bewertung
 - Filter: 1-2 Zimmer, max. 950 € Warmmiete, ohne WBS.
   Bezirke: Charlottenburg, Friedrichshain, Kreuzberg, Lichtenberg, Mitte, Neukölln, Pankow, Prenzlauer Berg, Tiergarten, Treptow, Wedding.
@@ -89,6 +102,9 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Adresse wird aus dem Kartentext geraten (Straße + Hausnummer, Fallback nur PLZ).
 - Etage "DG" (Dachgeschoss) hat keine Zahl und zählt als unbekannt.
 - Bezirk wird per Textanfang erkannt, unbekannte Labels werden nur gemeldet, nicht angefragt.
+- Der Zeitplan (Cron) ist am 13.10.2026 in den ersten 3 Stunden kein einziges Mal von selbst gelaufen, nur manuelle
+  Starts. Cron steht jetzt auf `3-59/10` (weg von der vollen Stunde). Falls das nicht reicht: externer Anstoß über
+  `workflow_dispatch` (z.B. cron-job.org mit Token).
 - GitHub kann Cron-Läufe verzögern; geplante Workflows werden nach 60 Tagen ohne Repo-Aktivität deaktiviert (die täglichen Commits von `stats.json` halten es aktiv).
 - Seitenaufbau von wbm.de kann sich ändern: Bot bricht mit Fehler ab, wenn keine Angebote gefunden werden.
 

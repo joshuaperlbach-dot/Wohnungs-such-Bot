@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14161a">
+<title>Wohnungen</title>
+<style>
+  :root {
+    --bg: #f4f3ef; --card: #ffffff; --ink: #1c1d21; --muted: #6b6e76; --line: #e3e1da;
+    --star: #c98a00; --chip: #eeece6;
+    --sent: #1f8f4e; --sent-ink: #ffffff;
+    --idle: #d9d8d3; --idle-ink: #3b3d44;
+    --late: #dcc3be; --late-ink: #5a2f29;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a; --card: #1e2127; --ink: #eceae4; --muted: #9a9da6; --line: #2d3139;
+      --star: #f0b429; --chip: #2a2e36;
+      --sent: #2aa55d; --sent-ink: #06170d;
+      --idle: #3a3e47; --idle-ink: #d5d6da;
+      --late: #5b3f3c; --late-ink: #f1d3ce;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  button { font: inherit; color: inherit; border: 0; cursor: pointer; }
+  header { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 12px 16px 10px;
+           padding-top: max(12px, env(safe-area-inset-top)); border-bottom: 1px solid var(--line); }
+  h1 { margin: 0; font-size: 20px; }
+  #status { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  #status.stale { color: var(--late-ink); background: var(--late); display: inline-block;
+                  padding: 2px 8px; border-radius: 8px; }
+  .bar { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .seg { background: var(--chip); border-radius: 999px; padding: 7px 13px; font-size: 14px; }
+  .seg[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .gap { flex: 1; }
+  main { padding: 12px 16px 40px; max-width: 720px; margin: 0 auto; }
+  .card { background: var(--card); border-radius: 14px; margin-bottom: 12px; overflow: hidden;
+          border: 1px solid var(--line); }
+  .card .tap { display: flex; gap: 12px; padding: 12px; width: 100%; text-align: left; background: none; }
+  .thumb { width: 92px; height: 92px; border-radius: 10px; background: var(--chip) center/cover no-repeat;
+           flex: none; display: grid; place-items: center; color: var(--muted); font-size: 12px; }
+  .info { min-width: 0; flex: 1; }
+  .stars { color: var(--star); letter-spacing: 1px; font-size: 15px; }
+  .stars small { color: var(--muted); letter-spacing: 0; margin-left: 6px; }
+  .main-line { font-weight: 650; margin: 2px 0; font-variant-numeric: tabular-nums; }
+  .sub { color: var(--muted); font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .req { display: block; width: calc(100% - 24px); margin: 0 12px 12px; padding: 11px 12px; border-radius: 10px;
+         font-weight: 600; font-size: 15px; background: var(--idle); color: var(--idle-ink); }
+  .req.late { background: var(--late); color: var(--late-ink); }
+  .req.sent { background: var(--sent); color: var(--sent-ink); }
+  .req small { font-weight: 400; opacity: .85; margin-left: 6px; }
+  .empty { color: var(--muted); text-align: center; padding: 48px 12px; }
+
+  dialog { border: 0; padding: 0; margin: 0; width: 100%; max-width: 100%; height: 100%; max-height: 100%;
+           background: var(--bg); color: var(--ink); }
+  dialog::backdrop { background: rgba(0, 0, 0, .5); }
+  .sheet { max-width: 720px; margin: 0 auto; padding-bottom: 110px; }
+  .close { position: fixed; top: max(10px, env(safe-area-inset-top)); right: 12px; z-index: 3; width: 40px;
+           height: 40px; border-radius: 50%; background: rgba(0, 0, 0, .55); color: #fff; font-size: 20px; }
+  .gallery { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; background: var(--chip);
+             min-height: 120px; }
+  .gallery img { width: 100%; flex: none; scroll-snap-align: center; aspect-ratio: 4 / 3; object-fit: cover;
+                 display: block; }
+  .gallery.many img { width: 88%; margin-right: 4px; }
+  .body { padding: 14px 16px; }
+  .body h2 { font-size: 19px; margin: 4px 0 2px; overflow-wrap: anywhere; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+  .chip { background: var(--chip); border-radius: 8px; padding: 5px 9px; font-size: 14px; }
+  h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 22px 0 8px; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  td { padding: 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td:last-child { text-align: right; }
+  .part { display: grid; grid-template-columns: 108px 1fr 54px; gap: 8px; align-items: center;
+          font-size: 14px; margin: 5px 0; font-variant-numeric: tabular-nums; }
+  .track { height: 7px; border-radius: 4px; background: var(--chip); overflow: hidden; }
+  .fill { height: 100%; background: var(--star); border-radius: 4px; }
+  .part span:last-child { text-align: right; color: var(--muted); }
+  .text { white-space: pre-line; overflow-wrap: anywhere; }
+  .foot { position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg); border-top: 1px solid var(--line);
+          padding: 10px 16px max(10px, env(safe-area-inset-bottom)); }
+  .foot .in { max-width: 720px; margin: 0 auto; display: flex; gap: 8px; }
+  .foot .req { margin: 0; width: auto; flex: 1; }
+  .link { flex: 1; text-align: center; padding: 11px 12px; border-radius: 10px; background: var(--ink);
+          color: var(--bg); font-weight: 600; text-decoration: none; font-size: 15px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Wohnungen <span id="count"></span></h1>
+  <div id="status">lädt …</div>
+  <div class="bar">
+    <button class="seg" data-min="0">Alle</button>
+    <button class="seg" data-min="3">ab ★3</button>
+    <button class="seg" data-min="4">ab ★4</button>
+    <span class="gap"></span>
+    <button class="seg" id="sort"></button>
+  </div>
+</header>
+<main id="list"></main>
+<dialog id="detail"></dialog>
+
+<script>
+"use strict";
+const HOUR = 3600e3;
+const LATE_AFTER = 2 * HOUR;          // rötlich: so lange online und keine Anfrage
+const STALE_AFTER = 45 * 60e3;        // Warnung: Bot hat so lange nichts aktualisiert
+let offers = {}, updated = null, minStars = 0, newestFirst = false, openKey = null;
+
+// Eigene Markierungen ("von Hand angefragt") bleiben nur auf diesem Gerät gespeichert.
+function loadMarks() {
+  try { return JSON.parse(localStorage.getItem("marks") || "{}"); } catch (e) { return {}; }
+}
+function saveMarks(m) {
+  try { localStorage.setItem("marks", JSON.stringify(m)); } catch (e) { /* privater Modus */ }
+}
+let marks = loadMarks();
+
+const el = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+};
+const safeUrl = u => (typeof u === "string" && /^https:\/\//.test(u)) ? u : null;
+const num = (v, digits = 0) => v == null ? "?" :
+  Number(v).toLocaleString("de-DE", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+const rooms = v => v == null ? "?" : String(v).replace(".", ",");
+function ago(iso) {
+  const ms = Date.now() - new Date(iso).getTime();
+  if (!isFinite(ms)) return "";
+  if (ms < 90e3) return "gerade eben";
+  if (ms < HOUR) return `vor ${Math.round(ms / 60e3)} Min`;
+  if (ms < 36 * HOUR) return `vor ${Math.round(ms / HOUR)} Std`;
+  return `vor ${Math.round(ms / (24 * HOUR))} Tagen`;
+}
+const COMPANY = { wbm: "WBM", degewo: "degewo", howoge: "HOWOGE", gewobag: "Gewobag", gesobau: "GESOBAU",
+                  stadtundland: "Stadt und Land", berlinovo: "Berlinovo" };
+
+function state(key, o) {
+  if (o.requested === "gesendet" || o.requested === "unklar") {
+    return { cls: "sent", label: "Angefragt", note: o.requested === "unklar" ? "vom Bot, ohne Bestätigung" : "vom Bot",
+             locked: true };
+  }
+  if (marks[key]) return { cls: "sent", label: "Angefragt", note: "von Hand" };
+  const online = Date.now() - new Date(o.online_since).getTime();
+  if (online > LATE_AFTER) return { cls: "late", label: "Nicht angefragt", note: `online ${ago(o.online_since).replace("vor ", "seit ")}` };
+  return { cls: "", label: "Nicht angefragt", note: "" };
+}
+
+function reqButton(key, o) {
+  const s = state(key, o);
+  const b = el("button", "req " + s.cls, s.label);
+  if (s.note) b.append(el("small", null, s.note));
+  b.addEventListener("click", ev => {
+    ev.stopPropagation();
+    if (s.locked) return;
+    if (marks[key]) delete marks[key]; else marks[key] = { at: new Date().toISOString(), offer: o };
+    saveMarks(marks);
+    render();
+  });
+  return b;
+}
+
+function all() {
+  // Von Hand angefragte Angebote bleiben sichtbar, auch wenn der Bot sie schon aussortiert hat.
+  const merged = {};
+  for (const [k, m] of Object.entries(marks)) if (m && m.offer) merged[k] = m.offer;
+  return Object.entries({ ...merged, ...offers });
+}
+
+function render() {
+  const items = all().filter(([, o]) => (o.stars || 0) >= minStars);
+  items.sort(([, a], [, b]) => newestFirst
+    ? new Date(b.online_since) - new Date(a.online_since)
+    : (b.points ?? b.stars * 20) - (a.points ?? a.stars * 20) || new Date(b.online_since) - new Date(a.online_since));
+  document.getElementById("count").textContent = `(${items.length})`;
+  document.querySelectorAll("[data-min]").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.min === minStars)));
+  document.getElementById("sort").textContent = newestFirst ? "Neueste zuerst" : "Beste zuerst";
+  const status = document.getElementById("status");
+  if (updated) {
+    const stale = Date.now() - new Date(updated).getTime() > STALE_AFTER;
+    status.textContent = stale ? `Bot zuletzt gelaufen ${ago(updated)} – läuft er noch?` : `aktualisiert ${ago(updated)}`;
+    status.className = stale ? "stale" : "";
+  }
+  const list = document.getElementById("list");
+  list.replaceChildren();
+  if (!items.length) list.append(el("div", "empty", updated ? "Gerade keine passenden Angebote." : "lädt …"));
+  for (const [key, o] of items) {
+    const card = el("article", "card");
+    const tap = el("button", "tap");
+    const thumb = el("div", "thumb");
+    const img = safeUrl((o.images || [])[0]);
+    if (img) thumb.style.backgroundImage = `url("${encodeURI(img)}")`; else thumb.textContent = "kein Bild";
+    const info = el("div", "info");
+    const stars = el("div", "stars", "★".repeat(o.stars || 0) + "☆".repeat(5 - (o.stars || 0)));
+    if (o.points != null) stars.append(el("small", null, `${o.points} Punkte`));
+    info.append(stars,
+      el("div", "main-line", `${rooms(o.rooms)} Zi · ${num(o.size)} m² · ${num(o.price)} € warm`),
+      el("div", "sub", [o.address, o.bezirk].filter(Boolean).join(" · ")),
+      el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
+    tap.append(thumb, info);
+    tap.addEventListener("click", () => openDetail(key));
+    card.append(tap, reqButton(key, o));
+    list.append(card);
+  }
+  if (openKey) drawDetail();
+}
+
+function row(table, label, value) {
+  if (value == null || value === "" || value === "?") return;
+  const tr = el("tr");
+  tr.append(el("td", null, label), el("td", null, value));
+  table.append(tr);
+}
+
+function drawDetail() {
+  const dlg = document.getElementById("detail");
+  const o = Object.fromEntries(all())[openKey];
+  if (!o) { dlg.close(); openKey = null; return; }
+  const sheet = el("div", "sheet");
+  const close = el("button", "close", "✕");
+  close.setAttribute("aria-label", "Schließen");
+  close.addEventListener("click", () => dlg.close());
+  const imgs = (o.images || []).map(safeUrl).filter(Boolean);
+  const gallery = el("div", "gallery" + (imgs.length > 1 ? " many" : ""));
+  for (const src of imgs) {
+    const i = el("img");
+    i.loading = "lazy"; i.alt = ""; i.referrerPolicy = "no-referrer"; i.src = src;
+    i.addEventListener("error", () => i.remove());
+    gallery.append(i);
+  }
+  const body = el("div", "body");
+  const stars = el("div", "stars", "★".repeat(o.stars || 0) + "☆".repeat(5 - (o.stars || 0)));
+  if (o.points != null) stars.append(el("small", null, `${o.points} von 100 Punkten`));
+  body.append(stars, el("h2", null, o.title || "Wohnung"),
+    el("div", "sub", [o.address, o.bezirk].filter(Boolean).join(" · ")));
+  const chips = el("div", "chips");
+  for (const bit of String(o.why || "").split(", ").filter(Boolean)) chips.append(el("span", "chip", bit));
+  body.append(chips);
+
+  body.append(el("h3", null, "Eckdaten"));
+  const t = el("table");
+  row(t, "Zimmer", rooms(o.rooms));
+  row(t, "Wohnfläche", o.size != null ? `${num(o.size, 1)} m²` : null);
+  row(t, "Warmmiete", o.price != null ? `${num(o.price, 2)} €` : null);
+  row(t, "Kaltmiete", o.cold != null ? `${num(o.cold, 2)} €` : null);
+  row(t, "Etage", o.floor == null ? null : (o.floor === 0 ? "EG" : `${o.floor}.`) + (o.levels ? ` von ${o.levels}` : ""));
+  row(t, "Baujahr", o.year != null ? String(o.year) : null);
+  row(t, "Gesellschaft", COMPANY[o.company] || o.company);
+  row(t, "Online seit", o.online_since ? new Date(o.online_since).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" }) : null);
+  if (o.requested_at) row(t, "Anfrage raus", new Date(o.requested_at).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" }));
+  body.append(t);
+
+  if (o.parts && Object.keys(o.parts).length) {
+    body.append(el("h3", null, "So kommen die Sterne zustande"));
+    for (const [name, [got, max]] of Object.entries(o.parts).sort((a, b) => b[1][1] - a[1][1])) {
+      const p = el("div", "part");
+      const track = el("div", "track"), fill = el("div", "fill");
+      fill.style.width = `${max ? Math.round(100 * got / max) : 0}%`;
+      track.append(fill);
+      p.append(el("span", null, name), track, el("span", null, `${num(got)} / ${max}`));
+      body.append(p);
+    }
+  }
+  if (o.text) body.append(el("h3", null, "Beschreibung"), el("div", "text", o.text));
+
+  const foot = el("div", "foot"), inner = el("div", "in");
+  const url = safeUrl(o.url);
+  if (url) {
+    const a = el("a", "link", "Zur Anzeige");
+    a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    inner.append(a);
+  }
+  inner.append(reqButton(openKey, o));
+  foot.append(inner);
+  sheet.append(close, gallery, body, foot);
+  dlg.replaceChildren(sheet);
+}
+
+function openDetail(key) {
+  openKey = key;
+  drawDetail();
+  const dlg = document.getElementById("detail");
+  if (!dlg.open) dlg.showModal();
+  dlg.scrollTop = 0;
+}
+document.getElementById("detail").addEventListener("close", () => { openKey = null; });
+
+async function refresh() {
+  try {
+    const r = await fetch("offers.json?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    offers = data.offers || {};
+    updated = data.updated || null;
+  } catch (e) {
+    document.getElementById("status").textContent = "Liste konnte nicht geladen werden.";
+  }
+  render();
+}
+
+document.querySelectorAll("[data-min]").forEach(b => b.addEventListener("click", () => { minStars = +b.dataset.min; render(); }));
+document.getElementById("sort").addEventListener("click", () => { newestFirst = !newestFirst; render(); });
+refresh();
+setInterval(refresh, 120e3);
+document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+</script>
+</body>
+</html>

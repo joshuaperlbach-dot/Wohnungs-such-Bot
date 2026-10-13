@@ -24,6 +24,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 
+import offers
 import rating
 
 URL = "https://www.wbm.de/wohnungen-berlin/angebote/"
@@ -222,6 +223,27 @@ def parse_wbs_required(expose_html):
     return m.group(1).lower() == "ja" if m else None
 
 
+def expose_details(html, base):
+    """Titel, Adresse, Beschreibung und Bilder aus dem Exposé (für die Handy-Ansicht)."""
+    soup = BeautifulSoup(html, "html.parser")
+    h1 = soup.find("h1")
+    intro = soup.select_one(".openimmo-detail__intro-wrapper-col-1")
+    lines = [x for x in intro.get_text("\n", strip=True).split("\n")] if intro else []
+    lines = [x for x in lines if x != "Wohnungsdetails"]
+    address = next((x for x in lines if re.search(r"\d{5}\s+Berlin", x)), "")
+    images = []
+    for img in soup.find_all("img"):
+        src = img.get("src") or img.get("data-src") or ""
+        if "tx_openimmo" in src and "/images/" in src and urljoin(base, src) not in images:
+            images.append(urljoin(base, src))
+    return {
+        "title": h1.get_text(" ", strip=True) if h1 else "",
+        "address": address,
+        "text": "\n".join(x for x in lines if x != address),
+        "images": images[:12],
+    }
+
+
 def send_request(listing, person, send, html=None):
     """Besichtigungsanfrage für ein Angebot. Gibt (status, info) zurück."""
     html = html or fetch_expose(listing["url"])
@@ -247,6 +269,23 @@ def send_request(listing, person, send, html=None):
         r"vielen dank|erfolgreich|wurde.*(gesendet|übermittelt)", resp.text, re.I
     )
     return ("gesendet" if ok else "unklar"), f"HTTP {resp.status_code}"
+
+
+def app_offer(l, expose_html, rated, status):
+    """Ein Treffer so, wie ihn die Handy-Ansicht (docs/index.html) braucht."""
+    d = expose_details(expose_html, l["url"])
+    text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
+    return {
+        "source": "wbm", "company": "wbm", "url": l["url"],
+        "title": d["title"], "address": d["address"], "text": d["text"], "images": d["images"],
+        "bezirk": next((x for x in ALLOWED_DISTRICTS + OTHER_DISTRICTS if l["text"].startswith(x)), ""),
+        "rooms": l["rooms"], "price": l["price"], "cold": l.get("cold"),
+        "size": rating.parse_size(l["text"]), "floor": rating.parse_floor(text),
+        "year": rating.parse_year(text),
+        "stars": getattr(rated, "stars", rated[0].count("★")), "why": rated[1],
+        "points": getattr(rated, "points", None), "parts": getattr(rated, "parts", None),
+        "requested": status if status in offers.REQUESTED else None,
+    }
 
 
 def notify(msg):
@@ -316,6 +355,7 @@ def main():
     stats["scanned"] = sorted(set(stats["scanned"]) | {l["url"] for l in listings})
 
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
+    store = offers.load()
     exposes, rated = {}, {}
 
     def expose(l):
@@ -385,6 +425,11 @@ def main():
         elif matches_strict(l):
             line += f"\nKeine Anfrage (unter {MIN_STARS_SEND} Sternen)"
         notify(line)
+        try:  # Handy-Ansicht darf den Bot nie stoppen
+            offers.add(store, l["url"], app_offer(l, expose(l), rate(l), status), now)
+        except Exception as e:
+            print(f"Handy-Ansicht: {e}", file=sys.stderr)
+    offers.save(store, now)
     save_seen(seen)
     daily_summary(stats, now)
     STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))

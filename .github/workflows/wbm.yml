@@ -2,7 +2,7 @@ name: WBM-Bot
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # etwa alle 10 Minuten (GitHub kann verzögern)
+    - cron: "3-59/10 * * * *"   # etwa alle 10 Minuten (GitHub kann verzögern)
   workflow_dispatch: {}       # manuell startbar
 
 permissions:
@@ -40,5 +40,5 @@ jobs:
         run: |
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
-          for f in seen.json seen_ibw.json stats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in seen.json seen_ibw.json stats.json docs/offers.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --cached --quiet || (git commit -m "seen aktualisiert" && git pull --rebase && git push)

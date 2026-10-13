@@ -4,7 +4,11 @@ import tempfile
 from pathlib import Path
 from unittest import mock
 
+import offers
 import wbm_bot
+
+offers.FILE = Path(tempfile.mkdtemp()) / "offers.json"  # Tests schreiben nie in die echte Liste
+
 from wbm_bot import parse_listings, matches, matches_strict, build_payload, send_request
 
 P = "tx_powermail_pi1[field]"
@@ -471,6 +475,83 @@ def test_ibw_main_first_run_then_only_new():
                 except SystemExit as e:
                     assert e.code == 1
             assert len(msgs) == 3 and "nicht sauber lesbar" in msgs[2], msgs
+
+
+def test_offers_list_for_app():
+    from datetime import datetime, timedelta, timezone
+    now = datetime(2026, 10, 13, 18, 0, tzinfo=timezone.utc)
+    hours = lambda h: offers.iso(now - timedelta(hours=h))
+    store = {"offers": {}}
+    offers.add(store, "neu", {"title": "Neu", "online_since": hours(1)}, now)
+    offers.add(store, "alt", {"title": "Alt", "online_since": hours(25)}, now)
+    offers.add(store, "alt-angefragt", {"title": "Alt, angefragt", "online_since": hours(25), "requested": "gesendet"}, now)
+    offers.add(store, "ohne-zeit", {"title": "Ohne Zeit", "online_since": None}, now)
+    # spätere Aktualisierung ohne Status löscht die Anfrage nicht und verschiebt "online seit" nicht
+    offers.add(store, "alt-angefragt", {"title": "Alt, angefragt", "stars": 4, "requested": None,
+                                        "online_since": hours(0)}, now)
+    old_file = offers.FILE
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        try:
+            offers.save(store, now)
+            loaded = offers.load()
+        finally:
+            offers.FILE = old_file
+    assert sorted(loaded["offers"]) == ["alt-angefragt", "neu", "ohne-zeit"], sorted(loaded["offers"])
+    a = loaded["offers"]["alt-angefragt"]
+    assert a["requested"] == "gesendet" and a["stars"] == 4 and a["online_since"] == hours(25) and a["requested_at"]
+    assert loaded["offers"]["ohne-zeit"]["online_since"] == offers.iso(now) and loaded["updated"] == offers.iso(now)
+
+
+def test_bots_fill_app_list():
+    import ibw_bot
+    expose = """<h1>Schöne 2 Zimmer in Mitte</h1>
+      <div class="openimmo-detail__intro-wrapper-col-1"><h2>Wohnungsdetails</h2>
+      <p>Teststrasse 9, 10115 Berlin</p><p>Helle Wohnung mit Balkon.</p><p>Zweiter Absatz.</p></div>
+      <img src="/_assets/logo.svg"><img src="/fileadmin/user_upload/tx_openimmo/c/images/1-a.jpg">
+      <img src="/fileadmin/user_upload/tx_openimmo/c/images/1-a.jpg"><img data-src="/fileadmin/user_upload/tx_openimmo/c/images/1-b.jpg">
+      <p>Etage: 3 Baujahr: 1910</p>""" + FORM_HTML
+    d = wbm_bot.expose_details(expose, "https://www.wbm.de/x/")
+    assert d["title"] == "Schöne 2 Zimmer in Mitte" and d["address"] == "Teststrasse 9, 10115 Berlin", d
+    assert d["text"] == "Helle Wohnung mit Balkon.\nZweiter Absatz." and len(d["images"]) == 2, d
+    assert d["images"][0] == "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/c/images/1-a.jpg"
+
+    cards = "<div class='list'>" + card("top", "Schöne 2 Zimmer", "800,00", "60", 2) \
+        + card("mau", "Schöne 2 Zimmer", "800,00", "60", 2) + "</div>"
+    stars = {"top": 5, "mau": 2}
+    env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
+    pages = {1: ibw_card(21) + ibw_card(22, wbs="erforderlich"), 2: ""}
+
+    def get(url, params=None, **kw):
+        if url == ibw_bot.URL:
+            return mock.Mock(text=pages.get(params["page"], ""), status_code=200)
+        return mock.Mock(text=cards if url == wbm_bot.URL else expose, status_code=200)
+
+    old_file = offers.FILE
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        wbm_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen.json", Path(td) / "stats.json"
+        ibw_bot.SEEN_FILE = Path(td) / "seen_ibw.json"
+        try:
+            with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
+                    mock.patch("wbm_bot.HTTP.post", return_value=mock.Mock(status_code=200, text="Vielen Dank")), \
+                    mock.patch("wbm_bot.time.sleep"), mock.patch("ibw_bot.time.sleep"), mock.patch("wbm_bot.notify"), \
+                    mock.patch("wbm_bot.rating.rate_listing",
+                               lambda l, text="": ("★" * stars[l["url"].split("/")[-2]], "gut")):
+                wbm_bot.main()
+                ibw_bot.main()
+                ibw_bot.main()
+            o = offers.load()
+        finally:
+            offers.FILE = old_file
+    top, mau = (o["offers"][f"https://www.wbm.de/wohnungen-berlin/angebote/details/{k}/"] for k in ("top", "mau"))
+    assert top["requested"] == "gesendet" and top["stars"] == 5 and top["floor"] == 3 and top["year"] == 1910, top
+    assert mau.get("requested") is None and mau["stars"] == 2 and mau["bezirk"] == "Mitte" and mau["price"] == 800.0, mau
+    assert top["title"] == "Schöne 2 Zimmer in Mitte" and len(top["images"]) == 2 and top["online_since"]
+    i = o["offers"]["ibw-21"]
+    assert "ibw-22" not in o["offers"] and o["ibw_seeded"] is True, sorted(o["offers"])  # 22 braucht WBS
+    assert i["company"] == "degewo" and i["stars"] >= 1 and i["parts"]["Kiez"][1] == 16 and i["url"] == "https://example.org/21", i
+    assert i["address"] == "Teststraße 9, 10439 Berlin" and i["images"] == []
 
 
 if __name__ == "__main__":
