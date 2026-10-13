@@ -1,0 +1,36 @@
+name: WBM-Bot
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # etwa alle 10 Minuten (GitHub kann verzögern)
+  workflow_dispatch: {}       # manuell startbar
+
+permissions:
+  contents: write             # damit seen.json gespeichert werden kann
+
+concurrency:
+  group: wbm-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Bot ausführen
+        env:
+          WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = wirklich senden, sonst Trockenlauf
+          WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python wbm_bot.py
+      - name: Gesehene Angebote speichern
+        run: |
+          git config user.name "wbm-bot"
+          git config user.email "wbm-bot@users.noreply.github.com"
+          git add seen.json
+          git diff --cached --quiet || (git commit -m "seen aktualisiert" && git push)
