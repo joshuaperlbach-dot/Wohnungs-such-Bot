@@ -376,6 +376,9 @@ def test_ibw_parse_and_filter():
     assert (a["rooms"], a["price"], a["cold"], a["size"], a["wbs"], a["floor"]) == (2, 750.0, 600.0, 58.25, False, 2), a
     assert a["coord"] == (52.548, 13.419) and a["company"] == "degewo" and a["url"] == "https://example.org/1"
     assert ls[5]["price"] == 1074.60 and ls[1]["wbs"] is True
+    # falsche Koordinaten von der Seite (weit außerhalb Berlins) zählen als unbekannt
+    wrong = ibw_bot.parse_page(ibw_card(9, lat="41.0", lon="-12.5"))[0]
+    assert wrong["coord"] is None and "km zur Arbeit" not in ibw_bot.rate(wrong)[2]
     assert [l["id"] for l in ls if ibw_bot.matches(l)] == [1, 8]
     n, stars, why = ibw_bot.rate(a)  # Prenzlauer Berg, nah an der Ringbahn, Balkon
     assert n >= 4 and "Ringbahn nah" in why and "Balkon" in why, (stars, why)

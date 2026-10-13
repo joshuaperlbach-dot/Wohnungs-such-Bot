@@ -97,6 +97,9 @@ def parse_item(item, text):
         coord = (float(addr["lat"]), float(addr["lon"]))
     except (KeyError, TypeError, ValueError):
         coord = None
+    # Manche Angebote haben falsche Koordinaten: außerhalb Berlins = unbekannt
+    if coord and not (52.3 <= coord[0] <= 52.7 and 13.0 <= coord[1] <= 13.8):
+        coord = None
     return {
         "id": int(item["id"]),
         "url": item.get("deeplink") or URL,
