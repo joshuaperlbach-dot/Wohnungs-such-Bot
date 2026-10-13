@@ -614,8 +614,8 @@ zu berücksichtigen. Die Auswahl der möglichen Teilnehmer erfolgte auf Basis de
     o = store["offers"]
     assert o["a"]["reply"] == "absage" and o["b"]["reply"] == "einladung" and o["a"]["reply_at"]
     assert "reply" not in o["c"] and "reply" not in o["d"]
-    assert len(notes) == 2 and notes[0].startswith("EINLADUNG") and "Teststraße 5" in notes[0], notes
-    assert "nicht zugeordnet" in notes[1]
+    # Push nur für die Einladung; der Newsletter ohne Bezug zu einem Angebot bleibt still
+    assert len(notes) == 1 and notes[0].startswith("EINLADUNG") and "Teststraße 5" in notes[0], notes
     assert not any("Mustermann" in n or "Quartier" in n for n in notes)  # nie Mail-Inhalt weitergeben
     assert len(seen) == 3 and all(len(x) == 16 for x in seen)
     assert mail_check.process([absage, einladung, sonstiges], store, seen, now) == []  # jede Mail nur einmal
@@ -638,7 +638,7 @@ zu berücksichtigen. Die Auswahl der möglichen Teilnehmer erfolgte auf Basis de
             with mock.patch("mail_check.fetch_messages", return_value=[sonstiges]):
                 mail_check.main()
                 mail_check.main()
-            assert len(msgs) == 2 and len(json.loads(mail_check.SEEN_FILE.read_text())) == 1, msgs
+            assert len(msgs) == 1 and len(json.loads(mail_check.SEEN_FILE.read_text())) == 1, msgs
 
 
 if __name__ == "__main__":

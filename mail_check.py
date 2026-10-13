@@ -115,7 +115,7 @@ def process(messages, store, seen, now):
             {"at": offers.iso(now), "kind": kind, "matched": bool(key), "chars": len(text)}]
         if kind == "einladung":
             notes.append(f"EINLADUNG zur Besichtigung: {where}\nSchau in deine Mails und bestätige den Termin!")
-        elif kind == "antwort":
+        elif kind == "antwort" and key:  # sonstige Mails ohne Bezug zu einem Angebot: kein Push
             notes.append(f"Antwort einer Wohnungsgesellschaft zu: {where}\nBitte in den Mails nachsehen.")
     return notes
 
