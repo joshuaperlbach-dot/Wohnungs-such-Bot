@@ -4,6 +4,7 @@ Beide Bots tragen hier ihre passenden Angebote ein, docs/index.html zeigt sie an
 Nicht angefragte Angebote fliegen nach einem Tag raus, angefragte bleiben 30 Tage.
 """
 import json
+import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -58,5 +59,11 @@ def save(store, now):
         if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_UNREQUESTED)
     }
     store["updated"] = iso(now)
+    # Für die Anzeige in der App: lief der Bot von selbst (Zeitplan) oder von Hand?
+    event = os.environ.get("GITHUB_EVENT_NAME")
+    if event == "schedule":
+        store["last_auto"] = iso(now)
+    elif event:
+        store["last_manual"] = iso(now)
     FILE.parent.mkdir(exist_ok=True)
     FILE.write_text(json.dumps(store, indent=1, ensure_ascii=False), encoding="utf-8")

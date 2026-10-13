@@ -493,6 +493,14 @@ def test_offers_list_for_app():
     with tempfile.TemporaryDirectory() as td:
         offers.FILE = Path(td) / "docs" / "offers.json"
         try:
+            with mock.patch.dict(os.environ, {"GITHUB_EVENT_NAME": "schedule"}):
+                offers.save(store, now)
+            later = now + timedelta(minutes=10)
+            with mock.patch.dict(os.environ, {"GITHUB_EVENT_NAME": "workflow_dispatch"}):
+                offers.save(offers.load(), later)
+            loaded = offers.load()
+            # automatischer und händischer Lauf werden getrennt gemerkt
+            assert loaded["last_auto"] == offers.iso(now) and loaded["last_manual"] == offers.iso(later), loaded
             offers.save(store, now)
             loaded = offers.load()
         finally:

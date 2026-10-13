@@ -38,6 +38,23 @@
   #status { color: var(--muted); font-size: 13px; margin-top: 2px; }
   #status.stale { color: var(--late-ink); background: var(--late); display: inline-block;
                   padding: 2px 8px; border-radius: 8px; }
+  .top { display: flex; align-items: center; gap: 10px; }
+  .top h1 { flex: 1; }
+  #run { background: var(--ink); color: var(--bg); border-radius: 999px; padding: 8px 14px; font-size: 14px;
+         font-weight: 600; white-space: nowrap; }
+  #run:disabled { background: var(--chip); color: var(--muted); }
+  #runs { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  #runs.never { color: var(--late-ink); }
+  #token { width: min(92vw, 420px); height: fit-content; border-radius: 16px; padding: 18px; margin: auto;
+           border: 1px solid var(--line); }
+  #token h2 { margin: 0 0 8px; font-size: 18px; }
+  #token p { color: var(--muted); font-size: 14px; margin: 6px 0; }
+  #token input { width: 100%; padding: 11px; border-radius: 10px; border: 1px solid var(--line); margin: 10px 0;
+                 background: var(--card); color: var(--ink); font: inherit; }
+  #token .row { display: flex; gap: 8px; }
+  #token .row button { flex: 1; padding: 11px; border-radius: 10px; background: var(--chip); font-weight: 600; }
+  #token .row .ok { background: var(--ink); color: var(--bg); }
+  #token a { color: inherit; }
   .bar { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
   .seg { background: var(--chip); border-radius: 999px; padding: 7px 13px; font-size: 14px; }
   .seg[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
@@ -95,8 +112,12 @@
 </head>
 <body>
 <header>
-  <h1>Wohnungen <span id="count"></span></h1>
+  <div class="top">
+    <h1>Wohnungen <span id="count"></span></h1>
+    <button id="run">Bot starten</button>
+  </div>
   <div id="status">lädt …</div>
+  <div id="runs"></div>
   <div class="bar">
     <button class="seg" data-min="0">Alle</button>
     <button class="seg" data-min="3">ab ★3</button>
@@ -107,13 +128,28 @@
 </header>
 <main id="list"></main>
 <dialog id="detail"></dialog>
+<dialog id="token">
+  <h2>Bot von hier starten</h2>
+  <p>Dafür braucht die App einmalig einen GitHub-Schlüssel (Token), der nur diesen Bot starten darf.
+     Er bleibt auf diesem Gerät gespeichert.</p>
+  <p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Token bei GitHub erstellen</a>:
+     nur das Repository „Wohnungs-such-Bot“, Berechtigung „Actions: Read and write“.</p>
+  <input id="token-input" type="password" autocomplete="off" placeholder="github_pat_…">
+  <p id="token-msg"></p>
+  <div class="row">
+    <button id="token-cancel">Abbrechen</button>
+    <button id="token-save" class="ok">Speichern und starten</button>
+  </div>
+</dialog>
 
 <script>
 "use strict";
 const HOUR = 3600e3;
 const LATE_AFTER = 2 * HOUR;          // rötlich: so lange online und keine Anfrage
 const STALE_AFTER = 45 * 60e3;        // Warnung: Bot hat so lange nichts aktualisiert
-let offers = {}, updated = null, minStars = 0, newestFirst = false, openKey = null;
+const DISPATCH = "https://api.github.com/repos/joshuaperlbach-dot/Wohnungs-such-Bot/actions/workflows/wbm.yml/dispatches";
+let offers = {}, updated = null, lastAuto = null, lastManual = null, startedAt = 0;
+let minStars = 0, newestFirst = false, openKey = null;
 
 // Eigene Markierungen ("von Hand angefragt") bleiben nur auf diesem Gerät gespeichert.
 function loadMarks() {
@@ -191,6 +227,16 @@ function render() {
     status.textContent = stale ? `Bot zuletzt gelaufen ${ago(updated)} – läuft er noch?` : `aktualisiert ${ago(updated)}`;
     status.className = stale ? "stale" : "";
   }
+  const runs = document.getElementById("runs");
+  if (updated) {
+    runs.textContent = (lastAuto ? `Automatisch zuletzt ${ago(lastAuto)}` : "Noch nie automatisch gelaufen")
+      + (lastManual ? ` · von Hand zuletzt ${ago(lastManual)}` : "");
+    runs.className = lastAuto ? "" : "never";
+  }
+  const run = document.getElementById("run");
+  const waiting = Date.now() - startedAt < 150e3;   // ein Lauf dauert etwa 2 Minuten
+  run.disabled = waiting;
+  run.textContent = waiting ? "läuft …" : "Bot starten";
   const list = document.getElementById("list");
   list.replaceChildren();
   if (!items.length) list.append(el("div", "empty", updated ? "Gerade keine passenden Angebote." : "lädt …"));
@@ -302,6 +348,10 @@ async function refresh() {
     const data = await r.json();
     offers = data.offers || {};
     updated = data.updated || null;
+    lastAuto = data.last_auto || null;
+    lastManual = data.last_manual || null;
+    // Neue Daten nach dem Start von hier: Lauf ist durch
+    if (startedAt && updated && new Date(updated).getTime() > startedAt) startedAt = 0;
   } catch (e) {
     document.getElementById("status").textContent = "Liste konnte nicht geladen werden.";
   }
@@ -310,6 +360,52 @@ async function refresh() {
 
 document.querySelectorAll("[data-min]").forEach(b => b.addEventListener("click", () => { minStars = +b.dataset.min; render(); }));
 document.getElementById("sort").addEventListener("click", () => { newestFirst = !newestFirst; render(); });
+// ---- Bot von der App aus starten (GitHub "workflow_dispatch")
+function getToken() { try { return localStorage.getItem("gh_token") || ""; } catch (e) { return ""; } }
+function setToken(t) { try { t ? localStorage.setItem("gh_token", t) : localStorage.removeItem("gh_token"); } catch (e) {} }
+const tokenDlg = document.getElementById("token"), tokenMsg = document.getElementById("token-msg");
+
+async function startBot() {
+  const token = getToken();
+  if (!token) { tokenMsg.textContent = ""; tokenDlg.showModal(); return; }
+  const run = document.getElementById("run");
+  run.disabled = true; run.textContent = "startet …";
+  let res = null;
+  try {
+    res = await fetch(DISPATCH, {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + token, "Accept": "application/vnd.github+json",
+                 "X-GitHub-Api-Version": "2022-11-28" },
+      body: JSON.stringify({ ref: "main" }),
+    });
+  } catch (e) { /* kein Netz */ }
+  if (res && res.status === 204) {
+    startedAt = Date.now();
+    render();
+    setTimeout(refresh, 100e3);
+    setTimeout(refresh, 150e3);
+    return;
+  }
+  render();
+  if (res && [401, 403, 404].includes(res.status)) {
+    setToken("");
+    tokenMsg.textContent = `GitHub hat den Token abgelehnt (${res.status}). Bitte neu eingeben.`;
+    tokenDlg.showModal();
+  } else {
+    document.getElementById("status").textContent = "Start hat nicht geklappt" + (res ? ` (${res.status})` : " (kein Netz)") + ".";
+  }
+}
+document.getElementById("run").addEventListener("click", startBot);
+document.getElementById("token-cancel").addEventListener("click", () => tokenDlg.close());
+document.getElementById("token-save").addEventListener("click", () => {
+  const t = document.getElementById("token-input").value.trim();
+  if (!t) { tokenMsg.textContent = "Bitte den Token einfügen."; return; }
+  setToken(t);
+  document.getElementById("token-input").value = "";
+  tokenDlg.close();
+  startBot();
+});
+
 refresh();
 setInterval(refresh, 120e3);
 document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
