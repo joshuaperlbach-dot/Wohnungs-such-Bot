@@ -1,0 +1,68 @@
+# Session Notes: WBM-Wohnungsbot
+
+Stand: 13.10.2026. Zum Weiterarbeiten in Claude Code. Enthält bewusst keine persönlichen Daten.
+
+## Ziel
+Bot für die Wohnungssuche bei der WBM (Wohnungsbaugesellschaft Berlin-Mitte): neue Angebote erkennen,
+nach Kriterien filtern, bei Treffern automatisch eine Besichtigungsanfrage senden und eine
+Push-Meldung mit Sternebewertung und Link schicken. Einmal täglich ein Tagesbericht.
+Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo, Howoge, Stadt und Land).
+
+## Aufbau
+- `wbm_bot.py`: Hauptskript. Angebote von `https://www.wbm.de/wohnungen-berlin/angebote/` parsen,
+  filtern, Anfrage senden, melden, Statistik.
+- `rating.py`: Sternebewertung (1-5) mit Kurzbegründung. Alle Gewichte und Wünsche stehen als Konstanten oben.
+- `test_bot.py`: Tests mit Mocks (`python3 test_bot.py`), kein Netzwerk nötig.
+- `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
+  Committet `seen.json` und `stats.json` zurück ins Repo.
+- `seen.json`: bereits gemeldete/angefragte Angebote (verhindert Doppelanfragen).
+- `stats.json`: Tageszähler (gescannte Angebote, gesendete Anfragen, Tag des letzten Berichts).
+
+## Konfiguration (GitHub, nicht im Code)
+- Secret `WBM_PERSON_JSON`: JSON mit anrede, name, vorname, strasse, plz, ort, email, telefon.
+- Secret `NTFY_TOPIC`: geheimer Topic für Push über ntfy.sh.
+- Variable `WBM_SEND`: `1` = echt senden, sonst Trockenlauf.
+- Repo ist öffentlich (damit Actions-Minuten reichen), deshalb keine personenbezogenen Daten im Code.
+
+## Funktionsweise
+1. Angebotsseite laden, Karten parsen (Container um jeden Link `/angebote/details/`): Preis (Warmmiete),
+   Zimmer, WBS-Flag, Bezirk (steht am Textanfang der Karte).
+2. Benachrichtigen (`matches`): Bezirk nicht ausgeschlossen, Zimmer/Preis passen, kein WBS. Bei unklaren Daten lieber melden.
+3. Automatisch anfragen (`matches_strict`): nur wenn Bezirk sicher passt und alle Daten bekannt sind.
+   Max. 3 Anfragen pro Lauf, nie zweimal dasselbe Angebot (auch nicht bei Fehler/unklar).
+4. Formular: Powermail (TYPO3) im Exposé, POST multipart an `/wohnungen-berlin/angebote/details/`.
+   Versteckte Felder (`__trustedProperties`, `objekt`, `mail[form]`) werden frisch von der Seite gelesen.
+   WBS=nein (`wbsvorhanden`=0), Datenschutz-Häkchen `datenschutzhinweis[]`=1, Honeypot `__hp` leer lassen.
+   Kein Login, kein Upload, kein Captcha beobachtet.
+5. Erfolgserkennung per Text ("Vielen Dank", "erfolgreich", ...). Sonst Status "unklar" (zählt trotzdem als gesendet, wird im Tagesbericht markiert).
+6. Bewertung läuft NACH dem Senden (Geschwindigkeit zuerst) und darf den Bot nie stoppen (try/except).
+7. Tagesbericht ab 20:00 Berliner Zeit, einmal pro Tag.
+
+## Kriterien und Bewertung
+- Filter: 1-2 Zimmer, max. 950 € Warmmiete, ohne WBS.
+  Bezirke: Charlottenburg, Friedrichshain, Kreuzberg, Lichtenberg, Mitte, Neukölln, Pankow, Prenzlauer Berg, Tiergarten, Treptow, Wedding.
+- Preis: bis 750 € volle Punkte, 850 € Wunschgrenze, 950 € Maximum (nur für ansonsten perfekte Wohnungen).
+  Über 850 € höchstens 4 Sterne, außer Punkte >= 88.
+- Aufzug nur ab 3. Stock wichtig (je höher, desto mehr), Garten ersetzt Aufzug.
+- Traumwohnung: 60-70 m², zwei Zimmer (ein kleines, ein großes), Küche, Bad, Balkon, nahe Ringbahn, am liebsten Prenzlauer Berg.
+- Arbeitsweg: Luftlinie zum Moritzplatz (keine echte Fahrzeit).
+- Gewichte (Summe 100): Kosten 25, Lage 15, Ringbahn 10, ÖPNV 5, Bezirk 5, Größe 12, Zimmer 8, Außenbereich 10, Aufzug 10.
+- Sterne ab Punkten: 5 >= 85, 4 >= 70, 3 >= 55, 2 >= 40.
+- Bewusst NICHT bewertet: Lärm (unwichtig, "laut sein können" lässt sich vorher nicht prüfen).
+- Kaltmiete: Obergrenze ca. 900 € kalt, wird nicht geprüft, weil die Seite nur Warmmiete zeigt.
+
+## Bekannte Schwächen / ungetestet
+- Das echte Senden wurde noch nicht gegen die Live-Seite getestet (bisher keine passenden Angebote). Beim ersten echten Treffer Status und Meldung prüfen.
+- Nominatim/Overpass (Adresse, Haltestellen, Ringbahn) aus der Entwicklungsumgebung nicht erreichbar, nur mit Mocks getestet.
+  Die Overpass-Abfrage für die Ringbahn (Relationen S41/S42) ist unverifiziert.
+- Adresse wird aus dem Kartentext geraten (Straße + Hausnummer, Fallback nur PLZ). Etage wird nur grob per Regex aus dem Exposé gelesen.
+- Bezirk wird per Textanfang erkannt, unbekannte Labels werden nur gemeldet, nicht angefragt.
+- GitHub kann Cron-Läufe verzögern; geplante Workflows werden nach 60 Tagen ohne Repo-Aktivität deaktiviert (die täglichen Commits von `stats.json` halten es aktiv).
+- Seitenaufbau von wbm.de kann sich ändern: Bot bricht mit Fehler ab, wenn keine Angebote gefunden werden.
+
+## Ideen / nächste Schritte
+- Gewichte nach Feedback des Nutzers nachjustieren (welche Wohnungen gut/schlecht waren).
+- Energieklasse und Heizkosten aus dem Exposé in die Kosten einrechnen.
+- Weitere Gesellschaften als Module: Gewobag (Suchauftrag besteht), Gesobau (über Immomio), degewo, Howoge, Stadt und Land.
+- Optional: Anfrage-Button in der Push-Meldung (ntfy-Aktion + GitHub-Token), statt vollautomatisch.
+- Echte Fahrzeit zur Arbeit statt Luftlinie.

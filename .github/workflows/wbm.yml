@@ -32,5 +32,5 @@ jobs:
         run: |
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
-          git add seen.json
+          git add seen.json stats.json
           git diff --cached --quiet || (git commit -m "seen aktualisiert" && git push)

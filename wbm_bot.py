@@ -16,21 +16,28 @@ import os
 import re
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
 
+import rating
+
 URL = "https://www.wbm.de/wohnungen-berlin/angebote/"
 SEEN_FILE = Path(__file__).with_name("seen.json")
+STATS_FILE = Path(__file__).with_name("stats.json")
+TZ = ZoneInfo("Europe/Berlin")
+SUMMARY_HOUR = 20  # Tagesbericht ab 20 Uhr (Berliner Zeit)
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 P = "tx_powermail_pi1[field]"
 
 # --- Kriterien ---
 MIN_ROOMS = 1
 MAX_ROOMS = 2
-MAX_WARMMIETE = 1000.0
+MAX_WARMMIETE = 950.0
 ALLOW_WBS = False
 MAX_SENDS_PER_RUN = 3  # Sicherung gegen Fehlalarm
 
@@ -167,10 +174,17 @@ def load_person():
     return person, missing
 
 
-def send_request(listing, person, send):
+def fetch_expose(url):
+    try:
+        return requests.get(url, headers=HEADERS, timeout=20).text
+    except requests.RequestException:
+        return ""
+
+
+def send_request(listing, person, send, html=None):
     """Besichtigungsanfrage für ein Angebot. Gibt (status, info) zurück."""
-    r = requests.get(listing["url"], headers=HEADERS, timeout=20)
-    soup = BeautifulSoup(r.text, "html.parser")
+    html = html or fetch_expose(listing["url"])
+    soup = BeautifulSoup(html, "html.parser")
     form = next((f for f in soup.find_all("form") if f.find(attrs={"name": f"{P}[e_mail]"})), None)
     if form is None:
         return "fehler", "Formular nicht gefunden"
@@ -195,6 +209,26 @@ def notify(msg):
             pass
 
 
+def load_stats(today):
+    s = json.loads(STATS_FILE.read_text()) if STATS_FILE.exists() else {}
+    if s.get("day") != today:  # neuer Tag: Zähler zurücksetzen
+        s = {"day": today, "scanned": [], "sent": 0, "unclear": 0,
+             "summary_day": s.get("summary_day", "")}
+    s.setdefault("unclear", 0)
+    return s
+
+
+def daily_summary(stats, now):
+    """Einmal pro Tag ab SUMMARY_HOUR eine Zusammenfassung melden."""
+    if now.hour >= SUMMARY_HOUR and stats["summary_day"] != stats["day"]:
+        msg = (f"WBM-Bot Tagesbericht: {len(stats['scanned'])} Angebote gescannt, "
+               f"{stats['sent']} Anfragen abgeschickt.")
+        if stats["unclear"]:
+            msg += f" ({stats['unclear']} davon ohne klare Bestätigung, bitte prüfen)"
+        notify(msg)
+        stats["summary_day"] = stats["day"]
+
+
 def main():
     send = os.environ.get("WBM_SEND") == "1"
     person, missing = load_person()
@@ -208,19 +242,40 @@ def main():
         print("Keine Angebote gefunden - Seitenaufbau evtl. geändert.", file=sys.stderr)
         sys.exit(1)
 
+    now = datetime.now(TZ)
+    stats = load_stats(now.strftime("%Y-%m-%d"))
+    stats["scanned"] = sorted(set(stats["scanned"]) | {l["url"] for l in listings})
+
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
     new_hits = [l for l in listings if matches(l) and l["url"] not in seen]
     sends = 0
     for l in new_hits:
-        line = f"WBM: {l['rooms']} Zi, {l['price']} € warm\n{l['url']}"
+        expose_html = fetch_expose(l["url"])
+        line = f"WBM: {l['rooms']} Zi, {l['price']} € warm"
+        status = None
         if matches_strict(l) and sends < MAX_SENDS_PER_RUN:
             sends += 1
-            status, info = send_request(l, person, send)
-            line += f"\nAnfrage: {status} ({info})"
+            status, info = send_request(l, person, send, expose_html)
+            if status in ("gesendet", "unklar"):
+                stats["sent"] += 1
+            if status == "unklar":
+                stats["unclear"] += 1
             time.sleep(2)
+        # Bewertung erst NACH dem Senden: Geschwindigkeit geht vor
+        try:
+            expose_text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
+            stars, why = rating.rate_listing(l, expose_text)
+            line = f"{stars}  {line}" + (f"\n{why}" if why else "")
+        except Exception as e:  # Bewertung darf nie den Bot stoppen
+            print(f"Bewertung fehlgeschlagen: {e}", file=sys.stderr)
+        line += f"\n{l['url']}"
+        if status:
+            line += f"\nAnfrage: {status} ({info})"
         notify(line)
         seen.add(l["url"])  # nie doppelt senden, auch bei Fehler/unklar
     SEEN_FILE.write_text(json.dumps(sorted(seen), indent=1))
+    daily_summary(stats, now)
+    STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
     mode = "SENDEN" if send else "TROCKENLAUF"
     print(f"[{mode}] {len(listings)} Angebote geprüft, {len(new_hits)} neue Treffer.")
 
