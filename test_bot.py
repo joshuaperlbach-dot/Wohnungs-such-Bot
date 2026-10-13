@@ -77,7 +77,7 @@ def fake_get(url, **kw):
 
 def test_dry_run_sends_nothing():
     l = {"url": "https://www.wbm.de/wohnungen-berlin/angebote/details/a/"}
-    with mock.patch("wbm_bot.requests.get", fake_get), mock.patch("wbm_bot.requests.post") as post:
+    with mock.patch("wbm_bot.HTTP.get", fake_get), mock.patch("wbm_bot.HTTP.post") as post:
         status, _ = send_request(l, PERSON, send=False)
     assert status == "trockenlauf"
     post.assert_not_called()
@@ -86,11 +86,12 @@ def test_dry_run_sends_nothing():
 def test_send_posts_once_and_detects_success():
     l = {"url": "https://www.wbm.de/wohnungen-berlin/angebote/details/a/"}
     ok = mock.Mock(status_code=200, text="<p>Vielen Dank für Ihre Anfrage</p>")
-    with mock.patch("wbm_bot.requests.get", fake_get), mock.patch("wbm_bot.requests.post", return_value=ok) as post:
+    with mock.patch("wbm_bot.HTTP.get", fake_get), mock.patch("wbm_bot.HTTP.post", return_value=ok) as post:
         status, _ = send_request(l, PERSON, send=True)
     assert status == "gesendet"
     assert post.call_count == 1
     assert post.call_args[0][0] == "https://www.wbm.de/wohnungen-berlin/angebote/details/"
+    assert post.call_args[1]["headers"]["Referer"] == l["url"]
 
 
 def test_rating_parsing_and_score():
@@ -176,8 +177,8 @@ def test_main_never_sends_twice():
         def get(url, **kw):
             return mock.Mock(text=LIST_HTML if url == wbm_bot.URL else FORM_HTML, status_code=200)
 
-        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.requests.get", get), \
-                mock.patch("wbm_bot.requests.post", return_value=ok) as post, mock.patch("wbm_bot.time.sleep"), \
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
+                mock.patch("wbm_bot.HTTP.post", return_value=ok) as post, mock.patch("wbm_bot.time.sleep"), \
                 mock.patch("wbm_bot.rating.rate_listing", return_value=("★★★★☆ (4/5)", "42 m²")):
             wbm_bot.main()
             first = post.call_count
@@ -206,16 +207,16 @@ def test_no_double_send_after_crash():
         def crash(*a, **kw):  # Lauf bricht nach dem Senden ab
             raise KeyboardInterrupt
 
-        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.requests.get", get), \
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
                 mock.patch("wbm_bot.time.sleep"), mock.patch("wbm_bot.notify", crash), \
                 mock.patch("wbm_bot.rating.rate_listing", return_value=("★", "")):
-            with mock.patch("wbm_bot.requests.post", post_timeout):
+            with mock.patch("wbm_bot.HTTP.post", post_timeout):
                 try:
                     wbm_bot.main()
                 except KeyboardInterrupt:
                     pass
             assert saved_before_post == [1, 2], saved_before_post  # vor jedem POST gespeichert
-            with mock.patch("wbm_bot.requests.post") as post:
+            with mock.patch("wbm_bot.HTTP.post") as post:
                 try:
                     wbm_bot.main()  # nächster Lauf: nichts erneut senden
                 except KeyboardInterrupt:

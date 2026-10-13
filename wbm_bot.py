@@ -32,6 +32,10 @@ STATS_FILE = Path(__file__).with_name("stats.json")
 TZ = ZoneInfo("Europe/Berlin")
 SUMMARY_HOUR = 20  # Tagesbericht ab 20 Uhr (Berliner Zeit)
 HEADERS = {"User-Agent": "Mozilla/5.0"}
+# Eine Sitzung wie im Browser: das Cookie der Seite geht beim Absenden mit
+# (der Spamschutz des Formulars kann sonst einen Bot vermuten).
+HTTP = requests.Session()
+HTTP.headers.update(HEADERS)
 P = "tx_powermail_pi1[field]"
 
 # --- Kriterien ---
@@ -176,7 +180,7 @@ def load_person():
 
 def fetch_expose(url):
     try:
-        return requests.get(url, headers=HEADERS, timeout=20).text
+        return HTTP.get(url, timeout=20).text
     except requests.RequestException:
         return ""
 
@@ -193,7 +197,7 @@ def send_request(listing, person, send, html=None):
         return "trockenlauf", f"{len(data)} Felder vorbereitet, nichts gesendet"
     action = urljoin(listing["url"], form.get("action", ""))
     try:
-        resp = requests.post(action, data=data, headers=HEADERS, timeout=20)
+        resp = HTTP.post(action, data=data, headers={"Referer": listing["url"]}, timeout=20)
     except requests.RequestException as e:
         # Kann trotzdem angekommen sein: als unklar werten, nicht erneut senden
         return "unklar", type(e).__name__
@@ -244,7 +248,7 @@ def main():
         print(f"Fehlende Variablen: {', '.join(missing)}", file=sys.stderr)
         sys.exit(2)
 
-    html = requests.get(URL, timeout=20, headers=HEADERS).text
+    html = HTTP.get(URL, timeout=20).text
     listings = parse_listings(html)
     if not listings:
         print("Keine Angebote gefunden - Seitenaufbau evtl. geändert.", file=sys.stderr)
