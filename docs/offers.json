@@ -78,7 +78,9 @@
    "requested": "gesendet",
    "online_since": "2026-10-13T17:46:50Z",
    "requested_at": "2026-10-13T17:46:50Z",
-   "gone": true
+   "gone": true,
+   "reply": "absage",
+   "reply_at": "2026-10-13T18:40:33Z"
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-1/": {
    "source": "wbm",
@@ -303,7 +305,21 @@
    "online_since": "2026-10-13T07:05:04Z"
   }
  },
- "updated": "2026-10-13T18:38:21Z",
- "last_manual": "2026-10-13T18:38:21Z",
- "ibw_seeded": true
+ "updated": "2026-10-13T18:40:33Z",
+ "last_manual": "2026-10-13T18:40:33Z",
+ "ibw_seeded": true,
+ "mail_log": [
+  {
+   "at": "2026-10-13T18:40:33Z",
+   "kind": "antwort",
+   "matched": false,
+   "chars": 827
+  },
+  {
+   "at": "2026-10-13T18:40:33Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 1008
+  }
+ ]
 }
