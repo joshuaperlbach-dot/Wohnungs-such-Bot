@@ -18,6 +18,7 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
   `docs/index.html` zeigt sie an (GitHub Pages, Quelle: Branch main, Ordner /docs). Siehe unten.
 - `mail_check.py`: liest die Antworten der Gesellschaften aus dem Postfach (nur lesend, IMAP) und trägt
   Absage/Einladung in die Handy-Ansicht ein; bei Einladung Push. Merkt sich Mails als Fingerabdruck in `mail_seen.json`.
+- `howoge.py`: automatische Besichtigungsanfrage bei der HOWOGE (aufgerufen von `ibw_bot.py`). Siehe unten.
 - `test_bot.py`: Tests mit Mocks (`python3 test_bot.py`), kein Netzwerk nötig.
 - `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
   Führt erst `wbm_bot.py`, dann `ibw_bot.py` aus. Committet `seen.json`, `seen_ibw.json` und `stats.json` zurück ins Repo.
@@ -65,7 +66,15 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Bewertung ohne Netz (Koordinaten kommen von der Seite). Prenzlauer Berg wird über die PLZ erkannt.
 - WBS-Angabe der Seite ist unzuverlässig: zusätzlich Titel prüfen und bei Treffern die Seite der Gesellschaft
   (degewo kennzeichnet WBS-Wohnungen nur mit einem Bild-Etikett wie "220er"). Der Nutzer liegt knapp über WBS 220.
-- Nächster Ausbau: automatische Anfrage je Gesellschaft (jede hat ein eigenes Formular/Portal).
+- Automatische Anfrage je Gesellschaft (`SENDERS` in `ibw_bot.py`), Stand 13.10.2026:
+  - HOWOGE: gebaut (`howoge.py`). Formular fragt nur Vorname, Nachname, E-Mail; davor drei Hinweise zum Abhaken
+    (WBS, Haushaltsnettoeinkommen mind. 3x Gesamtmiete, Bonitätsauskunft). Nach dem Absenden kommt eine Mail mit
+    Bestätigungslink (`.../bewerbungsprozess/doi.html`), den `mail_check.py` öffnet; erst dann zählt die Anfrage.
+    Scharf nur mit Repo-Variable `HOWOGE_SEND=1`, sonst Trockenlauf. Gleiche Regeln wie WBM: ab 4 Sternen,
+    Bezirk sicher passend, kein WBS, max. 3 pro Lauf, nie doppelt. Echtes Senden und die Bestätigungsmail sind
+    noch nicht live geprüft (Trockenlauf gegen die echte Seite klappt).
+  - degewo: Formular hat ein Captcha (Friendly Captcha). Wird bewusst nicht umgangen, dort nur melden.
+  - Gewobag, Stadt und Land, Gesobau, Berlinovo: noch nicht angesehen.
 
 ## Handy-Ansicht (`docs/index.html`)
 - Adresse: https://joshuaperlbach-dot.github.io/Wohnungs-such-Bot/ (öffentlich, aber `noindex`; enthält nur

@@ -9,6 +9,7 @@ Angefragt wird hier nichts. WBM-Angebote übernimmt weiter wbm_bot.py (mit Anfra
 Kriterien (Zimmer, Miete, WBS) kommen aus wbm_bot.py, die Bewertung aus rating.py.
 """
 import json
+import os
 import re
 import sys
 import time
@@ -18,6 +19,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+import howoge
 import offers
 import rating
 import wbm_bot
@@ -181,12 +183,26 @@ def app_offer(l, r):
     }
 
 
-def describe(l, stars, why):
+def describe(l, stars, why, request=None):
     price = f"{l['price']:.0f} € warm" if l["price"] else "Miete unbekannt"
     line = f"{stars}  {l['company'] or 'Angebot'}: {l['rooms']} Zi, {price}"
     if why:
         line += f"\n{why}"
-    return f"{line}\n{l['address']}, {l['plz']} {l['bezirk']}\n{l['url']}"
+    line += f"\n{l['address']}, {l['plz']} {l['bezirk']}\n{l['url']}"
+    if request:
+        line += f"\nAnfrage: {request[0]} ({request[1]})"
+    return line
+
+
+# Gesellschaften, bei denen der Bot selbst anfragen kann (degewo hat ein Captcha: nur melden)
+SENDERS = {"howoge": howoge.send_request}
+
+
+def can_request(l, r):
+    """Automatisch anfragen nur, wenn alles sicher bekannt ist und passt (wie beim WBM-Bot)."""
+    return (l["company"] in SENDERS and l["district"] is True and l["wbs"] is False
+            and l["price"] is not None and l["rooms"] is not None
+            and r.stars >= wbm_bot.MIN_STARS_SEND)
 
 
 def hidden_wbs(l):
@@ -237,6 +253,10 @@ def main():
         if not new or first_run:  # unvollständiger erster Lauf: beim nächsten Mal neu
             sys.exit(1)
 
+    # Automatisch anfragen: nur mit HOWOGE_SEND=1 wirklich senden, sonst Trockenlauf
+    send = os.environ.get("HOWOGE_SEND") == "1"
+    person, missing = wbm_bot.load_person()
+    sends = 0
     hits = []
     for l in new:
         fresh = l["id"] not in seen
@@ -247,10 +267,21 @@ def main():
         if hidden_wbs(l) and not ALLOW_WBS:
             continue
         r = rated(l)
-        if recent:  # in die Handy-Ansicht kommt jeder Treffer, egal wie viele Sterne
-            offers.add(store, f"ibw-{l['id']}", app_offer(l, r), now)
+        request = None
+        if (fresh and not first_run and can_request(l, r) and sends < wbm_bot.MAX_SENDS_PER_RUN
+                and not (send and missing)):
+            sends += 1
+            # Schon VOR dem Senden merken und speichern: nie doppelt anfragen, auch nach Absturz
+            seen.add(l["id"])
+            SEEN_FILE.write_text(json.dumps(sorted(seen)))
+            request = SENDERS[l["company"]](l, person, send)
+        if recent or request:  # in die Handy-Ansicht kommt jeder Treffer, egal wie viele Sterne
+            entry = app_offer(l, r)
+            if request and request[0] in offers.REQUESTED:
+                entry.update(requested=request[0], confirm="offen")  # wartet auf den Link per Mail
+            offers.add(store, f"ibw-{l['id']}", entry, now)
         if fresh and r.stars >= MIN_STARS:
-            hits.append((r.stars, l, r[0], r[1]))
+            hits.append((r.stars, l, r[0], r[1], request))
     hits.sort(key=lambda h: -h[0])  # beste zuerst
     store["ibw_seeded"] = store.get("ibw_seeded") or not problem
     offers.save(store, now)
@@ -259,10 +290,10 @@ def main():
         # Alles ist "neu": eine Sammelmeldung statt vieler einzelner
         top = hits[:FIRST_RUN_TOP]
         wbm_bot.notify(f"inberlinwohnen-Bot gestartet: {len(hits)} passende Angebote online, "
-                       f"die besten {len(top)}:\n\n" + "\n\n".join(describe(l, s, w) for _, l, s, w in top))
+                       f"die besten {len(top)}:\n\n" + "\n\n".join(describe(l, s, w) for _, l, s, w, _ in top))
     else:
-        for _, l, stars, why in hits:
-            wbm_bot.notify(describe(l, stars, why))
+        for _, l, stars, why, request in hits:
+            wbm_bot.notify(describe(l, stars, why, request))
 
     seen |= {l["id"] for l in new}
     SEEN_FILE.write_text(json.dumps(sorted(seen)))

@@ -190,6 +190,9 @@ function state(key, o) {
   if (o.reply === "einladung") return { cls: "invite", label: "Einladung zur Besichtigung", note: "schau in deine Mails", locked: true };
   if (o.reply === "absage") return { cls: "declined", label: "Absage", note: "Anfrage war raus", locked: true };
   if (o.reply === "antwort") return { cls: "sent", label: "Antwort da", note: "schau in deine Mails", locked: true };
+  if (o.requested === "unklar" && o.confirm === "offen") {
+    return { cls: "sent", label: "Anfrage raus", note: "Bestätigung per Mail offen", locked: true };
+  }
   if (o.requested === "gesendet" || o.requested === "unklar") {
     return { cls: "sent", label: "Angefragt", note: o.requested === "unklar" ? "vom Bot, ohne Bestätigung" : "vom Bot",
              locked: true };

@@ -5,6 +5,7 @@ from pathlib import Path
 from unittest import mock
 
 import offers
+import rating
 import wbm_bot
 
 offers.FILE = Path(tempfile.mkdtemp()) / "offers.json"  # Tests schreiben nie in die echte Liste
@@ -639,6 +640,134 @@ zu berücksichtigen. Die Auswahl der möglichen Teilnehmer erfolgte auf Basis de
                 mail_check.main()
                 mail_check.main()
             assert len(msgs) == 1 and len(json.loads(mail_check.SEEN_FILE.read_text())) == 1, msgs
+
+
+HOWOGE_DETAIL = """<a href="/mieterservice/kontakt.html">Kontakt</a>
+<a class="button" href="/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess.html?tx_howrealestate_visitform%5Baction%5D=showVisitForm&amp;tx_howrealestate_visitform%5Bobid%5D=1771-1-1&amp;cHash=abc">Besichtigung anfragen</a>"""
+HV = "tx_howrealestate_visitform"
+HOWOGE_FORM = f"""<form action="/suche.html" method="get"><input name="tx_kesearch_pi1[sword]"></form>
+<div class="stage__content finished">Vielen Dank für Ihre Anfrage. Ihre Daten wurden erfolgreich übermittelt</div>
+<input type="checkbox" id="checkbox--wbs"><input type="checkbox" id="checkbox--net-income">
+<form id="show-visit-form" class="immo-form" method="post"
+  action="/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess.html?{HV}%5Baction%5D=doiSend&amp;cHash=f30">
+<input type="hidden" name="{HV}[__trustedProperties]" value="TOKEN">
+<input type="hidden" name="{HV}[visitRequest][immoobject]" value="9820">
+<input type="hidden" name="{HV}[visitRequest][type]" value="doi">
+<input type="hidden" name="{HV}[visitRequest][linkDoiConfirm]" value="/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess/doi.html">
+<input type="text" name="{HV}[visitRequest][firstName]" required><input type="text" name="{HV}[visitRequest][lastName]" required>
+<input type="email" name="{HV}[visitRequest][email]" required></form>"""
+DOI = "https://www.howoge.de/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess/doi.html?h=abc123"
+
+
+def test_howoge_request():
+    import howoge
+    l = {"url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-1-1.html?t=ibw"}
+    gets = []
+
+    def get(url, **kw):
+        gets.append(url)
+        return mock.Mock(text=HOWOGE_FORM if "showVisitForm" in url else HOWOGE_DETAIL, status_code=200)
+
+    with mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.HTTP.post") as post:
+        assert howoge.send_request(l, PERSON, send=False)[0] == "trockenlauf"
+        post.assert_not_called()
+        post.return_value = mock.Mock(status_code=200, text="ok")
+        status, info = howoge.send_request(l, PERSON, send=True)
+    assert status == "unklar" and "Bestätigungslink" in info, (status, info)
+    assert gets[1].startswith("https://www.howoge.de/immobiliensuche/") and "obid%5D=1771-1-1" in gets[1]
+    url, kw = post.call_args[0][0], post.call_args[1]
+    assert post.call_count == 1 and "doiSend" in url and url.startswith("https://www.howoge.de/immobiliensuche/"), url
+    d = kw["data"]
+    assert d[f"{HV}[visitRequest][firstName]"] == "Max" and d[f"{HV}[visitRequest][lastName]"] == "Mustermann"
+    assert d[f"{HV}[visitRequest][email]"] == "max@example.com" and d[f"{HV}[__trustedProperties]"] == "TOKEN"
+    assert d[f"{HV}[visitRequest][immoobject]"] == "9820" and len(d) == 7 and kw["headers"]["Referer"] == gets[1]
+    # vergeben (kein Knopf), Captcha oder Serverfehler: nichts senden bzw. als Fehler melden
+    with mock.patch("wbm_bot.HTTP.get", lambda url, **kw: mock.Mock(text="<p>weg</p>", status_code=200)), \
+            mock.patch("wbm_bot.HTTP.post") as post:
+        assert howoge.send_request(l, PERSON, send=True)[0] == "fehler"
+        post.assert_not_called()
+    captcha = HOWOGE_FORM.replace("</form>", '<div class="frc-captcha"></div></form>')
+    with mock.patch("wbm_bot.HTTP.get", lambda url, **kw: mock.Mock(
+            text=captcha if "showVisitForm" in url else HOWOGE_DETAIL, status_code=200)), mock.patch("wbm_bot.HTTP.post") as post:
+        status, info = howoge.send_request(l, PERSON, send=True)
+        assert status == "fehler" and "Captcha" in info
+        post.assert_not_called()
+    # nur echte Bestätigungslinks der HOWOGE werden geöffnet
+    assert howoge.doi_links([DOI, "https://www.howoge.de/datenschutz.html", DOI.replace("https://www.howoge.de", "https://boese.example"),
+                             DOI.replace("https://", "http://"), "https://www.howoge.de.boese.example/bewerbungsprozess/doi.html"]) == [DOI]
+
+
+def test_ibw_requests_howoge_and_confirms_by_mail():
+    import ibw_bot, mail_check
+    from email.message import EmailMessage
+    pages = {1: ibw_card(30, company="howoge") + ibw_card(31, company="degewo"), 2: ""}
+    sent, opened, msgs = [], [], []
+
+    def get(url, params=None, **kw):
+        if url == ibw_bot.URL:
+            return mock.Mock(text=pages.get(params["page"], ""), status_code=200)
+        if url == DOI:
+            opened.append(url)
+        return mock.Mock(text=HOWOGE_FORM if "showVisitForm" in url else HOWOGE_DETAIL, status_code=200)
+
+    def post(url, **kw):
+        sent.append(url)
+        return mock.Mock(status_code=200, text="ok")
+
+    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "HOWOGE_SEND": "1"}
+    five = rating.Rated("★★★★★ (5/5)", "top", 5, 90, {})
+    old_file = offers.FILE
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
+        ibw_bot.SEEN_FILE.write_text("[1]")   # nicht der allererste Lauf
+        try:
+            with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.HTTP.post", post), \
+                    mock.patch("ibw_bot.time.sleep"), mock.patch("wbm_bot.notify", side_effect=msgs.append), \
+                    mock.patch("ibw_bot.rated", return_value=five):
+                ibw_bot.main()
+                ibw_bot.main()
+                o = offers.load()
+                # nur HOWOGE wird angefragt (degewo hat ein Captcha), genau einmal
+                assert len(sent) == 1 and "doiSend" in sent[0], sent
+                assert o["offers"]["ibw-30"]["requested"] == "unklar" and o["offers"]["ibw-30"]["confirm"] == "offen"
+                assert o["offers"]["ibw-31"].get("requested") is None
+                assert len(msgs) == 2 and "Anfrage: unklar" in msgs[0] and "Anfrage" not in msgs[1], msgs
+                # Bestätigungsmail der HOWOGE: Link öffnen, Anfrage gilt als raus, kein Push
+                m = EmailMessage()
+                m["Message-ID"], m["From"], m["Subject"] = "<d1@howoge.de>", "HOWOGE <noreply@howoge.de>", "Bitte bestätigen Sie Ihre Anfrage"
+                m.set_content("Bitte HTML ansehen")
+                m.add_alternative(f'<p>Bitte bestätigen Sie: <a href="{DOI.replace("&", "&amp;")}">hier klicken</a></p>', subtype="html")
+                seen = set()
+                assert mail_check.process([m], o, seen, datetime_now()) == []
+                assert opened == [DOI] and o["offers"]["ibw-30"]["requested"] == "gesendet"
+                assert o["offers"]["ibw-30"]["confirm"] == "bestaetigt" and "reply" not in o["offers"]["ibw-30"]
+                # zweite Bestätigungsmail ohne offenen Vorgang: nichts anklicken
+                m2 = EmailMessage()
+                m2["Message-ID"], m2["From"], m2["Subject"] = "<d2@howoge.de>", "noreply@howoge.de", "Bestätigung"
+                m2.set_content(f"Link: {DOI}")
+                assert mail_check.process([m2], o, seen, datetime_now()) == [] and opened == [DOI]
+        finally:
+            offers.FILE = old_file
+    # ohne HOWOGE_SEND=1 wird nichts abgeschickt (Trockenlauf)
+    sent.clear()
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
+        ibw_bot.SEEN_FILE.write_text("[1]")
+        try:
+            with mock.patch.dict(os.environ, {**env, "HOWOGE_SEND": ""}), mock.patch("wbm_bot.HTTP.get", get), \
+                    mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
+                    mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
+                ibw_bot.main()
+            assert sent == [] and "Anfrage: trockenlauf" in msgs[-2] and offers.load()["offers"]["ibw-30"].get("requested") is None
+        finally:
+            offers.FILE = old_file
+
+
+def datetime_now():
+    from datetime import datetime, timezone
+    return datetime(2026, 10, 13, 19, 0, tzinfo=timezone.utc)
 
 
 if __name__ == "__main__":

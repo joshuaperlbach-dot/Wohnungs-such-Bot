@@ -33,6 +33,8 @@ jobs:
         if: always()            # unabhängig vom WBM-Bot
         timeout-minutes: 4
         env:
+          HOWOGE_SEND: ${{ vars.HOWOGE_SEND }}          # 1 = bei der HOWOGE wirklich anfragen
+          WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python ibw_bot.py
       - name: Antworten per Mail auswerten

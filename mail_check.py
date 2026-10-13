@@ -26,11 +26,12 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
+import howoge
 import offers
 import wbm_bot
 
 HOST = "imap.gmail.com"
-SENDERS = ["wbm.de"]  # nur Mails von diesen Absendern werden überhaupt abgerufen
+SENDERS = ["wbm.de", "howoge.de"]  # nur Mails von diesen Absendern werden überhaupt abgerufen
 LOOK_BACK = timedelta(days=14)
 SEEN_FILE = Path(__file__).with_name("mail_seen.json")
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
@@ -90,6 +91,33 @@ def body_text(msg):
     return "\n".join(texts)
 
 
+def links(msg):
+    """Alle Links der Mail (aus HTML-Teilen die Verweise, aus Text-Teilen ausgeschriebene Adressen)."""
+    found = []
+    for part in msg.walk():
+        if part.get_content_maintype() != "text" or part.get_filename():
+            continue
+        try:
+            content = part.get_content()
+        except Exception:
+            continue
+        if part.get_content_subtype() == "html":
+            found += [a["href"] for a in BeautifulSoup(content, "html.parser").find_all("a", href=True)]
+        else:
+            found += re.findall(r"https://[^\s<>\"']+", content)
+    return found
+
+
+def pending_confirmation(store, text):
+    """Angefragtes Angebot, das noch auf den Bestätigungslink wartet: das aus der Mail,
+    sonst das älteste offene."""
+    waiting = {k: o for k, o in store["offers"].items() if o.get("confirm") == "offen"}
+    key = find_offer({"offers": waiting}, text)
+    if key is None and waiting:
+        key = min(waiting, key=lambda k: waiting[k].get("requested_at") or "")
+    return key
+
+
 def mail_id(msg):
     raw = (msg.get("Message-ID") or f"{msg.get('Date')}{msg.get('Subject')}").encode("utf-8", "replace")
     return hashlib.sha256(raw).hexdigest()[:16]  # nur ein Fingerabdruck landet im Repo
@@ -104,11 +132,24 @@ def process(messages, store, seen, now):
             continue
         seen.add(mid)
         text = f"{msg.get('Subject', '')}\n{body_text(msg)}"
-        kind = classify(text)
-        key = find_offer(store, text)
-        where = store["offers"][key].get("address", "") if key else "ein Angebot (nicht zugeordnet)"
-        if key:
-            store["offers"][key].update(reply=kind, reply_at=offers.iso(now))
+        confirm_links = howoge.doi_links(links(msg))
+        if confirm_links:
+            # HOWOGE: die Anfrage zählt erst, wenn der Link aus der Mail geöffnet wurde
+            kind, key = "bestaetigung", pending_confirmation(store, text)
+            where = store["offers"][key].get("address", "") if key else "ein Angebot"
+            if key is None:
+                pass  # kein offener Vorgang des Bots (z.B. von Hand angefragt): nichts anklicken
+            elif howoge.confirm(confirm_links[0]):
+                store["offers"][key].update(requested="gesendet", confirm="bestaetigt")
+            else:
+                notes.append(f"HOWOGE-Anfrage für {where}: Bestätigungslink ließ sich nicht öffnen.\n"
+                             "Bitte in der Mail selbst anklicken!")
+        else:
+            kind = classify(text)
+            key = find_offer(store, text)
+            where = store["offers"][key].get("address", "") if key else "ein Angebot (nicht zugeordnet)"
+            if key:
+                store["offers"][key].update(reply=kind, reply_at=offers.iso(now))
         print(f"Mail ausgewertet: {kind}, {'zugeordnet' if key else 'nicht zugeordnet'}")
         # kurzes Protokoll ohne Inhalt (die letzten 10), zur Kontrolle in offers.json
         store["mail_log"] = (store.get("mail_log") or [])[-9:] + [

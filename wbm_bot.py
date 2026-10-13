@@ -164,9 +164,9 @@ def matches_strict(l):
     return True
 
 
-def build_payload(form, person):
-    """Wie ein Browser: alle Felder mit Standardwerten, dann deine Daten drüber.
-    Versteckte Felder (Token, Objekt) kommen frisch von der Seite."""
+def form_defaults(form):
+    """Alle Felder eines Formulars mit ihren Standardwerten, so wie ein Browser sie schickt.
+    Versteckte Felder (Token, Objekt) kommen damit frisch von der Seite."""
     data = {}
     for el in form.find_all(["input", "select", "textarea"]):
         name = el.get("name")
@@ -181,6 +181,12 @@ def build_payload(form, person):
             data[name] = opt.get("value", opt.get_text(strip=True)) if opt else ""
         else:
             data[name] = el.get("value", "")
+    return data
+
+
+def build_payload(form, person):
+    """Formular der WBM: Standardwerte, dann deine Daten drüber."""
+    data = form_defaults(form)
     data[f"{P}[wbsvorhanden]"] = "0"  # WBS: nein
     data[f"{P}[anrede]"] = person["anrede"]
     data[f"{P}[name]"] = person["name"]
