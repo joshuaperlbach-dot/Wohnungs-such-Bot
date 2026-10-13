@@ -356,6 +356,10 @@ def main():
 
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
     store = offers.load()
+    # WBM nimmt Angebote oft nach wenigen Minuten wieder von der Seite: in der App kennzeichnen
+    for key, o in store["offers"].items():
+        if o.get("source") == "wbm":
+            o["gone"] = key not in {l["url"] for l in listings}
     exposes, rated = {}, {}
 
     def expose(l):

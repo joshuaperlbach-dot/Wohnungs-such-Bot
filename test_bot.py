@@ -549,13 +549,19 @@ def test_bots_fill_app_list():
                 wbm_bot.main()
                 ibw_bot.main()
                 ibw_bot.main()
-            o = offers.load()
+                o = offers.load()
+                # "mau" verschwindet von der WBM-Seite: bleibt in der App, aber als nicht mehr online
+                cards = "<div class='list'>" + card("top", "Schöne 2 Zimmer", "800,00", "60", 2) + "</div>"
+                wbm_bot.main()
+                later = offers.load()["offers"]
+                assert [k.split("/")[-2] for k, x in later.items() if x.get("gone")] == ["mau"], later
         finally:
             offers.FILE = old_file
     top, mau = (o["offers"][f"https://www.wbm.de/wohnungen-berlin/angebote/details/{k}/"] for k in ("top", "mau"))
     assert top["requested"] == "gesendet" and top["stars"] == 5 and top["floor"] == 3 and top["year"] == 1910, top
     assert mau.get("requested") is None and mau["stars"] == 2 and mau["bezirk"] == "Mitte" and mau["price"] == 800.0, mau
     assert top["title"] == "Schöne 2 Zimmer in Mitte" and len(top["images"]) == 2 and top["online_since"]
+    assert not top.get("gone")
     i = o["offers"]["ibw-21"]
     assert "ibw-22" not in o["offers"] and o["ibw_seeded"] is True, sorted(o["offers"])  # 22 braucht WBS
     assert i["company"] == "degewo" and i["stars"] >= 1 and i["parts"]["Kiez"][1] == 16 and i["url"] == "https://example.org/21", i

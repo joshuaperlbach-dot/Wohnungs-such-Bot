@@ -75,6 +75,8 @@
   .req.late { background: var(--late); color: var(--late-ink); }
   .req.sent { background: var(--sent); color: var(--sent-ink); }
   .req small { font-weight: 400; opacity: .85; margin-left: 6px; }
+  .gone { color: var(--late-ink); }
+  .link.off { background: var(--chip); color: var(--muted); }
   .empty { color: var(--muted); text-align: center; padding: 48px 12px; }
 
   dialog { border: 0; padding: 0; margin: 0; width: 100%; max-width: 100%; height: 100%; max-height: 100%;
@@ -252,7 +254,8 @@ function render() {
     info.append(stars,
       el("div", "main-line", `${rooms(o.rooms)} Zi · ${num(o.size)} m² · ${num(o.price)} € warm`),
       el("div", "sub", [o.address, o.bezirk].filter(Boolean).join(" · ")),
-      el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
+      o.gone ? el("div", "sub gone", `${COMPANY[o.company] || o.company || ""} · nicht mehr online`)
+             : el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
     tap.append(thumb, info);
     tap.addEventListener("click", () => openDetail(key));
     card.append(tap, reqButton(key, o));
@@ -321,7 +324,9 @@ function drawDetail() {
 
   const foot = el("div", "foot"), inner = el("div", "in");
   const url = safeUrl(o.url);
-  if (url) {
+  if (o.gone) {
+    inner.append(el("span", "link off", "Nicht mehr online"));
+  } else if (url) {
     const a = el("a", "link", "Zur Anzeige");
     a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
     inner.append(a);
