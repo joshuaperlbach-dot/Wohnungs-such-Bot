@@ -15,7 +15,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,14 +23,16 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Bot ausführen
+        timeout-minutes: 5
         env:
           WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = wirklich senden, sonst Trockenlauf
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python wbm_bot.py
       - name: Gesehene Angebote speichern
+        if: always()            # auch nach Absturz/Timeout, sonst gehen Anfragen doppelt raus
         run: |
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
-          git add seen.json stats.json
-          git diff --cached --quiet || (git commit -m "seen aktualisiert" && git push)
+          for f in seen.json stats.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          git diff --cached --quiet || (git commit -m "seen aktualisiert" && git pull --rebase && git push)

@@ -184,6 +184,41 @@ def test_main_never_sends_twice():
         assert st["sent"] == 2 and len(st["scanned"]) == 7, st
 
 
+def test_no_double_send_after_crash():
+    import requests
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
+        saved_before_post = []
+
+        def get(url, **kw):
+            return mock.Mock(text=LIST_HTML if url == wbm_bot.URL else FORM_HTML, status_code=200)
+
+        def post_timeout(url, **kw):  # Anfrage hängt: evtl. trotzdem angekommen
+            saved_before_post.append(len(json.loads(wbm_bot.SEEN_FILE.read_text())))
+            raise requests.Timeout("hängt")
+
+        def crash(*a, **kw):  # Lauf bricht nach dem Senden ab
+            raise KeyboardInterrupt
+
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.requests.get", get), \
+                mock.patch("wbm_bot.time.sleep"), mock.patch("wbm_bot.notify", crash), \
+                mock.patch("wbm_bot.rating.rate_listing", return_value=("★", "")):
+            with mock.patch("wbm_bot.requests.post", post_timeout):
+                try:
+                    wbm_bot.main()
+                except KeyboardInterrupt:
+                    pass
+            assert saved_before_post == [1, 2], saved_before_post  # vor jedem POST gespeichert
+            with mock.patch("wbm_bot.requests.post") as post:
+                try:
+                    wbm_bot.main()  # nächster Lauf: nichts erneut senden
+                except KeyboardInterrupt:
+                    pass
+                post.assert_not_called()
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

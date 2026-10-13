@@ -192,8 +192,12 @@ def send_request(listing, person, send, html=None):
     if not send:
         return "trockenlauf", f"{len(data)} Felder vorbereitet, nichts gesendet"
     action = urljoin(listing["url"], form.get("action", ""))
-    resp = requests.post(action, data=data, headers=HEADERS, timeout=20)
-    ok = resp.status_code == 200 and re.search(
+    try:
+        resp = requests.post(action, data=data, headers=HEADERS, timeout=20)
+    except requests.RequestException as e:
+        # Kann trotzdem angekommen sein: als unklar werten, nicht erneut senden
+        return "unklar", type(e).__name__
+    ok =resp.status_code == 200 and re.search(
         r"vielen dank|erfolgreich|wurde.*(gesendet|übermittelt)", resp.text, re.I
     )
     return ("gesendet" if ok else "unklar"), f"HTTP {resp.status_code}"
@@ -207,6 +211,10 @@ def notify(msg):
             requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"), timeout=10)
         except requests.RequestException:
             pass
+
+
+def save_seen(seen):
+    SEEN_FILE.write_text(json.dumps(sorted(seen), indent=1))
 
 
 def load_stats(today):
@@ -249,10 +257,15 @@ def main():
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
     new_hits = [l for l in listings if matches(l) and l["url"] not in seen]
     sends = 0
+    results = []
+    # Erst alle Anfragen senden, danach bewerten und melden: Geschwindigkeit geht vor
     for l in new_hits:
         expose_html = fetch_expose(l["url"])
-        line = f"WBM: {l['rooms']} Zi, {l['price']} € warm"
-        status = None
+        status = info = None
+        # Schon VOR dem Senden merken und speichern: bricht der Lauf danach ab
+        # (Absturz, Timeout), geht die Anfrage beim nächsten Lauf nicht doppelt raus.
+        seen.add(l["url"])
+        save_seen(seen)
         if matches_strict(l) and sends < MAX_SENDS_PER_RUN:
             sends += 1
             status, info = send_request(l, person, send, expose_html)
@@ -261,7 +274,9 @@ def main():
             if status == "unklar":
                 stats["unclear"] += 1
             time.sleep(2)
-        # Bewertung erst NACH dem Senden: Geschwindigkeit geht vor
+        results.append((l, expose_html, status, info))
+    for l, expose_html, status, info in results:
+        line = f"WBM: {l['rooms']} Zi, {l['price']} € warm"
         try:
             expose_text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
             stars, why = rating.rate_listing(l, expose_text)
@@ -272,8 +287,7 @@ def main():
         if status:
             line += f"\nAnfrage: {status} ({info})"
         notify(line)
-        seen.add(l["url"])  # nie doppelt senden, auch bei Fehler/unklar
-    SEEN_FILE.write_text(json.dumps(sorted(seen), indent=1))
+    save_seen(seen)
     daily_summary(stats, now)
     STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
     mode = "SENDEN" if send else "TROCKENLAUF"
