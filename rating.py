@@ -138,7 +138,7 @@ def locate(text):
 def _overpass(query):
     try:
         r = requests.post("https://overpass-api.de/api/interpreter", data={"data": query},
-                          headers=UA, timeout=25)
+                          headers=UA, timeout=10)  # kurz halten: läuft jetzt vor dem Senden
         return int(r.json()["elements"][0]["tags"]["total"])
     except Exception:
         return None

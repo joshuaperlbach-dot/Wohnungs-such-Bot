@@ -44,7 +44,8 @@ MAX_ROOMS = 2
 MAX_WARMMIETE = 950.0
 MAX_KALTMIETE = 900.0  # steht nur im Exposé; unbekannt = kein Ausschluss
 ALLOW_WBS = False
-MAX_SENDS_PER_RUN = 3  # Sicherung gegen Fehlalarm; der Rest kommt beim nächsten Lauf dran
+MIN_STARS_SEND = 4  # automatisch anfragen erst ab so vielen Sternen; gemeldet wird alles
+MAX_SENDS_PER_RUN = 3 # Sicherung gegen Fehlalarm; der Rest kommt beim nächsten Lauf dran
 
 # Erlaubte Bezirke/Ortsteile (steht am Anfang jeder Angebotskarte)
 ALLOWED_DISTRICTS = [
@@ -347,22 +348,25 @@ def main():
                 rated[l["url"]] = ("", "")
         return rated[l["url"]]
 
-    strict = [l for l in new_hits if matches_strict(l)]
-    if len(strict) > MAX_SENDS_PER_RUN:
-        # Mehr Treffer als das Limit: die mit den meisten Sternen zuerst. Der Rest
-        # bleibt ungesehen und kommt beim nächsten Lauf dran.
-        strict.sort(key=lambda l: -rate(l)[0].count("★"))
-        strict = strict[:MAX_SENDS_PER_RUN]
+    def stars_of(l):
+        return rate(l)[0].count("★")
+
+    # Automatisch anfragen nur bei sicher passenden Angeboten ab MIN_STARS_SEND Sternen,
+    # die besten zuerst. Gemeldet wird trotzdem jeder Treffer.
+    good = sorted((l for l in new_hits if matches_strict(l) and stars_of(l) >= MIN_STARS_SEND),
+                  key=lambda l: -stars_of(l))
+    sending = {l["url"] for l in good[:MAX_SENDS_PER_RUN]}
+    # Über dem Limit: bleibt ungesehen und kommt beim nächsten Lauf dran
+    waiting = {l["url"] for l in good[MAX_SENDS_PER_RUN:]}
     results = []
-    # Erst alle Anfragen senden, danach bewerten und melden: Geschwindigkeit geht vor
-    for l in strict + [l for l in new_hits if not matches_strict(l)]:
+    for l in good[:MAX_SENDS_PER_RUN] + [l for l in new_hits if l["url"] not in sending | waiting]:
         status = info = None
         expose(l)
         # Schon VOR dem Senden merken und speichern: bricht der Lauf danach ab
         # (Absturz, Timeout), geht die Anfrage beim nächsten Lauf nicht doppelt raus.
         seen.add(l["url"])
         save_seen(seen)
-        if matches_strict(l):
+        if l["url"] in sending:
             status, info = send_request(l, person, send, expose(l))
             if status in ("gesendet", "unklar"):
                 stats["sent"] += 1
@@ -378,6 +382,8 @@ def main():
         line += f"\n{l['url']}"
         if status:
             line += f"\nAnfrage: {status} ({info})"
+        elif matches_strict(l):
+            line += f"\nKeine Anfrage (unter {MIN_STARS_SEND} Sternen)"
         notify(line)
     save_seen(seen)
     daily_summary(stats, now)

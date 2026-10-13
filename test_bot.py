@@ -227,7 +227,7 @@ def test_no_double_send_after_crash():
 
         with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
                 mock.patch("wbm_bot.time.sleep"), mock.patch("wbm_bot.notify", crash), \
-                mock.patch("wbm_bot.rating.rate_listing", return_value=("★", "")):
+                mock.patch("wbm_bot.rating.rate_listing", return_value=("★★★★☆ (4/5)", "")):
             with mock.patch("wbm_bot.HTTP.post", post_timeout):
                 try:
                     wbm_bot.main()
@@ -268,7 +268,7 @@ def test_wbs_from_expose_field():
         wbm_bot.STATS_FILE = Path(td) / "stats.json"
         with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
                 mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
-                mock.patch("wbm_bot.rating.rate_listing", return_value=("★★★☆☆ (3/5)", "")):
+                mock.patch("wbm_bot.rating.rate_listing", return_value=("★★★★☆ (4/5)", "")):
             wbm_bot.main()
         assert sent == ["ohne"], sent
         seen = [u.split("/")[-2] for u in json.loads(wbm_bot.SEEN_FILE.read_text())]
@@ -310,12 +310,38 @@ def test_empty_page_vs_broken_page():
         assert codes == [1, 1] and len(msgs) == 1 and "nicht sauber lesbar" in msgs[0], (msgs, codes)
 
 
+def test_send_only_from_four_stars_but_report_all():
+    cards = "<div class='list'>" + "".join(
+        card(s, "Schöne 2 Zimmer", "800,00", "60", 2) for s in ("top", "mittel", "mau")) + "</div>"
+    stars = {"top": 5, "mittel": 3, "mau": 1}
+    env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
+    sent, msgs = [], []
+
+    def get(url, **kw):
+        return mock.Mock(text=cards if url == wbm_bot.URL else FORM_HTML, status_code=200)
+
+    def post(url, **kw):
+        sent.append(kw["headers"]["Referer"].split("/")[-2])
+        return mock.Mock(status_code=200, text="Vielen Dank")
+
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get),                 mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"),                 mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("wbm_bot.SUMMARY_HOUR", 25),                 mock.patch("wbm_bot.rating.rate_listing",
+                           lambda l, text="": ("★" * stars[l["url"].split("/")[-2]], "")):
+            wbm_bot.main()
+            wbm_bot.main()
+    assert sent == ["top"], sent  # nur ab 4 Sternen anfragen
+    assert len(msgs) == 3, msgs   # aber alle drei melden, je einmal
+    assert "Anfrage: gesendet" in msgs[0] and all("Keine Anfrage (unter 4 Sternen)" in m for m in msgs[1:]), msgs
+
+
 def test_over_limit_best_stars_first_rest_next_run():
     many = "<div class='list'>" + "".join(
         card(f"w{i}", "Schöne 2 Zimmer", "800,00", "60", 2) for i in range(5)) + "</div>"
     env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
     ok = mock.Mock(status_code=200, text="Vielen Dank")
-    stars = {"w0": 1, "w1": 5, "w2": 2, "w3": 4, "w4": 3}
+    stars = {"w0": 4, "w1": 5, "w2": 4, "w3": 5, "w4": 4}
     sent = []
 
     def get(url, **kw):
@@ -335,9 +361,9 @@ def test_over_limit_best_stars_first_rest_next_run():
                 mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
                 mock.patch("wbm_bot.rating.rate_listing", rate):
             wbm_bot.main()
-            assert sent == ["w1", "w3", "w4"], sent  # die besten drei zuerst
+            assert sent == ["w1", "w3", "w0"], sent  # die besten drei zuerst
             wbm_bot.main()
-            assert sent == ["w1", "w3", "w4", "w0", "w2"], sent  # Rest beim nächsten Lauf
+            assert sent == ["w1", "w3", "w0", "w2", "w4"], sent  # Rest beim nächsten Lauf
             wbm_bot.main()
             assert len(sent) == 5, sent  # danach nichts mehr, nie doppelt
 
