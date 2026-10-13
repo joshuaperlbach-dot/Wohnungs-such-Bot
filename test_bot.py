@@ -224,6 +224,39 @@ def test_no_double_send_after_crash():
                 post.assert_not_called()
 
 
+def test_wbs_from_expose_field():
+    assert wbm_bot.parse_wbs_required("<p>Bezugsfertig ab: sofort WBS erforderlich: Ja Merkmale</p>") is True
+    assert wbm_bot.parse_wbs_required("<dt>WBS erforderlich:</dt> <dd>Nein</dd>") is False
+    assert wbm_bot.parse_wbs_required(FORM_HTML) is None
+    cards = "<div class='list'>" + "".join([
+        card("ohne", "2 Zimmer, kein WBS nötig", "800,00", "60", 2),      # Karte sagt WBS, Exposé nein
+        card("mit", "Schöne 2 Zimmer", "800,00", "60", 2),                # Karte sagt nichts, Exposé ja
+        card("offen", "2-Zimmer WBS 100", "480,00", "52", 2, "<li>WBS</li>"),  # Exposé ohne Feld
+    ]) + "</div>"
+    field = {"ohne": "<p>WBS erforderlich: Nein</p>", "mit": "<p>WBS erforderlich: Ja</p>", "offen": ""}
+    env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
+    sent = []
+
+    def get(url, **kw):
+        text = cards if url == wbm_bot.URL else field[url.split("/")[-2]] + FORM_HTML
+        return mock.Mock(text=text, status_code=200)
+
+    def post(url, **kw):
+        sent.append(kw["headers"]["Referer"].split("/")[-2])
+        return mock.Mock(status_code=200, text="Vielen Dank")
+
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
+                mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
+                mock.patch("wbm_bot.rating.rate_listing", return_value=("★★★☆☆ (3/5)", "")):
+            wbm_bot.main()
+        assert sent == ["ohne"], sent
+        seen = [u.split("/")[-2] for u in json.loads(wbm_bot.SEEN_FILE.read_text())]
+        assert seen == ["mit", "ohne"], seen  # "offen" bleibt offen, wird nicht angefragt
+
+
 def test_over_limit_best_stars_first_rest_next_run():
     many = "<div class='list'>" + "".join(
         card(f"w{i}", "Schöne 2 Zimmer", "800,00", "60", 2) for i in range(5)) + "</div>"

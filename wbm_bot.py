@@ -185,6 +185,13 @@ def fetch_expose(url):
         return ""
 
 
+def parse_wbs_required(expose_html):
+    """Feld "WBS erforderlich" aus dem Exposé: True/False, None = steht nicht da."""
+    text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
+    m = re.search(r"WBS erforderlich:\s*(Ja|Nein)", text, re.I)
+    return m.group(1).lower() == "ja" if m else None
+
+
 def send_request(listing, person, send, html=None):
     """Besichtigungsanfrage für ein Angebot. Gibt (status, info) zurück."""
     html = html or fetch_expose(listing["url"])
@@ -259,13 +266,26 @@ def main():
     stats["scanned"] = sorted(set(stats["scanned"]) | {l["url"] for l in listings})
 
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
-    new_hits = [l for l in listings if matches(l) and l["url"] not in seen]
     exposes, rated = {}, {}
 
     def expose(l):
         if l["url"] not in exposes:
             exposes[l["url"]] = fetch_expose(l["url"])
         return exposes[l["url"]]
+
+    # WBS: das Wort auf der Karte ist nur ein Hinweis ("kein WBS nötig" enthält es auch).
+    # Verbindlich ist das Feld im Exposé, wenn es dort steht.
+    new_hits = []
+    for l in listings:
+        if l["url"] in seen or not matches({**l, "wbs": False}):
+            continue
+        required = parse_wbs_required(expose(l))
+        if required is not None:
+            l["wbs"] = required
+        if matches(l):
+            new_hits.append(l)
+        elif required:
+            seen.add(l["url"])  # sicher mit WBS: nicht bei jedem Lauf neu prüfen
 
     def rate(l):
         if l["url"] not in rated:
