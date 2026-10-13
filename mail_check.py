@@ -50,9 +50,12 @@ def classify(text):
 
 
 def norm(text):
-    """Für den Adressvergleich: 'Kleine Andreasstraße 11' == 'Kleine Andreasstrasse 11'."""
-    t = text.lower().replace("ß", "ss").replace("str.", "strasse")
-    return re.sub(r"[^a-z0-9äöü]+", " ", t).strip()
+    """Für den Adressvergleich: 'Kleine Andreasstraße 11' == 'Kleine Andreasstrasse 11' ==
+    'Kleine Andreasstr. 11'. Umlaute und ß fallen ganz weg, damit auch Mails mit kaputt
+    kodierten Sonderzeichen ("straÃŸe") noch passen."""
+    t = "".join(c if ord(c) < 128 else " " if c.isspace() else "" for c in text.lower())
+    t = re.sub(r"[^a-z0-9]+", " ", t)
+    return re.sub(r"stra(?:ss)?e\b|str\b", "str", t).strip()
 
 
 def street_of(address):
@@ -71,13 +74,20 @@ def find_offer(store, text):
 
 
 def body_text(msg):
-    part = msg.get_body(preferencelist=("plain", "html"))
-    if part is None:
-        return ""
-    content = part.get_content()
-    if part.get_content_type() == "text/html":
-        content = BeautifulSoup(content, "html.parser").get_text(" ", strip=True)
-    return content
+    """Der ganze Text der Mail. Manche Absender schicken den Inhalt nur als HTML und im
+    Nur-Text-Teil bloß einen Hinweis, deshalb werden alle Textteile zusammengenommen."""
+    texts = []
+    for part in msg.walk():
+        if part.get_content_maintype() != "text" or part.get_filename():
+            continue
+        try:
+            content = part.get_content()
+        except Exception:
+            continue
+        if part.get_content_subtype() == "html":
+            content = BeautifulSoup(content, "html.parser").get_text(" ", strip=True)
+        texts.append(content)
+    return "\n".join(texts)
 
 
 def mail_id(msg):
@@ -100,6 +110,9 @@ def process(messages, store, seen, now):
         if key:
             store["offers"][key].update(reply=kind, reply_at=offers.iso(now))
         print(f"Mail ausgewertet: {kind}, {'zugeordnet' if key else 'nicht zugeordnet'}")
+        # kurzes Protokoll ohne Inhalt (die letzten 10), zur Kontrolle in offers.json
+        store["mail_log"] = (store.get("mail_log") or [])[-9:] + [
+            {"at": offers.iso(now), "kind": kind, "matched": bool(key), "chars": len(text)}]
         if kind == "einladung":
             notes.append(f"EINLADUNG zur Besichtigung: {where}\nSchau in deine Mails und bestätige den Termin!")
         elif kind == "antwort":

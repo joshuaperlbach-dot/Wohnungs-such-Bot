@@ -590,7 +590,18 @@ zu berücksichtigen. Die Auswahl der möglichen Teilnehmer erfolgte auf Basis de
     sonstiges = mail("<3@wbm.de>", "Newsletter", "Neues aus dem Quartier.")
     assert [mail_check.classify(mail_check.body_text(m)) for m in (absage, einladung, sonstiges)] == \
         ["absage", "einladung", "antwort"]
-    assert mail_check.street_of("Kleine Andreasstrasse 11, 10243 Berlin") == mail_check.norm("Kleine Andreasstraße 11")
+    assert mail_check.street_of("Kleine Andreasstrasse 11, 10243 Berlin") == mail_check.norm("Kleine Andreasstraße 11") \
+        == mail_check.norm("Kleine Andreasstr. 11") == mail_check.norm("Kleine AndreasstraÃ\x9fe 11") \
+        == mail_check.norm("Kleine\nAndreasstraÃŸe\xa011")
+    assert mail_check.norm("Köpenicker Straße 3a") == mail_check.norm("KÃ¶penicker Strasse 3A")
+    # Inhalt nur im HTML-Teil, Nur-Text-Teil ist bloß ein Hinweis
+    both = EmailMessage()
+    both["Message-ID"], both["From"], both["Subject"] = "<9@wbm.de>", "info@wbm.de", "Ihre Anfrage"
+    both.set_content("Bitte HTML-Ansicht verwenden.")
+    both.add_alternative("<p>Wohnung <b>Kleine Andreasstra&szlig;e&nbsp;11</b>, leider vergeben.</p>", subtype="html")
+    probe = {"offers": {"a": {"address": "Kleine Andreasstrasse 11, 10243 Berlin", "requested": "gesendet"}}}
+    assert mail_check.process([both], probe, set(), now) == [] and probe["offers"]["a"]["reply"] == "absage"
+    assert probe["mail_log"][-1]["matched"] is True and probe["mail_log"][-1]["kind"] == "absage"
 
     store = {"offers": {
         "a": {"address": "Kleine Andreasstrasse 11, 10243 Berlin", "requested": "gesendet"},
