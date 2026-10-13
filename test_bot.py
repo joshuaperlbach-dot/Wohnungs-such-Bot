@@ -714,7 +714,7 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
         sent.append(url)
         return mock.Mock(status_code=200, text="ok")
 
-    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "HOWOGE_SEND": "1"}
+    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "HOWOGE_MAX_WARM": "800"}
     five = rating.Rated("★★★★★ (5/5)", "top", 5, 90, {})
     old_file = offers.FILE
     with tempfile.TemporaryDirectory() as td:
@@ -749,14 +749,28 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
                 assert mail_check.process([m2], o, seen, datetime_now()) == [] and opened == [DOI]
         finally:
             offers.FILE = old_file
-    # ohne HOWOGE_SEND=1 wird nichts abgeschickt (Trockenlauf)
+    # Miete über der Einkommensgrenze (750 > 700): melden, aber nicht anfragen
     sent.clear()
     with tempfile.TemporaryDirectory() as td:
         offers.FILE = Path(td) / "docs" / "offers.json"
         ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
         ibw_bot.SEEN_FILE.write_text("[1]")
         try:
-            with mock.patch.dict(os.environ, {**env, "HOWOGE_SEND": ""}), mock.patch("wbm_bot.HTTP.get", get), \
+            with mock.patch.dict(os.environ, {**env, "HOWOGE_MAX_WARM": "700"}), mock.patch("wbm_bot.HTTP.get", get), \
+                    mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
+                    mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
+                ibw_bot.main()
+            assert sent == [] and "Anfrage" not in msgs[-2] and offers.load()["offers"]["ibw-30"].get("requested") is None
+        finally:
+            offers.FILE = old_file
+    # ohne HOWOGE_MAX_WARM wird nichts abgeschickt (Trockenlauf)
+    sent.clear()
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
+        ibw_bot.SEEN_FILE.write_text("[1]")
+        try:
+            with mock.patch.dict(os.environ, {**env, "HOWOGE_MAX_WARM": ""}), mock.patch("wbm_bot.HTTP.get", get), \
                     mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
                     mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
                 ibw_bot.main()

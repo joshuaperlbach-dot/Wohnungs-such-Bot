@@ -253,8 +253,11 @@ def main():
         if not new or first_run:  # unvollständiger erster Lauf: beim nächsten Mal neu
             sys.exit(1)
 
-    # Automatisch anfragen: nur mit HOWOGE_SEND=1 wirklich senden, sonst Trockenlauf
-    send = os.environ.get("HOWOGE_SEND") == "1"
+    # Die HOWOGE verlangt ein Haushaltsnettoeinkommen von mindestens dem Dreifachen der
+    # Gesamtmiete. HOWOGE_MAX_WARM ist die höchste Gesamtmiete, bis zu der angefragt wird
+    # (also Netto / 3). Nicht gesetzt = Trockenlauf, es wird nichts abgeschickt.
+    max_warm = num(os.environ.get("HOWOGE_MAX_WARM"))
+    send = max_warm is not None
     person, missing = wbm_bot.load_person()
     sends = 0
     hits = []
@@ -269,7 +272,7 @@ def main():
         r = rated(l)
         request = None
         if (fresh and not first_run and can_request(l, r) and sends < wbm_bot.MAX_SENDS_PER_RUN
-                and not (send and missing)):
+                and not (send and (missing or l["price"] > max_warm))):
             sends += 1
             # Schon VOR dem Senden merken und speichern: nie doppelt anfragen, auch nach Absturz
             seen.add(l["id"])
