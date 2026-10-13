@@ -675,6 +675,21 @@ HOWOGE_FORM = f"""<form action="/suche.html" method="get"><input name="tx_kesear
 DOI = "https://www.howoge.de/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess/doi.html?h=abc123"
 
 
+def test_push_opens_offer_and_marks_urgent():
+    import ibw_bot
+    l = ibw_bot.parse_page(ibw_card(40))[0]
+    msg = ibw_bot.describe(l, "★★★★☆ (4/5)", "gut")
+    h = wbm_bot.push_headers(msg)
+    assert h == {"Click": "https://example.org/40#accordion-nl-rent-details", "Priority": "high"}, h  # degewo: zum Formular
+    sent = ibw_bot.describe({**l, "company": "howoge"}, "★★★★☆ (4/5)", "gut", ("unklar", "abgeschickt"))
+    assert wbm_bot.push_headers(sent) == {"Click": "https://example.org/40"}  # Bot hat angefragt: nicht dringend
+    assert wbm_bot.push_headers(ibw_bot.describe(l, "★★★☆☆ (3/5)", "ok")).get("Priority") is None
+    assert wbm_bot.push_headers("WBM-Bot Tagesbericht: 3 Angebote gescannt") == {}
+    with mock.patch.dict(os.environ, {"NTFY_TOPIC": "t"}), mock.patch("wbm_bot.requests.post") as post:
+        wbm_bot.notify(msg)
+    assert post.call_args[1]["headers"]["Click"].endswith("#accordion-nl-rent-details")
+
+
 def test_howoge_request():
     import howoge
     l = {"url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-1-1.html?t=ibw"}

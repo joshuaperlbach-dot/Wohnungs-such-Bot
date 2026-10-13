@@ -304,12 +304,25 @@ def app_offer(l, expose_html, rated, status):
     }
 
 
+def push_headers(msg):
+    """Antippen der Push-Meldung öffnet direkt das Angebot; Treffer ab 4 Sternen, bei denen
+    du selbst anfragen musst, kommen als dringend (mit Ton, auch wenn das Handy leise ist)."""
+    headers = {}
+    links = re.findall(r"https://\S+", msg)
+    if links:
+        headers["Click"] = links[-1]
+    if "★★★★" in msg and "Anfrage: gesendet" not in msg and "Anfrage: unklar" not in msg:
+        headers["Priority"] = "high"
+    return headers
+
+
 def notify(msg):
     print(msg + "\n")
     topic = os.environ.get("NTFY_TOPIC")
     if topic:
         try:
-            requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"), timeout=10)
+            requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"),
+                          headers=push_headers(msg), timeout=10)
         except requests.RequestException:
             pass
 

@@ -188,13 +188,19 @@ def describe(l, stars, why, request=None):
     line = f"{stars}  {l['company'] or 'Angebot'}: {l['rooms']} Zi, {price}"
     if why:
         line += f"\n{why}"
-    line += f"\n{l['address']}, {l['plz']} {l['bezirk']}\n{l['url']}"
+    # Link springt, wo möglich, direkt zum Anfrage-Formular der Gesellschaft
+    link = l["url"] + FORM_ANCHOR.get(l["company"], "") if "#" not in l["url"] else l["url"]
+    line += f"\n{l['address']}, {l['plz']} {l['bezirk']}\n{link}"
     if request:
         line += f"\nAnfrage: {request[0]} ({request[1]})"
     return line
 
 
-# Gesellschaften, bei denen der Bot selbst anfragen kann (degewo hat ein Captcha: nur melden)
+# degewo: Formular ist mit einem Captcha geschützt, deshalb fragt der Bot dort nicht selbst an.
+# Der Link in der Meldung öffnet direkt das Formular, den Rest erledigt das Autofill des Handys.
+FORM_ANCHOR = {"degewo": "#accordion-nl-rent-details"}
+
+# Gesellschaften, bei denen der Bot selbst anfragen kann
 SENDERS = {"howoge": howoge.send_request}
 
 
