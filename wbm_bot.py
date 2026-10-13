@@ -43,7 +43,7 @@ MIN_ROOMS = 1
 MAX_ROOMS = 2
 MAX_WARMMIETE = 950.0
 ALLOW_WBS = False
-MAX_SENDS_PER_RUN = 3  # Sicherung gegen Fehlalarm
+MAX_SENDS_PER_RUN = 3  # Sicherung gegen Fehlalarm; der Rest kommt beim nächsten Lauf dran
 
 # Erlaubte Bezirke/Ortsteile (steht am Anfang jeder Angebotskarte)
 ALLOWED_DISTRICTS = [
@@ -260,33 +260,51 @@ def main():
 
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
     new_hits = [l for l in listings if matches(l) and l["url"] not in seen]
-    sends = 0
+    exposes, rated = {}, {}
+
+    def expose(l):
+        if l["url"] not in exposes:
+            exposes[l["url"]] = fetch_expose(l["url"])
+        return exposes[l["url"]]
+
+    def rate(l):
+        if l["url"] not in rated:
+            try:
+                expose_text = BeautifulSoup(expose(l), "html.parser").get_text(" ", strip=True)
+                rated[l["url"]] = rating.rate_listing(l, expose_text)
+            except Exception as e:  # Bewertung darf nie den Bot stoppen
+                print(f"Bewertung fehlgeschlagen: {e}", file=sys.stderr)
+                rated[l["url"]] = ("", "")
+        return rated[l["url"]]
+
+    strict = [l for l in new_hits if matches_strict(l)]
+    if len(strict) > MAX_SENDS_PER_RUN:
+        # Mehr Treffer als das Limit: die mit den meisten Sternen zuerst. Der Rest
+        # bleibt ungesehen und kommt beim nächsten Lauf dran.
+        strict.sort(key=lambda l: -rate(l)[0].count("★"))
+        strict = strict[:MAX_SENDS_PER_RUN]
     results = []
     # Erst alle Anfragen senden, danach bewerten und melden: Geschwindigkeit geht vor
-    for l in new_hits:
-        expose_html = fetch_expose(l["url"])
+    for l in strict + [l for l in new_hits if not matches_strict(l)]:
         status = info = None
+        expose(l)
         # Schon VOR dem Senden merken und speichern: bricht der Lauf danach ab
         # (Absturz, Timeout), geht die Anfrage beim nächsten Lauf nicht doppelt raus.
         seen.add(l["url"])
         save_seen(seen)
-        if matches_strict(l) and sends < MAX_SENDS_PER_RUN:
-            sends += 1
-            status, info = send_request(l, person, send, expose_html)
+        if matches_strict(l):
+            status, info = send_request(l, person, send, expose(l))
             if status in ("gesendet", "unklar"):
                 stats["sent"] += 1
             if status == "unklar":
                 stats["unclear"] += 1
             time.sleep(2)
-        results.append((l, expose_html, status, info))
-    for l, expose_html, status, info in results:
+        results.append((l, status, info))
+    for l, status, info in results:
         line = f"WBM: {l['rooms']} Zi, {l['price']} € warm"
-        try:
-            expose_text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
-            stars, why = rating.rate_listing(l, expose_text)
+        stars, why = rate(l)
+        if stars:
             line = f"{stars}  {line}" + (f"\n{why}" if why else "")
-        except Exception as e:  # Bewertung darf nie den Bot stoppen
-            print(f"Bewertung fehlgeschlagen: {e}", file=sys.stderr)
         line += f"\n{l['url']}"
         if status:
             line += f"\nAnfrage: {status} ({info})"

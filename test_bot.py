@@ -224,6 +224,38 @@ def test_no_double_send_after_crash():
                 post.assert_not_called()
 
 
+def test_over_limit_best_stars_first_rest_next_run():
+    many = "<div class='list'>" + "".join(
+        card(f"w{i}", "Schöne 2 Zimmer", "800,00", "60", 2) for i in range(5)) + "</div>"
+    env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
+    ok = mock.Mock(status_code=200, text="Vielen Dank")
+    stars = {"w0": 1, "w1": 5, "w2": 2, "w3": 4, "w4": 3}
+    sent = []
+
+    def get(url, **kw):
+        return mock.Mock(text=many if url == wbm_bot.URL else FORM_HTML, status_code=200)
+
+    def post(url, **kw):
+        sent.append(kw["headers"]["Referer"].split("/")[-2])
+        return ok
+
+    def rate(l, text=""):
+        return "★" * stars[l["url"].split("/")[-2]], ""
+
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
+                mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
+                mock.patch("wbm_bot.rating.rate_listing", rate):
+            wbm_bot.main()
+            assert sent == ["w1", "w3", "w4"], sent  # die besten drei zuerst
+            wbm_bot.main()
+            assert sent == ["w1", "w3", "w4", "w0", "w2"], sent  # Rest beim nächsten Lauf
+            wbm_bot.main()
+            assert len(sent) == 5, sent  # danach nichts mehr, nie doppelt
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
