@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#14161a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
 <title>Wohnungen</title>
 <style>
   :root {
@@ -309,6 +313,7 @@ document.getElementById("sort").addEventListener("click", () => { newestFirst = 
 refresh();
 setInterval(refresh, 120e3);
 document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 </script>
 </body>
 </html>
