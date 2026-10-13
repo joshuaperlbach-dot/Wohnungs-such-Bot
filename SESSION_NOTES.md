@@ -28,15 +28,23 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 1. Angebotsseite laden, Karten parsen (Container um jeden Link `/angebote/details/`): Preis (Warmmiete),
    Zimmer, WBS-Flag, Bezirk (steht am Textanfang der Karte).
 2. Benachrichtigen (`matches`): Bezirk nicht ausgeschlossen, Zimmer/Preis passen, kein WBS. Bei unklaren Daten lieber melden.
+   WBS und Kaltmiete kommen aus den Feldern im Exposé ("WBS erforderlich: Ja/Nein", "Nettokaltmiete"),
+   das Wort "WBS" auf der Karte ist nur ein Hinweis.
 3. Automatisch anfragen (`matches_strict`): nur wenn Bezirk sicher passt und alle Daten bekannt sind.
-   Max. 3 Anfragen pro Lauf, nie zweimal dasselbe Angebot (auch nicht bei Fehler/unklar).
+   Max. 3 Anfragen pro Lauf: bei mehr Treffern die mit den meisten Sternen zuerst, der Rest beim nächsten Lauf.
+   Nie zweimal dasselbe Angebot: `seen.json` wird schon VOR dem Senden gespeichert, und der Workflow
+   committet sie auch nach Absturz/Timeout.
 4. Formular: Powermail (TYPO3) im Exposé, POST multipart an `/wohnungen-berlin/angebote/details/`.
    Versteckte Felder (`__trustedProperties`, `objekt`, `mail[form]`) werden frisch von der Seite gelesen.
    WBS=nein (`wbsvorhanden`=0), Datenschutz-Häkchen `datenschutzhinweis[]`=1, Honeypot `__hp` leer lassen.
    Kein Login, kein Upload, kein Captcha beobachtet.
+   Gesendet wird wie im Browser: eine Sitzung (Cookie `fe_typo_user`), Referer, multipart.
 5. Erfolgserkennung per Text ("Vielen Dank", "erfolgreich", ...). Sonst Status "unklar" (zählt trotzdem als gesendet, wird im Tagesbericht markiert).
 6. Bewertung läuft NACH dem Senden (Geschwindigkeit zuerst) und darf den Bot nie stoppen (try/except).
 7. Tagesbericht ab 20:00 Berliner Zeit, einmal pro Tag.
+8. Störung (`check_page`): Die Seite nennt die Anzahl selbst ("8 Mietwohnungen in Berlin"). Weicht die
+   gelesene Anzahl ab oder ist die Seite nicht lesbar, gibt es höchstens eine Push-Meldung pro Tag.
+   Eine wirklich leere Angebotsliste ist kein Fehler.
 
 ## Kriterien und Bewertung
 - Filter: 1-2 Zimmer, max. 950 € Warmmiete, ohne WBS.
@@ -49,13 +57,14 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Gewichte (Summe 100): Kosten 25, Lage 15, Ringbahn 10, ÖPNV 5, Bezirk 5, Größe 12, Zimmer 8, Außenbereich 10, Aufzug 10.
 - Sterne ab Punkten: 5 >= 85, 4 >= 70, 3 >= 55, 2 >= 40.
 - Bewusst NICHT bewertet: Lärm (unwichtig, "laut sein können" lässt sich vorher nicht prüfen).
-- Kaltmiete: Obergrenze ca. 900 € kalt, wird nicht geprüft, weil die Seite nur Warmmiete zeigt.
+- Kaltmiete: Obergrenze 900 € kalt (`MAX_KALTMIETE`), aus dem Exposé gelesen; unbekannt = kein Ausschluss.
+- Ringbahn: feste Liste der 27 Halte in `rating.py`, braucht kein Netz.
 
 ## Bekannte Schwächen / ungetestet
 - Das echte Senden wurde noch nicht gegen die Live-Seite getestet (bisher keine passenden Angebote). Beim ersten echten Treffer Status und Meldung prüfen.
-- Nominatim/Overpass (Adresse, Haltestellen, Ringbahn) aus der Entwicklungsumgebung nicht erreichbar, nur mit Mocks getestet.
-  Die Overpass-Abfrage für die Ringbahn (Relationen S41/S42) ist unverifiziert.
-- Adresse wird aus dem Kartentext geraten (Straße + Hausnummer, Fallback nur PLZ). Etage wird nur grob per Regex aus dem Exposé gelesen.
+- Overpass (Haltestellen im Umkreis, 5 von 100 Punkten) antwortet oft nicht (504/Timeout); dann zählt der Wert neutral.
+- Adresse wird aus dem Kartentext geraten (Straße + Hausnummer, Fallback nur PLZ).
+- Etage "DG" (Dachgeschoss) hat keine Zahl und zählt als unbekannt.
 - Bezirk wird per Textanfang erkannt, unbekannte Labels werden nur gemeldet, nicht angefragt.
 - GitHub kann Cron-Läufe verzögern; geplante Workflows werden nach 60 Tagen ohne Repo-Aktivität deaktiviert (die täglichen Commits von `stats.json` halten es aktiv).
 - Seitenaufbau von wbm.de kann sich ändern: Bot bricht mit Fehler ab, wenn keine Angebote gefunden werden.

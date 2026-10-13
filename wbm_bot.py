@@ -42,6 +42,7 @@ P = "tx_powermail_pi1[field]"
 MIN_ROOMS = 1
 MAX_ROOMS = 2
 MAX_WARMMIETE = 950.0
+MAX_KALTMIETE = 900.0  # steht nur im Exposé; unbekannt = kein Ausschluss
 ALLOW_WBS = False
 MAX_SENDS_PER_RUN = 3  # Sicherung gegen Fehlalarm; der Rest kommt beim nächsten Lauf dran
 
@@ -73,8 +74,18 @@ def parse_price(text):
 
 
 def parse_rooms(text):
-    hits = re.findall(r"(\d+)\s+Zimmer\b", text)
-    return int(hits[-1]) if hits else None
+    hits = re.findall(r"(\d+(?:,\d)?)\s+Zimmer\b", text)
+    if not hits:
+        return None
+    rooms = float(hits[-1].replace(",", "."))  # auch "2,5 Zimmer"
+    return int(rooms) if rooms.is_integer() else rooms
+
+
+def parse_cold_rent(expose_html):
+    """Nettokaltmiete aus dem Exposé; None = steht nicht da."""
+    text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
+    m = re.search(r"Nettokaltmiete:?\s*([\d.]+,\d{2})", text)
+    return float(m.group(1).replace(".", "").replace(",", ".")) if m else None
 
 
 def parse_listings(html):
@@ -125,6 +136,8 @@ def check_page(html, listings):
 def matches(l):
     """Für Benachrichtigung: im Zweifel lieber melden als verpassen."""
     if l.get("district") is False:
+        return False
+    if (l.get("cold") or 0) > MAX_KALTMIETE:
         return False
     if l["price"] is None or l["rooms"] is None:
         return True
@@ -219,12 +232,17 @@ def send_request(listing, person, send, html=None):
     if not send:
         return "trockenlauf", f"{len(data)} Felder vorbereitet, nichts gesendet"
     action = urljoin(listing["url"], form.get("action", ""))
+    # Im selben Format senden wie der Browser (das Formular verlangt multipart)
+    if "multipart" in form.get("enctype", ""):
+        body = {"files": {k: (None, v) for k, v in data.items()}}
+    else:
+        body = {"data": data}
     try:
-        resp = HTTP.post(action, data=data, headers={"Referer": listing["url"]}, timeout=20)
+        resp = HTTP.post(action, headers={"Referer": listing["url"]}, timeout=20, **body)
     except requests.RequestException as e:
         # Kann trotzdem angekommen sein: als unklar werten, nicht erneut senden
         return "unklar", type(e).__name__
-    ok =resp.status_code == 200 and re.search(
+    ok = resp.status_code == 200 and re.search(
         r"vielen dank|erfolgreich|wurde.*(gesendet|übermittelt)", resp.text, re.I
     )
     return ("gesendet" if ok else "unklar"), f"HTTP {resp.status_code}"
@@ -313,6 +331,7 @@ def main():
         required = parse_wbs_required(expose(l))
         if required is not None:
             l["wbs"] = required
+        l["cold"] = parse_cold_rent(expose(l))
         if matches(l):
             new_hits.append(l)
         elif required:

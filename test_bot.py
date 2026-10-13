@@ -92,6 +92,9 @@ def test_send_posts_once_and_detects_success():
     assert post.call_count == 1
     assert post.call_args[0][0] == "https://www.wbm.de/wohnungen-berlin/angebote/details/"
     assert post.call_args[1]["headers"]["Referer"] == l["url"]
+    # multipart wie im Browser, mit allen Feldern
+    files = post.call_args[1]["files"]
+    assert files[f"{P}[e_mail]"] == (None, "max@example.com") and "data" not in post.call_args[1]
 
 
 def test_rating_parsing_and_score():
@@ -108,6 +111,21 @@ def test_rating_parsing_and_score():
     assert rating.parse_floor("Wohnung im 3. OG mit Blick") == 3
     assert rating.parse_floor("Lage: Erdgeschoss") == 0
     assert rating.parse_floor("nichts dazu") is None
+    # Feld im Exposé geht vor ("EG" kann sonst irgendwo auf der Seite stehen)
+    assert rating.parse_floor("Größe: ca. 71.75 m² Etage: 4 Objektnummer EG") == 4
+    assert rating.parse_floor("Etage: EG Objektnummer") == 0
+    assert rating.parse_floor("Etage: DG Objektnummer") is None
+    # Ringbahn ohne Netz: Ostkreuz nah, Alexanderplatz mittel/weit, Spandau weit
+    assert rating.ring_score((52.5035, 13.4700)) == 1.0
+    assert rating.ring_score((52.5380, 13.4250)) == 1.0  # Prenzlauer Berg, nahe Prenzlauer Allee
+    assert rating.ring_score((52.5219, 13.4132)) == 0.0  # Alexanderplatz
+    assert rating.ring_score((52.5350, 13.2000)) == 0.0  # Spandau
+    assert len(rating.RINGBAHN) == 27
+    assert wbm_bot.parse_rooms("Helle 2,5 Zimmer") == 2.5 and wbm_bot.parse_rooms("3 Zimmer mit Balkon 2 Zimmer") == 2
+    assert wbm_bot.parse_cold_rent("<p>Mietkosten Nettokaltmiete 1.074,60 EUR Nebenkosten</p>") == 1074.60
+    assert wbm_bot.parse_cold_rent("<p>nichts</p>") is None
+    ok = {"price": 940.0, "rooms": 2, "wbs": False, "district": True}
+    assert matches_strict(ok) and matches({**ok, "cold": 880.0}) and not matches({**ok, "cold": 910.0})
     c = rating.address_candidates("Helle Wohnung Bernauer Strasse 29, 10115 Berlin")
     assert c[0].endswith("10115 Berlin") and "29" in c[0] and c[-1] == "10115 Berlin", c
     kein = {"balkon": False, "garten": False, "aufzug": False}

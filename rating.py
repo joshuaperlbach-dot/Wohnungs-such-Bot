@@ -23,6 +23,24 @@ STAR_STEPS = [(5, 85), (4, 70), (3, 55), (2, 40)]
 # Über SOFT_PRICE gibt es höchstens 4 Sterne, außer die Wohnung ist sonst extrem gut
 FIVE_STAR_OVER_SOFT_MIN_POINTS = 88
 
+# Die 27 Halte der Ringbahn (S41/S42), Koordinaten auf etwa 150 m genau
+RINGBAHN = [
+    ("Gesundbrunnen", 52.5487, 13.3885), ("Schönhauser Allee", 52.5493, 13.4152),
+    ("Prenzlauer Allee", 52.5448, 13.4274), ("Greifswalder Straße", 52.5403, 13.4390),
+    ("Landsberger Allee", 52.5296, 13.4553), ("Storkower Straße", 52.5239, 13.4650),
+    ("Frankfurter Allee", 52.5136, 13.4752), ("Ostkreuz", 52.5031, 13.4693),
+    ("Treptower Park", 52.4938, 13.4613), ("Sonnenallee", 52.4730, 13.4556),
+    ("Neukölln", 52.4693, 13.4423), ("Hermannstraße", 52.4674, 13.4313),
+    ("Tempelhof", 52.4706, 13.3855), ("Südkreuz", 52.4753, 13.3655),
+    ("Schöneberg", 52.4795, 13.3521), ("Innsbrucker Platz", 52.4783, 13.3432),
+    ("Bundesplatz", 52.4778, 13.3290), ("Heidelberger Platz", 52.4797, 13.3126),
+    ("Hohenzollerndamm", 52.4886, 13.3003), ("Halensee", 52.4962, 13.2905),
+    ("Westkreuz", 52.5011, 13.2838), ("Messe Nord/ICC", 52.5078, 13.2832),
+    ("Westend", 52.5182, 13.2845), ("Jungfernheide", 52.5303, 13.2993),
+    ("Beusselstraße", 52.5343, 13.3290), ("Westhafen", 52.5363, 13.3440),
+    ("Wedding", 52.5427, 13.3661),
+]
+
 # Gewichte (Summe 100)
 W = {
     "Kosten": 25, "Lage": 15, "Ringbahn": 10, "ÖPNV": 5, "Bezirk": 5,
@@ -66,6 +84,10 @@ def parse_features(text):
 
 def parse_floor(text):
     """Etage aus dem Exposé; None = unbekannt, 0 = Erdgeschoss."""
+    m = re.search(r"\bEtage:\s*(\w+)", text)  # eigenes Feld im Exposé: "Etage: 4", "EG", "DG"
+    if m:
+        v = m.group(1)
+        return int(v) if v.isdigit() else 0 if v in ("EG", "Erdgeschoss") else None
     if re.search(r"\b(EG|Erdgeschoss|Erdgeschoß)\b", text):
         return 0
     m = re.search(r"(\d+)\.?\s*(?:OG|Obergeschoss|Obergeschoß|Etage|Stock)\b", text) \
@@ -130,25 +152,10 @@ def count_transit(coord, radius=500):
         f'node["highway"="bus_stop"](around:{radius},{lat},{lon}););out count;')
 
 
-def ringbahn_stations(coord, radius):
-    """Anzahl Ringbahn-Halte (S41/S42) im Umkreis; None bei Fehler."""
-    lat, lon = coord
-    return _overpass(
-        f'[out:json][timeout:25];rel["route"~"train|light_rail"]["ref"~"^S4[12]$"]->.r;'
-        f'node(r.r)["railway"~"station|stop"](around:{radius},{lat},{lon});out count;')
-
-
 def ring_score(coord):
-    """1.0 = Ringbahn-Halt in ~800 m, 0.5 = in ~1,5 km, sonst 0; None-Fehler -> 0,5."""
-    near = ringbahn_stations(coord, 800)
-    if near is None:
-        return None
-    if near > 0:
-        return 1.0
-    far = ringbahn_stations(coord, 1500)
-    if far is None:
-        return None
-    return 0.5 if far > 0 else 0.0
+    """1.0 = Ringbahn-Halt in ~800 m, 0.5 = in ~1,5 km, sonst 0. Braucht kein Netz."""
+    km = min(haversine_km(coord, (lat, lon)) for _, lat, lon in RINGBAHN)
+    return 1.0 if km <= 0.8 else 0.5 if km <= 1.5 else 0.0
 
 
 # --- Bewertung ---
