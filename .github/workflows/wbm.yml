@@ -26,6 +26,7 @@ jobs:
         timeout-minutes: 5
         env:
           WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = wirklich senden, sonst Trockenlauf
+          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}     # höchste Gesamtmiete für Anfragen; leer = keine Grenze
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python wbm_bot.py
@@ -33,7 +34,7 @@ jobs:
         if: always()            # unabhängig vom WBM-Bot
         timeout-minutes: 4
         env:
-          HOWOGE_MAX_WARM: ${{ vars.HOWOGE_MAX_WARM }}  # höchste Gesamtmiete für HOWOGE-Anfragen; leer = Trockenlauf
+          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}      # höchste Gesamtmiete für Anfragen; leer = HOWOGE nur Trockenlauf
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python ibw_bot.py

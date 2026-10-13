@@ -61,6 +61,16 @@ OTHER_DISTRICTS = [
 ]
 
 
+def send_cap():
+    """Höchste Gesamtmiete, bis zu der automatisch angefragt wird (Repo-Variable MAX_WARM_SEND).
+    Vermieter verlangen meist das Dreifache der Miete als Nettoeinkommen; teurere Angebote
+    werden nur gemeldet. None = keine Grenze gesetzt."""
+    try:
+        return float(os.environ.get("MAX_WARM_SEND", "").replace(",", "."))
+    except ValueError:
+        return None
+
+
 def district_ok(text):
     """True = gewünscht, False = nicht gewünscht, None = nicht erkennbar."""
     if any(text.startswith(d) for d in ALLOWED_DISTRICTS):
@@ -403,8 +413,9 @@ def main():
 
     # Automatisch anfragen nur bei sicher passenden Angeboten ab MIN_STARS_SEND Sternen,
     # die besten zuerst. Gemeldet wird trotzdem jeder Treffer.
-    good = sorted((l for l in new_hits if matches_strict(l) and stars_of(l) >= MIN_STARS_SEND),
-                  key=lambda l: -stars_of(l))
+    cap = send_cap()
+    good = sorted((l for l in new_hits if matches_strict(l) and stars_of(l) >= MIN_STARS_SEND
+                   and (cap is None or l["price"] <= cap)), key=lambda l: -stars_of(l))
     sending = {l["url"] for l in good[:MAX_SENDS_PER_RUN]}
     # Über dem Limit: bleibt ungesehen und kommt beim nächsten Lauf dran
     waiting = {l["url"] for l in good[MAX_SENDS_PER_RUN:]}
@@ -432,6 +443,8 @@ def main():
         line += f"\n{l['url']}"
         if status:
             line += f"\nAnfrage: {status} ({info})"
+        elif matches_strict(l) and cap is not None and l["price"] > cap:
+            line += "\nKeine Anfrage (Miete über deiner Grenze für Anfragen)"
         elif matches_strict(l):
             line += f"\nKeine Anfrage (unter {MIN_STARS_SEND} Sternen)"
         notify(line)

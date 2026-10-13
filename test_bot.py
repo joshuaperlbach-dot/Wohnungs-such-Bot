@@ -355,6 +355,22 @@ def test_send_only_from_four_stars_but_report_all():
     assert sent == ["top"], sent  # nur ab 4 Sternen anfragen
     assert len(msgs) == 3, msgs   # aber alle drei melden, je einmal
     assert "Anfrage: gesendet" in msgs[0] and all("Keine Anfrage (unter 4 Sternen)" in m for m in msgs[1:]), msgs
+    # Grenze für Anfragen (Einkommensregel): 800 € Miete bei Grenze 750 wird nur gemeldet
+    sent.clear(); msgs.clear()
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        with mock.patch.dict(os.environ, {**env, "MAX_WARM_SEND": "750"}), mock.patch("wbm_bot.HTTP.get", get), \
+                mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
+                mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("wbm_bot.SUMMARY_HOUR", 25), \
+                mock.patch("wbm_bot.rating.rate_listing",
+                           lambda l, text="": ("★" * stars[l["url"].split("/")[-2]], "")):
+            wbm_bot.main()
+            assert sent == [] and "über deiner Grenze" in msgs[0], (sent, msgs)
+        with mock.patch.dict(os.environ, {"MAX_WARM_SEND": "800"}):
+            assert wbm_bot.send_cap() == 800.0
+        with mock.patch.dict(os.environ, {"MAX_WARM_SEND": ""}):
+            assert wbm_bot.send_cap() is None
 
 
 def test_over_limit_best_stars_first_rest_next_run():
@@ -714,7 +730,7 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
         sent.append(url)
         return mock.Mock(status_code=200, text="ok")
 
-    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "HOWOGE_MAX_WARM": "800"}
+    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "MAX_WARM_SEND": "800"}
     five = rating.Rated("★★★★★ (5/5)", "top", 5, 90, {})
     old_file = offers.FILE
     with tempfile.TemporaryDirectory() as td:
@@ -756,21 +772,21 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
         ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
         ibw_bot.SEEN_FILE.write_text("[1]")
         try:
-            with mock.patch.dict(os.environ, {**env, "HOWOGE_MAX_WARM": "700"}), mock.patch("wbm_bot.HTTP.get", get), \
+            with mock.patch.dict(os.environ, {**env, "MAX_WARM_SEND": "700"}), mock.patch("wbm_bot.HTTP.get", get), \
                     mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
                     mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
                 ibw_bot.main()
             assert sent == [] and "Anfrage" not in msgs[-2] and offers.load()["offers"]["ibw-30"].get("requested") is None
         finally:
             offers.FILE = old_file
-    # ohne HOWOGE_MAX_WARM wird nichts abgeschickt (Trockenlauf)
+    # ohne MAX_WARM_SEND wird nichts abgeschickt (Trockenlauf)
     sent.clear()
     with tempfile.TemporaryDirectory() as td:
         offers.FILE = Path(td) / "docs" / "offers.json"
         ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
         ibw_bot.SEEN_FILE.write_text("[1]")
         try:
-            with mock.patch.dict(os.environ, {**env, "HOWOGE_MAX_WARM": ""}), mock.patch("wbm_bot.HTTP.get", get), \
+            with mock.patch.dict(os.environ, {**env, "MAX_WARM_SEND": ""}), mock.patch("wbm_bot.HTTP.get", get), \
                     mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
                     mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
                 ibw_bot.main()

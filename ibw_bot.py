@@ -254,9 +254,9 @@ def main():
             sys.exit(1)
 
     # Die HOWOGE verlangt ein Haushaltsnettoeinkommen von mindestens dem Dreifachen der
-    # Gesamtmiete. HOWOGE_MAX_WARM ist die höchste Gesamtmiete, bis zu der angefragt wird
+    # Gesamtmiete. MAX_WARM_SEND ist die höchste Gesamtmiete, bis zu der angefragt wird
     # (also Netto / 3). Nicht gesetzt = Trockenlauf, es wird nichts abgeschickt.
-    max_warm = num(os.environ.get("HOWOGE_MAX_WARM"))
+    max_warm = wbm_bot.send_cap()
     send = max_warm is not None
     person, missing = wbm_bot.load_person()
     sends = 0
