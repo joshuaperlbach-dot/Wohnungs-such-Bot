@@ -59,9 +59,10 @@ def save(store, now):
         if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_UNREQUESTED)
     }
     store["updated"] = iso(now)
-    # Für die Anzeige in der App: lief der Bot von selbst (Zeitplan) oder von Hand?
+    # Für die Anzeige in der App: lief der Bot von selbst oder von Hand? Von selbst heißt:
+    # GitHub-Zeitplan oder der Wecker (cron-job.org). Nur der Knopf in der App meldet sich als "app".
     event = os.environ.get("GITHUB_EVENT_NAME")
-    if event == "schedule":
+    if event == "schedule" or (event and os.environ.get("RUN_SOURCE") != "app"):
         store["last_auto"] = iso(now)
     elif event:
         store["last_manual"] = iso(now)

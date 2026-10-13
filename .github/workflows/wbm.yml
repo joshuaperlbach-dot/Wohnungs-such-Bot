@@ -3,7 +3,12 @@ name: WBM-Bot
 on:
   schedule:
     - cron: "3-59/10 * * * *"   # etwa alle 10 Minuten (GitHub kann verzögern)
-  workflow_dispatch: {}       # manuell startbar
+  workflow_dispatch:          # Anstoß von außen: der Wecker (cron-job.org) oder der Knopf in der App
+    inputs:
+      source:
+        description: "Wer startet: wecker (automatisch) oder app (von Hand)"
+        required: false
+        default: wecker
 
 permissions:
   contents: write             # damit seen.json gespeichert werden kann
@@ -29,6 +34,7 @@ jobs:
           MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}     # höchste Gesamtmiete für Anfragen; leer = keine Grenze
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          RUN_SOURCE: ${{ inputs.source }}
         run: python wbm_bot.py
       - name: inberlinwohnen-Bot ausführen
         if: always()            # unabhängig vom WBM-Bot
@@ -37,6 +43,7 @@ jobs:
           MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}      # höchste Gesamtmiete für Anfragen; leer = HOWOGE nur Trockenlauf
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          RUN_SOURCE: ${{ inputs.source }}
         run: python ibw_bot.py
       - name: Antworten per Mail auswerten
         if: always()
@@ -45,6 +52,7 @@ jobs:
           MAIL_USER: ${{ secrets.MAIL_USER }}
           MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          RUN_SOURCE: ${{ inputs.source }}
         run: python mail_check.py
       - name: Seiten-Wächter (WGLi)
         if: always()
