@@ -16,6 +16,8 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
   Gesellschaften plus Berlinovo, ca. 450 Angebote). Nur finden und melden, keine Anfrage. Siehe unten.
 - `offers.py` + `docs/`: Handy-Ansicht. Beide Bots tragen ihre Treffer in `docs/offers.json` ein,
   `docs/index.html` zeigt sie an (GitHub Pages, Quelle: Branch main, Ordner /docs). Siehe unten.
+- `mail_check.py`: liest die Antworten der Gesellschaften aus dem Postfach (nur lesend, IMAP) und trägt
+  Absage/Einladung in die Handy-Ansicht ein; bei Einladung Push. Merkt sich Mails als Fingerabdruck in `mail_seen.json`.
 - `test_bot.py`: Tests mit Mocks (`python3 test_bot.py`), kein Netzwerk nötig.
 - `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
   Führt erst `wbm_bot.py`, dann `ibw_bot.py` aus. Committet `seen.json`, `seen_ibw.json` und `stats.json` zurück ins Repo.
@@ -24,6 +26,9 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 
 ## Konfiguration (GitHub, nicht im Code)
 - Secret `WBM_PERSON_JSON`: JSON mit anrede, name, vorname, strasse, plz, ort, email, telefon.
+- Secrets `MAIL_USER` (Gmail-Adresse) und `MAIL_APP_PASSWORD` (Google-App-Passwort): für `mail_check.py`.
+  Fehlen sie, wird der Mail-Abruf übersprungen. Der echte Abruf ist nur mit Mocks getestet.
+- Externer Anstoß: cron-job.org ruft alle 2 Minuten `workflow_dispatch` auf (Token des Nutzers, läuft am 11.01.2027 ab).
 - Secret `NTFY_TOPIC`: geheimer Topic für Push über ntfy.sh.
 - Variable `WBM_SEND`: `1` = echt senden, sonst Trockenlauf.
 - Repo ist öffentlich (damit Actions-Minuten reichen), deshalb keine personenbezogenen Daten im Code.

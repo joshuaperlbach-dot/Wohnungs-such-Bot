@@ -568,6 +568,68 @@ def test_bots_fill_app_list():
     assert i["address"] == "Teststraße 9, 10439 Berlin" and i["images"] == []
 
 
+def test_mail_replies():
+    import mail_check
+    from datetime import datetime, timezone
+    from email.message import EmailMessage
+    now = datetime(2026, 10, 13, 18, 30, tzinfo=timezone.utc)
+
+    def mail(mid, subject, body, html=False):
+        m = EmailMessage()
+        m["Message-ID"], m["From"], m["Subject"] = mid, "Vermietung <info@wbm.de>", subject
+        m.set_content(body, subtype="html" if html else "plain")
+        return m
+
+    absage = mail("<1@wbm.de>", "Ihre Anfrage", """Guten Tag Max Mustermann,
+wir danken Ihnen für Ihr Interesse an unserer Wohnung
+2.0 Zimmer, 56.78 m², Etage: 4, 731.42 € Gesamtmiete Kleine Andreasstraße 11, 10243 Berlin.
+Aufgrund des hohen Anfrageaufkommens ist es derzeit nicht möglich, alle Anfragen für eine Besichtigung
+zu berücksichtigen. Die Auswahl der möglichen Teilnehmer erfolgte auf Basis des zeitlichen Anfrageneingangs.""")
+    einladung = mail("<2@wbm.de>", "Besichtigungstermin", "<p>Guten Tag,</p><p>wir laden Sie zur Besichtigung der "
+                     "Wohnung Teststr. 5, 10115 Berlin ein. Termin am 20.10.2026 um 15 Uhr.</p>", html=True)
+    sonstiges = mail("<3@wbm.de>", "Newsletter", "Neues aus dem Quartier.")
+    assert [mail_check.classify(mail_check.body_text(m)) for m in (absage, einladung, sonstiges)] == \
+        ["absage", "einladung", "antwort"]
+    assert mail_check.street_of("Kleine Andreasstrasse 11, 10243 Berlin") == mail_check.norm("Kleine Andreasstraße 11")
+
+    store = {"offers": {
+        "a": {"address": "Kleine Andreasstrasse 11, 10243 Berlin", "requested": "gesendet"},
+        "b": {"address": "Teststraße 5, 10115 Berlin", "requested": "unklar"},
+        "c": {"address": "Kleine Andreasstrasse 1, 10243 Berlin", "requested": "gesendet"},  # andere Hausnummer
+        "d": {"address": "Teststraße 5, 10115 Berlin"},                                      # nie angefragt
+    }}
+    seen = set()
+    notes = mail_check.process([absage, einladung, sonstiges], store, seen, now)
+    o = store["offers"]
+    assert o["a"]["reply"] == "absage" and o["b"]["reply"] == "einladung" and o["a"]["reply_at"]
+    assert "reply" not in o["c"] and "reply" not in o["d"]
+    assert len(notes) == 2 and notes[0].startswith("EINLADUNG") and "Teststraße 5" in notes[0], notes
+    assert "nicht zugeordnet" in notes[1]
+    assert not any("Mustermann" in n or "Quartier" in n for n in notes)  # nie Mail-Inhalt weitergeben
+    assert len(seen) == 3 and all(len(x) == 16 for x in seen)
+    assert mail_check.process([absage, einladung, sonstiges], store, seen, now) == []  # jede Mail nur einmal
+
+    # ohne Zugangsdaten passiert nichts, bei Login-Fehler läuft der Bot weiter und meldet einmal
+    msgs = []
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.STATS_FILE, mail_check.SEEN_FILE = Path(td) / "stats.json", Path(td) / "mail_seen.json"
+        with mock.patch.dict(os.environ, {"MAIL_USER": "", "MAIL_APP_PASSWORD": ""}), \
+                mock.patch("mail_check.fetch_messages") as fetch:
+            mail_check.main()
+            fetch.assert_not_called()
+        with mock.patch.dict(os.environ, {"MAIL_USER": "x@gmail.com", "MAIL_APP_PASSWORD": "abcd efgh"}), \
+                mock.patch("wbm_bot.notify", side_effect=msgs.append):
+            with mock.patch("mail_check.fetch_messages", side_effect=OSError("login")) as fetch:
+                mail_check.main()
+                mail_check.main()
+                assert fetch.call_args[0][1] == "abcdefgh"  # Leerzeichen aus dem App-Passwort entfernt
+            assert len(msgs) == 1 and "Mail-Abruf" in msgs[0], msgs
+            with mock.patch("mail_check.fetch_messages", return_value=[sonstiges]):
+                mail_check.main()
+                mail_check.main()
+            assert len(msgs) == 2 and len(json.loads(mail_check.SEEN_FILE.read_text())) == 1, msgs
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

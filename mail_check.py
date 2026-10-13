@@ -1,0 +1,159 @@
+#!/usr/bin/env python3
+"""Liest die Antworten der Wohnungsgesellschaften aus dem Postfach.
+
+Nach einer Anfrage kommt die Antwort per Mail: Absage oder Einladung zur Besichtigung.
+Dieses Skript schaut nur lesend ins Postfach (nichts wird als gelesen markiert, verschoben
+oder gelöscht), ordnet die Mails den angefragten Angeboten zu und trägt das Ergebnis in die
+Handy-Ansicht ein. Bei einer Einladung kommt sofort eine Push-Meldung.
+
+Zugang über Umgebungsvariablen (GitHub-Secrets), nie im Code:
+  MAIL_USER           z.B. name@gmail.com
+  MAIL_APP_PASSWORD   App-Passwort von Google (nicht das normale Passwort)
+Fehlen sie, macht das Skript nichts.
+
+Das Repo ist öffentlich, die Logs auch: es wird nie Mail-Inhalt ausgegeben.
+"""
+import email
+import email.policy
+import hashlib
+import imaplib
+import json
+import os
+import re
+import sys
+from datetime import datetime, timedelta
+from pathlib import Path
+
+from bs4 import BeautifulSoup
+
+import offers
+import wbm_bot
+
+HOST = "imap.gmail.com"
+SENDERS = ["wbm.de"]  # nur Mails von diesen Absendern werden überhaupt abgerufen
+LOOK_BACK = timedelta(days=14)
+SEEN_FILE = Path(__file__).with_name("mail_seen.json")
+MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
+
+# Absage zuerst prüfen: auch sie enthält das Wort "Besichtigung"
+DECLINE = r"nicht möglich, alle Anfragen|leider|nicht berücksichtig|bereits vergeben|abgesagt|Absage"
+INVITE = r"einlad|Besichtigungstermin|Termin (am|für|zur)|laden wir Sie|Bitte bestätigen Sie"
+
+
+def classify(text):
+    """'absage', 'einladung' oder 'antwort' (unklar, selbst nachsehen)."""
+    if re.search(DECLINE, text, re.I):
+        return "absage"
+    if re.search(INVITE, text, re.I):
+        return "einladung"
+    return "antwort"
+
+
+def norm(text):
+    """Für den Adressvergleich: 'Kleine Andreasstraße 11' == 'Kleine Andreasstrasse 11'."""
+    t = text.lower().replace("ß", "ss").replace("str.", "strasse")
+    return re.sub(r"[^a-z0-9äöü]+", " ", t).strip()
+
+
+def street_of(address):
+    """'Kleine Andreasstrasse 11, 10243 Berlin' -> 'kleine andreasstrasse 11'."""
+    return norm(address.split(",")[0])
+
+
+def find_offer(store, text):
+    """Das angefragte Angebot, dessen Straße und Hausnummer in der Mail steht."""
+    haystack = f" {norm(text)} "
+    for key, o in store["offers"].items():
+        street = street_of(o.get("address") or "")
+        if o.get("requested") in offers.REQUESTED and street and f" {street} " in haystack:
+            return key
+    return None
+
+
+def body_text(msg):
+    part = msg.get_body(preferencelist=("plain", "html"))
+    if part is None:
+        return ""
+    content = part.get_content()
+    if part.get_content_type() == "text/html":
+        content = BeautifulSoup(content, "html.parser").get_text(" ", strip=True)
+    return content
+
+
+def mail_id(msg):
+    raw = (msg.get("Message-ID") or f"{msg.get('Date')}{msg.get('Subject')}").encode("utf-8", "replace")
+    return hashlib.sha256(raw).hexdigest()[:16]  # nur ein Fingerabdruck landet im Repo
+
+
+def process(messages, store, seen, now):
+    """Neue Mails auswerten. Gibt die Push-Meldungen zurück (ohne Mail-Inhalt)."""
+    notes = []
+    for msg in messages:
+        mid = mail_id(msg)
+        if mid in seen:
+            continue
+        seen.add(mid)
+        text = f"{msg.get('Subject', '')}\n{body_text(msg)}"
+        kind = classify(text)
+        key = find_offer(store, text)
+        where = store["offers"][key].get("address", "") if key else "ein Angebot (nicht zugeordnet)"
+        if key:
+            store["offers"][key].update(reply=kind, reply_at=offers.iso(now))
+        print(f"Mail ausgewertet: {kind}, {'zugeordnet' if key else 'nicht zugeordnet'}")
+        if kind == "einladung":
+            notes.append(f"EINLADUNG zur Besichtigung: {where}\nSchau in deine Mails und bestätige den Termin!")
+        elif kind == "antwort":
+            notes.append(f"Antwort einer Wohnungsgesellschaft zu: {where}\nBitte in den Mails nachsehen.")
+    return notes
+
+
+def fetch_messages(user, password, now):
+    """Mails der bekannten Absender aus den letzten Tagen holen (nur lesend)."""
+    since = now - LOOK_BACK
+    since = f"{since.day:02d}-{MONTHS[since.month - 1]}-{since.year}"
+    box = imaplib.IMAP4_SSL(HOST)
+    try:
+        box.login(user, password)
+        box.select("INBOX", readonly=True)
+        messages = []
+        for sender in SENDERS:
+            _, data = box.search(None, "FROM", f'"{sender}"', "SINCE", since)
+            for num in data[0].split():
+                _, parts = box.fetch(num, "(BODY.PEEK[])")
+                messages.append(email.message_from_bytes(parts[0][1], policy=email.policy.default))
+        return messages
+    finally:
+        try:
+            box.logout()
+        except Exception:
+            pass
+
+
+def main():
+    user, password = os.environ.get("MAIL_USER"), os.environ.get("MAIL_APP_PASSWORD")
+    if not user or not password:
+        print("[Mail] nicht eingerichtet (MAIL_USER / MAIL_APP_PASSWORD fehlen).")
+        return
+    now = datetime.now(wbm_bot.TZ)
+    stats = wbm_bot.load_stats(now.strftime("%Y-%m-%d"))
+    try:
+        messages = fetch_messages(user, password.replace(" ", ""), now)
+    except Exception as e:  # falsches Passwort, Netz weg: melden, aber den Lauf nicht abbrechen
+        wbm_bot.alert(stats, f"Mail-Abruf klappt nicht ({type(e).__name__}). App-Passwort prüfen.",
+                      key="alert_day_mail")
+        wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
+        return
+    seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
+    known = len(seen)
+    store = offers.load()
+    notes = process(messages, store, seen, now)
+    if len(seen) > known:  # es gab neue Mails
+        offers.save(store, now)
+        SEEN_FILE.write_text(json.dumps(sorted(seen)))
+    for note in notes:
+        wbm_bot.notify(note)
+    print(f"[Mail] {len(messages)} Mails geprüft, {len(notes)} Meldungen.")
+
+
+if __name__ == "__main__":
+    main()

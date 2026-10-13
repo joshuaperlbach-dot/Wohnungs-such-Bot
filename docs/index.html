@@ -74,6 +74,8 @@
          font-weight: 600; font-size: 15px; background: var(--idle); color: var(--idle-ink); }
   .req.late { background: var(--late); color: var(--late-ink); }
   .req.sent { background: var(--sent); color: var(--sent-ink); }
+  .req.invite { background: var(--star); color: #1c1300; }
+  .req.declined { background: var(--idle); color: var(--muted); }
   .req small { font-weight: 400; opacity: .85; margin-left: 6px; }
   .gone { color: var(--late-ink); }
   .link.off { background: var(--chip); color: var(--muted); }
@@ -184,6 +186,10 @@ const COMPANY = { wbm: "WBM", degewo: "degewo", howoge: "HOWOGE", gewobag: "Gewo
                   stadtundland: "Stadt und Land", berlinovo: "Berlinovo" };
 
 function state(key, o) {
+  // Antwort der Gesellschaft, vom Bot aus der Mail gelesen
+  if (o.reply === "einladung") return { cls: "invite", label: "Einladung zur Besichtigung", note: "schau in deine Mails", locked: true };
+  if (o.reply === "absage") return { cls: "declined", label: "Absage", note: "Anfrage war raus", locked: true };
+  if (o.reply === "antwort") return { cls: "sent", label: "Antwort da", note: "schau in deine Mails", locked: true };
   if (o.requested === "gesendet" || o.requested === "unklar") {
     return { cls: "sent", label: "Angefragt", note: o.requested === "unklar" ? "vom Bot, ohne Bestätigung" : "vom Bot",
              locked: true };
