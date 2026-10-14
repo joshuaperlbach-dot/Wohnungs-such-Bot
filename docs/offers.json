@@ -735,9 +735,81 @@
     ]
    },
    "online_since": "2026-10-14T10:34:04Z"
+  },
+  "ibw-22942": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13225-32.html?t=ibw",
+   "title": "Wohnen am Rand von Berlin",
+   "address": "Warnitzer Straße 20, 13057 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791982088-0ur6Kmck8P.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 458.51,
+   "cold": 328.69,
+   "size": 36.44,
+   "floor": 2,
+   "levels": 11,
+   "year": 1988,
+   "stars": 2,
+   "why": "36.44 m², ~10.1 km zur Arbeit (Luftlinie), Kiez wenig los (36 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1988, Hochhaus (11 Etagen)",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.9,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T12:48:08Z"
   }
  },
- "updated": "2026-10-14T12:46:27Z",
+ "updated": "2026-10-14T12:48:20Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -754,5 +826,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T12:46:27Z"
+ "last_auto": "2026-10-14T12:48:20Z"
 }
