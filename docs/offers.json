@@ -591,9 +591,81 @@
     ]
    },
    "online_since": "2026-10-14T07:13:02Z"
+  },
+  "ibw-22924": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-65903-0045-0301.html",
+   "title": "2-Zimmer Wohnung!",
+   "address": "Zur Nachtheide 40, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791971824-ZGCWY8Xvga.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 690.12,
+   "cold": 450.89,
+   "size": 51.56,
+   "floor": 3,
+   "levels": 4,
+   "year": 1964,
+   "stars": 2,
+   "why": "51.56 m², ~14.9 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1964",
+   "points": 50,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T09:57:04Z"
   }
  },
- "updated": "2026-10-14T09:56:22Z",
+ "updated": "2026-10-14T09:58:18Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -610,5 +682,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T09:56:22Z"
+ "last_auto": "2026-10-14T09:58:18Z"
 }
