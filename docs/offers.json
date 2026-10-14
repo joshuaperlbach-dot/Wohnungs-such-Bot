@@ -1328,9 +1328,81 @@
    },
    "online_since": "2026-10-14T14:38:18Z",
    "gone": true
+  },
+  "ibw-22966": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-76801-0101-0017",
+   "title": "Studentenapartment gesucht?",
+   "address": "Bremer Straße 11, 10551 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791994324-jdGxniOM9d.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 463.71,
+   "cold": 463.71,
+   "size": 25.11,
+   "floor": 2,
+   "levels": 7,
+   "year": 2021,
+   "stars": 4,
+   "why": "25.11 m², ~5.7 km zur Arbeit (Luftlinie), Kiez lebendig (254 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2021",
+   "points": 70,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     15.3,
+     16
+    ],
+    "Lage": [
+     3.9,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T16:12:04Z"
   }
  },
- "updated": "2026-10-14T16:10:34Z",
+ "updated": "2026-10-14T16:12:20Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1347,5 +1419,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T16:10:34Z"
+ "last_auto": "2026-10-14T16:12:20Z"
 }
