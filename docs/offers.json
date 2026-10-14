@@ -375,9 +375,81 @@
     ]
    },
    "online_since": "2026-10-14T05:57:04Z"
+  },
+  "ibw-22898": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00663-0486-1404.html",
+   "title": "1 Zimmer in der Gropiusstadt",
+   "address": "Agnes-Straub-Weg 2, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791957544-Xl8jFXXe4s.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 459.71,
+   "cold": 317.85,
+   "size": 37.14,
+   "floor": 14,
+   "levels": 17,
+   "year": 1967,
+   "stars": 2,
+   "why": "37.14 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (57 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 14. Etage, Baujahr 1967, Hochhaus (17 Etagen)",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.6,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T05:59:04Z"
   }
  },
- "updated": "2026-10-14T05:58:18Z",
+ "updated": "2026-10-14T06:00:49Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -394,5 +466,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T05:58:18Z"
+ "last_auto": "2026-10-14T06:00:49Z"
 }
