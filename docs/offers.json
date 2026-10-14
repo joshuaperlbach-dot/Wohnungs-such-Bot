@@ -82,84 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-1/": {
-   "source": "wbm",
-   "company": "wbm",
-   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-1/",
-   "title": "2-Zimmer-Wohnung in Friedrichshain",
-   "address": "Kleine Markusstrasse 8, 10243 Berlin",
-   "text": "Die Wohnung liegt in unmittelbarer Nähe zum Strausberger Platz und zum Ostbahnhof. Gute Einkaufsmöglichkeiten und Verkehrsanbindungen vorhanden.",
-   "images": [
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-c23bd3abea189f4ef7f3d84e030c8807.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-7f6eacb9688924edc61bd03b675dc431.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-aff0d54f11f1aec58e683c564e67fec5.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-39b887179b4d5a0a916acf06fb66bcf6.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-024c5bc6d8891046c2c8cfb9fb3bb6c5.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78373-2b97a1b2eff69cb2a7716ba462539ff2.jpg"
-   ],
-   "bezirk": "Friedrichshain",
-   "rooms": 2,
-   "price": 689.25,
-   "cold": 456.25,
-   "size": 55.2,
-   "floor": 0,
-   "year": 1958,
-   "stars": 3,
-   "why": "55.2 m², ~1.6 km zur Arbeit (Luftlinie), Kiez wenig los (40 Lokale/Läden), Ringbahn weit, EG, Baujahr 1958",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     4.1,
-     16
-    ],
-    "Lage": [
-     10.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     2.5,
-     5
-    ],
-    "Größe": [
-     5.8,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-13T17:46:50Z",
-   "gone": true
-  },
   "ibw-22897": {
    "source": "ibw",
    "company": "degewo",
@@ -1402,7 +1324,7 @@
    "online_since": "2026-10-14T16:12:04Z"
   }
  },
- "updated": "2026-10-14T17:46:22Z",
+ "updated": "2026-10-14T17:48:21Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1419,5 +1341,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T17:46:22Z"
+ "last_auto": "2026-10-14T17:48:21Z"
 }
