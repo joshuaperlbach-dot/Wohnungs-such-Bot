@@ -663,9 +663,81 @@
     ]
    },
    "online_since": "2026-10-14T10:04:04Z"
+  },
+  "ibw-22932": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-63817-0104-1407.html",
+   "title": "Den Blick in die Stadt genießen",
+   "address": "Müggelschlößchenweg 38, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791974044-49C1npO64X.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 579.52,
+   "cold": 388.18,
+   "size": 52.28,
+   "floor": 14,
+   "levels": 18,
+   "year": 1982,
+   "stars": 2,
+   "why": "52.28 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 14. Etage, Baujahr 1982, Hochhaus (18 Etagen)",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     4.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T10:34:04Z"
   }
  },
- "updated": "2026-10-14T10:32:18Z",
+ "updated": "2026-10-14T10:34:26Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -682,5 +754,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T10:32:18Z"
+ "last_auto": "2026-10-14T10:34:26Z"
 }
