@@ -951,9 +951,81 @@
     ]
    },
    "online_since": "2026-10-14T12:57:08Z"
+  },
+  "ibw-22955": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14591-116.html?t=ibw",
+   "title": "Wohnen am Rand von Berlin",
+   "address": "Seehausener Straße 31, 13057 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791984185-Xejj32MQAg.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 743.84,
+   "cold": 608.0,
+   "size": 38.0,
+   "floor": 6,
+   "levels": 6,
+   "year": 2022,
+   "stars": 2,
+   "why": "38 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (6 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2022",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T13:23:05Z"
   }
  },
- "updated": "2026-10-14T13:22:21Z",
+ "updated": "2026-10-14T13:24:20Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -970,5 +1042,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T13:22:21Z"
+ "last_auto": "2026-10-14T13:24:20Z"
 }
