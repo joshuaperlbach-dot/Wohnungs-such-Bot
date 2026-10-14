@@ -1247,9 +1247,89 @@
     ]
    },
    "online_since": "2026-10-14T14:10:05Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/helle-2-zimmer-wohnung-in-friedrichshain-1/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/helle-2-zimmer-wohnung-in-friedrichshain-1/",
+   "title": "Helle 2-Zimmer-Wohnung in Friedrichshain",
+   "address": "Weisbachstrasse 1, 10249 Berlin",
+   "text": "Diese helle 2-Zimmer-Wohnung überzeugt mit einem praktischen Grundriss, einem Balkon sowie einer Küche mit Fenster. Das Duschbad und die zentrale Lage im beliebten Friedrichshain runden das attraktive Wohnangebot ab.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-440d386daeeaf8732e8c3ebe7a7e3660.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-846b17aa5a00cc1aed58513b96579992.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-190a8511a045f49244731d9dee8a09b7.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-9b8190e86ffa5ae0d856b62ba9e36c4c.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-9fc4381895faa4b16807ae0f6830d5b0.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-9e1009da1d1e647fd2f6f1d3593a4e82.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-4d6311cc27b4a5bf7551bdc5118a65ac.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-462ff1107d5049d52dbb29cdc2f43fee.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78395-2dc7f0dd6a7125b91f0e864139d381c9.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 2,
+   "price": 833.94,
+   "cold": 628.94,
+   "size": 49.29,
+   "floor": 1,
+   "year": 1906,
+   "stars": 4,
+   "why": "49.29 m², ~3.6 km zur Arbeit (Luftlinie), Kiez mittel (123 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 1. Etage, Baujahr 1906",
+   "points": 75,
+   "parts": {
+    "Kosten": [
+     13.3,
+     20
+    ],
+    "Kiez": [
+     12.1,
+     16
+    ],
+    "Lage": [
+     7.4,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     4.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T14:38:18Z"
   }
  },
- "updated": "2026-10-14T14:36:22Z",
+ "updated": "2026-10-14T14:38:24Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1266,5 +1346,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T14:36:22Z"
+ "last_auto": "2026-10-14T14:38:24Z"
 }
