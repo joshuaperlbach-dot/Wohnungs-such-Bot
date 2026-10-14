@@ -879,9 +879,81 @@
     ]
    },
    "online_since": "2026-10-14T12:51:05Z"
+  },
+  "ibw-22946": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13228-74.html?t=ibw",
+   "title": "Wohnen am Rand von Berlin",
+   "address": "Warnitzer Straße 32, 13057 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791982627-PKo5MmvVCH.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 406.31,
+   "cold": 296.56,
+   "size": 32.6,
+   "floor": 8,
+   "levels": 11,
+   "year": 1988,
+   "stars": 2,
+   "why": "32.6 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (36 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 8. Etage, Baujahr 1988, Hochhaus (11 Etagen)",
+   "points": 41,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.9,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T12:57:08Z"
   }
  },
- "updated": "2026-10-14T12:56:19Z",
+ "updated": "2026-10-14T12:58:19Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -898,5 +970,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T12:56:19Z"
+ "last_auto": "2026-10-14T12:58:19Z"
 }
