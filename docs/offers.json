@@ -232,78 +232,6 @@
    },
    "online_since": "2026-10-13T10:32:15Z"
   },
-  "ibw-22833": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-10803-0002-0101.html",
-   "title": "Singles aufgepasst: Schöne Wohnung in ruhiger Lage",
-   "address": "Nalepastraße 220, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791875104-M4voF6pHPQ.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 340.96,
-   "cold": 245.98,
-   "size": 26.91,
-   "floor": 1,
-   "levels": 4,
-   "year": 1920,
-   "stars": 2,
-   "why": "26.91 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Ringbahn weit, 1. Etage, Baujahr 1920",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     6.4,
-     16
-    ],
-    "Lage": [
-     0.2,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-13T07:05:04Z"
-  },
   "ibw-22897": {
    "source": "ibw",
    "company": "degewo",
@@ -521,7 +449,7 @@
    "online_since": "2026-10-14T06:26:06Z"
   }
  },
- "updated": "2026-10-14T07:04:18Z",
+ "updated": "2026-10-14T07:06:19Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -538,5 +466,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T07:04:18Z"
+ "last_auto": "2026-10-14T07:06:19Z"
 }
