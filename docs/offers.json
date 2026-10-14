@@ -663,9 +663,81 @@
     ]
    },
    "online_since": "2026-10-14T09:57:04Z"
+  },
+  "ibw-22926": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-60303-0041-0201.html",
+   "title": "2-Zimmer Wohnung !",
+   "address": "Am Wiesengraben 7, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1791972244-6gEmZtAQ9r.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 653.98,
+   "cold": 438.5,
+   "size": 47.57,
+   "floor": 2,
+   "levels": 4,
+   "year": 1961,
+   "stars": 2,
+   "why": "47.57 m², ~15.1 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1961",
+   "points": 50,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T10:04:04Z"
   }
  },
- "updated": "2026-10-14T10:02:23Z",
+ "updated": "2026-10-14T10:04:18Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -682,5 +754,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T10:02:23Z"
+ "last_auto": "2026-10-14T10:04:18Z"
 }
