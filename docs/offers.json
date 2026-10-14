@@ -1095,9 +1095,88 @@
     ]
    },
    "online_since": "2026-10-14T13:50:04Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/helle-2-zimmer-wohnung-in-friedrichshain/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/helle-2-zimmer-wohnung-in-friedrichshain/",
+   "title": "Helle 2-Zimmer Wohnung  in Friedrichshain",
+   "address": "Löwestrasse 27, 10249 Berlin",
+   "text": "Die Wohnung verfügt über eine gemütliche Tageslichtküche in der sich eine kleine Abstellnische befindet. Das Badezimmer verfügt über ein Wannenbad und ein Fenster, ein Keller kann leihweise zur Verfügung gestellt werden.\r\n\r\nDie Vermietung erfolgt vorrangig an Haushalte mit einem WBS-fähigem Einkommen der Einkommensgruppe WBS 160-220.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-a566a075507434add690ca754f043688.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-e42833d9ace6efe538a7d072f84de21d.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-c19d23f8b6863c94f53d32c87929b0b0.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-c4b9c0ac39694680ab1f721afd81e614.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-e819f625da082473d76293cd5d842a88.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-24103e3fdb48bacf768e018c71fb6f8c.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-fc6913cce12fce8c2a2ddb834cc43110.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78394-c963ad28bb7c44455ddcb2f4f08ba47a.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 2,
+   "price": 859.43,
+   "cold": 624.43,
+   "size": 59.28,
+   "floor": 3,
+   "year": 1957,
+   "stars": 3,
+   "why": "59.28 m², ~3.0 km zur Arbeit (Luftlinie), Kiez mittel (116 Lokale/Läden), Park nah, Ringbahn mittel, 3. Etage, Baujahr 1957",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     10.9,
+     20
+    ],
+    "Kiez": [
+     11.9,
+     16
+    ],
+    "Lage": [
+     8.4,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     6.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-14T14:08:20Z"
   }
  },
- "updated": "2026-10-14T14:06:21Z",
+ "updated": "2026-10-14T14:08:26Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1114,5 +1193,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-14T14:06:21Z"
+ "last_auto": "2026-10-14T14:08:26Z"
 }
