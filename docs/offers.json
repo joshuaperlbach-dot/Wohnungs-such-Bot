@@ -82,78 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22904": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00638-0194-0802.html",
-   "title": "1-Zimmerwohnung in der Gropiusstadt",
-   "address": "Käthe-Dorsch-Ring 12, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791961923-PEURMRCLkU.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 501.85,
-   "cold": 384.11,
-   "size": 36.68,
-   "floor": 8,
-   "levels": 9,
-   "year": 1966,
-   "stars": 2,
-   "why": "36.68 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (48 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 8. Etage, Baujahr 1966, Hochhaus (9 Etagen)",
-   "points": 49,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.1,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     0.5,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-14T07:12:04Z"
-  },
   "ibw-22905": {
    "source": "ibw",
    "company": "degewo",
@@ -1108,7 +1036,7 @@
    "online_since": "2026-10-14T16:12:04Z"
   }
  },
- "updated": "2026-10-15T07:10:30Z",
+ "updated": "2026-10-15T07:12:20Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1125,5 +1053,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-15T07:10:30Z"
+ "last_auto": "2026-10-15T07:12:20Z"
 }
