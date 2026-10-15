@@ -1109,9 +1109,81 @@
     ]
    },
    "online_since": "2026-10-15T09:58:04Z"
+  },
+  "ibw-22985": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0112%2F00073",
+   "title": "Hier können Sie direkt einziehen!",
+   "address": "Holzmindener Straße 13, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792064705-69ruTS3Bgu.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 749.03,
+   "cold": 548.03,
+   "size": 58.55,
+   "floor": 0,
+   "levels": 6,
+   "year": 1964,
+   "stars": 3,
+   "why": "58.55 m², ~5.4 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, EG, Baujahr 1964",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     4.3,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-15T11:45:05Z"
   }
  },
- "updated": "2026-10-15T11:44:23Z",
+ "updated": "2026-10-15T11:46:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1134,5 +1206,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-15T11:44:23Z"
+ "last_auto": "2026-10-15T11:46:19Z"
 }
