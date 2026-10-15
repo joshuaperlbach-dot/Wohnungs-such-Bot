@@ -82,78 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22905": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00649-0045-0803.html",
-   "title": "2-Zimmerwohnung in der Gropiusstadt",
-   "address": "Walter-Franck-Zeile 5, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791961982-edxObX5cnz.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 759.51,
-   "cold": 550.65,
-   "size": 68.48,
-   "floor": 8,
-   "levels": 9,
-   "year": 1969,
-   "stars": 2,
-   "why": "68.48 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (14 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 8. Etage, Baujahr 1969, Hochhaus (9 Etagen)",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     19.2,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     9.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-14T07:13:02Z"
-  },
   "ibw-22924": {
    "source": "ibw",
    "company": "degewo",
@@ -1036,7 +964,7 @@
    "online_since": "2026-10-14T16:12:04Z"
   }
  },
- "updated": "2026-10-15T07:12:20Z",
+ "updated": "2026-10-15T07:14:19Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1053,5 +981,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-15T07:12:20Z"
+ "last_auto": "2026-10-15T07:14:19Z"
 }
