@@ -1178,9 +1178,84 @@
     ]
    },
    "online_since": "2026-10-15T09:09:06Z"
+  },
+  "ibw-22980": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23232-17.html?t=ibw",
+   "title": "Tapezier- und Malerarbeiten sind durch die neuen Mieter:innen durchzuführen",
+   "address": "Rupprechtstraße 27, 10317 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792057326-L1g58udi2i.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 747.25,
+   "cold": 512.46,
+   "size": 58.6,
+   "floor": 2,
+   "levels": 4,
+   "year": 1955,
+   "stars": 4,
+   "why": "58.6 m², ~5.3 km zur Arbeit (Luftlinie), Kiez wenig los (51 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 2. Etage, Baujahr 1955",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.3,
+     16
+    ],
+    "Lage": [
+     4.5,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-15T09:42:06Z",
+   "requested": "unklar",
+   "confirm": "offen",
+   "requested_at": "2026-10-15T09:42:18Z"
   }
  },
- "updated": "2026-10-15T09:40:31Z",
+ "updated": "2026-10-15T09:42:18Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1197,5 +1272,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-15T09:40:31Z"
+ "last_auto": "2026-10-15T09:42:18Z"
 }
