@@ -82,78 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22962": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-75915-0202-0043",
-   "title": "2-Zimmer-Wohnung mit Balkon - ab sofort bezugsfrei",
-   "address": "Neufertstraße 14, 14059 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791987005-EIxPVDdemX.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 875.7,
-   "cold": 574.7,
-   "size": 64.66,
-   "floor": 3,
-   "levels": 5,
-   "year": 1889,
-   "stars": 3,
-   "why": "64.66 m², ~8.0 km zur Arbeit (Luftlinie), Kiez mittel (141 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 3. Etage, Baujahr 1889",
-   "points": 69,
-   "parts": {
-    "Kosten": [
-     8.9,
-     20
-    ],
-    "Kiez": [
-     12.7,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     8.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-14T14:10:05Z"
-  },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/helle-2-zimmer-wohnung-in-friedrichshain-1/": {
    "source": "wbm",
    "company": "wbm",
@@ -815,7 +743,7 @@
    "online_since": "2026-10-15T12:02:07Z"
   }
  },
- "updated": "2026-10-15T14:08:24Z",
+ "updated": "2026-10-15T14:10:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -838,5 +766,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-15T14:08:24Z"
+ "last_auto": "2026-10-15T14:10:29Z"
 }
