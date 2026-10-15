@@ -1106,9 +1106,81 @@
     ]
    },
    "online_since": "2026-10-15T08:55:04Z"
+  },
+  "ibw-22979": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13342-22.html?t=ibw",
+   "title": "2-Zimmerwohnung im Erdgeschoss mit Balkon",
+   "address": "Neubrandenburger Straße 26, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792055345-KZMOmiBnQz.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 553.52,
+   "cold": 386.2,
+   "size": 47.38,
+   "floor": 1,
+   "levels": 5,
+   "year": 1987,
+   "stars": 2,
+   "why": "47.38 m², ~10.1 km zur Arbeit (Luftlinie), Kiez wenig los (28 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1987",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-15T09:09:06Z"
   }
  },
- "updated": "2026-10-15T09:08:22Z",
+ "updated": "2026-10-15T09:10:31Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1125,5 +1197,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-15T09:08:22Z"
+ "last_auto": "2026-10-15T09:10:31Z"
 }
