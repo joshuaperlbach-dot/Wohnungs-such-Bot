@@ -1255,7 +1255,7 @@
    "requested_at": "2026-10-15T09:42:18Z"
   }
  },
- "updated": "2026-10-15T09:42:18Z",
+ "updated": "2026-10-15T09:44:24Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1270,7 +1270,13 @@
    "kind": "absage",
    "matched": true,
    "chars": 1008
+  },
+  {
+   "at": "2026-10-15T09:44:24Z",
+   "kind": "einladung",
+   "matched": false,
+   "chars": 3603
   }
  ],
- "last_auto": "2026-10-15T09:42:18Z"
+ "last_auto": "2026-10-15T09:44:24Z"
 }
