@@ -82,78 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22900": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1100-12104-0185-1301.html",
-   "title": "2 Zimmer in der Gropiusstadt",
-   "address": "Lipschitzallee 47, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791959166-SqIC47QdOH.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 883.59,
-   "cold": 592.88,
-   "size": 71.96,
-   "floor": 13,
-   "levels": 16,
-   "year": 1973,
-   "stars": 1,
-   "why": "71.96 m², ~9.4 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 13. Etage, Baujahr 1973, Hochhaus (16 Etagen)",
-   "points": 40,
-   "parts": {
-    "Kosten": [
-     8.0,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     10.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     0.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-14T06:26:06Z"
-  },
   "ibw-22904": {
    "source": "ibw",
    "company": "degewo",
@@ -1180,7 +1108,7 @@
    "online_since": "2026-10-14T16:12:04Z"
   }
  },
- "updated": "2026-10-15T06:24:20Z",
+ "updated": "2026-10-15T06:26:19Z",
  "last_manual": "2026-10-13T19:06:27Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1197,5 +1125,5 @@
    "chars": 1008
   }
  ],
- "last_auto": "2026-10-15T06:24:20Z"
+ "last_auto": "2026-10-15T06:26:19Z"
 }
