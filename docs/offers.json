@@ -82,78 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22958": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00184-0102-0033",
-   "title": "Vorfristig zum 01.11.2026... 2 Zimmer ohne WBS am Mauerpark",
-   "address": "Gaudystraße 16A, 10437 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791985804-znXZDdfRoZ.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 632.48,
-   "cold": 396.48,
-   "size": 42.91,
-   "floor": 5,
-   "levels": 6,
-   "year": 1974,
-   "stars": 3,
-   "why": "42.91 m², ~4.7 km zur Arbeit (Luftlinie), Kiez mittel (190 Lokale/Läden), Park nah, Ringbahn nah, 5. Etage, Baujahr 1974",
-   "points": 65,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     14.0,
-     16
-    ],
-    "Lage": [
-     5.5,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     2.3,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     0.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-14T13:50:04Z"
-  },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/helle-2-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
    "company": "wbm",
@@ -967,7 +895,7 @@
    "online_since": "2026-10-15T12:02:07Z"
   }
  },
- "updated": "2026-10-15T13:48:20Z",
+ "updated": "2026-10-15T13:50:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -990,5 +918,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-15T13:48:20Z"
+ "last_auto": "2026-10-15T13:50:29Z"
 }
