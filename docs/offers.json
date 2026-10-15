@@ -82,78 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22943": {
-   "source": "ibw",
-   "company": "gesobau",
-   "url": "https://www.gesobau.de/?immo_ref=10-00751-00053-0899-be289b59-bb35-4bf8-9eed-4da6ece3cc3a",
-   "title": "Für Herz & Alltag – Wohnen wie geschaffen für zwei",
-   "address": "Schwyzer Straße 26A, 13349 Berlin",
-   "bezirk": "Mitte",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1791982265-IJmuaSY0Iv.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 861.05,
-   "cold": 645.65,
-   "size": 57.75,
-   "floor": 1,
-   "levels": 4,
-   "year": 1956,
-   "stars": 2,
-   "why": "57.75 m², ~7.2 km zur Arbeit (Luftlinie), Kiez wenig los (28 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1956",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     10.7,
-     20
-    ],
-    "Kiez": [
-     5.8,
-     16
-    ],
-    "Lage": [
-     1.4,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     6.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-14T12:51:05Z"
-  },
   "ibw-22946": {
    "source": "ibw",
    "company": "howoge",
@@ -1183,7 +1111,7 @@
    "online_since": "2026-10-15T12:02:07Z"
   }
  },
- "updated": "2026-10-15T12:50:30Z",
+ "updated": "2026-10-15T12:52:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1206,5 +1134,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-15T12:50:30Z"
+ "last_auto": "2026-10-15T12:52:20Z"
 }
