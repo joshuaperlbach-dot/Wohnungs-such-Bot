@@ -876,9 +876,81 @@
     ]
    },
    "online_since": "2026-10-16T07:11:15Z"
+  },
+  "ibw-23023": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00188-0101-0060",
+   "title": "Einkommensgrenzen beachten",
+   "address": "Pieskower Weg 52, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792136405-Ou9dHvKty4.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 501.04,
+   "cold": 280.04,
+   "size": 29.88,
+   "floor": 8,
+   "levels": 22,
+   "year": 1977,
+   "stars": 2,
+   "why": "29.88 m², ~4.8 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 8. Etage, Baujahr 1977, Hochhaus (22 Etagen)",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.6,
+     16
+    ],
+    "Lage": [
+     5.3,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-16T07:40:06Z"
   }
  },
- "updated": "2026-10-16T07:38:17Z",
+ "updated": "2026-10-16T07:40:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -901,5 +973,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-16T07:38:17Z"
+ "last_auto": "2026-10-16T07:40:30Z"
 }
