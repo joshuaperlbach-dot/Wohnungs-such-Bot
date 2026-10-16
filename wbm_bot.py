@@ -305,14 +305,12 @@ def app_offer(l, expose_html, rated, status):
 
 
 def push_headers(msg):
-    """Antippen der Push-Meldung öffnet direkt das Angebot; Treffer ab 4 Sternen, bei denen
-    du selbst anfragen musst, kommen als dringend (mit Ton, auch wenn das Handy leise ist)."""
+    """Antippen der Push-Meldung öffnet direkt das Angebot. Alle Meldungen mit normaler
+    Priorität (ntfy "high" vibriert lang und kräftig, das war zu viel)."""
     headers = {}
     links = re.findall(r"https://\S+", msg)
     if links:
         headers["Click"] = links[-1]
-    if "★★★★" in msg and "Anfrage: gesendet" not in msg and "Anfrage: unklar" not in msg:
-        headers["Priority"] = "high"
     return headers
 
 

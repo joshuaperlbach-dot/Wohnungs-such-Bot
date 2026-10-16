@@ -32,8 +32,9 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Secrets `MAIL_USER` (Gmail-Adresse) und `MAIL_APP_PASSWORD` (Google-App-Passwort): für `mail_check.py`.
   Fehlen sie, wird der Mail-Abruf übersprungen. Der echte Abruf ist nur mit Mocks getestet.
 - Externer Anstoß: cron-job.org ruft alle 2 Minuten `workflow_dispatch` auf (Token des Nutzers, läuft am 11.01.2027 ab).
-- Secret `NTFY_TOPIC`: geheimer Topic für Push über ntfy.sh.
-- Variable `WBM_SEND`: `1` = echt senden, sonst Trockenlauf.
+- Secret `NTFY_TOPIC`: geheimer Topic für Push über ntfy.sh. Alle Meldungen mit normaler Priorität
+  (bis 16.10.2026 kamen 4-Sterne-Treffer als "high", das vibrierte dem Nutzer zu stark).
+- Variable `WBM_SEND`: `1` = echt senden (WBM und HOWOGE), sonst Trockenlauf.
 - Repo ist öffentlich (damit Actions-Minuten reichen), deshalb keine personenbezogenen Daten im Code.
 
 ## Funktionsweise
@@ -72,9 +73,9 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
   - HOWOGE: gebaut (`howoge.py`). Formular fragt nur Vorname, Nachname, E-Mail; davor drei Hinweise zum Abhaken
     (WBS, Haushaltsnettoeinkommen mind. 3x Gesamtmiete, Bonitätsauskunft). Nach dem Absenden kommt eine Mail mit
     Bestätigungslink (`.../bewerbungsprozess/doi.html`), den `mail_check.py` öffnet; erst dann zählt die Anfrage.
-    Scharf nur mit Repo-Variable `MAX_WARM_SEND` (höchste Gesamtmiete, bis zu der angefragt wird = Netto / 3,
-    weil die HOWOGE das Dreifache der Miete als Einkommen verlangt), sonst Trockenlauf. Dieselbe Variable begrenzt
-    auch die WBM-Anfragen; gemeldet und angezeigt wird weiter alles bis `MAX_WARMMIETE`. Gleiche Regeln wie WBM: ab 4 Sternen,
+    Scharf mit demselben Schalter wie WBM (`WBM_SEND=1`, seit 16.10.2026), sonst Trockenlauf. Optional begrenzt
+    `MAX_WARM_SEND` die Gesamtmiete (= Netto / 3, weil die HOWOGE das Dreifache der Miete als Einkommen verlangt);
+    leer = keine Grenze. Dieselbe Variable begrenzt auch die WBM-Anfragen; gemeldet und angezeigt wird weiter alles bis `MAX_WARMMIETE`. Gleiche Regeln wie WBM: ab 4 Sternen,
     Bezirk sicher passend, kein WBS, max. 3 pro Lauf, nie doppelt. Echtes Senden und die Bestätigungsmail sind
     noch nicht live geprüft (Trockenlauf gegen die echte Seite klappt).
   - degewo: Formular hat ein Captcha (Friendly Captcha). Wird bewusst nicht umgangen, dort nur melden.

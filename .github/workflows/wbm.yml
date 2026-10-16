@@ -40,7 +40,8 @@ jobs:
         if: always()            # unabhängig vom WBM-Bot
         timeout-minutes: 4
         env:
-          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}      # höchste Gesamtmiete für Anfragen; leer = HOWOGE nur Trockenlauf
+          WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = HOWOGE wirklich anfragen, sonst Trockenlauf
+          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}      # höchste Gesamtmiete für Anfragen; leer = keine Grenze
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RUN_SOURCE: ${{ inputs.source }}
