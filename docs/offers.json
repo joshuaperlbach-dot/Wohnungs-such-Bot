@@ -948,9 +948,81 @@
     ]
    },
    "online_since": "2026-10-16T10:26:08Z"
+  },
+  "ibw-23066": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00220-0101-0044",
+   "title": "Einkommensgrenzen beachten…",
+   "address": "Hanns-Eisler-Straße 4, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792157944-4v7IFx9wtN.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 449.76,
+   "cold": 260.76,
+   "size": 29.52,
+   "floor": 6,
+   "levels": 19,
+   "year": 1977,
+   "stars": 3,
+   "why": "29.52 m², ~5.0 km zur Arbeit (Luftlinie), Kiez mittel (92 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 6. Etage, Baujahr 1977, Hochhaus (19 Etagen)",
+   "points": 56,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.9,
+     16
+    ],
+    "Lage": [
+     5.1,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-16T13:39:04Z"
   }
  },
- "updated": "2026-10-16T13:38:19Z",
+ "updated": "2026-10-16T13:40:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -973,5 +1045,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-16T13:38:19Z"
+ "last_auto": "2026-10-16T13:40:29Z"
 }
