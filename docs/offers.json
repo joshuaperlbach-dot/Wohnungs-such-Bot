@@ -948,9 +948,81 @@
     ]
    },
    "online_since": "2026-10-16T08:24:07Z"
+  },
+  "ibw-23040": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00184-0104-0058",
+   "title": "Vorfristig zum 01.11.2026... Einkommensgrenzen beachten...",
+   "address": "Gaudystraße 17, 10437 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792142286-LZu7ws25ho.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 512.63,
+   "cold": 337.63,
+   "size": 34.41,
+   "floor": 2,
+   "levels": 6,
+   "year": 1974,
+   "stars": 3,
+   "why": "34.41 m², ~4.7 km zur Arbeit (Luftlinie), Kiez mittel (167 Lokale/Läden), Park nah, Ringbahn nah, 2. Etage, Baujahr 1974",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     13.5,
+     16
+    ],
+    "Lage": [
+     5.5,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-16T09:18:06Z"
   }
  },
- "updated": "2026-10-16T09:16:19Z",
+ "updated": "2026-10-16T09:18:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -973,5 +1045,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-16T09:16:19Z"
+ "last_auto": "2026-10-16T09:18:19Z"
 }
