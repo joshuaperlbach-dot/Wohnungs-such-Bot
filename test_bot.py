@@ -679,14 +679,14 @@ HOWOGE_FORM = f"""<form action="/suche.html" method="get"><input name="tx_kesear
 DOI = "https://www.howoge.de/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess/doi.html?h=abc123"
 
 
-def test_push_opens_offer_and_marks_urgent():
+def test_push_opens_offer():
     import ibw_bot
     l = ibw_bot.parse_page(ibw_card(40))[0]
     msg = ibw_bot.describe(l, "★★★★☆ (4/5)", "gut")
     h = wbm_bot.push_headers(msg)
-    assert h == {"Click": "https://example.org/40#accordion-nl-rent-details", "Priority": "high"}, h  # degewo: zum Formular
+    assert h == {"Click": "https://example.org/40#accordion-nl-rent-details"}, h  # degewo: zum Formular, normale Priorität
     sent = ibw_bot.describe({**l, "company": "howoge"}, "★★★★☆ (4/5)", "gut", ("unklar", "abgeschickt"))
-    assert wbm_bot.push_headers(sent) == {"Click": "https://example.org/40"}  # Bot hat angefragt: nicht dringend
+    assert wbm_bot.push_headers(sent) == {"Click": "https://example.org/40"}
     assert wbm_bot.push_headers(ibw_bot.describe(l, "★★★☆☆ (3/5)", "ok")).get("Priority") is None
     assert wbm_bot.push_headers("WBM-Bot Tagesbericht: 3 Angebote gescannt") == {}
     with mock.patch.dict(os.environ, {"NTFY_TOPIC": "t"}), mock.patch("wbm_bot.requests.post") as post:
@@ -786,7 +786,7 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
         sent.append(url)
         return mock.Mock(status_code=200, text="ok")
 
-    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "MAX_WARM_SEND": "800"}
+    env = {"WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de", "MAX_WARM_SEND": "800", "WBM_SEND": "1"}
     five = rating.Rated("★★★★★ (5/5)", "top", 5, 90, {})
     old_file = offers.FILE
     with tempfile.TemporaryDirectory() as td:
@@ -835,7 +835,7 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
             assert sent == [] and "Anfrage" not in msgs[-2] and offers.load()["offers"]["ibw-30"].get("requested") is None
         finally:
             offers.FILE = old_file
-    # ohne MAX_WARM_SEND wird nichts abgeschickt (Trockenlauf)
+    # scharf ohne MAX_WARM_SEND: keine Mietgrenze, es wird angefragt
     sent.clear()
     with tempfile.TemporaryDirectory() as td:
         offers.FILE = Path(td) / "docs" / "offers.json"
@@ -843,6 +843,20 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
         ibw_bot.SEEN_FILE.write_text("[1]")
         try:
             with mock.patch.dict(os.environ, {**env, "MAX_WARM_SEND": ""}), mock.patch("wbm_bot.HTTP.get", get), \
+                    mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
+                    mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
+                ibw_bot.main()
+            assert len(sent) == 1 and offers.load()["offers"]["ibw-30"]["requested"] == "unklar"
+        finally:
+            offers.FILE = old_file
+    # ohne WBM_SEND=1 wird nichts abgeschickt (Trockenlauf)
+    sent.clear()
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        ibw_bot.SEEN_FILE, wbm_bot.STATS_FILE = Path(td) / "seen_ibw.json", Path(td) / "stats.json"
+        ibw_bot.SEEN_FILE.write_text("[1]")
+        try:
+            with mock.patch.dict(os.environ, {**env, "WBM_SEND": ""}), mock.patch("wbm_bot.HTTP.get", get), \
                     mock.patch("wbm_bot.HTTP.post", post), mock.patch("ibw_bot.time.sleep"), \
                     mock.patch("wbm_bot.notify", side_effect=msgs.append), mock.patch("ibw_bot.rated", return_value=five):
                 ibw_bot.main()
