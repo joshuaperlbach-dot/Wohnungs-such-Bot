@@ -588,9 +588,81 @@
     ]
    },
    "online_since": "2026-10-15T12:02:07Z"
+  },
+  "ibw-23005": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00663-0466-1105.html",
+   "title": "1-Zimmer Wohnung sucht passenden Single!",
+   "address": "Agnes-Straub-Weg 2, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792129084-zZjXgOWZUg.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 453.35,
+   "cold": 320.6,
+   "size": 35.03,
+   "floor": 11,
+   "levels": 17,
+   "year": 1967,
+   "stars": 2,
+   "why": "35.03 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (57 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 11. Etage, Baujahr 1967, Hochhaus (17 Etagen)",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-16T05:38:04Z"
   }
  },
- "updated": "2026-10-16T05:36:19Z",
+ "updated": "2026-10-16T05:38:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -613,5 +685,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-16T05:36:19Z"
+ "last_auto": "2026-10-16T05:38:22Z"
 }
