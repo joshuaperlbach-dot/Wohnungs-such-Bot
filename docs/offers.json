@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-22988": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23155-55.html?t=ibw",
-   "title": "Tapezier- und Malerarbeiten an den Wänden sind durch die neuen Mieter:innen durchzuführen",
-   "address": "Rupprechtstraße 23, 10317 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792065727-0LAY1J1WAP.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 750.41,
-   "cold": 524.84,
-   "size": 53.91,
-   "floor": 2,
-   "levels": 4,
-   "year": 1955,
-   "stars": 3,
-   "why": "53.91 m², ~5.2 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 2. Etage, Baujahr 1955",
-   "points": 69,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.0,
-     16
-    ],
-    "Lage": [
-     4.6,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-15T12:02:07Z"
-  },
   "ibw-23005": {
    "source": "ibw",
    "company": "degewo",
@@ -1022,7 +950,7 @@
    "online_since": "2026-10-16T10:26:08Z"
   }
  },
- "updated": "2026-10-16T12:00:52Z",
+ "updated": "2026-10-16T12:02:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1045,5 +973,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-16T12:00:52Z"
+ "last_auto": "2026-10-16T12:02:19Z"
 }
