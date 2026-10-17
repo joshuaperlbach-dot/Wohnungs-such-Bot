@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23011": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10506-72.html?t=ibw",
-   "title": "2-Zimmer-Wohnung (ohne WBS)",
-   "address": "Genslerstraße 44A, 13055 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792132323-AJbWsFkRVL.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 696.81,
-   "cold": 499.86,
-   "size": 50.66,
-   "floor": 3,
-   "levels": 3,
-   "year": 1940,
-   "stars": 3,
-   "why": "50.66 m², ~6.9 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1940",
-   "points": 66,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.6,
-     16
-    ],
-    "Lage": [
-     1.8,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T06:32:03Z"
-  },
   "ibw-23016": {
    "source": "ibw",
    "company": "howoge",
@@ -1029,7 +957,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-17T06:30:38Z",
+ "updated": "2026-10-17T06:32:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1052,5 +980,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-17T06:30:38Z"
+ "last_auto": "2026-10-17T06:32:21Z"
 }
