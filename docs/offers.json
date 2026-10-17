@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23051": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-20231-0081-0101.html",
-   "title": "Ein Zuhause mit Charakter: Attraktive Altbauwohnung",
-   "address": "Kilianistraße 6, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792146367-Xzf9BFf9B0.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 746.64,
-   "cold": 570.89,
-   "size": 55.27,
-   "floor": 1,
-   "levels": 4,
-   "year": 1936,
-   "stars": 4,
-   "why": "55.27 m², ~8.4 km zur Arbeit (Luftlinie), Kiez mittel (83 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1936",
-   "points": 71,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.4,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.8,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T10:26:08Z"
-  },
   "ibw-23066": {
    "source": "ibw",
    "company": "gewobag",
@@ -381,7 +309,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-17T10:24:20Z",
+ "updated": "2026-10-17T10:26:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -404,5 +332,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-17T10:24:20Z"
+ "last_auto": "2026-10-17T10:26:18Z"
 }
