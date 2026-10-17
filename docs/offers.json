@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23017": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5134%2F00318",
-   "title": "Schillerkiez",
-   "address": "Warthestraße 42C, 12051 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792134675-ePWZKHjXYg.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 706.44,
-   "cold": 520.44,
-   "size": 51.01,
-   "floor": 3,
-   "levels": 5,
-   "year": 1941,
-   "stars": 4,
-   "why": "51.01 m², ~3.9 km zur Arbeit (Luftlinie), Kiez wenig los (50 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 3. Etage, Baujahr 1941",
-   "points": 77,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.3,
-     16
-    ],
-    "Lage": [
-     6.8,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     0.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T07:11:15Z"
-  },
   "ibw-23023": {
    "source": "ibw",
    "company": "gewobag",
@@ -885,7 +813,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-17T07:10:30Z",
+ "updated": "2026-10-17T07:12:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -908,5 +836,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-17T07:10:30Z"
+ "last_auto": "2026-10-17T07:12:18Z"
 }
