@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23024": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00221-0101-0004",
-   "title": "Einzimmerwohnung ohne WBS",
-   "address": "Hanns-Eisler-Straße 2, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792136464-RB0DePv4vg.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 426.31,
-   "cold": 263.31,
-   "size": 29.81,
-   "floor": 1,
-   "levels": 22,
-   "year": 1977,
-   "stars": 3,
-   "why": "29.81 m², ~4.9 km zur Arbeit (Luftlinie), Kiez mittel (96 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 1. Etage, Baujahr 1977, Hochhaus (22 Etagen)",
-   "points": 57,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     11.1,
-     16
-    ],
-    "Lage": [
-     5.2,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T07:41:04Z"
-  },
   "ibw-23033": {
    "source": "ibw",
    "company": "degewo",
@@ -741,7 +669,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-17T07:40:28Z",
+ "updated": "2026-10-17T07:42:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -764,5 +692,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-17T07:40:28Z"
+ "last_auto": "2026-10-17T07:42:19Z"
 }
