@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23033": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-20235-0050-0101.html",
-   "title": "Charmante Singlewohnung in ruhiger Wohnlage",
-   "address": "Schillerpromenade 8, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792137965-956LmMf41r.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 616.21,
-   "cold": 468.73,
-   "size": 45.38,
-   "floor": 1,
-   "levels": 4,
-   "year": 1936,
-   "stars": 3,
-   "why": "45.38 m², ~8.6 km zur Arbeit (Luftlinie), Kiez mittel (81 Lokale/Läden), Park nah, Ringbahn weit, 1. Etage, Baujahr 1936",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.3,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T08:06:05Z"
-  },
   "ibw-23037": {
    "source": "ibw",
    "company": "degewo",
@@ -669,7 +597,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-17T08:04:18Z",
+ "updated": "2026-10-17T08:06:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -692,5 +620,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-17T08:04:18Z"
+ "last_auto": "2026-10-17T08:06:20Z"
 }
