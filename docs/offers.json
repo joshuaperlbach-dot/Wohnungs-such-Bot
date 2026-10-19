@@ -370,9 +370,81 @@
     ]
    },
    "online_since": "2026-10-19T07:26:04Z"
+  },
+  "ibw-23094": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F5134%2F00240",
+   "title": "Schillerkiez",
+   "address": "Warthestraße 39, 12051 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792403586-Fv50lUKyvS.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 593.0,
+   "cold": 412.0,
+   "size": 49.46,
+   "floor": 4,
+   "levels": 5,
+   "year": 1941,
+   "stars": 4,
+   "why": "49.46 m², ~3.9 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 4. Etage, Baujahr 1941",
+   "points": 72,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.1,
+     16
+    ],
+    "Lage": [
+     6.8,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     0.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-19T09:53:06Z"
   }
  },
- "updated": "2026-10-19T09:52:20Z",
+ "updated": "2026-10-19T09:54:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -395,5 +467,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-19T09:52:20Z"
+ "last_auto": "2026-10-19T09:54:20Z"
 }
