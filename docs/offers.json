@@ -730,9 +730,81 @@
     ]
    },
    "online_since": "2026-10-19T13:02:11Z"
+  },
+  "ibw-23121": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6563%2F00028",
+   "title": "Wohnen im Herzen von Adlershof - Charmante 1-Zimmer-Wohnung",
+   "address": "Adlergestell 279HH, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792420147-KKuh25V6h3.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 629.23,
+   "cold": 513.23,
+   "size": 41.18,
+   "floor": 3,
+   "levels": 4,
+   "year": 1905,
+   "stars": 3,
+   "why": "41.18 m², Balkon/Terrasse, 3. Etage, Baujahr 1905",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.0,
+     16
+    ],
+    "Lage": [
+     5.0,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     1.5,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.8,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-19T14:29:07Z"
   }
  },
- "updated": "2026-10-19T14:28:23Z",
+ "updated": "2026-10-19T14:30:37Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -755,5 +827,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-19T14:28:23Z"
+ "last_auto": "2026-10-19T14:30:37Z"
 }
