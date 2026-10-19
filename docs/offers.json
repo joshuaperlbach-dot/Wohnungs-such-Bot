@@ -78,7 +78,7 @@
    "requested": "gesendet",
    "online_since": "2026-10-13T17:46:50Z",
    "requested_at": "2026-10-13T17:46:50Z",
-   "gone": true,
+   "gone": false,
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
@@ -372,7 +372,7 @@
    "online_since": "2026-10-19T07:26:04Z"
   }
  },
- "updated": "2026-10-19T09:46:20Z",
+ "updated": "2026-10-19T09:48:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -395,5 +395,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-19T09:46:20Z"
+ "last_auto": "2026-10-19T09:48:18Z"
 }
