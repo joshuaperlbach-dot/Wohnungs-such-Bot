@@ -1526,9 +1526,81 @@
     ]
    },
    "online_since": "2026-10-20T13:16:05Z"
+  },
+  "ibw-23183": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20108-136.html?t=ibw",
+   "title": "Über den Dächern von Berlin ",
+   "address": "Franz-Jacob-Straße 12, 10369 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792513027-OLsZFbvkIO.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 562.48,
+   "cold": 367.53,
+   "size": 47.46,
+   "floor": 18,
+   "levels": 21,
+   "year": 1977,
+   "stars": 3,
+   "why": "47.46 m², ~4.8 km zur Arbeit (Luftlinie), Kiez mittel (70 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 18. Etage, Baujahr 1977, Hochhaus (21 Etagen)",
+   "points": 60,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.7,
+     16
+    ],
+    "Lage": [
+     5.4,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     3.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-20T16:17:07Z"
   }
  },
- "updated": "2026-10-20T16:16:21Z",
+ "updated": "2026-10-20T16:18:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1551,5 +1623,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-20T16:16:21Z"
+ "last_auto": "2026-10-20T16:18:21Z"
 }
