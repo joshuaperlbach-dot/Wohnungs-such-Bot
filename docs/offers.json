@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23096": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00666-1117-1304.html",
-   "title": "1 Zimmer sucht Nachmieter",
-   "address": "Friedrich-Kayßler-Weg 3, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792404130-1BXCjBdAzE.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 520.4,
-   "cold": 388.93,
-   "size": 37.14,
-   "floor": 13,
-   "levels": 17,
-   "year": 1968,
-   "stars": 2,
-   "why": "37.14 m², ~9.8 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 13. Etage, Baujahr 1968, Hochhaus (17 Etagen)",
-   "points": 43,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.1,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.6,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-19T10:02:10Z"
-  },
   "ibw-23097": {
    "source": "ibw",
    "company": "degewo",
@@ -1384,7 +1312,7 @@
    "online_since": "2026-10-20T10:00:07Z"
   }
  },
- "updated": "2026-10-20T10:00:55Z",
+ "updated": "2026-10-20T10:02:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1407,5 +1335,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-20T10:00:55Z"
+ "last_auto": "2026-10-20T10:02:19Z"
 }
