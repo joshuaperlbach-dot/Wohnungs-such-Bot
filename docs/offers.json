@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23115": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14597-27.html?t=ibw",
-   "title": "Nahe Bahnhof Lichtenberg",
-   "address": "Rosenfelder Straße 13, 10317 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792414931-6bRA0cc2af.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 699.15,
-   "cold": 584.09,
-   "size": 37.08,
-   "floor": 2,
-   "levels": 4,
-   "year": 1908,
-   "stars": 3,
-   "why": "37.08 m², ~6.3 km zur Arbeit (Luftlinie), Kiez mittel (128 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1908",
-   "points": 65,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.7,
-     16
-    ],
-    "Lage": [
-     2.9,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.6,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-19T13:02:11Z"
-  },
   "ibw-23121": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1600,7 +1528,7 @@
    "online_since": "2026-10-20T12:16:07Z"
   }
  },
- "updated": "2026-10-20T13:00:51Z",
+ "updated": "2026-10-20T13:02:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1623,5 +1551,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-20T13:00:51Z"
+ "last_auto": "2026-10-20T13:02:20Z"
 }
