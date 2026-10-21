@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23148": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1400-57002-0900-0401.html",
-   "title": "Traumwohnung Nähe Tierpark - Nachmieter gesucht!",
-   "address": "Ribbecker Straße 57, 10315 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792487226-uUIt7yobh9.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 929.37,
-   "cold": 741.72,
-   "size": 59.2,
-   "floor": 4,
-   "levels": 5,
-   "year": 1940,
-   "stars": 2,
-   "why": "59.2 m², ~6.7 km zur Arbeit (Luftlinie), Kiez wenig los (48 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 4. Etage, Baujahr 1940",
-   "points": 52,
-   "parts": {
-    "Kosten": [
-     2.5,
-     20
-    ],
-    "Kiez": [
-     8.1,
-     16
-    ],
-    "Lage": [
-     2.2,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     6.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T09:07:06Z"
-  },
   "ibw-23149": {
    "source": "ibw",
    "company": "degewo",
@@ -1314,7 +1242,7 @@
    "online_since": "2026-10-21T07:26:05Z"
   }
  },
- "updated": "2026-10-21T09:06:22Z",
+ "updated": "2026-10-21T09:08:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1337,5 +1265,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T09:06:22Z"
+ "last_auto": "2026-10-21T09:08:18Z"
 }
