@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23142": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00247-0120-0120.html",
-   "title": "Kompakte Wohnung in der \"Schlange\" frei",
-   "address": "Schlangenbader Straße 31, 14197 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792480866-mKZmF306xA.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 607.26,
-   "cold": 413.66,
-   "size": 41.37,
-   "floor": 5,
-   "levels": 6,
-   "year": 1974,
-   "stars": 3,
-   "why": "41.37 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1974",
-   "points": 56,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.0,
-     16
-    ],
-    "Lage": [
-     0.3,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.8,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T07:21:06Z"
-  },
   "ibw-23146": {
    "source": "ibw",
    "company": "degewo",
@@ -1386,7 +1314,7 @@
    "online_since": "2026-10-21T06:57:03Z"
   }
  },
- "updated": "2026-10-21T07:20:29Z",
+ "updated": "2026-10-21T07:22:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1409,5 +1337,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T07:20:29Z"
+ "last_auto": "2026-10-21T07:22:20Z"
 }
