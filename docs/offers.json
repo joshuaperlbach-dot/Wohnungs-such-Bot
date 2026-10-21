@@ -804,9 +804,81 @@
     ]
    },
    "online_since": "2026-10-21T15:27:04Z"
+  },
+  "ibw-23241": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00370-0044-0202.html",
+   "title": "Schöne Wohnung sucht Nachmieter",
+   "address": "Pestalozzistraße 1, 10625 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792597146-iwOO1XdrW5.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 632.49,
+   "cold": 422.95,
+   "size": 50.86,
+   "floor": 2,
+   "levels": 5,
+   "year": 1958,
+   "stars": 4,
+   "why": "50.86 m², ~6.1 km zur Arbeit (Luftlinie), Kiez lebendig (466 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1958",
+   "points": 72,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     14.4,
+     16
+    ],
+    "Lage": [
+     3.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T15:39:06Z"
   }
  },
- "updated": "2026-10-21T15:38:22Z",
+ "updated": "2026-10-21T15:40:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -829,5 +901,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T15:38:22Z"
+ "last_auto": "2026-10-21T15:40:33Z"
 }
