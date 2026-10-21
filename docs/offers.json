@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23160": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5163%2F00098",
-   "title": "Süße 2 Zimmer-Wohnung im ruhigen Rahnsdorf!",
-   "address": "Mausohrweg 12, 12589 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792490407-WErC3D62dK.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 757.28,
-   "cold": 588.28,
-   "size": 42.02,
-   "floor": 1,
-   "levels": 4,
-   "year": 2019,
-   "stars": 3,
-   "why": "42.02 m², ~23.8 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2019",
-   "points": 56,
-   "parts": {
-    "Kosten": [
-     19.4,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     2.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T10:00:07Z"
-  },
   "ibw-23163": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1022,7 +950,7 @@
    "online_since": "2026-10-21T07:26:05Z"
   }
  },
- "updated": "2026-10-21T09:58:18Z",
+ "updated": "2026-10-21T10:00:48Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1045,5 +973,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T09:58:18Z"
+ "last_auto": "2026-10-21T10:00:48Z"
 }
