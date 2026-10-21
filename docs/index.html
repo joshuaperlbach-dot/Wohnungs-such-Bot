@@ -73,6 +73,9 @@
   .req { display: block; width: calc(100% - 24px); margin: 0 12px 12px; padding: 11px 12px; border-radius: 10px;
          font-weight: 600; font-size: 15px; background: var(--idle); color: var(--idle-ink); }
   .req.late { background: var(--late); color: var(--late-ink); }
+  a.req { text-align: center; text-decoration: none; box-sizing: border-box; }
+  .req.go { background: var(--ink); color: var(--bg); }
+  .req.ask { background: var(--star); color: #1c1300; }
   .req.sent { background: var(--sent); color: var(--sent-ink); }
   .req.invite { background: var(--star); color: #1c1300; }
   .req.declined { background: var(--idle); color: var(--muted); }
@@ -163,6 +166,12 @@ function saveMarks(m) {
   try { localStorage.setItem("marks", JSON.stringify(m)); } catch (e) { /* privater Modus */ }
 }
 let marks = loadMarks();
+// Angebote, deren Anfrage-Seite von hier geöffnet wurde (danach fragt der Knopf, ob es geklappt hat)
+let opened = (() => { try { return JSON.parse(localStorage.getItem("opened") || "{}"); } catch (e) { return {}; } })();
+function saveOpened() { try { localStorage.setItem("opened", JSON.stringify(opened)); } catch (e) {} }
+// Link springt, wo möglich, direkt zum Anfrage-Formular der Gesellschaft (wie in der Push-Meldung)
+const FORM_ANCHOR = { degewo: "#accordion-nl-rent-details" };
+const formUrl = o => { const u = safeUrl(o.url); return u && !u.includes("#") ? u + (FORM_ANCHOR[o.company] || "") : u; };
 
 const el = (tag, cls, text) => {
   const n = document.createElement(tag);
@@ -190,6 +199,7 @@ function state(key, o) {
   if (o.reply === "einladung") return { cls: "invite", label: "Einladung zur Besichtigung", note: "schau in deine Mails", locked: true };
   if (o.reply === "absage") return { cls: "declined", label: "Absage", note: "Anfrage war raus", locked: true };
   if (o.reply === "antwort") return { cls: "sent", label: "Antwort da", note: "schau in deine Mails", locked: true };
+  if (o.confirm === "abgelaufen") return { cls: "declined", label: "Anfrage nicht bestätigt", note: "Link aus der Mail abgelaufen", locked: true };
   if (o.requested === "unklar" && o.confirm === "offen") {
     return { cls: "sent", label: "Anfrage raus", note: "Bestätigung per Mail offen", locked: true };
   }
@@ -197,21 +207,39 @@ function state(key, o) {
     return { cls: "sent", label: "Angefragt", note: o.requested === "unklar" ? "vom Bot, ohne Bestätigung" : "vom Bot",
              locked: true };
   }
-  if (marks[key]) return { cls: "sent", label: "Angefragt", note: "von Hand" };
+  if (marks[key]) return { cls: "sent", label: "✓ Von dir angefragt", note: "tippen zum Zurücknehmen", toggle: true };
+  // Nach dem Öffnen eine Stunde lang nachfragen; danach (z.B. doch nicht angefragt) wieder normal
+  if (opened[key] && !o.gone && Date.now() - new Date(opened[key]).getTime() < HOUR) {
+    return { cls: "ask", label: "Angefragt?", note: "tippen = ja", toggle: true };
+  }
+  if (o.gone) return { cls: "", label: "Als angefragt markieren", note: "", toggle: true };
+  const url = formUrl(o);
   const online = Date.now() - new Date(o.online_since).getTime();
-  if (online > LATE_AFTER) return { cls: "late", label: "Nicht angefragt", note: `online ${ago(o.online_since).replace("vor ", "seit ")}` };
-  return { cls: "", label: "Nicht angefragt", note: "" };
+  const late = online > LATE_AFTER;
+  const note = late ? `online ${ago(o.online_since).replace("vor ", "seit ")}` : "öffnet das Formular";
+  return { cls: late ? "late" : "go", label: url ? "Jetzt anfragen ↗" : "Als angefragt markieren", note, url };
 }
 
 function reqButton(key, o) {
   const s = state(key, o);
-  const b = el("button", "req " + s.cls, s.label);
+  // Noch nicht angefragt: der Knopf öffnet direkt das Formular der Gesellschaft
+  const b = s.url ? el("a", "req " + s.cls, s.label) : el("button", "req " + s.cls, s.label);
   if (s.note) b.append(el("small", null, s.note));
+  if (s.url) {
+    b.href = s.url; b.target = "_blank"; b.rel = "noopener noreferrer";
+    b.addEventListener("click", ev => {
+      ev.stopPropagation();
+      opened[key] = new Date().toISOString();
+      saveOpened();
+      setTimeout(render, 500);  // zurück in der App: Knopf fragt dann, ob es geklappt hat
+    });
+    return b;
+  }
   b.addEventListener("click", ev => {
     ev.stopPropagation();
     if (s.locked) return;
-    if (marks[key]) delete marks[key]; else marks[key] = { at: new Date().toISOString(), offer: o };
-    saveMarks(marks);
+    if (marks[key]) { delete marks[key]; delete opened[key]; } else marks[key] = { at: new Date().toISOString(), offer: o };
+    saveMarks(marks); saveOpened();
     render();
   });
   return b;
@@ -335,7 +363,7 @@ function drawDetail() {
   const url = safeUrl(o.url);
   if (o.gone) {
     inner.append(el("span", "link off", "Nicht mehr online"));
-  } else if (url) {
+  } else if (url && !state(openKey, o).url) {  // sonst öffnet schon der Anfrage-Knopf die Seite
     const a = el("a", "link", "Zur Anzeige");
     a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
     inner.append(a);
