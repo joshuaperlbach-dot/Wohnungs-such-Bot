@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23173": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00403-0282-0603.html",
-   "title": "1,5-Zimmerwohnung mitten im Kiez!",
-   "address": "Naunynstraße 11, 10997 Berlin",
-   "bezirk": "Friedrichshain-Kreuzberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792498567-gP7tEE8btL.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 715.97,
-   "cold": 482.45,
-   "size": 48.25,
-   "floor": 6,
-   "levels": 7,
-   "year": 1978,
-   "stars": 4,
-   "why": "48.25 m², ~1.0 km zur Arbeit (Luftlinie), Kiez lebendig (384 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1978",
-   "points": 77,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     16.0,
-     16
-    ],
-    "Lage": [
-     10.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     3.8,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T12:16:07Z"
-  },
   "ibw-23177": {
    "source": "ibw",
    "company": "degewo",
@@ -806,7 +734,7 @@
    "online_since": "2026-10-21T11:44:05Z"
   }
  },
- "updated": "2026-10-21T12:14:20Z",
+ "updated": "2026-10-21T12:16:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -829,5 +757,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T12:14:20Z"
+ "last_auto": "2026-10-21T12:16:21Z"
 }
