@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23168": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00642-0154-1706.html",
-   "title": "1-Zimmer-Wohnung mit schöner Aussicht",
-   "address": "Joachim-Gottschalk-Weg 1, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792494250-OEcdTK4TMA.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 593.93,
-   "cold": 435.75,
-   "size": 43.58,
-   "floor": 17,
-   "levels": 25,
-   "year": 1968,
-   "stars": 2,
-   "why": "43.58 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 17. Etage, Baujahr 1968, Hochhaus (25 Etagen)",
-   "points": 45,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     2.5,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T11:04:10Z"
-  },
   "ibw-23169": {
    "source": "ibw",
    "company": "degewo",
@@ -878,7 +806,7 @@
    "online_since": "2026-10-21T10:28:03Z"
   }
  },
- "updated": "2026-10-21T11:02:29Z",
+ "updated": "2026-10-21T11:04:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -901,5 +829,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T11:02:29Z"
+ "last_auto": "2026-10-21T11:04:20Z"
 }
