@@ -55,12 +55,14 @@ def send_request(listing, person, send):
 
 
 def doi_links(urls):
-    """Aus allen Links einer Mail nur echte Bestätigungslinks der HOWOGE."""
+    """Aus allen Links einer Mail nur echte Bestätigungslinks der HOWOGE. In der echten Mail
+    (15.10.2026) steht der Link nur im Nur-Text-Teil, und zwar mit http:// statt https://;
+    im HTML-Teil verbirgt er sich hinter einem Klickzähler. Geöffnet wird immer per https."""
     out = []
     for u in urls:
         parts = urlparse(u)
-        if parts.scheme == "https" and parts.hostname == "www.howoge.de" and DOI_PATH in parts.path:
-            out.append(u)
+        if parts.scheme in ("http", "https") and parts.hostname == "www.howoge.de" and DOI_PATH in parts.path:
+            out.append(parts._replace(scheme="https").geturl())
     return out
 
 

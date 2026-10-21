@@ -104,8 +104,24 @@ def links(msg):
         if part.get_content_subtype() == "html":
             found += [a["href"] for a in BeautifulSoup(content, "html.parser").find_all("a", href=True)]
         else:
-            found += re.findall(r"https://[^\s<>\"']+", content)
+            # Links im Text stehen manchmal in Klammern: "[Anfrage bestätigen](http://...)"
+            found += [u.rstrip(").,]>") for u in re.findall(r"https?://[^\s<>\"']+", content)]
     return found
+
+
+# Der Bestätigungslink der HOWOGE gilt nur 24 Stunden
+CONFIRM_VALID = timedelta(hours=24)
+# Bestätigungsmail der HOWOGE, auch wenn der Link darin nicht erkannt wird
+DOI_MAIL = r"bestätigen Sie Ihre Anmeldung|Besichtigungsanfrage für eine unserer Wohnungen gestellt"
+
+
+def expire_confirmations(store, now):
+    """Offene Bestätigungen, deren Link schon abgelaufen ist, als 'abgelaufen' markieren,
+    damit eine spätere Bestätigungsmail nicht dem falschen Angebot zugeordnet wird."""
+    for o in store["offers"].values():
+        since = offers.parse_time(o.get("requested_at"))
+        if o.get("confirm") == "offen" and since and now - since > CONFIRM_VALID:
+            o["confirm"] = "abgelaufen"
 
 
 def pending_confirmation(store, text):
@@ -126,6 +142,7 @@ def mail_id(msg):
 def process(messages, store, seen, now):
     """Neue Mails auswerten. Gibt die Push-Meldungen zurück (ohne Mail-Inhalt)."""
     notes = []
+    expire_confirmations(store, now)
     for msg in messages:
         mid = mail_id(msg)
         if mid in seen:
@@ -144,6 +161,13 @@ def process(messages, store, seen, now):
             else:
                 notes.append(f"HOWOGE-Anfrage für {where}: Bestätigungslink ließ sich nicht öffnen.\n"
                              "Bitte in der Mail selbst anklicken!")
+        elif re.search(DOI_MAIL, text, re.I):
+            # Bestätigungsmail, aber kein Link erkannt: nicht als Einladung werten, sondern Bescheid geben
+            kind, key = "bestaetigung", pending_confirmation(store, text)
+            if key:
+                where = store["offers"][key].get("address", "")
+                notes.append(f"HOWOGE-Anfrage für {where}: Bestätigungslink nicht erkannt.\n"
+                             "Bitte in der Mail selbst anklicken (gilt 24 Stunden)!")
         else:
             kind = classify(text)
             key = find_offer(store, text)
