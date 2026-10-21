@@ -82,222 +82,6 @@
    "reply": "absage",
    "reply_at": "2026-10-13T18:40:33Z"
   },
-  "ibw-22971": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20108-274.html?t=ibw",
-   "title": "Schöne kleine Wohnung ohne WBS",
-   "address": "Franz-Jacob-Straße 14, 10369 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792051928-0XCfLkTM8T.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 558.25,
-   "cold": 377.45,
-   "size": 47.46,
-   "floor": 15,
-   "levels": 18,
-   "year": 1977,
-   "stars": 3,
-   "why": "47.46 m², ~4.8 km zur Arbeit (Luftlinie), Kiez mittel (75 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 15. Etage, Baujahr 1977, Hochhaus (18 Etagen)",
-   "points": 60,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.0,
-     16
-    ],
-    "Lage": [
-     5.3,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     3.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-15T08:12:08Z"
-  },
-  "ibw-22975": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00480-0101-0011",
-   "title": "Vorfristig zum 01.11.2026",
-   "address": "Gubitzstraße 50, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792054504-1aMP9FjQaR.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1.5,
-   "price": 733.67,
-   "cold": 621.57,
-   "size": 29.85,
-   "floor": 3,
-   "levels": 7,
-   "year": 2017,
-   "stars": 4,
-   "why": "29.85 m², ~4.7 km zur Arbeit (Luftlinie), Kiez mittel (80 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2017",
-   "points": 73,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.3,
-     16
-    ],
-    "Lage": [
-     5.5,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     5.2,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-15T08:55:04Z"
-  },
-  "ibw-22979": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13342-22.html?t=ibw",
-   "title": "2-Zimmerwohnung im Erdgeschoss mit Balkon",
-   "address": "Neubrandenburger Straße 26, 13059 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792055345-KZMOmiBnQz.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 553.52,
-   "cold": 386.2,
-   "size": 47.38,
-   "floor": 1,
-   "levels": 5,
-   "year": 1987,
-   "stars": 2,
-   "why": "47.38 m², ~10.1 km zur Arbeit (Luftlinie), Kiez wenig los (28 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1987",
-   "points": 55,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.8,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-15T09:09:06Z"
-  },
   "ibw-22980": {
    "source": "ibw",
    "company": "howoge",
@@ -373,26 +157,242 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-22981": {
+  "ibw-23186": {
    "source": "ibw",
    "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-71905-0001-0101.html",
-   "title": "Nachmieter gesucht",
-   "address": "Mühlweg 11, 12587 Berlin",
-   "bezirk": "Treptow-Köpenick",
+   "url": "https://www.degewo.de/de/properties/W1140-00609-0302-0201.html",
+   "title": "2 Zimmer-Wohnung in Britz!",
+   "address": "Fritz-Reuter-Allee 11, 12359 Berlin",
+   "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792058284-8tY1s2meZu.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1792559103-qGbbTCLoGg.webp?q=80&w=900&fm=jpg"
    ],
    "rooms": 2,
-   "price": 667.86,
-   "cold": 457.19,
-   "size": 52.28,
-   "floor": 1,
-   "levels": 3,
-   "year": 1957,
+   "price": 748.53,
+   "cold": 554.87,
+   "size": 54.71,
+   "floor": 2,
+   "levels": 4,
+   "year": 1926,
    "stars": 3,
-   "why": "52.28 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (2 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1957",
-   "points": 57,
+   "why": "54.71 m², ~6.4 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1926",
+   "points": 67,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.9,
+     16
+    ],
+    "Lage": [
+     2.6,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T05:05:03Z"
+  },
+  "ibw-23190": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-50301-0034-0203.html",
+   "title": "Ruhig und grün gelegen",
+   "address": "Ahornallee 20, 12555 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792565822-B9z0f6fCDa.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 666.28,
+   "cold": 468.56,
+   "size": 50.83,
+   "floor": 2,
+   "levels": 4,
+   "year": 1959,
+   "stars": 3,
+   "why": "50.83 m², ~12.2 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1959",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.1,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T06:57:03Z"
+  },
+  "ibw-23192": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F5163%2F00111",
+   "title": "Mausohrweg 14, EG MI",
+   "address": "Mausohrweg 14, 12589 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792567565-LdQfg9a4a9.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 816.5,
+   "cold": 624.5,
+   "size": 55.87,
+   "floor": 0,
+   "levels": 4,
+   "year": 2019,
+   "stars": 2,
+   "why": "55.87 m², ~23.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, EG, Baujahr 2019",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     14.7,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T07:26:05Z"
+  },
+  "ibw-23208": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13579-46.html?t=ibw",
+   "title": "Wohnen ohne WBS am grünen Stadtrand von Berlin",
+   "address": "Welsestraße 1, 13057 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792577228-CZbBKByfF9.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 575.37,
+   "cold": 464.0,
+   "size": 29.0,
+   "floor": 6,
+   "levels": 6,
+   "year": 2023,
+   "stars": 2,
+   "why": "29 m², ~10.7 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2023",
+   "points": 52,
    "parts": {
     "Kosten": [
      20.0,
@@ -411,7 +411,79 @@
      6
     ],
     "ÖPNV": [
-     2.4,
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T10:07:08Z"
+  },
+  "ibw-23210": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-51407-0009-0303.html",
+   "title": "Nachmieter gesucht!",
+   "address": "Flemmingstraße 2, 12555 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792578483-BS55vQptbl.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 690.09,
+   "cold": 457.71,
+   "size": 52.34,
+   "floor": 3,
+   "levels": 4,
+   "year": 1958,
+   "stars": 3,
+   "why": "52.34 m², ~12.5 km zur Arbeit (Luftlinie), Kiez mittel (61 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1958",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.1,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
      3
     ],
     "Bezirk": [
@@ -427,7 +499,7 @@
      5
     ],
     "Größe": [
-     4.9,
+     5.0,
      10
     ],
     "Zimmer": [
@@ -439,51 +511,51 @@
      6
     ],
     "Aufzug": [
-     4.2,
+     2.5,
      5
     ]
    },
-   "online_since": "2026-10-15T09:58:04Z"
+   "online_since": "2026-10-21T10:28:03Z"
   },
-  "ibw-22985": {
+  "ibw-23217": {
    "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F0112%2F00073",
-   "title": "Hier können Sie direkt einziehen!",
-   "address": "Holzmindener Straße 13, 12347 Berlin",
-   "bezirk": "Neukölln",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1100-00304-0014-0208.html",
+   "title": "Klein aber fein - Neubau",
+   "address": "Pulsstraße 13, 14059 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792064705-69ruTS3Bgu.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1792583045-k6EQNDs3gg.webp?q=80&w=900&fm=jpg"
    ],
    "rooms": 2,
-   "price": 749.03,
-   "cold": 548.03,
-   "size": 58.55,
-   "floor": 0,
-   "levels": 6,
-   "year": 1964,
-   "stars": 3,
-   "why": "58.55 m², ~5.4 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, EG, Baujahr 1964",
-   "points": 68,
+   "price": 811.93,
+   "cold": 684.13,
+   "size": 36.94,
+   "floor": 2,
+   "levels": 7,
+   "year": 2021,
+   "stars": 2,
+   "why": "36.94 m², ~8.6 km zur Arbeit (Luftlinie), Kiez wenig los (4 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2021",
+   "points": 54,
    "parts": {
     "Kosten": [
-     20.0,
+     15.0,
      20
     ],
     "Kiez": [
-     7.0,
+     3.2,
      16
     ],
     "Lage": [
-     4.3,
+     0.0,
      10
     ],
     "Ringbahn": [
-     3.0,
+     6.0,
      6
     ],
     "ÖPNV": [
-     2.6,
+     0.8,
      3
     ],
     "Bezirk": [
@@ -491,15 +563,15 @@
      3
     ],
     "Baujahr": [
-     0.9,
+     6.3,
      9
     ],
     "Hochhaus": [
-     5.0,
+     3.0,
      5
     ],
     "Größe": [
-     6.7,
+     0.6,
      10
     ],
     "Zimmer": [
@@ -515,43 +587,43 @@
      5
     ]
    },
-   "online_since": "2026-10-15T11:45:05Z"
+   "online_since": "2026-10-21T11:44:05Z"
   },
-  "ibw-22988": {
+  "ibw-23221": {
    "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23155-55.html?t=ibw",
-   "title": "Tapezier- und Malerarbeiten an den Wänden sind durch die neuen Mieter:innen durchzuführen",
-   "address": "Rupprechtstraße 23, 10317 Berlin",
-   "bezirk": "Lichtenberg",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F5133%2F00058",
+   "title": "Warthestr. 21, 4.G LI",
+   "address": "Warthestraße 21, 12051 Berlin",
+   "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792065727-0LAY1J1WAP.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1792585206-KzjriFEKkK.webp?q=80&w=900&fm=jpg"
    ],
    "rooms": 2,
-   "price": 750.41,
-   "cold": 524.84,
-   "size": 53.91,
-   "floor": 2,
-   "levels": 4,
-   "year": 1955,
-   "stars": 3,
-   "why": "53.91 m², ~5.2 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 2. Etage, Baujahr 1955",
-   "points": 69,
+   "price": 578.49,
+   "cold": 405.49,
+   "size": 47.15,
+   "floor": 4,
+   "levels": 5,
+   "year": 1939,
+   "stars": 4,
+   "why": "47.15 m², ~3.8 km zur Arbeit (Luftlinie), Kiez mittel (115 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 4. Etage, Baujahr 1939",
+   "points": 79,
    "parts": {
     "Kosten": [
      20.0,
      20
     ],
     "Kiez": [
-     7.0,
+     11.8,
      16
     ],
     "Lage": [
-     4.6,
+     6.9,
      10
     ],
     "Ringbahn": [
-     3.0,
+     6.0,
      6
     ],
     "ÖPNV": [
@@ -563,6 +635,150 @@
      3
     ],
     "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T12:20:06Z"
+  },
+  "ibw-23240": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00247-0168-0168.html",
+   "title": "Wohnen in der Schlange - Einbauküche geschenkt",
+   "address": "Schlangenbader Straße 26, 14197 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792596423-VkXjIBIGrb.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 593.42,
+   "cold": 408.66,
+   "size": 39.48,
+   "floor": 3,
+   "levels": 6,
+   "year": 1974,
+   "stars": 3,
+   "why": "39.48 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (40 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1974",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.3,
+     16
+    ],
+    "Lage": [
+     0.3,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T15:27:04Z"
+  },
+  "ibw-23241": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00370-0044-0202.html",
+   "title": "Schöne Wohnung sucht Nachmieter",
+   "address": "Pestalozzistraße 1, 10625 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792597146-iwOO1XdrW5.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 632.49,
+   "cold": 422.95,
+   "size": 50.86,
+   "floor": 2,
+   "levels": 5,
+   "year": 1958,
+   "stars": 4,
+   "why": "50.86 m², ~6.1 km zur Arbeit (Luftlinie), Kiez lebendig (466 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1958",
+   "points": 72,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     14.4,
+     16
+    ],
+    "Lage": [
+     3.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
      3.6,
      9
     ],
@@ -571,7 +787,7 @@
      5
     ],
     "Größe": [
-     5.4,
+     4.5,
      10
     ],
     "Zimmer": [
@@ -587,39 +803,111 @@
      5
     ]
    },
-   "online_since": "2026-10-15T12:02:07Z"
+   "online_since": "2026-10-21T15:39:06Z"
   },
-  "ibw-23005": {
+  "ibw-23242": {
    "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00663-0466-1105.html",
-   "title": "1-Zimmer Wohnung sucht passenden Single!",
-   "address": "Agnes-Straub-Weg 2, 12353 Berlin",
-   "bezirk": "Neukölln",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20544-13.html?t=ibw",
+   "title": "Ohne WBS\nFür die Anmietung der Wohnung ist kein WBS erforderlich",
+   "address": "Am Tierpark 64, 10319 Berlin",
+   "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792129084-zZjXgOWZUg.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1792599424-jLkOFi2bNo.webp?q=80&w=900&fm=jpg"
    ],
-   "rooms": 1,
-   "price": 453.35,
-   "cold": 320.6,
-   "size": 35.03,
-   "floor": 11,
-   "levels": 17,
-   "year": 1967,
+   "rooms": 2,
+   "price": 577.68,
+   "cold": 377.45,
+   "size": 47.46,
+   "floor": 3,
+   "levels": 18,
+   "year": 1976,
    "stars": 2,
-   "why": "35.03 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (57 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 11. Etage, Baujahr 1967, Hochhaus (17 Etagen)",
-   "points": 47,
+   "why": "47.46 m², ~7.5 km zur Arbeit (Luftlinie), Kiez wenig los (36 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 3. Etage, Baujahr 1976, Hochhaus (18 Etagen)",
+   "points": 48,
    "parts": {
     "Kosten": [
      20.0,
      20
     ],
     "Kiez": [
-     8.8,
+     6.9,
      16
     ],
     "Lage": [
+     0.9,
+     10
+    ],
+    "Ringbahn": [
      0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     3.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T16:17:04Z"
+  },
+  "ibw-23243": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20545-180.html?t=ibw",
+   "title": "Ohne WBS\nFür die Anmietung der Wohnung ist kein WBS erforderlich",
+   "address": "Erich-Kurz-Straße 7, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792599546-Fwu03i67SR.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 447.22,
+   "cold": 292.55,
+   "size": 30.36,
+   "floor": 7,
+   "levels": 21,
+   "year": 1976,
+   "stars": 2,
+   "why": "30.36 m², ~7.5 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 7. Etage, Baujahr 1976, Hochhaus (21 Etagen)",
+   "points": 40,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.9,
      10
     ],
     "Ringbahn": [
@@ -651,234 +939,18 @@
      7
     ],
     "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T05:38:04Z"
-  },
-  "ibw-23011": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10506-72.html?t=ibw",
-   "title": "2-Zimmer-Wohnung (ohne WBS)",
-   "address": "Genslerstraße 44A, 13055 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792132323-AJbWsFkRVL.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 696.81,
-   "cold": 499.86,
-   "size": 50.66,
-   "floor": 3,
-   "levels": 3,
-   "year": 1940,
-   "stars": 3,
-   "why": "50.66 m², ~6.9 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1940",
-   "points": 66,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.6,
-     16
-    ],
-    "Lage": [
-     1.8,
-     10
-    ],
-    "Ringbahn": [
      0.0,
      6
     ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T06:32:03Z"
-  },
-  "ibw-23016": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13284-44.html?t=ibw",
-   "title": "Wohnung in Berlin",
-   "address": "Grevesmühlener Straße 20, 13059 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792134425-QCkUI3hnRs.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 642.2,
-   "cold": 446.03,
-   "size": 54.72,
-   "floor": 11,
-   "levels": 11,
-   "year": 1988,
-   "stars": 3,
-   "why": "54.72 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (35 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 11. Etage, Baujahr 1988, Hochhaus (11 Etagen)",
-   "points": 57,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     6.7,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     5.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
     "Aufzug": [
      5.0,
      5
     ]
    },
-   "online_since": "2026-10-16T07:07:05Z"
-  },
-  "ibw-23017": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5134%2F00318",
-   "title": "Schillerkiez",
-   "address": "Warthestraße 42C, 12051 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792134675-ePWZKHjXYg.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 706.44,
-   "cold": 520.44,
-   "size": 51.01,
-   "floor": 3,
-   "levels": 5,
-   "year": 1941,
-   "stars": 4,
-   "why": "51.01 m², ~3.9 km zur Arbeit (Luftlinie), Kiez wenig los (50 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 3. Etage, Baujahr 1941",
-   "points": 77,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.3,
-     16
-    ],
-    "Lage": [
-     6.8,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     0.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-16T07:11:15Z"
+   "online_since": "2026-10-21T16:19:06Z"
   }
  },
- "updated": "2026-10-16T07:12:21Z",
+ "updated": "2026-10-21T20:02:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -901,5 +973,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-16T07:12:21Z"
+ "last_auto": "2026-10-21T20:02:18Z"
 }
