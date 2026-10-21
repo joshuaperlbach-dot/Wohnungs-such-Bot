@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23146": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W3110-00614-0012-0403.html",
-   "title": "Nachmieter in Britz gesucht!",
-   "address": "Am Straßenbahnhof 30, 12347 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792486203-bViwCsItvc.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 702.88,
-   "cold": 492.53,
-   "size": 60.1,
-   "floor": 4,
-   "levels": 4,
-   "year": 1963,
-   "stars": 3,
-   "why": "60.1 m², ~5.6 km zur Arbeit (Luftlinie), Kiez wenig los (54 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 4. Etage, Baujahr 1963",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.6,
-     16
-    ],
-    "Lage": [
-     3.9,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     7.2,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T08:50:03Z"
-  },
   "ibw-23148": {
    "source": "ibw",
    "company": "degewo",
@@ -1386,7 +1314,7 @@
    "online_since": "2026-10-21T07:26:05Z"
   }
  },
- "updated": "2026-10-21T08:48:21Z",
+ "updated": "2026-10-21T08:50:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1409,5 +1337,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T08:48:21Z"
+ "last_auto": "2026-10-21T08:50:31Z"
 }
