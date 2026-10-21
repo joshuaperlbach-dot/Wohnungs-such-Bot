@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23163": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F3000%2F00037",
-   "title": "Schicke Wohnung mit Balkon! **ab sofort**",
-   "address": "Franz-Körner-Straße 11, 12347 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792491065-2RlHOVsTrr.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 917.35,
-   "cold": 687.35,
-   "size": 67.19,
-   "floor": 3,
-   "levels": 5,
-   "year": 1973,
-   "stars": 2,
-   "why": "67.19 m², ~5.8 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1973",
-   "points": 50,
-   "parts": {
-    "Kosten": [
-     3.9,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     3.7,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     1.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     9.2,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T10:11:05Z"
-  },
   "ibw-23164": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1022,7 +950,7 @@
    "online_since": "2026-10-21T10:07:08Z"
   }
  },
- "updated": "2026-10-21T10:10:27Z",
+ "updated": "2026-10-21T10:12:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1045,5 +973,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T10:10:27Z"
+ "last_auto": "2026-10-21T10:12:20Z"
 }
