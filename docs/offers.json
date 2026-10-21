@@ -157,154 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-mit-wbs-160-220/": {
-   "source": "wbm",
-   "company": "wbm",
-   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-mit-wbs-160-220/",
-   "title": "1-Zimmer-Wohnung mit WBS 160-220",
-   "address": "Fischerinsel 2, 10179 Berlin",
-   "text": "WICHTIG: Bitte beachten Sie, dass die Wohnung nur mit einem gültigen WBS 160-220 oder entsprechendem Einkommen angemietet werden kann. Nutzen Sie hierzu gern den beigefügten Link. um Ihren WBS-Anspruch zu prüfen https://www.berlin.de/sen/wohnen/service/wohnberechtigungsschein/\r\n\r\nDie Wohnung hat folgende Ausstattungsmerkmale:\r\n\r\n- innenliegendes Duschbad\r\n- gemütliches Zimmer mit angrenzendem Kochbereich\r\n- Aufzug\r\n- Keller",
-   "images": [
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78543-241e630bbe4e53d8b363d2a075af5796.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78543-0f78e33b70a8c89bf756b20c145c28be.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78543-fe3f294ec58f345b86a1344efc9ea7da.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78543-44b3121fe4896e77789bc1447f0ef18b.jpg"
-   ],
-   "bezirk": "Mitte",
-   "rooms": 1,
-   "price": 525.34,
-   "cold": 381.34,
-   "size": 32.91,
-   "floor": 9,
-   "year": 1966,
-   "stars": 3,
-   "why": "32.91 m², ~1.2 km zur Arbeit (Luftlinie), Kiez mittel (109 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 9. Etage, Baujahr 1966, Hochhaus (10 Etagen)",
-   "points": 57,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     11.6,
-     16
-    ],
-    "Lage": [
-     10.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T09:48:19Z",
-   "gone": true
-  },
-  "ibw-23153": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F3000%2F00019",
-   "title": "Gemütliche 2-Zimmerwohnung mit Balkon! **ab sofort**",
-   "address": "Franz-Körner-Straße 11, 12347 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792489626-ZBn00nIfWR.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 917.35,
-   "cold": 687.35,
-   "size": 67.19,
-   "floor": 1,
-   "levels": 5,
-   "year": 1973,
-   "stars": 2,
-   "why": "67.19 m², ~5.8 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1973",
-   "points": 50,
-   "parts": {
-    "Kosten": [
-     3.9,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     3.7,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     1.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     9.2,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T09:47:07Z"
-  },
   "ibw-23160": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1170,7 +1022,7 @@
    "online_since": "2026-10-21T07:26:05Z"
   }
  },
- "updated": "2026-10-21T09:46:20Z",
+ "updated": "2026-10-21T09:48:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1193,5 +1045,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T09:46:20Z"
+ "last_auto": "2026-10-21T09:48:21Z"
 }
