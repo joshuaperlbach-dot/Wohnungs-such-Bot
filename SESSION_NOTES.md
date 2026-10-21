@@ -97,6 +97,16 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - `offers.json` wird bei jedem Lauf neu geschrieben (Feld `updated`); die Seite warnt, wenn der Bot über 45 Minuten
   nicht gelaufen ist.
 
+## Ausfüll-Hilfe für Formulare mit Captcha (`docs/ausfuellen.user.js`)
+- Userscript für Tampermonkey (Firefox auf Android). Läuft auf den Seiten von degewo, Gewobag, Stadt und Land,
+  Wohnungshelden (eingebettete Formulare), Gesobau, Berlinovo, HOWOGE, WBM.
+- Füllt leere Felder anhand ihrer Beschriftung aus (Anrede, Name, E-Mail, Telefon, Adresse, Personen) und hakt
+  nur Datenschutz-Häkchen an. Schickt nie selbst ab; Captcha und Absenden macht der Nutzer.
+- Persönliche Daten stehen nur im Tampermonkey-Speicher auf dem Handy, nicht im Repo. Langes Drücken auf den
+  grünen Knopf ändert sie.
+- Feldnamen der echten Formulare waren beim Bau nicht einsehbar (kein Netz), daher Erkennung per Text.
+  Getestet nur gegen ein Testformular. Captchas werden bewusst nicht automatisch gelöst.
+
 ## Kriterien und Bewertung
 - Filter: 1-2 Zimmer, max. 950 € Warmmiete, ohne WBS.
   Bezirke: Charlottenburg, Friedrichshain, Kreuzberg, Lichtenberg, Mitte, Neukölln, Pankow, Prenzlauer Berg, Tiergarten, Treptow, Wedding.
