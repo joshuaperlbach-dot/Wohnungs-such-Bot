@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23164": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F3000%2F00151",
-   "title": "Klein aber Fein **ab sofort**",
-   "address": "Pintschallee 5, 12347 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792491366-YiA1l1Dc13.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 614.15,
-   "cold": 444.15,
-   "size": 47.06,
-   "floor": 4,
-   "levels": 6,
-   "year": 1973,
-   "stars": 3,
-   "why": "47.06 m², ~5.8 km zur Arbeit (Luftlinie), Kiez wenig los (15 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1973",
-   "points": 55,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     3.7,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.4,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T10:16:06Z"
-  },
   "ibw-23167": {
    "source": "ibw",
    "company": "degewo",
@@ -950,7 +878,7 @@
    "online_since": "2026-10-21T10:07:08Z"
   }
  },
- "updated": "2026-10-21T10:14:22Z",
+ "updated": "2026-10-21T10:16:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -973,5 +901,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T10:14:22Z"
+ "last_auto": "2026-10-21T10:16:21Z"
 }
