@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23177": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00247-0163-0163.html",
-   "title": "Kompakte 1 1/2 Zimmer Wohnung und die Einbauküche gibt’s gratis",
-   "address": "Schlangenbader Straße 27, 14197 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792502165-6nYvdpVZbg.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 604.06,
-   "cold": 411.76,
-   "size": 41.18,
-   "floor": 3,
-   "levels": 6,
-   "year": 1974,
-   "stars": 3,
-   "why": "41.18 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (41 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1974",
-   "points": 60,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.4,
-     16
-    ],
-    "Lage": [
-     0.3,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.8,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T13:16:05Z"
-  },
   "ibw-23183": {
    "source": "ibw",
    "company": "howoge",
@@ -806,7 +734,7 @@
    "online_since": "2026-10-21T12:20:06Z"
   }
  },
- "updated": "2026-10-21T13:14:21Z",
+ "updated": "2026-10-21T13:16:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -829,5 +757,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T13:14:21Z"
+ "last_auto": "2026-10-21T13:16:21Z"
 }
