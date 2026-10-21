@@ -732,9 +732,81 @@
     ]
    },
    "online_since": "2026-10-21T10:28:03Z"
+  },
+  "ibw-23217": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1100-00304-0014-0208.html",
+   "title": "Klein aber fein - Neubau",
+   "address": "Pulsstraße 13, 14059 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792583045-k6EQNDs3gg.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 811.93,
+   "cold": 684.13,
+   "size": 36.94,
+   "floor": 2,
+   "levels": 7,
+   "year": 2021,
+   "stars": 2,
+   "why": "36.94 m², ~8.6 km zur Arbeit (Luftlinie), Kiez wenig los (4 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2021",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     15.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-21T11:44:05Z"
   }
  },
- "updated": "2026-10-21T11:42:19Z",
+ "updated": "2026-10-21T11:44:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -757,5 +829,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T11:42:19Z"
+ "last_auto": "2026-10-21T11:44:19Z"
 }
