@@ -78,6 +78,10 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
     leer = keine Grenze. Dieselbe Variable begrenzt auch die WBM-Anfragen; gemeldet und angezeigt wird weiter alles bis `MAX_WARMMIETE`. Gleiche Regeln wie WBM: ab 4 Sternen,
     Bezirk sicher passend, kein WBS, max. 3 pro Lauf, nie doppelt. Echtes Senden und die Bestätigungsmail sind
     noch nicht live geprüft (Trockenlauf gegen die echte Seite klappt).
+    Erste echte Anfrage am 15.10.2026 (nach 12 Sekunden raus). Die Bestätigungsmail kam von
+    `noreply@mailings.howoge.de`; der Link steht nur im Nur-Text-Teil und mit `http://`, im HTML nur ein
+    Klickzähler (`r.sib.howoge.de`). Der Bot hatte ihn deshalb nicht erkannt (behoben 21.10.2026).
+    Der Link gilt nur 24 Stunden; ältere offene Bestätigungen werden als `abgelaufen` markiert.
   - degewo: Formular hat ein Captcha (Friendly Captcha). Wird bewusst nicht umgangen, dort nur melden.
   - Gewobag, Stadt und Land: Formular von Wohnungshelden mit reCAPTCHA, ebenfalls nur melden.
   - Gesobau, Berlinovo: noch nicht angesehen.

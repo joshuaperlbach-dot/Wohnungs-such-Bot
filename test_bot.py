@@ -766,7 +766,7 @@ def test_howoge_request():
         post.assert_not_called()
     # nur echte Bestätigungslinks der HOWOGE werden geöffnet
     assert howoge.doi_links([DOI, "https://www.howoge.de/datenschutz.html", DOI.replace("https://www.howoge.de", "https://boese.example"),
-                             DOI.replace("https://", "http://"), "https://www.howoge.de.boese.example/bewerbungsprozess/doi.html"]) == [DOI]
+                             DOI.replace("https://", "http://"), "https://www.howoge.de.boese.example/bewerbungsprozess/doi.html"]) == [DOI, DOI]  # http wird zu https
 
 
 def test_ibw_requests_howoge_and_confirms_by_mail():
@@ -863,6 +863,47 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
             assert sent == [] and "Anfrage: trockenlauf" in msgs[-2] and offers.load()["offers"]["ibw-30"].get("requested") is None
         finally:
             offers.FILE = old_file
+
+
+def test_howoge_real_confirmation_mail():
+    """Nachbau der echten Mail vom 15.10.2026: Link nur im Text-Teil, mit http:// und in
+    Klammern; im HTML-Teil nur ein Klickzähler. Wurde damals fälschlich als Einladung gewertet."""
+    import mail_check
+    from datetime import datetime, timedelta, timezone
+    from email.message import EmailMessage
+    now = datetime(2026, 10, 15, 9, 44, tzinfo=timezone.utc)
+    link = ("http://www.howoge.de/immobiliensuche/wohnungssuche/besichtigung-vereinbaren/bewerbungsprozess/"
+            "doi.html?type=doi&identifier=m@x.de&values=Wb+n4/M3=&lang=de")
+
+    def mail(mid, with_link=True):
+        m = EmailMessage()
+        m["Message-ID"], m["From"], m["Subject"] = mid, "noreply@mailings.howoge.de", "Bitte bestätigen Sie Ihre Anmeldung"
+        m.set_content("Sie haben mit dieser E-Mail-Adresse eine Besichtigungsanfrage für eine unserer Wohnungen gestellt.\n"
+                      + (f"[ Anfrage bestätigen]({link})\n" if with_link else "Anfrage bestätigen\n"))
+        m.add_alternative('<a href="https://r.sib.howoge.de/tr/cl/abc">Anfrage bestätigen</a>', subtype="html")
+        return m
+
+    def store(requested_at):
+        return {"offers": {
+            "ibw-1": {"address": "Rupprechtstraße 27, 10317 Berlin", "requested": "unklar", "confirm": "offen",
+                      "requested_at": requested_at}}}
+
+    opened = []
+    get = lambda url, **kw: opened.append(url) or mock.Mock(status_code=200)
+    with mock.patch("wbm_bot.HTTP.get", get):
+        st = store("2026-10-15T09:42:18Z")
+        assert mail_check.process([mail("<a@howoge.de>")], st, set(), now) == []
+        assert opened == [link.replace("http://", "https://")], opened
+        assert st["offers"]["ibw-1"]["confirm"] == "bestaetigt" and st["offers"]["ibw-1"]["requested"] == "gesendet"
+        # Link nicht erkannt: keine "Einladung", sondern Hinweis zum Selbst-Klicken
+        st = store("2026-10-15T09:42:18Z")
+        notes = mail_check.process([mail("<b@howoge.de>", with_link=False)], st, set(), now)
+        assert len(notes) == 1 and "selbst anklicken" in notes[0] and "EINLADUNG" not in notes[0], notes
+        assert st["offers"]["ibw-1"]["confirm"] == "offen" and len(opened) == 1
+        # nach 24 Stunden ist der Link abgelaufen: nichts mehr anklicken
+        st = store("2026-10-15T09:42:18Z")
+        assert mail_check.process([mail("<c@howoge.de>")], st, set(), now + timedelta(days=2)) == []
+        assert st["offers"]["ibw-1"]["confirm"] == "abgelaufen" and len(opened) == 1
 
 
 def datetime_now():
