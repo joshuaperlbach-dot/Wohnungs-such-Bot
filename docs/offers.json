@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23167": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00649-0108-0104.html",
-   "title": "2-Zimmer-Wohnung im Erdgeschoss",
-   "address": "Walter-Franck-Zeile 9, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792493945-9tNrsON7vL.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 720.23,
-   "cold": 522.18,
-   "size": 64.94,
-   "floor": 1,
-   "levels": 9,
-   "year": 1969,
-   "stars": 2,
-   "why": "64.94 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (14 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1969, Hochhaus (9 Etagen)",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     8.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-20T10:59:05Z"
-  },
   "ibw-23168": {
    "source": "ibw",
    "company": "degewo",
@@ -950,7 +878,7 @@
    "online_since": "2026-10-21T10:28:03Z"
   }
  },
- "updated": "2026-10-21T10:58:22Z",
+ "updated": "2026-10-21T11:00:49Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -973,5 +901,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T10:58:22Z"
+ "last_auto": "2026-10-21T11:00:49Z"
 }
