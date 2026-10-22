@@ -804,9 +804,81 @@
     ]
    },
    "online_since": "2026-10-22T08:02:11Z"
+  },
+  "ibw-23266": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00182-0103-0118",
+   "title": "Hochparterrewohnung in Prenzlauer Berg neu zu vermieten",
+   "address": "Landsberger Allee 81, 10407 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792658647-QEQTYL6LsD.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 625.75,
+   "cold": 395.75,
+   "size": 55.25,
+   "floor": 0,
+   "levels": 10,
+   "year": 1973,
+   "stars": 4,
+   "why": "55.25 m², ~3.6 km zur Arbeit (Luftlinie), Kiez mittel (71 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, Aufzug, EG, Baujahr 1973, Hochhaus (10 Etagen)",
+   "points": 74,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.8,
+     16
+    ],
+    "Lage": [
+     7.3,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     5.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-22T08:44:07Z"
   }
  },
- "updated": "2026-10-22T08:42:19Z",
+ "updated": "2026-10-22T08:44:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -829,5 +901,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T08:42:19Z"
+ "last_auto": "2026-10-22T08:44:19Z"
 }
