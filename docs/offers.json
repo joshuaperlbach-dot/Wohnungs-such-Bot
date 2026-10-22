@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23190": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-50301-0034-0203.html",
-   "title": "Ruhig und grün gelegen",
-   "address": "Ahornallee 20, 12555 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792565822-B9z0f6fCDa.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 666.28,
-   "cold": 468.56,
-   "size": 50.83,
-   "floor": 2,
-   "levels": 4,
-   "year": 1959,
-   "stars": 3,
-   "why": "50.83 m², ~12.2 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1959",
-   "points": 59,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.1,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T06:57:03Z"
-  },
   "ibw-23192": {
    "source": "ibw",
    "company": "stadtundland",
@@ -878,7 +806,7 @@
    "online_since": "2026-10-21T16:19:06Z"
   }
  },
- "updated": "2026-10-22T06:56:19Z",
+ "updated": "2026-10-22T06:58:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -901,5 +829,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T06:56:19Z"
+ "last_auto": "2026-10-22T06:58:18Z"
 }
