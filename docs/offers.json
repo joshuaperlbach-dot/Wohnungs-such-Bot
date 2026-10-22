@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23192": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5163%2F00111",
-   "title": "Mausohrweg 14, EG MI",
-   "address": "Mausohrweg 14, 12589 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792567565-LdQfg9a4a9.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 816.5,
-   "cold": 624.5,
-   "size": 55.87,
-   "floor": 0,
-   "levels": 4,
-   "year": 2019,
-   "stars": 2,
-   "why": "55.87 m², ~23.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, EG, Baujahr 2019",
-   "points": 55,
-   "parts": {
-    "Kosten": [
-     14.7,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     6.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T07:26:05Z"
-  },
   "ibw-23208": {
    "source": "ibw",
    "company": "howoge",
@@ -806,7 +734,7 @@
    "online_since": "2026-10-21T16:19:06Z"
   }
  },
- "updated": "2026-10-22T07:24:19Z",
+ "updated": "2026-10-22T07:26:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -829,5 +757,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T07:24:19Z"
+ "last_auto": "2026-10-22T07:26:22Z"
 }
