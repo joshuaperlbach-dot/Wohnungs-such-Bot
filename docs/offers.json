@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23208": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13579-46.html?t=ibw",
-   "title": "Wohnen ohne WBS am grünen Stadtrand von Berlin",
-   "address": "Welsestraße 1, 13057 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792577228-CZbBKByfF9.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 575.37,
-   "cold": 464.0,
-   "size": 29.0,
-   "floor": 6,
-   "levels": 6,
-   "year": 2023,
-   "stars": 2,
-   "why": "29 m², ~10.7 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2023",
-   "points": 52,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T10:07:08Z"
-  },
   "ibw-23210": {
    "source": "ibw",
    "company": "degewo",
@@ -950,7 +878,7 @@
    "online_since": "2026-10-22T09:17:09Z"
   }
  },
- "updated": "2026-10-22T10:06:20Z",
+ "updated": "2026-10-22T10:08:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -979,5 +907,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T10:06:20Z"
+ "last_auto": "2026-10-22T10:08:20Z"
 }
