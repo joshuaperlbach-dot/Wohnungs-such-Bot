@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23243": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20545-180.html?t=ibw",
-   "title": "Ohne WBS\nFür die Anmietung der Wohnung ist kein WBS erforderlich",
-   "address": "Erich-Kurz-Straße 7, 10319 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792599546-Fwu03i67SR.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 447.22,
-   "cold": 292.55,
-   "size": 30.36,
-   "floor": 7,
-   "levels": 21,
-   "year": 1976,
-   "stars": 2,
-   "why": "30.36 m², ~7.5 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 7. Etage, Baujahr 1976, Hochhaus (21 Etagen)",
-   "points": 40,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.0,
-     16
-    ],
-    "Lage": [
-     0.9,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T16:19:06Z"
-  },
   "ibw-23256": {
    "source": "ibw",
    "company": "howoge",
@@ -734,7 +662,7 @@
    "online_since": "2026-10-22T15:37:07Z"
   }
  },
- "updated": "2026-10-22T16:18:21Z",
+ "updated": "2026-10-22T16:20:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -763,5 +691,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T16:18:21Z"
+ "last_auto": "2026-10-22T16:20:30Z"
 }
