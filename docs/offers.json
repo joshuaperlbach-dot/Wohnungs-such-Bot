@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23210": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-51407-0009-0303.html",
-   "title": "Nachmieter gesucht!",
-   "address": "Flemmingstraße 2, 12555 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792578483-BS55vQptbl.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 690.09,
-   "cold": 457.71,
-   "size": 52.34,
-   "floor": 3,
-   "levels": 4,
-   "year": 1958,
-   "stars": 3,
-   "why": "52.34 m², ~12.5 km zur Arbeit (Luftlinie), Kiez mittel (61 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1958",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     9.1,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T10:28:03Z"
-  },
   "ibw-23217": {
    "source": "ibw",
    "company": "degewo",
@@ -878,7 +806,7 @@
    "online_since": "2026-10-22T09:17:09Z"
   }
  },
- "updated": "2026-10-22T10:26:23Z",
+ "updated": "2026-10-22T10:28:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -907,5 +835,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T10:26:23Z"
+ "last_auto": "2026-10-22T10:28:21Z"
 }
