@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23221": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5133%2F00058",
-   "title": "Warthestr. 21, 4.G LI",
-   "address": "Warthestraße 21, 12051 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792585206-KzjriFEKkK.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 578.49,
-   "cold": 405.49,
-   "size": 47.15,
-   "floor": 4,
-   "levels": 5,
-   "year": 1939,
-   "stars": 4,
-   "why": "47.15 m², ~3.8 km zur Arbeit (Luftlinie), Kiez mittel (115 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 4. Etage, Baujahr 1939",
-   "points": 79,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     11.8,
-     16
-    ],
-    "Lage": [
-     6.9,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T12:20:06Z"
-  },
   "ibw-23240": {
    "source": "ibw",
    "company": "degewo",
@@ -734,7 +662,7 @@
    "online_since": "2026-10-22T09:17:09Z"
   }
  },
- "updated": "2026-10-22T12:18:24Z",
+ "updated": "2026-10-22T12:20:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -763,5 +691,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T12:18:24Z"
+ "last_auto": "2026-10-22T12:20:32Z"
 }
