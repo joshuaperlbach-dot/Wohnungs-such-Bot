@@ -157,78 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23186": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00609-0302-0201.html",
-   "title": "2 Zimmer-Wohnung in Britz!",
-   "address": "Fritz-Reuter-Allee 11, 12359 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792559103-qGbbTCLoGg.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 748.53,
-   "cold": 554.87,
-   "size": 54.71,
-   "floor": 2,
-   "levels": 4,
-   "year": 1926,
-   "stars": 3,
-   "why": "54.71 m², ~6.4 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1926",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     2.6,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T05:05:03Z"
-  },
   "ibw-23190": {
    "source": "ibw",
    "company": "degewo",
@@ -950,7 +878,7 @@
    "online_since": "2026-10-21T16:19:06Z"
   }
  },
- "updated": "2026-10-22T05:04:19Z",
+ "updated": "2026-10-22T05:06:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -973,5 +901,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T05:04:19Z"
+ "last_auto": "2026-10-22T05:06:20Z"
 }
