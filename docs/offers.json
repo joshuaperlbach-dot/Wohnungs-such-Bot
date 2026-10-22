@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23240": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00247-0168-0168.html",
-   "title": "Wohnen in der Schlange - Einbauküche geschenkt",
-   "address": "Schlangenbader Straße 26, 14197 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792596423-VkXjIBIGrb.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 593.42,
-   "cold": 408.66,
-   "size": 39.48,
-   "floor": 3,
-   "levels": 6,
-   "year": 1974,
-   "stars": 3,
-   "why": "39.48 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (40 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1974",
-   "points": 59,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.3,
-     16
-    ],
-    "Lage": [
-     0.3,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.3,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T15:27:04Z"
-  },
   "ibw-23241": {
    "source": "ibw",
    "company": "degewo",
@@ -806,7 +734,7 @@
    "online_since": "2026-10-22T13:23:04Z"
   }
  },
- "updated": "2026-10-22T15:26:19Z",
+ "updated": "2026-10-22T15:28:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -835,5 +763,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T15:26:19Z"
+ "last_auto": "2026-10-22T15:28:20Z"
 }
