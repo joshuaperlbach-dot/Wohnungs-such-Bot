@@ -127,10 +127,11 @@
   <div id="runs"></div>
   <div class="bar">
     <button class="seg" data-min="0">Alle</button>
-    <button class="seg" data-min="3">ab ★3</button>
-    <button class="seg" data-min="4">ab ★4</button>
+    <button class="seg" data-min="3">★3+</button>
+    <button class="seg" data-min="4">★4+</button>
     <span class="gap"></span>
-    <button class="seg" id="sort"></button>
+    <button class="seg" data-sort="best">Beste</button>
+    <button class="seg" data-sort="new">Neueste</button>
   </div>
 </header>
 <main id="list"></main>
@@ -156,7 +157,9 @@ const LATE_AFTER = 2 * HOUR;          // rötlich: so lange online und keine Anf
 const STALE_AFTER = 45 * 60e3;        // Warnung: Bot hat so lange nichts aktualisiert
 const DISPATCH = "https://api.github.com/repos/joshuaperlbach-dot/Wohnungs-such-Bot/actions/workflows/wbm.yml/dispatches";
 let offers = {}, updated = null, lastAuto = null, lastManual = null, startedAt = 0;
-let minStars = 0, newestFirst = false, openKey = null;
+let minStars = 0, openKey = null;
+// Sortierung merkt sich das Gerät
+let newestFirst = (() => { try { return localStorage.getItem("sort") === "new"; } catch (e) { return false; } })();
 
 // Eigene Markierungen ("von Hand angefragt") bleiben nur auf diesem Gerät gespeichert.
 function loadMarks() {
@@ -259,7 +262,7 @@ function render() {
     : (b.points ?? b.stars * 20) - (a.points ?? a.stars * 20) || new Date(b.online_since) - new Date(a.online_since));
   document.getElementById("count").textContent = `(${items.length})`;
   document.querySelectorAll("[data-min]").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.min === minStars)));
-  document.getElementById("sort").textContent = newestFirst ? "Neueste zuerst" : "Beste zuerst";
+  document.querySelectorAll("[data-sort]").forEach(b => b.setAttribute("aria-pressed", String((b.dataset.sort === "new") === newestFirst)));
   const status = document.getElementById("status");
   if (updated) {
     const stale = Date.now() - new Date(updated).getTime() > STALE_AFTER;
@@ -401,7 +404,11 @@ async function refresh() {
 }
 
 document.querySelectorAll("[data-min]").forEach(b => b.addEventListener("click", () => { minStars = +b.dataset.min; render(); }));
-document.getElementById("sort").addEventListener("click", () => { newestFirst = !newestFirst; render(); });
+document.querySelectorAll("[data-sort]").forEach(b => b.addEventListener("click", () => {
+  newestFirst = b.dataset.sort === "new";
+  try { localStorage.setItem("sort", b.dataset.sort); } catch (e) {}
+  render();
+}));
 // ---- Bot von der App aus starten (GitHub "workflow_dispatch")
 function getToken() { try { return localStorage.getItem("gh_token") || ""; } catch (e) { return ""; } }
 function setToken(t) { try { t ? localStorage.setItem("gh_token", t) : localStorage.removeItem("gh_token"); } catch (e) {} }
