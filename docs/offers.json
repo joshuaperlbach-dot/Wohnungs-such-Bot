@@ -876,9 +876,81 @@
     ]
    },
    "online_since": "2026-10-22T08:44:07Z"
+  },
+  "ibw-23268": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20441-26.html?t=ibw",
+   "title": "1-Zimmer-Wohnung mit Balkon",
+   "address": "Marie-Curie-Allee 104, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792660629-Yta7Rtk83d.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 570.9,
+   "cold": 412.13,
+   "size": 36.84,
+   "floor": 1,
+   "levels": 3,
+   "year": 1930,
+   "stars": 3,
+   "why": "36.84 m², ~5.9 km zur Arbeit (Luftlinie), Kiez wenig los (52 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1930",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.4,
+     16
+    ],
+    "Lage": [
+     3.4,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.5,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-22T09:17:09Z"
   }
  },
- "updated": "2026-10-22T09:16:21Z",
+ "updated": "2026-10-22T09:18:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -901,5 +973,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T09:16:21Z"
+ "last_auto": "2026-10-22T09:18:18Z"
 }
