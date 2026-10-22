@@ -660,9 +660,81 @@
     ]
    },
    "online_since": "2026-10-22T09:17:09Z"
+  },
+  "ibw-23276": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01608-0401-0195",
+   "title": "1-Zimmer-Wohnung mit Balkon - Selbstrenovierer gesucht",
+   "address": "Wiersichweg 7, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792672567-2bztNzE3wW.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 496.98,
+   "cold": 356.98,
+   "size": 38.09,
+   "floor": 0,
+   "levels": 8,
+   "year": 1963,
+   "stars": 2,
+   "why": "38.09 m², ~8.7 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, EG, Baujahr 1963",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-22T12:36:07Z"
   }
  },
- "updated": "2026-10-22T12:34:20Z",
+ "updated": "2026-10-22T12:36:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -691,5 +763,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T12:34:20Z"
+ "last_auto": "2026-10-22T12:36:23Z"
 }
