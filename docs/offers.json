@@ -157,222 +157,6 @@
    "confirm": "offen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23186": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00609-0302-0201.html",
-   "title": "2 Zimmer-Wohnung in Britz!",
-   "address": "Fritz-Reuter-Allee 11, 12359 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792559103-qGbbTCLoGg.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 748.53,
-   "cold": 554.87,
-   "size": 54.71,
-   "floor": 2,
-   "levels": 4,
-   "year": 1926,
-   "stars": 3,
-   "why": "54.71 m², ~6.4 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1926",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     2.6,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T05:05:03Z"
-  },
-  "ibw-23190": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-50301-0034-0203.html",
-   "title": "Ruhig und grün gelegen",
-   "address": "Ahornallee 20, 12555 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792565822-B9z0f6fCDa.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 666.28,
-   "cold": 468.56,
-   "size": 50.83,
-   "floor": 2,
-   "levels": 4,
-   "year": 1959,
-   "stars": 3,
-   "why": "50.83 m², ~12.2 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1959",
-   "points": 59,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.1,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T06:57:03Z"
-  },
-  "ibw-23192": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5163%2F00111",
-   "title": "Mausohrweg 14, EG MI",
-   "address": "Mausohrweg 14, 12589 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792567565-LdQfg9a4a9.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 816.5,
-   "cold": 624.5,
-   "size": 55.87,
-   "floor": 0,
-   "levels": 4,
-   "year": 2019,
-   "stars": 2,
-   "why": "55.87 m², ~23.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, EG, Baujahr 2019",
-   "points": 55,
-   "parts": {
-    "Kosten": [
-     14.7,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     6.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-21T07:26:05Z"
-  },
   "ibw-23208": {
    "source": "ibw",
    "company": "howoge",
@@ -948,9 +732,81 @@
     ]
    },
    "online_since": "2026-10-21T16:19:06Z"
+  },
+  "ibw-23256": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23168-1.html?t=ibw",
+   "title": "gemütliche 2-Zimmer-Wohnung ohne WBS",
+   "address": "Maximilianstraße 22, 10317 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792656131-s1v4hYRhEx.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 692.85,
+   "cold": 492.61,
+   "size": 53.44,
+   "floor": 1,
+   "levels": 4,
+   "year": 1958,
+   "stars": 3,
+   "why": "53.44 m², ~5.5 km zur Arbeit (Luftlinie), Kiez mittel (90 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1958",
+   "points": 67,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.2,
+     16
+    ],
+    "Lage": [
+     4.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-22T08:02:11Z"
   }
  },
- "updated": "2026-10-21T20:30:37Z",
+ "updated": "2026-10-22T08:32:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -973,5 +829,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-21T20:30:37Z"
+ "last_auto": "2026-10-22T08:32:19Z"
 }
