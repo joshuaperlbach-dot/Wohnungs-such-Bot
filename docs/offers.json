@@ -732,9 +732,81 @@
     ]
    },
    "online_since": "2026-10-21T16:19:06Z"
+  },
+  "ibw-23256": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23168-1.html?t=ibw",
+   "title": "gemütliche 2-Zimmer-Wohnung ohne WBS",
+   "address": "Maximilianstraße 22, 10317 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792656131-s1v4hYRhEx.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 692.85,
+   "cold": 492.61,
+   "size": 53.44,
+   "floor": 1,
+   "levels": 4,
+   "year": 1958,
+   "stars": 3,
+   "why": "53.44 m², ~5.5 km zur Arbeit (Luftlinie), Kiez mittel (90 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1958",
+   "points": 67,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.2,
+     16
+    ],
+    "Lage": [
+     4.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-22T08:02:11Z"
   }
  },
- "updated": "2026-10-22T08:00:44Z",
+ "updated": "2026-10-22T08:02:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -757,5 +829,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T08:00:44Z"
+ "last_auto": "2026-10-22T08:02:21Z"
 }
