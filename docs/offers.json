@@ -154,7 +154,7 @@
    },
    "online_since": "2026-10-15T09:42:06Z",
    "requested": "unklar",
-   "confirm": "offen",
+   "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
   "ibw-23208": {
@@ -950,7 +950,7 @@
    "online_since": "2026-10-22T09:17:09Z"
   }
  },
- "updated": "2026-10-22T10:02:26Z",
+ "updated": "2026-10-22T10:04:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -971,7 +971,13 @@
    "kind": "einladung",
    "matched": false,
    "chars": 3603
+  },
+  {
+   "at": "2026-10-22T10:04:29Z",
+   "kind": "bestaetigung",
+   "matched": false,
+   "chars": 3603
   }
  ],
- "last_auto": "2026-10-22T10:02:26Z"
+ "last_auto": "2026-10-22T10:04:29Z"
 }
