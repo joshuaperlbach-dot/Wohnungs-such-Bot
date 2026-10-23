@@ -732,9 +732,81 @@
     ]
    },
    "online_since": "2026-10-23T11:59:02Z"
+  },
+  "ibw-23342": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F5141%2F00118",
+   "title": "Studentenwohnung - only Students!",
+   "address": "Bornsdorfer Straße 37B, 12053 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792759744-QZApO3hdQu.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 549.16,
+   "cold": 549.16,
+   "size": 27.78,
+   "floor": 4,
+   "levels": 5,
+   "year": 1940,
+   "stars": 4,
+   "why": "27.78 m², ~3.7 km zur Arbeit (Luftlinie), Kiez lebendig (211 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 4. Etage, Baujahr 1940",
+   "points": 72,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     14.5,
+     16
+    ],
+    "Lage": [
+     7.2,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-23T12:49:04Z"
   }
  },
- "updated": "2026-10-23T12:48:21Z",
+ "updated": "2026-10-23T12:50:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -763,5 +835,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-23T12:48:21Z"
+ "last_auto": "2026-10-23T12:50:30Z"
 }
