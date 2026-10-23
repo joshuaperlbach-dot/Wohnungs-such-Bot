@@ -732,9 +732,86 @@
     ]
    },
    "online_since": "2026-10-23T14:41:08Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-friedrichshain/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-friedrichshain/",
+   "title": "1-Zimmer-Wohnung in Friedrichshain",
+   "address": "Platz der Vereinten Nationen 24, 10249 Berlin",
+   "text": "Die Besichtigung des Objektes wird im ersten Schritt über eine Fotodokumentation erfolgen.\r\nDie Wohnung ist von der neuen Mietpartei zu renovieren.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78682-7a6e2dccc949d35d8ddd821ec4a3d798.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78682-6437d23ae15a44c2a1639fe7bb826f38.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78682-3ad35b0a8ce3a97269dabf8a647b1bb4.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78682-37167b0f2c1653227e9c2ac47f3959cd.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78682-bf3793d5a47325d8861cb7543056d086.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78682-56f9c7b88019be25fc403cb8c5320cdc.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 1,
+   "price": 502.66,
+   "cold": 364.66,
+   "size": 37.4,
+   "floor": 6,
+   "year": 1970,
+   "stars": 3,
+   "why": "37.4 m², ~2.5 km zur Arbeit (Luftlinie), Kiez wenig los (25 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1970",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.3,
+     16
+    ],
+    "Lage": [
+     9.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.7,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-23T15:48:20Z"
   }
  },
- "updated": "2026-10-23T15:46:21Z",
+ "updated": "2026-10-23T15:48:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -763,5 +840,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-23T15:46:21Z"
+ "last_auto": "2026-10-23T15:48:24Z"
 }
