@@ -105,7 +105,10 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Persönliche Daten stehen nur im Tampermonkey-Speicher auf dem Handy, nicht im Repo. Langes Drücken auf den
   grünen Knopf ändert sie.
 - Feldnamen der echten Formulare waren beim Bau nicht einsehbar (kein Netz), daher Erkennung per Text.
-  Getestet nur gegen ein Testformular. Captchas werden bewusst nicht automatisch gelöst.
+  Getestet nur gegen Testformulare. Captchas werden bewusst nicht automatisch gelöst.
+- v1.1 (23.10.2026) nach erstem Einsatz bei Stadt und Land (Formular in eingebettetem Frame): versteckte Felder
+  (Ausklapp-Listen) nie anfassen, Anrede nur in echte Auswahllisten, jedes Feld nur einmal, Adresszusatz und
+  Kinderzahl als eigene Angaben, Freitext/Einkommen/Einzugsdatum werden nie ausgefüllt.
 
 ## Kriterien und Bewertung
 - Filter: 1-2 Zimmer, max. 950 € Warmmiete, ohne WBS.
