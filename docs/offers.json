@@ -804,9 +804,81 @@
     ]
    },
    "online_since": "2026-10-23T13:16:05Z"
+  },
+  "ibw-23349": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00262-0203-0081",
+   "title": "Vorfristig zum 16.11.2026... Einkommensgrenzen beachten...",
+   "address": "Grellstraße 47A, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792766467-70zet006i5.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 820.37,
+   "cold": 508.37,
+   "size": 53.99,
+   "floor": 0,
+   "levels": 4,
+   "year": 1930,
+   "stars": 4,
+   "why": "53.99 m², ~4.7 km zur Arbeit (Luftlinie), Kiez mittel (97 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, EG, Baujahr 1930",
+   "points": 79,
+   "parts": {
+    "Kosten": [
+     14.4,
+     20
+    ],
+    "Kiez": [
+     11.1,
+     16
+    ],
+    "Lage": [
+     5.5,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-23T14:41:08Z"
   }
  },
- "updated": "2026-10-23T14:40:29Z",
+ "updated": "2026-10-23T14:42:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -835,5 +907,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-23T14:40:29Z"
+ "last_auto": "2026-10-23T14:42:20Z"
 }
