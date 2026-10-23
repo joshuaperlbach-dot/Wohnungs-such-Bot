@@ -588,9 +588,81 @@
     ]
    },
    "online_since": "2026-10-23T07:09:05Z"
+  },
+  "ibw-23323": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12220-106.html?t=ibw",
+   "title": "Vermietung ohne WBS!",
+   "address": "Falkenberger Chaussee 91, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792746187-q8dquWrkFb.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 649.07,
+   "cold": 434.59,
+   "size": 56.12,
+   "floor": 15,
+   "levels": 16,
+   "year": 1989,
+   "stars": 2,
+   "why": "56.12 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 15. Etage, Baujahr 1989, Hochhaus (16 Etagen)",
+   "points": 50,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     6.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-23T09:03:07Z"
   }
  },
- "updated": "2026-10-23T09:02:23Z",
+ "updated": "2026-10-23T09:04:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -619,5 +691,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-23T09:02:23Z"
+ "last_auto": "2026-10-23T09:04:25Z"
 }
