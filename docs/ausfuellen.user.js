@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Wohnungsbot: Anfrage ausfüllen
 // @namespace    https://joshuaperlbach-dot.github.io/Wohnungs-such-Bot/
-// @version      1.0
+// @version      1.1
 // @description  Füllt die Anfrageformulare von degewo, Gewobag, Stadt und Land & Co. mit deinen Daten aus. Captcha lösen und Absenden machst du selbst.
 // @match        https://*.degewo.de/*
 // @match        https://*.gewobag.de/*
@@ -34,14 +34,20 @@
     ["telefon", "Telefon"],
     ["strasse", "Straße"],
     ["hausnummer", "Hausnummer"],
+    ["zusatz", "Adresszusatz (z.B. c/o Name, sonst leer)"],
     ["plz", "PLZ"],
     ["ort", "Ort"],
     ["personen", "Personen im Haushalt"],
+    ["kinder", "Davon Kinder"],
   ];
 
   // Erkennung über Name, ID, Platzhalter, autocomplete und die sichtbare Beschriftung.
   // Reihenfolge zählt: "Vorname" vor "Name", "Hausnummer" vor "Straße".
+  // "skip": Felder, die das Skript nie anfasst (Freitext, Fragen zum Einkommen usw.).
   const RULES = [
+    ["skip", /anmerkung|nachricht|kommentar|message|bemerkung|einkommen|wbs|haustier|ab wann|einzug/],
+    ["anrede", /anrede|salutation|gender/],
+    ["zusatz", /zusatz|c\/o|address.?line.?2/],
     ["email", /e-?mail/, (el) => el.type === "email"],
     ["telefon", /telefon|phone|mobil|handy|\btel\b/, (el) => el.type === "tel"],
     ["vorname", /vorname|first.?name|given.?name|fname/],
@@ -50,8 +56,8 @@
     ["strasse", /stra(ss|ß)e|street|adresse|address/],
     ["plz", /\bplz\b|postleitzahl|zip|postal/],
     ["ort", /\bort\b|wohnort|city|\btown\b|stadt\b/],
-    ["personen", /personen|haushaltsgr|persons|household.?size|anzahl.*(bewohner|erwachsene)/],
-    ["anrede", /anrede|salutation|gender|title/],
+    ["kinder", /kinder|children/],
+    ["personen", /personen|einziehend|haushaltsgr|persons|household.?size|anzahl.*(bewohner|erwachsene)/],
   ];
   const CONSENT = /datenschutz|privacy|einwillig/;
 
@@ -63,7 +69,7 @@
     const d = {};
     for (const [key, label] of FIELDS) {
       const v = prompt(`${label}:`, (old && old[key]) || "");
-      if (v === null) return old;  // abgebrochen: alles beim Alten
+      if (v === null) return old || d;  // abgebrochen: bisherige Daten behalten
       d[key] = v.trim();
     }
     GM_setValue("daten", JSON.stringify(d));
@@ -93,8 +99,18 @@
   function setValue(el, value) {
     const proto = el instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
     Object.getOwnPropertyDescriptor(proto, "value").set.call(el, value);
-    for (const t of ["input", "change", "blur"]) el.dispatchEvent(new Event(t, { bubbles: true }));
+    for (const t of ["input", "change"]) el.dispatchEvent(new Event(t, { bubbles: true }));
   }
+
+  // Nur Felder, die man auch sieht und antippen kann. Ausklapp-Listen mancher Seiten haben ein
+  // verstecktes Eingabefeld; da etwas hineinzuschreiben hat bei Stadt und Land das Formular blockiert.
+  function usable(el) {
+    if (el.disabled || el.readOnly || el.tabIndex < 0 || el.closest("[aria-hidden=true]")) return false;
+    if (["hidden", "submit", "button", "password", "file", "radio", "date"].includes(el.type)) return false;
+    const r = el.getBoundingClientRect();
+    return r.width > 4 && r.height > 4 && getComputedStyle(el).visibility !== "hidden";
+  }
+  const done = new WeakSet();  // jedes Feld höchstens einmal anfassen, danach gehört es dir
 
   function pickOption(select, value) {
     const want = value.toLowerCase();
@@ -107,8 +123,7 @@
 
   function fill(d) {
     let count = 0;
-    const els = [...document.querySelectorAll("input, select, textarea")].filter((el) =>
-      !el.disabled && !el.readOnly && !["hidden", "submit", "button", "password", "file"].includes(el.type));
+    const els = [...document.querySelectorAll("input, select, textarea")].filter((el) => !done.has(el) && usable(el));
     const texts = new Map(els.map((el) => [el, describe(el)]));
     // Kein eigenes Feld für die Hausnummer: dann kommt sie mit ins Straßenfeld
     const hausRe = RULES.find(([key]) => key === "hausnummer")[1];
@@ -116,16 +131,19 @@
     for (const el of els) {
       const text = texts.get(el);
       if (el.type === "checkbox") {
+        done.add(el);
         if (!el.checked && CONSENT.test(text)) { el.click(); count++; }
         continue;
       }
-      if (el.type === "radio") continue;
       const rule = RULES.find(([, re, test]) => re.test(text) || (test && test(el)));
       if (!rule) continue;
+      done.add(el);
+      if (rule[0] === "skip") continue;
       let value = d[rule[0]];
       if (rule[0] === "strasse" && strasseOnly && d.hausnummer) value = `${d.strasse} ${d.hausnummer}`;
       if (!value) continue;
       if (el.tagName === "SELECT") { if (pickOption(el, value)) count++; continue; }
+      if (rule[0] === "anrede") continue;  // Anrede nur in echte Auswahllisten, nie in Textfelder
       if (el.value) continue;  // nichts überschreiben
       setValue(el, value);
       count++;
@@ -155,18 +173,27 @@
   function run() {
     if (!daten) daten = ask(null);
     if (!daten) return;
-    total += fill(daten);
-    if (btn) btn.textContent = total ? `✓ ${total} Felder ausgefüllt` : "Ausfüllen";
+    const n = fill(daten);
+    if (btn) show(n);
+    else if (n) window.top.postMessage({ wohnungsbot: n }, "*");  // eingebettetes Formular: dem Knopf oben Bescheid geben
   }
+  function show(n) {
+    total += n;
+    btn.textContent = total ? `✓ ${total} Felder ausgefüllt` : "Ausfüllen";
+  }
+  if (btn) window.addEventListener("message", (e) => { if (Number.isInteger(e.data && e.data.wohnungsbot)) show(e.data.wohnungsbot); });
 
   run();
   // Formulare tauchen oft erst nach einem Klick auf (Akkordeon, eingebettetes Formular):
-  // eine Minute lang bei Änderungen der Seite erneut versuchen.
+  // eine Minute lang bei Änderungen der Seite erneut nach NEUEN Feldern sehen.
+  // Bereits angefasste Felder bleiben in Ruhe, damit nichts zurückgesetzt wird.
   let pending = null;
   const obs = new MutationObserver(() => {
     if (pending) return;
     pending = setTimeout(() => { pending = null; if (daten) run(); }, 300);
   });
   obs.observe(document.documentElement, { childList: true, subtree: true });
+  // Aufklappen (z.B. degewo) ändert oft nur die Sichtbarkeit: nach jedem Tippen kurz nachsehen
+  document.addEventListener("click", () => setTimeout(() => { if (daten) run(); }, 400), true);
   setTimeout(() => obs.disconnect(), 60000);
 })();
