@@ -588,9 +588,81 @@
     ]
    },
    "online_since": "2026-10-23T09:03:07Z"
+  },
+  "ibw-23332": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02563-0106-0315",
+   "title": "Neubauwohnung in der oberster Etage mit Balkon in Lichtenberg ab sofort neu zu vermieten",
+   "address": "Rhinstraße 143E, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1792753925-7cPoi1OzGA.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 892.73,
+   "cold": 742.4,
+   "size": 46.4,
+   "floor": 7,
+   "levels": 8,
+   "year": 2022,
+   "stars": 1,
+   "why": "46.4 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 2022",
+   "points": 39,
+   "parts": {
+    "Kosten": [
+     6.9,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     3.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-23T11:12:05Z"
   }
  },
- "updated": "2026-10-23T11:10:33Z",
+ "updated": "2026-10-23T11:12:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -619,5 +691,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-23T11:10:33Z"
+ "last_auto": "2026-10-23T11:12:23Z"
 }
