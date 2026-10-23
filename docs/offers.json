@@ -157,150 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23288": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5101%2F00154",
-   "title": "Gemütliche 2-Zimmer-Wohnung mit großem Balkon",
-   "address": "Neuköllner Straße 310, 12357 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792683483-qm50Xs1F33.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 642.87,
-   "cold": 437.87,
-   "size": 55.79,
-   "floor": 3,
-   "levels": 5,
-   "year": 1975,
-   "stars": 3,
-   "why": "55.79 m², ~10.6 km zur Arbeit (Luftlinie), Kiez wenig los (53 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1975",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.5,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-22T15:38:03Z"
-  },
-  "ibw-23287": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5101%2F00113",
-   "title": "Handwerkerwohnung mit viel Gestaltungspotenzial !!!",
-   "address": "Neuköllner Straße 306, 12357 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792683427-y3xDOMyAxV.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 642.87,
-   "cold": 437.87,
-   "size": 55.79,
-   "floor": 3,
-   "levels": 4,
-   "year": 1975,
-   "stars": 3,
-   "why": "55.79 m², ~10.5 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1975",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.0,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-22T15:37:07Z"
-  },
   "ibw-23309": {
    "source": "ibw",
    "company": "degewo",
@@ -878,7 +734,7 @@
    "online_since": "2026-10-23T14:41:08Z"
   }
  },
- "updated": "2026-10-23T15:36:22Z",
+ "updated": "2026-10-23T15:38:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -907,5 +763,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-23T15:36:22Z"
+ "last_auto": "2026-10-23T15:38:20Z"
 }
