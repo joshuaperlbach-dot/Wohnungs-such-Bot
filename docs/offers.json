@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23345": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00202-0071-0102.html",
-   "title": "Ihr neues kompaktes Zuhause in der Landecker Straße",
-   "address": "Landecker Straße 5A, 14199 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792761365-ChXHGtgCVb.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 422.34,
-   "cold": 314.57,
-   "size": 29.21,
-   "floor": 1,
-   "levels": 4,
-   "year": 1953,
-   "stars": 2,
-   "why": "29.21 m², ~8.1 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn nah, 1. Etage, Baujahr 1953",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T13:16:05Z"
-  },
   "ibw-23349": {
    "source": "ibw",
    "company": "gewobag",
@@ -380,7 +308,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-24T13:14:20Z",
+ "updated": "2026-10-24T13:16:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -409,5 +337,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-24T13:14:20Z"
+ "last_auto": "2026-10-24T13:16:24Z"
 }
