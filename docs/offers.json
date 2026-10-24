@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23309": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1500-00753-0082-0503.html",
-   "title": "Die erste eigene Wohnung gesucht?",
-   "address": "Swinemünder Straße 26, 13355 Berlin",
-   "bezirk": "Mitte",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792739345-etl4nLGjii.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 446.25,
-   "cold": 283.4,
-   "size": 38.23,
-   "floor": 5,
-   "levels": 5,
-   "year": 1977,
-   "stars": 3,
-   "why": "38.23 m², ~4.1 km zur Arbeit (Luftlinie), Kiez mittel (122 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1977",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     12.1,
-     16
-    ],
-    "Lage": [
-     6.5,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T07:09:05Z"
-  },
   "ibw-23323": {
    "source": "ibw",
    "company": "howoge",
@@ -812,7 +740,7 @@
    "gone": true
   }
  },
- "updated": "2026-10-24T07:08:18Z",
+ "updated": "2026-10-24T07:10:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -841,5 +769,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-24T07:08:18Z"
+ "last_auto": "2026-10-24T07:10:32Z"
 }
