@@ -156,9 +156,81 @@
    "requested": "unklar",
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
+  },
+  "ibw-23366": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00420-0103-0019",
+   "title": "Einkommensgrenzen beachten...",
+   "address": "Am Falkplatz 4, 10437 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793002382-X7saal2AKQ.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 668.35,
+   "cold": 500.35,
+   "size": 35.07,
+   "floor": 1,
+   "levels": 5,
+   "year": 1906,
+   "stars": 3,
+   "why": "35.07 m², ~4.8 km zur Arbeit (Luftlinie), Kiez mittel (145 Lokale/Läden), Park nah, Ringbahn nah, 1. Etage, Baujahr 1906",
+   "points": 69,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.8,
+     16
+    ],
+    "Lage": [
+     5.4,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     0.6,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-26T08:13:02Z"
   }
  },
- "updated": "2026-10-26T08:12:22Z",
+ "updated": "2026-10-26T08:14:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -187,5 +259,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-26T08:12:22Z"
+ "last_auto": "2026-10-26T08:14:21Z"
 }
