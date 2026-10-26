@@ -444,9 +444,81 @@
     ]
    },
    "online_since": "2026-10-26T13:13:05Z"
+  },
+  "ibw-23398": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-60910-0063-0202.html",
+   "title": "Wohnung nahe der Altstadt Köpenick",
+   "address": "Grüne Trift 6, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793025183-YDJUjs9tU3.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 500.88,
+   "cold": 380.82,
+   "size": 36.83,
+   "floor": 2,
+   "levels": 6,
+   "year": 1987,
+   "stars": 2,
+   "why": "36.83 m², ~13.8 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1987",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.1,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.5,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-26T14:33:03Z"
   }
  },
- "updated": "2026-10-26T14:32:23Z",
+ "updated": "2026-10-26T14:34:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -475,5 +547,5 @@
    "chars": 3603
   }
  ],
- "last_auto": "2026-10-26T14:32:23Z"
+ "last_auto": "2026-10-26T14:34:29Z"
 }
