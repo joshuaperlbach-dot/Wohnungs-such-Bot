@@ -674,10 +674,11 @@
      5
     ]
    },
-   "online_since": "2026-10-27T14:50:31Z"
+   "online_since": "2026-10-27T14:50:31Z",
+   "gone": false
   }
  },
- "updated": "2026-10-27T14:50:47Z",
+ "updated": "2026-10-27T14:54:39Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -712,5 +713,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-27T14:50:47Z"
+ "last_auto": "2026-10-27T14:54:39Z"
 }
