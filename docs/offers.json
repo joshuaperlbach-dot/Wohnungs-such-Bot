@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23374": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00190-0101-0149",
-   "title": "Vorfristig zum 16.11.2026... Einkommensgrenzen beachten",
-   "address": "Thomas-Mann-Straße 20, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793006465-Y4HDMANekI.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 707.64,
-   "cold": 459.64,
-   "size": 56.39,
-   "floor": 7,
-   "levels": 10,
-   "year": 1977,
-   "stars": 4,
-   "why": "56.39 m², ~4.8 km zur Arbeit (Luftlinie), Kiez mittel (87 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1977, Hochhaus (10 Etagen)",
-   "points": 74,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.6,
-     16
-    ],
-    "Lage": [
-     5.3,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     6.1,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-26T09:21:05Z"
-  },
   "ibw-23392": {
    "source": "ibw",
    "company": "degewo",
@@ -600,7 +528,7 @@
    "online_since": "2026-10-26T18:49:03Z"
   }
  },
- "updated": "2026-10-27T09:20:31Z",
+ "updated": "2026-10-27T09:23:04Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -635,5 +563,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-27T09:20:31Z"
+ "last_auto": "2026-10-27T09:23:04Z"
 }
