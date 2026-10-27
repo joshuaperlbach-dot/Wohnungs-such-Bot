@@ -239,78 +239,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23415": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-21401-0027-0103.html",
-   "title": "Direkt gegenüber ist das FEZ - Renovierung erforderlich - Wir kommen Ihnen entgegen!",
-   "address": "Parkstraße 6, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793040543-qcgmp5ICms.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 650.79,
-   "cold": 461.18,
-   "size": 50.03,
-   "floor": 1,
-   "levels": 4,
-   "year": 1960,
-   "stars": 2,
-   "why": "50.03 m², ~10.1 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1960",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.3,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-26T18:49:03Z"
-  },
   "ibw-23424": {
    "source": "ibw",
    "company": "howoge",
@@ -1036,9 +964,81 @@
     ]
    },
    "online_since": "2026-10-27T18:17:06Z"
+  },
+  "ibw-23468": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1950-33562-25.html?t=ibw",
+   "title": "Wohnglück in Adlershof - Hier sind Sie WILLKOMMEN! ",
+   "address": "Stienitzseestraße 31, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793126828-ugq3IvaZLi.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 610.3,
+   "cold": 466.0,
+   "size": 35.6,
+   "floor": 1,
+   "levels": 4,
+   "year": 1964,
+   "stars": 2,
+   "why": "35.6 m², ~11.8 km zur Arbeit (Luftlinie), Kiez wenig los (54 Lokale/Läden), Ringbahn weit, 1. Etage, Baujahr 1964",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.2,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:47:08Z"
   }
  },
- "updated": "2026-10-27T18:46:58Z",
+ "updated": "2026-10-27T18:50:48Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1073,5 +1073,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-27T18:46:58Z"
+ "last_auto": "2026-10-27T18:50:48Z"
 }
