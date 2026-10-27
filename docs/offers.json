@@ -157,78 +157,6 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23395": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F6562%2F00201",
-   "title": "2-Zimmer mit Balkon in Adlershof, Berta-Waterstradt-Str. 3C, 3.G LI",
-   "address": "Berta-Waterstradt-Straße 3C, 12489 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793020385-ParCylVL5j.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 644.17,
-   "cold": 468.17,
-   "size": 49.7,
-   "floor": 3,
-   "levels": 4,
-   "year": 1931,
-   "stars": 3,
-   "why": "49.7 m², ~12.5 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1931",
-   "points": 58,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.2,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-26T13:13:05Z"
-  },
   "ibw-23398": {
    "source": "ibw",
    "company": "degewo",
@@ -743,7 +671,7 @@
    "online_since": "2026-10-27T11:10:07Z"
   }
  },
- "updated": "2026-10-27T13:09:43Z",
+ "updated": "2026-10-27T13:14:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -778,5 +706,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-27T13:09:43Z"
+ "last_auto": "2026-10-27T13:14:06Z"
 }
