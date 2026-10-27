@@ -676,9 +676,81 @@
    },
    "online_since": "2026-10-27T14:50:31Z",
    "gone": true
+  },
+  "ibw-23462": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-25103-8.html?t=ibw",
+   "title": "Worauf warten Sie noch - bitte überzeugen Sie sich selbst bei einer Wohnungsbesichtigung! ",
+   "address": "Selchowstraße 17A, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124070-X3qWeFNAjT.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 638.7,
+   "cold": 485.46,
+   "size": 47.0,
+   "floor": 1,
+   "levels": 3,
+   "year": 1939,
+   "stars": 3,
+   "why": "47 m², ~11.9 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1939",
+   "points": 64,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:01:10Z"
   }
  },
- "updated": "2026-10-27T18:00:55Z",
+ "updated": "2026-10-27T18:04:53Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -713,5 +785,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-27T18:00:55Z"
+ "last_auto": "2026-10-27T18:04:53Z"
 }
