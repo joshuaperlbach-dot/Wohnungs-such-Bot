@@ -1108,9 +1108,81 @@
     ]
    },
    "online_since": "2026-10-27T19:07:09Z"
+  },
+  "ibw-23471": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1950-33562-62.html?t=ibw",
+   "title": "Hier sind Sie Willkommen - ansehen lohnt sich! ",
+   "address": "Stienitzseestraße 37, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793128686-KYQNCHCDIg.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 648.01,
+   "cold": 458.51,
+   "size": 46.75,
+   "floor": 1,
+   "levels": 4,
+   "year": 1964,
+   "stars": 2,
+   "why": "46.75 m², ~11.8 km zur Arbeit (Luftlinie), Kiez mittel (68 Lokale/Läden), Ringbahn weit, 1. Etage, Baujahr 1964",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T19:18:06Z"
   }
  },
- "updated": "2026-10-27T19:15:42Z",
+ "updated": "2026-10-27T19:20:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1145,5 +1217,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-27T19:15:42Z"
+ "last_auto": "2026-10-27T19:20:07Z"
 }
