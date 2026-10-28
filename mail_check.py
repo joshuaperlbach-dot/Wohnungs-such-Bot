@@ -15,6 +15,7 @@ Das Repo ist öffentlich, die Logs auch: es wird nie Mail-Inhalt ausgegeben.
 """
 import email
 import email.policy
+import email.utils
 import hashlib
 import imaplib
 import json
@@ -31,13 +32,21 @@ import offers
 import wbm_bot
 
 HOST = "imap.gmail.com"
-SENDERS = ["wbm.de", "howoge.de"]  # nur Mails von diesen Absendern werden überhaupt abgerufen
+# nur Mails von diesen Absendern werden überhaupt abgerufen (wohnungshelden.de verschickt für Stadt und Land);
+# Newsletter (z.B. newsletter.gewobag.de mit neuen Angeboten) werden übersprungen
+SENDERS = ["wbm.de", "howoge.de", "degewo.de", "gewobag.de", "wohnungshelden.de"]
 LOOK_BACK = timedelta(days=14)
 # Postfach nur alle 10 Minuten öffnen (Antworten eilen nicht, und Gmail bremst bei sehr häufigem
 # Anmelden). Wartet eine HOWOGE-Bestätigung, wird bei jedem Lauf nachgesehen.
 CHECK_EVERY = timedelta(minutes=10)
 SEEN_FILE = Path(__file__).with_name("mail_seen.json")
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
+
+# Eingangsbestätigung nach einer Anfrage über das Formular (Gewobag, Stadt und Land, ...)
+RECEIPT = r"Formularbestätigung|für das Ausfüllen des Formulars"
+# degewo will nach der Anfrage noch ein zweites Formular; erst dann wird die Anfrage aufgenommen
+FORM_NEEDED = r"füllen Sie das beigefügte Formular aus"
+FORM_LINK = re.compile(r"https://[a-z.]*degewo\.de/\S*/application/form/\S+")
 
 # Absage zuerst prüfen: auch sie enthält das Wort "Besichtigung"
 DECLINE = r"nicht möglich, alle Anfragen|leider|nicht berücksichtig|bereits vergeben|abgesagt|Absage"
@@ -67,12 +76,12 @@ def street_of(address):
     return norm(address.split(",")[0])
 
 
-def find_offer(store, text):
-    """Das angefragte Angebot, dessen Straße und Hausnummer in der Mail steht."""
+def find_offer(store, text, any_offer=False):
+    """Das angefragte Angebot (mit any_offer: irgendein Angebot), dessen Straße und Hausnummer in der Mail steht."""
     haystack = f" {norm(text)} "
     for key, o in store["offers"].items():
         street = street_of(o.get("address") or "")
-        if o.get("requested") in offers.REQUESTED and street and f" {street} " in haystack:
+        if (any_offer or o.get("requested") in offers.REQUESTED) and street and f" {street} " in haystack:
             return key
     return None
 
@@ -151,6 +160,12 @@ def process(messages, store, seen, now):
         if mid in seen:
             continue
         seen.add(mid)
+        # Alte Mails (z.B. beim ersten Abruf eines neuen Absenders) nur eintragen, keine Push-Meldung
+        try:
+            fresh = now - email.utils.parsedate_to_datetime(msg.get("Date")) < timedelta(days=1)
+        except (TypeError, ValueError):
+            fresh = True
+        before = len(notes)
         text = f"{msg.get('Subject', '')}\n{body_text(msg)}"
         confirm_links = howoge.doi_links(links(msg))
         if confirm_links:
@@ -172,6 +187,21 @@ def process(messages, store, seen, now):
                 where = store["offers"][key].get("address", "")
                 notes.append(f"HOWOGE-Anfrage für {where}: Bestätigungslink nicht erkannt.\n"
                              "Bitte in der Mail selbst anklicken (gilt 24 Stunden)!")
+        elif re.search(FORM_NEEDED, text, re.I):
+            # degewo: Anfrage ist erst vollständig mit dem zweiten Formular. Link kommt in die Push-Meldung.
+            kind, key = "formular", find_offer(store, text, any_offer=True)
+            link = next((u for u in links(msg) if FORM_LINK.match(u)), None)
+            where = store["offers"][key].get("address", "") if key else "eine Wohnung"
+            if key:
+                store["offers"][key].update(requested="gesendet", requested_at=store["offers"][key].get("requested_at")
+                                            or offers.iso(now), confirm="formular", form_url=link)
+            notes.append(f"degewo will für {where} noch ein zweites Formular, sonst zählt die Anfrage nicht!\n"
+                         + (link or "Link steht in der Mail von degewo."))
+        elif re.search(RECEIPT, text, re.I):
+            # Eingangsbestätigung: von Hand angefragt -> in der Handy-Ansicht als angefragt eintragen
+            kind, key = "eingang", find_offer(store, text, any_offer=True)
+            if key and store["offers"][key].get("requested") not in offers.REQUESTED:
+                store["offers"][key].update(requested="gesendet", requested_at=offers.iso(now), via="mail")
         else:
             kind = classify(text)
             key = find_offer(store, text)
@@ -186,6 +216,8 @@ def process(messages, store, seen, now):
             notes.append(f"EINLADUNG zur Besichtigung: {where}\nSchau in deine Mails und bestätige den Termin!")
         elif kind == "antwort" and key:  # sonstige Mails ohne Bezug zu einem Angebot: kein Push
             notes.append(f"Antwort einer Wohnungsgesellschaft zu: {where}\nBitte in den Mails nachsehen.")
+        if not fresh:
+            del notes[before:]
     return notes
 
 
@@ -199,10 +231,12 @@ def fetch_messages(user, password, now):
         box.select("INBOX", readonly=True)
         messages = []
         for sender in SENDERS:
-            _, data = box.search(None, "FROM", f'"{sender}"', "SINCE", since)
+            _, data = box.search(None, "FROM", f'"{sender}"', "NOT", "FROM", '"newsletter"', "SINCE", since)
             for num in data[0].split():
                 _, parts = box.fetch(num, "(BODY.PEEK[])")
-                messages.append(email.message_from_bytes(parts[0][1], policy=email.policy.default))
+                msg = email.message_from_bytes(parts[0][1], policy=email.policy.default)
+                if "newsletter" not in str(msg.get("From", "")).lower():
+                    messages.append(msg)
         return messages
     finally:
         try:

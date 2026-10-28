@@ -202,12 +202,18 @@ function state(key, o) {
   if (o.reply === "einladung") return { cls: "invite", label: "Einladung zur Besichtigung", note: "schau in deine Mails", locked: true };
   if (o.reply === "absage") return { cls: "declined", label: "Absage", note: "Anfrage war raus", locked: true };
   if (o.reply === "antwort") return { cls: "sent", label: "Antwort da", note: "schau in deine Mails", locked: true };
+  if (o.confirm === "formular" && !o.reply) {
+    // degewo: nach der Anfrage noch ein zweites Formular, Link kam per Mail
+    if (opened[key]) return { cls: "sent", label: "Angefragt", note: "zweites Formular geöffnet", locked: true };
+    return { cls: "ask", label: "Zweites Formular ausfüllen ↗", note: "sonst zählt die Anfrage nicht", url: safeUrl(o.form_url) };
+  }
   if (o.confirm === "abgelaufen") return { cls: "declined", label: "Anfrage nicht bestätigt", note: "Link aus der Mail abgelaufen", locked: true };
   if (o.requested === "unklar" && o.confirm === "offen") {
     return { cls: "sent", label: "Anfrage raus", note: "Bestätigung per Mail offen", locked: true };
   }
   if (o.requested === "gesendet" || o.requested === "unklar") {
-    return { cls: "sent", label: "Angefragt", note: o.requested === "unklar" ? "vom Bot, ohne Bestätigung" : "vom Bot",
+    return { cls: "sent", label: "Angefragt", note: o.via === "mail" ? "Eingang per Mail bestätigt"
+             : o.requested === "unklar" ? "vom Bot, ohne Bestätigung" : "vom Bot",
              locked: true };
   }
   if (marks[key]) return { cls: "sent", label: "✓ Von dir angefragt", note: "tippen zum Zurücknehmen", toggle: true };

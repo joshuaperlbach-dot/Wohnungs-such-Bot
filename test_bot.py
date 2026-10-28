@@ -935,6 +935,46 @@ def test_mail_check_only_every_10_minutes():
             offers.FILE, wbm_bot.STATS_FILE, mail_check.SEEN_FILE = old_files
 
 
+def test_mail_other_companies():
+    """Eingangsbestätigung (Gewobag/Stadt und Land), zweites Formular (degewo), Absage, alte Mails."""
+    import mail_check
+    from datetime import datetime, timezone
+    from email.message import EmailMessage
+    now = datetime(2026, 10, 23, 17, 0, tzinfo=timezone.utc)
+
+    def mail(mid, sender, subject, body, date="Fri, 23 Oct 2026 16:43:58 +0000"):
+        m = EmailMessage()
+        m["Message-ID"], m["From"], m["Subject"], m["Date"] = mid, sender, subject, date
+        m.set_content(body)
+        return m
+
+    eingang = mail("<g1@gewobag.de>", "do-not-reply@gewobag.de", 'Formularbestätigung - Immobilienanfrage "Vorfristig"',
+                   "Sehr geehrter Herr M,\nwir danken Ihnen für das Ausfüllen des Formulars.\n"
+                   "Grellstr. 47A, 10409 Berlin\n508,37 € Kaltmiete")
+    formular = mail("<d1@degewo.de>", "do-not-reply@degewo.de", 'Bestätigung Ihrer Anfrage - Immobilienanfrage "Britz"',
+                    "vielen Dank für Ihr Interesse an der Wohnung.\nBitte füllen Sie das beigefügte Formular aus, damit wir "
+                    "Ihre Anfrage aufnehmen können.\nFormular ausfüllen:\nhttps://vermietung.degewo.de/1/2/property/"
+                    "application/form/3/4/5\nFritz-Reuter-Allee 11, 12359 Berlin")
+    absage = mail("<s1@wohnungshelden.de>", "do-not-reply@wohnungshelden.de", "Neue Nachricht - Immobilienanfrage",
+                  "Leider müssen wir Ihnen mitteilen, dass das von Ihnen gewählte Mietobjekt bereits vergeben ist.\n"
+                  "Grellstr. 47A, 10409 Berlin")
+    alt = mail("<d2@degewo.de>", "do-not-reply@degewo.de", "Bestätigung Ihrer Anfrage",
+               "Bitte füllen Sie das beigefügte Formular aus\nhttps://vermietung.degewo.de/9/application/form/9\n"
+               "Teststraße 1, 10115 Berlin", date="Mon, 12 Oct 2026 10:00:00 +0000")
+    store = {"offers": {
+        "g": {"address": "Grellstraße 47A, 10409 Berlin", "company": "gewobag"},
+        "d": {"address": "Fritz-Reuter-Allee 11, 12359 Berlin", "company": "degewo"},
+        "t": {"address": "Teststraße 1, 10115 Berlin", "company": "degewo"},
+    }}
+    notes = mail_check.process([eingang, formular, absage, alt], store, set(), now)
+    o = store["offers"]
+    assert o["g"]["requested"] == "gesendet" and o["g"]["via"] == "mail" and o["g"]["reply"] == "absage"
+    assert o["d"]["confirm"] == "formular" and o["d"]["form_url"] == "https://vermietung.degewo.de/1/2/property/application/form/3/4/5"
+    assert o["t"]["confirm"] == "formular"  # alte Mail: trotzdem eingetragen ...
+    assert len(notes) == 1 and "zweites Formular" in notes[0] and "Fritz-Reuter-Allee 11" in notes[0], notes  # ... aber kein Push
+    assert "vermietung.degewo.de/1/2" in notes[0]
+
+
 def datetime_now():
     from datetime import datetime, timezone
     return datetime(2026, 10, 13, 19, 0, tzinfo=timezone.utc)
