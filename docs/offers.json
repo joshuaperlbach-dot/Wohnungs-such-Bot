@@ -90,7 +90,9 @@
    "address": "Rupprechtstraße 27, 10317 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792057326-L1g58udi2i.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1792057326-L1g58udi2i.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 747.25,
@@ -155,7 +157,8 @@
    "online_since": "2026-10-15T09:42:06Z",
    "requested": "unklar",
    "confirm": "abgelaufen",
-   "requested_at": "2026-10-15T09:42:18Z"
+   "requested_at": "2026-10-15T09:42:18Z",
+   "photos_checked": true
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -247,7 +250,9 @@
    "address": "Selchowstraße 17A, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124070-X3qWeFNAjT.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124070-X3qWeFNAjT.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 638.7,
@@ -309,7 +314,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:01:10Z"
+   "online_since": "2026-10-27T18:01:10Z",
+   "photos_checked": true
   },
   "ibw-23463": {
    "source": "ibw",
@@ -319,7 +325,9 @@
    "address": "Selchowstraße 17A, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124369-bNg4Llrgv1.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124369-bNg4Llrgv1.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -381,7 +389,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:06:09Z"
+   "online_since": "2026-10-27T18:06:09Z",
+   "photos_checked": true
   },
   "ibw-23464": {
    "source": "ibw",
@@ -391,7 +400,9 @@
    "address": "Selchowstraße 17B, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124724-UbS2ix0lgh.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124724-UbS2ix0lgh.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -453,7 +464,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:12:04Z"
+   "online_since": "2026-10-27T18:12:04Z",
+   "photos_checked": true
   },
   "ibw-23465": {
    "source": "ibw",
@@ -463,7 +475,9 @@
    "address": "Selchowstraße 17B, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124784-tMcNi7OZNs.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124784-tMcNi7OZNs.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -525,7 +539,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:13:04Z"
+   "online_since": "2026-10-27T18:13:04Z",
+   "photos_checked": true
   },
   "ibw-23466": {
    "source": "ibw",
@@ -1320,7 +1335,7 @@
    "online_since": "2026-10-28T12:57:05Z"
   }
  },
- "updated": "2026-10-28T16:26:23Z",
+ "updated": "2026-10-28T16:28:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1385,5 +1400,5 @@
    "chars": 2427
   }
  ],
- "last_auto": "2026-10-28T16:26:23Z"
+ "last_auto": "2026-10-28T16:28:23Z"
 }
