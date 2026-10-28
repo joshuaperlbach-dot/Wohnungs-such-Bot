@@ -586,7 +586,22 @@ def test_bots_fill_app_list():
     i = o["offers"]["ibw-21"]
     assert "ibw-22" not in o["offers"] and o["ibw_seeded"] is True, sorted(o["offers"])  # 22 braucht WBS
     assert i["company"] == "degewo" and i["stars"] >= 1 and i["parts"]["Kiez"][1] == 16 and i["url"] == "https://example.org/21", i
-    assert i["address"] == "Teststraße 9, 10439 Berlin" and i["images"] == []
+    assert i["address"] == "Teststraße 9, 10439 Berlin" and i["images"] == [
+        "https://example.org/fileadmin/user_upload/tx_openimmo/c/images/1-a.jpg",
+        "https://example.org/fileadmin/user_upload/tx_openimmo/c/images/1-b.jpg"], i["images"]  # Fotos von der Seite der Gesellschaft
+
+
+def test_page_images():
+    import ibw_bot
+    html = """<meta property="og:image" content="https://cdn.example.org/flat/main.jpg">
+    <img src="/assets/logo.jpg"><img src="/assets/icon-phone.png"><img src="/static/wbs-220.svg">
+    <div class="gallery"><img data-src="/media/flat/1.jpg" src="data:image/gif;base64,AAA">
+    <img srcset="/media/flat/2-small.webp 400w, /media/flat/2-large.webp 1200w"></div>
+    <a href="/media/flat/3.jpeg?w=1600">Bild 3</a><a href="/media/flat/main.jpg">nochmal</a>"""
+    got = ibw_bot.page_images(html, "https://www.example.org/media/flat/main.jpg")
+    assert got == ["https://cdn.example.org/flat/main.jpg", "https://www.example.org/media/flat/1.jpg",
+                   "https://www.example.org/media/flat/2-large.webp", "https://www.example.org/media/flat/3.jpeg?w=1600",
+                   "https://www.example.org/media/flat/main.jpg"], got
 
 
 def test_mail_replies():
