@@ -239,78 +239,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23424": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20767-25.html?t=ibw",
-   "title": "Gestalten Sie  Ihre neue Wohnung selbst",
-   "address": "Hauptstraße 43, 10317 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793094906-DGQOtnE2U0.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 682.36,
-   "cold": 476.36,
-   "size": 41.72,
-   "floor": 1,
-   "levels": 3,
-   "year": 1938,
-   "stars": 3,
-   "why": "41.72 m², ~5.1 km zur Arbeit (Luftlinie), Kiez wenig los (4 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 1. Etage, Baujahr 1938",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     4.9,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-27T09:55:06Z"
-  },
   "ibw-23425": {
    "source": "ibw",
    "company": "howoge",
@@ -1254,7 +1182,7 @@
    "online_since": "2026-10-28T07:51:06Z"
   }
  },
- "updated": "2026-10-28T09:54:20Z",
+ "updated": "2026-10-28T09:56:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1289,5 +1217,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-28T09:54:20Z"
+ "last_auto": "2026-10-28T09:56:20Z"
 }
