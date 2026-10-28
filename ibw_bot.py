@@ -215,10 +215,11 @@ def can_request(l, r):
 
 # Bilder, die nicht zur Wohnung gehören (Logos, Symbole, WBS-Etiketten ...)
 IMG_SKIP = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|banner|badge|siegel|teaser|/404/"
+                      r"|flyout|og_image|stadtkarte"
                       r"|\.svg|\.gif|\.png", re.I)
 IMG_FILE = re.compile(r"\.(jpe?g|webp)(\?|$)", re.I)
 MAX_IMAGES = 20
-PHOTOS_VERSION = 2  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
+PHOTOS_VERSION = 3  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
 
 
 def page_images(html, base):
@@ -246,7 +247,11 @@ def page_images(html, base):
             out.append(u)
         elif "_processed_" in out[keys[key]] and "_processed_" not in u:
             out[keys[key]] = u  # lieber das Original als die verkleinerte Fassung
-    return out[:MAX_IMAGES]
+    # Enthalten Bildadressen die Objektnummer aus der Adresse des Angebots (z.B. Gewobag:
+    # .../gewo-immo-media/0100-01707-0101-0008/...), sind nur diese Fotos der Wohnung
+    token = base.split("?")[0].rstrip("/").rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    own = [u for u in out if len(token) >= 6 and token in u]
+    return (own or out)[:MAX_IMAGES]
 
 
 def photo_key(url):
