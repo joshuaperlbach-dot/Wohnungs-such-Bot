@@ -157,33 +157,194 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z"
   },
-  "ibw-23288": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5101%2F00154",
-   "title": "Gemütliche 2-Zimmer-Wohnung mit großem Balkon",
-   "address": "Neuköllner Straße 310, 12357 Berlin",
-   "bezirk": "Neukölln",
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/",
+   "title": "2-Zimmer-Wohnung in Mitte",
+   "address": "Karl-Marx-Allee 23, 10178 Berlin",
+   "text": "Zentral gelegene und geräumige 2-Zimmer Wohnung in Berlin-Mitte mit guter Verkehrsanbindung. Die Wohnung verfügt über eine gemütliche Tageslichtküche, einen langen Flur, sowie ein Wannenbad, ein Keller kann ebenfalls leihweise zur Verfügung gestellt werden. Der Mieter übernimmt die Malermäßige Instandsetzung.",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792683483-qm50Xs1F33.webp?q=80&w=900&fm=jpg"
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78771-f9389b7060b3256824428d1ba9dcb9b0.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78771-29b7f87e1bd7b32558b2581af3dab12f.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78771-502aac91abc04b70747f58e661a8c48b.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78771-3b2263262526dc8eaeaf70d9cdcce5c8.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78771-fe4a15ac43b4f0e76d3fc1f9d4c56af6.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78771-3e18bf3beaaa1530326b9f96a7b8722a.jpg"
    ],
+   "bezirk": "Mitte",
    "rooms": 2,
-   "price": 642.87,
-   "cold": 437.87,
-   "size": 55.79,
-   "floor": 3,
-   "levels": 5,
-   "year": 1975,
-   "stars": 3,
-   "why": "55.79 m², ~10.6 km zur Arbeit (Luftlinie), Kiez wenig los (53 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1975",
-   "points": 62,
+   "price": 640.16,
+   "cold": 454.16,
+   "size": 60.45,
+   "floor": 7,
+   "year": 1966,
+   "stars": 4,
+   "why": "60.45 m², ~2.1 km zur Arbeit (Luftlinie), Kiez mittel (132 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 7. Etage, Baujahr 1966",
+   "points": 71,
    "parts": {
     "Kosten": [
      20.0,
      20
     ],
     "Kiez": [
-     8.5,
+     12.4,
+     16
+    ],
+    "Lage": [
+     9.9,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     7.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "requested": "gesendet",
+   "online_since": "2026-10-26T15:48:21Z",
+   "requested_at": "2026-10-26T15:48:21Z",
+   "gone": true,
+   "reply": "absage",
+   "reply_at": "2026-10-27T08:54:23Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs160-220-1-zimmer-wohnung-in-friedrichshain/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs160-220-1-zimmer-wohnung-in-friedrichshain/",
+   "title": "MIT WBS160-220! 1-Zimmer-Wohnung in Friedrichshain",
+   "address": "Singerstrasse 51, 10243 Berlin",
+   "text": "Zur Vermietung steht eine 1-Zi.-Wohnung im 6.OG mit Aufzug. Großzügig geschnittenes Zimmer mit offener Küche und Zugang zum großen Balkon + saniertes neues Wannenbad. Hinweis: Bitte beachten Sie, dass zur Anmietung ein gültiger WBS160-220 oder ein vergleichbares Einkommen zwingend erforderlich ist. Der Vermietungsprozess erfolgt im ersten Schritt über eine Fotodokumentation.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-75a95763ecb5cd2a0785a205bbf7fbdd.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-8400ec22f7f93bafdad09b76f7b67e0d.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-b219bb43383570562597b2c23101d373.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-480f552c44881d7fd0beeda0ec1c7eba.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-dc311ef25273d0994ff5801e64fa0e9a.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-f00809ea3beb64b7c4ca529f1d4fb8c6.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78788-69b224629ba3289d9438e1b33890358b.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 1,
+   "price": 536.76,
+   "cold": 401.76,
+   "size": 38.83,
+   "floor": 6,
+   "year": 1972,
+   "stars": 3,
+   "why": "38.83 m², ~2.1 km zur Arbeit (Luftlinie), Kiez mittel (79 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1972",
+   "points": 64,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.2,
+     16
+    ],
+    "Lage": [
+     9.9,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     1.1,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T14:50:31Z",
+   "gone": true
+  },
+  "ibw-23462": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-25103-8.html?t=ibw",
+   "title": "Worauf warten Sie noch - bitte überzeugen Sie sich selbst bei einer Wohnungsbesichtigung! ",
+   "address": "Selchowstraße 17A, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124070-X3qWeFNAjT.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 638.7,
+   "cold": 485.46,
+   "size": 47.0,
+   "floor": 1,
+   "levels": 3,
+   "year": 1939,
+   "stars": 3,
+   "why": "47 m², ~11.9 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1939",
+   "points": 64,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
      16
     ],
     "Lage": [
@@ -195,7 +356,367 @@
      6
     ],
     "ÖPNV": [
-     3.0,
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:01:10Z"
+  },
+  "ibw-23463": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-25103-11.html?t=ibw",
+   "title": "Perfekt - das ist nur IHR zukünftiges Domizil! ",
+   "address": "Selchowstraße 17A, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124369-bNg4Llrgv1.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 679.47,
+   "cold": 516.45,
+   "size": 50.0,
+   "floor": 3,
+   "levels": 3,
+   "year": 1939,
+   "stars": 3,
+   "why": "50 m², ~11.9 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1939",
+   "points": 63,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:06:09Z"
+  },
+  "ibw-23464": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-25103-15.html?t=ibw",
+   "title": "Sind Ihre Koffer schon gepackt? ",
+   "address": "Selchowstraße 17B, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124724-UbS2ix0lgh.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 679.47,
+   "cold": 516.45,
+   "size": 50.0,
+   "floor": 2,
+   "levels": 3,
+   "year": 1939,
+   "stars": 3,
+   "why": "50 m², ~11.9 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1939",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:12:04Z"
+  },
+  "ibw-23465": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-25103-17.html?t=ibw",
+   "title": "Jetzt aber schnell - worauf warten Sie noch? ",
+   "address": "Selchowstraße 17B, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124784-tMcNi7OZNs.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 679.47,
+   "cold": 516.45,
+   "size": 50.0,
+   "floor": 3,
+   "levels": 3,
+   "year": 1939,
+   "stars": 3,
+   "why": "50 m², ~11.9 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1939",
+   "points": 63,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:13:04Z"
+  },
+  "ibw-23466": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-25103-24.html?t=ibw",
+   "title": "3, 2, 1 - Meins!  - Herzlich Willkommen! ",
+   "address": "Selchowstraße 17C, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793125026-otjr2IwfOA.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 679.47,
+   "cold": 516.45,
+   "size": 50.0,
+   "floor": 3,
+   "levels": 3,
+   "year": 1939,
+   "stars": 3,
+   "why": "50 m², ~11.9 km zur Arbeit (Luftlinie), Kiez wenig los (34 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1939",
+   "points": 63,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-27T18:17:06Z"
+  },
+  "ibw-23468": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1950-33562-25.html?t=ibw",
+   "title": "Wohnglück in Adlershof - Hier sind Sie WILLKOMMEN! ",
+   "address": "Stienitzseestraße 31, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793126828-ugq3IvaZLi.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 610.3,
+   "cold": 466.0,
+   "size": 35.6,
+   "floor": 1,
+   "levels": 4,
+   "year": 1964,
+   "stars": 2,
+   "why": "35.6 m², ~11.8 km zur Arbeit (Luftlinie), Kiez wenig los (54 Lokale/Läden), Ringbahn weit, 1. Etage, Baujahr 1964",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
      3
     ],
     "Bezirk": [
@@ -211,7 +732,7 @@
      5
     ],
     "Größe": [
-     5.9,
+     0.2,
      10
     ],
     "Zimmer": [
@@ -219,36 +740,36 @@
      7
     ],
     "Außenbereich": [
-     6.0,
+     0.0,
      6
     ],
     "Aufzug": [
-     5.0,
+     4.2,
      5
     ]
    },
-   "online_since": "2026-10-22T15:38:03Z"
+   "online_since": "2026-10-27T18:47:08Z"
   },
-  "ibw-23287": {
+  "ibw-23470": {
    "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5101%2F00113",
-   "title": "Handwerkerwohnung mit viel Gestaltungspotenzial !!!",
-   "address": "Neuköllner Straße 306, 12357 Berlin",
-   "bezirk": "Neukölln",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1950-33562-52.html?t=ibw",
+   "title": "Ansehen lohnt sich - überzeugen Sie sich selbst! ",
+   "address": "Stienitzseestraße 35, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792683427-y3xDOMyAxV.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793128029-j7M9YZisJS.webp?q=80&w=900&fm=jpg"
    ],
    "rooms": 2,
-   "price": 642.87,
-   "cold": 437.87,
-   "size": 55.79,
-   "floor": 3,
+   "price": 440.67,
+   "cold": 296.01,
+   "size": 35.69,
+   "floor": 2,
    "levels": 4,
-   "year": 1975,
-   "stars": 3,
-   "why": "55.79 m², ~10.5 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1975",
-   "points": 62,
+   "year": 1964,
+   "stars": 2,
+   "why": "35.69 m², ~11.8 km zur Arbeit (Luftlinie), Kiez mittel (69 Lokale/Läden), Ringbahn weit, 2. Etage, Baujahr 1964",
+   "points": 48,
    "parts": {
     "Kosten": [
      20.0,
@@ -267,7 +788,7 @@
      6
     ],
     "ÖPNV": [
-     3.0,
+     2.0,
      3
     ],
     "Bezirk": [
@@ -283,7 +804,7 @@
      5
     ],
     "Größe": [
-     5.9,
+     0.2,
      10
     ],
     "Zimmer": [
@@ -291,115 +812,43 @@
      7
     ],
     "Außenbereich": [
-     6.0,
+     0.0,
      6
     ],
     "Aufzug": [
-     5.0,
+     4.2,
      5
     ]
    },
-   "online_since": "2026-10-22T15:37:07Z"
+   "online_since": "2026-10-27T19:07:09Z"
   },
-  "ibw-23309": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1500-00753-0082-0503.html",
-   "title": "Die erste eigene Wohnung gesucht?",
-   "address": "Swinemünder Straße 26, 13355 Berlin",
-   "bezirk": "Mitte",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792739345-etl4nLGjii.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 446.25,
-   "cold": 283.4,
-   "size": 38.23,
-   "floor": 5,
-   "levels": 5,
-   "year": 1977,
-   "stars": 3,
-   "why": "38.23 m², ~4.1 km zur Arbeit (Luftlinie), Kiez mittel (122 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1977",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     12.1,
-     16
-    ],
-    "Lage": [
-     6.5,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T07:09:05Z"
-  },
-  "ibw-23323": {
+  "ibw-23471": {
    "source": "ibw",
    "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12220-106.html?t=ibw",
-   "title": "Vermietung ohne WBS!",
-   "address": "Falkenberger Chaussee 91, 13059 Berlin",
-   "bezirk": "Lichtenberg",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1950-33562-62.html?t=ibw",
+   "title": "Hier sind Sie Willkommen - ansehen lohnt sich! ",
+   "address": "Stienitzseestraße 37, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792746187-q8dquWrkFb.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793128686-KYQNCHCDIg.webp?q=80&w=900&fm=jpg"
    ],
    "rooms": 2,
-   "price": 649.07,
-   "cold": 434.59,
-   "size": 56.12,
-   "floor": 15,
-   "levels": 16,
-   "year": 1989,
+   "price": 648.01,
+   "cold": 458.51,
+   "size": 46.75,
+   "floor": 1,
+   "levels": 4,
+   "year": 1964,
    "stars": 2,
-   "why": "56.12 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 15. Etage, Baujahr 1989, Hochhaus (16 Etagen)",
-   "points": 50,
+   "why": "46.75 m², ~11.8 km zur Arbeit (Luftlinie), Kiez mittel (68 Lokale/Läden), Ringbahn weit, 1. Etage, Baujahr 1964",
+   "points": 51,
    "parts": {
     "Kosten": [
      20.0,
      20
     ],
     "Kiez": [
-     7.0,
+     8.0,
      16
     ],
     "Lage": [
@@ -411,7 +860,7 @@
      6
     ],
     "ÖPNV": [
-     3.0,
+     2.0,
      3
     ],
     "Bezirk": [
@@ -423,11 +872,11 @@
      9
     ],
     "Hochhaus": [
-     0.0,
+     5.0,
      5
     ],
     "Größe": [
-     6.0,
+     3.4,
      10
     ],
     "Zimmer": [
@@ -439,35 +888,35 @@
      6
     ],
     "Aufzug": [
-     5.0,
+     4.2,
      5
     ]
    },
-   "online_since": "2026-10-23T09:03:07Z"
+   "online_since": "2026-10-27T19:18:06Z"
   },
-  "ibw-23332": {
+  "ibw-23475": {
    "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02563-0106-0315",
-   "title": "Neubauwohnung in der oberster Etage mit Balkon in Lichtenberg ab sofort neu zu vermieten",
-   "address": "Rhinstraße 143E, 10315 Berlin",
-   "bezirk": "Lichtenberg",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-71903-0003-0103.html",
+   "title": "Herzlich Willkommen!",
+   "address": "Mühlweg 16, 12587 Berlin",
+   "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792753925-7cPoi1OzGA.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793173866-wpv6KuxsFT.webp?q=80&w=900&fm=jpg"
    ],
-   "rooms": 1,
-   "price": 892.73,
-   "cold": 742.4,
-   "size": 46.4,
-   "floor": 7,
-   "levels": 8,
-   "year": 2022,
-   "stars": 1,
-   "why": "46.4 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 2022",
-   "points": 39,
+   "rooms": 2,
+   "price": 689.64,
+   "cold": 476.95,
+   "size": 54.54,
+   "floor": 1,
+   "levels": 3,
+   "year": 1957,
+   "stars": 3,
+   "why": "54.54 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (2 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1957",
+   "points": 58,
    "parts": {
     "Kosten": [
-     6.9,
+     20.0,
      20
     ],
     "Kiez": [
@@ -475,303 +924,15 @@
      16
     ],
     "Lage": [
-     0.2,
+     0.0,
      10
     ],
     "Ringbahn": [
      0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     3.3,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T11:12:05Z"
-  },
-  "ibw-23340": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5141%2F00096",
-   "title": "Studentenwohnung - only Students! - Bornsdorfer Str. 37B, 2.G",
-   "address": "Bornsdorfer Straße 37B, 12053 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792756624-3UfgLhnmsp.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 538.1,
-   "cold": 538.1,
-   "size": 26.25,
-   "floor": 2,
-   "levels": 5,
-   "year": 1940,
-   "stars": 4,
-   "why": "26.25 m², ~3.7 km zur Arbeit (Luftlinie), Kiez lebendig (211 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 2. Etage, Baujahr 1940",
-   "points": 72,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     14.5,
-     16
-    ],
-    "Lage": [
-     7.2,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T11:57:04Z"
-  },
-  "ibw-23341": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00480-0102-0042",
-   "title": "Vorfristig zum 16.11.2026... 2 Zimmer in zentraler Lage",
-   "address": "Gubitzstraße 50A, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792756742-tMaYYSgG95.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 947.36,
-   "cold": 776.92,
-   "size": 45.45,
-   "floor": 5,
-   "levels": 7,
-   "year": 2017,
-   "stars": 3,
-   "why": "45.45 m², ~4.6 km zur Arbeit (Luftlinie), Kiez mittel (74 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 2017",
-   "points": 58,
-   "parts": {
-    "Kosten": [
-     0.3,
-     20
-    ],
-    "Kiez": [
-     9.9,
-     16
-    ],
-    "Lage": [
-     5.6,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
      6
     ],
     "ÖPNV": [
      2.4,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     3.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T11:59:02Z"
-  },
-  "ibw-23342": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5141%2F00118",
-   "title": "Studentenwohnung - only Students!",
-   "address": "Bornsdorfer Straße 37B, 12053 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792759744-QZApO3hdQu.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 549.16,
-   "cold": 549.16,
-   "size": 27.78,
-   "floor": 4,
-   "levels": 5,
-   "year": 1940,
-   "stars": 4,
-   "why": "27.78 m², ~3.7 km zur Arbeit (Luftlinie), Kiez lebendig (211 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 4. Etage, Baujahr 1940",
-   "points": 72,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     14.5,
-     16
-    ],
-    "Lage": [
-     7.2,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T12:49:04Z"
-  },
-  "ibw-23345": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00202-0071-0102.html",
-   "title": "Ihr neues kompaktes Zuhause in der Landecker Straße",
-   "address": "Landecker Straße 5A, 14199 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792761365-ChXHGtgCVb.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 422.34,
-   "cold": 314.57,
-   "size": 29.21,
-   "floor": 1,
-   "levels": 4,
-   "year": 1953,
-   "stars": 2,
-   "why": "29.21 m², ~8.1 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn nah, 1. Etage, Baujahr 1953",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
      3
     ],
     "Bezirk": [
@@ -787,79 +948,7 @@
      5
     ],
     "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-23T13:16:05Z"
-  },
-  "ibw-23349": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00262-0203-0081",
-   "title": "Vorfristig zum 16.11.2026... Einkommensgrenzen beachten...",
-   "address": "Grellstraße 47A, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792766467-70zet006i5.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 820.37,
-   "cold": 508.37,
-   "size": 53.99,
-   "floor": 0,
-   "levels": 4,
-   "year": 1930,
-   "stars": 4,
-   "why": "53.99 m², ~4.7 km zur Arbeit (Luftlinie), Kiez mittel (97 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, EG, Baujahr 1930",
-   "points": 79,
-   "parts": {
-    "Kosten": [
-     14.4,
-     20
-    ],
-    "Kiez": [
-     11.1,
-     16
-    ],
-    "Lage": [
-     5.5,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     2.0,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.4,
+     5.6,
      10
     ],
     "Zimmer": [
@@ -875,10 +964,442 @@
      5
     ]
    },
-   "online_since": "2026-10-23T14:41:08Z"
+   "online_since": "2026-10-28T07:51:06Z"
+  },
+  "ibw-23484": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F5147%2F00020",
+   "title": "1 Zimmer im Erdgeschoss mit kleinem Garten!",
+   "address": "An den Buckower Feldern 16, 12349 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793183644-ki4tWUN6e8.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 699.33,
+   "cold": 573.89,
+   "size": 31.36,
+   "floor": 0,
+   "levels": 4,
+   "year": 2025,
+   "stars": 2,
+   "why": "31.36 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (11 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, EG, Baujahr 2025",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T10:34:04Z"
+  },
+  "ibw-23488": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0471%2F00068",
+   "title": "Süße 2 Zimmer-Wohnung mit separater Küche und Balkon!",
+   "address": "Maßholderweg 11, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793184065-kMsmJiNDqS.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 865.7,
+   "cold": 701.7,
+   "size": 46.78,
+   "floor": 1,
+   "levels": 3,
+   "year": 2019,
+   "stars": 2,
+   "why": "46.78 m², ~13.0 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 2019",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     10.1,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T10:41:05Z"
+  },
+  "ibw-23493": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01707-0101-0008",
+   "title": "Helle Wohnung  - handwerkliches Geschick von Vorteil",
+   "address": "Quarzweg 115, 12349 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793187906-1CX5Zw0RdD.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 886.24,
+   "cold": 581.24,
+   "size": 62.98,
+   "floor": 2,
+   "levels": 4,
+   "year": 1975,
+   "stars": 2,
+   "why": "62.98 m², ~9.5 km zur Arbeit (Luftlinie), Kiez wenig los (4 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1975",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     7.7,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     8.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T11:45:06Z"
+  },
+  "ibw-23495": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-77702-0107-1008",
+   "title": "Moderne Wohnung ohne Balkon und offener Küche",
+   "address": "Am Eichenquast 52, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793188566-t4xvb9eWza.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 866.75,
+   "cold": 681.5,
+   "size": 34.09,
+   "floor": 4,
+   "levels": 4,
+   "year": 1976,
+   "stars": 1,
+   "why": "34.09 m², ~9.8 km zur Arbeit (Luftlinie), Kiez wenig los (2 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1976",
+   "points": 37,
+   "parts": {
+    "Kosten": [
+     10.0,
+     20
+    ],
+    "Kiez": [
+     0.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T11:56:06Z"
+  },
+  "ibw-23496": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13282-83.html?t=ibw",
+   "title": "Wohnung in Berlin",
+   "address": "Grevesmühlener Straße 10, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793189887-7x1DMZf5Vm.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 648.96,
+   "cold": 424.62,
+   "size": 64.23,
+   "floor": 12,
+   "levels": 19,
+   "year": 1988,
+   "stars": 3,
+   "why": "64.23 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 12. Etage, Baujahr 1988, Hochhaus (19 Etagen)",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     8.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T12:18:07Z"
+  },
+  "ibw-23503": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00656-0011-0205.html",
+   "title": "1 Zimmer in der Gropiusstadt",
+   "address": "Theodor-Loos-Weg 17, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793192225-sYGF3aoYz9.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 575.37,
+   "cold": 429.06,
+   "size": 42.91,
+   "floor": 2,
+   "levels": 8,
+   "year": 1969,
+   "stars": 2,
+   "why": "42.91 m², ~10.3 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1969",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     2.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T12:57:05Z"
   }
  },
- "updated": "2026-10-23T15:22:26Z",
+ "updated": "2026-10-28T13:00:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -905,7 +1426,13 @@
    "kind": "bestaetigung",
    "matched": false,
    "chars": 3603
+  },
+  {
+   "at": "2026-10-27T08:54:23Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 3845
   }
  ],
- "last_auto": "2026-10-23T15:22:26Z"
+ "last_auto": "2026-10-28T13:00:58Z"
 }
