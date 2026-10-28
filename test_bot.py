@@ -593,16 +593,21 @@ def test_bots_fill_app_list():
 
 def test_add_missing_photos():
     import ibw_bot
-    store = {"offers": {f"ibw-{i}": {"url": f"https://example.org/{i}", "images": ["https://x/0.jpg"]} for i in range(7)}}
+    first = "https://www.inberlinwohnen.de/img/0.webp"
+    store = {"offers": {f"ibw-{i}": {"url": f"https://example.org/{i}", "images": [first, "https://x/alt-teaser.jpg"]}
+                        for i in range(7)}}
     store["offers"]["ibw-0"]["gone"] = True
     page = '<img src="/m/1.jpg"><img src="/m/2.jpg">'
-    with mock.patch("wbm_bot.HTTP.get", return_value=mock.Mock(text=page)) as get:
+    with mock.patch("wbm_bot.HTTP.get", return_value=mock.Mock(text=page, status_code=200)) as get:
         ibw_bot.add_missing_photos(store)
         assert get.call_count == 5  # höchstens 5 pro Lauf, verschwundene nicht
         ibw_bot.add_missing_photos(store)
         assert get.call_count == 6  # der Rest beim nächsten Lauf, jedes nur einmal
-    assert store["offers"]["ibw-1"]["images"] == ["https://x/0.jpg", "https://example.org/m/1.jpg", "https://example.org/m/2.jpg"]
-    assert store["offers"]["ibw-0"]["images"] == ["https://x/0.jpg"]
+    assert store["offers"]["ibw-1"]["images"] == [first, "https://example.org/m/1.jpg", "https://example.org/m/2.jpg"]
+    assert store["offers"]["ibw-0"]["images"] == [first, "https://x/alt-teaser.jpg"]  # verschwunden: unverändert
+    # Fehlerseite (Angebot weg): keine Fotos von dort
+    with mock.patch("wbm_bot.HTTP.get", return_value=mock.Mock(text=page, status_code=404)):
+        assert ibw_bot.company_page({"url": "https://example.org/9"}) == (False, [])
 
 
 def test_page_images():
@@ -611,11 +616,12 @@ def test_page_images():
     <img src="/assets/logo.jpg"><img src="/assets/icon-phone.png"><img src="/static/wbs-220.svg">
     <div class="gallery"><img data-src="/media/flat/1.jpg" src="data:image/gif;base64,AAA">
     <img srcset="/media/flat/2-small.webp 400w, /media/flat/2-large.webp 1200w"></div>
-    <a href="/media/flat/3.jpeg?w=1600">Bild 3</a><a href="/media/flat/main.jpg">nochmal</a>"""
+    <a href="/media/flat/3.jpeg?w=1600">Bild 3</a><a href="/media/flat/main.jpg">nochmal</a>
+    <img src="/fileadmin/_processed_/b/4/csm_3_1a2b3c4d5e.jpeg"><img src="/fileadmin/user_upload/404/Wohnungssuche-teaser.jpg">"""
     got = ibw_bot.page_images(html, "https://www.example.org/media/flat/main.jpg")
     assert got == ["https://cdn.example.org/flat/main.jpg", "https://www.example.org/media/flat/1.jpg",
-                   "https://www.example.org/media/flat/2-large.webp", "https://www.example.org/media/flat/3.jpeg?w=1600",
-                   "https://www.example.org/media/flat/main.jpg"], got
+                   "https://www.example.org/media/flat/2-large.webp", "https://www.example.org/media/flat/3.jpeg?w=1600"], got
+    # dasselbe Foto in anderer Größe (main.jpg, csm_3_...) und Teaser der Fehlerseite fallen weg
 
 
 def test_mail_replies():
