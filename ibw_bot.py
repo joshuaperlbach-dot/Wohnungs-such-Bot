@@ -177,7 +177,7 @@ def app_offer(l, r):
         "source": "ibw", "company": l["company"], "url": l["url"], "title": l["title"],
         "address": f"{l['address']}, {l['plz']} Berlin", "bezirk": l["bezirk"],
         "images": list(dict.fromkeys(([l["image"]] if l["image"] else []) + l.get("more_images", []))),
-        "photos_checked": True,
+        "photos_checked": PHOTOS_VERSION,
         "rooms": l["rooms"], "price": l["price"], "cold": l["cold"], "size": l["size"],
         "floor": l["floor"], "levels": l["levels"], "year": l["year"],
         "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
@@ -214,9 +214,11 @@ def can_request(l, r):
 
 
 # Bilder, die nicht zur Wohnung gehören (Logos, Symbole, WBS-Etiketten ...)
-IMG_SKIP = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|banner|badge|siegel|\.svg|\.gif|\.png", re.I)
+IMG_SKIP = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|banner|badge|siegel|teaser|/404/"
+                      r"|\.svg|\.gif|\.png", re.I)
 IMG_FILE = re.compile(r"\.(jpe?g|webp)(\?|$)", re.I)
 MAX_IMAGES = 20
+PHOTOS_VERSION = 2  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
 
 
 def page_images(html, base):
@@ -233,22 +235,37 @@ def page_images(html, base):
             found.append(srcset.split(",")[-1].strip().split(" ")[0])
         found += [tag.get(a) for a in ("data-src", "data-lazy-src", "src") if tag.get(a)]
     found += [a["href"] for a in soup.find_all("a", href=True)]
-    out = []
+    out, keys = [], {}
     for u in found:
         u = urljoin(base, u.strip())
-        if u.startswith("https://") and IMG_FILE.search(u) and not IMG_SKIP.search(u) and u not in out:
+        if not (u.startswith("https://") and IMG_FILE.search(u) and not IMG_SKIP.search(u)):
+            continue
+        key = photo_key(u)
+        if key not in keys:
+            keys[key] = len(out)
             out.append(u)
+        elif "_processed_" in out[keys[key]] and "_processed_" not in u:
+            out[keys[key]] = u  # lieber das Original als die verkleinerte Fassung
     return out[:MAX_IMAGES]
+
+
+def photo_key(url):
+    """Dasselbe Foto in verschiedenen Größen erkennen: TYPO3 macht aus "5723.jpg" etwa
+    "_processed_/b/4/csm_5723_1a2b3c4d5e.jpg"."""
+    name = url.split("?")[0].rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    return re.sub(r"_[0-9a-f]{10}$", "", re.sub(r"^csm_", "", name))
 
 
 def add_missing_photos(store, limit=5):
     """Angebote, die schon vor dem Foto-Sammeln in der Liste waren: pro Lauf ein paar nachholen."""
     todo = [o for k, o in store["offers"].items() if k.startswith("ibw-") and not o.get("gone")
-            and not o.get("photos_checked") and safe_url(o.get("url"))]
+            and o.get("photos_checked") != PHOTOS_VERSION and safe_url(o.get("url"))]
     for o in todo[:limit]:
-        o["photos_checked"] = True
+        o["photos_checked"] = PHOTOS_VERSION
         _, more = company_page(o)
-        o["images"] = list(dict.fromkeys((o.get("images") or []) + more))
+        # Bild von inberlinwohnen behalten, Fotos der Gesellschaft neu (frühere Versuche hatten Ausschuss)
+        first = [u for u in (o.get("images") or [])[:1] if "inberlinwohnen.de" in u]
+        o["images"] = list(dict.fromkeys(first + more))
 
 
 def safe_url(u):
@@ -258,10 +275,12 @@ def safe_url(u):
 def company_page(l):
     """Seite der Gesellschaft (nur für Treffer): (WBS-Etikett gefunden?, Fotos der Wohnung)."""
     try:
-        html = wbm_bot.HTTP.get(l["url"], timeout=20).text
+        resp = wbm_bot.HTTP.get(l["url"], timeout=20)
     except requests.RequestException:
         return False, []
-    return page_says_wbs(html), page_images(html, l["url"])
+    if resp.status_code != 200:  # z.B. Angebot schon weg: Fehlerseite hat keine Wohnungsfotos
+        return False, []
+    return page_says_wbs(resp.text), page_images(resp.text, l["url"])
 
 
 def fetch_new(seen, first_run):
