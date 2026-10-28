@@ -63,8 +63,17 @@
   .card { background: var(--card); border-radius: 14px; margin-bottom: 12px; overflow: hidden;
           border: 1px solid var(--line); }
   .card .tap { display: flex; gap: 12px; padding: 12px; width: 100%; text-align: left; background: none; }
-  .thumb { width: 92px; height: 92px; border-radius: 10px; background: var(--chip) center/cover no-repeat;
-           flex: none; display: grid; place-items: center; color: var(--muted); font-size: 12px; }
+  /* Alle Fotos direkt in der Liste: zum Wischen */
+  .strip { display: flex; gap: 3px; overflow-x: auto; scroll-snap-type: x mandatory; height: 200px;
+           background: var(--chip); scrollbar-width: none; }
+  .strip::-webkit-scrollbar { display: none; }
+  .strip img { height: 100%; width: 82%; flex: none; object-fit: cover; scroll-snap-align: start; display: block; }
+  .strip.one img { width: 100%; }
+  .strip .none { margin: auto; color: var(--muted); font-size: 13px; }
+  .count { position: absolute; right: 8px; top: 8px; background: rgba(0, 0, 0, .55); color: #fff;
+           font-size: 12px; padding: 2px 7px; border-radius: 10px; pointer-events: none; }
+  .pics { position: relative; }
+  .bez { color: var(--ink); font-weight: 600; }
   .info { min-width: 0; flex: 1; }
   .stars { color: var(--star); letter-spacing: 1px; font-size: 15px; }
   .stars small { color: var(--muted); letter-spacing: 0; margin-left: 6px; }
@@ -291,23 +300,42 @@ function render() {
   for (const [key, o] of items) {
     const card = el("article", "card");
     const tap = el("button", "tap");
-    const thumb = el("div", "thumb");
-    const img = safeUrl((o.images || [])[0]);
-    if (img) thumb.style.backgroundImage = `url("${encodeURI(img)}")`; else thumb.textContent = "kein Bild";
+    const imgs = (o.images || []).map(safeUrl).filter(Boolean);
+    const pics = el("div", "pics");
+    const strip = el("div", "strip" + (imgs.length === 1 ? " one" : ""));
+    for (const src of imgs) {
+      const i = el("img");
+      i.loading = "lazy"; i.alt = ""; i.referrerPolicy = "no-referrer"; i.src = src;
+      i.addEventListener("error", () => i.remove());
+      strip.append(i);
+    }
+    if (!imgs.length) strip.append(el("span", "none", "kein Bild"));
+    strip.addEventListener("click", () => openDetail(key));
+    pics.append(strip);
+    if (imgs.length > 1) pics.append(el("span", "count", `${imgs.length} Bilder`));
     const info = el("div", "info");
     const stars = el("div", "stars", "★".repeat(o.stars || 0) + "☆".repeat(5 - (o.stars || 0)));
     if (o.points != null) stars.append(el("small", null, `${o.points} Punkte`));
     info.append(stars,
       el("div", "main-line", `${rooms(o.rooms)} Zi · ${num(o.size)} m² · ${num(o.price)} € warm`),
-      el("div", "sub", [o.address, o.bezirk].filter(Boolean).join(" · ")),
+      place(o),
       o.gone ? el("div", "sub gone", `${COMPANY[o.company] || o.company || ""} · nicht mehr online`)
              : el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
-    tap.append(thumb, info);
+    tap.append(info);
     tap.addEventListener("click", () => openDetail(key));
-    card.append(tap, reqButton(key, o));
+    card.append(pics, tap, reqButton(key, o));
     list.append(card);
   }
   if (openKey) drawDetail();
+}
+
+// Bezirk zuerst (fett), dahinter nur Straße und Hausnummer
+function place(o) {
+  const d = el("div", "sub");
+  if (o.bezirk) d.append(el("span", "bez", o.bezirk));
+  const street = (o.address || "").split(",")[0];
+  if (street) d.append(document.createTextNode((o.bezirk ? " · " : "") + street));
+  return d;
 }
 
 function row(table, label, value) {
@@ -337,7 +365,7 @@ function drawDetail() {
   const stars = el("div", "stars", "★".repeat(o.stars || 0) + "☆".repeat(5 - (o.stars || 0)));
   if (o.points != null) stars.append(el("small", null, `${o.points} von 100 Punkten`));
   body.append(stars, el("h2", null, o.title || "Wohnung"),
-    el("div", "sub", [o.address, o.bezirk].filter(Boolean).join(" · ")));
+    el("div", "sub", [o.bezirk, o.address].filter(Boolean).join(" · ")));
   const chips = el("div", "chips");
   for (const bit of String(o.why || "").split(", ").filter(Boolean)) chips.append(el("span", "chip", bit));
   body.append(chips);

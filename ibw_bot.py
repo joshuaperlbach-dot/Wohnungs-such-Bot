@@ -15,6 +15,7 @@ import sys
 import time
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -175,7 +176,7 @@ def app_offer(l, r):
     return {
         "source": "ibw", "company": l["company"], "url": l["url"], "title": l["title"],
         "address": f"{l['address']}, {l['plz']} Berlin", "bezirk": l["bezirk"],
-        "images": [l["image"]] if l["image"] else [],
+        "images": list(dict.fromkeys(([l["image"]] if l["image"] else []) + l.get("more_images", []))),
         "rooms": l["rooms"], "price": l["price"], "cold": l["cold"], "size": l["size"],
         "floor": l["floor"], "levels": l["levels"], "year": l["year"],
         "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
@@ -211,12 +212,41 @@ def can_request(l, r):
             and r.stars >= wbm_bot.MIN_STARS_SEND)
 
 
-def hidden_wbs(l):
-    """Seite der Gesellschaft auf ein WBS-Etikett prüfen (nur für Treffer, also selten)."""
+# Bilder, die nicht zur Wohnung gehören (Logos, Symbole, WBS-Etiketten ...)
+IMG_SKIP = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|banner|badge|siegel|\.svg|\.gif|\.png", re.I)
+IMG_FILE = re.compile(r"\.(jpe?g|webp)(\?|$)", re.I)
+MAX_IMAGES = 20
+
+
+def page_images(html, base):
+    """Fotos der Wohnung von der Seite der Gesellschaft (og:image, Bilder, Links auf Fotos).
+    Die Seiten sind verschieden gebaut, deshalb grob: alle JPG/WebP außer Logos und Symbolen."""
+    soup = BeautifulSoup(html, "html.parser")
+    found = []
+    og = soup.find("meta", attrs={"property": "og:image"})
+    if og and og.get("content"):
+        found.append(og["content"])
+    for tag in soup.find_all(["img", "source"]):
+        srcset = tag.get("data-srcset") or tag.get("srcset")
+        if srcset:  # größte Variante: der letzte Eintrag
+            found.append(srcset.split(",")[-1].strip().split(" ")[0])
+        found += [tag.get(a) for a in ("data-src", "data-lazy-src", "src") if tag.get(a)]
+    found += [a["href"] for a in soup.find_all("a", href=True)]
+    out = []
+    for u in found:
+        u = urljoin(base, u.strip())
+        if u.startswith("https://") and IMG_FILE.search(u) and not IMG_SKIP.search(u) and u not in out:
+            out.append(u)
+    return out[:MAX_IMAGES]
+
+
+def company_page(l):
+    """Seite der Gesellschaft (nur für Treffer): (WBS-Etikett gefunden?, Fotos der Wohnung)."""
     try:
-        return page_says_wbs(wbm_bot.HTTP.get(l["url"], timeout=20).text)
+        html = wbm_bot.HTTP.get(l["url"], timeout=20).text
     except requests.RequestException:
-        return False
+        return False, []
+    return page_says_wbs(html), page_images(html, l["url"])
 
 
 def fetch_new(seen, first_run):
@@ -273,7 +303,8 @@ def main():
         recent = since is None or now - since < offers.KEEP_UNREQUESTED
         if not matches(l) or not (fresh or recent):
             continue
-        if hidden_wbs(l) and not ALLOW_WBS:
+        wbs, l["more_images"] = company_page(l)
+        if wbs and not ALLOW_WBS:
             continue
         r = rated(l)
         request = None
@@ -286,6 +317,9 @@ def main():
             request = SENDERS[l["company"]](l, person, send)
         if recent or request:  # in die Handy-Ansicht kommt jeder Treffer, egal wie viele Sterne
             entry = app_offer(l, r)
+            old = store["offers"].get(f"ibw-{l['id']}", {})
+            if len(old.get("images") or []) > len(entry["images"]):  # Seite gerade nicht erreichbar
+                entry["images"] = old["images"]
             if request and request[0] in offers.REQUESTED:
                 entry.update(requested=request[0], confirm="offen")  # wartet auf den Link per Mail
             offers.add(store, f"ibw-{l['id']}", entry, now)

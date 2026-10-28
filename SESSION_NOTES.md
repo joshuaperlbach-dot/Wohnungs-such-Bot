@@ -98,6 +98,9 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Adresse: https://joshuaperlbach-dot.github.io/Wohnungs-such-Bot/ (öffentlich, aber `noindex`; enthält nur
   öffentliche Angebote und ob angefragt wurde, keine persönlichen Daten).
 - Liste aller Treffer mit Sternen, Klick öffnet Bilder, Eckdaten, Sterne-Aufschlüsselung und Beschreibung.
+  Seit 28.10.2026: alle Fotos als Wischleiste direkt in der Liste, Bezirk vor der Straße. Für inberlinwohnen-
+  Treffer sammelt `ibw_bot.page_images` die Fotos von der Seite der Gesellschaft (grob: alle JPG/WebP außer
+  Logos/Symbolen; an den echten Seiten nicht geprüft).
 - Button: grün = Anfrage raus (vom Bot oder von Hand markiert), grau = nicht angefragt,
   rötlich = seit über 2 Stunden online und nicht angefragt.
 - Von Hand markieren speichert nur im Browser des Geräts (`localStorage`); die Seite kann nichts ins Repo schreiben.
