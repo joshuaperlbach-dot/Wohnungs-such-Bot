@@ -23,6 +23,8 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main             # immer den neuesten Stand; sonst holt ein wartender Lauf einen veralteten
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -67,4 +69,12 @@ jobs:
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
           for f in seen.json seen_ibw.json mail_seen.json watch.json stats.json docs/offers.json; do if [ -f "$f" ]; then git add "$f"; fi; done
-          git diff --cached --quiet || (git commit -m "seen aktualisiert" && git pull --rebase && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "seen aktualisiert"
+          # Bei Überschneidung gewinnt der Stand dieses Laufs (er ist der neueste); bis zu 3 Versuche
+          for i in 1 2 3; do
+            git pull --rebase -X theirs && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 3
+          done
+          exit 1
