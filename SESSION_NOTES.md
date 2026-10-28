@@ -16,6 +16,10 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
   Gesellschaften plus Berlinovo, ca. 450 Angebote). Nur finden und melden, keine Anfrage. Siehe unten.
 - `offers.py` + `docs/`: Handy-Ansicht. Beide Bots tragen ihre Treffer in `docs/offers.json` ein,
   `docs/index.html` zeigt sie an (GitHub Pages, Quelle: Branch main, Ordner /docs). Siehe unten.
+- `mail_check.py` (seit 28.10.2026 auch degewo, Gewobag, Stadt und Land über `wohnungshelden.de`; Newsletter
+  ausgenommen): Eingangsbestätigungen markieren Handanfragen als angefragt (`via: mail`); degewo verlangt nach
+  der Anfrage ein zweites Formular (Link per Mail, `confirm: formular`, Push + Knopf in der Handy-Ansicht).
+  Mails älter als 1 Tag werden eingetragen, lösen aber keine Push-Meldung aus.
 - `mail_check.py`: liest die Antworten der Gesellschaften aus dem Postfach (nur lesend, IMAP) und trägt
   Absage/Einladung in die Handy-Ansicht ein; bei Einladung Push. Merkt sich Mails als Fingerabdruck in `mail_seen.json`.
 - `howoge.py`: automatische Besichtigungsanfrage bei der HOWOGE (aufgerufen von `ibw_bot.py`). Siehe unten.
