@@ -591,6 +591,20 @@ def test_bots_fill_app_list():
         "https://example.org/fileadmin/user_upload/tx_openimmo/c/images/1-b.jpg"], i["images"]  # Fotos von der Seite der Gesellschaft
 
 
+def test_add_missing_photos():
+    import ibw_bot
+    store = {"offers": {f"ibw-{i}": {"url": f"https://example.org/{i}", "images": ["https://x/0.jpg"]} for i in range(7)}}
+    store["offers"]["ibw-0"]["gone"] = True
+    page = '<img src="/m/1.jpg"><img src="/m/2.jpg">'
+    with mock.patch("wbm_bot.HTTP.get", return_value=mock.Mock(text=page)) as get:
+        ibw_bot.add_missing_photos(store)
+        assert get.call_count == 5  # höchstens 5 pro Lauf, verschwundene nicht
+        ibw_bot.add_missing_photos(store)
+        assert get.call_count == 6  # der Rest beim nächsten Lauf, jedes nur einmal
+    assert store["offers"]["ibw-1"]["images"] == ["https://x/0.jpg", "https://example.org/m/1.jpg", "https://example.org/m/2.jpg"]
+    assert store["offers"]["ibw-0"]["images"] == ["https://x/0.jpg"]
+
+
 def test_page_images():
     import ibw_bot
     html = """<meta property="og:image" content="https://cdn.example.org/flat/main.jpg">
