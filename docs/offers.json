@@ -1325,9 +1325,81 @@
     ]
    },
    "online_since": "2026-10-28T12:18:07Z"
+  },
+  "ibw-23503": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00656-0011-0205.html",
+   "title": "1 Zimmer in der Gropiusstadt",
+   "address": "Theodor-Loos-Weg 17, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793192225-sYGF3aoYz9.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 575.37,
+   "cold": 429.06,
+   "size": 42.91,
+   "floor": 2,
+   "levels": 8,
+   "year": 1969,
+   "stars": 2,
+   "why": "42.91 m², ~10.3 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1969",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     2.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T12:57:05Z"
   }
  },
- "updated": "2026-10-28T12:56:21Z",
+ "updated": "2026-10-28T12:58:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1362,5 +1434,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-28T12:56:21Z"
+ "last_auto": "2026-10-28T12:58:20Z"
 }
