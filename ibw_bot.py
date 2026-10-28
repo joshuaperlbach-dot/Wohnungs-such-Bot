@@ -177,6 +177,7 @@ def app_offer(l, r):
         "source": "ibw", "company": l["company"], "url": l["url"], "title": l["title"],
         "address": f"{l['address']}, {l['plz']} Berlin", "bezirk": l["bezirk"],
         "images": list(dict.fromkeys(([l["image"]] if l["image"] else []) + l.get("more_images", []))),
+        "photos_checked": True,
         "rooms": l["rooms"], "price": l["price"], "cold": l["cold"], "size": l["size"],
         "floor": l["floor"], "levels": l["levels"], "year": l["year"],
         "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
@@ -238,6 +239,20 @@ def page_images(html, base):
         if u.startswith("https://") and IMG_FILE.search(u) and not IMG_SKIP.search(u) and u not in out:
             out.append(u)
     return out[:MAX_IMAGES]
+
+
+def add_missing_photos(store, limit=5):
+    """Angebote, die schon vor dem Foto-Sammeln in der Liste waren: pro Lauf ein paar nachholen."""
+    todo = [o for k, o in store["offers"].items() if k.startswith("ibw-") and not o.get("gone")
+            and not o.get("photos_checked") and safe_url(o.get("url"))]
+    for o in todo[:limit]:
+        o["photos_checked"] = True
+        _, more = company_page(o)
+        o["images"] = list(dict.fromkeys((o.get("images") or []) + more))
+
+
+def safe_url(u):
+    return u if isinstance(u, str) and u.startswith("https://") else None
 
 
 def company_page(l):
@@ -326,6 +341,7 @@ def main():
         if fresh and r.stars >= MIN_STARS:
             hits.append((r.stars, l, r[0], r[1], request))
     hits.sort(key=lambda h: -h[0])  # beste zuerst
+    add_missing_photos(store)
     store["ibw_seeded"] = store.get("ibw_seeded") or not problem
     offers.save(store, now)
 
