@@ -1109,9 +1109,81 @@
     ]
    },
    "online_since": "2026-10-28T10:41:05Z"
+  },
+  "ibw-23493": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01707-0101-0008",
+   "title": "Helle Wohnung  - handwerkliches Geschick von Vorteil",
+   "address": "Quarzweg 115, 12349 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793187906-1CX5Zw0RdD.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 886.24,
+   "cold": 581.24,
+   "size": 62.98,
+   "floor": 2,
+   "levels": 4,
+   "year": 1975,
+   "stars": 2,
+   "why": "62.98 m², ~9.5 km zur Arbeit (Luftlinie), Kiez wenig los (4 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1975",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     7.7,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     8.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T11:45:06Z"
   }
  },
- "updated": "2026-10-28T11:44:21Z",
+ "updated": "2026-10-28T11:46:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1146,5 +1218,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-28T11:44:21Z"
+ "last_auto": "2026-10-28T11:46:22Z"
 }
