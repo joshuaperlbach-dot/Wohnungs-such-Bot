@@ -622,6 +622,14 @@ def test_page_images():
     assert got == ["https://cdn.example.org/flat/main.jpg", "https://www.example.org/media/flat/1.jpg",
                    "https://www.example.org/media/flat/2-large.webp", "https://www.example.org/media/flat/3.jpeg?w=1600"], got
     # dasselbe Foto in anderer Größe (main.jpg, csm_3_...) und Teaser der Fehlerseite fallen weg
+    # Gewobag: Fotos liegen in einem Ordner mit der Objektnummer, der Rest ist Navigation
+    gewobag = """<img src="/wp-content/uploads/2026/09/42-47116379_flyout.jpg">
+    <img src="/wp-content/uploads/2024/12/innovation_720x334.jpg">
+    <img src="/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_bild1-hausansicht.jpg.jpg">
+    <img src="/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_bild1-stadtkarte.jpg.jpg">
+    <img src="/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_90075a34.jpg">"""
+    got = ibw_bot.page_images(gewobag, "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01707-0101-0008")
+    assert [u.rsplit("/", 1)[-1] for u in got] == ["gewobag_bild1-hausansicht.jpg.jpg", "gewobag_90075a34.jpg"], got
 
 
 def test_mail_replies():
