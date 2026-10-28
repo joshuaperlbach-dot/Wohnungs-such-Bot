@@ -1603,16 +1603,10 @@
    "online_since": "2026-10-28T17:36:05Z"
   }
  },
- "updated": "2026-10-28T17:52:22Z",
+ "updated": "2026-10-28T17:54:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-22T10:04:29Z",
-   "kind": "bestaetigung",
-   "matched": false,
-   "chars": 3603
-  },
   {
    "at": "2026-10-27T08:54:23Z",
    "kind": "absage",
@@ -1666,7 +1660,13 @@
    "kind": "absage",
    "matched": false,
    "chars": 2427
+  },
+  {
+   "at": "2026-10-28T17:54:31Z",
+   "kind": "absage",
+   "matched": false,
+   "chars": 2771
   }
  ],
- "last_auto": "2026-10-28T17:52:22Z"
+ "last_auto": "2026-10-28T17:54:31Z"
 }
