@@ -33,6 +33,9 @@ import wbm_bot
 HOST = "imap.gmail.com"
 SENDERS = ["wbm.de", "howoge.de"]  # nur Mails von diesen Absendern werden überhaupt abgerufen
 LOOK_BACK = timedelta(days=14)
+# Postfach nur alle 10 Minuten öffnen (Antworten eilen nicht, und Gmail bremst bei sehr häufigem
+# Anmelden). Wartet eine HOWOGE-Bestätigung, wird bei jedem Lauf nachgesehen.
+CHECK_EVERY = timedelta(minutes=10)
 SEEN_FILE = Path(__file__).with_name("mail_seen.json")
 MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 
@@ -155,7 +158,8 @@ def process(messages, store, seen, now):
             kind, key = "bestaetigung", pending_confirmation(store, text)
             where = store["offers"][key].get("address", "") if key else "ein Angebot"
             if key is None:
-                pass  # kein offener Vorgang des Bots (z.B. von Hand angefragt): nichts anklicken
+                # von Hand angefragt (oder schon bestätigt): Link trotzdem öffnen, das spart dir den Klick
+                howoge.confirm(confirm_links[0])
             elif howoge.confirm(confirm_links[0]):
                 store["offers"][key].update(requested="gesendet", confirm="bestaetigt")
             else:
@@ -189,7 +193,7 @@ def fetch_messages(user, password, now):
     """Mails der bekannten Absender aus den letzten Tagen holen (nur lesend)."""
     since = now - LOOK_BACK
     since = f"{since.day:02d}-{MONTHS[since.month - 1]}-{since.year}"
-    box = imaplib.IMAP4_SSL(HOST)
+    box = imaplib.IMAP4_SSL(HOST, timeout=30)
     try:
         box.login(user, password)
         box.select("INBOX", readonly=True)
@@ -214,6 +218,12 @@ def main():
         return
     now = datetime.now(wbm_bot.TZ)
     stats = wbm_bot.load_stats(now.strftime("%Y-%m-%d"))
+    store = offers.load()
+    last = offers.parse_time(stats.get("mail_checked_at"))
+    waiting = any(o.get("confirm") == "offen" for o in store["offers"].values())
+    if last and now - last < CHECK_EVERY and not waiting:
+        print("[Mail] zuletzt vor weniger als 10 Minuten geprüft, übersprungen.")
+        return
     try:
         messages = fetch_messages(user, password.replace(" ", ""), now)
     except Exception as e:  # falsches Passwort, Netz weg: melden, aber den Lauf nicht abbrechen
@@ -221,9 +231,10 @@ def main():
                       key="alert_day_mail")
         wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
         return
+    stats["mail_checked_at"] = offers.iso(now)
+    wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
     known = len(seen)
-    store = offers.load()
     notes = process(messages, store, seen, now)
     if len(seen) > known:  # es gab neue Mails
         offers.save(store, now)

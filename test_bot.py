@@ -814,11 +814,11 @@ def test_ibw_requests_howoge_and_confirms_by_mail():
                 assert mail_check.process([m], o, seen, datetime_now()) == []
                 assert opened == [DOI] and o["offers"]["ibw-30"]["requested"] == "gesendet"
                 assert o["offers"]["ibw-30"]["confirm"] == "bestaetigt" and "reply" not in o["offers"]["ibw-30"]
-                # zweite Bestätigungsmail ohne offenen Vorgang: nichts anklicken
+                # Bestätigungsmail ohne offenen Vorgang des Bots (z.B. von Hand angefragt): Link trotzdem öffnen
                 m2 = EmailMessage()
                 m2["Message-ID"], m2["From"], m2["Subject"] = "<d2@howoge.de>", "noreply@howoge.de", "Bestätigung"
                 m2.set_content(f"Link: {DOI}")
-                assert mail_check.process([m2], o, seen, datetime_now()) == [] and opened == [DOI]
+                assert mail_check.process([m2], o, seen, datetime_now()) == [] and opened == [DOI, DOI]
         finally:
             offers.FILE = old_file
     # Miete über der Einkommensgrenze (750 > 700): melden, aber nicht anfragen
@@ -900,10 +900,39 @@ def test_howoge_real_confirmation_mail():
         notes = mail_check.process([mail("<b@howoge.de>", with_link=False)], st, set(), now)
         assert len(notes) == 1 and "selbst anklicken" in notes[0] and "EINLADUNG" not in notes[0], notes
         assert st["offers"]["ibw-1"]["confirm"] == "offen" and len(opened) == 1
-        # nach 24 Stunden ist der Link abgelaufen: nichts mehr anklicken
+        # nach 24 Stunden ist die alte Anfrage abgelaufen: eine neue Mail gehört nicht mehr zu ihr
         st = store("2026-10-15T09:42:18Z")
         assert mail_check.process([mail("<c@howoge.de>")], st, set(), now + timedelta(days=2)) == []
-        assert st["offers"]["ibw-1"]["confirm"] == "abgelaufen" and len(opened) == 1
+        assert st["offers"]["ibw-1"]["confirm"] == "abgelaufen" and st["offers"]["ibw-1"]["requested"] == "unklar"
+
+
+def test_mail_check_only_every_10_minutes():
+    """Postfach nur alle 10 Minuten öffnen, außer eine HOWOGE-Bestätigung wartet."""
+    import mail_check
+    from datetime import datetime, timedelta
+    old_files = (offers.FILE, wbm_bot.STATS_FILE, mail_check.SEEN_FILE)
+    with tempfile.TemporaryDirectory() as td:
+        offers.FILE = Path(td) / "docs" / "offers.json"
+        wbm_bot.STATS_FILE, mail_check.SEEN_FILE = Path(td) / "stats.json", Path(td) / "mail_seen.json"
+        try:
+            env = {"MAIL_USER": "u", "MAIL_APP_PASSWORD": "p"}
+            with mock.patch.dict(os.environ, env), mock.patch("mail_check.fetch_messages", return_value=[]) as fetch:
+                mail_check.main()
+                mail_check.main()  # gleich danach: übersprungen
+                assert fetch.call_count == 1
+                stats = json.loads(wbm_bot.STATS_FILE.read_text())
+                earlier = datetime.now(wbm_bot.TZ) - timedelta(minutes=11)
+                stats["mail_checked_at"] = offers.iso(earlier)
+                wbm_bot.STATS_FILE.write_text(json.dumps(stats))
+                mail_check.main()  # 11 Minuten später: wieder
+                assert fetch.call_count == 2
+                store = offers.load()
+                store["offers"]["ibw-1"] = {"confirm": "offen"}
+                offers.save(store, datetime.now(wbm_bot.TZ))
+                mail_check.main()  # Bestätigung offen: jedes Mal
+                assert fetch.call_count == 3
+        finally:
+            offers.FILE, wbm_bot.STATS_FILE, mail_check.SEEN_FILE = old_files
 
 
 def datetime_now():

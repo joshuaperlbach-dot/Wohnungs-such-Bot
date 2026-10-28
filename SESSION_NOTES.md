@@ -25,6 +25,10 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - `.github/workflows/wbm.yml`: GitHub Actions, Cron alle 10 Min (`*/10 * * * *`), manuell startbar.
   Führt erst `wbm_bot.py`, dann `ibw_bot.py` aus. Committet `seen.json`, `seen_ibw.json` und `stats.json` zurück ins Repo.
 - `seen.json`: bereits gemeldete/angefragte Angebote (verhindert Doppelanfragen).
+- Seit 28.10.2026: Checkout immer von `main` (wartende Läufe holten sonst einen alten Stand und scheiterten beim
+  Speichern an Konflikten in `offers.json`); Speichern mit `pull --rebase -X theirs` und bis zu 3 Versuchen.
+  `mail_check.py` öffnet das Postfach nur alle 10 Minuten (`mail_checked_at` in `stats.json`), außer eine
+  HOWOGE-Bestätigung ist offen; IMAP-Timeout 30 s. Bestätigungslinks werden auch bei Handanfragen geöffnet.
 - `stats.json`: Tageszähler (gescannte Angebote, gesendete Anfragen, Tag des letzten Berichts).
 
 ## Konfiguration (GitHub, nicht im Code)
