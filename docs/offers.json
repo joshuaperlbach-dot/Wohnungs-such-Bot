@@ -1320,28 +1320,10 @@
    "online_since": "2026-10-28T12:57:05Z"
   }
  },
- "updated": "2026-10-28T14:50:55Z",
+ "updated": "2026-10-28T16:08:26Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-13T18:40:33Z",
-   "kind": "antwort",
-   "matched": false,
-   "chars": 827
-  },
-  {
-   "at": "2026-10-13T18:40:33Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 1008
-  },
-  {
-   "at": "2026-10-15T09:44:24Z",
-   "kind": "einladung",
-   "matched": false,
-   "chars": 3603
-  },
   {
    "at": "2026-10-22T10:04:29Z",
    "kind": "bestaetigung",
@@ -1353,7 +1335,55 @@
    "kind": "absage",
    "matched": true,
    "chars": 3845
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "eingang",
+   "matched": false,
+   "chars": 2725
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "formular",
+   "matched": false,
+   "chars": 2753
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "absage",
+   "matched": false,
+   "chars": 2295
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "eingang",
+   "matched": false,
+   "chars": 2378
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "eingang",
+   "matched": false,
+   "chars": 2909
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "eingang",
+   "matched": false,
+   "chars": 2927
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "eingang",
+   "matched": false,
+   "chars": 2373
+  },
+  {
+   "at": "2026-10-28T14:55:53Z",
+   "kind": "absage",
+   "matched": false,
+   "chars": 2427
   }
  ],
- "last_auto": "2026-10-28T14:50:55Z"
+ "last_auto": "2026-10-28T16:08:26Z"
 }
