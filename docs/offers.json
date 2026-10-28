@@ -239,77 +239,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23429": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F0471%2F00207",
-   "title": "Helle Dachgeschosswohnung mit Terrasse",
-   "address": "Ortolfstraße 58, 12524 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793099407-sdc06W0yyG.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 755.15,
-   "cold": 612.15,
-   "size": 40.81,
-   "levels": 3,
-   "year": 2019,
-   "stars": 2,
-   "why": "40.81 m², ~13.3 km zur Arbeit (Luftlinie), Kiez wenig los (0 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Baujahr 2019",
-   "points": 52,
-   "parts": {
-    "Kosten": [
-     19.6,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.7,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-27T11:10:07Z"
-  },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs160-220-1-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
    "company": "wbm",
@@ -1182,7 +1111,7 @@
    "online_since": "2026-10-28T10:41:05Z"
   }
  },
- "updated": "2026-10-28T11:08:25Z",
+ "updated": "2026-10-28T11:12:27Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1217,5 +1146,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-28T11:08:25Z"
+ "last_auto": "2026-10-28T11:12:27Z"
 }
