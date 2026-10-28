@@ -239,78 +239,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23428": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20767-127.html?t=ibw",
-   "title": "Zuhause-Gefühl ab Tag 1",
-   "address": "Hauptstraße 49A, 10317 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793098506-R55blhrTPa.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 700.7,
-   "cold": 483.7,
-   "size": 44.15,
-   "floor": 3,
-   "levels": 3,
-   "year": 1938,
-   "stars": 3,
-   "why": "44.15 m², ~5.0 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 3. Etage, Baujahr 1938",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     5.0,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     2.6,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-10-27T10:55:06Z"
-  },
   "ibw-23429": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1254,7 +1182,7 @@
    "online_since": "2026-10-28T10:41:05Z"
   }
  },
- "updated": "2026-10-28T10:54:22Z",
+ "updated": "2026-10-28T10:56:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1289,5 +1217,5 @@
    "chars": 3845
   }
  ],
- "last_auto": "2026-10-28T10:54:22Z"
+ "last_auto": "2026-10-28T10:56:24Z"
 }
