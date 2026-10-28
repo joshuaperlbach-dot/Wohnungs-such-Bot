@@ -90,7 +90,9 @@
    "address": "Rupprechtstraße 27, 10317 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1792057326-L1g58udi2i.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1792057326-L1g58udi2i.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 747.25,
@@ -155,7 +157,8 @@
    "online_since": "2026-10-15T09:42:06Z",
    "requested": "unklar",
    "confirm": "abgelaufen",
-   "requested_at": "2026-10-15T09:42:18Z"
+   "requested_at": "2026-10-15T09:42:18Z",
+   "photos_checked": true
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -247,7 +250,9 @@
    "address": "Selchowstraße 17A, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124070-X3qWeFNAjT.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124070-X3qWeFNAjT.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 638.7,
@@ -309,7 +314,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:01:10Z"
+   "online_since": "2026-10-27T18:01:10Z",
+   "photos_checked": true
   },
   "ibw-23463": {
    "source": "ibw",
@@ -319,7 +325,9 @@
    "address": "Selchowstraße 17A, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124369-bNg4Llrgv1.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124369-bNg4Llrgv1.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -381,7 +389,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:06:09Z"
+   "online_since": "2026-10-27T18:06:09Z",
+   "photos_checked": true
   },
   "ibw-23464": {
    "source": "ibw",
@@ -391,7 +400,9 @@
    "address": "Selchowstraße 17B, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124724-UbS2ix0lgh.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124724-UbS2ix0lgh.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -453,7 +464,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:12:04Z"
+   "online_since": "2026-10-27T18:12:04Z",
+   "photos_checked": true
   },
   "ibw-23465": {
    "source": "ibw",
@@ -463,7 +475,9 @@
    "address": "Selchowstraße 17B, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793124784-tMcNi7OZNs.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793124784-tMcNi7OZNs.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -525,7 +539,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:13:04Z"
+   "online_since": "2026-10-27T18:13:04Z",
+   "photos_checked": true
   },
   "ibw-23466": {
    "source": "ibw",
@@ -535,7 +550,9 @@
    "address": "Selchowstraße 17C, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793125026-otjr2IwfOA.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793125026-otjr2IwfOA.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 679.47,
@@ -597,7 +614,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:17:06Z"
+   "online_since": "2026-10-27T18:17:06Z",
+   "photos_checked": true
   },
   "ibw-23468": {
    "source": "ibw",
@@ -607,7 +625,9 @@
    "address": "Stienitzseestraße 31, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793126828-ugq3IvaZLi.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793126828-ugq3IvaZLi.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 610.3,
@@ -669,7 +689,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T18:47:08Z"
+   "online_since": "2026-10-27T18:47:08Z",
+   "photos_checked": true
   },
   "ibw-23470": {
    "source": "ibw",
@@ -679,7 +700,9 @@
    "address": "Stienitzseestraße 35, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793128029-j7M9YZisJS.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793128029-j7M9YZisJS.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 440.67,
@@ -741,7 +764,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T19:07:09Z"
+   "online_since": "2026-10-27T19:07:09Z",
+   "photos_checked": true
   },
   "ibw-23471": {
    "source": "ibw",
@@ -751,7 +775,9 @@
    "address": "Stienitzseestraße 37, 12489 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793128686-KYQNCHCDIg.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793128686-KYQNCHCDIg.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/404/HOWOGE-Wohnungssuche-teaser.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/d/csm_HOWOGE-Wohnungssuche-teaser_9d5fcad7dc.webp"
    ],
    "rooms": 2,
    "price": 648.01,
@@ -813,7 +839,8 @@
      5
     ]
    },
-   "online_since": "2026-10-27T19:18:06Z"
+   "online_since": "2026-10-27T19:18:06Z",
+   "photos_checked": true
   },
   "ibw-23475": {
    "source": "ibw",
@@ -823,7 +850,27 @@
    "address": "Mühlweg 16, 12587 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793173866-wpv6KuxsFT.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793173866-wpv6KuxsFT.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_3fe92ad6d4.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_7e24404270.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_9390031508.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_a17f9e0b10.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_592ddc507c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_21b338e8af.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_3b2c7fe9f2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_3d4c3c4cee.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_300c2e3b25.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_7d07a401eb.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_88c7d5b79a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_dae38712b1.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_cb5a656eb1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_91bea1bf4b.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a_d2fd76fb8b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/4/csm_5723-degewo_467a8fe1-ca1f-44c8-b8be-eda29e5fdb01_e87bc27f9a.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_467a8fe1-ca1f-44c8-b8be-eda29e5fdb01.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/4/csm_5723-degewo_467a8fe1-ca1f-44c8-b8be-eda29e5fdb01_3b8cadcbb6.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/4/csm_5723-degewo_467a8fe1-ca1f-44c8-b8be-eda29e5fdb01_0ab214da7e.jpg"
    ],
    "rooms": 2,
    "price": 689.64,
@@ -885,7 +932,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T07:51:06Z"
+   "online_since": "2026-10-28T07:51:06Z",
+   "photos_checked": true
   },
   "ibw-23484": {
    "source": "ibw",
@@ -1320,7 +1368,7 @@
    "online_since": "2026-10-28T12:57:05Z"
   }
  },
- "updated": "2026-10-28T16:26:23Z",
+ "updated": "2026-10-28T16:30:47Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1385,5 +1433,5 @@
    "chars": 2427
   }
  ],
- "last_auto": "2026-10-28T16:26:23Z"
+ "last_auto": "2026-10-28T16:30:47Z"
 }
