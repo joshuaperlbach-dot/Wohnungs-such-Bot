@@ -913,7 +913,8 @@
    "address": "An den Buckower Feldern 16, 12349 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793183644-ki4tWUN6e8.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793183644-ki4tWUN6e8.webp?q=80&w=900&fm=jpg",
+    "https://www.stadtundland.de/images/og_image.jpg"
    ],
    "rooms": 1,
    "price": 699.33,
@@ -975,7 +976,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T10:34:04Z"
+   "online_since": "2026-10-28T10:34:04Z",
+   "photos_checked": 2
   },
   "ibw-23488": {
    "source": "ibw",
@@ -985,7 +987,8 @@
    "address": "Maßholderweg 11, 12524 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793184065-kMsmJiNDqS.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793184065-kMsmJiNDqS.webp?q=80&w=900&fm=jpg",
+    "https://www.stadtundland.de/images/og_image.jpg"
    ],
    "rooms": 2,
    "price": 865.7,
@@ -1047,7 +1050,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T10:41:05Z"
+   "online_since": "2026-10-28T10:41:05Z",
+   "photos_checked": 2
   },
   "ibw-23493": {
    "source": "ibw",
@@ -1057,7 +1061,19 @@
    "address": "Quarzweg 115, 12349 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793187906-1CX5Zw0RdD.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793187906-1CX5Zw0RdD.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2026/09/42-47116379_flyout.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2026/08/mwm_flyout.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2026/09/veranstaltungen_flyout.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_import_2019-07-02_01_0100-01707-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_import_2019-07-02_01_0100-01707-stadtkarte.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_90075a34-25f8-4163-959e-559b9f1b1b8f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_d6b92aad-da65-4fe1-9499-9a1695819516.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_01cda4cd-6607-443b-b974-75b71a835a3f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_2e90d2b0-a0ec-4c2a-aab2-7bd53c157a68.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_b286a389-bd92-44cd-bc6d-f2b16a4244f1.jpg"
    ],
    "rooms": 2,
    "price": 886.24,
@@ -1119,7 +1135,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T11:45:06Z"
+   "online_since": "2026-10-28T11:45:06Z",
+   "photos_checked": 2
   },
   "ibw-23495": {
    "source": "ibw",
@@ -1129,7 +1146,14 @@
    "address": "Am Eichenquast 52, 12353 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793188566-t4xvb9eWza.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793188566-t4xvb9eWza.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2026/09/42-47116379_flyout.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2026/08/mwm_flyout.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2026/09/veranstaltungen_flyout.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-77702-0107-1008/gewobag_20302f41-a5cc-4b0a-b83e-f2324f2298f2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-77702-0107-1008/gewobag_7bd5071a-1a62-48ae-bb79-e51ce8252cfa.jpg"
    ],
    "rooms": 2,
    "price": 866.75,
@@ -1191,7 +1215,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T11:56:06Z"
+   "online_since": "2026-10-28T11:56:06Z",
+   "photos_checked": 2
   },
   "ibw-23496": {
    "source": "ibw",
@@ -1263,7 +1288,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T12:18:07Z"
+   "online_since": "2026-10-28T12:18:07Z",
+   "photos_checked": 2
   },
   "ibw-23503": {
    "source": "ibw",
@@ -1411,7 +1437,7 @@
    "online_since": "2026-10-28T16:32:06Z"
   }
  },
- "updated": "2026-10-28T16:34:22Z",
+ "updated": "2026-10-28T16:36:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1476,5 +1502,5 @@
    "chars": 2427
   }
  ],
- "last_auto": "2026-10-28T16:34:22Z"
+ "last_auto": "2026-10-28T16:36:23Z"
 }
