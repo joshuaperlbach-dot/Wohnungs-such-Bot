@@ -1,8 +1,6 @@
 {
- "day": "2026-10-28",
+ "day": "2026-10-29",
  "scanned": [
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-friedrichshain-mit-wbs-160-180-220-oder-entsprechendes-einkommen/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-friedrichshain/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-spandau-1/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/abendsonne-inklusive-dachgeschosswohnung-mit-grosszuegiger-westterrasse-2-zimmer-wohnung-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/ankommen-und-geniessen-3-zimmer-im-dachgeschoss-mit-havelblick-3-zimmer-wohnung-in-spandau/",
@@ -12,13 +10,11 @@
   "https://www.wbm.de/wohnungen-berlin/angebote/details/licht-luft-und-lebensqualitaet-4-zimmer-im-dachgeschoss-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/lichtdurchflutetes-dachgeschoss-mit-traumhaftem-blick-auf-die-havel-in-spandau-3-zimmer-wohnung/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/top-neubau-2-zimmer-wohnung-mit-balkon-nahe-sportforum/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/wbs-140-mit-besonderem-wohnbedarf-2-zimmer-wohnung-mit-terrasse-in-lichtenberg/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/wbs-160-180-220-wohnkomfort-pur-lichtdurchflutete-3-zimmer-mit-balkon/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/wohnen-mit-wohlfuehlfaktor-in-einer-3-zimmer-wohnung-in-spandau/"
  ],
  "sent": 0,
  "unclear": 0,
  "summary_day": "2026-10-28",
- "alert_day_mail": "2026-10-28",
- "mail_checked_at": "2026-10-28T22:56:23Z"
+ "mail_checked_at": "2026-10-28T23:00:58Z"
 }
