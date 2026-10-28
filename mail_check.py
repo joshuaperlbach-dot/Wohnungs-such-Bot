@@ -40,7 +40,6 @@ LOOK_BACK = timedelta(days=14)
 # Anmelden). Wartet eine HOWOGE-Bestätigung, wird bei jedem Lauf nachgesehen.
 CHECK_EVERY = timedelta(minutes=10)
 SEEN_FILE = Path(__file__).with_name("mail_seen.json")
-MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
 
 # Eingangsbestätigung nach einer Anfrage über das Formular (Gewobag, Stadt und Land, ...)
 RECEIPT = r"Formularbestätigung|für das Ausfüllen des Formulars"
@@ -221,22 +220,37 @@ def process(messages, store, seen, now):
     return notes
 
 
-def fetch_messages(user, password, now):
-    """Mails der bekannten Absender aus den letzten Tagen holen (nur lesend)."""
-    since = now - LOOK_BACK
-    since = f"{since.day:02d}-{MONTHS[since.month - 1]}-{since.year}"
+MAX_NEW = 30  # höchstens so viele neue Mails pro Lauf ganz laden, der Rest beim nächsten Mal
+
+
+def fetch_messages(user, password, now, seen=()):
+    """Neue Mails der bekannten Absender aus den letzten Tagen holen (nur lesend).
+    Gmail ist hier langsam: deshalb nur EINE Suche (Gmail-Suchsyntax über X-GM-RAW) und von
+    bereits bekannten Mails nur die Kopfzeilen, ganz geladen werden nur neue."""
+    days = LOOK_BACK.days
+    query = f'from:({" OR ".join(SENDERS)}) -from:newsletter newer_than:{days}d'
     box = imaplib.IMAP4_SSL(HOST, timeout=30)
     try:
         box.login(user, password)
         box.select("INBOX", readonly=True)
+        _, data = box.search(None, "X-GM-RAW", f'"{query}"')
+        nums = data[0].split()
+        if not nums:
+            return []
+        # Kopfzeilen aller Treffer in einem Rutsch
+        _, heads = box.fetch(b",".join(nums), "(BODY.PEEK[HEADER.FIELDS (MESSAGE-ID DATE SUBJECT FROM)])")
+        new = []
+        for item in heads:
+            if not isinstance(item, tuple):
+                continue
+            num = item[0].split()[0]
+            head = email.message_from_bytes(item[1], policy=email.policy.default)
+            if mail_id(head) not in seen and "newsletter" not in str(head.get("From", "")).lower():
+                new.append(num)
         messages = []
-        for sender in SENDERS:
-            _, data = box.search(None, "FROM", f'"{sender}"', "NOT", "FROM", '"newsletter"', "SINCE", since)
-            for num in data[0].split():
-                _, parts = box.fetch(num, "(BODY.PEEK[])")
-                msg = email.message_from_bytes(parts[0][1], policy=email.policy.default)
-                if "newsletter" not in str(msg.get("From", "")).lower():
-                    messages.append(msg)
+        for num in new[:MAX_NEW]:
+            _, parts = box.fetch(num, "(BODY.PEEK[])")
+            messages.append(email.message_from_bytes(parts[0][1], policy=email.policy.default))
         return messages
     finally:
         try:
@@ -258,17 +272,18 @@ def main():
     if last and now - last < CHECK_EVERY and not waiting:
         print("[Mail] zuletzt vor weniger als 10 Minuten geprüft, übersprungen.")
         return
+    # Schon VOR dem Abruf merken: hängt das Postfach, kostet das höchstens alle 10 Minuten Zeit
+    stats["mail_checked_at"] = offers.iso(now)
+    wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
+    seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
+    known = len(seen)
     try:
-        messages = fetch_messages(user, password.replace(" ", ""), now)
+        messages = fetch_messages(user, password.replace(" ", ""), now, seen)
     except Exception as e:  # falsches Passwort, Netz weg: melden, aber den Lauf nicht abbrechen
         wbm_bot.alert(stats, f"Mail-Abruf klappt nicht ({type(e).__name__}). App-Passwort prüfen.",
                       key="alert_day_mail")
         wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
         return
-    stats["mail_checked_at"] = offers.iso(now)
-    wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
-    seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
-    known = len(seen)
     notes = process(messages, store, seen, now)
     if len(seen) > known:  # es gab neue Mails
         offers.save(store, now)

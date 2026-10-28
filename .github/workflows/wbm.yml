@@ -50,6 +50,7 @@ jobs:
         run: python ibw_bot.py
       - name: Antworten per Mail auswerten
         if: always()
+        continue-on-error: true   # hängt das Postfach, soll der Lauf trotzdem als gelungen gelten
         timeout-minutes: 2
         env:
           MAIL_USER: ${{ secrets.MAIL_USER }}
