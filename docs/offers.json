@@ -1286,7 +1286,14 @@
    "address": "Theodor-Loos-Weg 17, 12353 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793192225-sYGF3aoYz9.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793192225-sYGF3aoYz9.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_194de54b-bbc4-45f9-aa17-6a6a2871f4a2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_38915f78-8ac3-418b-be26-2beea8f9e812.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_f4650ada-78cb-4c0b-b791-85bb2c8633b3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_b1c11cde-4ee1-4dba-be8f-17eca6fcf44b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_b6ac3528-9656-4cfa-97b6-f467bb185dfa.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_4af82eb7-d242-4856-a826-bc34c35b3f27.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/4/csm_5731-degewo_d02e011e-cfe0-4201-87af-65062e857ae9_1d5aded69f.webp"
    ],
    "rooms": 1,
    "price": 575.37,
@@ -1348,7 +1355,8 @@
      5
     ]
    },
-   "online_since": "2026-10-28T12:57:05Z"
+   "online_since": "2026-10-28T12:57:05Z",
+   "photos_checked": 3
   },
   "ibw-23516": {
    "source": "ibw",
@@ -1358,9 +1366,20 @@
    "address": "Pablo-Neruda-Straße 25, 12559 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793205126-kWFGXs9F8R.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793205126-kWFGXs9F8R.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_e2b980c1-2215-4508-a56f-a63ad288656a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_8ea2ad47-f4ce-45b3-8f00-fd39a7ad92df.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_72ddc3f8-4674-42f2-908c-22f43abaef28.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_be1771c9-7047-46bb-8280-2bcb767db261.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_71834d2c-5f50-437d-b2ec-4359ec4334de.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_77d54485-3bfc-477f-99f6-189dc46f5fc1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_3438c182-189d-41a7-a9d2-b7a90af30c0d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_e36d2482-6a5d-45b8-9f54-83820f1679f0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_b973ed39-74be-42bf-9e38-92cbd9847e8b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_b3904f8d-d9cc-4946-9682-735c62a1c309.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/e/csm_5747-degewo_1246f616-c667-4abb-9148-ced0b4124f74_ea41c8caab.webp"
    ],
-   "photos_checked": 2,
+   "photos_checked": 3,
    "rooms": 2,
    "price": 685.9,
    "cold": 527.43,
@@ -1505,7 +1524,7 @@
    "online_since": "2026-10-28T16:40:06Z"
   }
  },
- "updated": "2026-10-28T16:42:22Z",
+ "updated": "2026-10-28T16:44:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1570,5 +1589,5 @@
    "chars": 2427
   }
  ],
- "last_auto": "2026-10-28T16:42:22Z"
+ "last_auto": "2026-10-28T16:44:23Z"
 }
