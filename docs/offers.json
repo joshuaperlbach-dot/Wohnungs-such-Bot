@@ -1522,9 +1522,88 @@
     ]
    },
    "online_since": "2026-10-28T16:40:06Z"
+  },
+  "ibw-23521": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-20901-0019-0303.html",
+   "title": "Süße kleine Erstwohnung - Renovierung erforderlich - Wir kommen Ihnen entgegen!",
+   "address": "Kilianistraße 21, 12459 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793208965-CeMaZskUL6.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5755-degewo_d20423b9-64d5-44dd-a32e-9d4236df57f6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5755-degewo_4e8cf2c5-4cfe-4c22-954c-cb47a353582b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5755-degewo_9f18929b-751c-4055-bff2-6a22ce24327d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5755-degewo_93e52e55-e1f4-424f-935b-f33eb4112e36.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5755-degewo_a5262bc7-ac2f-48ba-8006-8dd4c7f7d7d7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/5/csm_5755-degewo_da30f6e9-a07d-42b3-938e-8c3fca47d7de_158ae79530.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 558.63,
+   "cold": 405.76,
+   "size": 39.2,
+   "floor": 3,
+   "levels": 4,
+   "year": 1955,
+   "stars": 2,
+   "why": "39.2 m², ~8.6 km zur Arbeit (Luftlinie), Kiez mittel (83 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1955",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.4,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.2,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-28T17:36:05Z"
   }
  },
- "updated": "2026-10-28T17:34:23Z",
+ "updated": "2026-10-28T17:36:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1589,5 +1668,5 @@
    "chars": 2427
   }
  ],
- "last_auto": "2026-10-28T17:34:23Z"
+ "last_auto": "2026-10-28T17:36:25Z"
 }
