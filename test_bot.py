@@ -650,7 +650,8 @@ zu berücksichtigen. Die Auswahl der möglichen Teilnehmer erfolgte auf Basis de
             mail_check.main()
             fetch.assert_not_called()
         with mock.patch.dict(os.environ, {"MAIL_USER": "x@gmail.com", "MAIL_APP_PASSWORD": "abcd efgh"}), \
-                mock.patch("wbm_bot.notify", side_effect=msgs.append):
+                mock.patch("wbm_bot.notify", side_effect=msgs.append), \
+                mock.patch("mail_check.CHECK_EVERY", __import__("datetime").timedelta(0)):
             with mock.patch("mail_check.fetch_messages", side_effect=OSError("login")) as fetch:
                 mail_check.main()
                 mail_check.main()
@@ -973,6 +974,29 @@ def test_mail_other_companies():
     assert o["t"]["confirm"] == "formular"  # alte Mail: trotzdem eingetragen ...
     assert len(notes) == 1 and "zweites Formular" in notes[0] and "Fritz-Reuter-Allee 11" in notes[0], notes  # ... aber kein Push
     assert "vermietung.degewo.de/1/2" in notes[0]
+
+
+def test_fetch_messages_one_search_and_only_new():
+    """Eine Gmail-Suche, Kopfzeilen für alle, ganze Mail nur für neue."""
+    import mail_check
+    from datetime import datetime, timezone
+    def raw(mid, frm):
+        return f"Message-ID: {mid}\r\nFrom: {frm}\r\nSubject: Test\r\nDate: Wed, 28 Oct 2026 10:00:00 +0000\r\n\r\nText".encode()
+    mails = {b"1": raw("<a@degewo.de>", "do-not-reply@degewo.de"), b"2": raw("<b@wbm.de>", "info@wbm.de"),
+             b"3": raw("<c@newsletter.gewobag.de>", "no-reply@newsletter.gewobag.de")}
+    box = mock.Mock()
+    box.search.return_value = ("OK", [b"1 2 3"])
+    def fetch(nums, what):
+        if "HEADER" in what:
+            return "OK", sum(([(n + b" (BODY[HEADER] {9}", mails[n]), b")"] for n in nums.split(b",")), [])
+        return "OK", [(nums + b" (BODY[] {9}", mails[nums]), b")"]
+    box.fetch.side_effect = fetch
+    known = {mail_check.mail_id(mail_check.email.message_from_bytes(mails[b"2"]))}
+    with mock.patch("mail_check.imaplib.IMAP4_SSL", return_value=box):
+        got = mail_check.fetch_messages("u", "p", datetime(2026, 10, 28, tzinfo=timezone.utc), known)
+    assert [m["Message-ID"] for m in got] == ["<a@degewo.de>"], got  # bekannte und Newsletter nicht geladen
+    assert box.search.call_count == 1 and "X-GM-RAW" in box.search.call_args[0]
+    assert "degewo.de" in box.search.call_args[0][2] and "-from:newsletter" in box.search.call_args[0][2]
 
 
 def datetime_now():
