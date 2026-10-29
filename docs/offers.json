@@ -240,87 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23517": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-63818-0037-0604.html",
-   "title": "Vier Wände für Eine/n",
-   "address": "Müggelschlößchenweg 36, 12559 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793205606-2FK8tmmray.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_0852d990-209d-4e94-ab3c-efd499a0faa9.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_747514ff-d21a-44bf-9597-5bbbf03e98a6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_e0d9072a-0fdf-4913-bcb7-5aa1027da677.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_fdb209c8-b775-45b3-b4c3-d0b45ddac972.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_70de4543-c2fa-4d41-a95c-b1ba09fa91f1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_7b058f28-2877-4428-a113-321dd73b04f1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5748-degewo_fe95a5e4-6a02-4264-9ae8-69860068d277.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/0/csm_5748-degewo_f6054ca5-5dbf-4807-afc6-94607fd9f99b_57516a24e7.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 365.42,
-   "cold": 260.5,
-   "size": 29.31,
-   "floor": 6,
-   "levels": 21,
-   "year": 1982,
-   "stars": 1,
-   "why": "29.31 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 6. Etage, Baujahr 1982, Hochhaus (21 Etagen)",
-   "points": 35,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T16:40:06Z"
-  },
   "ibw-23521": {
    "source": "ibw",
    "company": "degewo",
@@ -862,7 +781,7 @@
    "online_since": "2026-10-29T11:35:06Z"
   }
  },
- "updated": "2026-10-29T16:38:48Z",
+ "updated": "2026-10-29T16:40:40Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -927,5 +846,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T16:38:48Z"
+ "last_auto": "2026-10-29T16:40:40Z"
 }
