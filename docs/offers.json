@@ -1017,9 +1017,89 @@
     ]
    },
    "online_since": "2026-10-28T17:36:05Z"
+  },
+  "ibw-23522": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00667-0434-0604.html",
+   "title": "1 Zimmer in der Gropiusstadt",
+   "address": "Theodor-Loos-Weg 16, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793255707-U0VoZL3kRC.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5768-degewo_c304a9c6-9fac-4789-a69d-619e1ece20f3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5768-degewo_24d7d341-755f-462b-95d9-ae8483ba3821.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5768-degewo_2df43b23-94a9-4002-8d0a-3c0dbfeee6ba.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5768-degewo_06bc66e6-5b3e-4cc4-85ce-44266444d797.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5768-degewo_722d2dc3-b6e0-4c02-a615-bdb66953057c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5768-degewo_42e13880-2a3c-4ba9-b5b5-26bd2892e961.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/1/csm_5768-degewo_e0ec839d-f176-48ac-ae0a-172172135c19_aaea4306b5.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 582.41,
+   "cold": 397.36,
+   "size": 49.35,
+   "floor": 6,
+   "levels": 16,
+   "year": 1968,
+   "stars": 2,
+   "why": "49.35 m², ~10.1 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1968, Hochhaus (16 Etagen)",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     4.1,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T06:35:07Z"
   }
  },
- "updated": "2026-10-29T06:34:22Z",
+ "updated": "2026-10-29T06:36:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1084,5 +1164,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T06:34:22Z"
+ "last_auto": "2026-10-29T06:36:20Z"
 }
