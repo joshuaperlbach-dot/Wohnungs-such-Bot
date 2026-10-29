@@ -240,86 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23503": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00656-0011-0205.html",
-   "title": "1 Zimmer in der Gropiusstadt",
-   "address": "Theodor-Loos-Weg 17, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793192225-sYGF3aoYz9.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_194de54b-bbc4-45f9-aa17-6a6a2871f4a2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_38915f78-8ac3-418b-be26-2beea8f9e812.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_f4650ada-78cb-4c0b-b791-85bb2c8633b3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_b1c11cde-4ee1-4dba-be8f-17eca6fcf44b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_b6ac3528-9656-4cfa-97b6-f467bb185dfa.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5731-degewo_4af82eb7-d242-4856-a826-bc34c35b3f27.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/4/csm_5731-degewo_d02e011e-cfe0-4201-87af-65062e857ae9_1d5aded69f.webp"
-   ],
-   "rooms": 1,
-   "price": 575.37,
-   "cold": 429.06,
-   "size": 42.91,
-   "floor": 2,
-   "levels": 8,
-   "year": 1969,
-   "stars": 2,
-   "why": "42.91 m², ~10.3 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1969",
-   "points": 49,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     2.3,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T12:57:05Z",
-   "photos_checked": 3
-  },
   "ibw-23516": {
    "source": "ibw",
    "company": "degewo",
@@ -1026,7 +946,7 @@
    "online_since": "2026-10-29T11:35:06Z"
   }
  },
- "updated": "2026-10-29T12:56:25Z",
+ "updated": "2026-10-29T12:58:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1091,5 +1011,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T12:56:25Z"
+ "last_auto": "2026-10-29T12:58:25Z"
 }
