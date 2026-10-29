@@ -1,6 +1,7 @@
 {
  "day": "2026-10-29",
  "scanned": [
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-spandau-1/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/3-zimmer-wohnung-in-mitte-mit-wbs-160-220/",
@@ -12,6 +13,7 @@
   "https://www.wbm.de/wohnungen-berlin/angebote/details/licht-luft-und-lebensqualitaet-4-zimmer-im-dachgeschoss-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/lichtdurchflutete-2-zimmer-wohnung-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/lichtdurchflutetes-dachgeschoss-mit-traumhaftem-blick-auf-die-havel-in-spandau-3-zimmer-wohnung/",
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs-160-220-1-zimmer-wohnung-in-friedrichshain-1/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs-160-220-1-zimmer-wohnung-in-friedrichshain/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/top-neubau-2-zimmer-wohnung-mit-balkon-nahe-sportforum/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/wbs-160-180-220-wohnkomfort-pur-lichtdurchflutete-3-zimmer-mit-balkon/",
@@ -20,7 +22,7 @@
  "sent": 0,
  "unclear": 0,
  "summary_day": "2026-10-28",
- "mail_checked_at": "2026-10-29T14:38:24Z",
+ "mail_checked_at": "2026-10-29T14:48:25Z",
  "alert_day_ibw": "2026-10-29",
  "alert_day_mail": "2026-10-29"
 }
