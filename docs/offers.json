@@ -1173,9 +1173,82 @@
     ]
    },
    "online_since": "2026-10-29T09:05:07Z"
+  },
+  "ibw-23540": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0170%2F00078",
+   "title": "Oderstr. 33, 3.G",
+   "address": "Oderstraße 33, 12049 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793265487-VaVjx3Ve1A.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 844.46,
+   "cold": 605.46,
+   "size": 59.71,
+   "floor": 3,
+   "levels": 5,
+   "year": 1926,
+   "stars": 4,
+   "why": "59.71 m², ~3.5 km zur Arbeit (Luftlinie), Kiez mittel (70 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 3. Etage, Baujahr 1926",
+   "points": 70,
+   "parts": {
+    "Kosten": [
+     12.4,
+     20
+    ],
+    "Kiez": [
+     9.7,
+     16
+    ],
+    "Lage": [
+     7.6,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     0.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T09:18:07Z"
   }
  },
- "updated": "2026-10-29T09:16:21Z",
+ "updated": "2026-10-29T09:18:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1240,5 +1313,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T09:16:21Z"
+ "last_auto": "2026-10-29T09:18:22Z"
 }
