@@ -240,85 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23493": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01707-0101-0008",
-   "title": "Helle Wohnung  - handwerkliches Geschick von Vorteil",
-   "address": "Quarzweg 115, 12349 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793187906-1CX5Zw0RdD.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_import_2019-07-02_01_0100-01707-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_90075a34-25f8-4163-959e-559b9f1b1b8f.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_d6b92aad-da65-4fe1-9499-9a1695819516.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_01cda4cd-6607-443b-b974-75b71a835a3f.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_2e90d2b0-a0ec-4c2a-aab2-7bd53c157a68.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_b286a389-bd92-44cd-bc6d-f2b16a4244f1.jpg"
-   ],
-   "rooms": 2,
-   "price": 886.24,
-   "cold": 581.24,
-   "size": 62.98,
-   "floor": 2,
-   "levels": 4,
-   "year": 1975,
-   "stars": 2,
-   "why": "62.98 m², ~9.5 km zur Arbeit (Luftlinie), Kiez wenig los (4 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1975",
-   "points": 44,
-   "parts": {
-    "Kosten": [
-     7.7,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     8.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T11:45:06Z",
-   "photos_checked": 3
-  },
   "ibw-23495": {
    "source": "ibw",
    "company": "gewobag",
@@ -1253,7 +1174,7 @@
    "online_since": "2026-10-29T11:35:06Z"
   }
  },
- "updated": "2026-10-29T11:44:20Z",
+ "updated": "2026-10-29T11:46:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1318,5 +1239,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T11:44:20Z"
+ "last_auto": "2026-10-29T11:46:22Z"
 }
