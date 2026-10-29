@@ -240,87 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23475": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-71903-0003-0103.html",
-   "title": "Herzlich Willkommen!",
-   "address": "Mühlweg 16, 12587 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793173866-wpv6KuxsFT.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_a6e8ca19-f6d5-4c4f-9868-a8867c42857a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_467a8fe1-ca1f-44c8-b8be-eda29e5fdb01.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_02988c56-b989-46f9-b2e9-86a0198ca12f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_3f6f48ba-fae3-493b-b4ef-c6649038e022.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_0d29ff8f-8132-47b3-a848-2989e15d0cc3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_c52facf3-84b7-41e9-9e99-6665518a1f24.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5723-degewo_c27a52dd-1fa4-48e0-8408-7f2bd680feca.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/1/csm_5723-degewo_91bd3301-748f-4c9b-8bbc-cb8bcea0bcfb_32f2764ac8.webp"
-   ],
-   "rooms": 2,
-   "price": 689.64,
-   "cold": 476.95,
-   "size": 54.54,
-   "floor": 1,
-   "levels": 3,
-   "year": 1957,
-   "stars": 3,
-   "why": "54.54 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (2 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1957",
-   "points": 58,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T07:51:06Z",
-   "photos_checked": 3
-  },
   "ibw-23484": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1099,7 +1018,7 @@
    "online_since": "2026-10-29T06:35:07Z"
   }
  },
- "updated": "2026-10-29T07:50:30Z",
+ "updated": "2026-10-29T07:52:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1164,5 +1083,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T07:50:30Z"
+ "last_auto": "2026-10-29T07:52:20Z"
 }
