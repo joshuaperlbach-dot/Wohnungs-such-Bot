@@ -857,9 +857,91 @@
     ]
    },
    "online_since": "2026-10-29T17:06:06Z"
+  },
+  "ibw-23578": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14576-507.html?t=ibw",
+   "title": "Möbliertes Apartment für Studenten, Azubis oder Berufseinsteiger! ",
+   "address": "Karl-Ziegler-Straße 5, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793293810-zyO4Ckva3Y.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/b/2/csm_49cf741301b74226d9d4d60c5860c6d2_a735a462d5.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/e/csm_c8f01d2b3e406d094b74727a0c3ff571_9de0cede53.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/e/csm_bbb4a4a7a0678aa671e4f7a63b82411c_0b9e650e1d.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/b/csm_699719e0fad264c2af5391fad6bc2676_20d06d640a.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/8/csm_2bd5eb9d1cd0191ec888620b549499bc_9eecc12d5f.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/1/csm_82fc2cd9045d621789f53ed5e91f4c5f_dc02c8c90c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/6/csm_9f7e63010818211268f226ade92bd21c_12d73d8ddc.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 520.0,
+   "cold": 370.0,
+   "size": 24.0,
+   "floor": 1,
+   "levels": 5,
+   "year": 2022,
+   "stars": 2,
+   "why": "24 m², ~10.9 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 1. Etage, Baujahr 2022",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T17:10:10Z"
   }
  },
- "updated": "2026-10-29T17:08:26Z",
+ "updated": "2026-10-29T17:10:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -924,5 +1006,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T17:08:26Z"
+ "last_auto": "2026-10-29T17:10:32Z"
 }
