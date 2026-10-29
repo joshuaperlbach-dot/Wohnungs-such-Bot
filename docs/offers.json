@@ -240,81 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23495": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-77702-0107-1008",
-   "title": "Moderne Wohnung ohne Balkon und offener Küche",
-   "address": "Am Eichenquast 52, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793188566-t4xvb9eWza.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-77702-0107-1008/gewobag_20302f41-a5cc-4b0a-b83e-f2324f2298f2.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-77702-0107-1008/gewobag_7bd5071a-1a62-48ae-bb79-e51ce8252cfa.jpg"
-   ],
-   "rooms": 2,
-   "price": 866.75,
-   "cold": 681.5,
-   "size": 34.09,
-   "floor": 4,
-   "levels": 4,
-   "year": 1976,
-   "stars": 1,
-   "why": "34.09 m², ~9.8 km zur Arbeit (Luftlinie), Kiez wenig los (2 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1976",
-   "points": 37,
-   "parts": {
-    "Kosten": [
-     10.0,
-     20
-    ],
-    "Kiez": [
-     0.0,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T11:56:06Z",
-   "photos_checked": 3
-  },
   "ibw-23496": {
    "source": "ibw",
    "company": "howoge",
@@ -1174,7 +1099,7 @@
    "online_since": "2026-10-29T11:35:06Z"
   }
  },
- "updated": "2026-10-29T11:54:21Z",
+ "updated": "2026-10-29T11:56:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1239,5 +1164,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T11:54:21Z"
+ "last_auto": "2026-10-29T11:56:23Z"
 }
