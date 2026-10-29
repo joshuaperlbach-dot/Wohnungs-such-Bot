@@ -240,79 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23488": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F0471%2F00068",
-   "title": "Süße 2 Zimmer-Wohnung mit separater Küche und Balkon!",
-   "address": "Maßholderweg 11, 12524 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793184065-kMsmJiNDqS.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 865.7,
-   "cold": 701.7,
-   "size": 46.78,
-   "floor": 1,
-   "levels": 3,
-   "year": 2019,
-   "stars": 2,
-   "why": "46.78 m², ~13.0 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 2019",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     10.1,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T10:41:05Z",
-   "photos_checked": 3
-  },
   "ibw-23493": {
    "source": "ibw",
    "company": "gewobag",
@@ -1248,7 +1175,7 @@
    "online_since": "2026-10-29T10:12:06Z"
   }
  },
- "updated": "2026-10-29T10:40:33Z",
+ "updated": "2026-10-29T10:42:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1313,5 +1240,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T10:40:33Z"
+ "last_auto": "2026-10-29T10:42:21Z"
 }
