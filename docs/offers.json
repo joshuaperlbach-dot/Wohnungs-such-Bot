@@ -240,90 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23516": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-64202-0042-0403.html",
-   "title": "Toller Blick auf den Volkspark Köpenick",
-   "address": "Pablo-Neruda-Straße 25, 12559 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793205126-kWFGXs9F8R.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_e2b980c1-2215-4508-a56f-a63ad288656a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_8ea2ad47-f4ce-45b3-8f00-fd39a7ad92df.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_72ddc3f8-4674-42f2-908c-22f43abaef28.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_be1771c9-7047-46bb-8280-2bcb767db261.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_71834d2c-5f50-437d-b2ec-4359ec4334de.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_77d54485-3bfc-477f-99f6-189dc46f5fc1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_3438c182-189d-41a7-a9d2-b7a90af30c0d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_e36d2482-6a5d-45b8-9f54-83820f1679f0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_b973ed39-74be-42bf-9e38-92cbd9847e8b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5747-degewo_b3904f8d-d9cc-4946-9682-735c62a1c309.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/e/csm_5747-degewo_1246f616-c667-4abb-9148-ced0b4124f74_ea41c8caab.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 685.9,
-   "cold": 527.43,
-   "size": 57.63,
-   "floor": 4,
-   "levels": 10,
-   "year": 1972,
-   "stars": 3,
-   "why": "57.63 m², ~14.1 km zur Arbeit (Luftlinie), Kiez wenig los (20 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1972, Hochhaus (10 Etagen)",
-   "points": 55,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     4.4,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     6.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T16:32:06Z"
-  },
   "ibw-23517": {
    "source": "ibw",
    "company": "degewo",
@@ -946,7 +862,7 @@
    "online_since": "2026-10-29T11:35:06Z"
   }
  },
- "updated": "2026-10-29T16:30:44Z",
+ "updated": "2026-10-29T16:32:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1011,5 +927,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T16:30:44Z"
+ "last_auto": "2026-10-29T16:32:21Z"
 }
