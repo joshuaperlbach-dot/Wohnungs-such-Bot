@@ -1175,9 +1175,88 @@
     ]
    },
    "online_since": "2026-10-29T17:33:05Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/klein-und-kompakt-1-zimmer-wohnung-mit-balkon/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/klein-und-kompakt-1-zimmer-wohnung-mit-balkon/",
+   "title": "Klein und kompakt! 1-Zimmer-Wohnung mit Balkon",
+   "address": "Konrad-Wolf-Strasse 44A, 13055 Berlin",
+   "text": "Diese gemütliche 1-Zimmerwohnung mit ca. 33 m² Wohnfläche überzeugt durch eine angenehme Wohnatmosphäre und eine praktische Raumaufteilung. Der Wohnbereich bietet ausreichend Platz für individuelle Gestaltung und lädt zum Wohlfühlen ein.\r\nDer Balkon erweitert den Wohnraum nach außen und bietet eine schöne Möglichkeit, Zeit im Freien zu verbringen.\r\nDie Wohnung eignet sich ideal für Singles, die ein ruhiges Zuhause mit funktionaler Aufteilung schätzen.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-ed229392aadd5943dd1ef4f5a0f6c539.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-01a3b0717820e7e7e2afb6f7680b8a6d.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-1ee8373d5540189d9ad15a0c044ad0fd.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-be67684c152d71080f5752879a91fc7a.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-58766d7f4edfc68686cc8d917bce94a7.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-2250e71972d1d06127c5d18a39ac2e82.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-6fca565e10d141818337add3925aaa72.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78874-c8e3eb08e2d6a25970a74356cea4149c.jpg"
+   ],
+   "bezirk": "Lichtenberg",
+   "rooms": 1,
+   "price": 829.87,
+   "cold": 679.63,
+   "size": 35.77,
+   "floor": 4,
+   "year": 2026,
+   "stars": 2,
+   "why": "35.77 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (42 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 2026",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     13.6,
+     20
+    ],
+    "Kiez": [
+     7.5,
+     16
+    ],
+    "Lage": [
+     0.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     0.2,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T22:48:19Z"
   }
  },
- "updated": "2026-10-29T22:46:20Z",
+ "updated": "2026-10-29T22:48:44Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1242,5 +1321,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T22:46:20Z"
+ "last_auto": "2026-10-29T22:48:44Z"
 }
