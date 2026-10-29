@@ -1016,9 +1016,82 @@
     ]
    },
    "online_since": "2026-10-29T06:35:07Z"
+  },
+  "ibw-23535": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6471%2F00119",
+   "title": "Otto-Franke-Str. 44, 1.G LI",
+   "address": "Otto-Franke-Straße 44, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793264469-lcidTefGmZ.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 648.94,
+   "cold": 465.94,
+   "size": 53.25,
+   "floor": 1,
+   "levels": 4,
+   "year": 1957,
+   "stars": 2,
+   "why": "53.25 m², ~12.4 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1957",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     0.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.2,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T09:01:09Z"
   }
  },
- "updated": "2026-10-29T09:00:53Z",
+ "updated": "2026-10-29T09:02:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1083,5 +1156,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T09:00:53Z"
+ "last_auto": "2026-10-29T09:02:20Z"
 }
