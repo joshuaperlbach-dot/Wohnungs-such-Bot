@@ -779,9 +779,87 @@
     ]
    },
    "online_since": "2026-10-29T11:35:06Z"
+  },
+  "ibw-23577": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14576-457.html?t=ibw",
+   "title": "Möbliertes Apartment für Studenten, Azubis oder Berufseinsteiger! ",
+   "address": "Karl-Ziegler-Straße 3, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793293566-m630yDq4zQ.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/d/8/csm_81aebcfb227d24890e645ea351d0d6f4_1969c43c97.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/1/csm_82fc2cd9045d621789f53ed5e91f4c5f_dc02c8c90c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/0/csm_bd21c3a773bf0daad87ed3072938da6a_bf616ccc67.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 520.0,
+   "cold": 370.0,
+   "size": 24.0,
+   "floor": 3,
+   "levels": 5,
+   "year": 2022,
+   "stars": 2,
+   "why": "24 m², ~10.8 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 3. Etage, Baujahr 2022",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T17:06:06Z"
   }
  },
- "updated": "2026-10-29T17:04:21Z",
+ "updated": "2026-10-29T17:06:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -846,5 +924,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T17:04:21Z"
+ "last_auto": "2026-10-29T17:06:23Z"
 }
