@@ -1089,9 +1089,93 @@
     ]
    },
    "online_since": "2026-10-29T09:01:09Z"
+  },
+  "ibw-23537": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00647-0006-0202.html",
+   "title": "1-Zimmerwohnung in der Gropiusstadt",
+   "address": "Theodor-Loos-Weg 26, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793264707-gAyM6F25by.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_9e262c3e-fbdf-4aef-869d-56386cf7e282.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_c7d3b94e-671e-430e-924f-f7c1de7417c6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/d/csm_5772-degewo_7056b821-a64e-4039-b450-f774c24b83e4_665f470268.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/8/csm_5772-degewo_652fb8bf-18d5-4079-81d1-eb6f76031106_78cb2ccbef.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_2adeb642-98a4-404e-91d9-d930aa6a4d81.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_21cc6260-02e1-4a85-8dd8-1725cbdcc96a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_2bde7c27-6f5d-43c5-b8d0-2cce07cd4bab.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_2b4ad622-6777-4c41-89ba-ab1e84fd1119.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_f44487e2-3ba2-4889-a889-c99eada3626e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5772-degewo_de732855-59d5-44c8-9f89-d52aa41e23c2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/7/csm_5772-degewo_571ec6ea-0acb-4bfe-a15d-1c9eb49642da_93997378e0.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 524.02,
+   "cold": 398.46,
+   "size": 38.05,
+   "floor": 2,
+   "levels": 12,
+   "year": 1968,
+   "stars": 2,
+   "why": "38.05 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (23 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1968, Hochhaus (12 Etagen)",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-29T09:05:07Z"
   }
  },
- "updated": "2026-10-29T09:04:21Z",
+ "updated": "2026-10-29T09:06:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1156,5 +1240,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T09:04:21Z"
+ "last_auto": "2026-10-29T09:06:20Z"
 }
