@@ -240,79 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23484": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F5147%2F00020",
-   "title": "1 Zimmer im Erdgeschoss mit kleinem Garten!",
-   "address": "An den Buckower Feldern 16, 12349 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793183644-ki4tWUN6e8.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 1,
-   "price": 699.33,
-   "cold": 573.89,
-   "size": 31.36,
-   "floor": 0,
-   "levels": 4,
-   "year": 2025,
-   "stars": 2,
-   "why": "31.36 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (11 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, EG, Baujahr 2025",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-28T10:34:04Z",
-   "photos_checked": 3
-  },
   "ibw-23488": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1321,7 +1248,7 @@
    "online_since": "2026-10-29T10:12:06Z"
   }
  },
- "updated": "2026-10-29T10:32:22Z",
+ "updated": "2026-10-29T10:34:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1386,5 +1313,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-29T10:32:22Z"
+ "last_auto": "2026-10-29T10:34:21Z"
 }
