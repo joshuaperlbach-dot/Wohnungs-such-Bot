@@ -240,84 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23583": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14576-647.html?t=ibw",
-   "title": "Möbliertes Apartment für Studenten, Azubis oder Berufseinsteiger! ",
-   "address": "Karl-Ziegler-Straße 7, 12489 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793295185-DReKt8mQdK.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/4/1/csm_c8309524cbdea7677a69dc0557a2c896_68d1336e68.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/1/csm_82fc2cd9045d621789f53ed5e91f4c5f_dc02c8c90c.webp",
-    "https://www.howoge.de/fileadmin/_processed_/c/3/csm_f4f4d33c1939525a2465b42932a28211_4d29c1a75a.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 520.0,
-   "cold": 370.0,
-   "size": 24.0,
-   "floor": 3,
-   "levels": 5,
-   "year": 2022,
-   "stars": 2,
-   "why": "24 m², ~10.9 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 3. Etage, Baujahr 2022",
-   "points": 44,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-29T17:33:05Z"
-  },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/klein-und-kompakt-1-zimmer-wohnung-mit-balkon/": {
    "source": "wbm",
    "company": "wbm",
@@ -1040,7 +962,7 @@
    "form_url": "https://vermietung.degewo.de/4608996745936896/4799895123787776/property/application/form/5551849832710144/1736802/4778625361510400"
   }
  },
- "updated": "2026-10-30T17:32:22Z",
+ "updated": "2026-10-30T17:34:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1105,5 +1027,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-10-30T17:32:22Z"
+ "last_auto": "2026-10-30T17:34:22Z"
 }
