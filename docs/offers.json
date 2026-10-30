@@ -1341,9 +1341,99 @@
     ]
    },
    "online_since": "2026-10-30T12:33:06Z"
+  },
+  "ibw-23631": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00202-0059-0401.html",
+   "title": "Mehr Platz als erwartet: Geräumige 1-Zimmer-Wohnung in Berlin-Schmargendorf",
+   "address": "Landecker Straße 5, 14199 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793364547-8dr9WKs9Lb.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_b4cc5aef-ab8f-4320-accf-c749730f73dd.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_35d562d6-2756-4b44-9bb0-3bcfb1fb7fe7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_29037273-95ca-45cc-b7bb-0af450f612dd.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_ce7229e9-3a55-4808-9312-384ba8a295fe.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_314c5459-49e5-4169-a965-2a0de7568447.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_20aebc31-f4bc-4d07-8bac-e2ad455d911c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_53696d63-c14c-442d-a3dc-c575dbb2c770.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_9f7d9ff4-7d85-44f5-a1ad-5ced00b05eb6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_55f0aa57-1261-4f9e-87e7-984de757b52e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_c7fdf242-83c3-4469-96bf-c2ef1617c3b4.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_42db0a20-f283-4899-9096-d41c26cc4e1e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_ecce6640-1c7e-4494-8444-710cf712e17d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_5bcf6a51-10e3-4cab-8866-747931edf779.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_4e9f1fe9-993e-4f39-b024-45be71700c3b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_3a15d46d-3538-47b5-84c1-79652aa9ea7f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_c82876fe-1d1c-4fb3-ba8b-a0cda4b9fc95.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/d/csm_5805-degewo_93e846f1-43b9-447a-9b95-0e393637e084_707c9d92c4.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 626.93,
+   "cold": 447.72,
+   "size": 48.57,
+   "floor": 4,
+   "levels": 4,
+   "year": 1953,
+   "stars": 2,
+   "why": "48.57 m², ~8.1 km zur Arbeit (Luftlinie), Kiez wenig los (17 Lokale/Läden), Park nah, Ringbahn nah, 4. Etage, Baujahr 1953",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.7,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-30T12:49:07Z"
   }
  },
- "updated": "2026-10-30T12:48:21Z",
+ "updated": "2026-10-30T12:50:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1408,5 +1498,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-30T12:48:21Z"
+ "last_auto": "2026-10-30T12:50:34Z"
 }
