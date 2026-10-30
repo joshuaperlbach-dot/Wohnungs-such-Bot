@@ -1262,9 +1262,88 @@
     ]
    },
    "online_since": "2026-10-30T12:17:06Z"
+  },
+  "ibw-23629": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20405-124.html?t=ibw",
+   "title": "Ideal für Single",
+   "address": "Rhinstraße 2, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793363585-tNgGgZYhjQ.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/7/1/csm_33ab455f98edfe4f4d0d736a39f776fd_d62ac39ee3.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/f/csm_f7631fec4d2918a494c2ed059107967b_822140b018.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/b/csm_2901ddedd653eab68c0c146a3d700ff0_46c01760f9.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/4/csm_5f199cffc5902bb7591f37e572f652ad_7995d22a9d.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 510.12,
+   "cold": 344.12,
+   "size": 30.26,
+   "floor": 17,
+   "levels": 18,
+   "year": 1984,
+   "stars": 2,
+   "why": "30.26 m², ~7.4 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 17. Etage, Baujahr 1984, Hochhaus (18 Etagen)",
+   "points": 40,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
+     16
+    ],
+    "Lage": [
+     1.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-30T12:33:06Z"
   }
  },
- "updated": "2026-10-30T12:32:23Z",
+ "updated": "2026-10-30T12:34:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1329,5 +1408,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-30T12:32:23Z"
+ "last_auto": "2026-10-30T12:34:21Z"
 }
