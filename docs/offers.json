@@ -1430,19 +1430,17 @@
      5
     ]
    },
-   "online_since": "2026-10-30T12:49:07Z"
+   "online_since": "2026-10-30T12:49:07Z",
+   "requested": "gesendet",
+   "requested_at": "2026-10-30T13:46:28Z",
+   "confirm": "formular",
+   "form_url": "https://vermietung.degewo.de/4608996745936896/4799895123787776/property/application/form/5551849832710144/1736802/4778625361510400"
   }
  },
- "updated": "2026-10-30T13:44:22Z",
+ "updated": "2026-10-30T13:46:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-27T08:54:23Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 3845
-  },
   {
    "at": "2026-10-28T14:55:53Z",
    "kind": "eingang",
@@ -1496,7 +1494,13 @@
    "kind": "absage",
    "matched": false,
    "chars": 2771
+  },
+  {
+   "at": "2026-10-30T13:46:28Z",
+   "kind": "formular",
+   "matched": true,
+   "chars": 2894
   }
  ],
- "last_auto": "2026-10-30T13:44:22Z"
+ "last_auto": "2026-10-30T13:46:28Z"
 }
