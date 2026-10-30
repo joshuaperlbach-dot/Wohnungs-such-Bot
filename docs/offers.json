@@ -1106,9 +1106,82 @@
     ]
    },
    "online_since": "2026-10-30T11:58:05Z"
+  },
+  "ibw-23625": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6216%2F00103",
+   "title": "Oberspreestr. 47, 2.G LI",
+   "address": "Oberspreestraße 47, 12439 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793362209-4aKstuGJqf.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 558.3,
+   "cold": 370.3,
+   "size": 46.0,
+   "floor": 2,
+   "levels": 4,
+   "year": 1961,
+   "stars": 2,
+   "why": "46 m², ~10.6 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn weit, 2. Etage, Baujahr 1961",
+   "points": 45,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-10-30T12:10:09Z"
   }
  },
- "updated": "2026-10-30T12:08:21Z",
+ "updated": "2026-10-30T12:10:36Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1173,5 +1246,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-30T12:08:21Z"
+ "last_auto": "2026-10-30T12:10:36Z"
 }
