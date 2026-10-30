@@ -240,84 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23552": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00638-0466-0103.html",
-   "title": "1-Zimmerwohnung in der Gropiusstadt sucht Nachmieter",
-   "address": "Käthe-Dorsch-Ring 7, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793273706-v1R21OQS0L.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5776-degewo_7a8164d5-988a-4b29-bb86-370a54bbc141.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5776-degewo_3d00bc29-8359-4470-8f9e-547ba967a1ef.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5776-degewo_f855835a-6c87-4a3d-a83d-2eba0628860a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/c/1/csm_5776-degewo_4985a932-4e6e-493a-8739-e4af989a7789_9535ce3327.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/d/csm_5776-degewo_95cbf6a1-99d4-4154-a4d9-2402900594a0_0362468b95.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 501.85,
-   "cold": 384.11,
-   "size": 36.68,
-   "floor": 1,
-   "levels": 6,
-   "year": 1966,
-   "stars": 2,
-   "why": "36.68 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (56 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1966",
-   "points": 53,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.7,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.5,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-29T11:35:06Z"
-  },
   "ibw-23577": {
    "source": "ibw",
    "company": "howoge",
@@ -1105,7 +1027,7 @@
    "online_since": "2026-10-30T10:52:05Z"
   }
  },
- "updated": "2026-10-30T11:34:24Z",
+ "updated": "2026-10-30T11:36:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1170,5 +1092,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-30T11:34:24Z"
+ "last_auto": "2026-10-30T11:36:22Z"
 }
