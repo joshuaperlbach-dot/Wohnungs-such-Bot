@@ -1179,9 +1179,92 @@
     ]
    },
    "online_since": "2026-10-30T12:10:09Z"
+  },
+  "ibw-23626": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20543-24.html?t=ibw",
+   "title": "Gut geschnittene 2 Zimmerwohnung in Lichtenberg",
+   "address": "Dolgenseestraße 21, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793362626-X6VqJMvLRD.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/6/9/csm_977bb75cceb261f032601d8ec3f27830_dadc91d49e.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/4/csm_226f60b95eebee6256c143ca3af15d56_ed39644312.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/c/csm_fb7449347fcc377a77804df4956249cd_72485dabda.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/0/csm_c85aa5f767463487c5325abfdae7db53_0c66e29573.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/c/csm_8ca53937bdab0e3a10d0acf402b73e65_083e7ba49f.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/d/csm_b8c7c49b8c945cd8e414bae52987907f_cbf45fdc7b.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/0/csm_957fc44b90f615d23b66b7cfba2fd85f_e0e04c5cda.webp",
+    "https://www.howoge.de/fileadmin/_processed_/8/6/csm_959f79278baf6ac0411ba03a599b8209_d5e7e2ce74.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 602.77,
+   "cold": 396.77,
+   "size": 47.46,
+   "floor": 4,
+   "levels": 21,
+   "year": 1975,
+   "stars": 2,
+   "why": "47.46 m², ~6.5 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 4. Etage, Baujahr 1975, Hochhaus (21 Etagen)",
+   "points": 46,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     2.4,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     3.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-10-30T12:17:06Z"
   }
  },
- "updated": "2026-10-30T12:16:23Z",
+ "updated": "2026-10-30T12:18:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1246,5 +1329,5 @@
    "chars": 2771
   }
  ],
- "last_auto": "2026-10-30T12:16:23Z"
+ "last_auto": "2026-10-30T12:18:23Z"
 }
