@@ -240,87 +240,6 @@
    "reply": "absage",
    "reply_at": "2026-10-27T08:54:23Z"
   },
-  "ibw-23622": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20543-8.html?t=ibw",
-   "title": "Gut geschnittene 2 Zimmerwohnung in Lichtenberg",
-   "address": "Dolgenseestraße 21, 10319 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793361485-P5iHLVZLvs.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/f/5/csm_8df1339b5fffb5fc6f9bd9a0d3e10dd9_203dbb49b0.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/1/csm_0a78e92b9009a3bc1ef091fe45435e00_e8cd0c6093.webp",
-    "https://www.howoge.de/fileadmin/_processed_/9/9/csm_4e4f702c59f458c59960b213b8eaf720_a81363c8db.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/8/a/csm_38787a8f665ffe7d13efef486fe5ebc7_547f08b99e.webp",
-    "https://www.howoge.de/fileadmin/_processed_/e/1/csm_0d4a9012684f5eef4dd6486e5306fea0_818aea72f1.webp",
-    "https://www.howoge.de/fileadmin/_processed_/9/9/csm_d13f33dfea2751a51c1ffe8ee05d366f_f149d14b06.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 601.77,
-   "cold": 396.77,
-   "size": 47.46,
-   "floor": 2,
-   "levels": 21,
-   "year": 1975,
-   "stars": 2,
-   "why": "47.46 m², ~6.5 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 2. Etage, Baujahr 1975, Hochhaus (21 Etagen)",
-   "points": 46,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     4.8,
-     16
-    ],
-    "Lage": [
-     2.4,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     3.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-10-30T11:58:05Z"
-  },
   "ibw-23625": {
    "source": "ibw",
    "company": "stadtundland",
@@ -651,7 +570,7 @@
    "form_url": "https://vermietung.degewo.de/4608996745936896/4799895123787776/property/application/form/5551849832710144/1736802/4778625361510400"
   }
  },
- "updated": "2026-10-31T11:56:20Z",
+ "updated": "2026-10-31T11:58:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -716,5 +635,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-10-31T11:56:20Z"
+ "last_auto": "2026-10-31T11:58:23Z"
 }
