@@ -961,9 +961,82 @@
     ]
    },
    "online_since": "2026-11-02T13:11:08Z"
+  },
+  "ibw-23682": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6468%2F00033",
+   "title": "Schöne 2 Zimmer Wohnung in der Otto-Franke-Str. 56, 1.OG RE",
+   "address": "Otto-Franke-Straße 56, 12489 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793625907-D8G06stzWL.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 711.89,
+   "cold": 538.89,
+   "size": 49.99,
+   "floor": 1,
+   "levels": 3,
+   "year": 1930,
+   "stars": 3,
+   "why": "49.99 m², ~12.4 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1930",
+   "points": 60,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T13:25:07Z"
   }
  },
- "updated": "2026-11-02T13:24:22Z",
+ "updated": "2026-11-02T13:26:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1028,5 +1101,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T13:24:22Z"
+ "last_auto": "2026-11-02T13:26:22Z"
 }
