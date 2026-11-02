@@ -413,9 +413,82 @@
     ]
    },
    "online_since": "2026-11-02T08:36:05Z"
+  },
+  "ibw-23650": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6234%2F00124",
+   "title": "Schöne Wohnung zum 01.12.2026!",
+   "address": "Hagedornstraße 41, 12487 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793608685-2mFznrgqL0.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 738.03,
+   "cold": 524.03,
+   "size": 55.63,
+   "floor": 1,
+   "levels": 3,
+   "year": 1928,
+   "stars": 3,
+   "why": "55.63 m², ~9.1 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1928",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T08:38:06Z"
   }
  },
- "updated": "2026-11-02T08:36:23Z",
+ "updated": "2026-11-02T08:38:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -480,5 +553,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T08:36:23Z"
+ "last_auto": "2026-11-02T08:38:34Z"
 }
