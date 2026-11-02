@@ -1205,9 +1205,86 @@
     ]
    },
    "online_since": "2026-11-02T15:35:06Z"
+  },
+  "ibw-23698": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-72700-0101-0012",
+   "title": "Singleapartment in Wilmersdorf - Selbstrenovierer gesucht",
+   "address": "Helmstedter Straße 6, 10717 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793636286-tIJDR33PJ1.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 469.0,
+   "cold": 295.6,
+   "size": 25.52,
+   "floor": 1,
+   "levels": 6,
+   "year": 1964,
+   "stars": 3,
+   "why": "25.52 m², ~5.4 km zur Arbeit (Luftlinie), Kiez mittel (136 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1964",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     11.0,
+     16
+    ],
+    "Lage": [
+     4.4,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T16:18:06Z"
   }
  },
- "updated": "2026-11-02T16:14:22Z",
+ "updated": "2026-11-02T16:18:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1272,5 +1349,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T16:14:22Z"
+ "last_auto": "2026-11-02T16:18:25Z"
 }
