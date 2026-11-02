@@ -1282,9 +1282,89 @@
     ]
    },
    "online_since": "2026-11-02T16:18:06Z"
+  },
+  "ibw-23702": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20544-231.html?t=ibw",
+   "title": "Ohne WBS\nFür die Anmietung der Wohnung ist kein WBS erforderlich",
+   "address": "Am Tierpark 66, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793639767-opnx9XLczt.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/f/1/csm_539104f753a3e09d0303e6698d0acb89_527084d2ce.webp",
+    "https://www.howoge.de/fileadmin/_processed_/5/2/csm_df349f29fb408ae84328a9ad35ce6844_5fdda7c236.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/9/csm_f1856f43b829d852f9e0655173718157_2cd002506a.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/1/csm_080bcd075f4b712e940bf44b5df41147_8f1f01b4ba.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/3/csm_7b37f5d18c60aec6145e6d5140ed2420_d5c22499ed.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 676.71,
+   "cold": 438.23,
+   "size": 52.42,
+   "floor": 13,
+   "levels": 21,
+   "year": 1976,
+   "stars": 2,
+   "why": "52.42 m², ~7.5 km zur Arbeit (Luftlinie), Kiez wenig los (36 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 13. Etage, Baujahr 1976, Hochhaus (21 Etagen)",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.9,
+     16
+    ],
+    "Lage": [
+     0.9,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     5.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T17:16:07Z"
   }
  },
- "updated": "2026-11-02T17:14:22Z",
+ "updated": "2026-11-02T17:16:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1349,5 +1429,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T17:14:22Z"
+ "last_auto": "2026-11-02T17:16:33Z"
 }
