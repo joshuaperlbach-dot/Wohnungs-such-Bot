@@ -486,9 +486,82 @@
     ]
    },
    "online_since": "2026-11-02T08:38:06Z"
+  },
+  "ibw-23655": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6296%2F00038",
+   "title": "Schöne Wohnung zum 01.12.2026!",
+   "address": "Sterndamm 126, 12487 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793609707-7s36PHenWJ.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 495.07,
+   "cold": 338.07,
+   "size": 36.08,
+   "floor": 2,
+   "levels": 6,
+   "year": 1985,
+   "stars": 2,
+   "why": "36.08 m², ~9.2 km zur Arbeit (Luftlinie), Kiez wenig los (6 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, 2. Etage, Baujahr 1985",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T08:55:07Z"
   }
  },
- "updated": "2026-11-02T08:54:24Z",
+ "updated": "2026-11-02T08:56:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -553,5 +626,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T08:54:24Z"
+ "last_auto": "2026-11-02T08:56:33Z"
 }
