@@ -1125,9 +1125,89 @@
     ]
    },
    "online_since": "2026-11-02T15:30:06Z"
+  },
+  "ibw-23692": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01609-0701-0241",
+   "title": "2-Zimmer-Wohnung sucht kreative Hände - ab sofort",
+   "address": "Kirchnerpfad 7, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793633706-ji4UjS2pkP.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_8776958b-951a-46fa-98ac-ca468cec5f11.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_827e18e3-9661-4b34-9bd6-1a22e6c470ad.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_4783859c-dd92-4bc0-bf61-5e5edcc06fe6.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_d05a2fc7-cede-4556-ba12-2b2e3c386586.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_b6bbab34-8143-48c6-8df5-26b21ccad651.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_2bc59c03-bd7c-4eac-8526-a3c075029cb8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01609-0701-0241/gewobag_481d2273-2fb1-49b3-8a97-80f8ea34e28d.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 789.11,
+   "cold": 449.11,
+   "size": 61.58,
+   "floor": 3,
+   "levels": 5,
+   "year": 1964,
+   "stars": 2,
+   "why": "61.58 m², ~8.5 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), Ringbahn mittel, Balkon/Terrasse, 3. Etage, Baujahr 1964",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     16.9,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T15:35:06Z"
   }
  },
- "updated": "2026-11-02T15:34:22Z",
+ "updated": "2026-11-02T15:36:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1192,5 +1272,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T15:34:22Z"
+ "last_auto": "2026-11-02T15:36:23Z"
 }
