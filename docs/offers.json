@@ -648,9 +648,82 @@
     ]
    },
    "online_since": "2026-11-02T10:17:07Z"
+  },
+  "ibw-23665": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1500-00742-0081-0502.html",
+   "title": "Willkommen im Brunnenviertel - Es ist Zeit für die erste gemeinsame Wohnung!",
+   "address": "Brunnenstraße 65, 13355 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793614929-N07RgvNYYW.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 755.7,
+   "cold": 488.01,
+   "size": 63.89,
+   "floor": 5,
+   "levels": 11,
+   "year": 1981,
+   "stars": 4,
+   "why": "63.89 m², ~4.3 km zur Arbeit (Luftlinie), Kiez mittel (92 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1981, Hochhaus (11 Etagen)",
+   "points": 73,
+   "parts": {
+    "Kosten": [
+     19.5,
+     20
+    ],
+    "Kiez": [
+     10.9,
+     16
+    ],
+    "Lage": [
+     6.2,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     8.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T10:22:09Z"
   }
  },
- "updated": "2026-11-02T10:20:34Z",
+ "updated": "2026-11-02T10:22:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -715,5 +788,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T10:20:34Z"
+ "last_auto": "2026-11-02T10:22:22Z"
 }
