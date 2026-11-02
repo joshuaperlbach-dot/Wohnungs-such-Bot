@@ -721,9 +721,82 @@
     ]
    },
    "online_since": "2026-11-02T10:22:09Z"
+  },
+  "ibw-23667": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1500-00940-0013-0503.html",
+   "title": "Nachmieter gesucht!",
+   "address": "Drontheimer Straße 21A, 13359 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793616129-aInicN2Zp5.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 908.78,
+   "cold": 673.56,
+   "size": 72.38,
+   "floor": 5,
+   "levels": 5,
+   "year": 1906,
+   "stars": 3,
+   "why": "72.38 m², ~6.7 km zur Arbeit (Luftlinie), Kiez mittel (106 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 5. Etage, Baujahr 1906",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     4.9,
+     20
+    ],
+    "Kiez": [
+     9.9,
+     16
+    ],
+    "Lage": [
+     2.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     10.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T10:42:09Z"
   }
  },
- "updated": "2026-11-02T10:40:34Z",
+ "updated": "2026-11-02T10:42:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -788,5 +861,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T10:40:34Z"
+ "last_auto": "2026-11-02T10:42:33Z"
 }
