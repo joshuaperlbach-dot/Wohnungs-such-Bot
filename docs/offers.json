@@ -877,9 +877,93 @@
     ]
    },
    "online_since": "2026-11-02T11:17:06Z"
+  },
+  "ibw-23680": {
+   "source": "ibw",
+   "company": "berlinovo",
+   "url": "https://www.berlinovo.de/de/wohnung-id/1230-2388-3315",
+   "title": "Iranische Straße 4b, 2 Zimmer, 3.OG, Rechts 8",
+   "address": "Iranische Straße 4B, 13347 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793625067-mnkqMZug2U.webp?q=80&w=900&fm=jpg",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_45acd3ff-f6ab-4f5c-8738-a2490a775ab2.jpg?itok=wrk8egjX",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_bddb18a7-c313-4782-b3a2-7166ed57e223.jpg?itok=LOr7d1IR",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_10e623e1-efa3-4ea2-ac11-abae57610d8a.jpg?itok=WR-doIu8",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_d427e8c3-67bf-41db-bded-04afba2ec9e2.jpg?itok=bBX04GDe",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_5d47f9c8-0c67-4b92-9b76-f3ef03a39f01.jpg?itok=KYZV-QJs",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_be140a80-ad78-4b37-8d72-9a199aabae85.jpg?itok=AAG-DL1w",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_6ace94cf-5f91-4437-b1b3-53883db3f3c8.jpg?itok=p2N0qESa",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_c337f4d9-8a5f-46ca-a0da-3c8ebf26e2af.jpg?itok=I40nYB8w",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_b45de438-e604-4568-b0cb-8b1860bcd521.jpg?itok=TXzh4rrl",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_5f18b154-a874-4202-9e80-9420d5e62365.jpg?itok=yTeOAZEq",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_b1cb5fd3-e224-400e-948f-a5d0d463efff.jpg?itok=Wrni0zSx",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_81b76cfd-6238-4ada-a1f4-012596a9fcd6.jpg?itok=EY9AtCbG"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 780.54,
+   "cold": 571.13,
+   "size": 38.08,
+   "floor": 3,
+   "year": 2026,
+   "stars": 3,
+   "why": "38.08 m², ~6.4 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), Ringbahn mittel, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2026",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     17.6,
+     20
+    ],
+    "Kiez": [
+     9.4,
+     16
+    ],
+    "Lage": [
+     2.6,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T13:11:08Z"
   }
  },
- "updated": "2026-11-02T13:10:33Z",
+ "updated": "2026-11-02T13:12:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -944,5 +1028,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T13:10:33Z"
+ "last_auto": "2026-11-02T13:12:24Z"
 }
