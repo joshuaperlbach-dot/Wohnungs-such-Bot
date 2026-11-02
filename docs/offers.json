@@ -559,9 +559,98 @@
     ]
    },
    "online_since": "2026-11-02T08:55:07Z"
+  },
+  "ibw-23664": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1500-00703-0063-0301.html",
+   "title": "Mieter gesucht - mit Malerarbeiten",
+   "address": "Edinburger Straße 77, 13349 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793614626-zYDbvC6LWu.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_c13eec2e-4387-4cea-b36d-329dd20c4666.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_93597c45-d34d-4349-a38e-9bbc172b3510.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_9f355639-d73a-457a-818d-83bfab26f068.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/4/csm_5812-degewo_4f65210f-ade0-4bb8-a045-7dbee9424082_b0caadf3fa.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/5/csm_5812-degewo_91924ec3-f564-4a4a-8485-336b5fc5be4e_01c9abcdd3.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_c0759a01-4d52-4051-b1e9-6a65e17a9137.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_5de88414-2320-4a3d-9212-83be64807339.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_873007c5-4a53-44f3-a5a4-08e27d03c62a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_5864ce00-607c-4d09-b7ce-174757c14ab5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/f/csm_5812-degewo_eddf6513-0b22-4e73-af88-65aba9b35e75_8dd4a3bc75.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_ec53dd5a-97f1-4d21-8ae5-fb9a2097ebbf.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_46465834-eaf3-4363-8fbf-52f06d1e263b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_1760eba6-b43e-45de-8749-59e6e9c8b042.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_131bd09b-5e3c-45a1-ae48-468ef3c60075.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/c/csm_5812-degewo_606bc175-f9d2-4c09-bbdb-34985758ede7_048270ab36.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5812-degewo_0b2e4079-3037-43be-a9a2-3d7a8210f1a2.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 636.73,
+   "cold": 469.41,
+   "size": 56.15,
+   "floor": 3,
+   "levels": 5,
+   "year": 1928,
+   "stars": 4,
+   "why": "56.15 m², ~7.6 km zur Arbeit (Luftlinie), Kiez mittel (74 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1928",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.9,
+     16
+    ],
+    "Lage": [
+     0.6,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T10:17:07Z"
   }
  },
- "updated": "2026-11-02T10:16:23Z",
+ "updated": "2026-11-02T10:18:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -626,5 +715,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T10:16:23Z"
+ "last_auto": "2026-11-02T10:18:22Z"
 }
