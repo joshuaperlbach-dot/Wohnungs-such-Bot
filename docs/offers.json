@@ -1439,9 +1439,167 @@
     ]
    },
    "online_since": "2026-11-02T17:33:05Z"
+  },
+  "ibw-23708": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01734-0106-0155",
+   "title": "Helle Wohnung in oberster Etage",
+   "address": "Goldhähnchenweg 17, 12359 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793642549-qlUIOeKrL2.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_296e4923-0162-4aba-a0b0-634432a3c453.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_3ee14846-6b26-46f0-b903-7a767d940a4c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_76dcb8fe-0f6a-4959-ae1a-6122248a73c0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_0d9104a8-4960-45cf-a147-ac0900735a5b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_63e61f29-926f-4882-bf3f-955c6d7dcdcf.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_5859aeb8-b41a-4cbf-bf92-8d9dbc57fe32.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 832.98,
+   "cold": 672.98,
+   "size": 69.13,
+   "floor": 7,
+   "levels": 8,
+   "year": 1976,
+   "stars": 2,
+   "why": "69.13 m², ~7.6 km zur Arbeit (Luftlinie), Kiez wenig los (34 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 7. Etage, Baujahr 1976",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     13.4,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     0.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     9.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T18:02:30Z"
+  },
+  "ibw-23709": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01734-0106-0155",
+   "title": "Helle Wohnung in oberster Etage",
+   "address": "Goldhähnchenweg 17, 12359 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793642549-iMRZWy4SfL.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_296e4923-0162-4aba-a0b0-634432a3c453.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_3ee14846-6b26-46f0-b903-7a767d940a4c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_76dcb8fe-0f6a-4959-ae1a-6122248a73c0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_0d9104a8-4960-45cf-a147-ac0900735a5b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_63e61f29-926f-4882-bf3f-955c6d7dcdcf.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01734-0106-0155/gewobag_5859aeb8-b41a-4cbf-bf92-8d9dbc57fe32.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 832.98,
+   "cold": 672.98,
+   "size": 69.13,
+   "floor": 7,
+   "levels": 8,
+   "year": 1976,
+   "stars": 2,
+   "why": "69.13 m², ~7.6 km zur Arbeit (Luftlinie), Kiez wenig los (34 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 7. Etage, Baujahr 1976",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     13.4,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     0.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     9.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T18:02:30Z"
   }
  },
- "updated": "2026-11-02T18:00:52Z",
+ "updated": "2026-11-02T18:02:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1506,5 +1664,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T18:00:52Z"
+ "last_auto": "2026-11-02T18:02:25Z"
 }
