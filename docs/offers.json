@@ -794,9 +794,92 @@
     ]
    },
    "online_since": "2026-11-02T10:42:09Z"
+  },
+  "ibw-23671": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-24754-136.html?t=ibw",
+   "title": "Für die Anmietung der Wohnung ist kein WBS erforderlich",
+   "address": "Volkradstraße 8, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793618226-UZTFq5Io8B.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/e/5/csm_cf04c135671e91e1eae73a6a95e0a14b_a0f2f289c0.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/5/csm_61fa19d486d31a0fd6873abbec946811_da8da0124d.webp",
+    "https://www.howoge.de/fileadmin/_processed_/5/0/csm_c2a9fe32a000903965929de643db2f4e_55272026fb.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/b/csm_938d59f9036d8556401b2c5f0918771f_fbe42a7768.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/3/csm_e3fa1d8a82278a3ef7a5c3a342bd10bd_c5d508ce85.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/8/csm_72d5323b5d8aae0a9b003cf26df41552_3921f18411.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/c/csm_58bd414d7adfb29628b116770e56b580_063d61707c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/2/csm_60c3d7f3317d5703b4e1c0b49eb0ec4b_35fadd9021.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 646.41,
+   "cold": 417.71,
+   "size": 50.7,
+   "floor": 16,
+   "levels": 16,
+   "year": 1968,
+   "stars": 2,
+   "why": "50.7 m², ~6.6 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 16. Etage, Baujahr 1968, Hochhaus (16 Etagen)",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     2.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     4.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T11:17:06Z"
   }
  },
- "updated": "2026-11-02T11:16:33Z",
+ "updated": "2026-11-02T11:18:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -861,5 +944,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T11:16:33Z"
+ "last_auto": "2026-11-02T11:18:29Z"
 }
