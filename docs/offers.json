@@ -1362,9 +1362,86 @@
     ]
    },
    "online_since": "2026-11-02T17:16:07Z"
+  },
+  "ibw-23705": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01734-0103-0072",
+   "title": "Helle Wohnung in ruhiger Lage",
+   "address": "Goldhähnchenweg 11, 12359 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793640785-aqopF1NJS3.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 830.55,
+   "cold": 670.55,
+   "size": 68.88,
+   "floor": 5,
+   "levels": 8,
+   "year": 1976,
+   "stars": 2,
+   "why": "68.88 m², ~7.5 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 5. Etage, Baujahr 1976",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     13.6,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.8,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     9.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-02T17:33:05Z"
   }
  },
- "updated": "2026-11-02T17:32:24Z",
+ "updated": "2026-11-02T17:34:54Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1429,5 +1506,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-02T17:32:24Z"
+ "last_auto": "2026-11-02T17:34:54Z"
 }
