@@ -1929,9 +1929,86 @@
     ]
    },
    "online_since": "2026-11-03T22:09:05Z"
+  },
+  "ibw-23802": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00158-0604-0004",
+   "title": "Absolutes Handwerkerobjekt (Raucherwohnung) sucht neuen Mieter ab sofort!",
+   "address": "Liselotte-Herrmann-Straße 15, 10407 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793744945-6W07cmDCe2.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 761.77,
+   "cold": 495.77,
+   "size": 50.64,
+   "floor": 1,
+   "levels": 5,
+   "year": 1957,
+   "stars": 4,
+   "why": "50.64 m², ~3.5 km zur Arbeit (Luftlinie), Kiez mittel (132 Lokale/Läden), Park nah, Ringbahn mittel, 1. Etage, Baujahr 1957",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     19.1,
+     20
+    ],
+    "Kiez": [
+     12.4,
+     16
+    ],
+    "Lage": [
+     7.5,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T22:29:06Z"
   }
  },
- "updated": "2026-11-03T22:29:04Z",
+ "updated": "2026-11-03T22:31:11Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1996,5 +2073,5 @@
    "chars": 2321
   }
  ],
- "last_auto": "2026-11-03T22:29:04Z"
+ "last_auto": "2026-11-03T22:31:11Z"
 }
