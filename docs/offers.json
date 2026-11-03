@@ -1597,9 +1597,94 @@
     ]
    },
    "online_since": "2026-11-02T18:02:30Z"
+  },
+  "ibw-23717": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00649-0108-0104.html",
+   "title": "2-Zimmer-Wohnung im Erdgeschoss",
+   "address": "Walter-Franck-Zeile 9, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793694124-B11RZVTEZh.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_fd6b8e8f-ba29-4197-824e-534848035552.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_02e643c6-98b2-4075-bf94-956492b496be.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/9/csm_5460-degewo_d0a034e3-4123-44cc-81b6-733cf1209663_f58f50907c.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/1/csm_5460-degewo_d4e77d06-8aa3-4dff-ba95-3c68288820f4_b2b20d135b.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_153d8d30-1829-4f6f-983d-1bb4e9a825dd.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_b5544364-0a00-41fd-a6de-6acd1017e44b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_c8dc919c-fadf-40eb-b811-344603ea9842.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_97162dfc-d008-4419-b121-e7436ecc6f41.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_bfdfbf7d-38d1-4a63-8865-d9ea790a70f6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_1562f0fd-552b-4d2a-91d5-b9dd1d493ab3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_28738f00-437a-45e2-8889-5b478d2580b0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/4/csm_5460-degewo_eb4e117d-6731-42ea-9c0b-5573d658a882_02543526eb.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 720.23,
+   "cold": 522.18,
+   "size": 64.94,
+   "floor": 1,
+   "levels": 9,
+   "year": 1969,
+   "stars": 2,
+   "why": "64.94 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (14 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1969, Hochhaus (9 Etagen)",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     8.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T08:22:04Z"
   }
  },
- "updated": "2026-11-03T08:20:35Z",
+ "updated": "2026-11-03T08:22:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1664,5 +1749,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T08:20:35Z"
+ "last_auto": "2026-11-03T08:22:21Z"
 }
