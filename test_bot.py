@@ -368,7 +368,7 @@ def test_wbm_polls_until_new_offer():
         assert len(got) == 1 and sleeps == []
 
 
-def test_send_only_from_four_stars_but_report_all():
+def test_send_only_from_three_stars_but_report_all():
     cards = "<div class='list'>" + "".join(
         card(s, "Schöne 2 Zimmer", "800,00", "60", 2) for s in ("top", "mittel", "mau")) + "</div>"
     stars = {"top": 5, "mittel": 3, "mau": 1}
@@ -389,9 +389,9 @@ def test_send_only_from_four_stars_but_report_all():
                            lambda l, text="": ("★" * stars[l["url"].split("/")[-2]], "")):
             wbm_bot.main()
             wbm_bot.main()
-    assert sent == ["top"], sent  # nur ab 4 Sternen anfragen
+    assert sent == ["top", "mittel"], sent  # nur ab 3 Sternen anfragen, die besten zuerst
     assert len(msgs) == 3, msgs   # aber alle drei melden, je einmal
-    assert "Anfrage: gesendet" in msgs[0] and all("Keine Anfrage (unter 4 Sternen)" in m for m in msgs[1:]), msgs
+    assert all("Anfrage: gesendet" in m for m in msgs[:2]) and "Keine Anfrage (unter 3 Sternen)" in msgs[2], msgs
     # Grenze für Anfragen (Einkommensregel): 800 € Miete bei Grenze 750 wird nur gemeldet
     sent.clear(); msgs.clear()
     with tempfile.TemporaryDirectory() as td:

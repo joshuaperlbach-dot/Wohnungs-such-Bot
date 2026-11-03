@@ -45,7 +45,7 @@ MAX_ROOMS = 2
 MAX_WARMMIETE = 950.0
 MAX_KALTMIETE = 900.0  # steht nur im Exposé; unbekannt = kein Ausschluss
 ALLOW_WBS = False
-MIN_STARS_SEND = 4  # automatisch anfragen erst ab so vielen Sternen; gemeldet wird alles
+MIN_STARS_SEND = 3  # automatisch anfragen erst ab so vielen Sternen (bis 03.11.2026: 4); gemeldet wird alles
 MAX_SENDS_PER_RUN = 3 # Sicherung gegen Fehlalarm; der Rest kommt beim nächsten Lauf dran
 
 # Erlaubte Bezirke/Ortsteile (steht am Anfang jeder Angebotskarte)
