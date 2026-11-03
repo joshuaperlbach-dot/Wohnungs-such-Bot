@@ -1617,9 +1617,155 @@
     ]
    },
    "online_since": "2026-11-03T13:11:04Z"
+  },
+  "ibw-23750": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-65801-0038-0403.html",
+   "title": "Alles in der Nähe: Wald, Wasser, Nahverkehr, Einkaufsmöglichkeiten",
+   "address": "Wendenschloßstraße 373, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793711884-UDnNAJPum6.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 671.9,
+   "cold": 447.26,
+   "size": 48.52,
+   "floor": 4,
+   "levels": 4,
+   "year": 1960,
+   "stars": 2,
+   "why": "48.52 m², ~14.9 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 4. Etage, Baujahr 1960",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T13:18:05Z"
+  },
+  "ibw-23749": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-65801-0003-0103.html",
+   "title": "Zwei Zimmer Wohnung mit Balkon",
+   "address": "Wendenschloßstraße 369, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793711825-QRztGavKHp.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 680.34,
+   "cold": 452.88,
+   "size": 49.13,
+   "floor": 1,
+   "levels": 4,
+   "year": 1960,
+   "stars": 2,
+   "why": "49.13 m², ~14.9 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1960",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T13:17:05Z"
   }
  },
- "updated": "2026-11-03T13:16:21Z",
+ "updated": "2026-11-03T13:18:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1684,5 +1830,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T13:16:21Z"
+ "last_auto": "2026-11-03T13:18:23Z"
 }
