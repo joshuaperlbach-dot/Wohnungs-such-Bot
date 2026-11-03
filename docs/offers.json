@@ -1609,9 +1609,89 @@
     ]
    },
    "online_since": "2026-11-03T17:20:06Z"
+  },
+  "ibw-23790": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20815-5.html?t=ibw",
+   "title": "Wohnung in Berlin",
+   "address": "Elli-Voigt-Straße 1, 10367 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793731206-XQzIr3PrEA.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/0/7/csm_343277b786beb6601809758c483eaa9b_18f4b4a4c9.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/9/csm_52f32060ca2e38d49285b72048942015_b144ec20f4.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/5/csm_30e310bb8efd91a7c208387eb829e302_c1d7c513e3.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/9/csm_87a7c9361fbfdc066eb9b3cdf4ad9e71_736a5d651e.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/1/csm_d2a4288ce6cc671f317b30aba388e101_df3024fa53.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 636.72,
+   "cold": 436.46,
+   "size": 54.88,
+   "floor": 2,
+   "levels": 10,
+   "year": 1973,
+   "stars": 3,
+   "why": "54.88 m², ~5.6 km zur Arbeit (Luftlinie), Kiez wenig los (57 Lokale/Läden), Park nah, Ringbahn mittel, Aufzug, 2. Etage, Baujahr 1973, Hochhaus (10 Etagen)",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.8,
+     16
+    ],
+    "Lage": [
+     3.9,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     5.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T18:40:07Z"
   }
  },
- "updated": "2026-11-03T18:38:55Z",
+ "updated": "2026-11-03T18:40:39Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1676,5 +1756,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T18:38:55Z"
+ "last_auto": "2026-11-03T18:40:39Z"
 }
