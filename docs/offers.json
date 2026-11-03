@@ -1777,9 +1777,86 @@
     ]
    },
    "online_since": "2026-11-03T09:16:08Z"
+  },
+  "ibw-23733": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20301-14.html?t=ibw",
+   "title": "2-Zimmer-Wohnung ",
+   "address": "Guntherstraße 37, 10365 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793699768-UNj3qDxXof.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/a/2/csm_489d761f2ee3b4d36c2babd0ff7ef034_c5fdf3b45b.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/1/5/csm_c56f5b525bfcb811f8782c4875836667_fbc2a3665d.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 696.41,
+   "cold": 521.41,
+   "size": 50.48,
+   "floor": 3,
+   "levels": 4,
+   "year": 1935,
+   "stars": 3,
+   "why": "50.48 m², ~6.3 km zur Arbeit (Luftlinie), Kiez wenig los (52 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1935",
+   "points": 69,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.4,
+     16
+    ],
+    "Lage": [
+     2.9,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T09:56:08Z"
   }
  },
- "updated": "2026-11-03T09:54:23Z",
+ "updated": "2026-11-03T09:56:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1844,5 +1921,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T09:54:23Z"
+ "last_auto": "2026-11-03T09:56:22Z"
 }
