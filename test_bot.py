@@ -336,6 +336,38 @@ def test_empty_page_vs_broken_page():
             assert codes == [0, 0] and len(msgs) == 1 and "nicht sauber lesbar" in msgs[0], (msgs, codes)
 
 
+def test_wbm_polls_until_new_offer():
+    """Bis zu POLL_SECONDS alle 10 Sekunden nachsehen; sofort weiter, sobald ein neues passendes Angebot da ist."""
+    frame = "<h1>Wohnungsangebote</h1><h2>{n} Mietwohnungen in Berlin</h2><div class='tx-openimmo search'>{body}</div>"
+    old = card("alt", "Schöne 2 Zimmer", "800,00", "60", 2)
+    new = card("neu", "Schöne 2 Zimmer", "800,00", "60", 2)
+    teuer = card("teuer", "Schöne 2 Zimmer", "1.940,00", "60", 2)  # neu, aber passt nicht: kein Grund aufzuhören
+    pages = [frame.format(n=1, body=old), frame.format(n=2, body=old + teuer), frame.format(n=3, body=old + teuer + new)]
+    seen = {"https://www.wbm.de/wohnungen-berlin/angebote/details/alt/"}
+    got, sleeps, clock = [], [], [0.0]
+
+    def get(url, **kw):
+        got.append(url)
+        return mock.Mock(text=pages[min(len(got), len(pages)) - 1], status_code=200)
+
+    def sleep(sec):
+        sleeps.append(sec)
+        clock[0] += sec
+
+    with mock.patch("wbm_bot.HTTP.get", get), mock.patch("wbm_bot.time.sleep", sleep), \
+            mock.patch("wbm_bot.time.monotonic", lambda: clock[0]):
+        html, listings, problem = wbm_bot.wait_for_new(seen, 100)
+        assert len(got) == 3 and sleeps == [10, 10] and problem is None
+        assert any(l["url"].endswith("/neu/") for l in listings)
+        got.clear(); sleeps.clear(); clock[0] = 0.0
+        pages[:] = [frame.format(n=1, body=old)]
+        wbm_bot.wait_for_new(seen, 35)  # nichts Neues: Blicke bei 0, 10, 20, 30 Sekunden, dann Schluss
+        assert len(got) == 4 and sleeps == [10, 10, 10], (got, sleeps)
+        got.clear(); sleeps.clear()
+        wbm_bot.wait_for_new(seen, 0)  # ohne Wartezeit (Tests, Start von Hand): genau ein Blick
+        assert len(got) == 1 and sleeps == []
+
+
 def test_send_only_from_four_stars_but_report_all():
     cards = "<div class='list'>" + "".join(
         card(s, "Schöne 2 Zimmer", "800,00", "60", 2) for s in ("top", "mittel", "mau")) + "</div>"

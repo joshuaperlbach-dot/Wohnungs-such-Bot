@@ -374,15 +374,11 @@ def daily_summary(stats, now):
         stats["summary_day"] = stats["day"]
 
 
-def main():
-    send = os.environ.get("WBM_SEND") == "1"
-    person, missing = load_person()
-    if send and missing:
-        print(f"Fehlende Variablen: {', '.join(missing)}", file=sys.stderr)
-        sys.exit(2)
+POLL_EVERY = 10  # Sekunden zwischen zwei Blicken auf die Angebotsseite
 
-    now = datetime.now(TZ)
-    stats = load_stats(now.strftime("%Y-%m-%d"))
+
+def fetch_page():
+    """Angebotsseite laden: (html, Angebote, Problem oder None)."""
     try:
         resp = HTTP.get(URL, timeout=20)
         html = resp.text if resp.status_code == 200 else ""
@@ -390,7 +386,32 @@ def main():
     except requests.RequestException as e:
         html, problem = "", type(e).__name__
     listings = parse_listings(html)
-    problem = problem or check_page(html, listings)
+    return html, listings, problem or check_page(html, listings)
+
+
+def wait_for_new(seen, deadline):
+    """Seite laden, bis ein neues passendes Angebot da ist, die Seite klemmt oder die Zeit um ist."""
+    while True:
+        html, listings, problem = fetch_page()
+        fresh = any(l["url"] not in seen and matches({**l, "wbs": False}) for l in listings)
+        if fresh or problem or time.monotonic() + POLL_EVERY > deadline:
+            return html, listings, problem
+        time.sleep(POLL_EVERY)
+
+
+def main():
+    send = os.environ.get("WBM_SEND") == "1"
+    person, missing = load_person()
+    if send and missing:
+        print(f"Fehlende Variablen: {', '.join(missing)}", file=sys.stderr)
+        sys.exit(2)
+
+    seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
+    # Schnell sein zählt (WBM vergibt nach Reihenfolge): bis zu POLL_SECONDS lang alle POLL_EVERY
+    # Sekunden nachsehen und sofort loslegen, sobald ein neues passendes Angebot auftaucht
+    html, listings, problem = wait_for_new(seen, time.monotonic() + float(os.environ.get("POLL_SECONDS") or 0))
+    now = datetime.now(TZ)
+    stats = load_stats(now.strftime("%Y-%m-%d"))
     if problem:
         outage(stats, f"WBM-Bot: Angebotsseite nicht sauber lesbar ({problem}). Bitte prüfen.", now)
         if not listings:  # nichts zu tun; beim nächsten Lauf (2 Minuten) neu versuchen
@@ -399,8 +420,6 @@ def main():
     else:
         outage_over(stats)
     stats["scanned"] = sorted(set(stats["scanned"]) | {l["url"] for l in listings})
-
-    seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
     store = offers.load()
     # WBM nimmt Angebote oft nach wenigen Minuten wieder von der Seite: in der App kennzeichnen
     for key, o in store["offers"].items():
