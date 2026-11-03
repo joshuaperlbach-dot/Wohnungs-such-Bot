@@ -1852,9 +1852,86 @@
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
    "via": "mail"
+  },
+  "ibw-23799": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00192-0201-0053",
+   "title": "2 Zimmerwohnung sucht neuen Mieter",
+   "address": "Danziger Straße 159A, 10407 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793743745-x7HrtWUWAX.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 686.3,
+   "cold": 465.65,
+   "size": 64.14,
+   "floor": 1,
+   "levels": 6,
+   "year": 1978,
+   "stars": 4,
+   "why": "64.14 m², ~3.9 km zur Arbeit (Luftlinie), Kiez mittel (113 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 1. Etage, Baujahr 1978",
+   "points": 81,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     11.8,
+     16
+    ],
+    "Lage": [
+     6.9,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     8.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T22:09:05Z"
   }
  },
- "updated": "2026-11-03T22:08:48Z",
+ "updated": "2026-11-03T22:11:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1919,5 +1996,5 @@
    "chars": 2321
   }
  ],
- "last_auto": "2026-11-03T22:08:48Z"
+ "last_auto": "2026-11-03T22:11:02Z"
 }
