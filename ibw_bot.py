@@ -322,11 +322,13 @@ def main():
 
     new, problem = fetch_new(set() if seed else seen, first_run or seed)
     if problem:
-        wbm_bot.alert(stats, f"inberlinwohnen-Bot: Seite nicht sauber lesbar ({problem}). Bitte prüfen.",
-                      key="alert_day_ibw")
+        wbm_bot.outage(stats, f"inberlinwohnen-Bot: Seite nicht sauber lesbar ({problem}). Bitte prüfen.", now,
+                       key="alert_day_ibw")
         wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
-        if not new or first_run:  # unvollständiger erster Lauf: beim nächsten Mal neu
-            sys.exit(1)
+        if not new or first_run:  # nichts Brauchbares (oder unvollständiger erster Lauf): beim nächsten Mal neu
+            return
+    elif wbm_bot.outage_over(stats, key="alert_day_ibw"):
+        wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
 
     # Scharf mit demselben Schalter wie der WBM-Bot (WBM_SEND=1), sonst Trockenlauf.
     # Die HOWOGE verlangt ein Haushaltsnettoeinkommen von mindestens dem Dreifachen der

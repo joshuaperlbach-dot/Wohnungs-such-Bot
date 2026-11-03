@@ -323,12 +323,17 @@ def test_empty_page_vs_broken_page():
 
     # leer: normaler Lauf, keine Meldung
     assert run(lambda url, **kw: mock.Mock(text=frame.format(n=0, body=""), status_code=200)) == ([], [0])
-    # kaputt, Serverfehler, Netz weg: Fehler, aber nur eine Push-Meldung pro Tag
-    for get in (lambda url, **kw: mock.Mock(text="<html>Wartung</html>", status_code=200),
-                lambda url, **kw: mock.Mock(text="", status_code=503),
-                mock.Mock(side_effect=requests.ConnectionError("weg"))):
-        msgs, codes = run(get, runs=2)
-        assert codes == [1, 1] and len(msgs) == 1 and "nicht sauber lesbar" in msgs[0], (msgs, codes)
+    # kaputt, Serverfehler, Netz weg: kurzer Aussetzer -> still, Lauf gilt als gelungen (keine GitHub-Mail)
+    broken = (lambda url, **kw: mock.Mock(text="<html>Wartung</html>", status_code=200),
+              lambda url, **kw: mock.Mock(text="", status_code=503),
+              mock.Mock(side_effect=requests.ConnectionError("weg")))
+    for get in broken:
+        assert run(get, runs=2) == ([], [0, 0])
+    # dauert die Störung länger: genau eine Push-Meldung pro Tag
+    with mock.patch("wbm_bot.OUTAGE_ALERT_AFTER", __import__("datetime").timedelta(0)):
+        for get in broken:
+            msgs, codes = run(get, runs=2)
+            assert codes == [0, 0] and len(msgs) == 1 and "nicht sauber lesbar" in msgs[0], (msgs, codes)
 
 
 def test_send_only_from_four_stars_but_report_all():
@@ -483,15 +488,17 @@ def test_ibw_main_first_run_then_only_new():
             assert len(msgs) == 2 and "example.org/13" in msgs[1], msgs
             ibw_bot.main()
             assert len(msgs) == 2  # nie doppelt
-            # Seite kaputt: Fehler und genau eine Störungsmeldung
+            # Seite kaputt: erst still, nach längerer Störung genau eine Meldung; der Lauf scheitert nie
             pages[1] = "<html>Wartung</html>"
-            for _ in range(2):
-                try:
-                    ibw_bot.main()
-                    assert False, "sollte abbrechen"
-                except SystemExit as e:
-                    assert e.code == 1
+            ibw_bot.main()
+            assert len(msgs) == 2
+            with mock.patch("wbm_bot.OUTAGE_ALERT_AFTER", __import__("datetime").timedelta(0)):
+                ibw_bot.main()
+                ibw_bot.main()
             assert len(msgs) == 3 and "nicht sauber lesbar" in msgs[2], msgs
+            pages[1] = ibw_card(13) + ibw_card(12)
+            ibw_bot.main()  # wieder lesbar: Störung beendet
+            assert "alert_day_ibw_since" not in json.loads(wbm_bot.STATS_FILE.read_text())
 
 
 def test_offers_list_for_app():

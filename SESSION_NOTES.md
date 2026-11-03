@@ -63,7 +63,9 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 5. Erfolgserkennung per Text ("Vielen Dank", "erfolgreich", ...). Sonst Status "unklar" (zählt trotzdem als gesendet, wird im Tagesbericht markiert).
 6. Bewertung läuft NACH dem Senden (Geschwindigkeit zuerst) und darf den Bot nie stoppen (try/except).
 7. Tagesbericht ab 20:00 Berliner Zeit, einmal pro Tag.
-8. Störung (`check_page`): Die Seite nennt die Anzahl selbst ("8 Mietwohnungen in Berlin"). Weicht die
+8. Störung (`check_page`, seit 03.11.2026 über `outage`): Kurze Aussetzer (Timeout, HTTP 500) sind normal; der Lauf
+   endet dann still und erfolgreich (keine GitHub-Fehlermails), Push erst nach 30 Minuten Störung.
+   Früher: Die Seite nennt die Anzahl selbst ("8 Mietwohnungen in Berlin"). Weicht die
    gelesene Anzahl ab oder ist die Seite nicht lesbar, gibt es höchstens eine Push-Meldung pro Tag.
    Eine wirklich leere Angebotsliste ist kein Fehler.
 
