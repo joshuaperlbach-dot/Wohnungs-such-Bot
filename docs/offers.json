@@ -334,79 +334,6 @@
    "confirm": "formular",
    "form_url": "https://vermietung.degewo.de/4608996745936896/4799895123787776/property/application/form/5551849832710144/1736802/4778625361510400"
   },
-  "ibw-23655": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F6296%2F00038",
-   "title": "Schöne Wohnung zum 01.12.2026!",
-   "address": "Sterndamm 126, 12487 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793609707-7s36PHenWJ.webp?q=80&w=900&fm=jpg"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 495.07,
-   "cold": 338.07,
-   "size": 36.08,
-   "floor": 2,
-   "levels": 6,
-   "year": 1985,
-   "stars": 2,
-   "why": "36.08 m², ~9.2 km zur Arbeit (Luftlinie), Kiez wenig los (6 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, Aufzug, 2. Etage, Baujahr 1985",
-   "points": 47,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.3,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-02T08:55:07Z"
-  },
   "ibw-23664": {
    "source": "ibw",
    "company": "degewo",
@@ -1694,9 +1621,88 @@
     ]
    },
    "online_since": "2026-11-03T08:28:05Z"
+  },
+  "ibw-23725": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12910-26.html?t=ibw",
+   "title": "Nachmieter:in zum 01.12.2026 gesucht",
+   "address": "Schweriner Ring 5, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793696106-FB8StWrThH.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/a/e/csm_8a935d19d9d6bb1f940e765fd735f79c_1b949f4d67.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/2/csm_6c16175db67a68564e9fcfa880cae75c_9818ec6b6f.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/1/csm_869199c302b53272b329b8083bb443da_b27375aff5.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/1/csm_908a8eeae54d0a8b603d175e4bb61554_5171efbc45.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 546.36,
+   "cold": 385.3,
+   "size": 47.27,
+   "floor": 3,
+   "levels": 5,
+   "year": 1986,
+   "stars": 2,
+   "why": "47.27 m², ~10.5 km zur Arbeit (Luftlinie), Kiez wenig los (19 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1986",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T08:55:06Z"
   }
  },
- "updated": "2026-11-03T08:54:25Z",
+ "updated": "2026-11-03T08:56:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1761,5 +1767,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T08:54:25Z"
+ "last_auto": "2026-11-03T08:56:24Z"
 }
