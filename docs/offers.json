@@ -1700,9 +1700,86 @@
     ]
    },
    "online_since": "2026-11-03T08:55:06Z"
+  },
+  "ibw-23728": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13282-35.html?t=ibw",
+   "title": "Nachmieter für gepflegte Wohnung mit 3 Zimmern gesucht!!",
+   "address": "Grevesmühlener Straße 10, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793697368-WXLcx2fXq5.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/5/8/csm_e162c05278017b4c1bcc163edfa8ad8d_ca527cf211.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/5/csm_5cf19a98bf8e9fdd525d611616eb6d55_6ea5ec27c8.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 648.96,
+   "cold": 424.62,
+   "size": 64.23,
+   "floor": 6,
+   "levels": 19,
+   "year": 1988,
+   "stars": 3,
+   "why": "64.23 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1988, Hochhaus (19 Etagen)",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     8.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T09:16:08Z"
   }
  },
- "updated": "2026-11-03T09:14:24Z",
+ "updated": "2026-11-03T09:16:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1767,5 +1844,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T09:14:24Z"
+ "last_auto": "2026-11-03T09:16:21Z"
 }
