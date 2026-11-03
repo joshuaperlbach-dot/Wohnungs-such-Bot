@@ -1689,9 +1689,90 @@
     ]
    },
    "online_since": "2026-11-03T18:40:07Z"
+  },
+  "ibw-23797": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00352-0103-0037",
+   "title": "2 Zimmerwohnung im Quergebäude ab sofort",
+   "address": "Pasteurstraße 32, 10407 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793738405-0ubdy6F3f6.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_ebf6becd-1647-4d1d-b780-030a64bc3a4e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_c024369b-5a17-4e01-be1d-5fe725cab769.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_c98795f2-a636-4988-bd8f-a75f4847e701.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_8764953c-ed33-4914-ba82-893e3dbea0d2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_4a9de903-b2fe-4aa3-a6e9-b9b970aebc70.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_3d96ee24-49b0-4961-a3ec-8009590c7b18.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_282ac8eb-9146-432b-b63f-dbd54e80d16d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_ded5d664-ed38-4e6f-96a6-59e7a7f11108.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 936.48,
+   "cold": 662.48,
+   "size": 56.39,
+   "floor": 4,
+   "levels": 5,
+   "year": 1905,
+   "stars": 3,
+   "why": "56.39 m², ~3.6 km zur Arbeit (Luftlinie), Kiez lebendig (208 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 4. Etage, Baujahr 1905",
+   "points": 66,
+   "parts": {
+    "Kosten": [
+     1.6,
+     20
+    ],
+    "Kiez": [
+     14.4,
+     16
+    ],
+    "Lage": [
+     7.3,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T20:40:05Z"
   }
  },
- "updated": "2026-11-03T20:38:32Z",
+ "updated": "2026-11-03T20:40:40Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1756,5 +1837,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T20:38:32Z"
+ "last_auto": "2026-11-03T20:40:40Z"
 }
