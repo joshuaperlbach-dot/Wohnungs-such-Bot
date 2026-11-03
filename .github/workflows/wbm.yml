@@ -29,15 +29,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Bot ausführen
-        timeout-minutes: 5
-        env:
-          WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = wirklich senden, sonst Trockenlauf
-          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}     # höchste Gesamtmiete für Anfragen; leer = keine Grenze
-          WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          RUN_SOURCE: ${{ inputs.source }}
-        run: python wbm_bot.py
       - name: inberlinwohnen-Bot ausführen
         if: always()            # unabhängig vom WBM-Bot
         timeout-minutes: 4
@@ -78,6 +69,17 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python watch.py
+      - name: WBM-Bot ausführen (schaut 100 Sekunden lang alle 10 Sekunden)
+        if: always()
+        timeout-minutes: 5
+        env:
+          WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = wirklich senden, sonst Trockenlauf
+          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}     # höchste Gesamtmiete für Anfragen; leer = keine Grenze
+          WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          RUN_SOURCE: ${{ inputs.source }}
+          POLL_SECONDS: 100    # so lange alle 10 Sekunden nachsehen (ein Lauf alle 2 Minuten)
+        run: python wbm_bot.py
       - name: Gesehene Angebote speichern
         if: always()            # auch nach Absturz/Timeout, sonst gehen Anfragen doppelt raus
         run: |

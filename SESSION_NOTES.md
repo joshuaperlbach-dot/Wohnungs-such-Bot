@@ -69,6 +69,11 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
    gelesene Anzahl ab oder ist die Seite nicht lesbar, gibt es höchstens eine Push-Meldung pro Tag.
    Eine wirklich leere Angebotsliste ist kein Fehler.
 
+## Tempo WBM (seit 03.11.2026)
+- Der WBM-Schritt läuft als letzter vor dem Speichern und schaut `POLL_SECONDS` (100) lang alle 10 Sekunden
+  auf die Angebotsseite (`wait_for_new`). Sobald ein neues passendes Angebot auftaucht, geht es sofort weiter.
+  Zusammen mit dem Anstoß alle 2 Minuten ist die Seite so fast durchgehend im Blick (vorher im Schnitt ~1 Min Verzug).
+
 ## inberlinwohnen-Bot (`ibw_bot.py`)
 - Jede Karte enthält ihre Daten als JSON (`wire:snapshot`, Livewire): Zimmer, Fläche, Kaltmiete, Etage,
   Gesellschaft, Link zur Gesellschaft, Adresse mit Bezirk und Koordinaten. Gesamtmiete und WBS stehen in `details`.
