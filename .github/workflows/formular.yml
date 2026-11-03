@@ -1,0 +1,22 @@
+name: Formular ansehen (einmalig)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ansehen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && python -m playwright install --with-deps chromium
+      - name: Aufbau des Formulars ausgeben (ohne Werte)
+        run: python tools/formular_ansehen.py
