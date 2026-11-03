@@ -1772,9 +1772,86 @@
     ]
    },
    "online_since": "2026-11-03T13:34:07Z"
+  },
+  "ibw-23760": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00639-0164-0103.html",
+   "title": "2-Zimmerwohnung such Nachmieter",
+   "address": "Horst-Caspar-Steig 13, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793715546-l0yexlLbGx.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5879-degewo_06cdc1c4-25bf-4c2b-961e-7ef9136a4f49.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5879-degewo_a70f5ab2-f899-4e8d-b723-b3b96d4f000a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5879-degewo_63fe5c2a-600e-4409-8acd-be609847bc7a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/7/csm_5879-degewo_f00277a6-17f0-41a5-809b-9d4c3d1c8a5f_b2a82287f3.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 822.68,
+   "cold": 571.71,
+   "size": 71.1,
+   "floor": 1,
+   "levels": 4,
+   "year": 1966,
+   "stars": 3,
+   "why": "71.1 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (53 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1966",
+   "points": 60,
+   "parts": {
+    "Kosten": [
+     14.2,
+     20
+    ],
+    "Kiez": [
+     8.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     10.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T14:19:06Z"
   }
  },
- "updated": "2026-11-03T14:18:24Z",
+ "updated": "2026-11-03T14:20:36Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1839,5 +1916,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T14:18:24Z"
+ "last_auto": "2026-11-03T14:20:36Z"
 }
