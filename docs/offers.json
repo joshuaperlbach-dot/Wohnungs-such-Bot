@@ -1763,9 +1763,93 @@
     ]
    },
    "online_since": "2026-11-03T08:23:04Z"
+  },
+  "ibw-23720": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00638-0194-0802.html",
+   "title": "1-Zimmerwohnung in der Gropiusstadt",
+   "address": "Käthe-Dorsch-Ring 12, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793694484-1AWwt118fN.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_c23137c2-7f14-4897-92a0-2615da21fa20.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_84736029-fd15-4b72-a2bc-6e527718c40e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_a1c15931-033e-4740-b3db-8f6a8b87b33b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_9c94ca2a-dba5-4955-a226-bfb18603227f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_4995-degewo_8a148a27-a4d8-4895-83c4-3cf40eb51b7a_c614afa5de.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_fc1ad1f2-94f1-4a5b-ad26-12be158cce32.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_cc4af393-1607-48c8-89ae-46d6a1348953.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_d3f2d8d4-8501-4d0c-a1d3-d8ee102ac1ae.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_68ef7667-bc38-4a67-93ca-7cb3663c76c7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_59810d4a-80b0-4cdb-889a-b6e3216ca14b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/4/csm_4995-degewo_b0f5e630-74a2-4e72-ad0e-2a4009d7df83_734948063e.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 501.85,
+   "cold": 384.11,
+   "size": 36.68,
+   "floor": 8,
+   "levels": 9,
+   "year": 1966,
+   "stars": 2,
+   "why": "36.68 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (48 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 8. Etage, Baujahr 1966, Hochhaus (9 Etagen)",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.1,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.5,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T08:28:05Z"
   }
  },
- "updated": "2026-11-03T08:26:22Z",
+ "updated": "2026-11-03T08:28:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1830,5 +1914,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T08:26:22Z"
+ "last_auto": "2026-11-03T08:28:32Z"
 }
