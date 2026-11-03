@@ -16,7 +16,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
@@ -325,6 +325,23 @@ def notify(msg):
             pass
 
 
+# Kurze Aussetzer der Seiten (Timeout, Fehler 500) sind normal: erst melden, wenn es länger dauert
+OUTAGE_ALERT_AFTER = timedelta(minutes=30)
+
+
+def outage(stats, msg, now, key="alert_day"):
+    """Seite nicht lesbar: merken seit wann, Push erst nach OUTAGE_ALERT_AFTER (dann höchstens einmal pro Tag)."""
+    print(msg, file=sys.stderr)
+    since = offers.parse_time(stats.setdefault(key + "_since", offers.iso(now)))
+    if since and now - since >= OUTAGE_ALERT_AFTER:
+        alert(stats, msg, key)
+
+
+def outage_over(stats, key="alert_day"):
+    """Seite wieder lesbar. True, wenn vorher eine Störung lief (dann stats speichern)."""
+    return stats.pop(key + "_since", None) is not None
+
+
 def alert(stats, msg, key="alert_day"):
     """Störung melden: aufs Handy höchstens einmal pro Tag."""
     print(msg, file=sys.stderr)
@@ -375,10 +392,12 @@ def main():
     listings = parse_listings(html)
     problem = problem or check_page(html, listings)
     if problem:
-        alert(stats, f"WBM-Bot: Angebotsseite nicht sauber lesbar ({problem}). Bitte prüfen.")
-        if not listings:
+        outage(stats, f"WBM-Bot: Angebotsseite nicht sauber lesbar ({problem}). Bitte prüfen.", now)
+        if not listings:  # nichts zu tun; beim nächsten Lauf (2 Minuten) neu versuchen
             STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
-            sys.exit(1)
+            return
+    else:
+        outage_over(stats)
     stats["scanned"] = sorted(set(stats["scanned"]) | {l["url"] for l in listings})
 
     seen = set(json.loads(SEEN_FILE.read_text())) if SEEN_FILE.exists() else set()
