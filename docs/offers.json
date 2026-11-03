@@ -1768,7 +1768,10 @@
      5
     ]
    },
-   "online_since": "2026-11-03T20:40:05Z"
+   "online_since": "2026-11-03T20:40:05Z",
+   "requested": "gesendet",
+   "requested_at": "2026-11-03T21:56:31Z",
+   "via": "mail"
   },
   "ibw-23798": {
    "source": "ibw",
@@ -1845,25 +1848,16 @@
      5
     ]
    },
-   "online_since": "2026-11-03T20:43:06Z"
+   "online_since": "2026-11-03T20:43:06Z",
+   "requested": "gesendet",
+   "requested_at": "2026-11-03T21:56:31Z",
+   "via": "mail"
   }
  },
- "updated": "2026-11-03T21:56:12Z",
+ "updated": "2026-11-03T21:58:12Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-28T14:55:53Z",
-   "kind": "eingang",
-   "matched": false,
-   "chars": 2725
-  },
-  {
-   "at": "2026-10-28T14:55:53Z",
-   "kind": "formular",
-   "matched": false,
-   "chars": 2753
-  },
   {
    "at": "2026-10-28T14:55:53Z",
    "kind": "absage",
@@ -1911,7 +1905,19 @@
    "kind": "formular",
    "matched": true,
    "chars": 2894
+  },
+  {
+   "at": "2026-11-03T21:56:31Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2370
+  },
+  {
+   "at": "2026-11-03T21:56:31Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2321
   }
  ],
- "last_auto": "2026-11-03T21:56:12Z"
+ "last_auto": "2026-11-03T21:58:12Z"
 }
