@@ -1849,9 +1849,176 @@
     ]
    },
    "online_since": "2026-11-03T14:19:06Z"
+  },
+  "ibw-23766": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20508-123.html?t=ibw",
+   "title": "Für die Anmietung der Wohnung ist kein WBS erforderlich",
+   "address": "Baikalstraße 21, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793717645-9Nc61Isn2w.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/3/7/csm_bcf3eeca9e73bea25c84fb5d05843409_dbd5e52551.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/4/csm_96fded112c757421748a60997861da00_d17200dad0.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/e/csm_7e8193c2f10a57b9706aa9ce1faee5fa_766bb64865.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/4/csm_eafe7f8ff5bfb80fe5cb4d9d86418fa7_91cf01274f.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/5/csm_cf654c2a47605a082f260341185b1ea5_b48321bbc6.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/9/csm_0e8a218830dfc77d08a6bea24533d906_fd504eab45.webp",
+    "https://www.howoge.de/fileadmin/_processed_/5/1/csm_62bbb72c0d29b5e3b343f56ba78d53b0_86db32fc5a.webp",
+    "https://www.howoge.de/fileadmin/_processed_/1/c/csm_84e60bb23c961125710ed9f493c65c4b_3de1f7654c.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 448.72,
+   "cold": 279.42,
+   "size": 25.25,
+   "floor": 10,
+   "levels": 17,
+   "year": 1968,
+   "stars": 2,
+   "why": "25.25 m², ~6.4 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 10. Etage, Baujahr 1968, Hochhaus (17 Etagen)",
+   "points": 46,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     2.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T14:54:05Z"
+  },
+  "ibw-23765": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20508-3.html?t=ibw",
+   "title": "Für die Anmietung der Wohnung ist kein WBS erforderlich",
+   "address": "Baikalstraße 21, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793717586-DsxAP80K1w.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/c/f/csm_6224c88161b969594dd51a9607fcaab3_499d33094c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/2/csm_ba6ad06b9550c56fee0b35fa89782706_6ea63f4710.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/7/csm_42c4335e3a7287fdccf0abcae7f839f7_edb09bdb38.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/b/csm_200c6bfd0d95ae645c46a1af151c1478_b843dffc75.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/8/csm_0ab161845287a94b5296a817b41b0749_dd2fec103e.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/8/csm_67941d1a6f4d12a055bc94852450d2e6_170d944552.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/5/csm_211c40bd5d2e0eaa92b0e280df66a88c_827affa2db.webp",
+    "https://www.howoge.de/fileadmin/_processed_/5/1/csm_62bbb72c0d29b5e3b343f56ba78d53b0_86db32fc5a.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/7/csm_c1cc9e4e98aa76e40e89fd90793229a2_6216a117fd.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 448.62,
+   "cold": 279.42,
+   "size": 25.25,
+   "floor": 2,
+   "levels": 17,
+   "year": 1968,
+   "stars": 2,
+   "why": "25.25 m², ~6.4 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1968, Hochhaus (17 Etagen)",
+   "points": 46,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     2.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T14:53:06Z"
   }
  },
- "updated": "2026-11-03T14:52:22Z",
+ "updated": "2026-11-03T14:54:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1916,5 +2083,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T14:52:22Z"
+ "last_auto": "2026-11-03T14:54:22Z"
 }
