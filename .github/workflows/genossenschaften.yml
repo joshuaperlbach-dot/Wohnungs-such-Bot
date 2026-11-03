@@ -20,3 +20,5 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Mitgliedschaft und Wartelisten prüfen
         run: python tools/genossenschaften.py
+      - name: Kosten der Mitgliedschaft
+        run: python tools/genossenschaften_kosten.py
