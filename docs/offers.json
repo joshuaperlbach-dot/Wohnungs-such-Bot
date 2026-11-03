@@ -1619,9 +1619,90 @@
     ]
    },
    "online_since": "2026-11-03T09:56:08Z"
+  },
+  "ibw-23736": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00221-0017-0503.html",
+   "title": "Singlewohnung in Wilmersdorf sucht Nachmieter",
+   "address": "Motzstraße 80, 10779 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793703607-wQAMLZCvtm.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_598b6802-c889-41c5-afba-a57e3ff70094.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_6564549c-4a1d-4d04-99af-f87f725d6ca2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_aaa76646-9094-42d7-b71a-6db0c2ee641d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_7f0ef872-bfa6-4b67-88df-7dfff994a85c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_94d78c15-e89e-449e-9039-7f33d1890c22.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_7b3718ed-fcf7-4a34-890a-952b22a74cc1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_e1cceb27-85d0-46a8-a635-273d853b3ad9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/a/csm_5863-degewo_6b71943b-089e-4ab9-9f86-d171c1476d63_7c1b9e99c0.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 554.07,
+   "cold": 427.97,
+   "size": 33.54,
+   "floor": 5,
+   "levels": 6,
+   "year": 1961,
+   "stars": 3,
+   "why": "33.54 m², ~5.2 km zur Arbeit (Luftlinie), Kiez mittel (116 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1961",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.3,
+     16
+    ],
+    "Lage": [
+     4.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T11:00:08Z"
   }
  },
- "updated": "2026-11-03T10:58:23Z",
+ "updated": "2026-11-03T11:00:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1686,5 +1767,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T10:58:23Z"
+ "last_auto": "2026-11-03T11:00:58Z"
 }
