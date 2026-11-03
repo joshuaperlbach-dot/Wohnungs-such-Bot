@@ -334,97 +334,6 @@
    "confirm": "formular",
    "form_url": "https://vermietung.degewo.de/4608996745936896/4799895123787776/property/application/form/5551849832710144/1736802/4778625361510400"
   },
-  "ibw-23690": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00212-0011-0101.html",
-   "title": "Wohnen in bester Nachbarschaft zwischen Spichernstraße und Victoria-Luise-Platz",
-   "address": "Geisbergstraße 25A, 10777 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793633406-HKQ98VzfLg.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_4349ffb8-9885-44c7-82a1-78a32d69a0c6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_e0ca3998-b685-42a1-9a73-56783c9a6b7a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_6b62832c-8a4a-4730-a2cb-f60691bfe1d0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_06285134-83ae-4f25-bf2b-7bd8d9491c94.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_0116a2fc-9984-4552-9e9e-eee0e41ee48c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_b14e6365-a7c2-4858-8872-a1f1041817cd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_c5c001ef-766b-46cd-9757-59676696b5de.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_c73285e6-6d28-4e38-960b-6aafa689f693.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_75f3bb54-1269-430f-ac38-43a6fabbb01f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_67a2b9ef-c28c-4d7f-8f59-5d3cde679b4c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_60f0ee0a-07b9-4d78-9d41-c9d45014376d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_cbec2798-ba49-4b57-a75f-a5ff955ab1a0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_c89105c4-6a39-4ec2-adb1-b7e01e6ac962.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_70a17109-a81b-4e1f-8592-fff40f29c3a1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_eda9e8d0-e764-45ff-9654-aa5e4d8e6925.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_a502fbdf-21ea-4768-a136-a13edc51e845.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5819-degewo_19858106-a310-48aa-8b67-2277062aaba2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/2/csm_5819-degewo_6c345adb-22a7-4bd8-99db-8f0bf412bc4e_41a9fff38f.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 814.41,
-   "cold": 609.53,
-   "size": 54.06,
-   "floor": 1,
-   "levels": 5,
-   "year": 1959,
-   "stars": 3,
-   "why": "54.06 m², ~5.1 km zur Arbeit (Luftlinie), Kiez mittel (173 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1959",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     14.8,
-     20
-    ],
-    "Kiez": [
-     12.0,
-     16
-    ],
-    "Lage": [
-     4.9,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-02T15:30:06Z"
-  },
   "ibw-23692": {
    "source": "ibw",
    "company": "gewobag",
@@ -2091,7 +2000,7 @@
    "online_since": "2026-11-03T15:23:04Z"
   }
  },
- "updated": "2026-11-03T15:28:28Z",
+ "updated": "2026-11-03T15:30:48Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2156,5 +2065,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T15:28:28Z"
+ "last_auto": "2026-11-03T15:30:48Z"
 }
