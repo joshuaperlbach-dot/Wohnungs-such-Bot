@@ -1682,9 +1682,90 @@
     ]
    },
    "online_since": "2026-11-03T08:22:04Z"
+  },
+  "ibw-23718": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00649-0058-0106.html",
+   "title": "1-Zimmerwohnung in der Gropiusstadt",
+   "address": "Walter-Franck-Zeile 7, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793694184-42KSTT5IvT.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_6e6ffea7-9b8b-41bc-95f1-b81ab5da34e0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_c451f361-6efa-4c9b-98ad-e74415151c62.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_18245802-b0cd-4077-81c3-fdb43ca97f31.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_b41c1291-fa68-40a5-9460-454881bdb885.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_55a04bed-7968-4395-be2a-d59d09bae3bd.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_c98f7201-d085-4d77-a02e-1bd8ac989e29.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_af16aa3a-d039-46a3-9ab4-9d7269b9c3a4.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/f/csm_4874-degewo_7f66807a-e03c-4cd1-8c1d-e42b3f14a8e2_823dec7019.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 517.21,
+   "cold": 400.55,
+   "size": 38.25,
+   "floor": 1,
+   "levels": 9,
+   "year": 1969,
+   "stars": 2,
+   "why": "38.25 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (14 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1969, Hochhaus (9 Etagen)",
+   "points": 42,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T08:23:04Z"
   }
  },
- "updated": "2026-11-03T08:22:21Z",
+ "updated": "2026-11-03T08:24:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1749,5 +1830,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T08:22:21Z"
+ "last_auto": "2026-11-03T08:24:31Z"
 }
