@@ -2016,9 +2016,82 @@
     ]
    },
    "online_since": "2026-11-03T14:53:06Z"
+  },
+  "ibw-23770": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00227-0007-0102.html",
+   "title": "Prager Platz ums Eck: Erdgeschosswohnung für kreative Gestalter",
+   "address": "Prinzregentenstraße 94, 10717 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793719384-aTr67SJrAM.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 459.79,
+   "cold": 357.53,
+   "size": 28.02,
+   "floor": 1,
+   "levels": 6,
+   "year": 1960,
+   "stars": 3,
+   "why": "28.02 m², ~5.4 km zur Arbeit (Luftlinie), Kiez mittel (147 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1960",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     11.3,
+     16
+    ],
+    "Lage": [
+     4.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T15:23:04Z"
   }
  },
- "updated": "2026-11-03T15:22:26Z",
+ "updated": "2026-11-03T15:24:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2083,5 +2156,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T15:22:26Z"
+ "last_auto": "2026-11-03T15:24:30Z"
 }
