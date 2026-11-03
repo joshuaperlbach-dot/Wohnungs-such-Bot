@@ -90,7 +90,7 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
     Bestätigungslink (`.../bewerbungsprozess/doi.html`), den `mail_check.py` öffnet; erst dann zählt die Anfrage.
     Scharf mit demselben Schalter wie WBM (`WBM_SEND=1`, seit 16.10.2026), sonst Trockenlauf. Optional begrenzt
     `MAX_WARM_SEND` die Gesamtmiete (= Netto / 3, weil die HOWOGE das Dreifache der Miete als Einkommen verlangt);
-    leer = keine Grenze. Dieselbe Variable begrenzt auch die WBM-Anfragen; gemeldet und angezeigt wird weiter alles bis `MAX_WARMMIETE`. Gleiche Regeln wie WBM: ab 4 Sternen,
+    leer = keine Grenze. Dieselbe Variable begrenzt auch die WBM-Anfragen; gemeldet und angezeigt wird weiter alles bis `MAX_WARMMIETE`. Gleiche Regeln wie WBM: ab 3 Sternen (seit 03.11.2026, vorher 4),
     Bezirk sicher passend, kein WBS, max. 3 pro Lauf, nie doppelt. Echtes Senden und die Bestätigungsmail sind
     noch nicht live geprüft (Trockenlauf gegen die echte Seite klappt).
     Erste echte Anfrage am 15.10.2026 (nach 12 Sekunden raus). Die Bestätigungsmail kam von
@@ -153,7 +153,7 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - Hochhaus: Etagenzahl des Hauses (nur bei inberlinwohnen bekannt), ab 9 Etagen deutlicher Abzug.
 - Nutzerwunsch (13.10.2026): Altbau in Prenzlauer Berg schlägt Plattenbau in Lichtenberg, 2 Zimmer besser als 1,
   je mehr Platz desto besser. Bauart wird über das Baujahr geschätzt (bis 1949 top, 1960-1990 schwach).
-- Automatische Anfrage (WBM) erst ab 4 Sternen (`MIN_STARS_SEND`), gemeldet wird jeder Treffer.
+- Automatische Anfrage (WBM, HOWOGE) ab 3 Sternen (`MIN_STARS_SEND`, bis 03.11.2026: 4), gemeldet wird jeder Treffer.
 - Sterne ab Punkten: 5 >= 85, 4 >= 70, 3 >= 55, 2 >= 40.
 - Bewusst NICHT bewertet: Lärm (unwichtig, "laut sein können" lässt sich vorher nicht prüfen).
 - Kaltmiete: Obergrenze 900 € kalt (`MAX_KALTMIETE`), aus dem Exposé gelesen; unbekannt = kein Ausschluss.
