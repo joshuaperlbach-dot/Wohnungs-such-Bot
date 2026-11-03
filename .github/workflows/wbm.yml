@@ -58,6 +58,20 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RUN_SOURCE: ${{ inputs.source }}
         run: python mail_check.py
+      - name: Zweites degewo-Formular ausfüllen
+        # nur wenn der Mail-Abruf ein neues Formular gefunden hat (die Datei kommt nie ins Repo)
+        if: always() && hashFiles('.degewo_forms.json') != ''
+        continue-on-error: true
+        timeout-minutes: 5
+        env:
+          WBM_SEND: ${{ vars.WBM_SEND }}
+          WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
+          HAUSHALT_EINKOMMEN: ${{ secrets.HAUSHALT_EINKOMMEN }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+          python degewo_form.py
       - name: Seiten-Wächter (WGLi)
         if: always()
         timeout-minutes: 1

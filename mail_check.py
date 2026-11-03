@@ -27,6 +27,7 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
+import degewo_form
 import howoge
 import offers
 import wbm_bot
@@ -153,7 +154,10 @@ def mail_id(msg):
 def process(messages, store, seen, now):
     """Neue Mails auswerten. Gibt die Push-Meldungen zurück (ohne Mail-Inhalt)."""
     notes = []
+    forms = []  # zweite degewo-Formulare, die degewo_form.py gleich ausfüllt
     expire_confirmations(store, now)
+    for o in store["offers"].values():  # früher gespeicherte persönliche Links aus der öffentlichen Datei entfernen
+        o.pop("form_url", None)
     for msg in messages:
         mid = mail_id(msg)
         if mid in seen:
@@ -187,15 +191,19 @@ def process(messages, store, seen, now):
                 notes.append(f"HOWOGE-Anfrage für {where}: Bestätigungslink nicht erkannt.\n"
                              "Bitte in der Mail selbst anklicken (gilt 24 Stunden)!")
         elif re.search(FORM_NEEDED, text, re.I):
-            # degewo: Anfrage ist erst vollständig mit dem zweiten Formular. Link kommt in die Push-Meldung.
+            # degewo: Anfrage ist erst vollständig mit dem zweiten Formular. degewo_form.py füllt es im
+            # selben Lauf aus; der persönliche Link bleibt dafür nur in einer Datei, die nie ins Repo kommt.
             kind, key = "formular", find_offer(store, text, any_offer=True)
             link = next((u for u in links(msg) if FORM_LINK.match(u)), None)
             where = store["offers"][key].get("address", "") if key else "eine Wohnung"
             if key:
                 store["offers"][key].update(requested="gesendet", requested_at=store["offers"][key].get("requested_at")
-                                            or offers.iso(now), confirm="formular", form_url=link)
-            notes.append(f"degewo will für {where} noch ein zweites Formular, sonst zählt die Anfrage nicht!\n"
-                         + (link or "Link steht in der Mail von degewo."))
+                                            or offers.iso(now), confirm="formular")
+            if link and fresh:
+                forms.append({"url": link, "key": key, "where": where})
+            elif not link:
+                notes.append(f"degewo will für {where} noch ein zweites Formular, sonst zählt die Anfrage nicht!\n"
+                             "Link steht in der Mail von degewo.")
         elif re.search(RECEIPT, text, re.I):
             # Eingangsbestätigung: von Hand angefragt -> in der Handy-Ansicht als angefragt eintragen
             kind, key = "eingang", find_offer(store, text, any_offer=True)
@@ -217,6 +225,8 @@ def process(messages, store, seen, now):
             notes.append(f"Antwort einer Wohnungsgesellschaft zu: {where}\nBitte in den Mails nachsehen.")
         if not fresh:
             del notes[before:]
+    if forms:
+        degewo_form.PENDING.write_text(json.dumps(forms))
     return notes
 
 
@@ -267,6 +277,10 @@ def main():
     now = datetime.now(wbm_bot.TZ)
     stats = wbm_bot.load_stats(now.strftime("%Y-%m-%d"))
     store = offers.load()
+    if any("form_url" in o for o in store["offers"].values()):  # persönliche Links gehören nicht in die öffentliche Datei
+        for o in store["offers"].values():
+            o.pop("form_url", None)
+        offers.save(store, now)
     last = offers.parse_time(stats.get("mail_checked_at"))
     waiting = any(o.get("confirm") == "offen" for o in store["offers"].values())
     if last and now - last < CHECK_EVERY and not waiting:
