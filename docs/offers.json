@@ -1770,9 +1770,86 @@
     ]
    },
    "online_since": "2026-11-03T20:40:05Z"
+  },
+  "ibw-23798": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00156-0504-0441",
+   "title": "Großzügige1 Zimmerwohnung im Bötzowviertel ab sofort!",
+   "address": "John-Schehr-Straße 56, 10407 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793738586-9EdbBeB36T.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 767.57,
+   "cold": 551.57,
+   "size": 48.92,
+   "floor": 3,
+   "levels": 5,
+   "year": 1956,
+   "stars": 3,
+   "why": "48.92 m², ~4.0 km zur Arbeit (Luftlinie), Kiez wenig los (59 Lokale/Läden), Park nah, Ringbahn nah, 3. Etage, Baujahr 1956",
+   "points": 63,
+   "parts": {
+    "Kosten": [
+     18.6,
+     20
+    ],
+    "Kiez": [
+     9.0,
+     16
+    ],
+    "Lage": [
+     6.7,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T20:43:06Z"
   }
  },
- "updated": "2026-11-03T20:42:34Z",
+ "updated": "2026-11-03T20:44:27Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1837,5 +1914,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T20:42:34Z"
+ "last_auto": "2026-11-03T20:44:27Z"
 }
