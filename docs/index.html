@@ -211,10 +211,12 @@ function state(key, o) {
   if (o.reply === "einladung") return { cls: "invite", label: "Einladung zur Besichtigung", note: "schau in deine Mails", locked: true };
   if (o.reply === "absage") return { cls: "declined", label: "Absage", note: "Anfrage war raus", locked: true };
   if (o.reply === "antwort") return { cls: "sent", label: "Antwort da", note: "schau in deine Mails", locked: true };
+  // degewo: nach der Anfrage noch ein zweites Formular; das füllt der Bot selbst aus
+  if (o.confirm === "formular_gesendet" && !o.reply) {
+    return { cls: "sent", label: "Angefragt", note: "zweites Formular vom Bot ausgefüllt", locked: true };
+  }
   if (o.confirm === "formular" && !o.reply) {
-    // degewo: nach der Anfrage noch ein zweites Formular, Link kam per Mail
-    if (opened[key]) return { cls: "sent", label: "Angefragt", note: "zweites Formular geöffnet", locked: true };
-    return { cls: "ask", label: "Zweites Formular ausfüllen ↗", note: "sonst zählt die Anfrage nicht", url: safeUrl(o.form_url) };
+    return { cls: "ask", label: "Zweites Formular offen", note: "Bot füllt aus, sonst kommt eine Push-Meldung", locked: true };
   }
   if (o.confirm === "abgelaufen") return { cls: "declined", label: "Anfrage nicht bestätigt", note: "Link aus der Mail abgelaufen", locked: true };
   if (o.requested === "unklar" && o.confirm === "offen") {

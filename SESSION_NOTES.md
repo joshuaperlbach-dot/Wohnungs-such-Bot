@@ -110,6 +110,13 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 - `offers.json` wird bei jedem Lauf neu geschrieben (Feld `updated`); die Seite warnt, wenn der Bot über 45 Minuten
   nicht gelaufen ist.
 
+## Zweites degewo-Formular (`degewo_form.py`, seit 03.11.2026)
+- Nach der Anfrage schickt degewo eine Mail mit Link zu einem zweiten Formular (vermietung.degewo.de,
+  Wohnungshelden, kein Captcha): Telefon, Personen (1), Kinder (0), Haushaltsnettoeinkommen, "für mich selbst".
+- `mail_check.py` legt den Link in `.degewo_forms.json` (nie im Repo), der Workflow startet dann `degewo_form.py`
+  mit Playwright. Einkommen aus Secret `HAUSHALT_EINKOMMEN`. Klappt es nicht, kommt eine Push-Meldung mit Link.
+- Aufbau einmalig mit `tools/formular_ansehen.py` (Workflow "Formular ansehen") ermittelt; Test gegen Nachbau.
+
 ## Ausfüll-Hilfe für Formulare mit Captcha (`docs/ausfuellen.user.js`)
 - Userscript für Tampermonkey (Firefox auf Android). Läuft auf den Seiten von degewo, Gewobag, Stadt und Land,
   Wohnungshelden (eingebettete Formulare), Gesobau, Berlinovo, HOWOGE, WBM.

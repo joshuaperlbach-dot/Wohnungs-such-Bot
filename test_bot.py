@@ -1017,13 +1017,68 @@ def test_mail_other_companies():
         "d": {"address": "Fritz-Reuter-Allee 11, 12359 Berlin", "company": "degewo"},
         "t": {"address": "Teststraße 1, 10115 Berlin", "company": "degewo"},
     }}
-    notes = mail_check.process([eingang, formular, absage, alt], store, set(), now)
+    import degewo_form
+    old_pending = degewo_form.PENDING
+    with tempfile.TemporaryDirectory() as td:
+        degewo_form.PENDING = Path(td) / "forms.json"
+        try:
+            store["offers"]["g"]["form_url"] = "https://alt/"  # früher öffentlich gespeichert: muss weg
+            notes = mail_check.process([eingang, formular, absage, alt], store, set(), now)
+            pending = json.loads(degewo_form.PENDING.read_text())
+        finally:
+            degewo_form.PENDING = old_pending
     o = store["offers"]
     assert o["g"]["requested"] == "gesendet" and o["g"]["via"] == "mail" and o["g"]["reply"] == "absage"
-    assert o["d"]["confirm"] == "formular" and o["d"]["form_url"] == "https://vermietung.degewo.de/1/2/property/application/form/3/4/5"
-    assert o["t"]["confirm"] == "formular"  # alte Mail: trotzdem eingetragen ...
-    assert len(notes) == 1 and "zweites Formular" in notes[0] and "Fritz-Reuter-Allee 11" in notes[0], notes  # ... aber kein Push
-    assert "vermietung.degewo.de/1/2" in notes[0]
+    assert o["d"]["confirm"] == "formular" and o["t"]["confirm"] == "formular"  # alte Mail: trotzdem eingetragen
+    assert not any("form_url" in x for x in o.values())  # persönlicher Link nie in der öffentlichen Datei
+    # nur das frische Formular wird gleich vom Bot ausgefüllt; kein Push nötig
+    assert pending == [{"url": "https://vermietung.degewo.de/1/2/property/application/form/3/4/5", "key": "d",
+                        "where": "Fritz-Reuter-Allee 11, 12359 Berlin"}], pending
+    assert notes == [], notes
+
+
+DEGEWO_FORM = """<!doctype html><html><head><meta charset="utf-8"></head><body><form id="f" onsubmit="return false">
+<div><label for="t">Telefonnummer *</label><input id="t" type="text" required></div>
+<div><label for="p">Anzahl einziehende Personen *</label><input id="p" type="number" required></div>
+<div><label for="k">davon Anzahl Kinder *</label><input id="k" type="number" required></div>
+<div><label for="e">Monatliches Haushaltsnettoeinkommen in Euro *</label><input id="e" type="number" required></div>
+<div><span id="ql">Stellen Sie diese Wohnungsanfrage für sich selbst oder für eine andere Person/einen Dritten? *</span>
+<div role="combobox" aria-labelledby="ql" tabindex="0" id="cb" onclick="document.getElementById('lb').hidden=false">Bitte wählen</div>
+<div role="listbox" id="lb" hidden>
+ <div role="option" onclick="pick(this)">Für eine andere Person</div><div role="option" onclick="pick(this)">Für mich selbst</div>
+</div></div>
+<button type="submit" onclick="send()">Absenden</button></form>
+<script>
+function pick(o){ document.getElementById('cb').textContent=o.textContent; document.getElementById('lb').hidden=true; }
+function send(){ window.sent={t:t.value,p:p.value,k:k.value,e:e.value,cb:cb.textContent};
+  document.body.innerHTML='<p>Vielen Dank, Ihre Angaben wurden übermittelt.</p>'; }
+</script></body></html>"""
+
+
+def test_degewo_form_fill():
+    """Zweites degewo-Formular im echten Browser (Nachbau mit denselben Beschriftungen)."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("übersprungen: playwright fehlt")
+        return
+    import degewo_form
+    with tempfile.TemporaryDirectory() as td:
+        page_file = Path(td) / "form.html"
+        page_file.write_text(DEGEWO_FORM)
+        with sync_playwright() as p:
+            browser = p.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH") or None)
+            item = {"url": page_file.as_uri(), "key": "d", "where": "X"}
+            dry = degewo_form.run([item], "0151 2345", "2400", False, browser)
+            assert [r[1] for r in dry] == ["trockenlauf"], dry
+            res = degewo_form.run([item], "0151 2345", "2400", True, browser)
+            assert [r[1] for r in res] == ["gesendet"], res
+            page = browser.new_page()  # Werte prüfen: Seite erneut ausfüllen und abfangen
+            page.goto(item["url"])
+            degewo_form.fill(page, "0151 2345", "2400", True)
+            assert page.evaluate("window.sent") == {"t": "0151 2345", "p": "1", "k": "0", "e": "2400",
+                                                    "cb": "Für mich selbst"}
+            browser.close()
 
 
 def test_fetch_messages_one_search_and_only_new():
