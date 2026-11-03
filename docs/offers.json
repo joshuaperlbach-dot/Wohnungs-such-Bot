@@ -1690,9 +1690,91 @@
     ]
    },
    "online_since": "2026-11-03T13:17:05Z"
+  },
+  "ibw-23754": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-380.html?t=ibw",
+   "title": "*** OHNE WBS - 2 Zimmer mit offener Wohnküche - Balkon und Keller im Erstbezug ***",
+   "address": "Anne-Frank-Straße 26, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793712847-evoXEvYOwF.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/6/8/csm_20dfd05d66ec4a187915c7446626093f_fe1dcfb238.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/3/csm_cd1849a58bf7b926edd89a62670fb818_4695125dd7.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/5/csm_3377236f24c618d90958096e37c5be4c_d90c1a706a.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/6/csm_ec2235826ae2c5923b4a5b779f24bca3_22de7e7efc.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/9/csm_fa1c8ba00fde18942bf2df01c1c471c9_6437a6804c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/5/csm_0e4620a173fa8c0365586c0b373dec76_c849a75be4.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 889.5,
+   "cold": 704.0,
+   "size": 53.0,
+   "floor": 3,
+   "levels": 5,
+   "year": 2025,
+   "stars": 2,
+   "why": "53 m², ~13.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2025",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     7.3,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T13:34:07Z"
   }
  },
- "updated": "2026-11-03T13:32:25Z",
+ "updated": "2026-11-03T13:34:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1757,5 +1839,5 @@
    "chars": 2894
   }
  ],
- "last_auto": "2026-11-03T13:32:25Z"
+ "last_auto": "2026-11-03T13:34:20Z"
 }
