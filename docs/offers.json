@@ -1314,9 +1314,92 @@
     ]
    },
    "online_since": "2026-11-04T13:55:03Z"
+  },
+  "ibw-23880": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02561-0101-0112",
+   "title": "Wohnung mit Einbauküche und Weitblick in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Altenhofer Straße 30, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793804226-0nfTn3MS8D.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_d8579f9f-d13b-4b95-8a60-cb13a023407b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_6c98ae5b-36bc-4d0d-8016-3ea7d2dbd1ac.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_c62edba5-c5a5-45ad-8b08-73c6fc16b09e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_4bddf8a3-a02e-4a24-9f0a-f4f9855bd2a9.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_08c083cf-bf33-4d24-99f3-59519a53152c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_bcfe69e0-b8e3-416e-b0e6-8ea228654ce3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_38e985d5-c7c7-471c-8caf-85f638e5a8f0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_7b5cc4b9-f352-475d-99ad-176f85c6f1d4.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_8c4020d3-9972-4f92-8be4-f156798302bb.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0112/gewobag_60ad9429-a027-44fe-bfad-068452bb4fc4.jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 2,
+   "price": 720.51,
+   "cold": 488.51,
+   "size": 57.6,
+   "floor": 12,
+   "levels": 18,
+   "year": 1976,
+   "stars": 2,
+   "why": "57.6 m², ~6.0 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 12. Etage, Baujahr 1976, Hochhaus (18 Etagen)",
+   "points": 50,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     3.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     6.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T14:57:06Z"
   }
  },
- "updated": "2026-11-04T14:58:06Z",
+ "updated": "2026-11-04T15:00:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1381,5 +1464,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T14:58:06Z"
+ "last_auto": "2026-11-04T15:00:08Z"
 }
