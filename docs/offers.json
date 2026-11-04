@@ -1391,9 +1391,82 @@
     ]
    },
    "online_since": "2026-11-04T15:50:06Z"
+  },
+  "ibw-23886": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02520-0802-0492",
+   "title": "Singleappartement in oberster Etage mit Balkon in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Simon-Bolivar-Straße 42B, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793808784-noQgr3pEh1.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 1,
+   "price": 571.33,
+   "cold": 402.33,
+   "size": 38.5,
+   "floor": 3,
+   "levels": 4,
+   "year": 1933,
+   "stars": 3,
+   "why": "38.5 m², ~6.5 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1933",
+   "points": 56,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     2.6,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T16:13:04Z"
   }
  },
- "updated": "2026-11-04T16:13:10Z",
+ "updated": "2026-11-04T16:15:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1458,5 +1531,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T16:13:10Z"
+ "last_auto": "2026-11-04T16:15:07Z"
 }
