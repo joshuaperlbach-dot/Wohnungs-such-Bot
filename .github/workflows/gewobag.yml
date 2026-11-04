@@ -1,0 +1,22 @@
+name: Gewobag ansehen (einmalig)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ansehen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt playwright && python -m playwright install --with-deps chromium
+      - name: Bilder und Anfrageformular ansehen (ohne persönliche Daten)
+        run: python tools/gewobag_ansehen.py
