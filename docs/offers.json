@@ -333,89 +333,6 @@
    "requested_at": "2026-10-30T13:46:28Z",
    "confirm": "formular"
   },
-  "ibw-23750": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-65801-0038-0403.html",
-   "title": "Alles in der Nähe: Wald, Wasser, Nahverkehr, Einkaufsmöglichkeiten",
-   "address": "Wendenschloßstraße 373, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793711884-UDnNAJPum6.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_f69e27f6-5136-4dba-b2e8-933f3bc2f7e8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_da1e17bc-8e22-4ef1-9e56-b71f89e6c556.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_c580aac6-af96-4af1-abda-79ebe9c4f8b0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_2702a60d-68c4-4bbe-b99e-455041ba2f75.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_0cbbf1ef-642d-4ebb-b309-75bc9a4bcb28.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_01cb71ee-7eb3-4bc7-a4f9-7887b7af66be.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_4dbeb9f8-c5cd-48c3-9d1c-6cbd9f96c559.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_4fce0124-3601-4cce-926f-1ee32c03e51e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_e0b2542d-9135-497c-9a25-daf4461753fe.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/a/csm_5876-degewo_8b154ef2-f670-40e2-853d-b7256aed2ef0_9f3e8eaae6.webp"
-   ],
-   "photos_checked": 4,
-   "rooms": 2,
-   "price": 671.9,
-   "cold": 447.26,
-   "size": 48.52,
-   "floor": 4,
-   "levels": 4,
-   "year": 1960,
-   "stars": 2,
-   "why": "48.52 m², ~14.9 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 4. Etage, Baujahr 1960",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T13:18:05Z"
-  },
   "ibw-23754": {
    "source": "ibw",
    "company": "howoge",
@@ -1636,7 +1553,7 @@
    "online_since": "2026-11-04T12:55:07Z"
   }
  },
- "updated": "2026-11-04T13:17:11Z",
+ "updated": "2026-11-04T13:19:09Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1701,5 +1618,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T13:17:11Z"
+ "last_auto": "2026-11-04T13:19:09Z"
 }
