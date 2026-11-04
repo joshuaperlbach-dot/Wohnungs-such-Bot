@@ -157,7 +157,7 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z",
    "photos_checked": 4,
-   "photo_tries": 5
+   "photo_tries": 6
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -407,7 +407,7 @@
     ]
    },
    "online_since": "2026-11-03T18:40:07Z",
-   "photo_tries": 5
+   "photo_tries": 6
   },
   "ibw-23797": {
    "source": "ibw",
@@ -1257,9 +1257,15 @@
    "address": "Kopenhagener Straße 73, 10437 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793811424-PAVdaFZhUc.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793811424-PAVdaFZhUc.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_d897a2a4-f93e-46c5-842a-c351d6e86f7c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_a03a73fc-9a8f-4831-a073-6be10fadd3f1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_ec9b64a6-4853-49c1-b1cc-8c9fa2fd32b8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_ea007f6d-acd2-468b-a0ee-5121fd494c86.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_18a3144b-6de7-4122-b9f8-d5e02ccad186.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_266f3714-7877-4f43-bb19-7cfea2f13c8b.jpg"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 2,
    "price": 691.77,
    "cold": 529.77,
@@ -1323,10 +1329,11 @@
    "online_since": "2026-11-04T16:57:04Z",
    "requested": "gesendet",
    "requested_at": "2026-11-04T17:28:36Z",
-   "via": "mail"
+   "via": "mail",
+   "photo_tries": 0
   }
  },
- "updated": "2026-11-04T18:19:12Z",
+ "updated": "2026-11-04T18:21:13Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1391,5 +1398,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-04T18:19:12Z"
+ "last_auto": "2026-11-04T18:21:13Z"
 }
