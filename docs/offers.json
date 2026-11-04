@@ -156,7 +156,8 @@
    "requested": "unklar",
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z",
-   "photos_checked": 4
+   "photos_checked": 4,
+   "photo_tries": 1
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -267,7 +268,7 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_c82876fe-1d1c-4fb3-ba8b-a0cda4b9fc95.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/d/csm_5805-degewo_93e846f1-43b9-447a-9b95-0e393637e084_707c9d92c4.webp"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 1,
    "price": 626.93,
    "cold": 447.72,
@@ -331,7 +332,8 @@
    "online_since": "2026-10-30T12:49:07Z",
    "requested": "gesendet",
    "requested_at": "2026-10-30T13:46:28Z",
-   "confirm": "formular"
+   "confirm": "formular",
+   "photo_tries": 0
   },
   "ibw-23790": {
    "source": "ibw",
@@ -404,7 +406,8 @@
      5
     ]
    },
-   "online_since": "2026-11-03T18:40:07Z"
+   "online_since": "2026-11-03T18:40:07Z",
+   "photo_tries": 1
   },
   "ibw-23797": {
    "source": "ibw",
@@ -424,7 +427,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_282ac8eb-9146-432b-b63f-dbd54e80d16d.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_ded5d664-ed38-4e6f-96a6-59e7a7f11108.jpg"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 2,
    "price": 936.48,
    "cold": 662.48,
@@ -488,7 +491,8 @@
    "online_since": "2026-11-03T20:40:05Z",
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
-   "via": "mail"
+   "via": "mail",
+   "photo_tries": 0
   },
   "ibw-23798": {
    "source": "ibw",
@@ -506,7 +510,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_6cd8002a-9f53-47f1-bfbb-231b495a05f1.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_3e205d6c-5182-4e57-a116-90e4519e31de.jpg"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 1,
    "price": 767.57,
    "cold": 551.57,
@@ -570,7 +574,8 @@
    "online_since": "2026-11-03T20:43:06Z",
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
-   "via": "mail"
+   "via": "mail",
+   "photo_tries": 0
   },
   "ibw-23799": {
    "source": "ibw",
@@ -1619,7 +1624,7 @@
    "via": "mail"
   }
  },
- "updated": "2026-11-04T18:08:23Z",
+ "updated": "2026-11-04T18:10:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1684,5 +1689,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-04T18:08:23Z"
+ "last_auto": "2026-11-04T18:10:29Z"
 }
