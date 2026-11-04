@@ -1414,12 +1414,15 @@
    "bezirk": "Pankow",
    "images": [
     "https://www.inberlinwohnen.de/img/images/apartments/1793744945-6W07cmDCe2.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
-    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
-    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
-    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_7d7e126c-6f5f-422e-b79c-6d8242cb86b2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_1c6fd327-a0a7-4c44-abb5-835b70335d88.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_1f58a3d6-53f6-4f5d-ada2-9ef1b4bd9bee.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_8cfab295-0c86-4fc0-aeb2-95a3c6aaaaf3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_0536dbc2-2bcd-43b1-a3de-cbc0527834c4.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_95e2aa57-f87f-4135-9467-7d4c2379b0ce.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_fe62de58-b22c-4ddb-b555-5315a0c10a0d.jpg"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 2,
    "price": 761.77,
    "cold": 495.77,
@@ -1491,12 +1494,12 @@
    "bezirk": "Treptow-Köpenick",
    "images": [
     "https://www.inberlinwohnen.de/img/images/apartments/1793784604-0uJG3Ybq7R.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5915-degewo_3ecc04dc-68f5-443f-a5bf-cd444af590a6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/0/csm_5915-degewo_70c3b0db-6c5b-4088-bf82-04bbff51f772_33c4e43083.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/4/csm_5915-degewo_7041403f-b09d-4151-9232-3010eea58ad5_1da833bf5a.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/1/csm_5915-degewo_32a4a21c-f008-4351-9dfb-c1c837a8df77_c4d4297fec.webp"
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5926-degewo_41b98ca0-a5d1-42bf-bdb3-67465cd1bdc7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/1/csm_5926-degewo_036c226c-a078-48f6-86dd-5ef59ad7c342_a98256e9de.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/c/csm_5926-degewo_7041403f-b09d-4151-9232-3010eea58ad5_7897db13bf.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/b/csm_5926-degewo_c9a24274-8de4-42cb-a4d2-87939e83e4f6_f51d4ea1d5.webp"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 2,
    "price": 605.45,
    "cold": 400.16,
@@ -1573,7 +1576,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_720be699-4141-4d9c-bc52-d4602136dadd.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_a73f476a-a322-451d-b3d1-147bfddf0e73.jpg"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 1,
    "price": 371.43,
    "cold": 371.43,
@@ -1637,7 +1640,7 @@
    "online_since": "2026-11-04T10:06:08Z"
   }
  },
- "updated": "2026-11-04T11:47:10Z",
+ "updated": "2026-11-04T11:49:12Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1702,5 +1705,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T11:47:10Z"
+ "last_auto": "2026-11-04T11:49:12Z"
 }
