@@ -185,3 +185,11 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
 ## Gewobag-Fotos (04.11.2026)
 Ist ein Gewobag-Angebot weg, zeigt gewobag.de die Übersicht mit allgemeinen Bildern (Header, Waterkant-Tower).
 Bei gewobag.de zählen jetzt nur Fotos aus dem Ordner mit der Objektnummer, sonst keine. PHOTOS_VERSION 4.
+
+## Gewobag: geförderte Wohnungen, Fotos später (04.11.2026)
+- Gewobag kennzeichnet geförderte Wohnungen (WBS 140–220) nur auf der eigenen Seite mit dem Banner
+  "Geförderte Wohnung auch für mittlere Einkommen". page_says_wbs erkennt das jetzt (Einzahl; die
+  Navigation sagt nur allgemein "Wohnberechtigungsschein"). Schon gelistete werden beim Nachprüfen entfernt
+  (außer schon angefragt).
+- Fotos fehlen manchmal beim ersten Abruf: bis zu 10 Läufe lang wird nachgesehen (photo_tries). PHOTOS_VERSION 5.
+- Gewobag-Anfrageformular (Wohnungshelden) hat ein unsichtbares Google-reCAPTCHA: keine automatische Anfrage.

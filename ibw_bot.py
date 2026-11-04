@@ -139,8 +139,16 @@ def title_says_wbs(title):
 def page_says_wbs(html):
     """Die Seite der Gesellschaft kennzeichnet WBS-Wohnungen teils nur mit einem Bild-Etikett
     wie "220er" (degewo), auch wenn inberlinwohnen "nicht erforderlich" sagt."""
-    return any(re.fullmatch(r"\s*(100|140|160|180|220)er\s*", cap.get_text())
-               for cap in BeautifulSoup(html, "html.parser").find_all("figcaption"))
+    soup = BeautifulSoup(html, "html.parser")
+    if any(re.fullmatch(r"\s*(100|140|160|180|220)er\s*", cap.get_text()) for cap in soup.find_all("figcaption")):
+        return True
+    # Gewobag: Banner "Geförderte Wohnung auch für mittlere Einkommen" (WBS 140 bis 220 nötig).
+    # Nur die Einzahl: in der Navigation steht allgemein "Alles zum Wohnberechtigungsschein".
+    return bool(PAGE_WBS.search(soup.get_text(" ")))
+
+
+PAGE_WBS = re.compile(r"Geförderte Wohnung\b(?!en)|WBS[\s-]*(ist\s*)?(erforderlich|notwendig|benötigt)"
+                      r"|Wohnberechtigungsschein\s*(ist\s*)?(erforderlich|notwendig|benötigt)", re.I)
 
 
 def matches(l):
@@ -177,7 +185,8 @@ def app_offer(l, r):
         "source": "ibw", "company": l["company"], "url": l["url"], "title": l["title"],
         "address": f"{l['address']}, {l['plz']} Berlin", "bezirk": l["bezirk"],
         "images": list(dict.fromkeys(([l["image"]] if l["image"] else []) + l.get("more_images", []))),
-        "photos_checked": PHOTOS_VERSION,
+        # Gewobag stellt die Fotos manchmal erst etwas später online: dann später nachholen
+        "photos_checked": PHOTOS_VERSION if l.get("more_images") else None,
         "rooms": l["rooms"], "price": l["price"], "cold": l["cold"], "size": l["size"],
         "floor": l["floor"], "levels": l["levels"], "year": l["year"],
         "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
@@ -219,9 +228,10 @@ IMG_SKIP = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|banner|badge
                       r"|\.svg|\.gif|\.png", re.I)
 IMG_FILE = re.compile(r"\.(jpe?g|webp)(\?|$)", re.I)
 MAX_IMAGES = 20
+PHOTO_TRIES = 10  # so oft (einmal pro Lauf) nach Fotos sehen, bevor wir aufgeben
 # Seiten, deren Wohnungsfotos immer im Ordner mit der Objektnummer liegen: sonst keine Fotos
 OWN_FOLDER_ONLY = ("gewobag.de",)
-PHOTOS_VERSION = 4  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
+PHOTOS_VERSION = 5  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
 
 
 def page_images(html, base):
@@ -267,11 +277,16 @@ def photo_key(url):
 
 def add_missing_photos(store, limit=5):
     """Angebote, die schon vor dem Foto-Sammeln in der Liste waren: pro Lauf ein paar nachholen."""
-    todo = [o for k, o in store["offers"].items() if k.startswith("ibw-") and not o.get("gone")
+    todo = [(k, o) for k, o in store["offers"].items() if k.startswith("ibw-") and not o.get("gone")
             and o.get("photos_checked") != PHOTOS_VERSION and safe_url(o.get("url"))]
-    for o in todo[:limit]:
-        o["photos_checked"] = PHOTOS_VERSION
-        _, more = company_page(o)
+    for key, o in todo[:limit]:
+        wbs, more = company_page(o)
+        if wbs and not ALLOW_WBS and not o.get("requested"):
+            del store["offers"][key]  # gefördert/WBS: erst auf der Seite der Gesellschaft erkennbar
+            continue
+        o["photo_tries"] = 0 if more else o.get("photo_tries", 0) + 1
+        if more or o["photo_tries"] >= PHOTO_TRIES:
+            o["photos_checked"] = PHOTOS_VERSION
         # Bild von inberlinwohnen behalten, Fotos der Gesellschaft neu (frühere Versuche hatten Ausschuss)
         first = [u for u in (o.get("images") or [])[:1] if "inberlinwohnen.de" in u]
         o["images"] = list(dict.fromkeys(first + more))

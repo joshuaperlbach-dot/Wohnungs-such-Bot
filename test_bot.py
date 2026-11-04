@@ -487,6 +487,11 @@ def test_ibw_parse_and_filter():
     assert not ibw_bot.matches({**a, "title": "Seniorenresidenz, erst ab 60 Jahren"})
     assert ibw_bot.page_says_wbs("<figure><img><figcaption class='c'>\n 220er\n</figcaption></figure>")
     assert not ibw_bot.page_says_wbs("<figcaption>Wohnzimmer</figcaption><p>Nalepastraße 220er Block</p>")
+    # Gewobag: Banner auf der Angebotsseite, aber nicht die allgemeine Navigation
+    nav = "<nav><a>Angebote in Neubauprojekten</a><a>Alles zum Wohnberechtigungsschein (WBS)</a><a>Geförderte Wohnungen</a></nav>"
+    assert not ibw_bot.page_says_wbs(nav)
+    assert ibw_bot.page_says_wbs(nav + "<div>Geförderte Wohnung auch für mittlere Einkommen – jetzt checken!</div>")
+    assert ibw_bot.page_says_wbs("<li>WBS erforderlich</li>")
     assert a["year"] is None and ibw_bot.parse_item({"id": 1, "constructionYear": "1930"}, "")["year"] == 1930
     n, stars, why = ibw_bot.rate(a)  # Prenzlauer Berg, nah an der Ringbahn, Balkon
     assert n >= 4 and "Ringbahn nah" in why and "Balkon" in why, (stars, why)
@@ -647,6 +652,23 @@ def test_add_missing_photos():
     # Fehlerseite (Angebot weg): keine Fotos von dort
     with mock.patch("wbm_bot.HTTP.get", return_value=mock.Mock(text=page, status_code=404)):
         assert ibw_bot.company_page({"url": "https://example.org/9"}) == (False, [])
+    # Fotos noch nicht online: später nochmal (höchstens PHOTO_TRIES-mal); geförderte Wohnung fliegt raus
+    store = {"offers": {"ibw-1": {"url": "https://example.org/1", "images": [first]},
+                        "ibw-2": {"url": "https://example.org/2", "images": [first]},
+                        "ibw-3": {"url": "https://example.org/3", "images": [first], "requested": "gesendet"}}}
+    pages = {"https://example.org/1": "<p>noch keine Fotos</p>",
+             "https://example.org/2": "<div>Geförderte Wohnung auch für mittlere Einkommen</div>",
+             "https://example.org/3": "<div>Geförderte Wohnung auch für mittlere Einkommen</div>"}
+    with mock.patch("wbm_bot.HTTP.get", side_effect=lambda u, **k: mock.Mock(text=pages[u], status_code=200)) as get:
+        ibw_bot.add_missing_photos(store)
+        assert sorted(store["offers"]) == ["ibw-1", "ibw-3"], store  # schon angefragt: bleibt
+        assert store["offers"]["ibw-1"].get("photos_checked") is None and store["offers"]["ibw-1"]["photo_tries"] == 1
+        for _ in range(ibw_bot.PHOTO_TRIES):
+            ibw_bot.add_missing_photos(store)
+        assert store["offers"]["ibw-1"]["photos_checked"] == ibw_bot.PHOTOS_VERSION
+        n = get.call_count
+        ibw_bot.add_missing_photos(store)
+        assert get.call_count == n  # aufgegeben: keine weiteren Abrufe
 
 
 def test_page_images():
