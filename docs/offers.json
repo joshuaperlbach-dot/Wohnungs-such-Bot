@@ -333,90 +333,6 @@
    "requested_at": "2026-10-30T13:46:28Z",
    "confirm": "formular"
   },
-  "ibw-23747": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00647-0026-0702.html",
-   "title": "1-Zimmerwohnung in der Gropiusstadt",
-   "address": "Theodor-Loos-Weg 26, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793711464-Q4yzqoWrGA.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_c3c45636-387d-4c73-8838-6710fe618fcb.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_11696853-8a19-4b9f-b569-0d148c9af4c0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/f/csm_5873-degewo_b60caf7d-085e-4a02-86ab-729a681a5dae_a10fe8d632.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/d/csm_5873-degewo_3348e2a8-02f3-4ed0-9454-06bbe55013e4_1c2c664639.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_77c5f965-277d-43d0-9cbf-a4e8194fea60.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_7150863c-cb2c-439f-8c96-4d454d9dded0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_8dcd5786-f2b7-4a56-8a10-1c0959057d78.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_7b386f00-20a7-4c60-ac4a-970b1b33d706.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_4dd2c745-0b54-411f-ac14-8f859c542eca.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_91a9ea8b-a77c-44b8-bfe3-a92c53253787.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/7/csm_5873-degewo_852429e0-4289-467e-bab0-16902b1e134a_cf9b0e45e2.webp"
-   ],
-   "photos_checked": 4,
-   "rooms": 1,
-   "price": 542.86,
-   "cold": 417.3,
-   "size": 38.05,
-   "floor": 7,
-   "levels": 12,
-   "year": 1968,
-   "stars": 2,
-   "why": "38.05 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (23 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1968, Hochhaus (12 Etagen)",
-   "points": 44,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.0,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T13:11:04Z"
-  },
   "ibw-23750": {
    "source": "ibw",
    "company": "degewo",
@@ -1803,7 +1719,7 @@
    "online_since": "2026-11-04T12:55:07Z"
   }
  },
- "updated": "2026-11-04T13:09:25Z",
+ "updated": "2026-11-04T13:11:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1868,5 +1784,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T13:09:25Z"
+ "last_auto": "2026-11-04T13:11:21Z"
 }
