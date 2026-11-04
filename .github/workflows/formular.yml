@@ -2,6 +2,10 @@ name: Formular ansehen (einmalig)
 
 on:
   workflow_dispatch:
+    inputs:
+      skript:
+        description: "Werkzeug aus tools/"
+        default: "tools/gewobag_ansehen.py"
 
 permissions:
   contents: read
@@ -17,6 +21,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install playwright && python -m playwright install --with-deps chromium
-      - name: Aufbau des Formulars ausgeben (ohne Werte)
-        run: python tools/formular_ansehen.py
+      - run: pip install -r requirements.txt playwright && python -m playwright install --with-deps chromium
+      - name: Seite ansehen (nur Aufbau, ohne persönliche Daten)
+        env:
+          SKRIPT: ${{ inputs.skript || 'tools/gewobag_ansehen.py' }}
+        run: |
+          case "$SKRIPT" in tools/*.py) python "$SKRIPT" ;; *) echo "nur tools/*.py"; exit 1 ;; esac
