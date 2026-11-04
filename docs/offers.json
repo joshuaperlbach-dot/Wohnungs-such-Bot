@@ -1308,9 +1308,92 @@
     ]
    },
    "online_since": "2026-11-04T14:57:06Z"
+  },
+  "ibw-23885": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02520-0407-0249",
+   "title": "Wohnung mit Balkon in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Simon-Bolivar-Straße 13, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793807406-jA5SoA8AIT.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_import_2019-07-02_01_0100-02520-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_47d0b2c2-3419-4237-a73a-78406e3a6535.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_90e941ed-0522-4f09-afaa-a8cee27fbffd.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_8ec3e6ad-2202-4a73-809b-bca8d50a61af.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_dfccb5f0-3942-4422-97f3-9e9d140170ac.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_f80c80bd-f6b6-4927-af4d-6d8d2a0eacd7.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_5f3be85e-7d33-4ff8-b6e7-d6cd85e32dcb.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_c9b67b8c-0797-454f-93a0-9a7db9da6d32.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_617cb5fd-c17f-43f8-b163-f240e7ad9d63.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_9a25f5ed-5b5f-4a7f-8bc8-6dc77316417c.jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 2,
+   "price": 574.68,
+   "cold": 412.68,
+   "size": 39.49,
+   "floor": 2,
+   "levels": 4,
+   "year": 1933,
+   "stars": 3,
+   "why": "39.49 m², ~6.4 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1933",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     2.6,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T15:50:06Z"
   }
  },
- "updated": "2026-11-04T15:50:38Z",
+ "updated": "2026-11-04T15:52:38Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1375,5 +1458,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T15:50:38Z"
+ "last_auto": "2026-11-04T15:52:38Z"
 }
