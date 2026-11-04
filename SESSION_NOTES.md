@@ -181,3 +181,7 @@ Später evtl. weitere Gesellschaften als eigene Module (Gewobag, Gesobau, degewo
   Howoge und degewo zuerst (die meisten Angebote), dann Gewobag, Stadt und Land, Gesobau (über Immomio).
 - Optional: Anfrage-Button in der Push-Meldung (ntfy-Aktion + GitHub-Token), statt vollautomatisch.
 - Echte Fahrzeit zur Arbeit statt Luftlinie.
+
+## Gewobag-Fotos (04.11.2026)
+Ist ein Gewobag-Angebot weg, zeigt gewobag.de die Übersicht mit allgemeinen Bildern (Header, Waterkant-Tower).
+Bei gewobag.de zählen jetzt nur Fotos aus dem Ordner mit der Objektnummer, sonst keine. PHOTOS_VERSION 4.

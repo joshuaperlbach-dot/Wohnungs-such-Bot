@@ -219,7 +219,9 @@ IMG_SKIP = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|banner|badge
                       r"|\.svg|\.gif|\.png", re.I)
 IMG_FILE = re.compile(r"\.(jpe?g|webp)(\?|$)", re.I)
 MAX_IMAGES = 20
-PHOTOS_VERSION = 3  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
+# Seiten, deren Wohnungsfotos immer im Ordner mit der Objektnummer liegen: sonst keine Fotos
+OWN_FOLDER_ONLY = ("gewobag.de",)
+PHOTOS_VERSION = 4  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
 
 
 def page_images(html, base):
@@ -251,6 +253,8 @@ def page_images(html, base):
     # .../gewo-immo-media/0100-01707-0101-0008/...), sind nur diese Fotos der Wohnung
     token = base.split("?")[0].rstrip("/").rsplit("/", 1)[-1].rsplit(".", 1)[0]
     own = [u for u in out if len(token) >= 6 and token in u]
+    if not own and any(h in base for h in OWN_FOLDER_ONLY):
+        return []  # Angebot weg oder Übersichtsseite: dort sind nur allgemeine Bilder der Gesellschaft
     return (own or out)[:MAX_IMAGES]
 
 
