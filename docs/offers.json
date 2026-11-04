@@ -1464,9 +1464,82 @@
     ]
    },
    "online_since": "2026-11-04T16:13:04Z"
+  },
+  "ibw-23888": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02520-0601-0378",
+   "title": "Renovierungsbedürftige Wohnung in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Große-Leege-Straße 75, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793809985-BYdc7rL1Bv.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 2,
+   "price": 587.87,
+   "cold": 364.87,
+   "size": 40.06,
+   "floor": 2,
+   "levels": 5,
+   "year": 1933,
+   "stars": 3,
+   "why": "40.06 m², ~6.6 km zur Arbeit (Luftlinie), Kiez wenig los (32 Lokale/Läden), Park nah, Ringbahn weit, 2. Etage, Baujahr 1933",
+   "points": 57,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.4,
+     16
+    ],
+    "Lage": [
+     2.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T16:33:05Z"
   }
  },
- "updated": "2026-11-04T16:33:26Z",
+ "updated": "2026-11-04T16:35:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1531,5 +1604,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T16:33:26Z"
+ "last_auto": "2026-11-04T16:35:30Z"
 }
