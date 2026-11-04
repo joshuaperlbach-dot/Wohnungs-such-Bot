@@ -333,95 +333,6 @@
    "requested_at": "2026-10-30T13:46:28Z",
    "confirm": "formular"
   },
-  "ibw-23770": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00227-0007-0102.html",
-   "title": "Prager Platz ums Eck: Erdgeschosswohnung für kreative Gestalter",
-   "address": "Prinzregentenstraße 94, 10717 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793719384-aTr67SJrAM.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_12a073bd-76c5-4865-bb28-b1a76ab5af32.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_3ec368ee-eed9-47fe-9892-420121281a0e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_271ee69a-6ce9-4e6a-a6c8-b79162ee04d5.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_1afcc889-c8e2-47b0-ace6-4dd7fe58ba6c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/9/csm_5883-degewo_0b925757-a227-471b-9c79-e91bbf840b8b_7f2291218a.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_4ed0fce9-de2a-46d4-ae8e-4d13461d5c9f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_3573cd2b-e82a-4913-8a1c-db20799dc8e6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/4/csm_5883-degewo_f576a695-621c-48cb-a844-9d1b8b08527c_53ed138558.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_b95aee57-96c0-4587-9954-2d458fd44a7a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_6b8d8e59-f846-485f-b1a3-293eedf34739.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_57519208-ae80-4a8e-963d-83d26011b6fd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_3947c42f-f59b-405f-885a-c4f802e272ff.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_ab19af88-1332-4c4a-8328-438837cbc280.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_49ae9c14-38b3-4206-b090-91c6ac5fd06f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5883-degewo_3e37708b-2f01-4ef9-a60f-cb9a839beebc.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/1/csm_5883-degewo_4ca72530-eb79-47a6-a835-b1b28e0d6525_3940d2297b.webp"
-   ],
-   "photos_checked": 4,
-   "rooms": 1,
-   "price": 459.79,
-   "cold": 357.53,
-   "size": 28.02,
-   "floor": 1,
-   "levels": 6,
-   "year": 1960,
-   "stars": 3,
-   "why": "28.02 m², ~5.4 km zur Arbeit (Luftlinie), Kiez mittel (147 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1960",
-   "points": 58,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     11.3,
-     16
-    ],
-    "Lage": [
-     4.3,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T15:23:04Z"
-  },
   "ibw-23782": {
    "source": "ibw",
    "company": "howoge",
@@ -1399,7 +1310,7 @@
    "online_since": "2026-11-04T14:57:06Z"
   }
  },
- "updated": "2026-11-04T15:12:45Z",
+ "updated": "2026-11-04T15:24:12Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1464,5 +1375,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T15:12:45Z"
+ "last_auto": "2026-11-04T15:24:12Z"
 }
