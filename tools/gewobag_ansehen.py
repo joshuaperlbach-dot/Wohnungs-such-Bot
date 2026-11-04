@@ -9,6 +9,7 @@ import re
 import sys
 
 sys.path.insert(0, ".")
+sys.path.insert(0, "tools")
 import ibw_bot  # noqa: E402
 import offers  # noqa: E402
 import wbm_bot  # noqa: E402
@@ -22,6 +23,11 @@ for u in urls:
     token = u.rstrip("/").rsplit("/", 1)[-1]
     print(f"\n== {u}\n   requests: {r.status_code} -> {r.url} | {len(r.text)} Zeichen | Objektordner-Treffer: {r.text.count(token)}"
           f" | page_images: {len(ibw_bot.page_images(r.text, u))}")
+    # Wie kennzeichnet die Seite geförderte/WBS-Wohnungen? (Textstellen, Navigation inklusive)
+    from genossenschaften import text_of
+    t = text_of(r.text)
+    for m in re.finditer(r"geförder|förderung|WBS|Wohnberechtigung", t, re.I):
+        print("   WBS?", "…" + t[max(0, m.start() - 80): m.end() + 80] + "…")
     for m in sorted(set(re.findall(r"[\w./:-]*" + re.escape(token) + r"[\w./-]*", r.text)))[:6]:
         print("     ", m[:160])
 
