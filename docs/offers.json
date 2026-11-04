@@ -333,570 +333,6 @@
    "requested_at": "2026-10-30T13:46:28Z",
    "confirm": "formular"
   },
-  "ibw-23717": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00649-0108-0104.html",
-   "title": "2-Zimmer-Wohnung im Erdgeschoss",
-   "address": "Walter-Franck-Zeile 9, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793694124-B11RZVTEZh.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_fd6b8e8f-ba29-4197-824e-534848035552.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_02e643c6-98b2-4075-bf94-956492b496be.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/9/csm_5460-degewo_d0a034e3-4123-44cc-81b6-733cf1209663_f58f50907c.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/1/csm_5460-degewo_d4e77d06-8aa3-4dff-ba95-3c68288820f4_b2b20d135b.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_153d8d30-1829-4f6f-983d-1bb4e9a825dd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_b5544364-0a00-41fd-a6de-6acd1017e44b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_c8dc919c-fadf-40eb-b811-344603ea9842.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_97162dfc-d008-4419-b121-e7436ecc6f41.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_bfdfbf7d-38d1-4a63-8865-d9ea790a70f6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_1562f0fd-552b-4d2a-91d5-b9dd1d493ab3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5460-degewo_28738f00-437a-45e2-8889-5b478d2580b0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/4/csm_5460-degewo_eb4e117d-6731-42ea-9c0b-5573d658a882_02543526eb.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 720.23,
-   "cold": 522.18,
-   "size": 64.94,
-   "floor": 1,
-   "levels": 9,
-   "year": 1969,
-   "stars": 2,
-   "why": "64.94 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (14 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1969, Hochhaus (9 Etagen)",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     8.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T08:22:04Z"
-  },
-  "ibw-23718": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00649-0058-0106.html",
-   "title": "1-Zimmerwohnung in der Gropiusstadt",
-   "address": "Walter-Franck-Zeile 7, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793694184-42KSTT5IvT.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_6e6ffea7-9b8b-41bc-95f1-b81ab5da34e0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_c451f361-6efa-4c9b-98ad-e74415151c62.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_18245802-b0cd-4077-81c3-fdb43ca97f31.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_b41c1291-fa68-40a5-9460-454881bdb885.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_55a04bed-7968-4395-be2a-d59d09bae3bd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_c98f7201-d085-4d77-a02e-1bd8ac989e29.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4874-degewo_af16aa3a-d039-46a3-9ab4-9d7269b9c3a4.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/f/csm_4874-degewo_7f66807a-e03c-4cd1-8c1d-e42b3f14a8e2_823dec7019.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 517.21,
-   "cold": 400.55,
-   "size": 38.25,
-   "floor": 1,
-   "levels": 9,
-   "year": 1969,
-   "stars": 2,
-   "why": "38.25 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (14 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1969, Hochhaus (9 Etagen)",
-   "points": 42,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     0.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T08:23:04Z"
-  },
-  "ibw-23720": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00638-0194-0802.html",
-   "title": "1-Zimmerwohnung in der Gropiusstadt",
-   "address": "Käthe-Dorsch-Ring 12, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793694484-1AWwt118fN.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_c23137c2-7f14-4897-92a0-2615da21fa20.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_84736029-fd15-4b72-a2bc-6e527718c40e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_a1c15931-033e-4740-b3db-8f6a8b87b33b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_9c94ca2a-dba5-4955-a226-bfb18603227f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/4/csm_4995-degewo_8a148a27-a4d8-4895-83c4-3cf40eb51b7a_c614afa5de.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_fc1ad1f2-94f1-4a5b-ad26-12be158cce32.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_cc4af393-1607-48c8-89ae-46d6a1348953.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_d3f2d8d4-8501-4d0c-a1d3-d8ee102ac1ae.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_68ef7667-bc38-4a67-93ca-7cb3663c76c7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4995-degewo_59810d4a-80b0-4cdb-889a-b6e3216ca14b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/4/csm_4995-degewo_b0f5e630-74a2-4e72-ad0e-2a4009d7df83_734948063e.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 501.85,
-   "cold": 384.11,
-   "size": 36.68,
-   "floor": 8,
-   "levels": 9,
-   "year": 1966,
-   "stars": 2,
-   "why": "36.68 m², ~9.9 km zur Arbeit (Luftlinie), Kiez wenig los (48 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 8. Etage, Baujahr 1966, Hochhaus (9 Etagen)",
-   "points": 49,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.1,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     0.5,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T08:28:05Z"
-  },
-  "ibw-23725": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12910-26.html?t=ibw",
-   "title": "Nachmieter:in zum 01.12.2026 gesucht",
-   "address": "Schweriner Ring 5, 13059 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793696106-FB8StWrThH.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/a/e/csm_8a935d19d9d6bb1f940e765fd735f79c_1b949f4d67.webp",
-    "https://www.howoge.de/fileadmin/_processed_/6/2/csm_6c16175db67a68564e9fcfa880cae75c_9818ec6b6f.webp",
-    "https://www.howoge.de/fileadmin/_processed_/f/1/csm_869199c302b53272b329b8083bb443da_b27375aff5.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/7/1/csm_908a8eeae54d0a8b603d175e4bb61554_5171efbc45.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 546.36,
-   "cold": 385.3,
-   "size": 47.27,
-   "floor": 3,
-   "levels": 5,
-   "year": 1986,
-   "stars": 2,
-   "why": "47.27 m², ~10.5 km zur Arbeit (Luftlinie), Kiez wenig los (19 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1986",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     4.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T08:55:06Z"
-  },
-  "ibw-23728": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13282-35.html?t=ibw",
-   "title": "Nachmieter für gepflegte Wohnung mit 3 Zimmern gesucht!!",
-   "address": "Grevesmühlener Straße 10, 13059 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793697368-WXLcx2fXq5.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/5/8/csm_e162c05278017b4c1bcc163edfa8ad8d_ca527cf211.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/5/csm_5cf19a98bf8e9fdd525d611616eb6d55_6ea5ec27c8.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 648.96,
-   "cold": 424.62,
-   "size": 64.23,
-   "floor": 6,
-   "levels": 19,
-   "year": 1988,
-   "stars": 3,
-   "why": "64.23 m², ~10.0 km zur Arbeit (Luftlinie), Kiez wenig los (37 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1988, Hochhaus (19 Etagen)",
-   "points": 58,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.0,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     8.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T09:16:08Z"
-  },
-  "ibw-23733": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20301-14.html?t=ibw",
-   "title": "2-Zimmer-Wohnung ",
-   "address": "Guntherstraße 37, 10365 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793699768-UNj3qDxXof.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/a/2/csm_489d761f2ee3b4d36c2babd0ff7ef034_c5fdf3b45b.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/1/5/csm_c56f5b525bfcb811f8782c4875836667_fbc2a3665d.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 2,
-   "price": 696.41,
-   "cold": 521.41,
-   "size": 50.48,
-   "floor": 3,
-   "levels": 4,
-   "year": 1935,
-   "stars": 3,
-   "why": "50.48 m², ~6.3 km zur Arbeit (Luftlinie), Kiez wenig los (52 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1935",
-   "points": 69,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.4,
-     16
-    ],
-    "Lage": [
-     2.9,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T09:56:08Z"
-  },
-  "ibw-23736": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00221-0017-0503.html",
-   "title": "Singlewohnung in Wilmersdorf sucht Nachmieter",
-   "address": "Motzstraße 80, 10779 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793703607-wQAMLZCvtm.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_598b6802-c889-41c5-afba-a57e3ff70094.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_6564549c-4a1d-4d04-99af-f87f725d6ca2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_aaa76646-9094-42d7-b71a-6db0c2ee641d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_7f0ef872-bfa6-4b67-88df-7dfff994a85c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_94d78c15-e89e-449e-9039-7f33d1890c22.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_7b3718ed-fcf7-4a34-890a-952b22a74cc1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5863-degewo_e1cceb27-85d0-46a8-a635-273d853b3ad9.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/a/csm_5863-degewo_6b71943b-089e-4ab9-9f86-d171c1476d63_7c1b9e99c0.webp"
-   ],
-   "photos_checked": 3,
-   "rooms": 1,
-   "price": 554.07,
-   "cold": 427.97,
-   "size": 33.54,
-   "floor": 5,
-   "levels": 6,
-   "year": 1961,
-   "stars": 3,
-   "why": "33.54 m², ~5.2 km zur Arbeit (Luftlinie), Kiez mittel (116 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1961",
-   "points": 59,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.3,
-     16
-    ],
-    "Lage": [
-     4.7,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T11:00:08Z"
-  },
   "ibw-23747": {
    "source": "ibw",
    "company": "degewo",
@@ -1929,9 +1365,240 @@
     ]
    },
    "online_since": "2026-11-03T22:09:05Z"
+  },
+  "ibw-23802": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00158-0604-0004",
+   "title": "Absolutes Handwerkerobjekt (Raucherwohnung) sucht neuen Mieter ab sofort!",
+   "address": "Liselotte-Herrmann-Straße 15, 10407 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793744945-6W07cmDCe2.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2025/09/Waterkant-Tower-Marketing-as-230524-0207_1920x890-720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2024/12/innovation_720x334.jpg",
+    "https://www.gewobag.de/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px-1440x632.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 761.77,
+   "cold": 495.77,
+   "size": 50.64,
+   "floor": 1,
+   "levels": 5,
+   "year": 1957,
+   "stars": 4,
+   "why": "50.64 m², ~3.5 km zur Arbeit (Luftlinie), Kiez mittel (132 Lokale/Läden), Park nah, Ringbahn mittel, 1. Etage, Baujahr 1957",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     19.1,
+     20
+    ],
+    "Kiez": [
+     12.4,
+     16
+    ],
+    "Lage": [
+     7.5,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-03T22:29:06Z"
+  },
+  "ibw-23817": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-62401-0039-0402.html",
+   "title": "Schöne, kleine Single-Wohnung-Nachmieter gesucht",
+   "address": "Igelsteig 5, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793784604-0uJG3Ybq7R.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5915-degewo_3ecc04dc-68f5-443f-a5bf-cd444af590a6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/0/csm_5915-degewo_70c3b0db-6c5b-4088-bf82-04bbff51f772_33c4e43083.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/4/csm_5915-degewo_7041403f-b09d-4151-9232-3010eea58ad5_1da833bf5a.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/1/csm_5915-degewo_32a4a21c-f008-4351-9dfb-c1c837a8df77_c4d4297fec.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 605.45,
+   "cold": 400.16,
+   "size": 40.02,
+   "floor": 4,
+   "levels": 4,
+   "year": 1961,
+   "stars": 1,
+   "why": "40.02 m², ~15.0 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, 4. Etage, Baujahr 1961",
+   "points": 39,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T09:30:05Z"
+  },
+  "ibw-23835": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02131-0101-0074",
+   "title": "Studentenapartment zu vermieten",
+   "address": "Amrumer Straße 16, 13353 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793786768-eQnSI4LGuA.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_ad984b74-7f03-4253-a2e9-eaddae27c4a5.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_6c93f52e-0c94-45bb-97ed-f214ed9a32d1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_720be699-4141-4d9c-bc52-d4602136dadd.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_a73f476a-a322-451d-b3d1-147bfddf0e73.jpg"
+   ],
+   "photos_checked": 3,
+   "rooms": 1,
+   "price": 371.43,
+   "cold": 371.43,
+   "size": 35.71,
+   "floor": 4,
+   "levels": 5,
+   "year": 2019,
+   "stars": 3,
+   "why": "35.71 m², ~6.2 km zur Arbeit (Luftlinie), Kiez mittel (85 Lokale/Läden), Ringbahn mittel, Aufzug, 4. Etage, Baujahr 2019",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.9,
+     16
+    ],
+    "Lage": [
+     3.0,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.2,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T10:06:08Z"
   }
  },
- "updated": "2026-11-03T22:17:08Z",
+ "updated": "2026-11-04T11:39:00Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1996,5 +1663,5 @@
    "chars": 2321
   }
  ],
- "last_auto": "2026-11-03T22:17:08Z"
+ "last_auto": "2026-11-04T11:39:00Z"
 }
