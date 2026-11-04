@@ -156,8 +156,8 @@
    "requested": "unklar",
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z",
-   "photos_checked": 4,
-   "photo_tries": 9
+   "photos_checked": 5,
+   "photo_tries": 10
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -345,7 +345,7 @@
    "images": [
     "https://www.inberlinwohnen.de/img/images/apartments/1793731206-XQzIr3PrEA.webp?q=80&w=900&fm=jpg"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 2,
    "price": 636.72,
    "cold": 436.46,
@@ -407,7 +407,7 @@
     ]
    },
    "online_since": "2026-11-03T18:40:07Z",
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "ibw-23797": {
    "source": "ibw",
@@ -1333,7 +1333,7 @@
    "photo_tries": 0
   }
  },
- "updated": "2026-11-04T18:27:29Z",
+ "updated": "2026-11-04T18:29:27Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1398,5 +1398,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-04T18:27:29Z"
+ "last_auto": "2026-11-04T18:29:27Z"
 }
