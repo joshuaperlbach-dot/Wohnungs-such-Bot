@@ -157,7 +157,7 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z",
    "photos_checked": 4,
-   "photo_tries": 1
+   "photo_tries": 2
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -407,7 +407,7 @@
     ]
    },
    "online_since": "2026-11-03T18:40:07Z",
-   "photo_tries": 1
+   "photo_tries": 2
   },
   "ibw-23797": {
    "source": "ibw",
@@ -596,7 +596,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_17538abe-0ea9-4ea4-96ae-99a22fee34d6.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_b3e07293-b364-4a93-b5b5-b6246c3cf65c.jpg"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 2,
    "price": 686.3,
    "cold": 465.65,
@@ -660,87 +660,8 @@
    "online_since": "2026-11-03T22:09:05Z",
    "requested": "gesendet",
    "requested_at": "2026-11-04T11:41:23Z",
-   "via": "mail"
-  },
-  "ibw-23802": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00158-0604-0004",
-   "title": "Absolutes Handwerkerobjekt (Raucherwohnung) sucht neuen Mieter ab sofort!",
-   "address": "Liselotte-Herrmann-Straße 15, 10407 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793744945-6W07cmDCe2.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_7d7e126c-6f5f-422e-b79c-6d8242cb86b2.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_1c6fd327-a0a7-4c44-abb5-835b70335d88.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_1f58a3d6-53f6-4f5d-ada2-9ef1b4bd9bee.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_8cfab295-0c86-4fc0-aeb2-95a3c6aaaaf3.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_0536dbc2-2bcd-43b1-a3de-cbc0527834c4.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_95e2aa57-f87f-4135-9467-7d4c2379b0ce.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00158-0604-0004/gewobag_fe62de58-b22c-4ddb-b555-5315a0c10a0d.jpg"
-   ],
-   "photos_checked": 4,
-   "rooms": 2,
-   "price": 761.77,
-   "cold": 495.77,
-   "size": 50.64,
-   "floor": 1,
-   "levels": 5,
-   "year": 1957,
-   "stars": 4,
-   "why": "50.64 m², ~3.5 km zur Arbeit (Luftlinie), Kiez mittel (132 Lokale/Läden), Park nah, Ringbahn mittel, 1. Etage, Baujahr 1957",
-   "points": 71,
-   "parts": {
-    "Kosten": [
-     19.1,
-     20
-    ],
-    "Kiez": [
-     12.4,
-     16
-    ],
-    "Lage": [
-     7.5,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.5,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T22:29:06Z"
+   "via": "mail",
+   "photo_tries": 0
   },
   "ibw-23817": {
    "source": "ibw",
@@ -756,7 +677,7 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/c/csm_5926-degewo_7041403f-b09d-4151-9232-3010eea58ad5_7897db13bf.webp",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/b/csm_5926-degewo_c9a24274-8de4-42cb-a4d2-87939e83e4f6_f51d4ea1d5.webp"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 2,
    "price": 605.45,
    "cold": 400.16,
@@ -817,7 +738,8 @@
      5
     ]
    },
-   "online_since": "2026-11-04T09:30:05Z"
+   "online_since": "2026-11-04T09:30:05Z",
+   "photo_tries": 0
   },
   "ibw-23835": {
    "source": "ibw",
@@ -1624,7 +1546,7 @@
    "via": "mail"
   }
  },
- "updated": "2026-11-04T18:10:29Z",
+ "updated": "2026-11-04T18:12:45Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1689,5 +1611,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-04T18:10:29Z"
+ "last_auto": "2026-11-04T18:12:45Z"
 }
