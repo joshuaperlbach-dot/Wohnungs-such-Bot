@@ -1469,9 +1469,98 @@
     ]
    },
    "online_since": "2026-11-04T12:55:07Z"
+  },
+  "ibw-23870": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00268-0013-8222.html",
+   "title": "Altbau-Wohnung im angesagten Moabit",
+   "address": "Lübecker Straße 14, 10559 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793800502-OpqZzy8ZKC.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_fba7baa9-3176-4c0b-9d19-22e40ab7853b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_fc593902-3845-4b38-8749-7e3d5681e162.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_d60eba79-d681-4b70-820a-725e64313dc3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_d83e551e-0a0b-4d76-9386-d76956a90e0f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_3b625634-e21c-4172-9099-fcf30b8b673c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_aa7d2ac6-706d-4df9-ad13-5f12517957d9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_4d85011c-b7a0-4b90-be05-3622623b6159.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_caf16392-eb87-410d-972c-bbfc4369e4b4.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_21e5f112-50b5-4d65-adce-6765b01826d8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_4e59f1a8-4866-4c56-90de-75cc71deca71.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_7b64e25a-4fc1-462c-b5b4-17268dfd199c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_d71abda6-045d-431b-9ba9-c4e40e6eb434.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_b7ad8879-531d-426c-91b7-d504f5ed8565.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_ce7053b0-7c40-4382-b5f6-0bfcea31abf9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_29e35aea-6904-422d-8556-fe72003fa583.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/d/csm_5940-degewo_1365788b-78cd-407a-8054-4818c418306e_8befde9b5f.webp"
+   ],
+   "photos_checked": 4,
+   "rooms": 1,
+   "price": 734.08,
+   "cold": 585.49,
+   "size": 43.45,
+   "floor": 2,
+   "levels": 5,
+   "year": 1886,
+   "stars": 3,
+   "why": "43.45 m², ~5.2 km zur Arbeit (Luftlinie), Kiez lebendig (214 Lokale/Läden), Ringbahn mittel, 2. Etage, Baujahr 1886",
+   "points": 69,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.9,
+     16
+    ],
+    "Lage": [
+     4.7,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     2.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T13:55:03Z"
   }
  },
- "updated": "2026-11-04T13:56:13Z",
+ "updated": "2026-11-04T13:58:11Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1536,5 +1625,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T13:56:13Z"
+ "last_auto": "2026-11-04T13:58:11Z"
 }
