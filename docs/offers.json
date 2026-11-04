@@ -1618,9 +1618,82 @@
     ]
    },
    "online_since": "2026-11-04T16:51:06Z"
+  },
+  "ibw-23894": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00349-0103-0026",
+   "title": "2 Zimmer in ruhiger Lage im Quergebäude",
+   "address": "Kopenhagener Straße 73, 10437 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793811424-PAVdaFZhUc.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 2,
+   "price": 691.77,
+   "cold": 529.77,
+   "size": 49.96,
+   "floor": 2,
+   "levels": 5,
+   "year": 1903,
+   "stars": 4,
+   "why": "49.96 m², ~5.0 km zur Arbeit (Luftlinie), Kiez lebendig (377 Lokale/Läden), Park nah, Ringbahn nah, 2. Etage, Baujahr 1903",
+   "points": 82,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     16.0,
+     16
+    ],
+    "Lage": [
+     5.0,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T16:57:04Z"
   }
  },
- "updated": "2026-11-04T16:58:06Z",
+ "updated": "2026-11-04T16:59:57Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1685,5 +1758,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T16:58:06Z"
+ "last_auto": "2026-11-04T16:59:57Z"
 }
