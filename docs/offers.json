@@ -157,7 +157,7 @@
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z",
    "photos_checked": 4,
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -407,7 +407,7 @@
     ]
    },
    "online_since": "2026-11-03T18:40:07Z",
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "ibw-23797": {
    "source": "ibw",
@@ -755,7 +755,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_720be699-4141-4d9c-bc52-d4602136dadd.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02131-0101-0074/gewobag_a73f476a-a322-451d-b3d1-147bfddf0e73.jpg"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 1,
    "price": 371.43,
    "cold": 371.43,
@@ -816,7 +816,8 @@
      5
     ]
    },
-   "online_since": "2026-11-04T10:06:08Z"
+   "online_since": "2026-11-04T10:06:08Z",
+   "photo_tries": 0
   },
   "ibw-23852": {
    "source": "ibw",
@@ -826,9 +827,11 @@
    "address": "Löbauer Weg 6, 12587 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793793127-M3Ysu2ILeQ.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793793127-M3Ysu2ILeQ.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5934-degewo_79171dfe-57b2-4b82-a980-38970f3ab2e8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/f/csm_5934-degewo_9b108137-7948-4757-916e-00f251ab8c37_726eb88bc7.webp"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 1,
    "price": 538.24,
    "cold": 382.89,
@@ -889,7 +892,8 @@
      5
     ]
    },
-   "online_since": "2026-11-04T11:52:07Z"
+   "online_since": "2026-11-04T11:52:07Z",
+   "photo_tries": 0
   },
   "ibw-23857": {
    "source": "ibw",
@@ -918,7 +922,7 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_fe7f9abe-f3c8-49e0-a4b0-ff949ff06913.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/7/csm_5913-degewo_3ba9c8e1-2616-40ed-a3da-42a370da26ec_bb1cd0ae86.webp"
    ],
-   "photos_checked": 4,
+   "photos_checked": 5,
    "rooms": 2,
    "price": 947.19,
    "cold": 776.97,
@@ -979,7 +983,8 @@
      5
     ]
    },
-   "online_since": "2026-11-04T12:55:07Z"
+   "online_since": "2026-11-04T12:55:07Z",
+   "photo_tries": 0
   },
   "ibw-23870": {
    "source": "ibw",
@@ -1546,7 +1551,7 @@
    "via": "mail"
   }
  },
- "updated": "2026-11-04T18:12:45Z",
+ "updated": "2026-11-04T18:15:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1611,5 +1616,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-04T18:12:45Z"
+ "last_auto": "2026-11-04T18:15:03Z"
 }
