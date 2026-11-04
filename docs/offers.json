@@ -156,7 +156,7 @@
    "requested": "unklar",
    "confirm": "abgelaufen",
    "requested_at": "2026-10-15T09:42:18Z",
-   "photos_checked": 3
+   "photos_checked": 4
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/": {
    "source": "wbm",
@@ -267,7 +267,7 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_c82876fe-1d1c-4fb3-ba8b-a0cda4b9fc95.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/d/csm_5805-degewo_93e846f1-43b9-447a-9b95-0e393637e084_707c9d92c4.webp"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 1,
    "price": 626.93,
    "cold": 447.72,
@@ -354,7 +354,7 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5873-degewo_91a9ea8b-a77c-44b8-bfe3-a92c53253787.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/7/csm_5873-degewo_852429e0-4289-467e-bab0-16902b1e134a_cf9b0e45e2.webp"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 1,
    "price": 542.86,
    "cold": 417.3,
@@ -425,9 +425,19 @@
    "address": "Wendenschloßstraße 373, 12557 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793711884-UDnNAJPum6.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793711884-UDnNAJPum6.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_f69e27f6-5136-4dba-b2e8-933f3bc2f7e8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_da1e17bc-8e22-4ef1-9e56-b71f89e6c556.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_c580aac6-af96-4af1-abda-79ebe9c4f8b0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_2702a60d-68c4-4bbe-b99e-455041ba2f75.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_0cbbf1ef-642d-4ebb-b309-75bc9a4bcb28.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_01cb71ee-7eb3-4bc7-a4f9-7887b7af66be.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_4dbeb9f8-c5cd-48c3-9d1c-6cbd9f96c559.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_4fce0124-3601-4cce-926f-1ee32c03e51e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5876-degewo_e0b2542d-9135-497c-9a25-daf4461753fe.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/a/csm_5876-degewo_8b154ef2-f670-40e2-853d-b7256aed2ef0_9f3e8eaae6.webp"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 2,
    "price": 671.9,
    "cold": 447.26,
@@ -498,9 +508,19 @@
    "address": "Wendenschloßstraße 369, 12557 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793711825-QRztGavKHp.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793711825-QRztGavKHp.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_570881a8-b4f3-4b95-883b-793c313a3aab.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_db17152a-8073-4ee8-a746-97c5441e1c04.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_3cf13a67-1967-499f-b013-22ed18a0c4ab.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_862ecdae-1066-4fb5-a27f-b0f0d77a1325.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_ccf9c3bd-fee6-48d6-a886-cfd5e4abb853.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_91fe8b04-0f87-4762-bc51-92d795384d88.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_da575a5b-a7f6-40f7-a839-729c08e4e541.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_72d39dd7-9e86-42d0-a72a-97795375985c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_cf585491-0f22-4fd2-9d5d-964b3147be7c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/f/csm_5875-degewo_083fe9f0-0aea-431b-be57-f31b433ed198_68dc90e1a4.webp"
    ],
-   "photos_checked": 3,
+   "photos_checked": 4,
    "rooms": 2,
    "price": 680.34,
    "cold": 452.88,
@@ -1364,7 +1384,10 @@
      5
     ]
    },
-   "online_since": "2026-11-03T22:09:05Z"
+   "online_since": "2026-11-03T22:09:05Z",
+   "requested": "gesendet",
+   "requested_at": "2026-11-04T11:41:23Z",
+   "via": "mail"
   },
   "ibw-23802": {
    "source": "ibw",
@@ -1598,16 +1621,10 @@
    "online_since": "2026-11-04T10:06:08Z"
   }
  },
- "updated": "2026-11-04T11:40:55Z",
+ "updated": "2026-11-04T11:43:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-28T14:55:53Z",
-   "kind": "absage",
-   "matched": false,
-   "chars": 2295
-  },
   {
    "at": "2026-10-28T14:55:53Z",
    "kind": "eingang",
@@ -1661,7 +1678,13 @@
    "kind": "eingang",
    "matched": true,
    "chars": 2321
+  },
+  {
+   "at": "2026-11-04T11:41:23Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T11:40:55Z"
+ "last_auto": "2026-11-04T11:43:05Z"
 }
