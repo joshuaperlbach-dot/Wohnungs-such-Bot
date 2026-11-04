@@ -1638,9 +1638,82 @@
     ]
    },
    "online_since": "2026-11-04T10:06:08Z"
+  },
+  "ibw-23852": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-71803-0023-0202.html",
+   "title": "Nachmieter zum 01.12.2026 gesucht",
+   "address": "Löbauer Weg 6, 12587 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793793127-M3Ysu2ILeQ.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 1,
+   "price": 538.24,
+   "cold": 382.89,
+   "size": 36.99,
+   "floor": 2,
+   "levels": 3,
+   "year": 1957,
+   "stars": 2,
+   "why": "36.99 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1957",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.6,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T11:52:07Z"
   }
  },
- "updated": "2026-11-04T11:53:13Z",
+ "updated": "2026-11-04T11:55:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1705,5 +1778,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T11:53:13Z"
+ "last_auto": "2026-11-04T11:55:05Z"
 }
