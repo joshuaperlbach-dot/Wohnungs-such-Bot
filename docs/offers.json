@@ -416,89 +416,6 @@
    },
    "online_since": "2026-11-03T13:18:05Z"
   },
-  "ibw-23749": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-65801-0003-0103.html",
-   "title": "Zwei Zimmer Wohnung mit Balkon",
-   "address": "Wendenschloßstraße 369, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793711825-QRztGavKHp.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_570881a8-b4f3-4b95-883b-793c313a3aab.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_db17152a-8073-4ee8-a746-97c5441e1c04.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_3cf13a67-1967-499f-b013-22ed18a0c4ab.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_862ecdae-1066-4fb5-a27f-b0f0d77a1325.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_ccf9c3bd-fee6-48d6-a886-cfd5e4abb853.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_91fe8b04-0f87-4762-bc51-92d795384d88.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_da575a5b-a7f6-40f7-a839-729c08e4e541.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_72d39dd7-9e86-42d0-a72a-97795375985c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5875-degewo_cf585491-0f22-4fd2-9d5d-964b3147be7c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/f/csm_5875-degewo_083fe9f0-0aea-431b-be57-f31b433ed198_68dc90e1a4.webp"
-   ],
-   "photos_checked": 4,
-   "rooms": 2,
-   "price": 680.34,
-   "cold": 452.88,
-   "size": 49.13,
-   "floor": 1,
-   "levels": 4,
-   "year": 1960,
-   "stars": 2,
-   "why": "49.13 m², ~14.9 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1960",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-03T13:17:05Z"
-  },
   "ibw-23754": {
    "source": "ibw",
    "company": "howoge",
@@ -1719,7 +1636,7 @@
    "online_since": "2026-11-04T12:55:07Z"
   }
  },
- "updated": "2026-11-04T13:15:14Z",
+ "updated": "2026-11-04T13:17:11Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1784,5 +1701,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T13:15:14Z"
+ "last_auto": "2026-11-04T13:17:11Z"
 }
