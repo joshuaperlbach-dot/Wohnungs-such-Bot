@@ -1600,9 +1600,86 @@
     ]
    },
    "online_since": "2026-11-03T22:29:06Z"
+  },
+  "ibw-23817": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-62401-0039-0402.html",
+   "title": "Schöne, kleine Single-Wohnung-Nachmieter gesucht",
+   "address": "Igelsteig 5, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793784604-0uJG3Ybq7R.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5915-degewo_3ecc04dc-68f5-443f-a5bf-cd444af590a6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/0/csm_5915-degewo_70c3b0db-6c5b-4088-bf82-04bbff51f772_33c4e43083.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/4/csm_5915-degewo_7041403f-b09d-4151-9232-3010eea58ad5_1da833bf5a.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/1/csm_5915-degewo_32a4a21c-f008-4351-9dfb-c1c837a8df77_c4d4297fec.webp"
+   ],
+   "photos_checked": 3,
+   "rooms": 2,
+   "price": 605.45,
+   "cold": 400.16,
+   "size": 40.02,
+   "floor": 4,
+   "levels": 4,
+   "year": 1961,
+   "stars": 1,
+   "why": "40.02 m², ~15.0 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, 4. Etage, Baujahr 1961",
+   "points": 39,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T09:30:05Z"
   }
  },
- "updated": "2026-11-04T09:30:11Z",
+ "updated": "2026-11-04T09:32:36Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1667,5 +1744,5 @@
    "chars": 2321
   }
  ],
- "last_auto": "2026-11-04T09:30:11Z"
+ "last_auto": "2026-11-04T09:32:36Z"
 }
