@@ -669,6 +669,10 @@ def test_page_images():
     <img src="/wp-content/uploads/gewo-immo-media/0100-01707-0101-0008/gewobag_90075a34.jpg">"""
     got = ibw_bot.page_images(gewobag, "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01707-0101-0008")
     assert [u.rsplit("/", 1)[-1] for u in got] == ["gewobag_bild1-hausansicht.jpg.jpg", "gewobag_90075a34.jpg"], got
+    # Angebot weg (Gewobag zeigt dann die Übersicht): keine allgemeinen Bilder als Wohnungsfotos
+    overview = """<img src="/wp-content/uploads/2019/10/mietangebote_finden_header_1920x842px.jpg">
+    <img src="/wp-content/uploads/2024/12/innovation_720x334.jpg">"""
+    assert ibw_bot.page_images(overview, "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00156-0504-0441") == []
 
 
 def test_mail_replies():
