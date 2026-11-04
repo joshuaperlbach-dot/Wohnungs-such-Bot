@@ -1537,9 +1537,90 @@
     ]
    },
    "online_since": "2026-11-04T16:33:05Z"
+  },
+  "ibw-23889": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00281-0101-0015",
+   "title": "Einkommensgrenzen beachten",
+   "address": "Einsteinstraße 4A, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793811066-Tbsd53zjwL.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_ed589d32-a6bc-44f2-8c66-b701c266e8f0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_568ceb44-4137-4a36-b778-9fb7dbe4f771.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_35cf2192-c21f-4781-89b2-1074ba8c3278.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_a48f37c1-22be-4e5c-8e36-d7b23d816b8d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_48199622-7376-48e0-8d9e-6b7d88713527.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_e0d1b84b-26d7-4778-914f-425b7719ff93.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_dbd389dd-5f45-440d-b160-e8b744e90e93.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00281-0101-0015/gewobag_0a464531-6783-4136-9e24-37e14b043ad4.jpg"
+   ],
+   "photos_checked": 4,
+   "rooms": 1,
+   "price": 431.55,
+   "cold": 316.55,
+   "size": 32.85,
+   "floor": 1,
+   "levels": 6,
+   "year": 1986,
+   "stars": 3,
+   "why": "32.85 m², ~4.7 km zur Arbeit (Luftlinie), Kiez wenig los (34 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 1. Etage, Baujahr 1986",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     5.5,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-04T16:51:06Z"
   }
  },
- "updated": "2026-11-04T16:52:16Z",
+ "updated": "2026-11-04T16:54:09Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1604,5 +1685,5 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-04T16:52:16Z"
+ "last_auto": "2026-11-04T16:54:09Z"
 }
