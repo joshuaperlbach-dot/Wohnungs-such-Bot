@@ -1607,19 +1607,16 @@
      5
     ]
    },
-   "online_since": "2026-11-04T16:57:04Z"
+   "online_since": "2026-11-04T16:57:04Z",
+   "requested": "gesendet",
+   "requested_at": "2026-11-04T17:28:36Z",
+   "via": "mail"
   }
  },
- "updated": "2026-11-04T17:28:22Z",
+ "updated": "2026-11-04T17:30:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-28T14:55:53Z",
-   "kind": "eingang",
-   "matched": false,
-   "chars": 2378
-  },
   {
    "at": "2026-10-28T14:55:53Z",
    "kind": "eingang",
@@ -1673,7 +1670,13 @@
    "kind": "eingang",
    "matched": true,
    "chars": 2311
+  },
+  {
+   "at": "2026-11-04T17:28:36Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2330
   }
  ],
- "last_auto": "2026-11-04T17:28:22Z"
+ "last_auto": "2026-11-04T17:30:10Z"
 }
