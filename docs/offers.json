@@ -1347,9 +1347,82 @@
    "online_since": "2026-11-05T08:48:05Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-23918": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02546-0201-0022",
+   "title": "2 Zimmer ohne WBS",
+   "address": "Maximilianstraße 44A, 13187 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793871545-hsMFBGBxqS.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 795.87,
+   "cold": 546.87,
+   "size": 53.4,
+   "floor": 3,
+   "levels": 4,
+   "year": 1905,
+   "stars": 3,
+   "why": "53.4 m², ~6.4 km zur Arbeit (Luftlinie), Kiez mittel (67 Lokale/Läden), Park nah, Ringbahn mittel, 3. Etage, Baujahr 1905",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     16.3,
+     20
+    ],
+    "Kiez": [
+     9.5,
+     16
+    ],
+    "Lage": [
+     2.7,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T09:39:05Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-05T09:39:01Z",
+ "updated": "2026-11-05T09:41:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1414,5 +1487,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T09:39:01Z"
+ "last_auto": "2026-11-05T09:41:03Z"
 }
