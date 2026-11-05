@@ -1351,7 +1351,13 @@
    "address": "Fuststraße 22, 12459 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793883248-dDpK9c8Byl.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793883248-dDpK9c8Byl.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_739b66d5-232e-4f99-ab3e-0b250325ae67.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_584af682-5583-495c-92d9-e6ad74d9afc3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_b0bc29bc-7f34-41e8-ba56-e58c9c94e2ac.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_be7e7d18-6cff-4fdb-bb93-a60575feca10.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_0ad4e42b-7cbc-46e3-a4fe-30be4394cedb.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/3/csm_6009-degewo_df4c67fe-79e8-4dc7-8c01-f7ed65e4ebf0_072966525a.webp"
    ],
    "rooms": 2,
    "price": 653.53,
@@ -1414,10 +1420,91 @@
     ]
    },
    "online_since": "2026-11-05T12:54:08Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
+  },
+  "ibw-23949": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-60218-0179-0502.html",
+   "title": "Single-Wohnung  in Waldnähe",
+   "address": "Alfred-Randt-Straße 48, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793883366-StZVsK1NQ1.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4792-degewo_bf54c9e7-0aa2-42d3-a79f-4d41a78a95e2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4792-degewo_f3f634fe-1ab7-4e32-a0ab-e7e03c666921.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4792-degewo_95ae6c45-932f-47f6-9c11-70b3d9b21d35.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4792-degewo_4548dbeb-e4c4-4ee0-81bd-da42dea1a713.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4792-degewo_55f35160-2a05-4992-af29-f572a549b97b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4792-degewo_efc30a19-3b3d-4fe7-9ba6-b413338c428d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/d/csm_4792-degewo_6f318618-11e2-49fd-b7c2-5f11efcebe8f_1140a3b094.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 375.79,
+   "cold": 276.19,
+   "size": 29.47,
+   "floor": 5,
+   "levels": 10,
+   "year": 1982,
+   "stars": 1,
+   "why": "29.47 m², ~14.9 km zur Arbeit (Luftlinie), Kiez wenig los (6 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 5. Etage, Baujahr 1982, Hochhaus (10 Etagen)",
+   "points": 36,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T12:56:06Z"
   }
  },
- "updated": "2026-11-05T12:56:03Z",
+ "updated": "2026-11-05T12:58:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1482,5 +1569,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T12:56:03Z"
+ "last_auto": "2026-11-05T12:58:06Z"
 }
