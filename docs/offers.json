@@ -1342,9 +1342,82 @@
     ]
    },
    "online_since": "2026-11-05T08:17:06Z"
+  },
+  "ibw-23912": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00644-0218-2002.html",
+   "title": "1 Zimmer mit toller Aussicht",
+   "address": "Zwickauer Damm 12, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793868485-2kksix5qrv.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 697.5,
+   "cold": 488.72,
+   "size": 53.4,
+   "floor": 20,
+   "levels": 27,
+   "year": 1968,
+   "stars": 2,
+   "why": "53.4 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (45 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 20. Etage, Baujahr 1968, Hochhaus (27 Etagen)",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     5.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T08:48:05Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-05T08:48:15Z",
+ "updated": "2026-11-05T08:50:21Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1409,5 +1482,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T08:48:15Z"
+ "last_auto": "2026-11-05T08:50:21Z"
 }
