@@ -589,82 +589,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23852": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-71803-0023-0202.html",
-   "title": "Nachmieter zum 01.12.2026 gesucht",
-   "address": "Löbauer Weg 6, 12587 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793793127-M3Ysu2ILeQ.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5934-degewo_79171dfe-57b2-4b82-a980-38970f3ab2e8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/f/csm_5934-degewo_9b108137-7948-4757-916e-00f251ab8c37_726eb88bc7.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 538.24,
-   "cold": 382.89,
-   "size": 36.99,
-   "floor": 2,
-   "levels": 3,
-   "year": 1957,
-   "stars": 2,
-   "why": "36.99 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1957",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.6,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-04T11:52:07Z",
-   "photo_tries": 0
-  },
   "ibw-23857": {
    "source": "ibw",
    "company": "degewo",
@@ -1511,7 +1435,7 @@
    "online_since": "2026-11-05T11:16:07Z"
   }
  },
- "updated": "2026-11-05T11:51:13Z",
+ "updated": "2026-11-05T11:53:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1576,5 +1500,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T11:51:13Z"
+ "last_auto": "2026-11-05T11:53:10Z"
 }
