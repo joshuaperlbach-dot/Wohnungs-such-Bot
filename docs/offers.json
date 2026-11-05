@@ -1348,9 +1348,82 @@
    "online_since": "2026-11-05T09:39:05Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-23923": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-71502-0005-0202.html",
+   "title": "Gründung eines ersten eigenen Nestes geplant? Wohnung dafür vorhanden!",
+   "address": "Karl-Pokern-Straße 31, 12587 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793874487-9rFf7opuoF.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 524.7,
+   "cold": 359.87,
+   "size": 36.07,
+   "floor": 2,
+   "levels": 4,
+   "year": 1961,
+   "stars": 2,
+   "why": "36.07 m², ~16.1 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Ringbahn weit, 2. Etage, Baujahr 1961",
+   "points": 46,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T10:28:08Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-05T10:28:48Z",
+ "updated": "2026-11-05T10:30:55Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1415,5 +1488,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T10:28:48Z"
+ "last_auto": "2026-11-05T10:30:55Z"
 }
