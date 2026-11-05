@@ -769,89 +769,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23888": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02520-0601-0378",
-   "title": "Renovierungsbedürftige Wohnung in Alt-Hohenschönhausen neu zu vermieten",
-   "address": "Große-Leege-Straße 75, 13055 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793809985-BYdc7rL1Bv.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_ef009f0e-2563-48bd-a95b-36b555eee158.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_import_2019-07-02_01_0100-02520-0601-0374-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_2152cc12-27c0-4fe7-9348-e99137c21fd5.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_40b563bf-5904-46bf-ab3e-a9658b6450b7.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_b003e24d-6571-4320-94e7-f67018314094.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_822c708d-030a-452b-b35e-15b0edff3a97.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_f4e23d6f-389a-4b17-b17e-1c2d45084bd9.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_fe8cd927-9169-4511-9145-4c21438751e1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0601-0378/gewobag_ab5e2b95-22aa-4342-af93-614870ad23b9.jpg"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 587.87,
-   "cold": 364.87,
-   "size": 40.06,
-   "floor": 2,
-   "levels": 5,
-   "year": 1933,
-   "stars": 3,
-   "why": "40.06 m², ~6.6 km zur Arbeit (Luftlinie), Kiez wenig los (32 Lokale/Läden), Park nah, Ringbahn weit, 2. Etage, Baujahr 1933",
-   "points": 57,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     6.4,
-     16
-    ],
-    "Lage": [
-     2.3,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-04T16:33:05Z",
-   "photo_tries": 0
-  },
   "ibw-23894": {
    "source": "ibw",
    "company": "gewobag",
@@ -1818,7 +1735,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-05T16:32:33Z",
+ "updated": "2026-11-05T16:34:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1883,5 +1800,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T16:32:33Z"
+ "last_auto": "2026-11-05T16:34:28Z"
 }
