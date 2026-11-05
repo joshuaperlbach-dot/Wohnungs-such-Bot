@@ -1351,7 +1351,16 @@
    "address": "Zwickauer Damm 12, 12353 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793868485-2kksix5qrv.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793868485-2kksix5qrv.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_cc47089a-2f82-499a-974e-eec1ec6e0700.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/a/csm_5991-degewo_41e23df8-7a09-45a4-aaec-3e18d58ceb30_c076825297.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_8bcc5147-833d-4001-9ad5-a766ba2bb7b9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_5b4bf049-bd2b-4209-8a91-399088261cc6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_900b7ce0-23a0-44f1-b489-a16da11f36d7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_de6b606f-7f06-44a8-8871-0f3058ac9cc2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_7d4510da-6d19-412e-b737-e9c35446f8f1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5991-degewo_39035ee4-021c-49e9-8e14-426d7f22018d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/3/csm_5991-degewo_1afc7144-7c82-403c-973d-541c8f46f324_d2aa3326a8.webp"
    ],
    "rooms": 1,
    "price": 697.5,
@@ -1414,10 +1423,11 @@
     ]
    },
    "online_since": "2026-11-05T08:48:05Z",
-   "photo_tries": 2
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-05T08:52:45Z",
+ "updated": "2026-11-05T08:54:57Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1482,5 +1492,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T08:52:45Z"
+ "last_auto": "2026-11-05T08:54:57Z"
 }
