@@ -1429,9 +1429,89 @@
    "online_since": "2026-11-05T10:28:08Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-23934": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-71002-0015-0202.html",
+   "title": "Erste eigene Wohnung gesucht?",
+   "address": "Fürstenwalder Damm 403, 12587 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793877367-GGJuqQVSMb.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6003-degewo_6ed4b5cc-bbd9-4ffc-9a9b-31f0a72b4072.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6003-degewo_ab43dad4-e15f-4e1f-b196-b97a17e57d3d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6003-degewo_510b95f6-1901-4296-9d74-dd022f530b8e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6003-degewo_03b76a98-9214-4c89-8617-765d9bfaa316.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6003-degewo_0551654c-9dd8-4a68-aa3e-0af30315f8b5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6003-degewo_b812013e-9c65-4985-b988-e5cbcb0788dc.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/7/csm_6003-degewo_05ea0c82-4164-46fe-a00a-6fe8cdaeab83_8ba7a35d93.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 509.84,
+   "cold": 360.7,
+   "size": 37.01,
+   "floor": 2,
+   "levels": 3,
+   "year": 1957,
+   "stars": 2,
+   "why": "37.01 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1957",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.6,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T11:16:07Z"
   }
  },
- "updated": "2026-11-05T11:17:50Z",
+ "updated": "2026-11-05T11:19:45Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1496,5 +1576,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T11:17:50Z"
+ "last_auto": "2026-11-05T11:19:45Z"
 }
