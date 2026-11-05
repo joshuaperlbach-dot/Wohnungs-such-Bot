@@ -1502,9 +1502,82 @@
     ]
    },
    "online_since": "2026-11-05T12:56:06Z"
+  },
+  "ibw-23952": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-10302-0003-0103.html",
+   "title": "Ihr neues Zuhause in ruhiger Lage",
+   "address": "Fritz-Kirsch-Zeile 32, 12459 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793883853-Ds8MvEm3DY.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 620.74,
+   "cold": 443.77,
+   "size": 45.38,
+   "floor": 1,
+   "levels": 5,
+   "year": 1960,
+   "stars": 2,
+   "why": "45.38 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (33 Lokale/Läden), Park nah, Ringbahn weit, 1. Etage, Baujahr 1960",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.5,
+     16
+    ],
+    "Lage": [
+     0.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T13:04:13Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-05T13:04:48Z",
+ "updated": "2026-11-05T13:07:42Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1569,5 +1642,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T13:04:48Z"
+ "last_auto": "2026-11-05T13:07:42Z"
 }
