@@ -589,84 +589,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23817": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-62401-0039-0402.html",
-   "title": "Schöne, kleine Single-Wohnung-Nachmieter gesucht",
-   "address": "Igelsteig 5, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793784604-0uJG3Ybq7R.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5926-degewo_41b98ca0-a5d1-42bf-bdb3-67465cd1bdc7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/1/csm_5926-degewo_036c226c-a078-48f6-86dd-5ef59ad7c342_a98256e9de.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/c/csm_5926-degewo_7041403f-b09d-4151-9232-3010eea58ad5_7897db13bf.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/b/csm_5926-degewo_c9a24274-8de4-42cb-a4d2-87939e83e4f6_f51d4ea1d5.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 605.45,
-   "cold": 400.16,
-   "size": 40.02,
-   "floor": 4,
-   "levels": 4,
-   "year": 1961,
-   "stars": 1,
-   "why": "40.02 m², ~15.0 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, 4. Etage, Baujahr 1961",
-   "points": 39,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-04T09:30:05Z",
-   "photo_tries": 0
-  },
   "ibw-23835": {
    "source": "ibw",
    "company": "gewobag",
@@ -1427,7 +1349,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-05T09:29:00Z",
+ "updated": "2026-11-05T09:30:56Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1492,5 +1414,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T09:29:00Z"
+ "last_auto": "2026-11-05T09:30:56Z"
 }
