@@ -589,97 +589,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23857": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-66221-0092-0302.html",
-   "title": "2-Zimmer-Wohnung in Altstadt-Nähe",
-   "address": "Wendenschloßstraße 130C, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793796907-Z7sNGAbrV5.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_ff0ac7b6-a08d-491d-8870-3dbd69561c99.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/b/csm_5913-degewo_8d74e396-4096-4d2d-8b62-4203100a0ca2_af34312ce6.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/a/csm_5913-degewo_23fed58b-0345-4c55-97ad-c6b3b283e158_4d4a9c2365.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/7/csm_5913-degewo_1a1b12b9-58a9-420d-8d58-7d2e4efc0656_0f7cdd6acb.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_2ca9bea1-a0fd-4acd-87d5-9f25d7d89d71.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_efafb0a1-8e73-49a1-ad2c-db3e9d4b00ed.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_d8d1cc24-a0ce-41e1-addc-8e139e831ca7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_8a80d399-4ba1-4acd-b617-17baabf5638a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_19c3a0d3-7dac-428f-aae5-46b41ca844cc.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_8473b1ec-fdee-4d0a-9c6a-9d472f8d841c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_823b92d8-b269-4401-9f55-cb0a14f91107.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_d8b3635d-987f-4411-ba6f-eafbbb08510d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_0b379397-f250-4df8-9721-f04012c19609.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_32388f15-cf46-44cd-b271-602e7e3a5933.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_77c57976-4b6a-45f8-9a4b-98053d510f3d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5913-degewo_fe7f9abe-f3c8-49e0-a4b0-ff949ff06913.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/7/csm_5913-degewo_3ba9c8e1-2616-40ed-a3da-42a370da26ec_bb1cd0ae86.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 947.19,
-   "cold": 776.97,
-   "size": 48.5,
-   "floor": 3,
-   "levels": 4,
-   "year": 2019,
-   "stars": 1,
-   "why": "48.5 m², ~13.5 km zur Arbeit (Luftlinie), Kiez wenig los (15 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2019",
-   "points": 39,
-   "parts": {
-    "Kosten": [
-     0.3,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-04T12:55:07Z",
-   "photo_tries": 0
-  },
   "ibw-23870": {
    "source": "ibw",
    "company": "degewo",
@@ -1433,9 +1342,82 @@
     ]
    },
    "online_since": "2026-11-05T11:16:07Z"
+  },
+  "ibw-23948": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-02413-0076-0202.html",
+   "title": "Ruhig wohnen, neu genießen: Wohnung mit Renovierungsupgrade",
+   "address": "Fuststraße 22, 12459 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793883248-dDpK9c8Byl.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 653.53,
+   "cold": 487.53,
+   "size": 52.7,
+   "floor": 2,
+   "levels": 3,
+   "year": 1930,
+   "stars": 3,
+   "why": "52.7 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1930",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.9,
+     16
+    ],
+    "Lage": [
+     0.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T12:54:08Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-05T12:54:03Z",
+ "updated": "2026-11-05T12:56:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1500,5 +1482,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T12:54:03Z"
+ "last_auto": "2026-11-05T12:56:03Z"
 }
