@@ -1356,7 +1356,12 @@
    "address": "Maximilianstraße 44A, 13187 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793871545-hsMFBGBxqS.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793871545-hsMFBGBxqS.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_46b08286-1de6-44c2-bab4-beba39b8dea6.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_213ff5bd-693a-4c25-a916-f403f11434ae.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_bb443f14-4c1d-4d53-a576-e0e07516fdb1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_771fba92-6d48-4984-87c0-8459aec8b563.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_294ad8a4-4687-4cac-8f78-2892761e56d9.jpg"
    ],
    "rooms": 2,
    "price": 795.87,
@@ -1419,10 +1424,11 @@
     ]
    },
    "online_since": "2026-11-05T09:39:05Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-05T09:41:03Z",
+ "updated": "2026-11-05T09:43:04Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1487,5 +1493,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T09:41:03Z"
+ "last_auto": "2026-11-05T09:43:04Z"
 }
