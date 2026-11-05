@@ -1511,7 +1511,13 @@
    "address": "Fritz-Kirsch-Zeile 32, 12459 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793883853-Ds8MvEm3DY.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793883853-Ds8MvEm3DY.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6012-degewo_9e294574-6c26-41d3-86fe-2d48891c9941.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6012-degewo_659a7b19-92ba-4ff0-b71b-9d24b58646b7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6012-degewo_940e48a5-8a9c-47a4-8656-498150c17bba.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6012-degewo_ee8636f9-c407-45cf-b91c-e22f5aae0511.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6012-degewo_5d487ff3-06cb-4f29-bca5-167c8085deb8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/b/csm_6012-degewo_ca50078a-320e-496a-be27-526b23d72086_a6542afee4.webp"
    ],
    "rooms": 2,
    "price": 620.74,
@@ -1574,10 +1580,84 @@
     ]
    },
    "online_since": "2026-11-05T13:04:13Z",
+   "photo_tries": 0,
+   "photos_checked": 5
+  },
+  "ibw-23953": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-20232-0222-0301.html",
+   "title": "Attraktive Altbauwohnung in ruhiger Lage zum Soforteinziehen!",
+   "address": "Kilianistraße 34, 12459 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793884027-MFnwnLc8BC.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 767.91,
+   "cold": 574.4,
+   "size": 55.61,
+   "floor": 3,
+   "levels": 4,
+   "year": 1936,
+   "stars": 3,
+   "why": "55.61 m², ~8.7 km zur Arbeit (Luftlinie), Kiez mittel (81 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1936",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     18.6,
+     20
+    ],
+    "Kiez": [
+     10.3,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-05T13:07:07Z",
    "photo_tries": 1
   }
  },
- "updated": "2026-11-05T13:07:42Z",
+ "updated": "2026-11-05T13:09:47Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1642,5 +1722,5 @@
    "chars": 2774
   }
  ],
- "last_auto": "2026-11-05T13:07:42Z"
+ "last_auto": "2026-11-05T13:09:47Z"
 }
