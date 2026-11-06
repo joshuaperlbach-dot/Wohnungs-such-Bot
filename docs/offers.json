@@ -854,88 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23953": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-20232-0222-0301.html",
-   "title": "Attraktive Altbauwohnung in ruhiger Lage zum Soforteinziehen!",
-   "address": "Kilianistraße 34, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793884027-MFnwnLc8BC.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_81d2bbd1-6a51-4b3b-8634-cf8b131d61cf.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_d328ab4f-d385-40ec-8c0b-591944a8ca70.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_59581d22-6fca-4d21-90c0-172b02f6ff4d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_ea7fe623-1057-4d39-b0e8-92855f1aba9d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_277b3e8f-5f00-4fa9-93fb-ccd1064811e3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_c3d0c582-caa6-4351-b46c-7691cbec6e7a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6013-degewo_a271d128-50a5-4bcc-9906-ab972746db63.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/5/csm_6013-degewo_2da3f572-a573-4799-9e9c-d24f610ff60e_7e111ed813.webp"
-   ],
-   "rooms": 2,
-   "price": 767.91,
-   "cold": 574.4,
-   "size": 55.61,
-   "floor": 3,
-   "levels": 4,
-   "year": 1936,
-   "stars": 3,
-   "why": "55.61 m², ~8.7 km zur Arbeit (Luftlinie), Kiez mittel (81 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1936",
-   "points": 68,
-   "parts": {
-    "Kosten": [
-     18.6,
-     20
-    ],
-    "Kiez": [
-     10.3,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T13:07:07Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-23958": {
    "source": "ibw",
    "company": "howoge",
@@ -1567,7 +1485,7 @@
    "online_since": "2026-11-06T12:41:08Z"
   }
  },
- "updated": "2026-11-06T13:06:35Z",
+ "updated": "2026-11-06T13:08:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1632,5 +1550,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T13:06:35Z"
+ "last_auto": "2026-11-06T13:08:32Z"
 }
