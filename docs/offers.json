@@ -1650,9 +1650,91 @@
    "online_since": "2026-11-05T14:21:06Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-23999": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00681-0062-0302.html",
+   "title": "1 Zimmer in der Gropiusstadt",
+   "address": "Wutzkyallee 51, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793954526-KJre6Pfyxi.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_4c596994-a3e3-412f-bd88-da84f72ab7bb.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_76af88fe-fca9-44b9-8ddc-498573815788.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/8/csm_5643-degewo_4b69c05a-f64b-46dc-8c86-d0d9e4abd38d_cc5fb4b152.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_227e2689-04e2-436e-a2fe-5f958d57084a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_7048d33c-ed31-419b-88f9-81e8b2461149.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_849fb00f-5f36-48fd-8d1a-9020d39a2248.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_2e46273f-dffd-48d1-9d1b-5453b9aa384c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5643-degewo_b659e0b3-7c0d-42d1-8e91-ef10c43b090f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/d/csm_5643-degewo_79247f4f-5be0-4b6a-80c4-9ca7581c4f8a_32e1d17eae.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 477.48,
+   "cold": 357.57,
+   "size": 37.71,
+   "floor": 3,
+   "levels": 9,
+   "year": 1966,
+   "stars": 2,
+   "why": "37.71 m², ~9.8 km zur Arbeit (Luftlinie), Kiez wenig los (30 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1966, Hochhaus (9 Etagen)",
+   "points": 46,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.1,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.8,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T08:42:07Z"
   }
  },
- "updated": "2026-11-06T08:42:17Z",
+ "updated": "2026-11-06T08:44:15Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1717,5 +1799,5 @@
    "chars": 2871
   }
  ],
- "last_auto": "2026-11-06T08:42:17Z"
+ "last_auto": "2026-11-06T08:44:15Z"
 }
