@@ -1584,7 +1584,14 @@
    "address": "Paul-Grasse-Straße 24, 10409 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793977988-q7mAbMua3K.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1793977988-q7mAbMua3K.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_import_2019-07-02_01_1000-00155-0103-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_6cde3f62-4e75-4c5c-82b1-d63e6913e285.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_847c57d5-abd2-4814-b626-70ded65d9ce1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_3a3e379f-acc0-4688-b30f-cf1080468729.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_96273a49-5df9-42f0-9d5e-0a9882bb75a1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_d6b0e15a-9c61-4c26-a83a-9f4129ed16d7.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_7214c796-7e12-4c42-9613-6fedf4cfd530.jpg"
    ],
    "rooms": 2,
    "price": 696.77,
@@ -1647,10 +1654,11 @@
     ]
    },
    "online_since": "2026-11-06T15:13:08Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-06T15:16:20Z",
+ "updated": "2026-11-06T15:18:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1715,5 +1723,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T15:16:20Z"
+ "last_auto": "2026-11-06T15:18:18Z"
 }
