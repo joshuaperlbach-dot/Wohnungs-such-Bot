@@ -1730,21 +1730,15 @@
     ]
    },
    "online_since": "2026-11-06T09:47:09Z",
-   "requested": "unklar",
-   "confirm": "offen",
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
    "requested_at": "2026-11-06T09:48:20Z"
   }
  },
- "updated": "2026-11-06T09:48:31Z",
+ "updated": "2026-11-06T09:52:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-28T17:54:31Z",
-   "kind": "absage",
-   "matched": false,
-   "chars": 2771
-  },
   {
    "at": "2026-10-30T13:46:28Z",
    "kind": "formular",
@@ -1798,7 +1792,13 @@
    "kind": "absage",
    "matched": true,
    "chars": 1001
+  },
+  {
+   "at": "2026-11-06T09:50:44Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T09:48:31Z"
+ "last_auto": "2026-11-06T09:52:25Z"
 }
