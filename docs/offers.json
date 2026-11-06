@@ -1733,9 +1733,82 @@
     ]
    },
    "online_since": "2026-11-06T15:25:06Z"
+  },
+  "ibw-24048": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00186-0102-0076",
+   "title": "Singlewohnung ohne WBS",
+   "address": "Hanns-Eisler-Straße 88, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793979487-LubkfoGtk3.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 407.18,
+   "cold": 268.18,
+   "size": 29.48,
+   "floor": 1,
+   "levels": 10,
+   "year": 1977,
+   "stars": 2,
+   "why": "29.48 m², ~4.9 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Park nah, Ringbahn mittel, Aufzug, 1. Etage, Baujahr 1977, Hochhaus (10 Etagen)",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     5.2,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T15:38:07Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-06T15:38:24Z",
+ "updated": "2026-11-06T15:40:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1800,5 +1873,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T15:38:24Z"
+ "last_auto": "2026-11-06T15:40:25Z"
 }
