@@ -854,91 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23908": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00637-0061-0313.html",
-   "title": "Zeit für einen Neuanfang!",
-   "address": "Gutschmidtstraße 7, 12359 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793866626-QAgl7zOmbp.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_0362c2d4-4cab-44ea-a850-e08a63e1ab07.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/f/csm_5986-degewo_118ab6a6-ec53-4df6-b784-43518ae851a4_17c7720fa0.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_8538c62c-447a-47a6-a2ce-38b78e01c0dd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_4e2c3c7c-effb-4162-a76c-ef811096bb96.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_02461039-9696-41cb-98c0-7692ed92829f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_8fe44c97-bbce-4942-a913-a6f1ca87723d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_53f58b86-fed4-446e-8d19-a5169ff728b8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_57aa176d-d690-4a5c-ab56-7f08f44075b5.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_22218d5b-a638-45f1-b155-7fcb285478b3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_03c3a164-f7db-44bb-8d8d-a6a99cf84747.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5986-degewo_8f9006a2-7baf-4596-a47e-d025d8249f3c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/7/csm_5986-degewo_b7ec3a1b-abe2-44a4-851b-7a1a148b709a_db2d673d5b.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 584.92,
-   "cold": 392.66,
-   "size": 46.0,
-   "floor": 3,
-   "levels": 5,
-   "year": 1958,
-   "stars": 3,
-   "why": "46 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (26 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1958",
-   "points": 59,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.5,
-     16
-    ],
-    "Lage": [
-     0.1,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.1,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T08:17:06Z"
-  },
   "ibw-23912": {
    "source": "ibw",
    "company": "degewo",
@@ -1737,7 +1652,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-06T08:15:34Z",
+ "updated": "2026-11-06T08:17:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1802,5 +1717,5 @@
    "chars": 2871
   }
  ],
- "last_auto": "2026-11-06T08:15:34Z"
+ "last_auto": "2026-11-06T08:17:30Z"
 }
