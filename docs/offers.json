@@ -1491,9 +1491,89 @@
     ]
    },
    "online_since": "2026-11-06T13:19:04Z"
+  },
+  "ibw-24037": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-42303-0126-0405.html",
+   "title": "Nachmieter für 1-Zimmer-Wohnung gesucht!",
+   "address": "Zur Nachtheide 4, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793972766-8SXOD8Brsj.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6069-degewo_70fbf562-7727-4ab4-8bc5-521e9d533f06.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/0/csm_6069-degewo_696a2f95-d26f-47e9-bfbe-a9573a6cd59e_802d71c80d.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6069-degewo_adc9412e-232e-4242-a4f6-1cfdce9da58e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6069-degewo_ed6acd7e-9532-496c-a4ae-01db4492434d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6069-degewo_855acd3b-f003-42c1-adea-1bac27985f42.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/0/csm_6069-degewo_0181a387-9fba-4a63-8aa4-8bb88e3952eb_06a3e22594.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/b/csm_6069-degewo_d8fcc0f8-573d-4c8c-af50-38a5fe486d49_a5a3747e65.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 922.37,
+   "cold": 795.55,
+   "size": 45.46,
+   "floor": 4,
+   "levels": 5,
+   "year": 2024,
+   "stars": 1,
+   "why": "45.46 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 2024",
+   "points": 36,
+   "parts": {
+    "Kosten": [
+     3.3,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T13:46:07Z"
   }
  },
- "updated": "2026-11-06T13:46:12Z",
+ "updated": "2026-11-06T13:48:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1558,5 +1638,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T13:46:12Z"
+ "last_auto": "2026-11-06T13:48:05Z"
 }
