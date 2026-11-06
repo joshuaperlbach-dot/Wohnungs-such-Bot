@@ -854,86 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23948": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-02413-0076-0202.html",
-   "title": "Ruhig wohnen, neu genießen: Wohnung mit Renovierungsupgrade",
-   "address": "Fuststraße 22, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793883248-dDpK9c8Byl.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_739b66d5-232e-4f99-ab3e-0b250325ae67.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_584af682-5583-495c-92d9-e6ad74d9afc3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_b0bc29bc-7f34-41e8-ba56-e58c9c94e2ac.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_be7e7d18-6cff-4fdb-bb93-a60575feca10.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6009-degewo_0ad4e42b-7cbc-46e3-a4fe-30be4394cedb.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/3/csm_6009-degewo_df4c67fe-79e8-4dc7-8c01-f7ed65e4ebf0_072966525a.webp"
-   ],
-   "rooms": 2,
-   "price": 653.53,
-   "cold": 487.53,
-   "size": 52.7,
-   "floor": 2,
-   "levels": 3,
-   "year": 1930,
-   "stars": 3,
-   "why": "52.7 m², ~7.8 km zur Arbeit (Luftlinie), Kiez wenig los (18 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1930",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.9,
-     16
-    ],
-    "Lage": [
-     0.3,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.1,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T12:54:08Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-23949": {
    "source": "ibw",
    "company": "degewo",
@@ -1728,7 +1648,7 @@
     ]
    },
    "online_since": "2026-11-06T12:37:07Z",
-   "photo_tries": 7
+   "photo_tries": 8
   },
   "ibw-24025": {
    "source": "ibw",
@@ -1806,7 +1726,7 @@
    "online_since": "2026-11-06T12:41:08Z"
   }
  },
- "updated": "2026-11-06T12:52:16Z",
+ "updated": "2026-11-06T12:54:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1871,5 +1791,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T12:52:16Z"
+ "last_auto": "2026-11-06T12:54:14Z"
 }
