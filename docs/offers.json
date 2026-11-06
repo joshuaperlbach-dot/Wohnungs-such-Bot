@@ -854,84 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23958": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13319-37.html?t=ibw",
-   "title": "2-Zimmerwohnung mit Balkon sucht neue Mieter",
-   "address": "Demminer Straße 37, 13059 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793885707-pNDikaJmMm.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/b/9/csm_33f7f559656a38188c5b914e31051946_3186353bb4.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/6/csm_1210061390a9df36985e5ffa62f3446d_5785979cd4.webp",
-    "https://www.howoge.de/fileadmin/_processed_/4/3/csm_85f7eed1ab3eef19c06976e6b08ed0a8_99fec5262b.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 550.67,
-   "cold": 380.86,
-   "size": 47.89,
-   "floor": 4,
-   "levels": 6,
-   "year": 1987,
-   "stars": 2,
-   "why": "47.89 m², ~10.3 km zur Arbeit (Luftlinie), Kiez wenig los (35 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 4. Etage, Baujahr 1987",
-   "points": 53,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     6.7,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.7,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T13:35:07Z"
-  },
   "ibw-23962": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1571,7 +1493,7 @@
    "online_since": "2026-11-06T13:19:04Z"
   }
  },
- "updated": "2026-11-06T13:34:28Z",
+ "updated": "2026-11-06T13:36:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1636,5 +1558,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T13:34:28Z"
+ "last_auto": "2026-11-06T13:36:14Z"
 }
