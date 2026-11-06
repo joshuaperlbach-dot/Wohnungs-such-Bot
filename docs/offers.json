@@ -1726,10 +1726,11 @@
    },
    "requested": "gesendet",
    "online_since": "2026-11-06T09:07:10Z",
-   "requested_at": "2026-11-06T09:07:10Z"
+   "requested_at": "2026-11-06T09:07:10Z",
+   "gone": false
   }
  },
- "updated": "2026-11-06T09:07:10Z",
+ "updated": "2026-11-06T09:10:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1794,5 +1795,5 @@
    "chars": 2871
   }
  ],
- "last_auto": "2026-11-06T09:07:10Z"
+ "last_auto": "2026-11-06T09:10:05Z"
 }
