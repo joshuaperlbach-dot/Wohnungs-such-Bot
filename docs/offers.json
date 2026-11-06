@@ -1652,9 +1652,93 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-06T09:48:20Z"
+  },
+  "ibw-24014": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-63817-0104-1407.html",
+   "title": "Den Blick in die Stadt genießen",
+   "address": "Müggelschlößchenweg 38, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793961307-wnxMXXkqhA.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_c582ac2b-3fba-421d-96b2-fd8c154824a6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_a304cff8-042f-4af8-b46c-5e6eefc4011f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_8f4521b0-cf11-4d61-bc49-2bdf33bbeade.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_ff4b28a6-8ce6-46b8-902f-89101164c4ce.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_a74cd64f-c111-4dc6-86cd-71b7f7bfa143.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_0cb2a1ec-89ae-404e-9882-97757fabed9d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_3f1fcf88-149f-4519-90a5-d0e599661a08.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_bd4859e3-8f80-499f-9aa4-7ff6944e7ce3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_b0e862b5-0ed6-4a1d-b79e-2f730c956282.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5020-degewo_84e9ba9a-f53b-4acb-97d1-43f627927549.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/8/csm_5020-degewo_c123e381-bbc2-40c3-8aae-c7f48356034d_050c3ca4d8.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 579.52,
+   "cold": 388.18,
+   "size": 52.28,
+   "floor": 14,
+   "levels": 18,
+   "year": 1982,
+   "stars": 2,
+   "why": "52.28 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 14. Etage, Baujahr 1982, Hochhaus (18 Etagen)",
+   "points": 44,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     4.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T10:35:08Z"
   }
  },
- "updated": "2026-11-06T10:35:59Z",
+ "updated": "2026-11-06T10:38:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1719,5 +1803,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T10:35:59Z"
+ "last_auto": "2026-11-06T10:38:19Z"
 }
