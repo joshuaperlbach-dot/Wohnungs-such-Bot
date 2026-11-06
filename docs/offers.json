@@ -1571,9 +1571,87 @@
     ]
    },
    "online_since": "2026-11-06T13:46:07Z"
+  },
+  "ibw-24039": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01607-1302-0509",
+   "title": "2-Zimmer-Wohnung mit Balkon - Selbtsrenovierer gesucht",
+   "address": "Wiersichweg 6, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793973366-DclFuIQkQV.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01607-1302-0509/gewobag_cfad03ae-c7ce-4241-b881-e76e2753297e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01607-1302-0509/gewobag_7e836dcc-0063-4301-b8bc-dca8a09aa01f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01607-1302-0509/gewobag_a505dbae-61f0-4d0b-9f17-4104498b2633.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01607-1302-0509/gewobag_8fc9f901-e352-4898-a79e-38e3b06deecf.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01607-1302-0509/gewobag_e261dd29-036e-492b-9769-86f3f3c773aa.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 686.39,
+   "cold": 467.39,
+   "size": 61.58,
+   "floor": 1,
+   "levels": 5,
+   "year": 1963,
+   "stars": 3,
+   "why": "61.58 m², ~8.7 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 1. Etage, Baujahr 1963",
+   "points": 61,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T13:56:06Z"
   }
  },
- "updated": "2026-11-06T13:56:08Z",
+ "updated": "2026-11-06T13:58:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1638,5 +1716,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T13:56:08Z"
+ "last_auto": "2026-11-06T13:58:03Z"
 }
