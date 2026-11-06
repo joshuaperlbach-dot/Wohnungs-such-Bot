@@ -1649,9 +1649,87 @@
     ]
    },
    "online_since": "2026-11-06T08:42:07Z"
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-naehe-ostbahnhof/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-naehe-ostbahnhof/",
+   "title": "2-Zimmer-Wohnung in Friedrichshain nähe Ostbahnhof",
+   "address": "Wedekindstrasse 9, 10243 Berlin",
+   "text": "Die Wohnung befindet sich in der 3. Etage (Wohnung 0302), ein Aufzug ist nicht vorhanden. Die Zimmer gehen separat vom Flur ab. Spüle und Herd werden vom Vermieter gestellt.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78990-b04aa627d436c30135db89f0b3250ef2.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78990-70e9b90e2f8f85ab3aa3506aae3f6b16.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78990-1cadc2e3d09781a26684b687947fffd9.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78990-94bc95431d58d0ede727c0dbfca5ade2.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78990-e978d19acaf79dd233e7824eec2bdca5.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 2,
+   "price": 750.92,
+   "cold": 545.92,
+   "size": 48.3,
+   "floor": 2,
+   "year": 1956,
+   "stars": 3,
+   "why": "48.3 m², ~2.5 km zur Arbeit (Luftlinie), Kiez mittel (99 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 2. Etage, Baujahr 1956",
+   "points": 67,
+   "parts": {
+    "Kosten": [
+     19.9,
+     20
+    ],
+    "Kiez": [
+     11.2,
+     16
+    ],
+    "Lage": [
+     9.2,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     3.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "requested": "gesendet",
+   "online_since": "2026-11-06T09:07:10Z",
+   "requested_at": "2026-11-06T09:07:10Z"
   }
  },
- "updated": "2026-11-06T09:06:19Z",
+ "updated": "2026-11-06T09:07:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1716,5 +1794,5 @@
    "chars": 2871
   }
  ],
- "last_auto": "2026-11-06T09:06:19Z"
+ "last_auto": "2026-11-06T09:07:10Z"
 }
