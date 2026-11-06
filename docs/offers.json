@@ -1648,12 +1648,94 @@
    "requested": "gesendet",
    "online_since": "2026-11-06T09:07:10Z",
    "requested_at": "2026-11-06T09:07:10Z",
-   "gone": false,
+   "gone": true,
    "reply": "absage",
    "reply_at": "2026-11-06T09:42:30Z"
+  },
+  "ibw-24009": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20272-233.html?t=ibw",
+   "title": "Wohnung in Berlin",
+   "address": "Frankfurter Allee 174, 10365 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793958429-ucLdqGrydI.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/b/b/csm_daf81a4bcb41e857282dd5c14dc031d7_7d481ce1d1.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/2/csm_2bcfc7fa52ba8f21f100769e68fbaed1_5267ba8ba6.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/5/csm_e0dcd79b418e3967a7bd31b2cbe421d3_90e1f2b2ad.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/7/csm_d4df986d20809f4c4623f015efb4264a_71e50fa874.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 652.77,
+   "cold": 416.74,
+   "size": 52.4,
+   "floor": 10,
+   "levels": 18,
+   "year": 1973,
+   "stars": 3,
+   "why": "52.4 m², ~5.1 km zur Arbeit (Luftlinie), Kiez wenig los (39 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 10. Etage, Baujahr 1973, Hochhaus (18 Etagen)",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.2,
+     16
+    ],
+    "Lage": [
+     4.8,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     5.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T09:47:09Z",
+   "requested": "unklar",
+   "confirm": "offen",
+   "requested_at": "2026-11-06T09:48:20Z"
   }
  },
- "updated": "2026-11-06T09:46:34Z",
+ "updated": "2026-11-06T09:48:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1718,5 +1800,5 @@
    "chars": 1001
   }
  ],
- "last_auto": "2026-11-06T09:46:34Z"
+ "last_auto": "2026-11-06T09:48:31Z"
 }
