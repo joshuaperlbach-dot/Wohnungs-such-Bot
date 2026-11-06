@@ -1575,9 +1575,82 @@
     ]
    },
    "online_since": "2026-11-06T13:56:06Z"
+  },
+  "ibw-24044": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00155-0103-0213",
+   "title": "2 Zimmer ohne WBS...",
+   "address": "Paul-Grasse-Straße 24, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793977988-q7mAbMua3K.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 696.77,
+   "cold": 464.77,
+   "size": 53.08,
+   "floor": 2,
+   "levels": 4,
+   "year": 1955,
+   "stars": 4,
+   "why": "53.08 m², ~5.4 km zur Arbeit (Luftlinie), Kiez wenig los (40 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 2. Etage, Baujahr 1955",
+   "points": 70,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.3,
+     16
+    ],
+    "Lage": [
+     4.4,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.2,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T15:13:08Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-06T15:14:19Z",
+ "updated": "2026-11-06T15:16:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1642,5 +1715,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T15:14:19Z"
+ "last_auto": "2026-11-06T15:16:20Z"
 }
