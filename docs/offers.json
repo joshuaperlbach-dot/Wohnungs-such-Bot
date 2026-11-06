@@ -854,85 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23918": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02546-0201-0022",
-   "title": "2 Zimmer ohne WBS",
-   "address": "Maximilianstraße 44A, 13187 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793871545-hsMFBGBxqS.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_46b08286-1de6-44c2-bab4-beba39b8dea6.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_213ff5bd-693a-4c25-a916-f403f11434ae.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_bb443f14-4c1d-4d53-a576-e0e07516fdb1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_771fba92-6d48-4984-87c0-8459aec8b563.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02546-0201-0022/gewobag_294ad8a4-4687-4cac-8f78-2892761e56d9.jpg"
-   ],
-   "rooms": 2,
-   "price": 795.87,
-   "cold": 546.87,
-   "size": 53.4,
-   "floor": 3,
-   "levels": 4,
-   "year": 1905,
-   "stars": 3,
-   "why": "53.4 m², ~6.4 km zur Arbeit (Luftlinie), Kiez mittel (67 Lokale/Läden), Park nah, Ringbahn mittel, 3. Etage, Baujahr 1905",
-   "points": 65,
-   "parts": {
-    "Kosten": [
-     16.3,
-     20
-    ],
-    "Kiez": [
-     9.5,
-     16
-    ],
-    "Lage": [
-     2.7,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.3,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T09:39:05Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-23923": {
    "source": "ibw",
    "company": "degewo",
@@ -1730,7 +1651,7 @@
    "gone": false
   }
  },
- "updated": "2026-11-06T09:38:05Z",
+ "updated": "2026-11-06T09:42:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1795,5 +1716,5 @@
    "chars": 2871
   }
  ],
- "last_auto": "2026-11-06T09:38:05Z"
+ "last_auto": "2026-11-06T09:42:14Z"
 }
