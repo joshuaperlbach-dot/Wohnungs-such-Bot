@@ -1656,9 +1656,82 @@
     ]
    },
    "online_since": "2026-11-06T10:35:08Z"
+  },
+  "ibw-24024": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F5101%2F00109",
+   "title": "Ab sofort",
+   "address": "Neuköllner Straße 306, 12357 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793968627-y3P6yGyygr.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 489.01,
+   "cold": 333.01,
+   "size": 42.43,
+   "floor": 2,
+   "levels": 4,
+   "year": 1975,
+   "stars": 2,
+   "why": "42.43 m², ~10.5 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 2. Etage, Baujahr 1975",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     2.1,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T12:37:07Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-06T12:38:27Z",
+ "updated": "2026-11-06T12:40:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1723,5 +1796,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T12:38:27Z"
+ "last_auto": "2026-11-06T12:40:28Z"
 }
