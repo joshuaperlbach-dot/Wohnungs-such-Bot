@@ -1648,19 +1648,15 @@
    "requested": "gesendet",
    "online_since": "2026-11-06T09:07:10Z",
    "requested_at": "2026-11-06T09:07:10Z",
-   "gone": false
+   "gone": false,
+   "reply": "absage",
+   "reply_at": "2026-11-06T09:42:30Z"
   }
  },
- "updated": "2026-11-06T09:42:14Z",
+ "updated": "2026-11-06T09:44:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-28T14:55:53Z",
-   "kind": "absage",
-   "matched": false,
-   "chars": 2427
-  },
   {
    "at": "2026-10-28T17:54:31Z",
    "kind": "absage",
@@ -1714,7 +1710,13 @@
    "kind": "absage",
    "matched": true,
    "chars": 2871
+  },
+  {
+   "at": "2026-11-06T09:42:30Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 1001
   }
  ],
- "last_auto": "2026-11-06T09:42:14Z"
+ "last_auto": "2026-11-06T09:44:14Z"
 }
