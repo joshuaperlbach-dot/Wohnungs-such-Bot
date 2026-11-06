@@ -854,87 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23923": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-71502-0005-0202.html",
-   "title": "Gründung eines ersten eigenen Nestes geplant? Wohnung dafür vorhanden!",
-   "address": "Karl-Pokern-Straße 31, 12587 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793874487-9rFf7opuoF.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6001-degewo_d3fc8c5c-fdb6-4bac-b972-e4296248a693.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6001-degewo_01a5477d-a9d0-4b32-8cee-4f488f8486cc.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6001-degewo_51754656-1a95-49f7-9e6b-22240e5696e6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6001-degewo_e0fc634d-7d7a-495d-8f3d-ada9d6117b55.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6001-degewo_07ce3e2c-6da4-4186-b6ec-4dd35fd40039.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6001-degewo_f3d9f6c0-06a9-4c40-9c5b-ac5f97c63758.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/c/d/csm_6001-degewo_1544ee68-e928-4da2-af54-5f63cb3b2ac7_880368034e.webp"
-   ],
-   "rooms": 2,
-   "price": 524.7,
-   "cold": 359.87,
-   "size": 36.07,
-   "floor": 2,
-   "levels": 4,
-   "year": 1961,
-   "stars": 2,
-   "why": "36.07 m², ~16.1 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Ringbahn weit, 2. Etage, Baujahr 1961",
-   "points": 46,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     6.0,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.3,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T10:28:08Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-23934": {
    "source": "ibw",
    "company": "degewo",
@@ -1735,7 +1654,7 @@
    "requested_at": "2026-11-06T09:48:20Z"
   }
  },
- "updated": "2026-11-06T10:27:55Z",
+ "updated": "2026-11-06T10:30:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1800,5 +1719,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T10:27:55Z"
+ "last_auto": "2026-11-06T10:30:06Z"
 }
