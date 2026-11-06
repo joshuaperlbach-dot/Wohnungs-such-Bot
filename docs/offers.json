@@ -854,80 +854,6 @@
    "via": "mail",
    "photo_tries": 0
   },
-  "ibw-23962": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F0194%2F00057",
-   "title": "*Neue Mieter gesucht*",
-   "address": "Landreiterweg 65, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793888466-RwQ0EpkUaz.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 783.27,
-   "cold": 585.27,
-   "size": 52.21,
-   "floor": 2,
-   "levels": 4,
-   "year": 1996,
-   "stars": 2,
-   "why": "52.21 m², ~9.4 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1996",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     17.3,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     4.5,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-05T14:21:06Z",
-   "photo_tries": 10,
-   "photos_checked": 5
-  },
   "ibw-23999": {
    "source": "ibw",
    "company": "degewo",
@@ -1651,7 +1577,7 @@
    "online_since": "2026-11-06T13:56:06Z"
   }
  },
- "updated": "2026-11-06T14:21:00Z",
+ "updated": "2026-11-06T14:23:09Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1716,5 +1642,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T14:21:00Z"
+ "last_auto": "2026-11-06T14:23:09Z"
 }
