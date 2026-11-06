@@ -1483,9 +1483,95 @@
     ]
    },
    "online_since": "2026-11-06T12:41:08Z"
+  },
+  "ibw-24033": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10506-187.html?t=ibw",
+   "title": "Wohnung in Berlin",
+   "address": "Genslerstraße 47, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1793971144-4ou5SPDv4i.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/b/f/csm_71ddaf450ce3d057348b12178ddf33c9_7c4d76fdf0.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/b/csm_8fee58d14472533d145970a93d183f78_5733a11d1c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/3/csm_efed284d2405c57fc8a7fb9e9b8e5cb8_5e44c74149.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/1/a/csm_eb24952aeb7b90db3e8cc8dd1c9d504d_64d77a64d0.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/b/csm_68ceb3c684d38d0750c6ea821c1e327a_557de1f024.webp",
+    "https://www.howoge.de/fileadmin/_processed_/8/6/csm_c641e3313c53936606f77ef58761e6d3_2689811648.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/5/csm_81dbc100c8f3c3044b43069ff1137f2b_38b1eb4f62.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/a/csm_695f17837b819cb51082ac93432a4ccd_18056b4396.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/7/csm_67d10409edd14b37a167be9c9aace443_09dc038a19.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/2/csm_b2312cec9e10724148929554caee7ece_7043c4fb91.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/c/csm_e95e4e1be8e264c3be03d71c86c04afd_2ded8b1074.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 943.5,
+   "cold": 765.0,
+   "size": 51.0,
+   "floor": 4,
+   "levels": 3,
+   "year": 1940,
+   "stars": 2,
+   "why": "51 m², ~7.0 km zur Arbeit (Luftlinie), Kiez wenig los (44 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 4. Etage, Baujahr 1940",
+   "points": 45,
+   "parts": {
+    "Kosten": [
+     0.8,
+     20
+    ],
+    "Kiez": [
+     7.7,
+     16
+    ],
+    "Lage": [
+     1.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-06T13:19:04Z"
   }
  },
- "updated": "2026-11-06T13:20:19Z",
+ "updated": "2026-11-06T13:22:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1550,5 +1636,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-06T13:20:19Z"
+ "last_auto": "2026-11-06T13:22:28Z"
 }
