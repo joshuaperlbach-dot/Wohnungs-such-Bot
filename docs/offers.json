@@ -1489,7 +1489,10 @@
    },
    "online_since": "2026-11-06T15:13:08Z",
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 5,
+   "requested": "gesendet",
+   "requested_at": "2026-11-07T11:28:23Z",
+   "via": "mail"
   },
   "ibw-24047": {
    "source": "ibw",
@@ -1647,16 +1650,10 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-07T11:28:02Z",
+ "updated": "2026-11-07T11:30:04Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-10-30T13:46:28Z",
-   "kind": "formular",
-   "matched": true,
-   "chars": 2894
-  },
   {
    "at": "2026-11-03T21:56:31Z",
    "kind": "eingang",
@@ -1710,7 +1707,13 @@
    "kind": "bestaetigung",
    "matched": true,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-07T11:28:23Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2271
   }
  ],
- "last_auto": "2026-11-07T11:28:02Z"
+ "last_auto": "2026-11-07T11:30:04Z"
 }
