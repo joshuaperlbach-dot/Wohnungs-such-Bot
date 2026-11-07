@@ -1100,87 +1100,9 @@
    "requested": "gesendet",
    "requested_at": "2026-11-07T11:28:23Z",
    "via": "mail"
-  },
-  "ibw-24048": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00186-0102-0076",
-   "title": "Singlewohnung ohne WBS",
-   "address": "Hanns-Eisler-Straße 88, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793979487-LubkfoGtk3.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0076/gewobag_import_2019-07-02_01_1000-00186-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0076/gewobag_f331bdfa-100c-405c-a264-33e2d90fa332.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0076/gewobag_2c52d26c-f028-4b82-b527-e8239f2c5df5.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0076/gewobag_6d31845d-3312-4251-a8c0-ba88804ca51f.jpg"
-   ],
-   "rooms": 1,
-   "price": 407.18,
-   "cold": 268.18,
-   "size": 29.48,
-   "floor": 1,
-   "levels": 10,
-   "year": 1977,
-   "stars": 2,
-   "why": "29.48 m², ~4.9 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Park nah, Ringbahn mittel, Aufzug, 1. Etage, Baujahr 1977, Hochhaus (10 Etagen)",
-   "points": 47,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     5.2,
-     10
-    ],
-    "Ringbahn": [
-     3.0,
-     6
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-06T15:38:07Z",
-   "photo_tries": 0,
-   "photos_checked": 5
   }
  },
- "updated": "2026-11-07T15:36:12Z",
+ "updated": "2026-11-07T15:38:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1245,5 +1167,5 @@
    "chars": 2271
   }
  ],
- "last_auto": "2026-11-07T15:36:12Z"
+ "last_auto": "2026-11-07T15:38:07Z"
 }
