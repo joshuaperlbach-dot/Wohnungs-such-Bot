@@ -1101,83 +1101,6 @@
    "requested_at": "2026-11-07T11:28:23Z",
    "via": "mail"
   },
-  "ibw-24047": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02539-0103-0020",
-   "title": "Singlewohnung am Puls ohne WBS",
-   "address": "Breite Straße 12, 13187 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793978706-lt5TfuWpPH.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02539-0103-0020/gewobag_cecaac3e-395b-4941-9dc4-2edd34f85a2b.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02539-0103-0020/gewobag_e183ff07-638e-48d3-9518-61d87ca0227e.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02539-0103-0020/gewobag_6c31a248-43cd-4e88-b98e-999b963c2338.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02539-0103-0020/gewobag_9fb6b227-8df6-4f21-9a34-46a5873a4fd2.jpg"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 589.49,
-   "cold": 394.49,
-   "size": 39.54,
-   "floor": 3,
-   "levels": 5,
-   "year": 1935,
-   "stars": 3,
-   "why": "39.54 m², ~7.5 km zur Arbeit (Luftlinie), Kiez mittel (176 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1935",
-   "points": 60,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     13.7,
-     16
-    ],
-    "Lage": [
-     0.9,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.3,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-06T15:25:06Z"
-  },
   "ibw-24048": {
    "source": "ibw",
    "company": "gewobag",
@@ -1257,7 +1180,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-07T15:24:10Z",
+ "updated": "2026-11-07T15:26:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1322,5 +1245,5 @@
    "chars": 2271
   }
  ],
- "last_auto": "2026-11-07T15:24:10Z"
+ "last_auto": "2026-11-07T15:26:06Z"
 }
