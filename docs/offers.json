@@ -591,7 +591,9 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T11:41:23Z",
    "via": "mail",
-   "photo_tries": 0
+   "photo_tries": 0,
+   "reply": "absage",
+   "reply_at": "2026-11-08T21:42:31Z"
   },
   "ibw-23870": {
    "source": "ibw",
@@ -1104,16 +1106,10 @@
    "via": "mail"
   }
  },
- "updated": "2026-11-08T21:42:17Z",
+ "updated": "2026-11-08T21:44:12Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-03T21:56:31Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 2321
-  },
   {
    "at": "2026-11-04T11:41:23Z",
    "kind": "eingang",
@@ -1167,7 +1163,13 @@
    "kind": "absage",
    "matched": true,
    "chars": 2920
+  },
+  {
+   "at": "2026-11-08T21:42:31Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 2861
   }
  ],
- "last_auto": "2026-11-08T21:42:17Z"
+ "last_auto": "2026-11-08T21:44:12Z"
 }
