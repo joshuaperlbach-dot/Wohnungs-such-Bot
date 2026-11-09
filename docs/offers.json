@@ -1727,21 +1727,15 @@
     ]
    },
    "online_since": "2026-11-09T16:35:08Z",
-   "requested": "unklar",
-   "confirm": "offen",
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
    "requested_at": "2026-11-09T16:36:36Z"
   }
  },
- "updated": "2026-11-09T16:38:26Z",
+ "updated": "2026-11-09T16:40:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-04T11:41:23Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 2311
-  },
   {
    "at": "2026-11-04T17:28:36Z",
    "kind": "eingang",
@@ -1795,7 +1789,13 @@
    "kind": "absage",
    "matched": true,
    "chars": 2861
+  },
+  {
+   "at": "2026-11-09T16:38:45Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-09T16:38:26Z"
+ "last_auto": "2026-11-09T16:40:34Z"
 }
