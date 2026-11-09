@@ -1485,9 +1485,88 @@
     ]
    },
    "online_since": "2026-11-09T15:25:05Z"
+  },
+  "ibw-24104": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-02409-0072-0202.html",
+   "title": "Ruhig wohnen in der Landjägerstraße",
+   "address": "Landjägerstraße 20, 12555 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794238747-He76zsIIoj.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6103-degewo_b72659b0-8086-4057-80e9-590c577bf98b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6103-degewo_81d1006a-a164-4c9c-8dfb-e251e2afd9ea.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6103-degewo_15a31d9f-39bc-4951-90cc-b242d42d35c4.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6103-degewo_0546eeca-5652-40d5-9f58-ac63eb9a04a8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6103-degewo_908f92d7-1887-4e74-a082-db42c40a0964.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/9/csm_6103-degewo_75c7f4b8-feaa-48bb-9461-3e3ef8faceba_87ec3c4045.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 493.11,
+   "cold": 348.82,
+   "size": 43.86,
+   "floor": 2,
+   "levels": 5,
+   "year": 1988,
+   "stars": 3,
+   "why": "43.86 m², ~13.3 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1988",
+   "points": 61,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     11.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     2.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-09T15:39:07Z"
   }
  },
- "updated": "2026-11-09T15:40:13Z",
+ "updated": "2026-11-09T15:42:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1552,5 +1631,5 @@
    "chars": 2861
   }
  ],
- "last_auto": "2026-11-09T15:40:13Z"
+ "last_auto": "2026-11-09T15:42:22Z"
 }
