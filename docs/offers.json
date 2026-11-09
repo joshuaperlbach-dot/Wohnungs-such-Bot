@@ -1895,21 +1895,15 @@
     ]
    },
    "online_since": "2026-11-09T17:28:06Z",
-   "requested": "unklar",
-   "confirm": "offen",
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z"
   }
  },
- "updated": "2026-11-09T17:30:19Z",
+ "updated": "2026-11-09T17:32:36Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-04T17:28:36Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 2330
-  },
   {
    "at": "2026-11-04T17:40:36Z",
    "kind": "eingang",
@@ -1963,7 +1957,13 @@
    "kind": "bestaetigung",
    "matched": true,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-09T17:30:48Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-09T17:30:19Z"
+ "last_auto": "2026-11-09T17:32:36Z"
 }
