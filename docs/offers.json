@@ -1644,9 +1644,95 @@
     ]
    },
    "online_since": "2026-11-09T16:18:07Z"
+  },
+  "ibw-24131": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20575-54.html?t=ibw",
+   "title": "Wohnung in Berlin",
+   "address": "Huronseestraße 30, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794242108-62WQwfh6q4.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/a/csm_660098dd3e63908af516093b0b25178a_faea798b08.webp",
+    "https://www.howoge.de/fileadmin/_processed_/8/0/csm_5320f226425c0d3ca41d00e8f5659e30_ca46cc64bb.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/2/csm_68f2826ffbbffdda256554385b61f598_86ee67b793.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/9/csm_b375f54c1d3e22ba67f1d1649190579a_20bf512a5a.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/e/csm_7883bccc0439077641a3b45802890bb7_6d29eefb7a.webp",
+    "https://www.howoge.de/fileadmin/promos/downloadedImages/51328a79cd5c97a3a970ba6b593b3295.jpeg",
+    "https://www.howoge.de/fileadmin/promos/downloadedImages/fea243e411eae0b4622089879f7a72b1.jpeg",
+    "https://www.howoge.de/fileadmin/_processed_/9/f/csm_f6c205413a7e0e1b1fb8534920e1778b_aae8870864.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 700.0,
+   "cold": 560.0,
+   "size": 40.0,
+   "floor": 3,
+   "levels": 6,
+   "year": 2026,
+   "stars": 3,
+   "why": "40 m², ~5.9 km zur Arbeit (Luftlinie), Kiez wenig los (29 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2026",
+   "points": 59,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.9,
+     16
+    ],
+    "Lage": [
+     3.5,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-09T16:35:08Z",
+   "requested": "unklar",
+   "confirm": "offen",
+   "requested_at": "2026-11-09T16:36:36Z"
   }
  },
- "updated": "2026-11-09T16:36:25Z",
+ "updated": "2026-11-09T16:38:26Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1711,5 +1797,5 @@
    "chars": 2861
   }
  ],
- "last_auto": "2026-11-09T16:36:25Z"
+ "last_auto": "2026-11-09T16:38:26Z"
 }
