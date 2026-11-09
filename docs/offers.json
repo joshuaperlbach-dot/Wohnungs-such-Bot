@@ -1813,9 +1813,94 @@
     ]
    },
    "online_since": "2026-11-09T16:53:07Z"
+  },
+  "ibw-24145": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12300-17.html?t=ibw",
+   "title": "mit offenem Wohnbereich - nahe der Tramlinie M5!",
+   "address": "Rotkamp 9, 13053 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794245286-VUXZUUTxfs.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/a/csm_641dd7948b9ce01c28a480f63b94b5b5_d8ee918d5c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/0/csm_40b17a33d1c0498d862e54c2a3214ecc_58c0445c51.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/b/csm_f6bb12460f3997736673ff59a7b147fe_dfc1fb3a53.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/8/9/csm_43d893fd63270e7e71bf55a0a5b55cfe_09d3925f61.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/1/csm_507be0c474c27265d25f877365c7920c_5866cee900.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/a/csm_464028581c58487bf548710a41e7f25c_833cb1e491.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/f/csm_38f67b8e7eebb33efbb2f6d9966607cf_3e939ae3bf.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 573.35,
+   "cold": 406.82,
+   "size": 52.91,
+   "floor": 3,
+   "levels": 6,
+   "year": 1984,
+   "stars": 3,
+   "why": "52.91 m², ~9.3 km zur Arbeit (Luftlinie), Kiez mittel (120 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1984",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-09T17:28:06Z",
+   "requested": "unklar",
+   "confirm": "offen",
+   "requested_at": "2026-11-09T17:28:32Z"
   }
  },
- "updated": "2026-11-09T17:28:20Z",
+ "updated": "2026-11-09T17:30:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1880,5 +1965,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-09T17:28:20Z"
+ "last_auto": "2026-11-09T17:30:19Z"
 }
