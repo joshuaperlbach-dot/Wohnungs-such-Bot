@@ -2535,9 +2535,90 @@
    "online_since": "2026-11-10T14:17:08Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24210": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14555-423.html?t=ibw",
+   "title": "1-Zimmer-Wohnung ohne WBS",
+   "address": "Klara-Weyl-Straße 19, 10365 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794325268-a8GkgeKJiZ.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/a/f/csm_b0a5a9e6a3b90e496040b2402e471f10_855ec73bfa.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/a/csm_68748bbb659ef03ef423265aa04c1167_00d035d923.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/5/csm_8e9978a9d2aaeed466426fc73539bcc2_0475001be4.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/6/csm_8f203c95982f18a2761514f9ded279b7_b5a6312ba5.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/b/csm_70bad67043aa742c9a102deee8ce5e90_4190354dd4.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/4/csm_89b08d16216325ec4b4ff2cabe820686_3bf28bcda3.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 745.0,
+   "cold": 585.0,
+   "size": 39.0,
+   "floor": 1,
+   "levels": 6,
+   "year": 2019,
+   "stars": 2,
+   "why": "39 m², ~6.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2019",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     2.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.1,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T15:41:08Z"
   }
  },
- "updated": "2026-11-10T15:42:25Z",
+ "updated": "2026-11-10T15:44:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2602,5 +2683,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T15:42:25Z"
+ "last_auto": "2026-11-10T15:44:24Z"
 }
