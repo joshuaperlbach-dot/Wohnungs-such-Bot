@@ -2228,9 +2228,87 @@
     ]
    },
    "online_since": "2026-11-10T10:36:06Z"
+  },
+  "ibw-24181": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-63817-0069-1004.html",
+   "title": "Single-Wohnung wartet auf ein neues Gesicht",
+   "address": "Müggelschlößchenweg 38, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794307328-5CRKnWQ7Iq.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_d6e03ab0-a263-4f8e-834c-b28805333f89.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_f1598fb5-0872-470d-8249-dff9588e4e9b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_1c188d8d-15ba-4256-a5e0-715f88489c36.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_8e5d6847-9042-424d-b1a4-15a9b6ddba6d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/4/csm_6141-degewo_101593f6-a8aa-43d4-b091-4832fbc81437_7537de2c4f.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 366.23,
+   "cold": 259.62,
+   "size": 29.21,
+   "floor": 10,
+   "levels": 18,
+   "year": 1982,
+   "stars": 1,
+   "why": "29.21 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 10. Etage, Baujahr 1982, Hochhaus (18 Etagen)",
+   "points": 35,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T10:42:08Z"
   }
  },
- "updated": "2026-11-10T10:42:21Z",
+ "updated": "2026-11-10T10:44:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2295,5 +2373,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T10:42:21Z"
+ "last_auto": "2026-11-10T10:44:24Z"
 }
