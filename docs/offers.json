@@ -1105,88 +1105,6 @@
    "requested_at": "2026-11-07T11:28:23Z",
    "via": "mail"
   },
-  "ibw-24069": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00644-0289-2601.html",
-   "title": "1 Zimmer mit toller Aussicht",
-   "address": "Zwickauer Damm 12, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794212945-IRjPooeP2n.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_f7b715b5-bc98-4c57-ae53-8bb9d613bd70.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/f/csm_4997-degewo_109ea159-c6dc-487f-b596-771838108700_39b24c58c5.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_7f681457-39ee-489c-898f-0b9ed3b98407.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_44f7de14-6794-4cc7-b4dd-68263634a353.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_7de3f2d6-839b-44a6-96dd-282136b30ed6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_d38e7f28-af06-4fe1-9989-b906b0e728e6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_27c8c268-1cfd-4242-ba38-1c77bc9de02c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_aab221fe-c2d2-43df-904c-65afd4da5f17.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/4997-degewo_31c9e234-20c8-484b-89b9-8da95682bf4a.jpg"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 611.03,
-   "cold": 428.13,
-   "size": 46.78,
-   "floor": 26,
-   "levels": 27,
-   "year": 1968,
-   "stars": 2,
-   "why": "46.78 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (45 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 26. Etage, Baujahr 1968, Hochhaus (27 Etagen)",
-   "points": 50,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.8,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     3.4,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-09T08:29:05Z"
-  },
   "ibw-24096": {
    "source": "ibw",
    "company": "stadtundland",
@@ -1900,7 +1818,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-10T08:28:06Z",
+ "updated": "2026-11-10T08:30:01Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1965,5 +1883,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T08:28:06Z"
+ "last_auto": "2026-11-10T08:30:01Z"
 }
