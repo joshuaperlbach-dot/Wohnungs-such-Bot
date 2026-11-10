@@ -1193,89 +1193,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T16:36:36Z"
   },
-  "ibw-24138": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20575-91.html?t=ibw",
-   "title": "Wohnung in Berlin",
-   "address": "Huronseestraße 32, 10319 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794243187-fNvsgkhRkf.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/4/1/csm_165d8770086daa07841c06377cafaf85_bb3b6688a8.webp",
-    "https://www.howoge.de/fileadmin/_processed_/8/0/csm_5320f226425c0d3ca41d00e8f5659e30_ca46cc64bb.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/2/csm_68f2826ffbbffdda256554385b61f598_86ee67b793.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/9/csm_b375f54c1d3e22ba67f1d1649190579a_20bf512a5a.webp",
-    "https://www.howoge.de/fileadmin/_processed_/f/e/csm_7883bccc0439077641a3b45802890bb7_6d29eefb7a.webp",
-    "https://www.howoge.de/fileadmin/promos/downloadedImages/51328a79cd5c97a3a970ba6b593b3295.jpeg",
-    "https://www.howoge.de/fileadmin/promos/downloadedImages/fea243e411eae0b4622089879f7a72b1.jpeg",
-    "https://www.howoge.de/fileadmin/_processed_/5/c/csm_3596ffab23afe1c63b6d89b7aaaf88d4_d5f3a0c349.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 796.0,
-   "cold": 656.0,
-   "size": 40.0,
-   "floor": 3,
-   "levels": 6,
-   "year": 2026,
-   "stars": 2,
-   "why": "40 m², ~5.9 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2026",
-   "points": 54,
-   "parts": {
-    "Kosten": [
-     16.3,
-     20
-    ],
-    "Kiez": [
-     5.1,
-     16
-    ],
-    "Lage": [
-     3.6,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     1.4,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-09T16:53:07Z"
-  },
   "ibw-24145": {
    "source": "ibw",
    "company": "howoge",
@@ -2540,7 +2457,7 @@
    "online_since": "2026-11-10T15:41:08Z"
   }
  },
- "updated": "2026-11-10T16:52:19Z",
+ "updated": "2026-11-10T16:54:13Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2605,5 +2522,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-10T16:52:19Z"
+ "last_auto": "2026-11-10T16:54:13Z"
 }
