@@ -2691,9 +2691,82 @@
    "online_since": "2026-11-10T13:54:06Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24202": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6140%2F00068",
+   "title": "Schöne Wohnung am Plänterwald",
+   "address": "Neue Krugallee 136, 12437 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794320228-YljLNIcdYY.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 630.73,
+   "cold": 470.73,
+   "size": 55.38,
+   "floor": 3,
+   "levels": 4,
+   "year": 1931,
+   "stars": 3,
+   "why": "55.38 m², ~6.1 km zur Arbeit (Luftlinie), Kiez wenig los (5 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 3. Etage, Baujahr 1931",
+   "points": 64,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     3.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T14:17:08Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-10T14:17:00Z",
+ "updated": "2026-11-10T14:18:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2758,5 +2831,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T14:17:00Z"
+ "last_auto": "2026-11-10T14:18:58Z"
 }
