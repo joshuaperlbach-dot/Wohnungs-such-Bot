@@ -2469,9 +2469,82 @@
     ]
    },
    "online_since": "2026-11-10T12:21:05Z"
+  },
+  "ibw-24195": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6194%2F00064",
+   "title": "Schöne Zweiraumwohnung in Baumschulenweg",
+   "address": "Rinkartstraße 31, 12437 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794316686-QAB2FrsA8u.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 687.77,
+   "cold": 516.77,
+   "size": 57.74,
+   "floor": 1,
+   "levels": 3,
+   "year": 1929,
+   "stars": 4,
+   "why": "57.74 m², ~6.4 km zur Arbeit (Luftlinie), Kiez mittel (70 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1929",
+   "points": 74,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.7,
+     16
+    ],
+    "Lage": [
+     2.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T13:18:06Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-10T13:18:16Z",
+ "updated": "2026-11-10T13:20:59Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2536,5 +2609,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T13:18:16Z"
+ "last_auto": "2026-11-10T13:20:59Z"
 }
