@@ -2541,7 +2541,7 @@
     ]
    },
    "online_since": "2026-11-10T13:18:06Z",
-   "photo_tries": 6
+   "photo_tries": 7
   },
   "ibw-24196": {
    "source": "ibw",
@@ -2614,10 +2614,83 @@
     ]
    },
    "online_since": "2026-11-10T13:20:08Z",
-   "photo_tries": 5
+   "photo_tries": 6
+  },
+  "ibw-24198": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6775%2F00124",
+   "title": "Gondeker Str. 19, 1.G RE",
+   "address": "Gondeker Straße 19, 12437 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794317467-Wdu7S7I4wg.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 739.81,
+   "cold": 555.81,
+   "size": 61.62,
+   "floor": 1,
+   "levels": 4,
+   "year": 1929,
+   "stars": 4,
+   "why": "61.62 m², ~7.0 km zur Arbeit (Luftlinie), Kiez mittel (91 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1929",
+   "points": 75,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.8,
+     16
+    ],
+    "Lage": [
+     1.7,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T13:31:07Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-10T13:30:56Z",
+ "updated": "2026-11-10T13:32:56Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2682,5 +2755,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T13:30:56Z"
+ "last_auto": "2026-11-10T13:32:56Z"
 }
