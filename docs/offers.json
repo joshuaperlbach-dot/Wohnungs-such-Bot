@@ -1900,9 +1900,82 @@
     ]
    },
    "online_since": "2026-11-10T08:46:05Z"
+  },
+  "ibw-24175": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00358-0101-0005",
+   "title": "Vorfristig zum 01.12.2026... 2 Zimmer suchen neue Mieter",
+   "address": "Schivelbeiner Straße 20, 10439 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794302527-IkXSvQiKCB.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 815.74,
+   "cold": 541.74,
+   "size": 58.63,
+   "floor": 1,
+   "levels": 6,
+   "year": 1988,
+   "stars": 4,
+   "why": "58.63 m², ~5.3 km zur Arbeit (Luftlinie), Kiez mittel (95 Lokale/Läden), Park nah, Ringbahn nah, Balkon/Terrasse, 1. Etage, Baujahr 1988",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     14.7,
+     20
+    ],
+    "Kiez": [
+     11.0,
+     16
+    ],
+    "Lage": [
+     4.4,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T09:22:07Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-10T09:22:17Z",
+ "updated": "2026-11-10T09:24:13Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1967,5 +2040,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T09:22:17Z"
+ "last_auto": "2026-11-10T09:24:13Z"
 }
