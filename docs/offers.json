@@ -1898,9 +1898,82 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z"
+  },
+  "ibw-24158": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6301%2F00037",
+   "title": "Gemütliche 2-Raum-Wohnung, Lindhorstweg 37, EG LI",
+   "address": "Lindhorstweg 37, 12487 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794292506-0gWfZR5yIQ.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 565.63,
+   "cold": 365.63,
+   "size": 48.3,
+   "floor": 0,
+   "levels": 4,
+   "year": 1963,
+   "stars": 2,
+   "why": "48.3 m², ~9.4 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, Ringbahn weit, EG, Baujahr 1963",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T06:35:06Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-10T06:36:09Z",
+ "updated": "2026-11-10T06:38:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1965,5 +2038,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T06:36:09Z"
+ "last_auto": "2026-11-10T06:38:02Z"
 }
