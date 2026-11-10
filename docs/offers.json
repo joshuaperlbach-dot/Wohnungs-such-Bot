@@ -2691,9 +2691,82 @@
    "online_since": "2026-11-10T13:31:07Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24199": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F6147%2F00014",
+   "title": "Hänselstr. 43, 3.G MIL",
+   "address": "Hänselstraße 43, 12437 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794318846-QZe6fFUE7R.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 557.01,
+   "cold": 363.01,
+   "size": 46.6,
+   "floor": 3,
+   "levels": 12,
+   "year": 1956,
+   "stars": 2,
+   "why": "46.6 m², ~6.0 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 1956, Hochhaus (12 Etagen)",
+   "points": 53,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     3.4,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     3.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T13:54:06Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-10T13:54:09Z",
+ "updated": "2026-11-10T13:56:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2758,5 +2831,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T13:54:09Z"
+ "last_auto": "2026-11-10T13:56:10Z"
 }
