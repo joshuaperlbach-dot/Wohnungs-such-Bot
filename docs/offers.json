@@ -1978,9 +1978,95 @@
    "online_since": "2026-11-10T09:22:07Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24177": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-02412-0135-1807.html",
+   "title": "Sofort bezugsfähig!",
+   "address": "Alfred-Randt-Straße 13, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794306068-QEOBvv02Rd.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_4120094b-48f4-4acb-9d53-1e464f01a9f7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_f3052980-7310-45d2-841b-82ee007eec3d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/d/csm_6140-degewo_8db4b36e-fb2d-4174-b894-85aaf17e8a64_7528334399.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/2/csm_6140-degewo_4fa5eea9-c8be-4100-96f5-b8b3fef4aeee_fe4fff701d.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/7/csm_6140-degewo_1276da3a-af0f-46b6-ae76-1ca47ba0f6a9_2ec5fe8cd6.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_393737fc-968b-4502-a07f-b63e73dedfe2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_b3f0165f-c2ad-4fef-b250-f503d25e8c64.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_09de02e0-63a0-407e-84d2-4f065606c738.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_e56a0b78-feb0-4252-97f3-8cad80ffe8cc.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_7b437333-2466-42fa-bbc6-9dff8c8316a5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_6b6e0bec-891f-4909-a277-4185b7576c1d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6140-degewo_50680566-9bb6-457a-b526-b583fa6ac025.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/9/csm_6140-degewo_7c6ed7fb-269f-49a0-9f81-d90956dc1b85_3c72ce62a4.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 613.02,
+   "cold": 414.12,
+   "size": 52.07,
+   "floor": 18,
+   "levels": 18,
+   "year": 1982,
+   "stars": 2,
+   "why": "52.07 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 18. Etage, Baujahr 1982, Hochhaus (18 Etagen)",
+   "points": 45,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     4.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T10:21:09Z"
   }
  },
- "updated": "2026-11-10T10:22:24Z",
+ "updated": "2026-11-10T10:24:39Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2045,5 +2131,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T10:22:24Z"
+ "last_auto": "2026-11-10T10:24:39Z"
 }
