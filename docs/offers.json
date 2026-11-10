@@ -1105,86 +1105,6 @@
    "requested_at": "2026-11-07T11:28:23Z",
    "via": "mail"
   },
-  "ibw-24117": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-561.html?t=ibw",
-   "title": "OHNE WBS - Erstbezug im modernen Neubau - 2-Zimmer-Wohnung mit Balkon, Abstellraum und Fußbodenheizu",
-   "address": "Mohnweg 23, 12524 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794241087-EhAX8EkT2C.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/5/d/csm_5d76c80dea4925cd74b6a2182093d9e2_f57a4b34a6.webp",
-    "https://www.howoge.de/fileadmin/_processed_/7/e/csm_05015173098548fb3dbd361c90917a4b_ec747f90a3.webp",
-    "https://www.howoge.de/fileadmin/_processed_/9/7/csm_250f1bf69309b639269372ea00b62356_57f6f13fdc.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
-    "https://www.howoge.de/fileadmin/_processed_/e/e/csm_d5660e074508453f2d31632fc768bd90_c65d46b0ae.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 879.0,
-   "cold": 690.0,
-   "size": 54.0,
-   "floor": 1,
-   "levels": 5,
-   "year": 2025,
-   "stars": 2,
-   "why": "54 m², ~13.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2025",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     8.5,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.4,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-09T16:18:07Z"
-  },
   "ibw-24131": {
    "source": "ibw",
    "company": "howoge",
@@ -2618,7 +2538,7 @@
    "online_since": "2026-11-10T15:41:08Z"
   }
  },
- "updated": "2026-11-10T16:16:18Z",
+ "updated": "2026-11-10T16:18:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2683,5 +2603,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T16:16:18Z"
+ "last_auto": "2026-11-10T16:18:19Z"
 }
