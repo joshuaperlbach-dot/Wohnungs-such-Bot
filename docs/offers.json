@@ -1105,83 +1105,6 @@
    "requested_at": "2026-11-07T11:28:23Z",
    "via": "mail"
   },
-  "ibw-24103": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-02409-0218-0101.html",
-   "title": "Wohnen mit Nähe zur Altstadt",
-   "address": "Müggelheimer Straße 58, 12555 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794237905-jTf8ouJXou.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6102-degewo_07dd527c-462a-4216-a748-b3a10176a2b8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6102-degewo_b7d60d16-5882-4a23-8b91-4233229d38ba.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6102-degewo_995de3a4-6df4-4073-a67c-f37b671aa2f2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/f/csm_6102-degewo_e48617f5-f3d3-4073-9f7f-6276e454577f_75a66504e5.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 366.8,
-   "cold": 271.5,
-   "size": 28.97,
-   "floor": 1,
-   "levels": 5,
-   "year": 1988,
-   "stars": 2,
-   "why": "28.97 m², ~13.3 km zur Arbeit (Luftlinie), Kiez mittel (85 Lokale/Läden), Park nah, Ringbahn weit, 1. Etage, Baujahr 1988",
-   "points": 47,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.5,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-09T15:25:05Z"
-  },
   "ibw-24104": {
    "source": "ibw",
    "company": "degewo",
@@ -2693,7 +2616,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-10T15:24:23Z",
+ "updated": "2026-11-10T15:26:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2758,5 +2681,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T15:24:23Z"
+ "last_auto": "2026-11-10T15:26:18Z"
 }
