@@ -1909,7 +1909,11 @@
    "address": "Schivelbeiner Straße 20, 10439 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794302527-IkXSvQiKCB.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794302527-IkXSvQiKCB.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00358-0101-0005/gewobag_2a676ed1-d09f-49a3-8b04-9c1d27dab546.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00358-0101-0005/gewobag_4d940f6a-08ff-4620-b9d7-61d60868a35f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00358-0101-0005/gewobag_09c2434b-d1c3-4fbf-a70b-93530351dd2f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00358-0101-0005/gewobag_74101fd3-544f-48ef-8787-7e45c70ad420.jpg"
    ],
    "rooms": 2,
    "price": 815.74,
@@ -1972,10 +1976,11 @@
     ]
    },
    "online_since": "2026-11-10T09:22:07Z",
-   "photo_tries": 2
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-10T09:26:10Z",
+ "updated": "2026-11-10T09:28:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2040,5 +2045,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T09:26:10Z"
+ "last_auto": "2026-11-10T09:28:02Z"
 }
