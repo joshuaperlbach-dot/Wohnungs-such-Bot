@@ -2387,9 +2387,91 @@
     ]
    },
    "online_since": "2026-11-10T10:57:09Z"
+  },
+  "ibw-24188": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-64205-0042-0403.html",
+   "title": "Alles fußläufig zu erreichen",
+   "address": "Pablo-Neruda-Straße 15, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794313265-bRfLhmMLGW.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_891aeb1e-aa03-4d7e-bd7d-6120279f6ac4.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_c0e72516-f164-4308-b011-3c6086abb58a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_e88a9083-1959-4372-be96-1684c9fe0ab3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_eafab6a5-3b5e-4e5a-82ea-68fa77f6cd23.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_69cd610a-2690-4e73-a6f3-76a0d7b85957.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_a1baa0a7-6a3e-49bc-b32a-7c67d3fa0f53.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_ef81bf51-be24-4a10-970a-396c4617116f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6150-degewo_cc9ecb3d-c9bf-49e0-b4c4-1a3128574383.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/3/csm_6150-degewo_8d4edf83-361c-4214-ba3e-bad9d9791026_0b62705f0d.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 728.52,
+   "cold": 566.06,
+   "size": 57.82,
+   "floor": 4,
+   "levels": 10,
+   "year": 1972,
+   "stars": 3,
+   "why": "57.82 m², ~13.9 km zur Arbeit (Luftlinie), Kiez wenig los (23 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1972, Hochhaus (10 Etagen)",
+   "points": 56,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     6.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T12:21:05Z"
   }
  },
- "updated": "2026-11-10T12:22:15Z",
+ "updated": "2026-11-10T12:24:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2454,5 +2536,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T12:22:15Z"
+ "last_auto": "2026-11-10T12:24:14Z"
 }
