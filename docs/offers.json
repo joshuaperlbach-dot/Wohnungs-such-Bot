@@ -2306,9 +2306,90 @@
     ]
    },
    "online_since": "2026-11-10T10:42:08Z"
+  },
+  "ibw-24184": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12690-18.html?t=ibw",
+   "title": "altersgerechtes Wohnen",
+   "address": "Egon-Erwin-Kisch-Straße 1, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794308229-cbFzRKKkkl.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/3/d/csm_1d038cda49648749145160196f10abf8_b6ced53e2c.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/8/csm_6b8500df72132e7f2b36ed8b36c11108_b267515dbf.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/0/csm_00930eaa8fc8a42b37bf7dc5cfeb6c3d_03c08ccfa7.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/3/csm_8945ab53e5a00b7d258faaaecfbefab6_c2cfde540f.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/9/csm_1530b084ae3214e093fb209446d31961_91ccacaca6.webp",
+    "https://www.howoge.de/fileadmin/_processed_/1/b/csm_825af1f0e70658dd4e8f3b7784fe5179_3a88ee9a0f.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 517.7,
+   "cold": 357.79,
+   "size": 39.33,
+   "floor": 2,
+   "levels": 6,
+   "year": 1988,
+   "stars": 2,
+   "why": "39.33 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1988",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.2,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-10T10:57:09Z"
   }
  },
- "updated": "2026-11-10T10:58:03Z",
+ "updated": "2026-11-10T11:00:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2373,5 +2454,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-10T10:58:03Z"
+ "last_auto": "2026-11-10T11:00:06Z"
 }
