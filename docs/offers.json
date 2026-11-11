@@ -2455,9 +2455,82 @@
    "online_since": "2026-11-11T05:45:06Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24229": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0112%2F00071",
+   "title": "Holzmindener Str. 18b, 3.G",
+   "address": "Holzmindener Straße 18B, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794381905-1zbH7rNRgq.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 632.39,
+   "cold": 362.39,
+   "size": 61.72,
+   "floor": 3,
+   "levels": 4,
+   "year": 1964,
+   "stars": 3,
+   "why": "61.72 m², ~5.5 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 3. Etage, Baujahr 1964",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.6,
+     16
+    ],
+    "Lage": [
+     4.2,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T07:25:06Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-11T07:26:05Z",
+ "updated": "2026-11-11T07:28:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2522,5 +2595,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T07:26:05Z"
+ "last_auto": "2026-11-11T07:28:03Z"
 }
