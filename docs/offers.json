@@ -2662,7 +2662,20 @@
    "address": "Hohenzollerndamm 142, 14199 Berlin",
    "bezirk": "Charlottenburg-Wilmersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794401826-sX05nQREvH.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794401826-sX05nQREvH.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_d8f73913-e1b0-40fd-93f9-ffd6eccca79c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_6473852e-06d3-4cfa-9f80-4649e5268c82.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_bd960ab3-8c0b-4c09-ad63-b6907efe83f1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_6361bd3a-3b81-417e-98ea-00309131a672.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_8fb8d107-28fc-4d5b-be02-255fa4cebb28.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_646227d9-470b-49c0-b01e-6b6338b53267.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_0b876ed3-fc04-45be-8aa9-db9c67b05a6c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_b039c497-23e2-4dcc-800b-90edd19c0ff6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_d71219d9-0193-43ba-9892-310ddf20bf5d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_23a64392-291c-470e-836e-99ebb89a1154.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_cd6367f2-c830-4bae-a14f-e673c9a55bc6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_0d4695a1-aae3-4c43-847b-30f6a7d08337.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/0/csm_6185-degewo_3585b4d7-be1a-4570-b3ba-f11f5bee6a7d_d2ba515aa1.webp"
    ],
    "rooms": 1,
    "price": 463.26,
@@ -2725,10 +2738,11 @@
     ]
    },
    "online_since": "2026-11-11T12:57:06Z",
-   "photo_tries": 2
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-11T13:02:59Z",
+ "updated": "2026-11-11T13:05:01Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2793,5 +2807,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-11T13:02:59Z"
+ "last_auto": "2026-11-11T13:05:01Z"
 }
