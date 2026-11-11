@@ -1,14 +1,10 @@
 {
- "day": "2026-11-11",
+ "day": "2026-11-12",
  "scanned": [
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-kreuzberg-mit-wbs-160-220/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-mitte-mit-wbs-140/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-in-neukoelln-wbs-160-180-220-erforderlich/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/exklusive-4-zimmer-wohnung-mit-dachterrasse-in-mitte/"
  ],
  "sent": 0,
  "unclear": 0,
- "summary_day": "2026-11-11",
- "mail_checked_at": "2026-11-11T22:48:26Z",
- "alert_day_mail": "2026-11-11"
+ "summary_day": "2026-11-11"
 }
