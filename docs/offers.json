@@ -2737,9 +2737,90 @@
    "online_since": "2026-11-11T09:36:07Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24251": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-584.html?t=ibw",
+   "title": "** ohne WBS - 2 Zimmer mit Balkon, offener Wohnküche und Keller im Erstbezug suchen Sie **",
+   "address": "Mohnweg 23, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794391271-F6mEBkLcZ6.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/e/9/csm_1d4804cbbdfce36dd6185137010869f9_c4c0711795.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/f/csm_63d7164d298e34dfa08b511ae8d08a45_610e0204fb.webp",
+    "https://www.howoge.de/fileadmin/_processed_/8/3/csm_7d21d0cd375288239d7c26773d182787_8dd9c34612.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/9/csm_fb5cec7409c06305e14b8d630c514b3c_283eede9fc.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/3/csm_a1d1d64337b095a4eac76eab96a62e38_68933b500a.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 895.0,
+   "cold": 720.0,
+   "size": 50.0,
+   "floor": 5,
+   "levels": 5,
+   "year": 2025,
+   "stars": 2,
+   "why": "50 m², ~13.7 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 2025",
+   "points": 45,
+   "parts": {
+    "Kosten": [
+     6.6,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T10:01:11Z"
   }
  },
- "updated": "2026-11-11T10:02:40Z",
+ "updated": "2026-11-11T10:04:47Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2804,5 +2885,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T10:02:40Z"
+ "last_auto": "2026-11-11T10:04:47Z"
 }
