@@ -2751,9 +2751,82 @@
    "online_since": "2026-11-11T07:38:03Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24238": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0115%2F00189",
+   "title": "Handwerkerwohnung - Oderstr. 43, 1.G LI",
+   "address": "Oderstraße 43, 12049 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794384070-O0A3OCjAcm.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 498.37,
+   "cold": 318.37,
+   "size": 41.17,
+   "floor": 1,
+   "levels": 4,
+   "year": 1953,
+   "stars": 3,
+   "why": "41.17 m², ~3.2 km zur Arbeit (Luftlinie), Kiez mittel (119 Lokale/Läden), Park nah, Ringbahn mittel, 1. Etage, Baujahr 1953",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.0,
+     16
+    ],
+    "Lage": [
+     7.9,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     0.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T08:01:10Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-11T08:02:36Z",
+ "updated": "2026-11-11T08:04:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2818,5 +2891,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T08:02:36Z"
+ "last_auto": "2026-11-11T08:04:33Z"
 }
