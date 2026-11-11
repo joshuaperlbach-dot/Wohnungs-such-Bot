@@ -2527,7 +2527,7 @@
     ]
    },
    "online_since": "2026-11-11T07:25:06Z",
-   "photo_tries": 6
+   "photo_tries": 7
   },
   "ibw-24231": {
    "source": "ibw",
@@ -2600,7 +2600,7 @@
     ]
    },
    "online_since": "2026-11-11T07:27:05Z",
-   "photo_tries": 5
+   "photo_tries": 6
   },
   "ibw-24232": {
    "source": "ibw",
@@ -2673,10 +2673,83 @@
     ]
    },
    "online_since": "2026-11-11T07:32:06Z",
-   "photo_tries": 3
+   "photo_tries": 4
+  },
+  "ibw-24233": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0112%2F00393",
+   "title": "Holzmindener Str. 26a, 7.G MIR",
+   "address": "Holzmindener Straße 26A, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794382683-kHUFbLHnxd.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 728.33,
+   "cold": 518.33,
+   "size": 60.98,
+   "floor": 7,
+   "levels": 8,
+   "year": 1964,
+   "stars": 3,
+   "why": "60.98 m², ~5.5 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1964",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.0,
+     16
+    ],
+    "Lage": [
+     4.1,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     7.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T07:38:03Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-11T07:38:09Z",
+ "updated": "2026-11-11T07:40:11Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2741,5 +2814,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T07:38:09Z"
+ "last_auto": "2026-11-11T07:40:11Z"
 }
