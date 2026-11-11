@@ -2663,9 +2663,82 @@
    "online_since": "2026-11-11T08:01:10Z",
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24245": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0112%2F00331",
+   "title": "Holzmindener Str. 26, EG LI",
+   "address": "Holzmindener Straße 26, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794389767-SR7Do8kAdf.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 635.58,
+   "cold": 466.58,
+   "size": 49.01,
+   "floor": 0,
+   "levels": 8,
+   "year": 1964,
+   "stars": 3,
+   "why": "49.01 m², ~5.5 km zur Arbeit (Luftlinie), Kiez wenig los (50 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, EG, Baujahr 1964",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.3,
+     16
+    ],
+    "Lage": [
+     4.1,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     4.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T09:36:07Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-11T09:36:14Z",
+ "updated": "2026-11-11T09:38:13Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2730,5 +2803,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T09:36:14Z"
+ "last_auto": "2026-11-11T09:38:13Z"
 }
