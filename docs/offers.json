@@ -2652,9 +2652,92 @@
     ]
    },
    "online_since": "2026-11-11T11:26:06Z"
+  },
+  "ibw-24260": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1950-33551-23.html?t=ibw",
+   "title": "2 Zimmerwohnung für Pärchen",
+   "address": "Mellenseestraße 42, 10319 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794396425-85IPEoB7Mb.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/5/e/csm_0168a39696a836cac8ea8ce5acdb08bf_4f39d1ab61.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_a93604d409c68713152af36d4ef82e6b_5a8556c471.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/1/csm_93e9cff30a13909814f57413b32e146c_db7d38c752.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/1/csm_9e6237213c2f50dda4eed826b2cd770d_82fcb1f609.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/3/csm_1a0d5d4868c96eb4c44180b907ee05b4_125e1863b5.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 728.96,
+   "cold": 542.08,
+   "size": 62.38,
+   "floor": 8,
+   "levels": 10,
+   "year": 1971,
+   "stars": 3,
+   "why": "62.38 m², ~7.1 km zur Arbeit (Luftlinie), Kiez wenig los (24 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 8. Etage, Baujahr 1971, Hochhaus (10 Etagen)",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.1,
+     16
+    ],
+    "Lage": [
+     1.5,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     7.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T11:27:05Z",
+   "requested": "unklar",
+   "confirm": "offen",
+   "requested_at": "2026-11-11T11:28:22Z"
   }
  },
- "updated": "2026-11-11T11:28:05Z",
+ "updated": "2026-11-11T11:30:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2719,5 +2802,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T11:28:05Z"
+ "last_auto": "2026-11-11T11:30:08Z"
 }
