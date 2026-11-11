@@ -2527,7 +2527,7 @@
     ]
    },
    "online_since": "2026-11-11T07:25:06Z",
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "ibw-24231": {
    "source": "ibw",
@@ -2600,10 +2600,10 @@
     ]
    },
    "online_since": "2026-11-11T07:27:05Z",
-   "photo_tries": 1
+   "photo_tries": 2
   }
  },
- "updated": "2026-11-11T07:30:06Z",
+ "updated": "2026-11-11T07:32:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2668,5 +2668,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T07:30:06Z"
+ "last_auto": "2026-11-11T07:32:24Z"
 }
