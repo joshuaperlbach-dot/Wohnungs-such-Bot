@@ -2653,9 +2653,82 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z"
+  },
+  "ibw-24268": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1150-00201-0122-0401.html",
+   "title": "Klein, fein, zentral: 1 Zimmer in Schmargendorf",
+   "address": "Hohenzollerndamm 142, 14199 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794401826-sX05nQREvH.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 463.26,
+   "cold": 339.92,
+   "size": 32.98,
+   "floor": 4,
+   "levels": 4,
+   "year": 1951,
+   "stars": 2,
+   "why": "32.98 m², ~8.1 km zur Arbeit (Luftlinie), Kiez wenig los (26 Lokale/Läden), Park nah, Ringbahn nah, 4. Etage, Baujahr 1951",
+   "points": 46,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T12:57:06Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-11T12:58:08Z",
+ "updated": "2026-11-11T13:00:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2720,5 +2793,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-11T12:58:08Z"
+ "last_auto": "2026-11-11T13:00:03Z"
 }
