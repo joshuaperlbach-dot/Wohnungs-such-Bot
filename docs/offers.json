@@ -2518,9 +2518,95 @@
    "online_since": "2026-11-11T12:57:06Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24298": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14538-9998.html?t=ibw",
+   "title": "1- Zimmer- Wohnung (OHNE WBS)",
+   "address": "Rosenfelder Ring 88, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794404709-9Orh3z8oJl.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/c/8/csm_5d70bef34a160f3466004e54b46a386d_3eaffa76c9.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/c/csm_8a42aa85ab3dfadd5f73ec7ab4a81ee0_c4da2101a7.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/2/csm_fdbd3d353e8bc1639721133fa6e8e535_9039bb094d.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/6/csm_e4eedbfa0be1262733cc6debf81cb1f6_07cbdb7022.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/9/csm_f885b8d5750b36606d31c1e615a008fc_b4e89ec2b4.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/d/csm_07326dacdf22b7fc9debb4158cd69638_e8cc82f946.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/1/csm_283539f5df297b8a0d3621bf5029b4d6_6613091b95.webp",
+    "https://www.howoge.de/fileadmin/_processed_/f/6/csm_2c37b578d5ef8fa738e9b2b3d11ca709_b0b41fa379.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/4/csm_5337ca1ef9a608242c19f12424a89f92_84296bcf10.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/3/csm_bbdc927e527ee7ddc9dc2a52eabd6122_a6210355d3.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/7/csm_2febc4eb023de2315d9c0adc79653218_93c69f53a6.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 746.2,
+   "cold": 602.7,
+   "size": 41.0,
+   "floor": 1,
+   "levels": 8,
+   "year": 2026,
+   "stars": 2,
+   "why": "41 m², ~7.2 km zur Arbeit (Luftlinie), Kiez wenig los (35 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2026",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.1,
+     16
+    ],
+    "Lage": [
+     1.3,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     1.7,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T13:45:09Z"
   }
  },
- "updated": "2026-11-11T13:46:26Z",
+ "updated": "2026-11-11T13:48:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2585,5 +2671,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-11T13:46:26Z"
+ "last_auto": "2026-11-11T13:48:23Z"
 }
