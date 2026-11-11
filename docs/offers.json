@@ -2375,9 +2375,89 @@
     ]
    },
    "online_since": "2026-11-11T13:45:09Z"
+  },
+  "ibw-24306": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-76115-0101-0006",
+   "title": "1-Zimmer-Wohnung in Charlottenburg - ab sofort verfügbar",
+   "address": "Sophie-Charlotten-Straße 102, 14059 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794415867-EchgyfHU9O.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_import_2019-07-02_01_7100-76115-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_eb5d33b5-3fa4-4055-9c2d-6040bec4b9ff.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_f3e4518d-8f01-41b8-a5d7-80b29a0bca55.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_e11b6c40-9218-4c90-bbd1-46d8d3a8adf5.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_78115f41-985c-4ee0-ab1c-80f03d34b880.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_731533e5-2393-45dc-b603-270ccd8c77b7.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76115-0101-0006/gewobag_533d3869-0046-49a6-bc84-a424a96e08c4.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 639.63,
+   "cold": 396.63,
+   "size": 44.08,
+   "floor": 2,
+   "levels": 6,
+   "year": 1979,
+   "stars": 3,
+   "why": "44.08 m², ~8.5 km zur Arbeit (Luftlinie), Kiez mittel (119 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 2. Etage, Baujahr 1979",
+   "points": 57,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     2.6,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T16:51:07Z"
   }
  },
- "updated": "2026-11-11T16:52:16Z",
+ "updated": "2026-11-11T16:54:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2442,5 +2522,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-11T16:52:16Z"
+ "last_auto": "2026-11-11T16:54:14Z"
 }
