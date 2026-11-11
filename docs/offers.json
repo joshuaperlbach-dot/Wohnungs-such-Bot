@@ -2527,10 +2527,83 @@
     ]
    },
    "online_since": "2026-11-11T07:25:06Z",
+   "photo_tries": 2
+  },
+  "ibw-24231": {
+   "source": "ibw",
+   "company": "stadtundland",
+   "url": "https://stadtundland.de/wohnungssuche/1001%2F0112%2F00554",
+   "title": "Holzmindener Str. 20, 4.G MIL",
+   "address": "Holzmindener Straße 20, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794382025-s4vemVGBwv.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 681.18,
+   "cold": 464.18,
+   "size": 60.98,
+   "floor": 4,
+   "levels": 8,
+   "year": 1965,
+   "stars": 3,
+   "why": "60.98 m², ~5.5 km zur Arbeit (Luftlinie), Kiez wenig los (50 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1965",
+   "points": 69,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.3,
+     16
+    ],
+    "Lage": [
+     4.2,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     7.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T07:27:05Z",
    "photo_tries": 1
   }
  },
- "updated": "2026-11-11T07:28:03Z",
+ "updated": "2026-11-11T07:30:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2595,5 +2668,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T07:28:03Z"
+ "last_auto": "2026-11-11T07:30:06Z"
 }
