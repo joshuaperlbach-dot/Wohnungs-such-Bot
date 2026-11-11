@@ -2571,9 +2571,90 @@
     ]
    },
    "online_since": "2026-11-11T11:01:18Z"
+  },
+  "ibw-24259": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-272.html?t=ibw",
+   "title": "** OHNE WBS ** - Modernes Wohnen im Neubau # 2 Zimmer-Wohnung mit Balkon, Aufzug und Fußbodenheizung",
+   "address": "Anne-Frank-Straße 18, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794396366-2gg7lv6YW6.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/5/c/csm_5dbcb671c862ce84ec09db5e8f614f0d_ab0b3bc22e.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/4/csm_5cc6f67d6622811f92687ed17d7a4fc4_952dede797.webp",
+    "https://www.howoge.de/fileadmin/_processed_/5/7/csm_c5f9285e4e4b0283d75ed8badc8c6a68_7d10ec667a.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/b/csm_f357c9bb9394a0ac278863d1d9d34217_0ac95cd257.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/d/csm_574f38af8cecbc2afa4b05254b122c57_dc5545f99a.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 889.5,
+   "cold": 704.0,
+   "size": 53.0,
+   "floor": 6,
+   "levels": 6,
+   "year": 2025,
+   "stars": 2,
+   "why": "53 m², ~13.6 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2025",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     7.3,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T11:26:06Z"
   }
  },
- "updated": "2026-11-11T11:26:05Z",
+ "updated": "2026-11-11T11:28:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2638,5 +2719,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T11:26:05Z"
+ "last_auto": "2026-11-11T11:28:05Z"
 }
