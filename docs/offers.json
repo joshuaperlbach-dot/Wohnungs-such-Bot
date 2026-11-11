@@ -1278,84 +1278,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z"
   },
-  "ibw-24178": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-63817-0069-1004.html",
-   "title": "Single-Wohnung wartet auf ein neues Gesicht",
-   "address": "Müggelschlößchenweg 38, 12559 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794306667-zgA1Dp9u6v.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_d6e03ab0-a263-4f8e-834c-b28805333f89.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_f1598fb5-0872-470d-8249-dff9588e4e9b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_1c188d8d-15ba-4256-a5e0-715f88489c36.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6141-degewo_8e5d6847-9042-424d-b1a4-15a9b6ddba6d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/4/csm_6141-degewo_101593f6-a8aa-43d4-b091-4832fbc81437_7537de2c4f.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 366.23,
-   "cold": 259.62,
-   "size": 29.21,
-   "floor": 10,
-   "levels": 18,
-   "year": 1982,
-   "stars": 1,
-   "why": "29.21 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 10. Etage, Baujahr 1982, Hochhaus (18 Etagen)",
-   "points": 35,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-10T10:31:07Z"
-  },
   "ibw-24179": {
    "source": "ibw",
    "company": "degewo",
@@ -2732,9 +2654,90 @@
     ]
    },
    "online_since": "2026-11-11T10:01:11Z"
+  },
+  "ibw-24252": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-263.html?t=ibw",
+   "title": "### OHNE WBS - 2 Zimmer mit Balkon, Keller und Fußbodenheizung im Erstbezug ###",
+   "address": "Anne-Frank-Straße 18, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794393007-gAbiQxV2qx.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/f/a/csm_f172c99a324abd3ab78d5ccd4f9ce1a0_8dbdaa7e10.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/e/csm_6510dae52d2c5132a6a9edc45b8b4a9c_90f220b14e.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/8/csm_5889791ccf202eaedd6b987ab18180ed_b5f641c60f.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/8/csm_48083d41e47973fbbe1053595962dea4_f49fb76758.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
+    "https://www.howoge.de/fileadmin/_processed_/1/f/csm_ef32cf29020e6ab9a67215d0ca008126_80c4e6dd08.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 895.0,
+   "cold": 720.0,
+   "size": 50.0,
+   "floor": 5,
+   "levels": 6,
+   "year": 2025,
+   "stars": 2,
+   "why": "50 m², ~13.6 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 2025",
+   "points": 45,
+   "parts": {
+    "Kosten": [
+     6.6,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     0.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     6.3,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-11T10:30:07Z"
   }
  },
- "updated": "2026-11-11T10:29:59Z",
+ "updated": "2026-11-11T10:32:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2799,5 +2802,5 @@
    "chars": 2785
   }
  ],
- "last_auto": "2026-11-11T10:29:59Z"
+ "last_auto": "2026-11-11T10:32:31Z"
 }
