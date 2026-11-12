@@ -304,23 +304,24 @@ def app_offer(l, expose_html, rated, status):
     }
 
 
-def push_headers(msg):
-    """Antippen der Push-Meldung öffnet direkt das Angebot. Alle Meldungen mit normaler
-    Priorität (ntfy "high" vibriert lang und kräftig, das war zu viel)."""
-    headers = {}
+def push_headers(msg, urgent=False):
+    """Antippen der Push-Meldung öffnet direkt das Angebot. Meldungen mit normaler Priorität
+    (ntfy "high" vibriert lang und kräftig, das war zu viel); nur Einladungen zur Besichtigung
+    sind dringend, die verfallen nach 24 Stunden."""
+    headers = {"Priority": "urgent", "Tags": "rotating_light"} if urgent else {}
     links = re.findall(r"https://\S+", msg)
     if links:
         headers["Click"] = links[-1]
     return headers
 
 
-def notify(msg):
+def notify(msg, urgent=False):
     print(msg + "\n")
     topic = os.environ.get("NTFY_TOPIC")
     if topic:
         try:
             requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"),
-                          headers=push_headers(msg), timeout=10)
+                          headers=push_headers(msg, urgent), timeout=10)
         except requests.RequestException:
             pass
 

@@ -193,3 +193,9 @@ Bei gewobag.de zählen jetzt nur Fotos aus dem Ordner mit der Objektnummer, sons
   (außer schon angefragt).
 - Fotos fehlen manchmal beim ersten Abruf: bis zu 10 Läufe lang wird nachgesehen (photo_tries). PHOTOS_VERSION 5.
 - Gewobag-Anfrageformular (Wohnungshelden) hat ein unsichtbares Google-reCAPTCHA: keine automatische Anfrage.
+
+## HOWOGE-Einladungen verpasst (12.11.2026)
+Die Einladung zur Besichtigung (Rotkamp 9, 10.11.) kam von noreply@easysquare.com (HOWOGE-Portal); der Absender
+fehlte in SENDERS, also kein Push. Die Einladung verfällt nach 24 Stunden. Jetzt: easysquare.com wird gelesen,
+Eingangsmails ("Zufallsverfahren", "Damit wir Ihre Anfrage bearbeiten") zählen als Eingang, Einladungen
+kommen als dringende Push-Meldung (ntfy Priority urgent, nur dafür).
