@@ -2165,9 +2165,92 @@
     ]
    },
    "online_since": "2026-11-12T07:35:05Z"
+  },
+  "ibw-24312": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-65903-0003-0103.html",
+   "title": "2 Zimmer Wohnung mit Balkon",
+   "address": "Zur Nachtheide 34, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794469806-bBsQhmCzV4.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_925dfc34-e91d-4edb-b733-f6a54a316e1a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_6b69f397-a313-4baf-8804-b2a979343938.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_e020488f-009b-44a7-aa6b-521866f28248.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_d8da379d-b801-4321-a47b-d089f770f3b1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_109e99e9-547c-4dc9-ae02-63e2bea0d44b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_1adf747d-0c4a-4e49-abea-bff7960ad5a3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_16720edb-0446-428a-b78f-f172643198db.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6212-degewo_615a5955-7ecb-49a3-a688-418e103efa7d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/c/3/csm_6212-degewo_1c29ea24-cdbd-431a-aec3-db52c8bcc4e5_f9c4264806.webp"
+   ],
+   "rooms": 2,
+   "price": 693.18,
+   "cold": 452.55,
+   "size": 51.75,
+   "floor": 1,
+   "levels": 4,
+   "year": 1964,
+   "stars": 2,
+   "why": "51.75 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1964",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-12T07:50:06Z",
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-12T07:50:00Z",
+ "updated": "2026-11-12T07:52:41Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2232,5 +2315,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T07:50:00Z"
+ "last_auto": "2026-11-12T07:52:41Z"
 }
