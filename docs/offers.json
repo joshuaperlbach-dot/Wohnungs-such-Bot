@@ -1278,87 +1278,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z"
   },
-  "ibw-24258": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23625-32.html?t=ibw",
-   "title": "1 Zimmer Wohnung mit Balkon",
-   "address": "Heinrichstraße 23, 10317 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794394878-8WELqnKxeZ.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/1/5/csm_c511fe4d1d6b9040716f2665b7f42fb4_58b52322ce.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/9/csm_d245be14b3a8e0bdfab0ce2853bdb3ea_9ebf28790c.webp",
-    "https://www.howoge.de/fileadmin/_processed_/8/e/csm_1a0a931026889db4a0eeedb6c0482d94_69916175f3.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/3/a/csm_5763a7849c30704878e9c7cc935bde03_827b8eed61.webp",
-    "https://www.howoge.de/fileadmin/_processed_/c/3/csm_2e984ca8ee1e931bf734285d77ea701c_d53db3beac.webp",
-    "https://www.howoge.de/fileadmin/_processed_/f/3/csm_2222fb6d91b5c189c916e8374df356c1_7843e64cec.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 516.42,
-   "cold": 380.4,
-   "size": 36.75,
-   "floor": 4,
-   "levels": 4,
-   "year": 1959,
-   "stars": 2,
-   "why": "36.75 m², ~6.0 km zur Arbeit (Luftlinie), Kiez mittel (84 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 4. Etage, Baujahr 1959",
-   "points": 55,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.9,
-     16
-    ],
-    "Lage": [
-     3.4,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.5,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-11T11:01:18Z"
-  },
   "ibw-24259": {
    "source": "ibw",
    "company": "howoge",
@@ -2444,7 +2363,7 @@
    "online_since": "2026-11-12T09:17:44Z"
   }
  },
- "updated": "2026-11-12T11:00:02Z",
+ "updated": "2026-11-12T11:02:43Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2509,5 +2428,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T11:00:02Z"
+ "last_auto": "2026-11-12T11:02:43Z"
 }
