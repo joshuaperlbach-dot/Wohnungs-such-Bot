@@ -1167,6 +1167,39 @@ def datetime_now():
     return datetime(2026, 10, 13, 19, 0, tzinfo=timezone.utc)
 
 
+
+def test_howoge_portal_mails():
+    """HOWOGE-Portal (easysquare): Eingang ist kein Alarm, die Einladung schon (dringend)."""
+    import mail_check
+    import wbm_bot
+    from datetime import datetime, timezone
+    from email.message import EmailMessage
+    assert "easysquare.com" in mail_check.SENDERS
+    now = datetime(2026, 11, 10, 14, 30, tzinfo=timezone.utc)
+
+    def mail(mid, subject, body):
+        m = EmailMessage()
+        m["Message-ID"], m["From"], m["Subject"] = mid, "HOWOGE Portal <noreply@easysquare.com>", subject
+        m["Date"] = "Tue, 10 Nov 2026 14:02:25 +0000"
+        m.set_content(body)
+        return m
+
+    eingang = mail("<e1@x>", "Anfrage zu Wohnungsangebot: Rotkamp 9, 0301, 13053 Berlin",
+                   "Wir werden in den nächsten Tagen nach einem automatisierten Zufallsverfahren zu "
+                   "Sammelbesichtigungen einladen. Sollten Sie keine Einladung erhalten, ...")
+    registrieren = mail("<e2@x>", "Ihre Anfrage zur Immobilie Rotkamp 9, 0301, 13053 Berlin",
+                        "Damit wir Ihre Anfrage bearbeiten und Ihnen gegebenenfalls eine Einladung zuschicken können")
+    einladung = mail("<e3@x>", "Einladung Terminbuchung Rotkamp 9, 0301, 13053 Berlin",
+                     "wir freuen uns, Ihnen zu Rotkamp 9 in 13053 Berlin einen Besichtigungstermin anbieten zu können. "
+                     "Falls Sie den Termin nicht wahrnehmen können, bitten wir Sie, rechtzeitig abzusagen.")
+    store = {"offers": {"r": {"address": "Rotkamp 9, 13053 Berlin", "company": "howoge", "requested": "gesendet"}}}
+    notes = mail_check.process([eingang, registrieren], store, set(), now)
+    assert notes == [] and store["offers"]["r"].get("reply") is None, (notes, store)
+    notes = mail_check.process([einladung], store, set(), now)
+    assert store["offers"]["r"]["reply"] == "einladung" and len(notes) == 1 and notes[0].startswith("EINLADUNG"), notes
+    assert "Rotkamp 9" in notes[0] and "24 Stunden" in notes[0]
+    assert wbm_bot.push_headers(notes[0], urgent=True)["Priority"] == "urgent"
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

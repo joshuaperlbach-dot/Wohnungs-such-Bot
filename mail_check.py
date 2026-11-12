@@ -35,7 +35,8 @@ import wbm_bot
 HOST = "imap.gmail.com"
 # nur Mails von diesen Absendern werden überhaupt abgerufen (wohnungshelden.de verschickt für Stadt und Land);
 # Newsletter (z.B. newsletter.gewobag.de mit neuen Angeboten) werden übersprungen
-SENDERS = ["wbm.de", "howoge.de", "degewo.de", "gewobag.de", "wohnungshelden.de"]
+# easysquare.com verschickt für die HOWOGE Eingangsbestätigungen und die EINLADUNGEN zur Besichtigung
+SENDERS = ["wbm.de", "howoge.de", "degewo.de", "gewobag.de", "wohnungshelden.de", "easysquare.com"]
 LOOK_BACK = timedelta(days=14)
 # Postfach nur alle 10 Minuten öffnen (Antworten eilen nicht, und Gmail bremst bei sehr häufigem
 # Anmelden). Wartet eine HOWOGE-Bestätigung, wird bei jedem Lauf nachgesehen.
@@ -43,7 +44,10 @@ CHECK_EVERY = timedelta(minutes=10)
 SEEN_FILE = Path(__file__).with_name("mail_seen.json")
 
 # Eingangsbestätigung nach einer Anfrage über das Formular (Gewobag, Stadt und Land, ...)
-RECEIPT = r"Formularbestätigung|für das Ausfüllen des Formulars"
+# HOWOGE (easysquare): "Wir werden ... nach einem automatisierten Zufallsverfahren ... einladen" ist nur der
+# Eingang (enthält aber das Wort "Einladung"); die echte Einladung sagt "Besichtigungstermin anbieten".
+RECEIPT = (r"Formularbestätigung|für das Ausfüllen des Formulars"
+           r"|automatisierten Zufallsverfahren|Damit wir Ihre Anfrage bearbeiten")
 # degewo will nach der Anfrage noch ein zweites Formular; erst dann wird die Anfrage aufgenommen
 FORM_NEEDED = r"füllen Sie das beigefügte Formular aus"
 FORM_LINK = re.compile(r"https://[a-z.]*degewo\.de/\S*/application/form/\S+")
@@ -220,7 +224,8 @@ def process(messages, store, seen, now):
         store["mail_log"] = (store.get("mail_log") or [])[-9:] + [
             {"at": offers.iso(now), "kind": kind, "matched": bool(key), "chars": len(text)}]
         if kind == "einladung":
-            notes.append(f"EINLADUNG zur Besichtigung: {where}\nSchau in deine Mails und bestätige den Termin!")
+            notes.append(f"EINLADUNG zur Besichtigung: {where}\nTermin schnell bestätigen (HOWOGE: innerhalb "
+                         "24 Stunden im Portal), sonst ist er weg! Steht in deinen Mails.")
         elif kind == "antwort" and key:  # sonstige Mails ohne Bezug zu einem Angebot: kein Push
             notes.append(f"Antwort einer Wohnungsgesellschaft zu: {where}\nBitte in den Mails nachsehen.")
         if not fresh:
@@ -303,7 +308,7 @@ def main():
         offers.save(store, now)
         SEEN_FILE.write_text(json.dumps(sorted(seen)))
     for note in notes:
-        wbm_bot.notify(note)
+        wbm_bot.notify(note, urgent=note.startswith("EINLADUNG"))
     print(f"[Mail] {len(messages)} Mails geprüft, {len(notes)} Meldungen.")
 
 
