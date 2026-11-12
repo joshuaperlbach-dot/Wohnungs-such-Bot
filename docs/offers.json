@@ -2420,7 +2420,19 @@
    "address": "Am Straßenbahnhof 34, 12347 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794472206-X2tbwsf2QF.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794472206-X2tbwsf2QF.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_578b24c7-af90-4cad-8802-361a494b2f22.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_d3435c28-9487-43d6-85a0-35bf374b28a2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/0/csm_6216-degewo_89d266b0-61c2-4187-87d9-4bcb7a0a5844_a5e1786b7b.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_ff8f3601-d9ce-4ae2-bb01-0f77eb347d8d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_ff9eb470-ed83-4853-9fd0-9fdcb042960a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_b42b7139-2667-4046-8d01-7816c76ff238.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_a8d8ff48-9bd0-432f-a733-fd1069d1314e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_ea78fce0-2752-4669-8127-a9ff98585ac0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_c1c417a5-d97d-48a7-96a7-b3c0491101f3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_a9d9c048-ee74-420c-8e8c-a402d7373214.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6216-degewo_2da74c82-8c30-4084-ba09-e347c4bcb3d0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/1/csm_6216-degewo_dfc58b4e-dc2d-43dd-aad3-59c9808f136f_a3f1b85e01.webp"
    ],
    "rooms": 2,
    "price": 670.44,
@@ -2483,10 +2495,11 @@
     ]
    },
    "online_since": "2026-11-12T08:30:06Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-12T08:33:14Z",
+ "updated": "2026-11-12T08:35:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2551,5 +2564,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T08:33:14Z"
+ "last_auto": "2026-11-12T08:35:07Z"
 }
