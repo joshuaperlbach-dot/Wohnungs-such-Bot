@@ -1361,93 +1361,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z"
   },
-  "ibw-24268": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1150-00201-0122-0401.html",
-   "title": "Klein, fein, zentral: 1 Zimmer in Schmargendorf",
-   "address": "Hohenzollerndamm 142, 14199 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794401826-sX05nQREvH.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_d8f73913-e1b0-40fd-93f9-ffd6eccca79c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_6473852e-06d3-4cfa-9f80-4649e5268c82.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_bd960ab3-8c0b-4c09-ad63-b6907efe83f1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_6361bd3a-3b81-417e-98ea-00309131a672.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_8fb8d107-28fc-4d5b-be02-255fa4cebb28.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_646227d9-470b-49c0-b01e-6b6338b53267.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_0b876ed3-fc04-45be-8aa9-db9c67b05a6c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_b039c497-23e2-4dcc-800b-90edd19c0ff6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_d71219d9-0193-43ba-9892-310ddf20bf5d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_23a64392-291c-470e-836e-99ebb89a1154.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_cd6367f2-c830-4bae-a14f-e673c9a55bc6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6185-degewo_0d4695a1-aae3-4c43-847b-30f6a7d08337.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/0/csm_6185-degewo_3585b4d7-be1a-4570-b3ba-f11f5bee6a7d_d2ba515aa1.webp"
-   ],
-   "rooms": 1,
-   "price": 463.26,
-   "cold": 339.92,
-   "size": 32.98,
-   "floor": 4,
-   "levels": 4,
-   "year": 1951,
-   "stars": 2,
-   "why": "32.98 m², ~8.1 km zur Arbeit (Luftlinie), Kiez wenig los (26 Lokale/Läden), Park nah, Ringbahn nah, 4. Etage, Baujahr 1951",
-   "points": 46,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.5,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     6.0,
-     6
-    ],
-    "ÖPNV": [
-     1.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-11T12:57:06Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24298": {
    "source": "ibw",
    "company": "howoge",
@@ -2282,7 +2195,7 @@
    "online_since": "2026-11-12T09:17:44Z"
   }
  },
- "updated": "2026-11-12T12:56:13Z",
+ "updated": "2026-11-12T12:58:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2347,5 +2260,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T12:56:13Z"
+ "last_auto": "2026-11-12T12:58:07Z"
 }
