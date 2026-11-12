@@ -1278,80 +1278,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z"
   },
-  "ibw-24221": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F6271%2F00102",
-   "title": "Helle 2-Raum-Wohnung, Springbornstr. 248, 3.G MI",
-   "address": "Springbornstraße 248, 12487 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794375906-aMoiUtRRyP.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 436.09,
-   "cold": 299.09,
-   "size": 34.94,
-   "floor": 3,
-   "levels": 4,
-   "year": 1961,
-   "stars": 2,
-   "why": "34.94 m², ~9.2 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1961",
-   "points": 42,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-11T05:45:06Z",
-   "photo_tries": 10,
-   "photos_checked": 5
-  },
   "ibw-24229": {
    "source": "ibw",
    "company": "stadtundland",
@@ -2457,7 +2383,7 @@
    "online_since": "2026-11-11T16:51:07Z"
   }
  },
- "updated": "2026-11-12T05:44:05Z",
+ "updated": "2026-11-12T05:46:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2522,5 +2448,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T05:44:05Z"
+ "last_auto": "2026-11-12T05:46:03Z"
 }
