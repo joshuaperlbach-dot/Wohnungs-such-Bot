@@ -1,87 +1,5 @@
 {
  "offers": {
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/": {
-   "source": "wbm",
-   "company": "wbm",
-   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/",
-   "title": "2-Zimmer-Wohnung in Friedrichshain",
-   "address": "Kleine Andreasstrasse 11, 10243 Berlin",
-   "text": "Die Wohnung liegt in unmittelbarer Nähe zum Strausberger Platz und zum Ostbahnhof. Gute Verkehrsanbindungen und Einkaufsmöglichkeiten vorhanden.\r\nDie Wohnung liegt im 4. Obergeschoss (0503) und das Haus verfügt über keinen Aufzug.",
-   "images": [
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-6660f285eafda00e7285387676a019d8.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-b827f2bcaf25c072afc14c02a7a926ad.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-62e99f40c57b8df7c12c56c06c86b45e.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-fb1033321ac8cc3d54ec8feaf2239442.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-8b67cebaedfff804dfe4259c21f78265.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/78372-adba1a71d8bbae10e7db735b9db4f8e1.jpg"
-   ],
-   "bezirk": "Friedrichshain",
-   "rooms": 2,
-   "price": 731.42,
-   "cold": 496.42,
-   "size": 56.78,
-   "floor": 4,
-   "year": 1958,
-   "stars": 4,
-   "why": "56.78 m², ~1.7 km zur Arbeit (Luftlinie), Kiez mittel (74 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1958",
-   "points": 74,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     8.3,
-     16
-    ],
-    "Lage": [
-     10.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     2.5,
-     5
-    ],
-    "Größe": [
-     6.2,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "requested": "gesendet",
-   "online_since": "2026-10-13T17:46:50Z",
-   "requested_at": "2026-10-13T17:46:50Z",
-   "gone": true,
-   "reply": "absage",
-   "reply_at": "2026-10-13T18:40:33Z"
-  },
   "ibw-22980": {
    "source": "ibw",
    "company": "howoge",
@@ -2113,7 +2031,7 @@
    "online_since": "2026-11-12T14:21:08Z"
   }
  },
- "updated": "2026-11-12T17:46:00Z",
+ "updated": "2026-11-12T17:48:00Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2178,5 +2096,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-12T17:46:00Z"
+ "last_auto": "2026-11-12T17:48:00Z"
 }
