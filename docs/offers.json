@@ -2329,9 +2329,91 @@
     ]
    },
    "online_since": "2026-11-12T07:56:05Z"
+  },
+  "ibw-24318": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00635-0104-0101.html",
+   "title": "Wohnen an der U7!",
+   "address": "Bruno-Taut-Ring 15B, 12359 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794471125-hKivXoHc6v.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_1746fc6a-adff-4ba1-b3d2-aa4019cee43b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_7a65c6e3-2518-48dd-8021-362640f08fbe.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_02a078cf-df4a-4857-b783-7db1fc1e2696.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_8263643b-c789-4e13-ba71-7d36f590d8ec.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_05261fb7-34c2-4c44-acd8-c3c4b4b8a4b5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_1d38bd8a-240a-4f96-93ae-1941a39d8545.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_7f395dd9-1c77-4910-951a-2adc6a2538bc.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_470b30b4-0916-4a6a-a7e3-b18a9f5a2321.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/0/csm_6214-degewo_afa9cf62-8b5a-44f7-87da-ce416e0dfea7_0490b0dcc9.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 612.65,
+   "cold": 481.15,
+   "size": 56.44,
+   "floor": 1,
+   "levels": 4,
+   "year": 1958,
+   "stars": 3,
+   "why": "56.44 m², ~7.7 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Garten, 1. Etage, Baujahr 1958",
+   "points": 63,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     0.4,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-12T08:12:06Z"
   }
  },
- "updated": "2026-11-12T08:12:22Z",
+ "updated": "2026-11-12T08:14:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2396,5 +2478,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T08:12:22Z"
+ "last_auto": "2026-11-12T08:14:20Z"
 }
