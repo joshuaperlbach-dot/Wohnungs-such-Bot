@@ -1278,87 +1278,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z"
   },
-  "ibw-24252": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-263.html?t=ibw",
-   "title": "### OHNE WBS - 2 Zimmer mit Balkon, Keller und Fußbodenheizung im Erstbezug ###",
-   "address": "Anne-Frank-Straße 18, 12524 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794393007-gAbiQxV2qx.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/f/a/csm_f172c99a324abd3ab78d5ccd4f9ce1a0_8dbdaa7e10.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/e/csm_6510dae52d2c5132a6a9edc45b8b4a9c_90f220b14e.webp",
-    "https://www.howoge.de/fileadmin/_processed_/e/8/csm_5889791ccf202eaedd6b987ab18180ed_b5f641c60f.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/8/csm_48083d41e47973fbbe1053595962dea4_f49fb76758.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
-    "https://www.howoge.de/fileadmin/_processed_/1/f/csm_ef32cf29020e6ab9a67215d0ca008126_80c4e6dd08.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 895.0,
-   "cold": 720.0,
-   "size": 50.0,
-   "floor": 5,
-   "levels": 6,
-   "year": 2025,
-   "stars": 2,
-   "why": "50 m², ~13.6 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 2025",
-   "points": 45,
-   "parts": {
-    "Kosten": [
-     6.6,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     0.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     4.3,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-11T10:30:07Z"
-  },
   "ibw-24258": {
    "source": "ibw",
    "company": "howoge",
@@ -2525,7 +2444,7 @@
    "online_since": "2026-11-12T09:17:44Z"
   }
  },
- "updated": "2026-11-12T10:30:01Z",
+ "updated": "2026-11-12T10:32:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2590,5 +2509,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T10:30:01Z"
+ "last_auto": "2026-11-12T10:32:23Z"
 }
