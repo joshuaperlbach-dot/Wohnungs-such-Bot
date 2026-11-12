@@ -2411,9 +2411,82 @@
     ]
    },
    "online_since": "2026-11-12T08:12:06Z"
+  },
+  "ibw-24320": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W3110-00614-0033-0303.html",
+   "title": "Renovierungsbedürftige Wohnung für handwerklich geschickte Interessenten!",
+   "address": "Am Straßenbahnhof 34, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794472206-X2tbwsf2QF.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 670.44,
+   "cold": 474.99,
+   "size": 60.14,
+   "floor": 3,
+   "levels": 4,
+   "year": 1963,
+   "stars": 3,
+   "why": "60.14 m², ~5.6 km zur Arbeit (Luftlinie), Kiez wenig los (50 Lokale/Läden), Park nah, Ringbahn mittel, Balkon/Terrasse, 3. Etage, Baujahr 1963",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     8.3,
+     16
+    ],
+    "Lage": [
+     4.0,
+     10
+    ],
+    "Ringbahn": [
+     3.0,
+     6
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.2,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-12T08:30:06Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-12T08:30:03Z",
+ "updated": "2026-11-12T08:33:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2478,5 +2551,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T08:30:03Z"
+ "last_auto": "2026-11-12T08:33:14Z"
 }
