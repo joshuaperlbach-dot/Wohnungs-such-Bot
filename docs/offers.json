@@ -2107,9 +2107,88 @@
     ]
    },
    "online_since": "2026-11-12T09:17:44Z"
+  },
+  "ibw-24348": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-24056-48.html?t=ibw",
+   "title": "Wohnung in Berlin",
+   "address": "Röbellweg 26, 13125 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794493268-6jJxI254dn.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/8/f/csm_1c9fe987f0987948bba1120f029a12a5_0015c57377.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/e/csm_336d51491212cca4d9a259f8527c3360_137c4ef653.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/e/csm_454e6eaaf85a2cb6cf551f898810100a_e922cc433d.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/2/csm_841eb11bb48b67261f50daabd6ed50a0_f134dfa101.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 644.48,
+   "cold": 363.55,
+   "size": 33.05,
+   "floor": 3,
+   "levels": 3,
+   "year": 1957,
+   "stars": 2,
+   "why": "33.05 m², ~16.1 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1957",
+   "points": 47,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-12T14:21:08Z"
   }
  },
- "updated": "2026-11-12T14:22:22Z",
+ "updated": "2026-11-12T14:24:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2174,5 +2253,5 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-12T14:22:22Z"
+ "last_auto": "2026-11-12T14:24:20Z"
 }
