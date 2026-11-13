@@ -2111,9 +2111,94 @@
     ]
    },
    "online_since": "2026-11-13T06:56:06Z"
+  },
+  "ibw-24364": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02520-0905-0617",
+   "title": "Grün gelegene Wohnung mit Balkon in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Strausberger Straße 12E, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794555605-145Qb4kz06.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_import_2019-07-02_01_0100-02520-0905-0613-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_1a38808e-3dba-446b-aea3-64cc641d5b88.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_7d760a0a-6bff-4814-b8ff-8520acad1af8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_235bd0d4-44eb-4821-af62-e6b13af34082.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_a20681eb-6513-4177-8e03-6d20b8f8980a.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_e0358564-2119-4796-bebb-cb0656a54ddd.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_d2dba9ed-f3c7-4ee7-b7ea-6040cc8f7229.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_b0303b6a-b2a1-45d4-91ac-11b94f7e7104.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_487dd5bd-64e9-40fd-93b4-9fa73809da93.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_459ca116-ce51-4c69-aedd-64af1deb32c6.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_d6fb1bac-a863-4c5c-8ccc-9490719ad1a8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_95ab36ed-f05f-4bc0-89ff-7ac8ebc783cc.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1.5,
+   "price": 628.06,
+   "cold": 430.06,
+   "size": 48.03,
+   "floor": 2,
+   "levels": 4,
+   "year": 1933,
+   "stars": 3,
+   "why": "48.03 m², ~6.7 km zur Arbeit (Luftlinie), Kiez wenig los (28 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1933",
+   "points": 63,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.8,
+     16
+    ],
+    "Lage": [
+     2.1,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.7,
+     10
+    ],
+    "Zimmer": [
+     5.2,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-13T07:40:05Z"
   }
  },
- "updated": "2026-11-13T07:40:07Z",
+ "updated": "2026-11-13T07:42:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2178,5 +2263,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-13T07:40:07Z"
+ "last_auto": "2026-11-13T07:42:20Z"
 }
