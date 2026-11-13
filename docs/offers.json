@@ -1774,25 +1774,15 @@
    "online_since": "2026-11-13T10:20:10Z",
    "requested": "gesendet",
    "confirm": "bestaetigt",
-   "requested_at": "2026-11-13T10:20:33Z"
+   "requested_at": "2026-11-13T10:20:33Z",
+   "reply": "einladung",
+   "reply_at": "2026-11-13T11:07:45Z"
   }
  },
- "updated": "2026-11-13T11:07:22Z",
+ "updated": "2026-11-13T11:09:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-12T16:54:25Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1903
-  },
-  {
-   "at": "2026-11-12T16:54:25Z",
-   "kind": "einladung",
-   "matched": true,
-   "chars": 1709
-  },
   {
    "at": "2026-11-12T16:54:25Z",
    "kind": "eingang",
@@ -1840,7 +1830,19 @@
    "kind": "eingang",
    "matched": true,
    "chars": 3425
+  },
+  {
+   "at": "2026-11-13T11:07:45Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1910
+  },
+  {
+   "at": "2026-11-13T11:07:45Z",
+   "kind": "einladung",
+   "matched": true,
+   "chars": 1723
   }
  ],
- "last_auto": "2026-11-13T11:07:22Z"
+ "last_auto": "2026-11-13T11:09:24Z"
 }
