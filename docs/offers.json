@@ -2107,9 +2107,93 @@
     ]
    },
    "online_since": "2026-11-12T19:30:07Z"
+  },
+  "ibw-24363": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02520-0504-0288",
+   "title": "Renovierungsbedürftige Singlewohnung mit Balkon in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Große-Leege-Straße 69A, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794552965-sKsAf2u1ND.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_import_2019-07-02_01_0100-02520-0504-0287-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_305ab810-c7cf-4346-8a75-bc3884e8ac49.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_1be8d696-a44c-42b6-a917-01931caa20ea.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_2a1e04d9-9db1-4350-8cc0-9d854df99aed.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_9258abab-f265-42ae-b1e4-57044b2148af.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_279c982b-05b0-41d7-bc38-1bc23aa1460b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_659d7411-ae05-472e-aa1b-9a5e5098c577.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_31b79c50-2a7e-47f4-8cbd-9650326f8384.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_f27148be-a008-4ad7-94e3-598d5e5bde38.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_295e44ff-091d-4ea0-99cc-122aac2cb6cd.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0504-0288/gewobag_dab498a5-701e-4d68-8dc4-ffc9443eab23.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 561.81,
+   "cold": 385.81,
+   "size": 36.92,
+   "floor": 2,
+   "levels": 4,
+   "year": 1933,
+   "stars": 3,
+   "why": "36.92 m², ~6.5 km zur Arbeit (Luftlinie), Kiez wenig los (30 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1933",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.1,
+     16
+    ],
+    "Lage": [
+     2.5,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     1.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     9.0,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.5,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-13T06:56:06Z"
   }
  },
- "updated": "2026-11-13T06:56:01Z",
+ "updated": "2026-11-13T06:58:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2174,5 +2258,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-13T06:56:01Z"
+ "last_auto": "2026-11-13T06:58:02Z"
 }
