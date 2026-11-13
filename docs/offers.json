@@ -1860,9 +1860,82 @@
    "online_since": "2026-11-13T11:35:07Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24392": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-20901-0008-0302.html",
+   "title": "Ideale Wohnung für Singles.",
+   "address": "Kilianistraße 19, 12459 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794573007-6dO5MoyLT7.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 522.66,
+   "cold": 382.05,
+   "size": 36.91,
+   "floor": 3,
+   "levels": 4,
+   "year": 1955,
+   "stars": 2,
+   "why": "36.91 m², ~8.6 km zur Arbeit (Luftlinie), Kiez mittel (81 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1955",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.3,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.5,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-13T12:30:07Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-13T12:30:01Z",
+ "updated": "2026-11-13T12:33:15Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1927,5 +2000,5 @@
    "chars": 1723
   }
  ],
- "last_auto": "2026-11-13T12:30:01Z"
+ "last_auto": "2026-11-13T12:33:15Z"
 }
