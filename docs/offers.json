@@ -1694,9 +1694,90 @@
    "requested": "gesendet",
    "requested_at": "2026-11-13T10:12:40Z",
    "via": "mail"
+  },
+  "ibw-24377": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12345-39.html?t=ibw",
+   "title": "2-Zimmer-Wohnung ohne WBS in Neu-Hohenschönhausen",
+   "address": "Zingster Straße 21, 13051 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794565210-XSr38g1enq.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/9/1/csm_d9b29ac5b209a2739b45a8dcc1186fb7_9f8f5a8615.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/0/csm_5a13fdb55ef4662e932e5ed4607c39cc_ea8cd82f54.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/4/csm_1043332c44867ff19a048d33eb0cf951_a5fdfb9e3b.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 687.57,
+   "cold": 440.88,
+   "size": 64.23,
+   "floor": 6,
+   "levels": 19,
+   "year": 1987,
+   "stars": 3,
+   "why": "64.23 m², ~9.2 km zur Arbeit (Luftlinie), Kiez mittel (136 Lokale/Läden), Park nah, Ringbahn weit, Aufzug, 6. Etage, Baujahr 1987, Hochhaus (19 Etagen)",
+   "points": 57,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     8.4,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-13T10:20:10Z",
+   "requested": "unklar",
+   "confirm": "offen",
+   "requested_at": "2026-11-13T10:20:33Z"
   }
  },
- "updated": "2026-11-13T10:20:03Z",
+ "updated": "2026-11-13T10:22:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1761,5 +1842,5 @@
    "chars": 2434
   }
  ],
- "last_auto": "2026-11-13T10:20:03Z"
+ "last_auto": "2026-11-13T10:22:25Z"
 }
