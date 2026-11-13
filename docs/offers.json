@@ -1281,86 +1281,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z"
   },
-  "ibw-24310": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-42303-0132-0505.html",
-   "title": "Nachmieter gesucht - 1 Zimmer im Kietzer Feld",
-   "address": "Zur Nachtheide 4, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794468905-F0agyea95A.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6211-degewo_b5b479c3-ce2b-4323-82d5-2427291fbf6b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/5/csm_6211-degewo_b3bb6c01-7c94-4f1a-b609-71bfa38681d4_25c557c456.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6211-degewo_a19eb1e6-bf58-46c7-86c8-4d87a0a5a05a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6211-degewo_4931eb2a-1170-42ee-8245-0c1992834981.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6211-degewo_118fdba0-2659-4778-ad66-6416205db6ed.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/7/csm_6211-degewo_bc9f6ee5-f15c-4877-ba34-d958b9a14b25_96636d989d.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/1/csm_6211-degewo_c64fd703-1b69-4a6c-92f6-ad2e8582fd9f_5effa31310.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 922.99,
-   "cold": 796.08,
-   "size": 45.49,
-   "floor": 5,
-   "levels": 5,
-   "year": 2024,
-   "stars": 1,
-   "why": "45.49 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 2024",
-   "points": 36,
-   "parts": {
-    "Kosten": [
-     3.2,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-12T07:35:05Z"
-  },
   "ibw-24312": {
    "source": "ibw",
    "company": "degewo",
@@ -2193,7 +2113,7 @@
    "online_since": "2026-11-13T06:56:06Z"
   }
  },
- "updated": "2026-11-13T07:34:14Z",
+ "updated": "2026-11-13T07:36:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2258,5 +2178,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-13T07:34:14Z"
+ "last_auto": "2026-11-13T07:36:10Z"
 }
