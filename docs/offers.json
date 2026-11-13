@@ -1281,87 +1281,6 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z"
   },
-  "ibw-24315": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-65903-0002-0102.html",
-   "title": "2 Zimmer Wohnung",
-   "address": "Zur Nachtheide 34, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794470165-ZXPJVxYyCO.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_7d76c11b-186f-4e07-a443-7e598f500337.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_8ab9f05e-05d7-4426-9fa9-ee0c9468bb09.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_2b4a9b94-f3c3-4cb0-9d5b-ab0c826a2005.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_ef0a35aa-6b51-49b2-9acc-f338ec730041.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_663786bd-4a1d-4028-b333-eae400fb7891.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_a1e17e39-0008-4d0f-9cf8-4896e018d72a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6213-degewo_eebddfe6-ff59-4930-9d9f-729350dd44a4.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/6/csm_6213-degewo_98218788-6b36-491b-96c9-04e5da3c48e0_5b55bcc5e2.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 486.47,
-   "cold": 323.52,
-   "size": 35.35,
-   "floor": 1,
-   "levels": 4,
-   "year": 1964,
-   "stars": 2,
-   "why": "35.35 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (13 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1964",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.1,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-12T07:56:05Z"
-  },
   "ibw-24318": {
    "source": "ibw",
    "company": "degewo",
@@ -2041,7 +1960,7 @@
    "online_since": "2026-11-13T07:40:05Z"
   }
  },
- "updated": "2026-11-13T07:56:04Z",
+ "updated": "2026-11-13T07:58:00Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2106,5 +2025,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-13T07:56:04Z"
+ "last_auto": "2026-11-13T07:58:00Z"
 }
