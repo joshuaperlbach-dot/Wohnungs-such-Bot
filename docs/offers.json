@@ -1366,97 +1366,6 @@
    "requested_at": "2026-11-12T16:54:25Z",
    "confirm": "formular"
   },
-  "ibw-24323": {
-   "source": "ibw",
-   "company": "howoge",
-   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-27668-9983.html?t=ibw",
-   "title": "1-Zimmer-Wohnung ohne WBS",
-   "address": "Mahlower Straße 44, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794474604-oRauTAUeMU.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/d/2/csm_8569fe760d8a85152212f4fa414a17c8_0a423ae0f6.webp",
-    "https://www.howoge.de/fileadmin/_processed_/2/c/csm_63ecab103b71b7a8d80a2cc21f7e18ce_2f3d39dae1.webp",
-    "https://www.howoge.de/fileadmin/_processed_/7/0/csm_b5c2ac1881ad60bf120f763cb2acc0b3_ae7635d161.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/a/a/csm_4d0a2f98eb094c5762a7a31104b782c8_473fd82d46.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/3/csm_cb0c200a57ab254cecfc21cbced1f0ec_82fe5ec163.webp",
-    "https://www.howoge.de/fileadmin/_processed_/4/f/csm_5414c9859bde63b8a66b68232acaebe8_5bcf89261b.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/d/csm_9e3a5b9afa0dabec05f4a29af7717ca5_e75d6a5cf9.webp",
-    "https://www.howoge.de/fileadmin/_processed_/3/6/csm_6d1c991f57b1b6aaf6dce3ef0e699466_300c42e1ae.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/5/csm_31bf3def4509b651a9f136e5a97d3155_0f7c512f08.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/3/csm_3d809453052af0fc395695216d2805f9_25791094a4.webp",
-    "https://www.howoge.de/fileadmin/_processed_/c/5/csm_ca0ecae17f9ce26681721e841d0ce345_74cd785929.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/e/csm_8896157dce7af338c32cd3fefa3233ef_b154f6f3f6.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/d/csm_7a82d382cd06db71ab31ddef7fa3e2d8_bc34e17613.webp",
-    "https://www.howoge.de/fileadmin/_processed_/5/7/csm_0656bbb983a21a2c9f59def21168cabe_26cea8331f.webp",
-    "https://www.howoge.de/fileadmin/_processed_/c/8/csm_b8a6a0c8ac1a6fcf55391ae9e2f48462_d95b4fee0d.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/e/csm_419bd14823bce9fbafbea9b58e2d74a8_ef479b030f.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 595.0,
-   "cold": 472.5,
-   "size": 35.0,
-   "floor": 1,
-   "levels": 7,
-   "year": 2026,
-   "stars": 2,
-   "why": "35 m², ~12.8 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2026",
-   "points": 50,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     6.3,
-     9
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-12T09:10:04Z"
-  },
   "ibw-24327": {
    "source": "ibw",
    "company": "howoge",
@@ -1874,7 +1783,7 @@
    "online_since": "2026-11-13T07:40:05Z"
   }
  },
- "updated": "2026-11-13T09:08:33Z",
+ "updated": "2026-11-13T09:10:26Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1939,5 +1848,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-13T09:08:33Z"
+ "last_auto": "2026-11-13T09:10:26Z"
 }
