@@ -1786,7 +1786,16 @@
    "address": "Seelenbinderstraße 100, 12555 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794569707-YzWjkurv60.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794569707-YzWjkurv60.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_f38efce0-8a4e-4491-9a80-dc00a8df8f4c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_9ba8864e-a19b-4ecc-a5f4-8e051e13d0a7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_6113766d-9cb7-4a18-9d5f-2efab2e8466f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_04a2c72f-74fb-476d-a443-c5c09895f085.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_890a3b36-3c30-43d2-bd97-7613b5d2b180.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_9f277994-4762-40d4-a022-d414f1b22661.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_5e749d4d-33f0-438e-ae3d-a2334ba58440.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6277-degewo_fec3edb2-f44a-4799-b749-dfe64690ad2f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/0/csm_6277-degewo_6612af34-1b1d-4f8f-b0c1-b478eff44edc_bbee5cce14.webp"
    ],
    "rooms": 2,
    "price": 726.19,
@@ -1849,10 +1858,11 @@
     ]
    },
    "online_since": "2026-11-13T11:35:07Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-13T11:37:37Z",
+ "updated": "2026-11-13T11:39:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1917,5 +1927,5 @@
    "chars": 1723
   }
  ],
- "last_auto": "2026-11-13T11:37:37Z"
+ "last_auto": "2026-11-13T11:39:33Z"
 }
