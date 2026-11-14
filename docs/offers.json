@@ -1461,9 +1461,88 @@
    "requested_at": "2026-11-13T10:20:33Z",
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z"
+  },
+  "ibw-24414": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20108-294.html?t=ibw",
+   "title": "Hoch über den Dächern von Berlin ",
+   "address": "Franz-Jacob-Straße 14, 10369 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794676989-r0CUHHDwVX.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/e/8/csm_1f051e221bbf188a15115d1f1bf795c3_0f04437ab9.webp",
+    "https://www.howoge.de/fileadmin/_processed_/d/d/csm_981758f9e0f93ae0710740c1113a6204_f8bcf066e0.webp",
+    "https://www.howoge.de/fileadmin/_processed_/7/d/csm_03272c380ddd3d05edf2912e3b9e8ea5_2c6ebe7c70.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/9/e/csm_389c96fb61083668698db4e975c4cbbe_c01e9022c4.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 387.86,
+   "cold": 276.19,
+   "size": 30.36,
+   "floor": 18,
+   "levels": 18,
+   "year": 1977,
+   "stars": 2,
+   "why": "30.36 m², ~4.8 km zur Arbeit (Luftlinie), Kiez mittel (75 Lokale/Läden), Park nah, Ringbahn nah, Aufzug, 18. Etage, Baujahr 1977, Hochhaus (18 Etagen)",
+   "points": 53,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.0,
+     16
+    ],
+    "Lage": [
+     5.3,
+     10
+    ],
+    "Ringbahn": [
+     6.0,
+     6
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-14T17:23:09Z"
   }
  },
- "updated": "2026-11-14T17:24:05Z",
+ "updated": "2026-11-14T17:26:01Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1528,5 +1607,5 @@
    "chars": 2450
   }
  ],
- "last_auto": "2026-11-14T17:24:05Z"
+ "last_auto": "2026-11-14T17:26:01Z"
 }
