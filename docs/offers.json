@@ -1462,170 +1462,6 @@
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z"
   },
-  "ibw-24392": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-20901-0008-0302.html",
-   "title": "Ideale Wohnung für Singles.",
-   "address": "Kilianistraße 19, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794573007-6dO5MoyLT7.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6279-degewo_c0a37407-b9fe-46b6-ae0e-9da835dffc69.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6279-degewo_bcaf8d03-b2d6-4e56-8b7c-efdf0fe73220.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6279-degewo_2e7653c8-d3b6-4a19-bc2e-24cc33fa0ddb.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6279-degewo_a91e9a91-b042-4d8b-be2c-1c3571a49cad.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6279-degewo_85c614fe-bcb0-49a3-aaa6-bd9f0326f129.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/6/csm_6279-degewo_25650831-fb1d-46d5-88b3-fa3d0bfd0cad_c12188d1f1.webp"
-   ],
-   "rooms": 1,
-   "price": 522.66,
-   "cold": 382.05,
-   "size": 36.91,
-   "floor": 3,
-   "levels": 4,
-   "year": 1955,
-   "stars": 2,
-   "why": "36.91 m², ~8.6 km zur Arbeit (Luftlinie), Kiez mittel (81 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1955",
-   "points": 48,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.3,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.5,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-13T12:30:07Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
-  "ibw-24393": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-20417-0051-0202.html",
-   "title": "Sanierter Altbau",
-   "address": "Firlstraße 39, 12459 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794573126-LElpOsAVE1.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_8c1ca11f-0bf7-4fe5-855a-970862b19205.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/c/0/csm_6280-degewo_90b803fa-65b5-41c3-801f-8f737368074c_e527b42073.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_a6a1699d-6f9c-460e-a9c2-f51615116ea2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_e9c8984f-ffec-4d7f-8da9-237b26d5efde.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_ec50c8bf-fe37-436b-837d-70131a41f0a3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_1adec23d-43d1-4d96-8762-ad18c9171ac3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_1c41c9c6-2f25-4659-b1a5-060aeb358a74.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_6e37a368-3ee7-4e59-8bba-c6b56d2f5a7d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_de0b5d55-5d49-4cf3-976a-2a30d4e29a84.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6280-degewo_4d8adc75-356e-4364-9582-1ce8544af924.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/e/csm_6280-degewo_d0c8b05b-4b34-4810-858b-292af9bb51ae_84ce78fc04.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 360.32,
-   "cold": 296.17,
-   "size": 26.73,
-   "floor": 2,
-   "levels": 4,
-   "year": 1935,
-   "stars": 3,
-   "why": "26.73 m², ~8.9 km zur Arbeit (Luftlinie), Kiez mittel (68 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1935",
-   "points": 60,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     9.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     9.0,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-13T12:32:06Z"
-  },
   "ibw-24396": {
    "source": "ibw",
    "company": "gewobag",
@@ -1707,7 +1543,7 @@
    "online_since": "2026-11-13T12:56:07Z"
   }
  },
- "updated": "2026-11-14T12:29:59Z",
+ "updated": "2026-11-14T12:32:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1772,5 +1608,5 @@
    "chars": 2450
   }
  ],
- "last_auto": "2026-11-14T12:29:59Z"
+ "last_auto": "2026-11-14T12:32:30Z"
 }
