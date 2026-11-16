@@ -2117,10 +2117,10 @@
    "requested": "gesendet",
    "online_since": "2026-11-16T16:47:19Z",
    "requested_at": "2026-11-16T16:47:19Z",
-   "gone": false
+   "gone": true
   }
  },
- "updated": "2026-11-16T17:26:15Z",
+ "updated": "2026-11-16T17:28:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2185,5 +2185,5 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-16T17:26:15Z"
+ "last_auto": "2026-11-16T17:28:08Z"
 }
