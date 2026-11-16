@@ -1788,9 +1788,91 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-16T13:14:40Z"
+  },
+  "ibw-24454": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-60305-0015-0103.html",
+   "title": "2 Zimmer Wohnung mit Balkon",
+   "address": "Am Kietzer Feld 12, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794839108-XdYSTcdKtp.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_df131664-845c-4061-b68e-fd154dd2178b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_30957c44-8f75-47b3-8bf9-52e437b6d15b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_e477376d-0482-44de-b95b-a8c2b4e8b960.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_748b8227-50d5-412f-afd9-1775823b786a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_c9604d79-dabf-4625-97a3-7452e2bb7687.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_0d440ca9-678b-4bca-a877-2577efaa4bc2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_03c3c853-70ae-4efa-b8a0-8f7fcfd05888.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6309-degewo_da574930-dd6f-40d5-b0e6-d52eb40ce780.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/c/csm_6309-degewo_599505e3-fb3f-499c-b64e-443ed2816e6a_55eb7e984f.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 679.75,
+   "cold": 451.34,
+   "size": 46.52,
+   "floor": 1,
+   "levels": 4,
+   "year": 1960,
+   "stars": 2,
+   "why": "46.52 m², ~15.0 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1960",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-16T14:25:08Z"
   }
  },
- "updated": "2026-11-16T14:26:10Z",
+ "updated": "2026-11-16T14:30:04Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1855,5 +1937,5 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-16T14:26:10Z"
+ "last_auto": "2026-11-16T14:30:04Z"
 }
