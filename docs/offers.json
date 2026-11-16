@@ -2127,7 +2127,9 @@
    "address": "Mandrellaplatz 9, 12555 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794852725-M54fWeUiz0.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794852725-M54fWeUiz0.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6342-degewo_9f6ba971-bc55-4e5d-b7a1-4551af955b5a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/8/csm_6342-degewo_26261c1a-d655-485a-86a5-bd47c4fa55de_9aca68b97b.webp"
    ],
    "rooms": 1,
    "price": 424.33,
@@ -2190,10 +2192,11 @@
     ]
    },
    "online_since": "2026-11-16T18:12:05Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-16T18:14:51Z",
+ "updated": "2026-11-16T18:16:51Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2258,5 +2261,5 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-16T18:14:51Z"
+ "last_auto": "2026-11-16T18:16:51Z"
 }
