@@ -1461,9 +1461,82 @@
    "requested_at": "2026-11-13T10:20:33Z",
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z"
+  },
+  "ibw-24421": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-41702-0019-0301.html",
+   "title": "2 Zimmer Wohnung",
+   "address": "Seelenbinderstraße 74, 12555 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794814985-dGkjf0tS1X.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 682.33,
+   "cold": 451.63,
+   "size": 54.67,
+   "floor": 3,
+   "levels": 4,
+   "year": 1955,
+   "stars": 2,
+   "why": "54.67 m², ~13.0 km zur Arbeit (Luftlinie), Kiez wenig los (29 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1955",
+   "points": 53,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.9,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.6,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-16T07:43:05Z",
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-16T07:44:17Z",
+ "updated": "2026-11-16T07:46:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1528,5 +1601,5 @@
    "chars": 2450
   }
  ],
- "last_auto": "2026-11-16T07:44:17Z"
+ "last_auto": "2026-11-16T07:46:24Z"
 }
