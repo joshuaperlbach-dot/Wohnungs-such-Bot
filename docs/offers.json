@@ -1470,7 +1470,14 @@
    "address": "Seelenbinderstraße 74, 12555 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794814985-dGkjf0tS1X.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794814985-dGkjf0tS1X.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_77bb2ae2-7cb0-415d-9e75-96bc308f2148.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_35c393dc-eab3-4dd0-ac43-1f11084a0b21.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_beabdfcd-74e6-4bfb-b3b6-a4e93760478a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_0830f44e-e555-46ca-b237-f83f08f39b40.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_3ed1aae9-6451-4283-b593-5b2c2124307e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_c4f2f5d5-d9b2-4d9e-ad16-aa4e8afd9ac5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/a/csm_6284-degewo_5baf07d1-a352-4031-95c5-b946c83ea62d_b6c8bbbeaa.webp"
    ],
    "rooms": 2,
    "price": 682.33,
@@ -1533,10 +1540,11 @@
     ]
    },
    "online_since": "2026-11-16T07:43:05Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-16T07:46:24Z",
+ "updated": "2026-11-16T07:48:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -1601,5 +1609,5 @@
    "chars": 2450
   }
  ],
- "last_auto": "2026-11-16T07:46:24Z"
+ "last_auto": "2026-11-16T07:48:18Z"
 }
