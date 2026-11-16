@@ -2033,10 +2033,11 @@
    },
    "requested": "gesendet",
    "online_since": "2026-11-16T16:38:34Z",
-   "requested_at": "2026-11-16T16:38:34Z"
+   "requested_at": "2026-11-16T16:38:34Z",
+   "gone": false
   }
  },
- "updated": "2026-11-16T16:38:34Z",
+ "updated": "2026-11-16T16:42:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2101,5 +2102,5 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-16T16:38:34Z"
+ "last_auto": "2026-11-16T16:42:28Z"
 }
