@@ -2196,16 +2196,10 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-16T21:22:16Z",
+ "updated": "2026-11-16T21:24:17Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-13T10:32:45Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1926
-  },
   {
    "at": "2026-11-13T10:44:30Z",
    "kind": "eingang",
@@ -2259,7 +2253,13 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1912
+  },
+  {
+   "at": "2026-11-16T21:22:37Z",
+   "kind": "antwort",
+   "matched": false,
+   "chars": 478
   }
  ],
- "last_auto": "2026-11-16T21:22:16Z"
+ "last_auto": "2026-11-16T21:24:17Z"
 }
