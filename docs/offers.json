@@ -1953,9 +1953,90 @@
    "online_since": "2026-11-16T14:38:07Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/",
+   "title": "Mit WBS100-140!2-Zimmer-Wohnung in Friedrichshain",
+   "address": "Lichtenberger Strasse 26, 10179 Berlin",
+   "text": "Zur Vermietung steht eine 2-Zi.-Wohnung im 5.OG mit Aufzug. Zwei separate Zimmer, Küche, Abstellkammer und ein Wannenbad. Hinweis: Bitte beachten Sie, dass zur Anmietung ein gültiger WBS100/140 für zwei Zimmer ÜBER50m² zwingend erforderlich ist. Der Vermietungsprozess erfolgt im ersten Schritt über eine Fotodokumentation.",
+   "images": [
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-4056e0ce168dea233176428505d91c98.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-376d777b45f1f10c077bb91fb034ba64.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-d89478459bd27a8c4c3f04937a7209ce.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-d2e32a176d1c92574ab0b0757f5cf8b3.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-16f4a392c2d8ef376caeaa73c54a3722.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-efbdac83cc91010f82b3f8155dbd4b7e.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-f8e70f73ef75d236b7c769e0b73cb954.jpg",
+    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79020-4e2c1f602f11aaaf2fb71eb4285c1590.jpg"
+   ],
+   "bezirk": "Friedrichshain",
+   "rooms": 2,
+   "price": 587.13,
+   "cold": 411.13,
+   "size": 52.88,
+   "floor": 5,
+   "year": 1966,
+   "stars": 3,
+   "why": "52.88 m², ~1.8 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Ringbahn weit, Aufzug, 5. Etage, Baujahr 1966",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.4,
+     16
+    ],
+    "Lage": [
+     10.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     6
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "requested": "gesendet",
+   "online_since": "2026-11-16T16:38:34Z",
+   "requested_at": "2026-11-16T16:38:34Z"
   }
  },
- "updated": "2026-11-16T16:36:46Z",
+ "updated": "2026-11-16T16:38:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2020,5 +2101,5 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-16T16:36:46Z"
+ "last_auto": "2026-11-16T16:38:34Z"
 }
