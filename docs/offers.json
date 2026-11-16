@@ -529,7 +529,9 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T17:50:42Z",
    "confirm": "formular",
-   "photo_tries": 0
+   "photo_tries": 0,
+   "reply": "absage",
+   "reply_at": "2026-11-16T08:32:49Z"
   },
   "ibw-23885": {
    "source": "ibw",
@@ -1542,18 +1544,96 @@
    "online_since": "2026-11-16T07:43:05Z",
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24429": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00654-0034-0203.html",
+   "title": "Wohnung sucht Mieter",
+   "address": "Sandsteinweg 31, 12349 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794817926-FQuCkxwbyu.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_fca111f1-c6ea-48ab-8e87-feff6b0d2b42.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/5/csm_6289-degewo_55dd8526-5224-4685-81d5-42e8ae6b3b6c_fc8b5f633d.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_ad7c05b6-e2f1-4015-9fa3-fc510d212703.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_96f73594-90df-4774-8c17-7f16fa2bc891.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_25452e06-8b8c-400c-96f3-b54f6223b970.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_b37f2039-e20f-4d47-bad6-8bb6c0e66a25.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_a8b656c0-c0e2-4e59-a261-a4f1e1e57c97.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_81ed1ccc-7d58-46aa-9dc0-41524ed6612f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_f91cc751-5a5c-46b6-b275-9f77ae3c209d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_3219e44c-e7e4-4911-abb5-43a15764406f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/6/csm_6289-degewo_71920f2b-f081-4c75-8393-e46af354b170_a71ce0835a.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 743.72,
+   "cold": 544.72,
+   "size": 58.19,
+   "floor": 2,
+   "levels": 4,
+   "year": 1960,
+   "stars": 3,
+   "why": "58.19 m², ~9.7 km zur Arbeit (Luftlinie), Kiez wenig los (35 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, 2. Etage, Baujahr 1960",
+   "points": 60,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.7,
+     16
+    ],
+    "Lage": [
+     0.0,
+     10
+    ],
+    "Ringbahn": [
+     0.0,
+     6
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.9,
+     9
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     6.0,
+     6
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-16T08:32:06Z"
   }
  },
- "updated": "2026-11-16T08:32:27Z",
+ "updated": "2026-11-16T08:34:27Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-12T16:54:25Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1910
-  },
   {
    "at": "2026-11-12T16:54:25Z",
    "kind": "formular",
@@ -1607,7 +1687,13 @@
    "kind": "absage",
    "matched": true,
    "chars": 2450
+  },
+  {
+   "at": "2026-11-16T08:32:49Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 2330
   }
  ],
- "last_auto": "2026-11-16T08:32:27Z"
+ "last_auto": "2026-11-16T08:34:27Z"
 }
