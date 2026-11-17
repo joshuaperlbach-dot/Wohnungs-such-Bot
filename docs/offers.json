@@ -1953,7 +1953,9 @@
    "online_since": "2026-11-16T16:38:34Z",
    "requested_at": "2026-11-16T16:38:34Z",
    "gone": true,
-   "photos_kept": true
+   "photos_kept": true,
+   "reply": "absage",
+   "reply_at": "2026-11-17T10:14:14Z"
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-kreuzberg/": {
    "source": "wbm",
@@ -2367,16 +2369,10 @@
    ]
   }
  },
- "updated": "2026-11-17T10:13:54Z",
+ "updated": "2026-11-17T10:15:55Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-13T13:24:31Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 2450
-  },
   {
    "at": "2026-11-16T08:32:49Z",
    "kind": "absage",
@@ -2430,7 +2426,13 @@
    "kind": "einladung",
    "matched": true,
    "chars": 1502
+  },
+  {
+   "at": "2026-11-17T10:14:14Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 3849
   }
  ],
- "last_auto": "2026-11-17T10:13:54Z"
+ "last_auto": "2026-11-17T10:15:55Z"
 }
