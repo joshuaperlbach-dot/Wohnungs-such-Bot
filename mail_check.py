@@ -28,6 +28,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 import degewo_form
+import secret_box
 import howoge
 import offers
 import wbm_bot
@@ -157,7 +158,75 @@ def mail_id(msg):
     return hashlib.sha256(raw).hexdigest()[:16]  # nur ein Fingerabdruck landet im Repo
 
 
-def process(messages, store, seen, now):
+MAX_MAILS_PER_OFFER = 10
+MAIL_TEXT_CHARS = 12000
+
+
+def readable_text(msg):
+    """Lesbarer Mailtext für die Handy-Ansicht: der Nur-Text-Teil, wenn er etwas taugt, sonst das HTML als Text."""
+    plain, html = [], []
+    for part in msg.walk():
+        if part.get_content_maintype() != "text" or part.get_filename():
+            continue
+        try:
+            content = part.get_content()
+        except Exception:
+            continue
+        if part.get_content_subtype() == "html":
+            html.append(BeautifulSoup(content, "html.parser").get_text("\n", strip=True))
+        else:
+            plain.append(content)
+    text = "\n".join(plain).strip()
+    if len(text) < 200 and html:
+        text = "\n".join(html)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text[:MAIL_TEXT_CHARS]
+
+
+def attach_mail(store, key, msg, kind, passphrase):
+    """Mail (verschlüsselt) beim Angebot ablegen, damit man sie in der Handy-Ansicht lesen kann.
+    Im Klartext stehen nur Datum, Absender-Domain und Art (Absage, Einladung, ...)."""
+    if not (passphrase and key and key in store["offers"]):
+        return False
+    mails = store["offers"][key].setdefault("mails", [])
+    mid = mail_id(msg)
+    if any(m.get("id") == mid for m in mails):
+        return False
+    try:
+        at = offers.iso(email.utils.parsedate_to_datetime(msg.get("Date")))
+    except (TypeError, ValueError):
+        at = None
+    sender = email.utils.parseaddr(str(msg.get("From", "")))[1].rsplit("@", 1)[-1].lower()
+    box = secret_box.seal(passphrase, {"subject": str(msg.get("Subject", "")), "text": readable_text(msg)})
+    mails.append({"id": mid, "at": at, "from": sender, "kind": kind, "box": box})
+    mails.sort(key=lambda m: m.get("at") or "")
+    del mails[:-MAX_MAILS_PER_OFFER]
+    return True
+
+
+def kind_of(text):
+    """Art einer Mail ohne Nebenwirkungen (für das Nachtragen alter Mails)."""
+    if re.search(DOI_MAIL, text, re.I):
+        return "bestaetigung"
+    if re.search(FORM_NEEDED, text, re.I):
+        return "formular"
+    if re.search(RECEIPT, text, re.I):
+        return "eingang"
+    return classify(text)
+
+
+def backfill(messages, store, passphrase):
+    """Einmalig: Mails der letzten Tage nachträglich bei den Angeboten ablegen."""
+    n = 0
+    for msg in messages:
+        text = f"{msg.get('Subject', '')}\n{body_text(msg)}"
+        kind = kind_of(text)
+        if kind != "bestaetigung":  # HOWOGE-Bestätigungslinks gehören nirgends hin
+            n += attach_mail(store, find_offer(store, text, any_offer=True), msg, kind, passphrase)
+    return n
+
+
+def process(messages, store, seen, now, passphrase=None):
     """Neue Mails auswerten. Gibt die Push-Meldungen zurück (ohne Mail-Inhalt)."""
     notes = []
     forms = []  # zweite degewo-Formulare, die degewo_form.py gleich ausfüllt
@@ -222,6 +291,8 @@ def process(messages, store, seen, now):
             if key:
                 store["offers"][key].update(reply=kind, reply_at=offers.iso(now))
         print(f"Mail ausgewertet: {kind}, {'zugeordnet' if key else 'nicht zugeordnet'}")
+        if kind != "bestaetigung":  # Bestätigungslinks der HOWOGE nicht ablegen
+            attach_mail(store, key, msg, kind, passphrase)
         # kurzes Protokoll ohne Inhalt (die letzten 10), zur Kontrolle in offers.json
         store["mail_log"] = (store.get("mail_log") or [])[-9:] + [
             {"at": offers.iso(now), "kind": kind, "matched": bool(key), "chars": len(text)}]
@@ -240,7 +311,7 @@ def process(messages, store, seen, now):
 MAX_NEW = 30  # höchstens so viele neue Mails pro Lauf ganz laden, der Rest beim nächsten Mal
 
 
-def fetch_messages(user, password, now, seen=()):
+def fetch_messages(user, password, now, seen=(), limit=None):
     """Neue Mails der bekannten Absender aus den letzten Tagen holen (nur lesend).
     Gmail ist hier langsam: deshalb nur EINE Suche (Gmail-Suchsyntax über X-GM-RAW) und von
     bereits bekannten Mails nur die Kopfzeilen, ganz geladen werden nur neue."""
@@ -265,7 +336,7 @@ def fetch_messages(user, password, now, seen=()):
             if mail_id(head) not in seen and "newsletter" not in str(head.get("From", "")).lower():
                 new.append(num)
         messages = []
-        for num in new[:MAX_NEW]:
+        for num in new[:limit or MAX_NEW]:
             _, parts = box.fetch(num, "(BODY.PEEK[])")
             messages.append(email.message_from_bytes(parts[0][1], policy=email.policy.default))
         return messages
@@ -305,8 +376,19 @@ def main():
                       key="alert_day_mail")
         wbm_bot.STATS_FILE.write_text(json.dumps(stats, indent=1, ensure_ascii=False))
         return
-    notes = process(messages, store, seen, now)
-    if len(seen) > known:  # es gab neue Mails
+    passphrase = os.environ.get("MAIL_VIEW_KEY", "").strip()
+    notes = process(messages, store, seen, now, passphrase)
+    changed = len(seen) > known  # es gab neue Mails
+    if passphrase and store.get("mail_texts") != 1:
+        # Einmalig: Mails der letzten 14 Tage nachtragen (danach kommt jede neue Mail direkt dazu)
+        try:
+            added = backfill(fetch_messages(user, password.replace(" ", ""), now, limit=120), store, passphrase)
+            store["mail_texts"] = 1
+            changed = True
+            print(f"[Mail] {added} ältere Mails bei den Angeboten abgelegt.")
+        except Exception as e:
+            print(f"[Mail] Nachtragen klappte nicht ({type(e).__name__}), nächster Versuch beim nächsten Lauf.")
+    if changed:
         offers.save(store, now)
         SEEN_FILE.write_text(json.dumps(sorted(seen)))
     for note in notes:
