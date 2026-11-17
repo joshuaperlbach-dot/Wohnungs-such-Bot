@@ -2398,11 +2398,11 @@
    "address": "Lychener Straße 56, 10437 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794949267-SAou3WeDBs.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_import_2019-07-02_01_1000-00273-bild2-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_d739fc4c-5487-4c4d-b0ca-fbea5e141169.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_c84cb37d-8c7a-495b-a366-5871883df965.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_853fd40d-d3c5-4faf-ad26-3c9335ab1295.jpg"
+    "img/1a63a7c3439b/01.jpg",
+    "img/1a63a7c3439b/02.jpg",
+    "img/1a63a7c3439b/03.jpg",
+    "img/1a63a7c3439b/04.jpg",
+    "img/1a63a7c3439b/05.jpg"
    ],
    "photos_checked": 5,
    "rooms": 1,
@@ -2469,19 +2469,17 @@
    "coord": [
     52.54470943,
     13.41896002
-   ]
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-17T22:49:18Z",
+   "via": "mail",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-17T22:49:04Z",
+ "updated": "2026-11-17T22:50:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T06:36:47Z",
-   "kind": "einladung",
-   "matched": true,
-   "chars": 1725
-  },
   {
    "at": "2026-11-17T07:30:46Z",
    "kind": "formular",
@@ -2535,8 +2533,14 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1911
+  },
+  {
+   "at": "2026-11-17T22:49:18Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2311
   }
  ],
- "last_auto": "2026-11-17T22:49:04Z",
+ "last_auto": "2026-11-17T22:50:58Z",
  "fix_selbstauskunft": 1
 }
