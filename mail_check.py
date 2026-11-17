@@ -55,13 +55,19 @@ RECEIPT = (r"Formularbestätigung|für das Ausfüllen des Formulars"
 FORM_NEEDED = r"füllen Sie das beigefügte Formular aus"
 FORM_LINK = re.compile(r"https://[a-z.]*degewo\.de/\S*/application/form/\S+")
 
+# WBM (seit 11/2026): "Selbstauskunft" innerhalb von 24 Stunden über einen Link ausfüllen, danach Losverfahren.
+# Enthält auch "leider" und "Absagen versenden wir ...", ist aber die Chance auf eine Besichtigung!
+SELF_DISCLOSURE = r"Selbstauskunft|Ihr Profil innerhalb der nächsten 24 Stunden"
+
 # Absage zuerst prüfen: auch sie enthält das Wort "Besichtigung"
 DECLINE = r"nicht möglich, alle Anfragen|leider|nicht berücksichtig|bereits vergeben|abgesagt|Absage"
 INVITE = r"einlad|Besichtigungstermin|Termin (am|für|zur)|laden wir Sie|Bitte bestätigen Sie"
 
 
 def classify(text):
-    """'absage', 'einladung' oder 'antwort' (unklar, selbst nachsehen)."""
+    """'selbstauskunft', 'absage', 'einladung' oder 'antwort' (unklar, selbst nachsehen)."""
+    if re.search(SELF_DISCLOSURE, text, re.I):
+        return "selbstauskunft"
     if re.search(DECLINE, text, re.I):
         return "absage"
     if re.search(INVITE, text, re.I):
@@ -296,7 +302,10 @@ def process(messages, store, seen, now, passphrase=None):
         # kurzes Protokoll ohne Inhalt (die letzten 10), zur Kontrolle in offers.json
         store["mail_log"] = (store.get("mail_log") or [])[-9:] + [
             {"at": offers.iso(now), "kind": kind, "matched": bool(key), "chars": len(text)}]
-        if kind == "einladung":
+        if kind == "selbstauskunft":
+            notes.append(f"WBM-CHANCE: {where}\nWBM will eine Selbstauskunft. Innerhalb von 24 Stunden über den "
+                         "LINK in der WBM-Mail ausfüllen, sonst bist du raus! Danach lost WBM die Besichtigungen aus.")
+        elif kind == "einladung":
             notes.append(f"EINLADUNG zur Besichtigung: {where}\nTermin schnell bestätigen (HOWOGE: innerhalb "
                          "24 Stunden im Portal), sonst ist er weg! Steht in deinen Mails.")
         elif kind == "antwort" and key:  # sonstige Mails ohne Bezug zu einem Angebot: kein Push
@@ -359,6 +368,13 @@ def main():
         for o in store["offers"].values():
             o.pop("form_url", None)
         offers.save(store, now)
+    if store.get("fix_selbstauskunft") != 1:
+        # 17.11.2026: zwei WBM-Mails "Selbstauskunft" wurden fälschlich als Absage eingetragen
+        for o in store["offers"].values():
+            if o.get("company") == "wbm" and o.get("reply") == "absage" and str(o.get("reply_at", "")) >= "2026-11-17":
+                o["reply"] = "selbstauskunft"
+        store["fix_selbstauskunft"] = 1
+        offers.save(store, now)
     last = offers.parse_time(stats.get("mail_checked_at"))
     waiting = any(o.get("confirm") == "offen" for o in store["offers"].values())
     if last and now - last < CHECK_EVERY and not waiting:
@@ -392,7 +408,7 @@ def main():
         offers.save(store, now)
         SEEN_FILE.write_text(json.dumps(sorted(seen)))
     for note in notes:
-        wbm_bot.notify(note, urgent=note.startswith("EINLADUNG"))
+        wbm_bot.notify(note, urgent=note.startswith(("EINLADUNG", "WBM-CHANCE")))
     print(f"[Mail] {len(messages)} Mails geprüft, {len(notes)} Meldungen.")
 
 

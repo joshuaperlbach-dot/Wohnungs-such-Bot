@@ -1303,6 +1303,26 @@ def test_mail_texts_encrypted_with_offer():
     assert mail_check.backfill([absage, doi], other, "geheim") == 1
     assert [m["kind"] for m in other["offers"]["m"]["mails"]] == ["absage"]
 
+
+def test_wbm_selbstauskunft_is_a_chance_not_a_rejection():
+    """WBM-Mail 'Selbstauskunft' (enthält 'leider' und 'Absagen'): dringender Hinweis statt Absage."""
+    import mail_check
+    from datetime import datetime, timezone
+    from email.message import EmailMessage
+    now = datetime(2026, 11, 17, 10, 40, tzinfo=timezone.utc)
+    m = EmailMessage()
+    m["Message-ID"], m["From"], m["Date"] = "<s1@wbm.de>", "noreply@wbm.de", "Tue, 17 Nov 2026 10:32:00 +0000"
+    m["Subject"] = "Ihre Wohnungsanfrage - Selbstauskunft WBM Wohnungsbaugesellschaft Berlin-Mitte mbH"
+    m.set_content("über die Fotodokumentation anbei, haben Sie die Möglichkeit, folgendes Objekt anzusehen:\n"
+                  "2.0 Zimmer, 54.79 m², Etage: EG, 656.09 € Gesamtmiete Muskauer Straße 22, 10997 Berlin\n"
+                  "Sollten Sie Interesse an einer Anmietung haben, können Sie im Folgenden Ihr Profil innerhalb der "
+                  "nächsten 24 Stunden vervollständigen. ... können leider nicht berücksichtigt werden. Absagen "
+                  "versenden wir ausschließlich an Personen, die wir zu einem Besichtigungstermin eingeladen haben.")
+    store = {"offers": {"m": {"address": "Muskauer Strasse 22, 10997 Berlin", "requested": "gesendet", "company": "wbm"}}}
+    notes = mail_check.process([m], store, set(), now)
+    assert store["offers"]["m"]["reply"] == "selbstauskunft", store
+    assert len(notes) == 1 and notes[0].startswith("WBM-CHANCE") and "Muskauer" in notes[0] and "24 Stunden" in notes[0]
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
