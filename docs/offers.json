@@ -2275,19 +2275,16 @@
    },
    "online_since": "2026-11-17T06:13:05Z",
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 5,
+   "requested": "gesendet",
+   "requested_at": "2026-11-17T07:30:46Z",
+   "confirm": "formular"
   }
  },
- "updated": "2026-11-17T07:30:02Z",
+ "updated": "2026-11-17T07:32:52Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-13T11:07:45Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1910
-  },
   {
    "at": "2026-11-13T11:07:45Z",
    "kind": "einladung",
@@ -2341,7 +2338,13 @@
    "kind": "einladung",
    "matched": true,
    "chars": 1725
+  },
+  {
+   "at": "2026-11-17T07:30:46Z",
+   "kind": "formular",
+   "matched": true,
+   "chars": 2719
   }
  ],
- "last_auto": "2026-11-17T07:30:02Z"
+ "last_auto": "2026-11-17T07:32:52Z"
 }
