@@ -2467,16 +2467,10 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-17T17:53:44Z",
+ "updated": "2026-11-17T17:55:45Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-16T21:22:37Z",
-   "kind": "antwort",
-   "matched": false,
-   "chars": 478
-  },
   {
    "at": "2026-11-17T06:36:47Z",
    "kind": "einladung",
@@ -2530,8 +2524,14 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1927
+  },
+  {
+   "at": "2026-11-17T17:54:04Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1911
   }
  ],
- "last_auto": "2026-11-17T17:53:44Z",
+ "last_auto": "2026-11-17T17:55:45Z",
  "fix_selbstauskunft": 1
 }
