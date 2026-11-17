@@ -45,8 +45,7 @@ MAX_ROOMS = 2
 MAX_WARMMIETE = 950.0
 MAX_KALTMIETE = 900.0  # steht nur im Exposé; unbekannt = kein Ausschluss
 ALLOW_WBS = False
-MIN_STARS_SEND = 4  # automatisch anfragen erst ab so vielen Sternen (03.-17.11.2026: 3, zu viele Einladungen
-                    # zu Wohnungen, die nicht recht passten); gemeldet wird alles
+MIN_STARS_SEND = 3  # automatisch anfragen erst ab so vielen Sternen (bis 03.11.2026: 4); gemeldet wird alles
 MAX_SENDS_PER_RUN = 3 # Sicherung gegen Fehlalarm; der Rest kommt beim nächsten Lauf dran
 
 # Erlaubte Bezirke/Ortsteile (steht am Anfang jeder Angebotskarte)
@@ -288,6 +287,18 @@ def send_request(listing, person, send, html=None):
     return ("gesendet" if ok else "unklar"), f"HTTP {resp.status_code}"
 
 
+def keep_requested_photos(store, limit=3):
+    """Fotos angefragter Angebote sichern (die Gesellschaften löschen sie, sobald das Angebot weg ist).
+    Läuft nach dem Senden, kostet also keine Zeit bei der Anfrage. Höchstens ein paar Angebote pro Lauf."""
+    todo = [k for k, o in store["offers"].items() if o.get("requested") in offers.REQUESTED
+            and not o.get("photos_kept") and o.get("images")]
+    for key in todo[:limit]:
+        try:
+            offers.keep_photos(store, key, HTTP)
+        except Exception as e:  # Fotos dürfen den Bot nie stoppen
+            print(f"Fotos sichern: {type(e).__name__}", file=sys.stderr)
+
+
 def app_offer(l, expose_html, rated, status):
     """Ein Treffer so, wie ihn die Handy-Ansicht (docs/index.html) braucht."""
     d = expose_details(expose_html, l["url"])
@@ -503,6 +514,7 @@ def main():
             offers.add(store, l["url"], app_offer(l, expose(l), rate(l), status), now)
         except Exception as e:
             print(f"Handy-Ansicht: {e}", file=sys.stderr)
+    keep_requested_photos(store)
     offers.save(store, now)
     save_seen(seen)
     daily_summary(stats, now)
