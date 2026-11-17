@@ -278,6 +278,14 @@ def test_wbs_from_expose_field():
     assert wbm_bot.parse_wbs_required("<p>Bezugsfertig ab: sofort WBS erforderlich: Ja Merkmale</p>") is True
     assert wbm_bot.parse_wbs_required("<dt>WBS erforderlich:</dt> <dd>Nein</dd>") is False
     assert wbm_bot.parse_wbs_required(FORM_HTML) is None
+    # 16.11.2026: Feld sagt "Nein", Titel und Text sagen WBS 100/140 zwingend erforderlich
+    lichtenberger = ("<h1>Mit WBS100-140!2-Zimmer-Wohnung in Friedrichshain</h1><p>Hinweis: Bitte beachten Sie, dass zur "
+                     "Anmietung ein gültiger WBS100/140 für zwei Zimmer ÜBER50m² zwingend erforderlich ist.</p>"
+                     "<dt>WBS erforderlich:</dt> <dd>Nein</dd>")
+    assert wbm_bot.parse_wbs_required(lichtenberger) is True
+    assert wbm_bot.parse_wbs_required("<p>Wohnung ohne WBS, Balkon</p><dt>WBS erforderlich:</dt> <dd>Nein</dd>") is False
+    assert wbm_bot.parse_wbs_required("<p>Ein WBS ist nicht erforderlich.</p>") is None
+    assert wbm_bot.parse_wbs_required("<p>Der Vermietungsprozess erfolgt über eine Fotodokumentation.</p>") is None
     cards = "<div class='list'>" + "".join([
         card("ohne", "2 Zimmer, kein WBS nötig", "800,00", "60", 2),      # Karte sagt WBS, Exposé nein
         card("mit", "Schöne 2 Zimmer", "800,00", "60", 2),                # Karte sagt nichts, Exposé ja
