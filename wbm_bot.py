@@ -287,6 +287,18 @@ def send_request(listing, person, send, html=None):
     return ("gesendet" if ok else "unklar"), f"HTTP {resp.status_code}"
 
 
+def keep_requested_photos(store, limit=3):
+    """Fotos angefragter Angebote sichern (die Gesellschaften löschen sie, sobald das Angebot weg ist).
+    Läuft nach dem Senden, kostet also keine Zeit bei der Anfrage. Höchstens ein paar Angebote pro Lauf."""
+    todo = [k for k, o in store["offers"].items() if o.get("requested") in offers.REQUESTED
+            and not o.get("photos_kept") and o.get("images")]
+    for key in todo[:limit]:
+        try:
+            offers.keep_photos(store, key, HTTP)
+        except Exception as e:  # Fotos dürfen den Bot nie stoppen
+            print(f"Fotos sichern: {type(e).__name__}", file=sys.stderr)
+
+
 def app_offer(l, expose_html, rated, status):
     """Ein Treffer so, wie ihn die Handy-Ansicht (docs/index.html) braucht."""
     d = expose_details(expose_html, l["url"])
@@ -502,6 +514,7 @@ def main():
             offers.add(store, l["url"], app_offer(l, expose(l), rate(l), status), now)
         except Exception as e:
             print(f"Handy-Ansicht: {e}", file=sys.stderr)
+    keep_requested_photos(store)
     offers.save(store, now)
     save_seen(seen)
     daily_summary(stats, now)

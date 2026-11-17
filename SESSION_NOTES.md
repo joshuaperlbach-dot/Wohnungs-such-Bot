@@ -199,3 +199,15 @@ Die Einladung zur Besichtigung (Rotkamp 9, 10.11.) kam von noreply@easysquare.co
 fehlte in SENDERS, also kein Push. Die Einladung verfällt nach 24 Stunden. Jetzt: easysquare.com wird gelesen,
 Eingangsmails ("Zufallsverfahren", "Damit wir Ihre Anfrage bearbeiten") zählen als Eingang, Einladungen
 kommen als dringende Push-Meldung (ntfy Priority urgent, nur dafür).
+
+## Fotos sichern, Bildbetrachter, Karte (17.11.2026)
+- Fotos angefragter Wohnungen (WBM und inberlinwohnen) werden nach dem Senden nach docs/img/<sha1(key)[:12]>/
+  kopiert (offers.keep_photos, max. 15 Bilder, 4 MB, ein Versuch pro Angebot, 3 Angebote pro Lauf), die Liste
+  zeigt dann die Kopien. Ordner von Angeboten, die aus der Liste fliegen, löscht offers.save. Der Workflow
+  committet docs/img mit (git add -A docs/img).
+- Handy-Ansicht: Foto antippen öffnet alle Bilder in voller Größe zum Wischen (dialog#viewer).
+- Anzeige: Karte "Lage" (Leaflet 1.9.4 von cdnjs, OpenStreetMap-Kacheln) mit Wohnung und eigenen Orten plus
+  Luftlinie. Eigene Orte (Zuhause usw.) stehen NUR im localStorage des Geräts, nie im öffentlichen Repo;
+  einrichten über "Eigene Orte ändern" oder einmal einen Link mit #orte=Name: Adresse; Name: Adresse.
+  Ohne eigene Orte zeigt die Karte "Arbeit neu" (Engelbecken). Koordinaten: inberlinwohnen liefert sie
+  (offer.coord), sonst sucht die Seite die Adresse bei Nominatim (Ergebnis im localStorage gemerkt).

@@ -1200,6 +1200,47 @@ def test_howoge_portal_mails():
     assert "Rotkamp 9" in notes[0] and "24 Stunden" in notes[0]
     assert wbm_bot.push_headers(notes[0], urgent=True)["Priority"] == "urgent"
 
+
+def test_keep_requested_photos():
+    """Fotos angefragter Wohnungen werden gesichert, die Liste zeigt dann die Kopien; Ordner von
+    Angeboten, die aus der Liste fliegen, werden gelöscht."""
+    import offers
+    import wbm_bot
+    from datetime import datetime, timezone
+    old = offers.PHOTO_DIR
+    with tempfile.TemporaryDirectory() as td:
+        offers.PHOTO_DIR = Path(td) / "img"
+        try:
+            store = {"offers": {
+                "a": {"requested": "gesendet", "images": ["https://x.de/1.jpg", "https://x.de/2.jpg", "https://x.de/kaputt.jpg"]},
+                "b": {"images": ["https://x.de/3.jpg"]},  # nicht angefragt: bleibt, wie es ist
+            }}
+
+            def get(url, **kw):
+                if "kaputt" in url:
+                    return mock.Mock(status_code=404, headers={}, content=b"")
+                return mock.Mock(status_code=200, headers={"Content-Type": "image/jpeg"}, content=b"JPEG" + url.encode())
+
+            with mock.patch("wbm_bot.HTTP.get", side_effect=get) as g:
+                wbm_bot.keep_requested_photos(store)
+                wbm_bot.keep_requested_photos(store)  # nur einmal pro Angebot
+                assert g.call_count == 3, g.call_count
+            imgs = store["offers"]["a"]["images"]
+            assert len(imgs) == 2 and all(u.startswith("img/") for u in imgs), imgs
+            assert (offers.PHOTO_DIR / imgs[0][4:]).read_bytes() == b"JPEGhttps://x.de/1.jpg"
+            assert store["offers"]["b"]["images"] == ["https://x.de/3.jpg"]
+            # erneutes Eintragen (z.B. nächster Fund) überschreibt die Kopien nicht
+            offers.add(store, "a", {"images": ["https://x.de/1.jpg"], "online_since": None}, datetime.now(timezone.utc))
+            assert store["offers"]["a"]["images"] == imgs
+            # Angebot weg aus der Liste: Ordner wird gelöscht
+            folder = offers.PHOTO_DIR / imgs[0].split("/")[1]
+            assert folder.is_dir()
+            del store["offers"]["a"]
+            offers.drop_unused_photos(store)
+            assert not folder.exists()
+        finally:
+            offers.PHOTO_DIR = old
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

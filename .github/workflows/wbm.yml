@@ -86,6 +86,7 @@ jobs:
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
           for f in seen.json seen_ibw.json mail_seen.json watch.json stats.json docs/offers.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          git add -A docs/img 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "seen aktualisiert"
           # Bei Überschneidung gewinnt der Stand dieses Laufs (er ist der neueste); bis zu 3 Versuche

@@ -191,6 +191,7 @@ def app_offer(l, r):
         "floor": l["floor"], "levels": l["levels"], "year": l["year"],
         "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
         "online_since": l["online_since"],
+        "coord": list(l["coord"]) if l.get("coord") else None,  # für die Karte in der Handy-Ansicht
     }
 
 
@@ -387,6 +388,7 @@ def main():
             hits.append((r.stars, l, r[0], r[1], request))
     hits.sort(key=lambda h: -h[0])  # beste zuerst
     add_missing_photos(store)
+    wbm_bot.keep_requested_photos(store)  # Fotos angefragter Wohnungen sichern (auch die von WBM)
     store["ibw_seeded"] = store.get("ibw_seeded") or not problem
     offers.save(store, now)
 
