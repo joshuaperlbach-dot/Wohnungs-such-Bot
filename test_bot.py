@@ -9,6 +9,7 @@ import rating
 import wbm_bot
 
 offers.FILE = Path(tempfile.mkdtemp()) / "offers.json"  # Tests schreiben nie in die echte Liste
+offers.PHOTO_DIR = offers.FILE.parent / "img"  # ... und löschen nie die echten gesicherten Fotos
 
 from wbm_bot import parse_listings, matches, matches_strict, build_payload, send_request
 
