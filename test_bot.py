@@ -1206,6 +1206,10 @@ def test_howoge_portal_mails():
     store = {"offers": {"r": {"address": "Rotkamp 9, 13053 Berlin", "company": "howoge", "requested": "gesendet"}}}
     notes = mail_check.process([eingang, registrieren], store, set(), now)
     assert notes == [] and store["offers"]["r"].get("reply") is None, (notes, store)
+    gebucht = mail("<e4@x>", "Terminbestätigung: Rotkamp 9, 0301, 13053 Berlin",
+                   "wir freuen uns, Ihnen einen Besichtigungstermin (AP944802) bestätigen zu können. "
+                   "Bringen Sie bitte unbedingt ein Ausweisdokument mit")
+    assert mail_check.process([gebucht], store, set(), now) == [] and store["offers"]["r"].get("reply") is None
     notes = mail_check.process([einladung], store, set(), now)
     assert store["offers"]["r"]["reply"] == "einladung" and len(notes) == 1 and notes[0].startswith("EINLADUNG"), notes
     assert "Rotkamp 9" in notes[0] and "24 Stunden" in notes[0]
