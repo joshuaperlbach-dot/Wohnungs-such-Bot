@@ -542,17 +542,17 @@
    "address": "Simon-Bolivar-Straße 13, 13055 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793807406-jA5SoA8AIT.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_import_2019-07-02_01_0100-02520-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_47d0b2c2-3419-4237-a73a-78406e3a6535.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_90e941ed-0522-4f09-afaa-a8cee27fbffd.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_8ec3e6ad-2202-4a73-809b-bca8d50a61af.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_dfccb5f0-3942-4422-97f3-9e9d140170ac.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_f80c80bd-f6b6-4927-af4d-6d8d2a0eacd7.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_5f3be85e-7d33-4ff8-b6e7-d6cd85e32dcb.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_c9b67b8c-0797-454f-93a0-9a7db9da6d32.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_617cb5fd-c17f-43f8-b163-f240e7ad9d63.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0407-0249/gewobag_9a25f5ed-5b5f-4a7f-8bc8-6dc77316417c.jpg"
+    "img/17cc76767ccd/01.jpg",
+    "img/17cc76767ccd/02.jpg",
+    "img/17cc76767ccd/03.jpg",
+    "img/17cc76767ccd/04.jpg",
+    "img/17cc76767ccd/05.jpg",
+    "img/17cc76767ccd/06.jpg",
+    "img/17cc76767ccd/07.jpg",
+    "img/17cc76767ccd/08.jpg",
+    "img/17cc76767ccd/09.jpg",
+    "img/17cc76767ccd/10.jpg",
+    "img/17cc76767ccd/11.jpg"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -621,7 +621,8 @@
    "via": "mail",
    "photo_tries": 0,
    "reply": "absage",
-   "reply_at": "2026-11-10T16:50:41Z"
+   "reply_at": "2026-11-10T16:50:41Z",
+   "photos_kept": true
   },
   "ibw-23894": {
    "source": "ibw",
@@ -631,13 +632,13 @@
    "address": "Kopenhagener Straße 73, 10437 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793811424-PAVdaFZhUc.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_d897a2a4-f93e-46c5-842a-c351d6e86f7c.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_a03a73fc-9a8f-4831-a073-6be10fadd3f1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_ec9b64a6-4853-49c1-b1cc-8c9fa2fd32b8.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_ea007f6d-acd2-468b-a0ee-5121fd494c86.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_18a3144b-6de7-4122-b9f8-d5e02ccad186.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_266f3714-7877-4f43-bb19-7cfea2f13c8b.jpg"
+    "img/69c4c666d4e6/01.jpg",
+    "img/69c4c666d4e6/02.jpg",
+    "img/69c4c666d4e6/03.jpg",
+    "img/69c4c666d4e6/04.jpg",
+    "img/69c4c666d4e6/05.jpg",
+    "img/69c4c666d4e6/06.jpg",
+    "img/69c4c666d4e6/07.jpg"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -704,7 +705,8 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T17:28:36Z",
    "via": "mail",
-   "photo_tries": 0
+   "photo_tries": 0,
+   "photos_kept": true
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-naehe-ostbahnhof/": {
    "source": "wbm",
@@ -785,7 +787,8 @@
    "requested_at": "2026-11-06T09:07:10Z",
    "gone": true,
    "reply": "absage",
-   "reply_at": "2026-11-06T09:42:30Z"
+   "reply_at": "2026-11-06T09:42:30Z",
+   "photos_kept": true
   },
   "ibw-24009": {
    "source": "ibw",
@@ -795,13 +798,12 @@
    "address": "Frankfurter Allee 174, 10365 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793958429-ucLdqGrydI.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/b/b/csm_daf81a4bcb41e857282dd5c14dc031d7_7d481ce1d1.webp",
-    "https://www.howoge.de/fileadmin/_processed_/f/2/csm_2bcfc7fa52ba8f21f100769e68fbaed1_5267ba8ba6.webp",
-    "https://www.howoge.de/fileadmin/_processed_/a/5/csm_e0dcd79b418e3967a7bd31b2cbe421d3_90e1f2b2ad.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/7/csm_d4df986d20809f4c4623f015efb4264a_71e50fa874.webp"
+    "img/dbb5c03b2a81/02.jpg",
+    "img/dbb5c03b2a81/03.webp",
+    "img/dbb5c03b2a81/04.webp",
+    "img/dbb5c03b2a81/05.webp",
+    "img/dbb5c03b2a81/06.webp",
+    "img/dbb5c03b2a81/07.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -867,7 +869,8 @@
    "online_since": "2026-11-06T09:47:09Z",
    "requested": "gesendet",
    "confirm": "bestaetigt",
-   "requested_at": "2026-11-06T09:48:20Z"
+   "requested_at": "2026-11-06T09:48:20Z",
+   "photos_kept": true
   },
   "ibw-24044": {
    "source": "ibw",
@@ -877,14 +880,14 @@
    "address": "Paul-Grasse-Straße 24, 10409 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793977988-q7mAbMua3K.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_import_2019-07-02_01_1000-00155-0103-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_6cde3f62-4e75-4c5c-82b1-d63e6913e285.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_847c57d5-abd2-4814-b626-70ded65d9ce1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_3a3e379f-acc0-4688-b30f-cf1080468729.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_96273a49-5df9-42f0-9d5e-0a9882bb75a1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_d6b0e15a-9c61-4c26-a83a-9f4129ed16d7.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00155-0103-0213/gewobag_7214c796-7e12-4c42-9613-6fedf4cfd530.jpg"
+    "img/18ce006eb6ca/01.jpg",
+    "img/18ce006eb6ca/02.jpg",
+    "img/18ce006eb6ca/03.jpg",
+    "img/18ce006eb6ca/04.jpg",
+    "img/18ce006eb6ca/05.jpg",
+    "img/18ce006eb6ca/06.jpg",
+    "img/18ce006eb6ca/07.jpg",
+    "img/18ce006eb6ca/08.jpg"
    ],
    "rooms": 2,
    "price": 696.77,
@@ -951,7 +954,8 @@
    "photos_checked": 5,
    "requested": "gesendet",
    "requested_at": "2026-11-07T11:28:23Z",
-   "via": "mail"
+   "via": "mail",
+   "photos_kept": true
   },
   "ibw-24131": {
    "source": "ibw",
@@ -961,17 +965,16 @@
    "address": "Huronseestraße 30, 10319 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794242108-62WQwfh6q4.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/8/a/csm_660098dd3e63908af516093b0b25178a_faea798b08.webp",
-    "https://www.howoge.de/fileadmin/_processed_/8/0/csm_5320f226425c0d3ca41d00e8f5659e30_ca46cc64bb.webp",
-    "https://www.howoge.de/fileadmin/_processed_/d/2/csm_68f2826ffbbffdda256554385b61f598_86ee67b793.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/9/csm_b375f54c1d3e22ba67f1d1649190579a_20bf512a5a.webp",
-    "https://www.howoge.de/fileadmin/_processed_/f/e/csm_7883bccc0439077641a3b45802890bb7_6d29eefb7a.webp",
-    "https://www.howoge.de/fileadmin/promos/downloadedImages/51328a79cd5c97a3a970ba6b593b3295.jpeg",
-    "https://www.howoge.de/fileadmin/promos/downloadedImages/fea243e411eae0b4622089879f7a72b1.jpeg",
-    "https://www.howoge.de/fileadmin/_processed_/9/f/csm_f6c205413a7e0e1b1fb8534920e1778b_aae8870864.webp"
+    "img/ef179bff0703/01.jpg",
+    "img/ef179bff0703/02.jpg",
+    "img/ef179bff0703/03.webp",
+    "img/ef179bff0703/04.webp",
+    "img/ef179bff0703/05.webp",
+    "img/ef179bff0703/06.webp",
+    "img/ef179bff0703/07.webp",
+    "img/ef179bff0703/08.webp",
+    "img/ef179bff0703/10.jpg",
+    "img/ef179bff0703/11.webp"
    ],
    "photos_checked": 5,
    "rooms": 1,
@@ -1037,7 +1040,8 @@
    "online_since": "2026-11-09T16:35:08Z",
    "requested": "gesendet",
    "confirm": "bestaetigt",
-   "requested_at": "2026-11-09T16:36:36Z"
+   "requested_at": "2026-11-09T16:36:36Z",
+   "photos_kept": true
   },
   "ibw-24145": {
    "source": "ibw",
@@ -2201,7 +2205,7 @@
    "confirm": "formular"
   }
  },
- "updated": "2026-11-17T08:04:55Z",
+ "updated": "2026-11-17T08:07:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2266,5 +2270,5 @@
    "chars": 2719
   }
  ],
- "last_auto": "2026-11-17T08:04:55Z"
+ "last_auto": "2026-11-17T08:07:20Z"
 }
