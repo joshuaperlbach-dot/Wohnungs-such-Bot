@@ -1051,16 +1051,15 @@
    "address": "Rotkamp 9, 13053 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794245286-VUXZUUTxfs.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/8/a/csm_641dd7948b9ce01c28a480f63b94b5b5_d8ee918d5c.webp",
-    "https://www.howoge.de/fileadmin/_processed_/f/0/csm_40b17a33d1c0498d862e54c2a3214ecc_58c0445c51.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/b/csm_f6bb12460f3997736673ff59a7b147fe_dfc1fb3a53.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/8/9/csm_43d893fd63270e7e71bf55a0a5b55cfe_09d3925f61.webp",
-    "https://www.howoge.de/fileadmin/_processed_/e/1/csm_507be0c474c27265d25f877365c7920c_5866cee900.webp",
-    "https://www.howoge.de/fileadmin/_processed_/a/a/csm_464028581c58487bf548710a41e7f25c_833cb1e491.webp",
-    "https://www.howoge.de/fileadmin/_processed_/3/f/csm_38f67b8e7eebb33efbb2f6d9966607cf_3e939ae3bf.webp"
+    "img/1d46bf4097f4/02.jpg",
+    "img/1d46bf4097f4/03.webp",
+    "img/1d46bf4097f4/04.webp",
+    "img/1d46bf4097f4/05.webp",
+    "img/1d46bf4097f4/06.webp",
+    "img/1d46bf4097f4/07.webp",
+    "img/1d46bf4097f4/08.webp",
+    "img/1d46bf4097f4/09.webp",
+    "img/1d46bf4097f4/10.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -1128,7 +1127,8 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-09T17:28:32Z",
    "reply": "einladung",
-   "reply_at": "2026-11-12T16:54:25Z"
+   "reply_at": "2026-11-12T16:54:25Z",
+   "photos_kept": true
   },
   "ibw-24260": {
    "source": "ibw",
@@ -1138,14 +1138,13 @@
    "address": "Mellenseestraße 42, 10319 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794396425-85IPEoB7Mb.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/5/e/csm_0168a39696a836cac8ea8ce5acdb08bf_4f39d1ab61.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_a93604d409c68713152af36d4ef82e6b_5a8556c471.webp",
-    "https://www.howoge.de/fileadmin/_processed_/3/1/csm_93e9cff30a13909814f57413b32e146c_db7d38c752.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/1/csm_9e6237213c2f50dda4eed826b2cd770d_82fcb1f609.webp",
-    "https://www.howoge.de/fileadmin/_processed_/9/3/csm_1a0d5d4868c96eb4c44180b907ee05b4_125e1863b5.webp"
+    "img/528dbdf05736/02.jpg",
+    "img/528dbdf05736/03.webp",
+    "img/528dbdf05736/04.webp",
+    "img/528dbdf05736/05.webp",
+    "img/528dbdf05736/06.webp",
+    "img/528dbdf05736/07.webp",
+    "img/528dbdf05736/08.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -1211,7 +1210,8 @@
    "online_since": "2026-11-11T11:27:05Z",
    "requested": "gesendet",
    "confirm": "bestaetigt",
-   "requested_at": "2026-11-11T11:28:22Z"
+   "requested_at": "2026-11-11T11:28:22Z",
+   "photos_kept": true
   },
   "ibw-24318": {
    "source": "ibw",
@@ -1221,16 +1221,16 @@
    "address": "Bruno-Taut-Ring 15B, 12359 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794471125-hKivXoHc6v.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_1746fc6a-adff-4ba1-b3d2-aa4019cee43b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_7a65c6e3-2518-48dd-8021-362640f08fbe.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_02a078cf-df4a-4857-b783-7db1fc1e2696.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_8263643b-c789-4e13-ba71-7d36f590d8ec.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_05261fb7-34c2-4c44-acd8-c3c4b4b8a4b5.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_1d38bd8a-240a-4f96-93ae-1941a39d8545.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_7f395dd9-1c77-4910-951a-2adc6a2538bc.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6214-degewo_470b30b4-0916-4a6a-a7e3-b18a9f5a2321.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/0/csm_6214-degewo_afa9cf62-8b5a-44f7-87da-ce416e0dfea7_0490b0dcc9.webp"
+    "img/30f01a07ba46/01.jpg",
+    "img/30f01a07ba46/02.jpg",
+    "img/30f01a07ba46/03.jpg",
+    "img/30f01a07ba46/04.jpg",
+    "img/30f01a07ba46/05.jpg",
+    "img/30f01a07ba46/06.jpg",
+    "img/30f01a07ba46/07.jpg",
+    "img/30f01a07ba46/08.jpg",
+    "img/30f01a07ba46/09.jpg",
+    "img/30f01a07ba46/10.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -1296,7 +1296,8 @@
    "online_since": "2026-11-12T08:12:06Z",
    "requested": "gesendet",
    "requested_at": "2026-11-12T16:54:25Z",
-   "confirm": "formular"
+   "confirm": "formular",
+   "photos_kept": true
   },
   "ibw-24364": {
    "source": "ibw",
@@ -1306,19 +1307,19 @@
    "address": "Strausberger Straße 12E, 13055 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794555605-145Qb4kz06.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_import_2019-07-02_01_0100-02520-0905-0613-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_1a38808e-3dba-446b-aea3-64cc641d5b88.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_7d760a0a-6bff-4814-b8ff-8520acad1af8.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_235bd0d4-44eb-4821-af62-e6b13af34082.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_a20681eb-6513-4177-8e03-6d20b8f8980a.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_e0358564-2119-4796-bebb-cb0656a54ddd.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_d2dba9ed-f3c7-4ee7-b7ea-6040cc8f7229.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_b0303b6a-b2a1-45d4-91ac-11b94f7e7104.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_487dd5bd-64e9-40fd-93b4-9fa73809da93.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_459ca116-ce51-4c69-aedd-64af1deb32c6.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_d6fb1bac-a863-4c5c-8ccc-9490719ad1a8.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02520-0905-0617/gewobag_95ab36ed-f05f-4bc0-89ff-7ac8ebc783cc.jpg"
+    "img/40078c97a123/01.jpg",
+    "img/40078c97a123/02.jpg",
+    "img/40078c97a123/03.jpg",
+    "img/40078c97a123/04.jpg",
+    "img/40078c97a123/05.jpg",
+    "img/40078c97a123/06.jpg",
+    "img/40078c97a123/07.jpg",
+    "img/40078c97a123/08.jpg",
+    "img/40078c97a123/09.jpg",
+    "img/40078c97a123/10.jpg",
+    "img/40078c97a123/11.jpg",
+    "img/40078c97a123/12.jpg",
+    "img/40078c97a123/13.jpg"
    ],
    "photos_checked": 5,
    "rooms": 1.5,
@@ -1384,7 +1385,8 @@
    "online_since": "2026-11-13T07:40:05Z",
    "requested": "gesendet",
    "requested_at": "2026-11-13T10:12:40Z",
-   "via": "mail"
+   "via": "mail",
+   "photos_kept": true
   },
   "ibw-24377": {
    "source": "ibw",
@@ -1394,12 +1396,11 @@
    "address": "Zingster Straße 21, 13051 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794565210-XSr38g1enq.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/9/1/csm_d9b29ac5b209a2739b45a8dcc1186fb7_9f8f5a8615.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/6/0/csm_5a13fdb55ef4662e932e5ed4607c39cc_ea8cd82f54.webp",
-    "https://www.howoge.de/fileadmin/_processed_/9/4/csm_1043332c44867ff19a048d33eb0cf951_a5fdfb9e3b.webp"
+    "img/b95eae6e4779/02.jpg",
+    "img/b95eae6e4779/03.webp",
+    "img/b95eae6e4779/04.webp",
+    "img/b95eae6e4779/05.webp",
+    "img/b95eae6e4779/06.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -1467,7 +1468,8 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-13T10:20:33Z",
    "reply": "einladung",
-   "reply_at": "2026-11-13T11:07:45Z"
+   "reply_at": "2026-11-13T11:07:45Z",
+   "photos_kept": true
   },
   "ibw-24429": {
    "source": "ibw",
@@ -1477,18 +1479,7 @@
    "address": "Sandsteinweg 31, 12349 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794817926-FQuCkxwbyu.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_fca111f1-c6ea-48ab-8e87-feff6b0d2b42.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/5/csm_6289-degewo_55dd8526-5224-4685-81d5-42e8ae6b3b6c_fc8b5f633d.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_ad7c05b6-e2f1-4015-9fa3-fc510d212703.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_96f73594-90df-4774-8c17-7f16fa2bc891.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_25452e06-8b8c-400c-96f3-b54f6223b970.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_b37f2039-e20f-4d47-bad6-8bb6c0e66a25.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_a8b656c0-c0e2-4e59-a261-a4f1e1e57c97.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_81ed1ccc-7d58-46aa-9dc0-41524ed6612f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_f91cc751-5a5c-46b6-b275-9f77ae3c209d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6289-degewo_3219e44c-e7e4-4911-abb5-43a15764406f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/6/csm_6289-degewo_71920f2b-f081-4c75-8393-e46af354b170_a71ce0835a.webp"
+    "img/efa4b7bea4a7/01.jpg"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -1554,7 +1545,8 @@
    "online_since": "2026-11-16T08:32:06Z",
    "requested": "gesendet",
    "requested_at": "2026-11-16T11:44:48Z",
-   "confirm": "formular"
+   "confirm": "formular",
+   "photos_kept": true
   },
   "ibw-24442": {
    "source": "ibw",
@@ -2205,7 +2197,7 @@
    "confirm": "formular"
   }
  },
- "updated": "2026-11-17T08:07:20Z",
+ "updated": "2026-11-17T08:09:38Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2270,5 +2262,5 @@
    "chars": 2719
   }
  ],
- "last_auto": "2026-11-17T08:07:20Z"
+ "last_auto": "2026-11-17T08:09:38Z"
 }
