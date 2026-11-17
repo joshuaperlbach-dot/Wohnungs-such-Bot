@@ -232,10 +232,21 @@ def fetch_expose(url):
         return ""
 
 
+# WBS-Pflicht im Titel oder in der Beschreibung ("Mit WBS100-140!", "ein gültiger WBS100/140 ...
+# zwingend erforderlich"). Am 16.11.2026 stand im Feld "WBS erforderlich: Nein", im Text aber das Gegenteil.
+WBS_IN_TEXT = re.compile(r"\bmit\s+WBS|\bWBS\s*-?\s*\d{3}|WBS\b[^.!?]{0,80}\b(zwingend|erforderlich|notwendig|benötigt|"
+                         r"voraussetzung|nur mit)|Wohnberechtigungsschein[^.!?]{0,80}\b(zwingend|erforderlich|notwendig)", re.I)
+WBS_NOT_NEEDED = re.compile(r"\b(ohne|kein|keinen)\s+WBS|WBS\s*(ist\s*)?(nicht|kein)\s*(erforderlich|notwendig|nötig)", re.I)
+
+
 def parse_wbs_required(expose_html):
-    """Feld "WBS erforderlich" aus dem Exposé: True/False, None = steht nicht da."""
+    """Braucht die Wohnung einen WBS? True/False, None = steht nirgends. Ein ausdrücklicher Hinweis im
+    Text schlägt das Feld "WBS erforderlich", denn das Feld war schon falsch ausgefüllt."""
     text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
-    m = re.search(r"WBS erforderlich:\s*(Ja|Nein)", text, re.I)
+    field = r"WBS erforderlich:\s*(Ja|Nein)"
+    if WBS_IN_TEXT.search(WBS_NOT_NEEDED.sub(" ", re.sub(field, " ", text, flags=re.I))):
+        return True
+    m = re.search(field, text, re.I)
     return m.group(1).lower() == "ja" if m else None
 
 
