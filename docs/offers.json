@@ -1550,84 +1550,6 @@
    "reply": "absage",
    "reply_at": "2026-11-17T11:51:26Z"
   },
-  "ibw-24442": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00644-0049-0601.html",
-   "title": "1 Zimmer sucht Nachmieter",
-   "address": "Zwickauer Damm 12, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794831129-CYvCDDGS4L.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6300-degewo_1e1cfb5b-b233-4ab6-bd98-da6adf3101b7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/a/csm_6300-degewo_bf84aec6-7259-41de-bd82-66e822702452_5c02e7a9b6.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6300-degewo_d8345493-9e82-4ff2-b38d-4e80eaf2c094.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/a/csm_6300-degewo_2f5b615e-738c-4997-96be-af1d9ecd5ba7_ff4cbd3c21.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/e/1/csm_6300-degewo_f9f7d050-cc79-4fa1-89db-a6a1e6888441_1fe1fe94d0.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 611.03,
-   "cold": 428.13,
-   "size": 46.78,
-   "floor": 6,
-   "levels": 27,
-   "year": 1968,
-   "stars": 2,
-   "why": "46.78 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (45 Lokale/Läden), Park nah, Ringbahn weit, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 1968, Hochhaus (27 Etagen)",
-   "points": 50,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.8,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     3.4,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-16T12:12:09Z"
-  },
   "ibw-24451": {
    "source": "ibw",
    "company": "howoge",
@@ -2625,7 +2547,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-17T12:11:12Z",
+ "updated": "2026-11-17T12:13:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2690,6 +2612,6 @@
    "chars": 2279
   }
  ],
- "last_auto": "2026-11-17T12:11:12Z",
+ "last_auto": "2026-11-17T12:13:07Z",
  "fix_selbstauskunft": 1
 }
