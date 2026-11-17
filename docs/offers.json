@@ -1634,10 +1634,9 @@
    "address": "Damerowstraße 59, 13187 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794834791-OmaGEDK4Dk.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/1/6/csm_a6b1bd455140275a463f4b9fdcb988cf_c7b7da2f92.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+    "img/4f18b57313b1/02.jpg",
+    "img/4f18b57313b1/03.webp",
+    "img/4f18b57313b1/04.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -1705,7 +1704,8 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-16T13:14:40Z",
    "reply": "einladung",
-   "reply_at": "2026-11-17T06:36:47Z"
+   "reply_at": "2026-11-17T06:36:47Z",
+   "photos_kept": true
   },
   "ibw-24454": {
    "source": "ibw",
@@ -1952,7 +1952,8 @@
    "requested": "gesendet",
    "online_since": "2026-11-16T16:38:34Z",
    "requested_at": "2026-11-16T16:38:34Z",
-   "gone": true
+   "gone": true,
+   "photos_kept": true
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-kreuzberg/": {
    "source": "wbm",
@@ -2035,7 +2036,8 @@
    "requested": "gesendet",
    "online_since": "2026-11-16T16:47:19Z",
    "requested_at": "2026-11-16T16:47:19Z",
-   "gone": true
+   "gone": true,
+   "photos_kept": true
   },
   "ibw-24473": {
    "source": "ibw",
@@ -2121,13 +2123,13 @@
    "address": "Sandsteinweg 25A, 12349 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794895984-BCSTvq2yri.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_1744cc8a-4168-4640-a9f4-3ce4b1bc407f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_24098347-b8d2-4043-9c71-e71203090483.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_ad51dfde-fe09-4f3b-80b9-31f72ddd7266.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_6c7a03e4-9f46-411f-b7f1-c6bd7d8d9ba4.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_6fc617c9-6b98-4054-9e86-7d9a0b2cf728.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/8/csm_6417-degewo_2304d779-42e6-4241-91e9-8ee387e61c94_f8076b418c.webp"
+    "img/3f93a4178095/01.jpg",
+    "img/3f93a4178095/02.jpg",
+    "img/3f93a4178095/03.jpg",
+    "img/3f93a4178095/04.jpg",
+    "img/3f93a4178095/05.jpg",
+    "img/3f93a4178095/06.jpg",
+    "img/3f93a4178095/07.webp"
    ],
    "rooms": 2,
    "price": 576.77,
@@ -2194,10 +2196,11 @@
    "photos_checked": 5,
    "requested": "gesendet",
    "requested_at": "2026-11-17T07:30:46Z",
-   "confirm": "formular"
+   "confirm": "formular",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-17T08:09:38Z",
+ "updated": "2026-11-17T08:11:56Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2262,5 +2265,5 @@
    "chars": 2719
   }
  ],
- "last_auto": "2026-11-17T08:09:38Z"
+ "last_auto": "2026-11-17T08:11:56Z"
 }
