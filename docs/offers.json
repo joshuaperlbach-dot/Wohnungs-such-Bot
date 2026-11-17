@@ -1546,7 +1546,9 @@
    "requested": "gesendet",
    "requested_at": "2026-11-16T11:44:48Z",
    "confirm": "formular",
-   "photos_kept": true
+   "photos_kept": true,
+   "reply": "absage",
+   "reply_at": "2026-11-17T11:51:26Z"
   },
   "ibw-24442": {
    "source": "ibw",
@@ -2201,7 +2203,9 @@
    "requested": "gesendet",
    "requested_at": "2026-11-17T07:30:46Z",
    "confirm": "formular",
-   "photos_kept": true
+   "photos_kept": true,
+   "reply": "absage",
+   "reply_at": "2026-11-17T11:51:26Z"
   },
   "ibw-24480": {
    "source": "ibw",
@@ -2621,22 +2625,10 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-17T11:51:01Z",
+ "updated": "2026-11-17T11:52:59Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-16T11:44:48Z",
-   "kind": "formular",
-   "matched": true,
-   "chars": 2723
-  },
-  {
-   "at": "2026-11-16T13:14:51Z",
-   "kind": "bestaetigung",
-   "matched": true,
-   "chars": 3650
-  },
   {
    "at": "2026-11-16T13:24:52Z",
    "kind": "eingang",
@@ -2684,8 +2676,20 @@
    "kind": "absage",
    "matched": true,
    "chars": 3853
+  },
+  {
+   "at": "2026-11-17T11:51:26Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 2275
+  },
+  {
+   "at": "2026-11-17T11:51:26Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 2279
   }
  ],
- "last_auto": "2026-11-17T11:51:01Z",
+ "last_auto": "2026-11-17T11:52:59Z",
  "fix_selbstauskunft": 1
 }
