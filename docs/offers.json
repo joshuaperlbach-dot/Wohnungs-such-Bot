@@ -1464,87 +1464,6 @@
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z"
   },
-  "ibw-24421": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-41702-0019-0301.html",
-   "title": "2 Zimmer Wohnung",
-   "address": "Seelenbinderstraße 74, 12555 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794814985-dGkjf0tS1X.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_77bb2ae2-7cb0-415d-9e75-96bc308f2148.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_35c393dc-eab3-4dd0-ac43-1f11084a0b21.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_beabdfcd-74e6-4bfb-b3b6-a4e93760478a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_0830f44e-e555-46ca-b237-f83f08f39b40.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_3ed1aae9-6451-4283-b593-5b2c2124307e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6284-degewo_c4f2f5d5-d9b2-4d9e-ad16-aa4e8afd9ac5.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/a/csm_6284-degewo_5baf07d1-a352-4031-95c5-b946c83ea62d_b6c8bbbeaa.webp"
-   ],
-   "rooms": 2,
-   "price": 682.33,
-   "cold": 451.63,
-   "size": 54.67,
-   "floor": 3,
-   "levels": 4,
-   "year": 1955,
-   "stars": 2,
-   "why": "54.67 m², ~13.0 km zur Arbeit (Luftlinie), Kiez wenig los (29 Lokale/Läden), Park nah, Ringbahn weit, 3. Etage, Baujahr 1955",
-   "points": 53,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.9,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     2.4,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.6,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     5.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     6
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-16T07:43:05Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24429": {
    "source": "ibw",
    "company": "degewo",
@@ -2281,7 +2200,7 @@
    "confirm": "formular"
   }
  },
- "updated": "2026-11-17T07:42:36Z",
+ "updated": "2026-11-17T07:44:35Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2346,5 +2265,5 @@
    "chars": 2719
   }
  ],
- "last_auto": "2026-11-17T07:42:36Z"
+ "last_auto": "2026-11-17T07:44:35Z"
 }
