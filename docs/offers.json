@@ -2380,18 +2380,97 @@
    ],
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24540": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23629-37.html?t=ibw",
+   "title": "1 Zimmer-Wohnung ab 01.01.2027",
+   "address": "Heinrichstraße 8A, 10317 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "img/317fb64d63e5/01.jpg",
+    "img/317fb64d63e5/02.jpg",
+    "img/317fb64d63e5/03.webp",
+    "img/317fb64d63e5/04.webp",
+    "img/317fb64d63e5/05.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 562.88,
+   "cold": 413.92,
+   "size": 37.0,
+   "floor": 1,
+   "levels": 4,
+   "year": 1938,
+   "stars": 3,
+   "why": "37 m², ~6.0 km zur Arbeit (Luftlinie), Kiez mittel (108 Lokale/Läden), 1,8 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 1. Etage, Baujahr 1938",
+   "points": 67,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.0,
+     16
+    ],
+    "Lage": [
+     2.7,
+     8
+    ],
+    "Zentrum": [
+     6.0,
+     10
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.6,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-17T17:21:09Z",
+   "coord": [
+    52.50578156,
+    13.49910619
+   ],
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
+   "requested_at": "2026-11-17T17:21:24Z",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-17T17:21:08Z",
+ "updated": "2026-11-17T17:23:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-16T13:24:52Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1928
-  },
   {
    "at": "2026-11-16T13:24:52Z",
    "kind": "eingang",
@@ -2445,8 +2524,14 @@
    "kind": "absage",
    "matched": true,
    "chars": 2279
+  },
+  {
+   "at": "2026-11-17T17:21:39Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-17T17:21:08Z",
+ "last_auto": "2026-11-17T17:23:31Z",
  "fix_selbstauskunft": 1
 }
