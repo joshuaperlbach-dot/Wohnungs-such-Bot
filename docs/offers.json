@@ -1704,7 +1704,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-16T13:14:40Z",
    "reply": "einladung",
-   "reply_at": "2026-11-17T06:36:47Z",
+   "reply_at": "2026-11-17T08:14:17Z",
    "photos_kept": true
   },
   "ibw-24454": {
@@ -2200,16 +2200,10 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-17T08:13:59Z",
+ "updated": "2026-11-17T08:15:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-13T11:07:45Z",
-   "kind": "einladung",
-   "matched": true,
-   "chars": 1723
-  },
   {
    "at": "2026-11-13T13:24:31Z",
    "kind": "absage",
@@ -2263,7 +2257,13 @@
    "kind": "formular",
    "matched": true,
    "chars": 2719
+  },
+  {
+   "at": "2026-11-17T08:14:17Z",
+   "kind": "einladung",
+   "matched": true,
+   "chars": 1502
   }
  ],
- "last_auto": "2026-11-17T08:13:59Z"
+ "last_auto": "2026-11-17T08:15:58Z"
 }
