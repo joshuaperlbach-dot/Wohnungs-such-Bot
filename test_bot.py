@@ -1264,6 +1264,45 @@ def test_keep_requested_photos():
         finally:
             offers.PHOTO_DIR = old
 
+
+def test_mail_texts_encrypted_with_offer():
+    """Mails landen verschlüsselt beim Angebot (die Liste ist öffentlich); nachträglich auch ältere."""
+    import mail_check
+    import secret_box
+    from datetime import datetime, timezone
+    from email.message import EmailMessage
+    now = datetime(2026, 11, 17, 11, 0, tzinfo=timezone.utc)
+
+    def mail(mid, subject, body, sender="WBM <vermietung@wbm.de>"):
+        m = EmailMessage()
+        m["Message-ID"], m["From"], m["Subject"] = mid, sender, subject
+        m["Date"] = "Tue, 17 Nov 2026 10:30:00 +0000"
+        m.set_content(body)
+        return m
+
+    absage = mail("<w1@wbm.de>", "Ihre Anfrage Muskauer Strasse 22",
+                  "Sehr geehrter Herr Perlbach,\nleider können wir Ihnen für die Wohnung Muskauer Strasse 22, "
+                  "10997 Berlin keinen Termin anbieten. Telefon 0170 1234567")
+    store = {"offers": {"m": {"address": "Muskauer Strasse 22, 10997 Berlin", "requested": "gesendet"}}}
+    mail_check.process([absage], store, set(), now, "geheim")
+    mails = store["offers"]["m"]["mails"]
+    assert len(mails) == 1 and mails[0]["kind"] == "absage" and mails[0]["from"] == "wbm.de", mails
+    raw = json.dumps(store)
+    assert "Perlbach" not in raw and "0170" not in raw and "Muskauer Strasse 22\"" not in raw.replace("address", "")
+    opened = secret_box.unseal("geheim", mails[0]["box"])
+    assert "Perlbach" in opened["text"] and opened["subject"] == "Ihre Anfrage Muskauer Strasse 22", opened
+    # dieselbe Mail nicht doppelt, ohne Schlüssel gar nichts
+    mail_check.process([absage], store, set(), now, "geheim")
+    assert mail_check.backfill([absage], store, "geheim") == 0 and len(store["offers"]["m"]["mails"]) == 1
+    other = {"offers": {"m": {"address": "Muskauer Strasse 22, 10997 Berlin", "requested": "gesendet"}}}
+    mail_check.process([absage], other, set(), now, "")
+    assert "mails" not in other["offers"]["m"]
+    # Nachtragen: ältere Mails ohne Nebenwirkungen; HOWOGE-Bestätigungen (Links) nie
+    doi = mail("<h1@howoge.de>", "Bitte bestätigen Sie Ihre Anmeldung", "Bitte bestätigen Sie Ihre Anmeldung. "
+               "Muskauer Strasse 22", sender="noreply@mailings.howoge.de")
+    assert mail_check.backfill([absage, doi], other, "geheim") == 1
+    assert [m["kind"] for m in other["offers"]["m"]["mails"]] == ["absage"]
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

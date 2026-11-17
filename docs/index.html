@@ -134,6 +134,17 @@
   #map { height: 280px; border-radius: 12px; background: var(--chip); z-index: 0; }
   .dist { color: var(--muted); font-size: 14px; margin-top: 8px; }
   .places-btn { background: var(--chip); border-radius: 8px; padding: 6px 10px; font-size: 14px; margin-top: 8px; }
+  /* Mails zur Wohnung (verschlüsselt gespeichert, Text erst nach Antippen) */
+  .mail { border-bottom: 1px solid var(--line); }
+  .mail > button { width: 100%; text-align: left; background: none; padding: 9px 0; display: flex; gap: 8px;
+                   align-items: baseline; font-size: 15px; }
+  .mail .kind { font-weight: 650; }
+  .mail .kind.absage { color: var(--muted); }
+  .mail .kind.einladung { color: var(--star); }
+  .mail .meta { color: var(--muted); font-size: 13px; margin-left: auto; white-space: nowrap; }
+  .mail .open { white-space: pre-line; overflow-wrap: anywhere; font-size: 14px; background: var(--chip);
+                border-radius: 10px; padding: 10px 12px; margin: 0 0 10px; }
+  .mail .open b { display: block; margin-bottom: 6px; }
   .leaflet-tooltip { font: 600 12px system-ui, sans-serif; padding: 2px 6px; }
   .link { flex: 1; text-align: center; padding: 11px 12px; border-radius: 10px; background: var(--ink);
           color: var(--bg); font-weight: 600; text-decoration: none; font-size: 15px; }
@@ -403,6 +414,11 @@ function drawDetail() {
   if (o.requested_at) row(t, "Anfrage raus", new Date(o.requested_at).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" }));
   body.append(t);
 
+  if ((o.mails || []).length) {
+    body.append(el("h3", null, "Mails dazu"));
+    for (const m of [...o.mails].reverse()) body.append(mailRow(m));
+  }
+
   body.append(el("h3", null, "Lage"));
   const mapBox = el("div"), dist = el("div", "dist");
   mapBox.id = "map";
@@ -437,6 +453,58 @@ function drawDetail() {
   foot.append(inner);
   sheet.append(close, gallery, body, foot);
   dlg.replaceChildren(sheet);
+}
+
+// ---- Mails: der Bot legt sie verschlüsselt ab (die Seite ist öffentlich). Den Schlüssel kennt nur dieses
+// Gerät (einmal eingeben oder per Link #mailkey=...); er passt zum GitHub-Secret MAIL_VIEW_KEY.
+const MAIL_KIND = { absage: "Absage", einladung: "Einladung", eingang: "Eingangsbestätigung",
+                    formular: "Formular nötig", antwort: "Antwort" };
+const openMails = new Set(), mailCache = new Map();
+let mailKeyPromise = null;
+const getMailPass = () => { try { return localStorage.getItem("mailkey") || ""; } catch (e) { return ""; } };
+function setMailPass(v) { mailKeyPromise = null; try { v ? localStorage.setItem("mailkey", v) : localStorage.removeItem("mailkey"); } catch (e) {} }
+function mailKey(pass) {
+  if (!mailKeyPromise) mailKeyPromise = crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"])
+    .then(base => crypto.subtle.deriveKey(
+      { name: "PBKDF2", salt: new TextEncoder().encode("wohnungsbot-mails-v1"), iterations: 200000, hash: "SHA-256" },
+      base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]));
+  return mailKeyPromise;
+}
+async function unseal(box) {
+  if (mailCache.has(box)) return mailCache.get(box);
+  const raw = Uint8Array.from(atob(box), c => c.charCodeAt(0));
+  const plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv: raw.slice(0, 12) }, await mailKey(getMailPass()), raw.slice(12));
+  const v = JSON.parse(new TextDecoder().decode(plain));
+  mailCache.set(box, v);
+  return v;
+}
+function mailRow(m) {
+  const wrap = el("div", "mail"), head = el("button");
+  const when = m.at ? new Date(m.at).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" }) : "";
+  head.append(el("span", "kind " + (m.kind || ""), MAIL_KIND[m.kind] || "Mail"), el("span", "meta", `${m.from || ""} · ${when}`));
+  const box = el("div", "open");
+  const show = async () => {
+    if (!getMailPass()) {
+      const k = prompt("Schlüssel für die Mails (einmal auf diesem Gerät eingeben):");
+      if (!k) return;
+      setMailPass(k.trim());
+    }
+    try {
+      const v = await unseal(m.box);
+      box.replaceChildren(el("b", null, v.subject || ""), document.createTextNode(v.text || ""));
+    } catch (e) {
+      setMailPass("");
+      box.replaceChildren(document.createTextNode("Der Schlüssel passt nicht. Nochmal antippen und neu eingeben."));
+    }
+    if (!box.isConnected) wrap.append(box);
+  };
+  head.addEventListener("click", () => {
+    if (openMails.has(m.id)) { openMails.delete(m.id); box.remove(); }
+    else { openMails.add(m.id); show(); }
+  });
+  wrap.append(head);
+  if (openMails.has(m.id)) show();
+  return wrap;
 }
 
 // ---- Fotos in voller Größe: antippen, dann wischen
@@ -551,6 +619,14 @@ async function showMap(o, box, dist) {
   dist.textContent = parts.length ? "Luftlinie: " + parts.join(" · ") : "";
 }
 // Link mit #orte=Zuhause: ...; Arbeit: ... richtet die eigenen Orte auf diesem Gerät ein
+{
+  const k = location.hash.match(/^#mailkey=(.+)$/);
+  if (k) {
+    setMailPass(decodeURIComponent(k[1]).trim());
+    history.replaceState(null, "", location.pathname + location.search);
+    document.getElementById("status").textContent = "Schlüssel für die Mails gespeichert.";
+  }
+}
 {
   const m = location.hash.match(/^#orte=(.+)$/);
   if (m) setPlaces(decodeURIComponent(m[1])).then(p => {

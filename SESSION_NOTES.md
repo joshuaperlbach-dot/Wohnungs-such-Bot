@@ -218,3 +218,12 @@ kein Ringbahn-Halt nah ist. Neu: Kriterium "Zentrum" (10 Punkte) = innerhalb des
 linear weniger bis 0 bei 4,5 km (ring_outside_km, Polygon aus den 27 Halten, 500 m Toleranz). Mehr als 3 km
 außerhalb: höchstens 2 Sterne. Gewichte neu: Lage 8, Baujahr 8, Außenbereich 5 (Summe weiter 100).
 Gilt für neue Angebote; schon gelistete behalten ihre Sterne.
+
+## Mailtexte in der Handy-Ansicht (17.11.2026)
+Jede Mail einer Gesellschaft wird beim passenden Angebot abgelegt (offers[key]["mails"]): Datum, Absender-Domain
+und Art im Klartext, Betreff und Text NUR verschlüsselt (secret_box.py, AES-256-GCM, Schlüssel per PBKDF2-SHA256
+aus dem GitHub-Secret MAIL_VIEW_KEY, Salz "wohnungsbot-mails-v1", 200 000 Runden). docs/index.html entschlüsselt
+mit WebCrypto; den Schlüssel gibt Josh einmal auf dem Handy ein (oder Link #mailkey=...). HOWOGE-Bestätigungsmails
+(DOI-Links) werden nie abgelegt. Beim ersten Lauf mit Schlüssel werden die Mails der letzten 14 Tage einmal
+nachgetragen (store["mail_texts"] = 1). Ohne MAIL_VIEW_KEY wird nichts abgelegt.
+Hintergrund: Die Gmail-Verbindung von Claude zeigt keine einzige WBM-Mail (filtert sie), der Bot liest per IMAP.

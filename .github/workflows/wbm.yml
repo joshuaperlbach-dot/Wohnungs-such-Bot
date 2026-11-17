@@ -42,10 +42,11 @@ jobs:
       - name: Antworten per Mail auswerten
         if: always()
         continue-on-error: true   # hängt das Postfach, soll der Lauf trotzdem als gelungen gelten
-        timeout-minutes: 2
+        timeout-minutes: 4        # einmalig länger: ältere Mails werden einmal nachgetragen
         env:
           MAIL_USER: ${{ secrets.MAIL_USER }}
           MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+          MAIL_VIEW_KEY: ${{ secrets.MAIL_VIEW_KEY }}   # Mailtexte verschlüsselt in der Handy-Ansicht
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RUN_SOURCE: ${{ inputs.source }}
         run: python mail_check.py
