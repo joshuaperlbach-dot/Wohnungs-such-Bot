@@ -2203,7 +2203,13 @@
    "address": "Sandsteinweg 25A, 12349 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794895984-BCSTvq2yri.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794895984-BCSTvq2yri.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_1744cc8a-4168-4640-a9f4-3ce4b1bc407f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_24098347-b8d2-4043-9c71-e71203090483.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_ad51dfde-fe09-4f3b-80b9-31f72ddd7266.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_6c7a03e4-9f46-411f-b7f1-c6bd7d8d9ba4.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6417-degewo_6fc617c9-6b98-4054-9e86-7d9a0b2cf728.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/8/csm_6417-degewo_2304d779-42e6-4241-91e9-8ee387e61c94_f8076b418c.webp"
    ],
    "rooms": 2,
    "price": 576.77,
@@ -2266,10 +2272,11 @@
     ]
    },
    "online_since": "2026-11-17T06:13:05Z",
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-17T06:16:16Z",
+ "updated": "2026-11-17T06:18:13Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2334,5 +2341,5 @@
    "chars": 478
   }
  ],
- "last_auto": "2026-11-17T06:16:16Z"
+ "last_auto": "2026-11-17T06:18:13Z"
 }
