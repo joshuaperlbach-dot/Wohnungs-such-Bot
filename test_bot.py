@@ -120,11 +120,21 @@ def test_rating_parsing_and_score():
     assert rating.parse_floor("Größe: ca. 71.75 m² Etage: 4 Objektnummer EG") == 4
     assert rating.parse_floor("Etage: EG Objektnummer") == 0
     assert rating.parse_floor("Etage: DG Objektnummer") is None
-    # Ringbahn ohne Netz: Ostkreuz nah, Alexanderplatz mittel/weit, Spandau weit
-    assert rating.ring_score((52.5035, 13.4700)) == 1.0
-    assert rating.ring_score((52.5380, 13.4250)) == 1.0  # Prenzlauer Berg, nahe Prenzlauer Allee
-    assert rating.ring_score((52.5219, 13.4132)) == 0.0  # Alexanderplatz
-    assert rating.ring_score((52.5350, 13.2000)) == 0.0  # Spandau
+    # S-Bahn-Ring ohne Netz: Kreuzberg und Alexanderplatz drinnen (auch weit weg von jedem Ring-Halt),
+    # Pankow knapp draußen, Buckow, Neu-Hohenschönhausen und Spandau weit draußen
+    assert rating.ring_outside_km((52.5005, 13.4290)) == 0.0  # Muskauer Straße, Kreuzberg
+    assert rating.ring_outside_km((52.5219, 13.4132)) == 0.0  # Alexanderplatz
+    assert rating.ring_outside_km((52.5466, 13.4037)) == 0.0  # Prenzlauer Berg, Gaudystraße
+    assert 1.0 < rating.ring_outside_km((52.5700, 13.4130)) < 3.0  # Pankow, Damerowstraße
+    assert rating.ring_outside_km((52.4180, 13.4450)) > rating.FAR_OUT_KM  # Buckow, Sandsteinweg
+    assert rating.ring_outside_km((52.5680, 13.5000)) > rating.FAR_OUT_KM  # Neu-Hohenschönhausen
+    assert rating.ring_outside_km((52.5350, 13.2000)) > rating.FAR_OUT_KM  # Spandau
+    # Weit draußen höchstens 2 Sterne, auch wenn sonst alles passt
+    feats = {"balkon": True, "garten": False, "aufzug": True}
+    near = rating.rate(650, 60, 2, feats, (52.5005, 13.4290), 2)
+    far = rating.rate(650, 60, 2, feats, (52.4180, 13.4450), 2)
+    assert near.stars >= 4 and "innerhalb S-Bahn-Ring" in near[1], near
+    assert far.stars <= 2 and "außerhalb S-Bahn-Ring (weit draußen)" in far[1], far
     assert len(rating.RINGBAHN) == 27
     assert wbm_bot.parse_rooms("Helle 2,5 Zimmer") == 2.5 and wbm_bot.parse_rooms("3 Zimmer mit Balkon 2 Zimmer") == 2
     assert wbm_bot.parse_cold_rent("<p>Mietkosten Nettokaltmiete 1.074,60 EUR Nebenkosten</p>") == 1074.60
@@ -135,8 +145,8 @@ def test_rating_parsing_and_score():
     assert c[0].endswith("10115 Berlin") and "29" in c[0] and c[-1] == "10115 Berlin", c
     kein = {"balkon": False, "garten": False, "aufzug": False}
     top = {"balkon": True, "garten": False, "aufzug": True}
-    gut = rating.score(650, 70, 2, top, 1.0, 20, 1.0, 2, "Prenzlauer Berg", 1910, (400, 100), 5)
-    schlecht = rating.score(990, 30, 1, kein, 9.0, 0, 0.0, 6, "Spandau")
+    gut = rating.score(650, 70, 2, top, 1.0, 20, 0.0, 2, "Prenzlauer Berg", 1910, (400, 100), 5)
+    schlecht = rating.score(990, 30, 1, kein, 9.0, 0, 6.0, 6, "Spandau")
     assert gut[0] == 5 and gut[1] == 100 and schlecht[0] == 1, (gut, schlecht)
     neutral = rating.score(None, None, None, kein, None, None, None, None)
     assert 1 <= neutral[0] <= 5
@@ -493,8 +503,8 @@ def test_ibw_parse_and_filter():
     assert ibw_bot.page_says_wbs(nav + "<div>Geförderte Wohnung auch für mittlere Einkommen – jetzt checken!</div>")
     assert ibw_bot.page_says_wbs("<li>WBS erforderlich</li>")
     assert a["year"] is None and ibw_bot.parse_item({"id": 1, "constructionYear": "1930"}, "")["year"] == 1930
-    n, stars, why = ibw_bot.rate(a)  # Prenzlauer Berg, nah an der Ringbahn, Balkon
-    assert n >= 4 and "Ringbahn nah" in why and "Balkon" in why, (stars, why)
+    n, stars, why = ibw_bot.rate(a)  # Prenzlauer Berg, innerhalb des S-Bahn-Rings, Balkon
+    assert n >= 4 and "innerhalb S-Bahn-Ring" in why and "Balkon" in why, (stars, why)
     assert "Teststraße 9, 10439 Pankow" in ibw_bot.describe(a, stars, why)
 
 
