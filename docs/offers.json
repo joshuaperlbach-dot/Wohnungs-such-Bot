@@ -1631,89 +1631,6 @@
    "reply_at": "2026-11-17T08:14:17Z",
    "photos_kept": true
   },
-  "ibw-24457": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-62401-0041-0101.html",
-   "title": "2 Zimmer Wohnung mit Balkon",
-   "address": "Igelsteig 7, 12557 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794839887-RqFe2u5aXU.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_001a0114-2d22-4772-ab0c-b7f14721711e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/b/csm_6312-degewo_aebf407d-4cca-4c27-bad0-3a110ce45cf7_5cf85afd3c.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_6e5ed2ae-d818-4648-a18a-c00bcb665399.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_24f04673-15db-4627-a5e9-b9aad777eaf2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_2c611619-92fb-468e-8d43-79c819f99e20.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_2d98e81a-90ff-4d96-8bad-e39a3c900af0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_9199c7ab-f391-4cec-bf7e-42dc38a6c403.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6312-degewo_0773cc9c-e697-4a8d-a291-79a9e240a614.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/a/csm_6312-degewo_eeea7e04-2acc-4cfb-91b1-4757d83a84ef_cbeb281a19.webp"
-   ],
-   "rooms": 2,
-   "price": 685.33,
-   "cold": 449.21,
-   "size": 46.3,
-   "floor": 1,
-   "levels": 4,
-   "year": 1961,
-   "stars": 2,
-   "why": "46.3 m², ~15.0 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Ringbahn weit, Balkon/Terrasse, 1. Etage, Baujahr 1961",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     10
-    ],
-    "Ringbahn": [
-     0.0,
-     6
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.9,
-     9
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     3.2,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     6.0,
-     6
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-16T14:38:07Z",
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
    "company": "wbm",
@@ -2465,7 +2382,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-17T14:37:50Z",
+ "updated": "2026-11-17T14:39:57Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2530,6 +2447,6 @@
    "chars": 2279
   }
  ],
- "last_auto": "2026-11-17T14:37:50Z",
+ "last_auto": "2026-11-17T14:39:57Z",
  "fix_selbstauskunft": 1
 }
