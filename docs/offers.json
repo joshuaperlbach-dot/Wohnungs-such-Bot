@@ -2389,9 +2389,90 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-17T17:21:24Z",
    "photos_kept": true
+  },
+  "ibw-24541": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00273-0103-0030",
+   "title": "Singlewohnung ohne WBS im Hinterhaus",
+   "address": "Lychener Straße 56, 10437 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794949267-SAou3WeDBs.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_import_2019-07-02_01_1000-00273-bild2-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_d739fc4c-5487-4c4d-b0ca-fbea5e141169.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_c84cb37d-8c7a-495b-a366-5871883df965.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_853fd40d-d3c5-4faf-ad26-3c9335ab1295.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 688.66,
+   "cold": 443.66,
+   "size": 36.5,
+   "floor": 4,
+   "levels": 5,
+   "year": 1906,
+   "stars": 4,
+   "why": "36.5 m², ~4.6 km zur Arbeit (Luftlinie), Kiez lebendig (408 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, 4. Etage, Baujahr 1906",
+   "points": 73,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     16.0,
+     16
+    ],
+    "Lage": [
+     4.5,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-17T21:01:07Z",
+   "coord": [
+    52.54470943,
+    13.41896002
+   ]
   }
  },
- "updated": "2026-11-17T21:01:21Z",
+ "updated": "2026-11-17T21:03:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2456,6 +2537,6 @@
    "chars": 1911
   }
  ],
- "last_auto": "2026-11-17T21:01:21Z",
+ "last_auto": "2026-11-17T21:03:19Z",
  "fix_selbstauskunft": 1
 }
