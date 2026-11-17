@@ -2,7 +2,7 @@
 
 Alles hier ist "best effort": Fehlt ein Wert, bekommt das Kriterium einen neutralen
 Wert und der Bot läuft normal weiter. Netz braucht nur die Adresssuche (Nominatim);
-Kiez, Haltestellen und Ringbahn kommen aus kiez.json bzw. festen Listen.
+Kiez, Haltestellen und S-Bahn-Ring kommen aus kiez.json bzw. festen Listen.
 
 Alle Wünsche stehen in den Konstanten und der Funktion score() - dort anpassen.
 """
@@ -46,9 +46,15 @@ RINGBAHN = [
 
 # Gewichte (Summe 100)
 W = {
-    "Kosten": 20, "Kiez": 16, "Lage": 10, "Ringbahn": 6, "ÖPNV": 3, "Bezirk": 3,
-    "Baujahr": 9, "Hochhaus": 5, "Größe": 10, "Zimmer": 7, "Außenbereich": 6, "Aufzug": 5,
+    "Kosten": 20, "Kiez": 16, "Lage": 8, "Zentrum": 10, "ÖPNV": 3, "Bezirk": 3,
+    "Baujahr": 8, "Hochhaus": 5, "Größe": 10, "Zimmer": 7, "Außenbereich": 5, "Aufzug": 5,
 }
+# "Zentrum" (seit 17.11.2026, ersetzt "Ringbahn" = Nähe zu einem Ringbahn-Halt, das bestrafte Kreuzberg):
+# innerhalb des S-Bahn-Rings volle Punkte, außerhalb weniger, je weiter draußen.
+CENTER_ZERO_KM = 4.5        # so weit außerhalb des Rings: 0 Punkte
+FAR_OUT_KM = 3.0            # weiter draußen: höchstens FAR_OUT_MAX_STARS Sterne
+FAR_OUT_MAX_STARS = 2
+RING_TOLERANCE_KM = 0.5
 
 
 def clamp01(x):
@@ -173,10 +179,34 @@ def kiez(coord):
     return places, round(park_m), stops
 
 
-def ring_score(coord):
-    """1.0 = Ringbahn-Halt in ~800 m, 0.5 = in ~1,5 km, sonst 0. Braucht kein Netz."""
-    km = min(haversine_km(coord, (lat, lon)) for _, lat, lon in RINGBAHN)
-    return 1.0 if km <= 0.8 else 0.5 if km <= 1.5 else 0.0
+def _xy(coord, ref_lat=52.52):
+    """Grob in km (für Abstände innerhalb Berlins genau genug)."""
+    return coord[1] * 111.32 * math.cos(ref_lat * math.pi / 180), coord[0] * 110.57
+
+
+def ring_outside_km(coord):
+    """0, wenn die Wohnung innerhalb des S-Bahn-Rings liegt, sonst der Abstand zur Ringlinie in km."""
+    pts = [_xy((lat, lon)) for _, lat, lon in RINGBAHN]
+    x, y = _xy(coord)
+    inside = False
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:] + pts[:1]):
+        if (y1 > y) != (y2 > y) and x < x1 + (y - y1) * (x2 - x1) / (y2 - y1):
+            inside = not inside
+    if inside:
+        return 0.0
+    best = float("inf")
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:] + pts[:1]):
+        dx, dy = x2 - x1, y2 - y1
+        t = max(0.0, min(1.0, ((x - x1) * dx + (y - y1) * dy) / (dx * dx + dy * dy)))
+        best = min(best, math.hypot(x - (x1 + t * dx), y - (y1 + t * dy)))
+    # Die Ringlinie besteht hier aus geraden Stücken von Halt zu Halt, die echte Strecke ist gebogen:
+    # bis RING_TOLERANCE_KM außerhalb zählt deshalb noch als drinnen
+    return 0.0 if best <= RING_TOLERANCE_KM else best
+
+
+def center_score(coord):
+    """1.0 innerhalb des S-Bahn-Rings; außerhalb linear weniger, 0 ab CENTER_ZERO_KM."""
+    return lin(ring_outside_km(coord), 0.0, CENTER_ZERO_KM)
 
 
 # --- Bewertung ---
@@ -259,7 +289,7 @@ def district_score(district_text):
     return 0.3  # geht auch, ist aber nicht der Wunsch
 
 
-def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text="", year=None,
+def score(price, size, rooms, feats, dist_km, stops, outside_km, floor, district_text="", year=None,
           around=None, levels=None):
     """Gibt (Sterne 1-5, Punkte 0-100, Teilwerte) zurück. None = unbekannt -> neutral 0,5.
     around = (Lokale und Läden im Umkreis, Meter zum Park)."""
@@ -267,7 +297,7 @@ def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text=
         "Kosten": price_score(price),
         "Kiez": kiez_score(*around) if around is not None else 0.5,
         "Lage": lin(dist_km, 2, 8) if dist_km is not None else 0.5,
-        "Ringbahn": ring if ring is not None else 0.5,
+        "Zentrum": lin(outside_km, 0.0, CENTER_ZERO_KM) if outside_km is not None else 0.5,
         "ÖPNV": clamp01(stops / 15) if stops is not None else 0.5,
         "Bezirk": district_score(district_text),
         "Baujahr": year_score(year),
@@ -282,6 +312,9 @@ def score(price, size, rooms, feats, dist_km, stops, ring, floor, district_text=
     # Über dem Wunschpreis: höchstens 4 Sterne, außer sonst wirklich Spitze
     if price is not None and price > SOFT_PRICE and points < FIVE_STAR_OVER_SOFT_MIN_POINTS:
         stars = min(stars, 4)
+    # Weit draußen (z.B. Buckow, Neu-Hohenschönhausen): egal wie gut sonst, höchstens 2 Sterne
+    if outside_km is not None and outside_km > FAR_OUT_KM:
+        stars = min(stars, FAR_OUT_MAX_STARS)
     return stars, round(points), s
 
 
@@ -314,12 +347,12 @@ def rate_listing(listing, expose_text=""):
 def rate(price, size, rooms, feats, coord, floor, district_text="", year=None, levels=None):
     """Bewertung aus fertigen Werten (ohne Netz). Gibt (Sterne-Text, Kurzbegründung) zurück."""
     dist = haversine_km(coord, WORK) if coord else None
-    ring = ring_score(coord) if coord else None
+    outside = ring_outside_km(coord) if coord else None
     area = kiez(coord) if coord else None
     around, stops = (area[:2], area[2]) if area else (None, None)
     if levels is None and floor is not None and floor >= 6:
         levels = floor + 1  # Haus hat mindestens so viele Etagen
-    n, points, s = score(price, size, rooms, feats, dist, stops, ring, floor, district_text, year,
+    n, points, s = score(price, size, rooms, feats, dist, stops, outside, floor, district_text, year,
                          around, levels)
     parts = {k: [round(W[k] * v, 1), W[k]] for k, v in s.items()}
     bits = []
@@ -333,8 +366,9 @@ def rate(price, size, rooms, feats, coord, floor, district_text="", year=None, l
         bits.append(f"Kiez {mood} ({places} Lokale/Läden)" + (", Park nah" if park_m <= 300 else ""))
     elif coord:
         bits.append("Kiez unbekannt")
-    if ring is not None:
-        bits.append("Ringbahn nah" if ring == 1.0 else "Ringbahn mittel" if ring == 0.5 else "Ringbahn weit")
+    if outside is not None:
+        bits.append("innerhalb S-Bahn-Ring" if outside == 0 else
+                    f"{outside:.1f} km außerhalb S-Bahn-Ring".replace(".", ",") + (" (weit draußen)" if outside > FAR_OUT_KM else ""))
     if feats["balkon"]:
         bits.append("Balkon/Terrasse")
     if feats["garten"]:

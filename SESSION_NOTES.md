@@ -211,3 +211,10 @@ kommen als dringende Push-Meldung (ntfy Priority urgent, nur dafür).
   einrichten über "Eigene Orte ändern" oder einmal einen Link mit #orte=Name: Adresse; Name: Adresse.
   Ohne eigene Orte zeigt die Karte "Arbeit neu" (Engelbecken). Koordinaten: inberlinwohnen liefert sie
   (offer.coord), sonst sucht die Seite die Adresse bei Nominatim (Ergebnis im localStorage gemerkt).
+
+## Bewertung: "Zentrum" statt "Ringbahn" (17.11.2026)
+Wunsch: Weit draußen (Buckow ~10 km, Neu-Hohenschönhausen) weniger Sterne; Kreuzberg zählt zur Stadt, auch wenn
+kein Ringbahn-Halt nah ist. Neu: Kriterium "Zentrum" (10 Punkte) = innerhalb des S-Bahn-Rings voll, außerhalb
+linear weniger bis 0 bei 4,5 km (ring_outside_km, Polygon aus den 27 Halten, 500 m Toleranz). Mehr als 3 km
+außerhalb: höchstens 2 Sterne. Gewichte neu: Lage 8, Baujahr 8, Außenbereich 5 (Summe weiter 100).
+Gilt für neue Angebote; schon gelistete behalten ihre Sterne.
