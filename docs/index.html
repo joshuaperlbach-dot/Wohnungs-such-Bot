@@ -140,7 +140,7 @@
                    align-items: baseline; font-size: 15px; }
   .mail .kind { font-weight: 650; }
   .mail .kind.absage { color: var(--muted); }
-  .mail .kind.einladung { color: var(--star); }
+  .mail .kind.einladung, .mail .kind.selbstauskunft { color: var(--star); }
   .mail .meta { color: var(--muted); font-size: 13px; margin-left: auto; white-space: nowrap; }
   .mail .open { white-space: pre-line; overflow-wrap: anywhere; font-size: 14px; background: var(--chip);
                 border-radius: 10px; padding: 10px 12px; margin: 0 0 10px; }
@@ -236,6 +236,7 @@ const COMPANY = { wbm: "WBM", degewo: "degewo", howoge: "HOWOGE", gewobag: "Gewo
 function state(key, o) {
   // Antwort der Gesellschaft, vom Bot aus der Mail gelesen
   if (o.reply === "einladung") return { cls: "invite", label: "Einladung zur Besichtigung", note: "schau in deine Mails", locked: true };
+  if (o.reply === "selbstauskunft") return { cls: "invite", label: "Selbstauskunft ausfüllen!", note: "Link in der WBM-Mail, 24 Std", locked: true };
   if (o.reply === "absage") return { cls: "declined", label: "Absage", note: "Anfrage war raus", locked: true };
   if (o.reply === "antwort") return { cls: "sent", label: "Antwort da", note: "schau in deine Mails", locked: true };
   // degewo: nach der Anfrage noch ein zweites Formular; das füllt der Bot selbst aus
@@ -457,7 +458,7 @@ function drawDetail() {
 
 // ---- Mails: der Bot legt sie verschlüsselt ab (die Seite ist öffentlich). Den Schlüssel kennt nur dieses
 // Gerät (einmal eingeben oder per Link #mailkey=...); er passt zum GitHub-Secret MAIL_VIEW_KEY.
-const MAIL_KIND = { absage: "Absage", einladung: "Einladung", eingang: "Eingangsbestätigung",
+const MAIL_KIND = { selbstauskunft: "Selbstauskunft nötig", absage: "Absage", einladung: "Einladung", eingang: "Eingangsbestätigung",
                     formular: "Formular nötig", antwort: "Antwort" };
 const openMails = new Set(), mailCache = new Map();
 let mailKeyPromise = null;
