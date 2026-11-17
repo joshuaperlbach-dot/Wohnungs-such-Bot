@@ -47,7 +47,9 @@ SEEN_FILE = Path(__file__).with_name("mail_seen.json")
 # HOWOGE (easysquare): "Wir werden ... nach einem automatisierten Zufallsverfahren ... einladen" ist nur der
 # Eingang (enthält aber das Wort "Einladung"); die echte Einladung sagt "Besichtigungstermin anbieten".
 RECEIPT = (r"Formularbestätigung|für das Ausfüllen des Formulars"
-           r"|automatisierten Zufallsverfahren|Damit wir Ihre Anfrage bearbeiten")
+           r"|automatisierten Zufallsverfahren|Damit wir Ihre Anfrage bearbeiten"
+           # HOWOGE: Bestätigung eines schon gebuchten Termins (kein neuer Alarm)
+           r"|Terminbestätigung|Besichtigungstermin \(\w+\) bestätigen zu können")
 # degewo will nach der Anfrage noch ein zweites Formular; erst dann wird die Anfrage aufgenommen
 FORM_NEEDED = r"füllen Sie das beigefügte Formular aus"
 FORM_LINK = re.compile(r"https://[a-z.]*degewo\.de/\S*/application/form/\S+")
