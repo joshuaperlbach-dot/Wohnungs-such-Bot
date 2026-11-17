@@ -2447,9 +2447,163 @@
    ],
    "photo_tries": 10,
    "photos_checked": 5
+  },
+  "ibw-24506": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-63818-0021-0404.html",
+   "title": "Single-Wohnung",
+   "address": "Müggelschlößchenweg 36, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794911946-025L60IYHP.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 366.55,
+   "cold": 261.31,
+   "size": 29.4,
+   "floor": 4,
+   "levels": 21,
+   "year": 1982,
+   "stars": 1,
+   "why": "29.4 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 10,4 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 4. Etage, Baujahr 1982, Hochhaus (21 Etagen)",
+   "points": 34,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-17T10:39:06Z",
+   "coord": [
+    52.44134524,
+    13.60038615
+   ],
+   "photo_tries": 1
+  },
+  "ibw-24505": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-64206-0047-0602.html",
+   "title": "Start ins neue Leben -  Singles, Studenten, Azubis",
+   "address": "Pablo-Neruda-Straße 10, 12559 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794911887-1f2y75P4au.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 569.73,
+   "cold": 448.93,
+   "size": 42.69,
+   "floor": 6,
+   "levels": 10,
+   "year": 1972,
+   "stars": 2,
+   "why": "42.69 m², ~13.9 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, 9,7 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 6. Etage, Baujahr 1972, Hochhaus (10 Etagen)",
+   "points": 41,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     2.2,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-17T10:38:07Z",
+   "coord": [
+    52.4423745,
+    13.58944659
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-17T10:38:53Z",
+ "updated": "2026-11-17T10:41:01Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2514,5 +2668,5 @@
    "chars": 3853
   }
  ],
- "last_auto": "2026-11-17T10:38:53Z"
+ "last_auto": "2026-11-17T10:41:01Z"
 }
