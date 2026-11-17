@@ -2207,7 +2207,15 @@
    "address": "Regattastraße 103, 12527 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794908284-C2AsNMhynU.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1794908284-C2AsNMhynU.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_df9ae5dd-1c26-44d2-8a12-0a0bcbcb65b8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_f4be9117-3ae3-43f7-bacd-81f54211aa25.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/1/csm_6424-degewo_f43a75f3-57a2-417f-8f44-289c767d6e52_42c897d49c.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_53ed40c6-c447-4726-809d-388aea76b775.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_8f929a21-8c6e-4fd0-b2d5-abae043c01d0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_0e523812-c5cb-42cf-b7bf-0f65f4fa9df8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_e26d1e5b-f529-4911-8416-1f403d56eaad.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/7/csm_6424-degewo_17be2f5e-0a06-4bf7-ba3a-d0239a20f716_7df102e006.webp"
    ],
    "rooms": 1,
    "price": 723.64,
@@ -2274,10 +2282,11 @@
     52.41910664,
     13.57930012
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-17T09:40:26Z",
+ "updated": "2026-11-17T09:42:44Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2342,5 +2351,5 @@
    "chars": 1502
   }
  ],
- "last_auto": "2026-11-17T09:40:26Z"
+ "last_auto": "2026-11-17T09:42:44Z"
 }
