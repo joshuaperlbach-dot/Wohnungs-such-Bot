@@ -25,5 +25,7 @@ jobs:
       - name: Seite ansehen (nur Aufbau, ohne persönliche Daten)
         env:
           SKRIPT: ${{ inputs.skript || 'tools/gewobag_ansehen.py' }}
+          MAIL_USER: ${{ secrets.MAIL_USER }}            # nur für tools/mail_ids.py
+          MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
         run: |
           case "$SKRIPT" in tools/*.py) python "$SKRIPT" ;; *) echo "nur tools/*.py"; exit 1 ;; esac
