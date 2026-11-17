@@ -458,7 +458,7 @@ function openViewer(srcs, start) {
   const update = () => { pos.textContent = `${Math.round(frames.scrollLeft / (frames.clientWidth || 1)) + 1} / ${srcs.length}`; };
   frames.addEventListener("scroll", update, { passive: true });
   dlg.replaceChildren(frames, close, pos);
-  if (!dlg.open) dlg.showModal();
+  if (!dlg.open) { dlg.showModal(); history.pushState({ layer: "viewer" }, ""); }
   frames.scrollLeft = start * frames.clientWidth;
   update();
 }
@@ -563,10 +563,24 @@ function openDetail(key) {
   openKey = key;
   drawDetail();
   const dlg = document.getElementById("detail");
-  if (!dlg.open) dlg.showModal();
+  if (!dlg.open) { dlg.showModal(); history.pushState({ layer: "detail" }, ""); }
   dlg.scrollTop = 0;
 }
 document.getElementById("detail").addEventListener("close", () => { openKey = null; });
+// Zurück-Taste/-Geste des Handys schließt Bildbetrachter bzw. Anzeige statt die Seite zu verlassen:
+// beim Öffnen gibt es einen Eintrag im Verlauf, "Zurück" nimmt ihn wieder weg.
+window.addEventListener("popstate", () => {
+  const layer = history.state && history.state.layer;
+  const viewer = document.getElementById("viewer"), detail = document.getElementById("detail");
+  if (layer !== "viewer" && viewer.open) viewer.close();
+  if (!layer && detail.open) detail.close();
+});
+// Mit ✕ geschlossen: den eigenen Verlaufseintrag wieder entfernen
+for (const [id, layer] of [["viewer", "viewer"], ["detail", "detail"]]) {
+  document.getElementById(id).addEventListener("close", () => {
+    if (history.state && history.state.layer === layer) history.back();
+  });
+}
 
 async function refresh() {
   try {
