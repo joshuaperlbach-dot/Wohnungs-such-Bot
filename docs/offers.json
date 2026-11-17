@@ -80,7 +80,8 @@
    "requested_at": "2026-10-26T15:48:21Z",
    "gone": true,
    "reply": "absage",
-   "reply_at": "2026-10-27T08:54:23Z"
+   "reply_at": "2026-10-27T08:54:23Z",
+   "photos_kept": true
   },
   "ibw-23631": {
    "source": "ibw",
@@ -90,24 +91,21 @@
    "address": "Landecker Straße 5, 14199 Berlin",
    "bezirk": "Charlottenburg-Wilmersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793364547-8dr9WKs9Lb.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_b4cc5aef-ab8f-4320-accf-c749730f73dd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_35d562d6-2756-4b44-9bb0-3bcfb1fb7fe7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_29037273-95ca-45cc-b7bb-0af450f612dd.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_ce7229e9-3a55-4808-9312-384ba8a295fe.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_314c5459-49e5-4169-a965-2a0de7568447.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_20aebc31-f4bc-4d07-8bac-e2ad455d911c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_53696d63-c14c-442d-a3dc-c575dbb2c770.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_9f7d9ff4-7d85-44f5-a1ad-5ced00b05eb6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_55f0aa57-1261-4f9e-87e7-984de757b52e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_c7fdf242-83c3-4469-96bf-c2ef1617c3b4.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_42db0a20-f283-4899-9096-d41c26cc4e1e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_ecce6640-1c7e-4494-8444-710cf712e17d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_5bcf6a51-10e3-4cab-8866-747931edf779.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_4e9f1fe9-993e-4f39-b024-45be71700c3b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_3a15d46d-3538-47b5-84c1-79652aa9ea7f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5805-degewo_c82876fe-1d1c-4fb3-ba8b-a0cda4b9fc95.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/d/csm_5805-degewo_93e846f1-43b9-447a-9b95-0e393637e084_707c9d92c4.webp"
+    "img/b9ba8e0d6793/01.jpg",
+    "img/b9ba8e0d6793/02.jpg",
+    "img/b9ba8e0d6793/03.jpg",
+    "img/b9ba8e0d6793/04.jpg",
+    "img/b9ba8e0d6793/05.jpg",
+    "img/b9ba8e0d6793/06.jpg",
+    "img/b9ba8e0d6793/07.jpg",
+    "img/b9ba8e0d6793/08.jpg",
+    "img/b9ba8e0d6793/09.jpg",
+    "img/b9ba8e0d6793/10.jpg",
+    "img/b9ba8e0d6793/11.jpg",
+    "img/b9ba8e0d6793/12.jpg",
+    "img/b9ba8e0d6793/13.jpg",
+    "img/b9ba8e0d6793/14.jpg",
+    "img/b9ba8e0d6793/15.jpg"
    ],
    "photos_checked": 5,
    "rooms": 1,
@@ -176,7 +174,8 @@
    "confirm": "formular",
    "photo_tries": 0,
    "reply": "absage",
-   "reply_at": "2026-11-13T13:24:31Z"
+   "reply_at": "2026-11-13T13:24:31Z",
+   "photos_kept": true
   },
   "ibw-23797": {
    "source": "ibw",
@@ -186,15 +185,15 @@
    "address": "Pasteurstraße 32, 10407 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793738405-0ubdy6F3f6.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_ebf6becd-1647-4d1d-b780-030a64bc3a4e.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_c024369b-5a17-4e01-be1d-5fe725cab769.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_c98795f2-a636-4988-bd8f-a75f4847e701.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_8764953c-ed33-4914-ba82-893e3dbea0d2.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_4a9de903-b2fe-4aa3-a6e9-b9b970aebc70.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_3d96ee24-49b0-4961-a3ec-8009590c7b18.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_282ac8eb-9146-432b-b63f-dbd54e80d16d.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00352-0103-0037/gewobag_ded5d664-ed38-4e6f-96a6-59e7a7f11108.jpg"
+    "img/e224b5442886/01.jpg",
+    "img/e224b5442886/02.jpg",
+    "img/e224b5442886/03.jpg",
+    "img/e224b5442886/04.jpg",
+    "img/e224b5442886/05.jpg",
+    "img/e224b5442886/06.jpg",
+    "img/e224b5442886/07.jpg",
+    "img/e224b5442886/08.jpg",
+    "img/e224b5442886/09.jpg"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -263,7 +262,8 @@
    "via": "mail",
    "photo_tries": 0,
    "reply": "absage",
-   "reply_at": "2026-11-05T20:20:37Z"
+   "reply_at": "2026-11-05T20:20:37Z",
+   "photos_kept": true
   },
   "ibw-23798": {
    "source": "ibw",
@@ -273,13 +273,13 @@
    "address": "John-Schehr-Straße 56, 10407 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793738586-9EdbBeB36T.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_import_2019-07-02_01_1000-00156-0504-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_c967a677-f5c5-42aa-807b-129a5efa3c74.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_0abf485c-3fae-4b4d-ae86-489ab7759d90.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_f18d2c57-6f41-4667-9222-8a81d38b8ff1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_6cd8002a-9f53-47f1-bfbb-231b495a05f1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00156-0504-0441/gewobag_3e205d6c-5182-4e57-a116-90e4519e31de.jpg"
+    "img/8c714b64817d/01.jpg",
+    "img/8c714b64817d/02.jpg",
+    "img/8c714b64817d/03.jpg",
+    "img/8c714b64817d/04.jpg",
+    "img/8c714b64817d/05.jpg",
+    "img/8c714b64817d/06.jpg",
+    "img/8c714b64817d/07.jpg"
    ],
    "photos_checked": 5,
    "rooms": 1,
@@ -348,7 +348,8 @@
    "via": "mail",
    "photo_tries": 0,
    "reply": "absage",
-   "reply_at": "2026-11-08T20:56:25Z"
+   "reply_at": "2026-11-08T20:56:25Z",
+   "photos_kept": true
   },
   "ibw-23799": {
    "source": "ibw",
@@ -358,16 +359,16 @@
    "address": "Danziger Straße 159A, 10407 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793743745-x7HrtWUWAX.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_78e48fa6-7486-4b06-ba85-c52a3251e4c8.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_8ddd0993-b9bc-4406-94ff-24517d77a371.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_cec3fa75-df70-4291-8295-ab40a1fc80de.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_bcee062a-4851-4517-854b-e23e18aa7c43.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_00bb124a-c0e0-43a1-ada0-188c8a38689e.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_9c8251a7-66a1-462f-869c-a9168ba70ae6.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_d81d87e7-2211-4ac4-ac46-4420bb0d398e.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_17538abe-0ea9-4ea4-96ae-99a22fee34d6.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00192-0201-0053/gewobag_b3e07293-b364-4a93-b5b5-b6246c3cf65c.jpg"
+    "img/44b49e47b445/01.jpg",
+    "img/44b49e47b445/02.jpg",
+    "img/44b49e47b445/03.jpg",
+    "img/44b49e47b445/04.jpg",
+    "img/44b49e47b445/05.jpg",
+    "img/44b49e47b445/06.jpg",
+    "img/44b49e47b445/07.jpg",
+    "img/44b49e47b445/08.jpg",
+    "img/44b49e47b445/09.jpg",
+    "img/44b49e47b445/10.jpg"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -436,7 +437,8 @@
    "via": "mail",
    "photo_tries": 0,
    "reply": "absage",
-   "reply_at": "2026-11-08T21:42:31Z"
+   "reply_at": "2026-11-08T21:42:31Z",
+   "photos_kept": true
   },
   "ibw-23870": {
    "source": "ibw",
@@ -446,23 +448,21 @@
    "address": "Lübecker Straße 14, 10559 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1793800502-OpqZzy8ZKC.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_fba7baa9-3176-4c0b-9d19-22e40ab7853b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_fc593902-3845-4b38-8749-7e3d5681e162.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_d60eba79-d681-4b70-820a-725e64313dc3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_d83e551e-0a0b-4d76-9386-d76956a90e0f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_3b625634-e21c-4172-9099-fcf30b8b673c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_aa7d2ac6-706d-4df9-ad13-5f12517957d9.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_4d85011c-b7a0-4b90-be05-3622623b6159.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_caf16392-eb87-410d-972c-bbfc4369e4b4.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_21e5f112-50b5-4d65-adce-6765b01826d8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_4e59f1a8-4866-4c56-90de-75cc71deca71.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_7b64e25a-4fc1-462c-b5b4-17268dfd199c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_d71abda6-045d-431b-9ba9-c4e40e6eb434.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_b7ad8879-531d-426c-91b7-d504f5ed8565.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_ce7053b0-7c40-4382-b5f6-0bfcea31abf9.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/5940-degewo_29e35aea-6904-422d-8556-fe72003fa583.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/d/csm_5940-degewo_1365788b-78cd-407a-8054-4818c418306e_8befde9b5f.webp"
+    "img/e2e760314915/01.jpg",
+    "img/e2e760314915/02.jpg",
+    "img/e2e760314915/03.jpg",
+    "img/e2e760314915/04.jpg",
+    "img/e2e760314915/05.jpg",
+    "img/e2e760314915/06.jpg",
+    "img/e2e760314915/07.jpg",
+    "img/e2e760314915/08.jpg",
+    "img/e2e760314915/09.jpg",
+    "img/e2e760314915/10.jpg",
+    "img/e2e760314915/11.jpg",
+    "img/e2e760314915/12.jpg",
+    "img/e2e760314915/13.jpg",
+    "img/e2e760314915/14.jpg",
+    "img/e2e760314915/15.jpg"
    ],
    "photos_checked": 5,
    "rooms": 1,
@@ -531,7 +531,8 @@
    "confirm": "formular",
    "photo_tries": 0,
    "reply": "absage",
-   "reply_at": "2026-11-16T08:32:49Z"
+   "reply_at": "2026-11-16T08:32:49Z",
+   "photos_kept": true
   },
   "ibw-23885": {
    "source": "ibw",
@@ -2200,7 +2201,7 @@
    "confirm": "formular"
   }
  },
- "updated": "2026-11-17T08:02:38Z",
+ "updated": "2026-11-17T08:04:55Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2265,5 +2266,5 @@
    "chars": 2719
   }
  ],
- "last_auto": "2026-11-17T08:02:38Z"
+ "last_auto": "2026-11-17T08:04:55Z"
 }
