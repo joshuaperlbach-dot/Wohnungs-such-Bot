@@ -1888,84 +1888,6 @@
    "reply": "absage",
    "reply_at": "2026-11-17T11:51:26Z"
   },
-  "ibw-24491": {
-   "source": "ibw",
-   "company": "stadtundland",
-   "url": "https://stadtundland.de/wohnungssuche/1001%2F6168%2F00156",
-   "title": "Ludwig-Klapp-Str. 10, 1.G MI",
-   "address": "Ludwig-Klapp-Straße 10, 12437 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794910685-wE3H9yH5c0.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 414.25,
-   "cold": 297.25,
-   "size": 34.93,
-   "floor": 1,
-   "levels": 4,
-   "year": 1959,
-   "stars": 3,
-   "why": "34.93 m², ~6.6 km zur Arbeit (Luftlinie), Kiez mittel (95 Lokale/Läden), 2,2 km außerhalb S-Bahn-Ring, 1. Etage, Baujahr 1959",
-   "points": 60,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     9.4,
-     16
-    ],
-    "Lage": [
-     1.9,
-     8
-    ],
-    "Zentrum": [
-     5.1,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     3.2,
-     8
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     5
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-17T10:18:05Z",
-   "coord": [
-    52.46736799,
-    13.48686612
-   ],
-   "photo_tries": 10,
-   "photos_checked": 5
-  },
   "ibw-24506": {
    "source": "ibw",
    "company": "degewo",
@@ -2644,7 +2566,7 @@
    ]
   }
  },
- "updated": "2026-11-18T10:16:41Z",
+ "updated": "2026-11-18T10:18:46Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2709,6 +2631,6 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-18T10:16:41Z",
+ "last_auto": "2026-11-18T10:18:46Z",
  "fix_selbstauskunft": 1
 }
