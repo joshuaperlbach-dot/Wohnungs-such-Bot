@@ -2392,9 +2392,88 @@
     52.42460712,
     13.48289928
    ]
+  },
+  "ibw-24568": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-72303-0015-0203.html",
+   "title": "Nachmieter zum 01.01.2027 gesucht",
+   "address": "Stillerzeile 39, 12587 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795002547-f35ya3jjx0.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6539-degewo_b8508ad6-6314-4071-b3f0-6d61c1edc86e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/f/csm_6539-degewo_e84243f9-e984-4ca7-af19-6fd08070f0d3_2b58d159ff.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 743.92,
+   "cold": 506.17,
+   "size": 54.91,
+   "floor": 2,
+   "levels": 3,
+   "year": 1957,
+   "stars": 2,
+   "why": "54.91 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (3 Lokale/Läden), Park nah, 10,8 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 2. Etage, Baujahr 1957",
+   "points": 57,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     3.2,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-18T11:49:07Z",
+   "coord": [
+    52.45592072,
+    13.61199411
+   ]
   }
  },
- "updated": "2026-11-18T11:50:07Z",
+ "updated": "2026-11-18T11:52:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2459,6 +2538,6 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-18T11:50:07Z",
+ "last_auto": "2026-11-18T11:52:31Z",
  "fix_selbstauskunft": 1
 }
