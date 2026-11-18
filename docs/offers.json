@@ -2480,7 +2480,12 @@
    "address": "Demminer Straße 7, 13355 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795005129-rtW5Ca5aUm.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795005129-rtW5Ca5aUm.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6542-degewo_0e9ecf1a-a675-445d-880e-d8ce99c0c541.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6542-degewo_ec5dedd7-e498-4845-a651-705d65722ede.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6542-degewo_07fc7c33-d99e-4c29-81c6-f860412ad954.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/2/csm_6542-degewo_2cb860ad-1197-4851-9103-863e898012e4_643aeb8603.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/c/5/csm_6542-degewo_edd8f449-c8c7-4ebc-b259-29114ed6780b_5c16fb1966.webp"
    ],
    "rooms": 1,
    "price": 579.63,
@@ -2547,7 +2552,8 @@
     52.54137579,
     13.3958114
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   },
   "ibw-24575": {
    "source": "ibw",
@@ -2557,7 +2563,15 @@
    "address": "Terwielsteig 6, 13627 Berlin",
    "bezirk": "Charlottenburg-Wilmersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795005129-BT4ZAqcE2k.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795005129-BT4ZAqcE2k.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_7897494c-8e3f-4cb1-a528-8bc404ab3f4d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_import_2019-07-02_01_0100-01611-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_44743e9b-2933-437a-94c6-75b8f35aa1aa.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_9382474d-2974-46b9-9f47-bf9615f3ebb2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_05c4f15a-519e-4a94-a45c-2f6168adb003.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_fa612874-9617-4f7a-ac50-fba05307eb95.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_4e0343d7-dde0-4b45-8878-193d7eea0349.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_2e203dd5-384f-4117-8e5b-0aed6b223824.jpg"
    ],
    "rooms": 2,
    "price": 854.02,
@@ -2624,10 +2638,11 @@
     52.53736888,
     13.30359465
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-18T12:35:41Z",
+ "updated": "2026-11-18T12:37:47Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2692,6 +2707,6 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-18T12:35:41Z",
+ "last_auto": "2026-11-18T12:37:47Z",
  "fix_selbstauskunft": 1
 }
