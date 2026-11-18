@@ -2474,9 +2474,91 @@
    "requested_at": "2026-11-17T22:49:18Z",
    "via": "mail",
    "photos_kept": true
+  },
+  "ibw-24544": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13318-32.html?t=ibw",
+   "title": "2 Zimmerwhg., ohne WBS, 4. OG ohne Aufzug, zum 01.12.26 frei",
+   "address": "Demminer Straße 29, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1794984427-NQWfusMYUx.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/e/f/csm_1a8fc5a13e10a0ab45d5a3b65f2f2eea_76d154afd5.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/e/f/csm_c6cba3ec077ace841a5107e922f92dff_3f49c7f261.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/6/csm_48fb7bbde096921491836b008b989d1d_a30131a8bd.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 562.41,
+   "cold": 390.35,
+   "size": 47.89,
+   "floor": 4,
+   "levels": 5,
+   "year": 1987,
+   "stars": 2,
+   "why": "47.89 m², ~10.3 km zur Arbeit (Luftlinie), Kiez wenig los (34 Lokale/Läden), Park nah, 6,0 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 1987",
+   "points": 56,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-18T06:47:07Z",
+   "coord": [
+    52.57148223,
+    13.51364604
+   ]
   }
  },
- "updated": "2026-11-18T06:48:22Z",
+ "updated": "2026-11-18T06:50:22Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2541,6 +2623,6 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-18T06:48:22Z",
+ "last_auto": "2026-11-18T06:50:22Z",
  "fix_selbstauskunft": 1
 }
