@@ -1888,92 +1888,6 @@
    "reply": "absage",
    "reply_at": "2026-11-17T11:51:26Z"
   },
-  "ibw-24480": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-53005-0014-8132.html",
-   "title": "Singlewohnung im Grünen - ruhig zum Hof gelegen",
-   "address": "Regattastraße 103, 12527 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794908284-C2AsNMhynU.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_df9ae5dd-1c26-44d2-8a12-0a0bcbcb65b8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_f4be9117-3ae3-43f7-bacd-81f54211aa25.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/1/csm_6424-degewo_f43a75f3-57a2-417f-8f44-289c767d6e52_42c897d49c.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_53ed40c6-c447-4726-809d-388aea76b775.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_8f929a21-8c6e-4fd0-b2d5-abae043c01d0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_0e523812-c5cb-42cf-b7bf-0f65f4fa9df8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6424-degewo_e26d1e5b-f529-4911-8416-1f403d56eaad.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/7/csm_6424-degewo_17be2f5e-0a06-4bf7-ba3a-d0239a20f716_7df102e006.webp"
-   ],
-   "rooms": 1,
-   "price": 723.64,
-   "cold": 527.79,
-   "size": 37.81,
-   "floor": 3,
-   "levels": 3,
-   "year": 1900,
-   "stars": 2,
-   "why": "37.81 m², ~14.8 km zur Arbeit (Luftlinie), Kiez wenig los (27 Lokale/Läden), Park nah, 10,3 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 3. Etage, Baujahr 1900",
-   "points": 52,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     5.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     0.0,
-     10
-    ],
-    "ÖPNV": [
-     1.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     8.0,
-     8
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     0.8,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-17T09:38:04Z",
-   "coord": [
-    52.41910664,
-    13.57930012
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24487": {
    "source": "ibw",
    "company": "degewo",
@@ -2640,7 +2554,7 @@
    ]
   }
  },
- "updated": "2026-11-18T09:36:07Z",
+ "updated": "2026-11-18T09:38:12Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2705,6 +2619,6 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-18T09:36:07Z",
+ "last_auto": "2026-11-18T09:38:12Z",
  "fix_selbstauskunft": 1
 }
