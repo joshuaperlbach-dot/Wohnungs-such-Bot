@@ -1888,178 +1888,6 @@
    "reply": "absage",
    "reply_at": "2026-11-17T11:51:26Z"
   },
-  "ibw-24506": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-63818-0021-0404.html",
-   "title": "Single-Wohnung",
-   "address": "Müggelschlößchenweg 36, 12559 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794911946-025L60IYHP.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_a47d665b-20f3-405b-b5e0-334fe11b360a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_ea3d7379-c845-41c1-910d-5c04d3e00ea7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_dda951f1-9031-4768-ae66-022b28e00903.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_3751b6ac-bca5-4da8-a195-8581cef527ad.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_0998c17e-1b67-4cb0-add6-be9b19c50351.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_a1accb24-a230-4338-8ede-abb9e3cbd622.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6429-degewo_9d613e83-0c15-4828-899e-77f73a706f75.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/1/csm_6429-degewo_9034a6f4-e355-4f26-b9ef-8e55889353b5_7aa755a7d5.webp"
-   ],
-   "rooms": 1,
-   "price": 366.55,
-   "cold": 261.31,
-   "size": 29.4,
-   "floor": 4,
-   "levels": 21,
-   "year": 1982,
-   "stars": 1,
-   "why": "29.4 m², ~14.6 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 10,4 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 4. Etage, Baujahr 1982, Hochhaus (21 Etagen)",
-   "points": 34,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     0.0,
-     10
-    ],
-    "ÖPNV": [
-     1.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-17T10:39:06Z",
-   "coord": [
-    52.44134524,
-    13.60038615
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
-  "ibw-24505": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-64206-0047-0602.html",
-   "title": "Start ins neue Leben -  Singles, Studenten, Azubis",
-   "address": "Pablo-Neruda-Straße 10, 12559 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794911887-1f2y75P4au.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6428-degewo_87c556f0-8262-4673-b3a4-e26385040381.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/1/csm_6428-degewo_5df701bb-9822-449d-b0e3-e59890c23dd1_636e852d1c.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6428-degewo_e44fe310-6430-4238-9883-e78a5cfa0d0e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6428-degewo_1893a0af-a576-4d11-8ce5-7d96e6b2a740.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6428-degewo_be83795c-0ab9-46b2-8f01-fa6015d70e48.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6428-degewo_3973518c-7986-4a8e-8918-cbaa6b093ff5.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6428-degewo_9d2f97cc-4eb0-4cd9-9c7d-f1c49d5ce2fe.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/2/csm_6428-degewo_fd204c7e-e042-4efe-acd9-9069f66ac2f4_97fae71df4.webp"
-   ],
-   "rooms": 1,
-   "price": 569.73,
-   "cold": 448.93,
-   "size": 42.69,
-   "floor": 6,
-   "levels": 10,
-   "year": 1972,
-   "stars": 2,
-   "why": "42.69 m², ~13.9 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, 9,7 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 6. Etage, Baujahr 1972, Hochhaus (10 Etagen)",
-   "points": 41,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     4.8,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     0.0,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     2.2,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-17T10:38:07Z",
-   "coord": [
-    52.4423745,
-    13.58944659
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24540": {
    "source": "ibw",
    "company": "howoge",
@@ -2566,7 +2394,7 @@
    ]
   }
  },
- "updated": "2026-11-18T10:37:17Z",
+ "updated": "2026-11-18T10:39:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2631,6 +2459,6 @@
    "chars": 2311
   }
  ],
- "last_auto": "2026-11-18T10:37:17Z",
+ "last_auto": "2026-11-18T10:39:14Z",
  "fix_selbstauskunft": 1
 }
