@@ -2650,16 +2650,10 @@
    ]
   }
  },
- "updated": "2026-11-19T07:42:34Z",
+ "updated": "2026-11-19T07:44:40Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T08:14:17Z",
-   "kind": "einladung",
-   "matched": true,
-   "chars": 1502
-  },
   {
    "at": "2026-11-17T10:14:14Z",
    "kind": "absage",
@@ -2713,8 +2707,14 @@
    "kind": "absage",
    "matched": true,
    "chars": 2827
+  },
+  {
+   "at": "2026-11-19T07:42:51Z",
+   "kind": "bestaetigung",
+   "matched": false,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-19T07:42:34Z",
+ "last_auto": "2026-11-19T07:44:40Z",
  "fix_selbstauskunft": 1
 }
