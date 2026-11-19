@@ -2573,14 +2573,14 @@
    "address": "Weitlingstraße 109, 10317 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795072928-xqU4UabVQ4.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/2/0/csm_1b58651887b03c5b5eabee401c7ae741_ad2330cef4.webp",
-    "https://www.howoge.de/fileadmin/_processed_/1/2/csm_a0cb99eed9fa9e51e8f646d1fd8ba7df_4caa4d7d55.webp",
-    "https://www.howoge.de/fileadmin/_processed_/c/c/csm_3a83241f0702e5957ed10c16c1c533ba_997739f9b0.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/6/c/csm_2025fe4f6b51193ef4147e582a0c3e97_cc19bac0a4.webp",
-    "https://www.howoge.de/fileadmin/_processed_/b/a/csm_b03b948eff16e444af457a5272f8c087_2ddbc854bc.webp"
+    "img/9ae11b0ad7ab/01.jpg",
+    "img/9ae11b0ad7ab/02.jpg",
+    "img/9ae11b0ad7ab/03.webp",
+    "img/9ae11b0ad7ab/04.webp",
+    "img/9ae11b0ad7ab/05.webp",
+    "img/9ae11b0ad7ab/06.webp",
+    "img/9ae11b0ad7ab/07.webp",
+    "img/9ae11b0ad7ab/08.webp"
    ],
    "photos_checked": 5,
    "rooms": 2,
@@ -2647,19 +2647,17 @@
    "coord": [
     52.50180219,
     13.49369662
-   ]
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-19T07:52:51Z",
+   "via": "mail",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-19T07:52:29Z",
+ "updated": "2026-11-19T07:54:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T10:14:14Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 3849
-  },
   {
    "at": "2026-11-17T10:35:13Z",
    "kind": "absage",
@@ -2713,8 +2711,14 @@
    "kind": "bestaetigung",
    "matched": false,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-19T07:52:51Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1926
   }
  ],
- "last_auto": "2026-11-19T07:52:29Z",
+ "last_auto": "2026-11-19T07:54:31Z",
  "fix_selbstauskunft": 1
 }
