@@ -706,7 +706,9 @@
    "requested_at": "2026-11-04T17:28:36Z",
    "via": "mail",
    "photo_tries": 0,
-   "photos_kept": true
+   "photos_kept": true,
+   "reply": "absage",
+   "reply_at": "2026-11-19T12:13:23Z"
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-naehe-ostbahnhof/": {
    "source": "wbm",
@@ -2837,16 +2839,10 @@
    ]
   }
  },
- "updated": "2026-11-19T12:13:05Z",
+ "updated": "2026-11-19T12:15:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T17:54:04Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1911
-  },
   {
    "at": "2026-11-17T22:49:18Z",
    "kind": "eingang",
@@ -2900,8 +2896,14 @@
    "kind": "absage",
    "matched": true,
    "chars": 2821
+  },
+  {
+   "at": "2026-11-19T12:13:23Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 2880
   }
  ],
- "last_auto": "2026-11-19T12:13:05Z",
+ "last_auto": "2026-11-19T12:15:02Z",
  "fix_selbstauskunft": 1
 }
