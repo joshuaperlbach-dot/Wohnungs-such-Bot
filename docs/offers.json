@@ -2064,175 +2064,6 @@
    "via": "mail",
    "photos_kept": true
   },
-  "ibw-24574": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1500-00736-0119-0504.html",
-   "title": "Neue vier Wände kann auch ein neuer Anfang sein- Nachmieter ab sofort gesucht!",
-   "address": "Demminer Straße 7, 13355 Berlin",
-   "bezirk": "Mitte",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795005129-rtW5Ca5aUm.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6542-degewo_0e9ecf1a-a675-445d-880e-d8ce99c0c541.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6542-degewo_ec5dedd7-e498-4845-a651-705d65722ede.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6542-degewo_07fc7c33-d99e-4c29-81c6-f860412ad954.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/2/csm_6542-degewo_2cb860ad-1197-4851-9103-863e898012e4_643aeb8603.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/c/5/csm_6542-degewo_edd8f449-c8c7-4ebc-b259-29114ed6780b_5c16fb1966.webp"
-   ],
-   "rooms": 1,
-   "price": 579.63,
-   "cold": 378.99,
-   "size": 39.97,
-   "floor": 5,
-   "levels": 10,
-   "year": 1975,
-   "stars": 3,
-   "why": "39.97 m², ~4.3 km zur Arbeit (Luftlinie), Kiez mittel (90 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 1975, Hochhaus (10 Etagen)",
-   "points": 67,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.8,
-     16
-    ],
-    "Lage": [
-     4.9,
-     8
-    ],
-    "Zentrum": [
-     10.0,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     1.4,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-18T12:32:09Z",
-   "coord": [
-    52.54137579,
-    13.3958114
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
-  "ibw-24575": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01611-1102-0416",
-   "title": "2-Zimmer-Wohnung mit Balkon - Nachmieter vorfristig zum 01.12. gesucht",
-   "address": "Terwielsteig 6, 13627 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795005129-BT4ZAqcE2k.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_7897494c-8e3f-4cb1-a528-8bc404ab3f4d.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_import_2019-07-02_01_0100-01611-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_44743e9b-2933-437a-94c6-75b8f35aa1aa.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_9382474d-2974-46b9-9f47-bf9615f3ebb2.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_05c4f15a-519e-4a94-a45c-2f6168adb003.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_fa612874-9617-4f7a-ac50-fba05307eb95.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_4e0343d7-dde0-4b45-8878-193d7eea0349.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1102-0416/gewobag_2e203dd5-384f-4117-8e5b-0aed6b223824.jpg"
-   ],
-   "rooms": 2,
-   "price": 854.02,
-   "cold": 548.02,
-   "size": 56.04,
-   "floor": 3,
-   "levels": 5,
-   "year": 1963,
-   "stars": 2,
-   "why": "56.04 m², ~8.2 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Park nah, 0,7 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 3. Etage, Baujahr 1963",
-   "points": 53,
-   "parts": {
-    "Kosten": [
-     11.5,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     8.4,
-     10
-    ],
-    "ÖPNV": [
-     2.6,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     6.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     2.5,
-     5
-    ]
-   },
-   "online_since": "2026-11-18T12:32:09Z",
-   "coord": [
-    52.53736888,
-    13.30359465
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24591": {
    "source": "ibw",
    "company": "degewo",
@@ -2839,7 +2670,7 @@
    ]
   }
  },
- "updated": "2026-11-19T12:30:49Z",
+ "updated": "2026-11-19T12:32:52Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2904,6 +2735,6 @@
    "chars": 2880
   }
  ],
- "last_auto": "2026-11-19T12:30:49Z",
+ "last_auto": "2026-11-19T12:32:52Z",
  "fix_selbstauskunft": 1
 }
