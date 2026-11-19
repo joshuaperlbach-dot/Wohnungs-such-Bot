@@ -1634,7 +1634,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-16T13:14:40Z",
    "reply": "einladung",
-   "reply_at": "2026-11-17T08:14:17Z",
+   "reply_at": "2026-11-19T12:35:17Z",
    "photos_kept": true
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
@@ -2670,16 +2670,10 @@
    ]
   }
  },
- "updated": "2026-11-19T12:34:58Z",
+ "updated": "2026-11-19T12:36:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T22:49:18Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 2311
-  },
   {
    "at": "2026-11-18T15:59:34Z",
    "kind": "absage",
@@ -2733,8 +2727,14 @@
    "kind": "absage",
    "matched": true,
    "chars": 2880
+  },
+  {
+   "at": "2026-11-19T12:35:17Z",
+   "kind": "einladung",
+   "matched": true,
+   "chars": 1742
   }
  ],
- "last_auto": "2026-11-19T12:34:58Z",
+ "last_auto": "2026-11-19T12:36:58Z",
  "fix_selbstauskunft": 1
 }
