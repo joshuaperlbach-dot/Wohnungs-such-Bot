@@ -2913,10 +2913,10 @@
     52.54596627,
     13.34476231
    ],
-   "photo_tries": 1
+   "photo_tries": 2
   }
  },
- "updated": "2026-11-19T12:49:34Z",
+ "updated": "2026-11-19T12:51:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2981,6 +2981,6 @@
    "chars": 1742
   }
  ],
- "last_auto": "2026-11-19T12:49:34Z",
+ "last_auto": "2026-11-19T12:51:32Z",
  "fix_selbstauskunft": 1
 }
