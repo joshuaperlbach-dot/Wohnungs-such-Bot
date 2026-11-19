@@ -2650,18 +2650,102 @@
    ],
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24604": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-23146-146.html?t=ibw",
+   "title": "Anschauen- Einziehen",
+   "address": "Münsterlandstraße 2, 10317 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "img/0d95920d2287/01.jpg",
+    "img/0d95920d2287/02.jpg",
+    "img/0d95920d2287/03.webp",
+    "img/0d95920d2287/04.webp",
+    "img/0d95920d2287/05.jpg",
+    "img/0d95920d2287/06.webp",
+    "img/0d95920d2287/07.jpg",
+    "img/0d95920d2287/08.jpg",
+    "img/0d95920d2287/09.webp",
+    "img/0d95920d2287/10.webp",
+    "img/0d95920d2287/11.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 730.65,
+   "cold": 552.35,
+   "size": 55.98,
+   "floor": 1,
+   "levels": 5,
+   "stars": 4,
+   "why": "55.98 m², ~5.3 km zur Arbeit (Luftlinie), Kiez wenig los (49 Lokale/Läden), 1,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 1. Etage",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     3.6,
+     8
+    ],
+    "Zentrum": [
+     7.4,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     4.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T10:24:08Z",
+   "coord": [
+    52.50494689,
+    13.48855128
+   ],
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
+   "requested_at": "2026-11-19T10:24:38Z",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-19T10:24:25Z",
+ "updated": "2026-11-19T10:26:39Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T11:51:26Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 2275
-  },
   {
    "at": "2026-11-17T11:51:26Z",
    "kind": "absage",
@@ -2715,8 +2799,14 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1910
+  },
+  {
+   "at": "2026-11-19T10:24:52Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-19T10:24:25Z",
+ "last_auto": "2026-11-19T10:26:39Z",
  "fix_selbstauskunft": 1
 }
