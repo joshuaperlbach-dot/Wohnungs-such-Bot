@@ -3009,9 +3009,93 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T13:44:06Z",
    "photos_kept": true
+  },
+  "ibw-24636": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01608-0501-0275",
+   "title": "Singleapartment am Jakob-Kaiser-Platz",
+   "address": "Heckerdamm 233, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795101367-JpWY4eMyHC.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_d4dfca44-1bea-4fd5-8895-180ac152fe45.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_fa653c3c-4a8e-456e-9dbd-c381c590f658.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_61e3a218-5bbf-488b-aaa2-c53994aec9e1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_31143741-2226-4f6a-908d-e273068d5f74.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_db0c8760-c017-45b6-982c-124e79d95116.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_aff7e241-01a9-4de0-9b0d-ea5e985bf2da.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_f1314b3b-84e7-42ee-a60e-a6e320bbe08b.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 496.32,
+   "cold": 342.32,
+   "size": 38.09,
+   "floor": 2,
+   "levels": 8,
+   "year": 1963,
+   "stars": 2,
+   "why": "38.09 m², ~8.5 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), Park nah, 1,0 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1963",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.9,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T15:16:07Z",
+   "coord": [
+    52.53913524,
+    13.29881266
+   ]
   }
  },
- "updated": "2026-11-19T15:17:18Z",
+ "updated": "2026-11-19T15:19:29Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3076,6 +3160,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-19T15:17:18Z",
+ "last_auto": "2026-11-19T15:19:29Z",
  "fix_selbstauskunft": 1
 }
