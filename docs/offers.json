@@ -2751,9 +2751,86 @@
     52.53449843,
     13.48362898
    ]
+  },
+  "ibw-24619": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-76801-0201-0077",
+   "title": "Studentenapartment zu vermieten",
+   "address": "Bremer Straße 12, 10551 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795092127-XixlpKDvm1.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 463.71,
+   "cold": 463.71,
+   "size": 26.99,
+   "floor": 2,
+   "levels": 6,
+   "year": 2021,
+   "stars": 4,
+   "why": "26.99 m², ~5.6 km zur Arbeit (Luftlinie), Kiez lebendig (242 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2021",
+   "points": 77,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     15.1,
+     16
+    ],
+    "Lage": [
+     3.2,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T12:42:07Z",
+   "coord": [
+    52.52955248,
+    13.33920761
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-19T12:43:13Z",
+ "updated": "2026-11-19T12:45:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2818,6 +2895,6 @@
    "chars": 1742
   }
  ],
- "last_auto": "2026-11-19T12:43:13Z",
+ "last_auto": "2026-11-19T12:45:20Z",
  "fix_selbstauskunft": 1
 }
