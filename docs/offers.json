@@ -2740,9 +2740,96 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T10:24:38Z",
    "photos_kept": true
+  },
+  "ibw-24605": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00644-0241-2201.html",
+   "title": "1 Zimmer mit tollem Blick",
+   "address": "Zwickauer Damm 12, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795083968-wVqFIyprON.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_257dcd93-b824-4236-9940-cd2c1c6525eb.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/5/csm_6578-degewo_d3a1e5bc-ac5c-4403-993f-d10cae3f3740_56cbb6e329.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_436cc8a9-658d-4c8a-9451-fc65e61280d0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_4db5e133-763b-42e0-a4de-e6226283856b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/e/7/csm_6578-degewo_c3a12855-de66-4e07-b070-16c4544d0bdc_6f91053c85.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_46b9af91-36de-4388-9d38-6df6dceb046b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_97ab79dd-16bb-45ee-9e68-bc24c72d49a2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_c8095d6e-8923-479b-813d-0de9c9be171c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_9ef2c8b7-f69c-48fb-ab27-283639910ce2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/f/csm_6578-degewo_9da1d4e6-f450-42a9-877c-5a32638c62c7_284dab791d.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 611.03,
+   "cold": 428.13,
+   "size": 46.78,
+   "floor": 22,
+   "levels": 27,
+   "year": 1968,
+   "stars": 2,
+   "why": "46.78 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (45 Lokale/Läden), Park nah, 5,8 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 22. Etage, Baujahr 1968, Hochhaus (27 Etagen)",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T10:26:08Z",
+   "coord": [
+    52.42300962,
+    13.48312511
+   ]
   }
  },
- "updated": "2026-11-19T10:26:39Z",
+ "updated": "2026-11-19T10:28:42Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2807,6 +2894,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-19T10:26:39Z",
+ "last_auto": "2026-11-19T10:28:42Z",
  "fix_selbstauskunft": 1
 }
