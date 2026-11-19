@@ -2652,9 +2652,86 @@
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
    "photos_kept": true
+  },
+  "ibw-24596": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02562-0102-0145",
+   "title": "Singleappartement im obersten Stockwerk bereits vorzeitig ab sofort neu zu vermieten",
+   "address": "Rhinstraße 147, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795078630-BaBz7mJ2h6.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 389.21,
+   "cold": 280.21,
+   "size": 27.1,
+   "floor": 7,
+   "levels": 8,
+   "year": 1975,
+   "stars": 1,
+   "why": "27.1 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, 3,5 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 7. Etage, Baujahr 1975",
+   "points": 39,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.1,
+     8
+    ],
+    "Zentrum": [
+     2.2,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T08:57:10Z",
+   "coord": [
+    52.53174178,
+    13.51785716
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-19T08:58:16Z",
+ "updated": "2026-11-19T09:00:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2719,6 +2796,6 @@
    "chars": 1910
   }
  ],
- "last_auto": "2026-11-19T08:58:16Z",
+ "last_auto": "2026-11-19T09:00:31Z",
  "fix_selbstauskunft": 1
 }
