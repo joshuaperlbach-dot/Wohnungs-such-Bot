@@ -2914,16 +2914,10 @@
    ]
   }
  },
- "updated": "2026-11-19T11:07:29Z",
+ "updated": "2026-11-19T11:09:27Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-17T17:21:39Z",
-   "kind": "bestaetigung",
-   "matched": true,
-   "chars": 3650
-  },
   {
    "at": "2026-11-17T17:32:07Z",
    "kind": "eingang",
@@ -2977,8 +2971,14 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1927
+  },
+  {
+   "at": "2026-11-19T11:07:48Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1911
   }
  ],
- "last_auto": "2026-11-19T11:07:29Z",
+ "last_auto": "2026-11-19T11:09:27Z",
  "fix_selbstauskunft": 1
 }
