@@ -2575,7 +2575,13 @@
    "address": "Franz-Klühs-Straße 9, 10969 Berlin",
    "bezirk": "Friedrichshain-Kreuzberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795081448-kgCONMXWw4.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795081448-kgCONMXWw4.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_e50fda2d-29ee-4eca-8789-db9b998f86d5.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_bd3b925b-344d-4c0c-9d28-952271e3fb1c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_98afae45-a11a-45c1-97aa-bc6ae0140c91.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_8e1704b1-7f67-4eb5-8bcc-8cb1b02fb471.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_bcf9af8c-49c7-4302-aae6-99d9c98e3db8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_5b4e73e3-4e90-49e6-aa47-ae42469df936.jpg"
    ],
    "rooms": 1,
    "price": 857.45,
@@ -2642,10 +2648,11 @@
     52.50085985,
     13.39265297
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-19T09:46:10Z",
+ "updated": "2026-11-19T09:48:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2710,6 +2717,6 @@
    "chars": 1910
   }
  ],
- "last_auto": "2026-11-19T09:46:10Z",
+ "last_auto": "2026-11-19T09:48:19Z",
  "fix_selbstauskunft": 1
 }
