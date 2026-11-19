@@ -2566,9 +2566,86 @@
    ],
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24600": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-40504-0104-0110",
+   "title": "Schöne Neubau-Wohnung für Singles",
+   "address": "Franz-Klühs-Straße 9, 10969 Berlin",
+   "bezirk": "Friedrichshain-Kreuzberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795081448-kgCONMXWw4.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 857.45,
+   "cold": 722.45,
+   "size": 39.63,
+   "floor": 6,
+   "levels": 7,
+   "year": 2020,
+   "stars": 3,
+   "why": "39.63 m², ~1.3 km zur Arbeit (Luftlinie), Kiez mittel (93 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2020",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     11.1,
+     20
+    ],
+    "Kiez": [
+     10.9,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     1.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T09:44:08Z",
+   "coord": [
+    52.50085985,
+    13.39265297
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-19T09:44:11Z",
+ "updated": "2026-11-19T09:46:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2633,6 +2710,6 @@
    "chars": 1910
   }
  ],
- "last_auto": "2026-11-19T09:44:11Z",
+ "last_auto": "2026-11-19T09:46:10Z",
  "fix_selbstauskunft": 1
 }
