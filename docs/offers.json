@@ -2760,7 +2760,15 @@
    "address": "Bremer Straße 12, 10551 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795092127-XixlpKDvm1.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795092127-XixlpKDvm1.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_ef6f8e3f-28ba-42ae-927e-692bfbd4da93.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_021ae06e-c973-4f1f-a5da-6db78f53371e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_0f3484d9-9abf-455b-8184-1f6303d4159f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_3e1eadf9-2649-438a-9356-39ecf1952906.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_61de5885-b541-41d2-9919-f4b58a198b57.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_b4e967aa-503b-4967-a071-c566dda20a8c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_092f301a-690a-4ace-ba48-0cbb405b0490.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_17f7a21e-7994-499a-9218-4c0ba2e7f1d6.jpg"
    ],
    "rooms": 1,
    "price": 463.71,
@@ -2827,10 +2835,11 @@
     52.52955248,
     13.33920761
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-19T12:45:20Z",
+ "updated": "2026-11-19T12:47:18Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2895,6 +2904,6 @@
    "chars": 1742
   }
  ],
- "last_auto": "2026-11-19T12:45:20Z",
+ "last_auto": "2026-11-19T12:47:18Z",
  "fix_selbstauskunft": 1
 }
