@@ -2060,88 +2060,6 @@
    "via": "mail",
    "photos_kept": true
   },
-  "ibw-24545": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1140-00644-0122-1202.html",
-   "title": "1 Zimmer sucht Nachmieter",
-   "address": "Zwickauer Damm 12, 12353 Berlin",
-   "bezirk": "Neukölln",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1794985146-Kx2zhYbSob.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6529-degewo_88eccb1b-eb33-41a7-8fd2-43562f73c272.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/e/csm_6529-degewo_51a0f384-1235-4f70-af12-cf6c74a4e632_357b8a4a0d.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6529-degewo_253f8ea6-c267-4e60-8d55-5eeeafe45a1b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/b/csm_6529-degewo_c5f952b9-85af-4f8f-953b-7300f067ed31_57d7f9f2f1.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/d/csm_6529-degewo_8cd19dfc-12cb-4a57-ac2c-d23f5660df39_9822fc9ae7.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 697.5,
-   "cold": 488.72,
-   "size": 53.4,
-   "floor": 12,
-   "levels": 27,
-   "year": 1968,
-   "stars": 2,
-   "why": "53.4 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (45 Lokale/Läden), Park nah, 5,8 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 12. Etage, Baujahr 1968, Hochhaus (27 Etagen)",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     7.8,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     0.0,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     5.3,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-18T06:59:06Z",
-   "coord": [
-    52.42300962,
-    13.48312511
-   ]
-  },
   "ibw-24557": {
    "source": "ibw",
    "company": "degewo",
@@ -2648,7 +2566,7 @@
    ]
   }
  },
- "updated": "2026-11-19T06:58:15Z",
+ "updated": "2026-11-19T07:00:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2713,6 +2631,6 @@
    "chars": 2827
   }
  ],
- "last_auto": "2026-11-19T06:58:15Z",
+ "last_auto": "2026-11-19T07:00:07Z",
  "fix_selbstauskunft": 1
 }
