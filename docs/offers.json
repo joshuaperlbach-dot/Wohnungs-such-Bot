@@ -2652,9 +2652,86 @@
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
    "photos_kept": true
+  },
+  "ibw-24595": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00180-0101-0072",
+   "title": "Singleappartement mit Weitblick in Prenzlauer Berg neu zu vermieten",
+   "address": "Prenzlauer Berg 17, 10405 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795077725-n04cJ8jcqZ.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 1,
+   "price": 455.25,
+   "cold": 291.25,
+   "size": 29.55,
+   "floor": 10,
+   "levels": 19,
+   "year": 1973,
+   "stars": 3,
+   "why": "29.55 m², ~2.8 km zur Arbeit (Luftlinie), Kiez mittel (84 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Aufzug, 10. Etage, Baujahr 1973, Hochhaus (19 Etagen)",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.5,
+     16
+    ],
+    "Lage": [
+     6.9,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T08:42:06Z",
+   "coord": [
+    52.52833861,
+    13.4218776
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-19T08:42:22Z",
+ "updated": "2026-11-19T08:44:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2719,6 +2796,6 @@
    "chars": 1910
   }
  ],
- "last_auto": "2026-11-19T08:42:22Z",
+ "last_auto": "2026-11-19T08:44:23Z",
  "fix_selbstauskunft": 1
 }
