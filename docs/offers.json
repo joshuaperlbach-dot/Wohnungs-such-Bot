@@ -2837,7 +2837,7 @@
    ]
   }
  },
- "updated": "2026-11-19T12:06:58Z",
+ "updated": "2026-11-19T12:08:55Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2902,6 +2902,6 @@
    "chars": 2821
   }
  ],
- "last_auto": "2026-11-19T12:06:58Z",
+ "last_auto": "2026-11-19T12:08:55Z",
  "fix_selbstauskunft": 1
 }
