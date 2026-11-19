@@ -2846,7 +2846,11 @@
    "address": "Amrumer Straße 36, 13353 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795092430-FDcN8z9thG.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795092430-FDcN8z9thG.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_0808a198-e8f8-4631-b5a3-a121139775b9.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_5eaf6b21-9d1b-452a-922a-8168014b14c6.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_97c42450-95e9-4770-9b5a-9ab29e49648f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_1a06287a-5755-4ab6-bd98-8b65a8304f95.jpg"
    ],
    "rooms": 1,
    "price": 365.36,
@@ -2913,10 +2917,11 @@
     52.54596627,
     13.34476231
    ],
-   "photo_tries": 2
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-19T12:51:32Z",
+ "updated": "2026-11-19T12:53:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2981,6 +2986,6 @@
    "chars": 1742
   }
  ],
- "last_auto": "2026-11-19T12:51:32Z",
+ "last_auto": "2026-11-19T12:53:33Z",
  "fix_selbstauskunft": 1
 }
