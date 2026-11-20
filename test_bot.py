@@ -1218,6 +1218,10 @@ def test_howoge_portal_mails():
                    "wir freuen uns, Ihnen einen Besichtigungstermin (AP944802) bestätigen zu können. "
                    "Bringen Sie bitte unbedingt ein Ausweisdokument mit")
     assert mail_check.process([gebucht], store, set(), now) == [] and store["offers"]["r"].get("reply") is None
+    erinnerung = mail("<e5@x>", "Erinnerung Besichtigungstermin - Rotkamp 9, 0301, 13053 Berlin",
+                      "in Kürze findet Ihr Wohnungsbesichtigungstermin (AP944802) statt. Unser Serviceteam freut sich, "
+                      "Sie am 20.11.2026 um 13:00 Uhr in der Rotkamp 9 zu begrüßen.")
+    assert mail_check.process([erinnerung], store, set(), now) == [] and store["offers"]["r"].get("reply") is None
     notes = mail_check.process([einladung], store, set(), now)
     assert store["offers"]["r"]["reply"] == "einladung" and len(notes) == 1 and notes[0].startswith("EINLADUNG"), notes
     assert "Rotkamp 9" in notes[0] and "24 Stunden" in notes[0]
