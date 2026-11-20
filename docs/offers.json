@@ -1100,7 +1100,7 @@
    "address": "Mellenseestraße 42, 10319 Berlin",
    "bezirk": "Lichtenberg",
    "images": [],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 728.96,
    "cold": 542.08,
@@ -1166,7 +1166,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z",
    "photos_kept": true,
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "ibw-24318": {
    "source": "ibw",
@@ -1426,7 +1426,7 @@
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z",
    "photos_kept": true,
-   "photo_tries": 8
+   "photo_tries": 9
   },
   "ibw-24429": {
    "source": "ibw",
@@ -1597,7 +1597,7 @@
    "reply_at": "2026-11-19T12:35:17Z",
    "photos_kept": true,
    "termin": "2026-11-20T12:00:00Z",
-   "photo_tries": 8
+   "photo_tries": 9
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
@@ -1935,7 +1935,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-17T17:21:24Z",
    "photos_kept": true,
-   "photo_tries": 6
+   "photo_tries": 7
   },
   "ibw-24541": {
    "source": "ibw",
@@ -1945,13 +1945,12 @@
    "address": "Lychener Straße 56, 10437 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "img/1a63a7c3439b/01.jpg",
-    "img/1a63a7c3439b/02.jpg",
-    "img/1a63a7c3439b/03.jpg",
-    "img/1a63a7c3439b/04.jpg",
-    "img/1a63a7c3439b/05.jpg"
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_import_2019-07-02_01_1000-00273-bild2-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_d739fc4c-5487-4c4d-b0ca-fbea5e141169.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_c84cb37d-8c7a-495b-a366-5871883df965.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_853fd40d-d3c5-4faf-ad26-3c9335ab1295.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 688.66,
    "cold": 443.66,
@@ -2020,7 +2019,11 @@
    "requested": "gesendet",
    "requested_at": "2026-11-17T22:49:18Z",
    "via": "mail",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00273-0103-0030/gewobag_bb974cc7-4913-46d2-95d2-81bf5ba36211.gif"
+   ]
   },
   "ibw-24593": {
    "source": "ibw",
@@ -2801,7 +2804,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:09:33Z",
+ "updated": "2026-11-20T15:11:39Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2866,7 +2869,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:09:33Z",
+ "last_auto": "2026-11-20T15:11:39Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
