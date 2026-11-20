@@ -2152,91 +2152,6 @@
    "via": "mail",
    "photos_kept": true
   },
-  "ibw-24596": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02562-0102-0145",
-   "title": "Singleappartement im obersten Stockwerk bereits vorzeitig ab sofort neu zu vermieten",
-   "address": "Rhinstraße 147, 10315 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795078630-BaBz7mJ2h6.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_import_2019-07-02_01_0100-02562-0102-bild2-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_7bdfc73c-9368-4a8c-abb4-ad523a6efe0f.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_b01206cd-5566-467c-80f8-14b13a15f018.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_cc1977ae-1f72-43b0-8069-f0ff264b26c9.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_197d1484-dadc-4642-b436-46e8b9e6e351.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_6a710608-4343-4ce1-999e-15d686d9411a.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_edc8dc20-1219-4eed-a20b-8142f857de30.jpg"
-   ],
-   "rooms": 1,
-   "price": 389.21,
-   "cold": 280.21,
-   "size": 27.1,
-   "floor": 7,
-   "levels": 8,
-   "year": 1975,
-   "stars": 1,
-   "why": "27.1 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, 3,5 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 7. Etage, Baujahr 1975",
-   "points": 39,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.1,
-     8
-    ],
-    "Zentrum": [
-     2.2,
-     10
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-19T08:57:10Z",
-   "coord": [
-    52.53174178,
-    13.51785716
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24600": {
    "source": "ibw",
    "company": "gewobag",
@@ -3183,7 +3098,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-20T08:56:09Z",
+ "updated": "2026-11-20T08:58:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3248,6 +3163,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T08:56:09Z",
+ "last_auto": "2026-11-20T08:58:05Z",
  "fix_selbstauskunft": 1
 }
