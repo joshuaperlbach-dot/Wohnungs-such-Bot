@@ -2064,92 +2064,6 @@
    "via": "mail",
    "photos_kept": true
   },
-  "ibw-24591": {
-   "source": "ibw",
-   "company": "degewo",
-   "url": "https://www.degewo.de/de/properties/W1300-70608-0010-0402.html",
-   "title": "Schöner Ausblick über die Bölschestraße",
-   "address": "Bölschestraße 103, 12587 Berlin",
-   "bezirk": "Treptow-Köpenick",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795071304-UnVGAcf1G5.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_7f1ecaf9-600c-4d67-8eac-8ee68262f723.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/5/csm_6566-degewo_9b51c315-f742-40c8-a41c-ea63d9ca0491_82cac82775.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_f677ea00-2711-4b17-8fc8-eb0c9c433b00.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_c27d7747-77a6-4010-9159-f130c17d9188.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_0f59ed3c-5d0f-4a28-82f0-b9b57b4eeec7.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_5d9d3d29-20ce-4b29-a576-4882f7ae0973.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_a3daeee6-85a0-495f-8329-e19e63040547.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_b0ca2093-98a7-447a-ba43-d3ac978e37e6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/8/csm_6566-degewo_0299ed37-77aa-4f3e-878c-82e87732a446_d203a39d8c.webp"
-   ],
-   "photos_checked": 5,
-   "rooms": 2,
-   "price": 744.88,
-   "cold": 555.36,
-   "size": 55.91,
-   "floor": 4,
-   "levels": 4,
-   "year": 1874,
-   "stars": 2,
-   "why": "55.91 m², ~15.6 km zur Arbeit (Luftlinie), Kiez mittel (131 Lokale/Läden), 11,7 km außerhalb S-Bahn-Ring (weit draußen), 4. Etage, Baujahr 1874",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     10.8,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     0.0,
-     10
-    ],
-    "ÖPNV": [
-     2.8,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     8.0,
-     8
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     6.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     5
-    ],
-    "Aufzug": [
-     1.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-19T06:55:05Z",
-   "coord": [
-    52.45210888,
-    13.62458394
-   ]
-  },
   "ibw-24593": {
    "source": "ibw",
    "company": "howoge",
@@ -3095,7 +3009,7 @@
    ]
   }
  },
- "updated": "2026-11-20T06:53:26Z",
+ "updated": "2026-11-20T06:55:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3160,6 +3074,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T06:53:26Z",
+ "last_auto": "2026-11-20T06:55:25Z",
  "fix_selbstauskunft": 1
 }
