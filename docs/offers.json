@@ -254,7 +254,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
    "via": "mail",
-   "photo_tries": 1,
+   "photo_tries": 2,
    "reply": "absage",
    "reply_at": "2026-11-05T20:20:37Z",
    "photos_kept": true
@@ -332,7 +332,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
    "via": "mail",
-   "photo_tries": 1,
+   "photo_tries": 2,
    "reply": "absage",
    "reply_at": "2026-11-08T20:56:25Z",
    "photos_kept": true
@@ -410,7 +410,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T11:41:23Z",
    "via": "mail",
-   "photo_tries": 1,
+   "photo_tries": 2,
    "reply": "absage",
    "reply_at": "2026-11-08T21:42:31Z",
    "photos_kept": true
@@ -519,19 +519,7 @@
    "title": "Wohnung mit Balkon in Alt-Hohenschönhausen neu zu vermieten",
    "address": "Simon-Bolivar-Straße 13, 13055 Berlin",
    "bezirk": "Lichtenberg",
-   "images": [
-    "img/17cc76767ccd/01.jpg",
-    "img/17cc76767ccd/02.jpg",
-    "img/17cc76767ccd/03.jpg",
-    "img/17cc76767ccd/04.jpg",
-    "img/17cc76767ccd/05.jpg",
-    "img/17cc76767ccd/06.jpg",
-    "img/17cc76767ccd/07.jpg",
-    "img/17cc76767ccd/08.jpg",
-    "img/17cc76767ccd/09.jpg",
-    "img/17cc76767ccd/10.jpg",
-    "img/17cc76767ccd/11.jpg"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 574.68,
@@ -597,7 +585,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T17:40:36Z",
    "via": "mail",
-   "photo_tries": 0,
+   "photo_tries": 1,
    "reply": "absage",
    "reply_at": "2026-11-10T16:50:41Z",
    "photos_kept": true
@@ -610,15 +598,14 @@
    "address": "Kopenhagener Straße 73, 10437 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "img/69c4c666d4e6/01.jpg",
-    "img/69c4c666d4e6/02.jpg",
-    "img/69c4c666d4e6/03.jpg",
-    "img/69c4c666d4e6/04.jpg",
-    "img/69c4c666d4e6/05.jpg",
-    "img/69c4c666d4e6/06.jpg",
-    "img/69c4c666d4e6/07.jpg"
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_d897a2a4-f93e-46c5-842a-c351d6e86f7c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_a03a73fc-9a8f-4831-a073-6be10fadd3f1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_ec9b64a6-4853-49c1-b1cc-8c9fa2fd32b8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_ea007f6d-acd2-468b-a0ee-5121fd494c86.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_18a3144b-6de7-4122-b9f8-d5e02ccad186.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_266f3714-7877-4f43-bb19-7cfea2f13c8b.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 691.77,
    "cold": 529.77,
@@ -686,7 +673,10 @@
    "photo_tries": 0,
    "photos_kept": true,
    "reply": "absage",
-   "reply_at": "2026-11-19T12:13:23Z"
+   "reply_at": "2026-11-19T12:13:23Z",
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00349-0103-0026/gewobag_d0d19120-6cae-45c7-882c-de493aa75a22.gif"
+   ]
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain-naehe-ostbahnhof/": {
    "source": "wbm",
@@ -2822,7 +2812,7 @@
    ]
   }
  },
- "updated": "2026-11-20T14:31:08Z",
+ "updated": "2026-11-20T14:31:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2887,7 +2877,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T14:31:08Z",
+ "last_auto": "2026-11-20T14:31:24Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
