@@ -1090,7 +1090,7 @@
    "reply": "einladung",
    "reply_at": "2026-11-12T16:54:25Z",
    "photos_kept": true,
-   "photo_tries": 8
+   "photo_tries": 9
   },
   "ibw-24260": {
    "source": "ibw",
@@ -1166,7 +1166,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z",
    "photos_kept": true,
-   "photo_tries": 7
+   "photo_tries": 8
   },
   "ibw-24318": {
    "source": "ibw",
@@ -1426,7 +1426,7 @@
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z",
    "photos_kept": true,
-   "photo_tries": 6
+   "photo_tries": 7
   },
   "ibw-24429": {
    "source": "ibw",
@@ -1597,7 +1597,7 @@
    "reply_at": "2026-11-19T12:35:17Z",
    "photos_kept": true,
    "termin": "2026-11-20T12:00:00Z",
-   "photo_tries": 6
+   "photo_tries": 7
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
@@ -1935,7 +1935,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-17T17:21:24Z",
    "photos_kept": true,
-   "photo_tries": 4
+   "photo_tries": 5
   },
   "ibw-24541": {
    "source": "ibw",
@@ -2801,7 +2801,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:05:32Z",
+ "updated": "2026-11-20T15:07:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2866,7 +2866,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:05:32Z",
+ "last_auto": "2026-11-20T15:07:33Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
