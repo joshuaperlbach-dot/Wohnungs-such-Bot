@@ -1358,7 +1358,7 @@
    "address": "Zingster Straße 21, 13051 Berlin",
    "bezirk": "Lichtenberg",
    "images": [],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 687.57,
    "cold": 440.88,
@@ -1426,7 +1426,7 @@
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z",
    "photos_kept": true,
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "ibw-24429": {
    "source": "ibw",
@@ -1528,7 +1528,7 @@
    "address": "Damerowstraße 59, 13187 Berlin",
    "bezirk": "Pankow",
    "images": [],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 609.0,
    "cold": 386.0,
@@ -1597,7 +1597,7 @@
    "reply_at": "2026-11-19T12:35:17Z",
    "photos_kept": true,
    "termin": "2026-11-20T12:00:00Z",
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
@@ -1935,7 +1935,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-17T17:21:24Z",
    "photos_kept": true,
-   "photo_tries": 7
+   "photo_tries": 8
   },
   "ibw-24541": {
    "source": "ibw",
@@ -2032,16 +2032,7 @@
    "title": "Handwerker:in-Objekt mit viel Potenzial",
    "address": "Weitlingstraße 109, 10317 Berlin",
    "bezirk": "Lichtenberg",
-   "images": [
-    "img/9ae11b0ad7ab/01.jpg",
-    "img/9ae11b0ad7ab/02.jpg",
-    "img/9ae11b0ad7ab/03.webp",
-    "img/9ae11b0ad7ab/04.webp",
-    "img/9ae11b0ad7ab/05.webp",
-    "img/9ae11b0ad7ab/06.webp",
-    "img/9ae11b0ad7ab/07.webp",
-    "img/9ae11b0ad7ab/08.webp"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 800.51,
@@ -2111,7 +2102,8 @@
    "requested": "gesendet",
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 1
   },
   "ibw-24604": {
    "source": "ibw",
@@ -2120,19 +2112,7 @@
    "title": "Anschauen- Einziehen",
    "address": "Münsterlandstraße 2, 10317 Berlin",
    "bezirk": "Lichtenberg",
-   "images": [
-    "img/0d95920d2287/01.jpg",
-    "img/0d95920d2287/02.jpg",
-    "img/0d95920d2287/03.webp",
-    "img/0d95920d2287/04.webp",
-    "img/0d95920d2287/05.jpg",
-    "img/0d95920d2287/06.webp",
-    "img/0d95920d2287/07.jpg",
-    "img/0d95920d2287/08.jpg",
-    "img/0d95920d2287/09.webp",
-    "img/0d95920d2287/10.webp",
-    "img/0d95920d2287/11.jpg"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 730.65,
@@ -2201,7 +2181,8 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T10:24:38Z",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 1
   },
   "ibw-24626": {
    "source": "ibw",
@@ -2804,7 +2785,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:11:39Z",
+ "updated": "2026-11-20T15:13:38Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2869,7 +2850,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:11:39Z",
+ "last_auto": "2026-11-20T15:13:38Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
