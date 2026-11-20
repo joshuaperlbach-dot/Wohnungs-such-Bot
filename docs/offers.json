@@ -2152,90 +2152,6 @@
    "via": "mail",
    "photos_kept": true
   },
-  "ibw-24600": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-40504-0104-0110",
-   "title": "Schöne Neubau-Wohnung für Singles",
-   "address": "Franz-Klühs-Straße 9, 10969 Berlin",
-   "bezirk": "Friedrichshain-Kreuzberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795081448-kgCONMXWw4.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_e50fda2d-29ee-4eca-8789-db9b998f86d5.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_bd3b925b-344d-4c0c-9d28-952271e3fb1c.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_98afae45-a11a-45c1-97aa-bc6ae0140c91.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_8e1704b1-7f67-4eb5-8bcc-8cb1b02fb471.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_bcf9af8c-49c7-4302-aae6-99d9c98e3db8.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_5b4e73e3-4e90-49e6-aa47-ae42469df936.jpg"
-   ],
-   "rooms": 1,
-   "price": 857.45,
-   "cold": 722.45,
-   "size": 39.63,
-   "floor": 6,
-   "levels": 7,
-   "year": 2020,
-   "stars": 3,
-   "why": "39.63 m², ~1.3 km zur Arbeit (Luftlinie), Kiez mittel (93 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2020",
-   "points": 68,
-   "parts": {
-    "Kosten": [
-     11.1,
-     20
-    ],
-    "Kiez": [
-     10.9,
-     16
-    ],
-    "Lage": [
-     8.0,
-     8
-    ],
-    "Zentrum": [
-     10.0,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     5.6,
-     8
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     1.3,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-19T09:44:08Z",
-   "coord": [
-    52.50085985,
-    13.39265297
-   ],
-   "photo_tries": 0,
-   "photos_checked": 5
-  },
   "ibw-24604": {
    "source": "ibw",
    "company": "howoge",
@@ -3098,7 +3014,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-20T09:43:01Z",
+ "updated": "2026-11-20T09:45:04Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3163,6 +3079,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T09:43:01Z",
+ "last_auto": "2026-11-20T09:45:04Z",
  "fix_selbstauskunft": 1
 }
