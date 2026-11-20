@@ -2103,7 +2103,7 @@
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
    "photos_kept": true,
-   "photo_tries": 3
+   "photo_tries": 4
   },
   "ibw-24604": {
    "source": "ibw",
@@ -2182,7 +2182,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T10:24:38Z",
    "photos_kept": true,
-   "photo_tries": 3
+   "photo_tries": 4
   },
   "ibw-24626": {
    "source": "ibw",
@@ -2261,7 +2261,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T13:44:06Z",
    "photos_kept": true,
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "ibw-24644": {
    "source": "ibw",
@@ -2438,7 +2438,10 @@
     13.30037156
    ],
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_6e34b8d9-ceb1-43b5-9a2a-9a728aa46cda.gif"
+   ]
   },
   "ibw-24655": {
    "source": "ibw",
@@ -2458,7 +2461,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_092f301a-690a-4ace-ba48-0cbb405b0490.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_17f7a21e-7994-499a-9218-4c0ba2e7f1d6.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 463.71,
    "cold": 463.71,
@@ -2523,6 +2526,10 @@
    "coord": [
     52.52936785,
     13.33860784
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_db13e652-2a93-4394-9cf6-718bee1c9c7d.gif"
    ]
   },
   "ibw-24657": {
@@ -2693,7 +2700,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:17:44Z",
+ "updated": "2026-11-20T15:19:46Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2758,7 +2765,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:17:44Z",
+ "last_auto": "2026-11-20T15:19:46Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
