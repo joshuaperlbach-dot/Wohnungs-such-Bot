@@ -3007,9 +3007,99 @@
     52.53913524,
     13.29881266
    ]
+  },
+  "ibw-24644": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00666-1031-1202.html",
+   "title": "2 Zimmer in der Gropiusstadt",
+   "address": "Friedrich-Kayßler-Weg 5, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795158908-K4Ibtz26ev.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_581b84c8-f904-4cd3-8111-6f6e7f438a0f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/4/csm_6609-degewo_0fbabf5a-4f12-4457-a7b1-8a1b13e1a6b8_fc9b4b94d3.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/b/csm_6609-degewo_6f077f60-2945-4d0f-8045-117695555a17_31e857427e.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/1/csm_6609-degewo_bdf19655-1ad0-4fa3-bbe4-5b04b381288a_03c2516aa1.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_70e1ec7f-97c7-48ab-a8a2-0a5842fdd8c5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_2457d65a-497a-4848-b91b-546f2bd094f1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_5baf80ba-9385-4655-81c7-a67ea85f59d6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_7b820e99-c045-4a96-a6ea-2b72d81f0927.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_dbdd2e5c-c103-4b2e-9cad-6bd133d8cf0e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_d3ce5660-46bd-4c08-904e-ea081ec989bc.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_9b09925a-f442-41b2-b521-d743c04383c8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_fc0a95cd-60a5-4c48-98ae-f5ebcb28dd2d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/2/csm_6609-degewo_eb21acf3-b227-41b8-b9dc-2b6415c8b4ef_ff2ebbd35a.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 702.83,
+   "cold": 488.0,
+   "size": 60.69,
+   "floor": 12,
+   "levels": 12,
+   "year": 1968,
+   "stars": 2,
+   "why": "60.69 m², ~9.8 km zur Arbeit (Luftlinie), Kiez wenig los (29 Lokale/Läden), Park nah, 5,4 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 12. Etage, Baujahr 1968, Hochhaus (12 Etagen)",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.9,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     7.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T07:15:08Z",
+   "coord": [
+    52.42300807,
+    13.46893706
+   ]
   }
  },
- "updated": "2026-11-20T07:15:02Z",
+ "updated": "2026-11-20T07:17:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3074,6 +3164,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T07:15:02Z",
+ "last_auto": "2026-11-20T07:17:08Z",
  "fix_selbstauskunft": 1
 }
