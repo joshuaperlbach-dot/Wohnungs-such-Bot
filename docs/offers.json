@@ -3106,7 +3106,13 @@
    "address": "Schwambzeile 7, 13627 Berlin",
    "bezirk": "Charlottenburg-Wilmersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795162747-rwfR9v0nBr.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795162747-rwfR9v0nBr.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_a958fc8f-005f-4c58-a21d-d01035ec358c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_d467fdaf-7b10-4c2f-9d3c-0c9e36c213b3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_356e1412-99d8-4ceb-8826-9ddd113316bb.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_4ab0b4c5-2f12-4e04-963f-013dc2b06cd2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_fdaa0c3b-01a6-46c1-b002-7bdf34464024.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_8ed1c212-c48c-48a3-8a3b-716188e1f01d.jpg"
    ],
    "rooms": 1,
    "price": 593.94,
@@ -3173,10 +3179,11 @@
     52.53769102,
     13.30037156
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-20T08:21:07Z",
+ "updated": "2026-11-20T08:23:07Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3241,6 +3248,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T08:21:07Z",
+ "last_auto": "2026-11-20T08:23:07Z",
  "fix_selbstauskunft": 1
 }
