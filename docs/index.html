@@ -140,6 +140,10 @@
   #map { height: 280px; border-radius: 12px; background: var(--chip); z-index: 0; }
   .dist { color: var(--muted); font-size: 14px; margin-top: 8px; }
   .places-btn { background: var(--chip); border-radius: 8px; padding: 6px 10px; font-size: 14px; margin-top: 8px; }
+  /* Grundriss in der Anzeige: ganz zeigen, weißer Grund (oft GIF/PNG mit Transparenz) */
+  .plans img { display: block; width: 100%; max-height: 70vh; object-fit: contain; background: #fff;
+               border-radius: 10px; margin-bottom: 8px; cursor: zoom-in; }
+  .badge.plan { background: var(--chip); color: var(--ink); }
   /* Mails zur Wohnung (verschlüsselt gespeichert, Text erst nach Antippen) */
   .mail { border-bottom: 1px solid var(--line); }
   .mail > button { width: 100%; text-align: left; background: none; padding: 9px 0; display: flex; gap: 8px;
@@ -403,6 +407,7 @@ function makeCard(key, o) {
     if (o.points != null) stars.append(el("small", null, `${o.points} Punkte`));
     const v = viewing(o);
     if (v) stars.append(el("span", "badge " + v.cls, v.text));
+    if ((o.plans || []).length) stars.append(el("span", "badge plan", "Grundriss"));
     info.append(stars,
       el("div", "main-line", `${rooms(o.rooms)} Zi · ${num(o.size)} m² · ${num(o.price)} € warm`),
       place(o),
@@ -455,6 +460,20 @@ function drawDetail() {
   const chips = el("div", "chips");
   for (const bit of String(o.why || "").split(", ").filter(Boolean)) chips.append(el("span", "chip", bit));
   body.append(chips);
+
+  const plans = (o.plans || []).map(imgUrl).filter(Boolean);
+  if (plans.length) {
+    body.append(el("h3", null, "Grundriss"));
+    const box = el("div", "plans");
+    for (const src of plans) {
+      const i = el("img");
+      i.loading = "lazy"; i.alt = "Grundriss"; i.referrerPolicy = "no-referrer"; i.src = src;
+      i.addEventListener("error", () => i.remove());
+      i.addEventListener("click", () => viewFrom(box, i));
+      box.append(i);
+    }
+    body.append(box);
+  }
 
   body.append(el("h3", null, "Eckdaten"));
   const t = el("table");

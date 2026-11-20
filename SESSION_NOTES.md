@@ -237,3 +237,10 @@ Besichtigungen aus; wer nicht gezogen wird, bekommt keine Nachricht. Selbstausku
 Muskauer Str. 22 (17.11., von Josh ausgefüllt). Automatisches Ausfüllen: Formular noch unbekannt (Link nur einmal
 gültig, der Bot darf ihn nicht zum Ansehen öffnen); Josh schickt beim nächsten Mal Screenshots. Fehlt noch das
 Secret MIETE_VERFUEGBAR, HAUSHALT_EINKOMMEN ist da.
+
+## Grundrisse (20.11.2026)
+ibw_bot.floor_plans(html, base) findet den Grundriss: Gewobag <img alt="Grundriss"> (GIF im Objektordner), degewo
+<figure> mit figcaption "MedienGrundriss...", WBM Kasten "openimmo-detail__layout" (Link aufs große Bild). HOWOGE
+liefert im HTML keinen (vermutlich per JS nachgeladen). Gespeichert als offer["plans"], aus den Fotos herausgenommen,
+nach einer Anfrage mitgesichert (docs/img/<ordner>/grundriss-NN.ext). PHOTOS_VERSION 6 holt sie für gelistete
+inberlinwohnen-Angebote nach. Anzeige: Abschnitt "Grundriss" in der Anzeige, Hinweis "Grundriss" auf der Karte.

@@ -47,8 +47,9 @@ def add(store, key, offer, now):
     gesendete Anfrage bleiben erhalten."""
     old = store["offers"].get(key, {})
     merged = {**old, **{k: v for k, v in offer.items() if v is not None}}
-    if any(is_local(u) for u in old.get("images") or []):
-        merged["images"] = old["images"]  # schon gesicherte Fotos behalten
+    for field in ("images", "plans"):
+        if any(is_local(u) for u in old.get(field) or []):
+            merged[field] = old[field]  # schon gesicherte Fotos und Grundrisse behalten
     since = parse_time(old.get("online_since") or offer.get("online_since"))
     merged["online_since"] = iso(since or now)
     if merged.get("requested") in REQUESTED:
@@ -70,37 +71,41 @@ def photo_folder(key):
 
 
 def keep_photos(store, key, http, limit=MAX_PHOTOS):
-    """Fotos eines angefragten Angebots nach docs/img/<ordner>/ kopieren und in der Liste auf die
-    Kopien umstellen. Gibt die Zahl der gesicherten Fotos zurück; Fehler lassen den Bot weiterlaufen."""
+    """Fotos und Grundrisse eines angefragten Angebots nach docs/img/<ordner>/ kopieren und in der Liste
+    auf die Kopien umstellen. Gibt die Zahl der gesicherten Bilder zurück; Fehler lassen den Bot weiterlaufen."""
     o = store["offers"].get(key)
     if not o or o.get("photos_kept"):
         return 0
     o["photos_kept"] = True  # nur ein Versuch pro Angebot
     folder = photo_folder(key)
-    out = []
-    for i, url in enumerate(u for u in (o.get("images") or []) if not is_local(u)):
-        if len(out) >= limit or not str(url).startswith("https://"):
-            continue
-        try:
-            r = http.get(url, timeout=15)
-        except Exception:
-            continue
-        kind = r.headers.get("Content-Type", "")
-        if r.status_code != 200 or not kind.startswith("image/") or len(r.content) > MAX_PHOTO_BYTES:
-            continue
-        ext = {"image/png": "png", "image/webp": "webp"}.get(kind.split(";")[0], "jpg")
-        (PHOTO_DIR / folder).mkdir(parents=True, exist_ok=True)
-        name = f"{i + 1:02d}.{ext}"
-        (PHOTO_DIR / folder / name).write_bytes(r.content)
-        out.append(f"img/{folder}/{name}")
-    if out:
-        o["images"] = out
-    return len(out)
+    total = 0
+    for field, prefix in (("images", ""), ("plans", "grundriss-")):
+        out = []
+        for i, url in enumerate(u for u in (o.get(field) or []) if not is_local(u)):
+            if len(out) >= limit or not str(url).startswith("https://"):
+                continue
+            try:
+                r = http.get(url, timeout=15)
+            except Exception:
+                continue
+            kind = r.headers.get("Content-Type", "")
+            if r.status_code != 200 or not kind.startswith("image/") or len(r.content) > MAX_PHOTO_BYTES:
+                continue
+            ext = {"image/png": "png", "image/webp": "webp", "image/gif": "gif"}.get(kind.split(";")[0], "jpg")
+            (PHOTO_DIR / folder).mkdir(parents=True, exist_ok=True)
+            name = f"{prefix}{i + 1:02d}.{ext}"
+            (PHOTO_DIR / folder / name).write_bytes(r.content)
+            out.append(f"img/{folder}/{name}")
+        if out:
+            o[field] = out
+        total += len(out)
+    return total
 
 
 def drop_unused_photos(store):
     """Ordner von Angeboten, die nicht mehr in der Liste stehen, wieder löschen."""
-    used = {u.split("/")[1] for o in store["offers"].values() for u in o.get("images") or [] if is_local(u)}
+    used = {u.split("/")[1] for o in store["offers"].values()
+            for u in (o.get("images") or []) + (o.get("plans") or []) if is_local(u)}
     if PHOTO_DIR.is_dir():
         for d in PHOTO_DIR.iterdir():
             if d.is_dir() and d.name not in used:

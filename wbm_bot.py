@@ -258,6 +258,8 @@ def expose_details(html, base):
     lines = [x for x in intro.get_text("\n", strip=True).split("\n")] if intro else []
     lines = [x for x in lines if x != "Wohnungsdetails"]
     address = next((x for x in lines if re.search(r"\d{5}\s+Berlin", x)), "")
+    import ibw_bot  # Grundriss-Erkennung ist für alle Seiten dieselbe
+    plans = ibw_bot.floor_plans(html, base)
     images = []
     for img in soup.find_all("img"):
         src = img.get("src") or img.get("data-src") or ""
@@ -267,7 +269,8 @@ def expose_details(html, base):
         "title": h1.get_text(" ", strip=True) if h1 else "",
         "address": address,
         "text": "\n".join(x for x in lines if x != address),
-        "images": images[:12],
+        "images": [u for u in images if u not in plans][:12],
+        "plans": plans,
     }
 
 
@@ -302,7 +305,7 @@ def keep_requested_photos(store, limit=3):
     """Fotos angefragter Angebote sichern (die Gesellschaften löschen sie, sobald das Angebot weg ist).
     Läuft nach dem Senden, kostet also keine Zeit bei der Anfrage. Höchstens ein paar Angebote pro Lauf."""
     todo = [k for k, o in store["offers"].items() if o.get("requested") in offers.REQUESTED
-            and not o.get("photos_kept") and o.get("images")]
+            and not o.get("photos_kept") and (o.get("images") or o.get("plans"))]
     for key in todo[:limit]:
         try:
             offers.keep_photos(store, key, HTTP)
@@ -316,7 +319,7 @@ def app_offer(l, expose_html, rated, status):
     text = BeautifulSoup(expose_html, "html.parser").get_text(" ", strip=True)
     return {
         "source": "wbm", "company": "wbm", "url": l["url"],
-        "title": d["title"], "address": d["address"], "text": d["text"], "images": d["images"],
+        "title": d["title"], "address": d["address"], "text": d["text"], "images": d["images"], "plans": d["plans"] or None,
         "bezirk": next((x for x in ALLOWED_DISTRICTS + OTHER_DISTRICTS if l["text"].startswith(x)), ""),
         "rooms": l["rooms"], "price": l["price"], "cold": l.get("cold"),
         "size": rating.parse_size(l["text"]), "floor": rating.parse_floor(text),

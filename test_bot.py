@@ -670,7 +670,7 @@ def test_add_missing_photos():
     assert store["offers"]["ibw-0"]["images"] == [first, "https://x/alt-teaser.jpg"]  # verschwunden: unverändert
     # Fehlerseite (Angebot weg): keine Fotos von dort
     with mock.patch("wbm_bot.HTTP.get", return_value=mock.Mock(text=page, status_code=404)):
-        assert ibw_bot.company_page({"url": "https://example.org/9"}) == (False, [])
+        assert ibw_bot.company_page({"url": "https://example.org/9"}) == (False, [], [])
     # Fotos noch nicht online: später nochmal (höchstens PHOTO_TRIES-mal); geförderte Wohnung fliegt raus
     store = {"offers": {"ibw-1": {"url": "https://example.org/1", "images": [first]},
                         "ibw-2": {"url": "https://example.org/2", "images": [first]},
@@ -1330,6 +1330,29 @@ def test_wbm_selbstauskunft_is_a_chance_not_a_rejection():
     notes = mail_check.process([m], store, set(), now)
     assert store["offers"]["m"]["reply"] == "selbstauskunft", store
     assert len(notes) == 1 and notes[0].startswith("WBM-CHANCE") and "Muskauer" in notes[0] and "24 Stunden" in notes[0]
+
+
+def test_floor_plans():
+    """Grundriss je Gesellschaft erkennen (Aufbau wie auf den echten Seiten, 20.11.2026)."""
+    import ibw_bot
+    import wbm_bot
+    gewobag = """<img src="/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_53f7.gif" alt="Grundriss">
+    <img src="/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_aaaa.jpg" alt="Wohnzimmer">"""
+    assert ibw_bot.floor_plans(gewobag, "https://www.gewobag.de/x/") == [
+        "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_53f7.gif"]
+    degewo = """<figure><picture><img src="/fileadmin/_processed_/a/b/csm_plan_1a2b3c4d5e.jpg"
+    data-srcset="/fileadmin/_processed_/a/b/csm_plan_1a2b3c4d5e.jpg 600w, /fileadmin/plan.jpg 1600w"></picture>
+    <figcaption class="c-figure__figcaption"> MedienGrundrissPrimärbild.jpg </figcaption></figure>
+    <figure><img src="/fileadmin/bad.jpg"><figcaption>MedienBildPrimärbild.jpg</figcaption></figure>"""
+    assert ibw_bot.floor_plans(degewo, "https://www.degewo.de/de/properties/W1.html") == ["https://www.degewo.de/fileadmin/plan.jpg"]
+    wbm = """<div class="openimmo-detail__layout"><h3 class="openimmo-detail__layout-title">Grundriss</h3>
+    <a href="/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-5e6e.jpg"><img alt="Bilder Grundriss"
+    src="/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-5e6e.jpg"></a></div>
+    <img src="/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-foto.jpg">"""
+    d = wbm_bot.expose_details(wbm, "https://www.wbm.de/x/")
+    assert d["plans"] == ["https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-5e6e.jpg"], d
+    assert d["images"] == ["https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-foto.jpg"], d
+    assert ibw_bot.floor_plans("<img src='/a.jpg' alt='Küche'>", "https://x.de/") == []
 
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
