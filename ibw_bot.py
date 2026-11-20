@@ -187,6 +187,7 @@ def app_offer(l, r):
         "images": list(dict.fromkeys(([l["image"]] if l["image"] else []) + l.get("more_images", []))),
         # Gewobag stellt die Fotos manchmal erst etwas später online: dann später nachholen
         "photos_checked": PHOTOS_VERSION if l.get("more_images") else None,
+        "plans": l.get("plans") or None,
         "rooms": l["rooms"], "price": l["price"], "cold": l["cold"], "size": l["size"],
         "floor": l["floor"], "levels": l["levels"], "year": l["year"],
         "stars": r.stars, "why": r[1], "points": r.points, "parts": r.parts,
@@ -232,7 +233,41 @@ MAX_IMAGES = 20
 PHOTO_TRIES = 10  # so oft (einmal pro Lauf) nach Fotos sehen, bevor wir aufgeben
 # Seiten, deren Wohnungsfotos immer im Ordner mit der Objektnummer liegen: sonst keine Fotos
 OWN_FOLDER_ONLY = ("gewobag.de",)
-PHOTOS_VERSION = 5  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
+PHOTOS_VERSION = 6  # erhöhen, wenn sich das Foto-Sammeln ändert: dann werden alle Angebote neu geprüft
+
+
+PLAN_HINT = re.compile(r"grundriss|floor.?plan", re.I)
+PLAN_BOX = re.compile(r"grundriss|floor.?plan|openimmo-detail__layout|rental-plan", re.I)
+PLAN_FILE = re.compile(r"\.(jpe?g|webp|png|gif)(\?|$)", re.I)
+
+
+def floor_plans(html, base):
+    """Grundriss-Bilder der Seite: Bild mit alt/title "Grundriss" (Gewobag, WBM), Bildunterschrift mit
+    "Grundriss" (degewo) oder Bild bzw. Link in einem Grundriss-Kasten (WBM: openimmo-detail__layout)."""
+    soup = BeautifulSoup(html, "html.parser")
+    out, keys = [], set()
+
+    def add(u):
+        u = urljoin(base, (u or "").strip())
+        if u.startswith("https://") and PLAN_FILE.search(u) and not re.search(r"logo|icon|favicon|sprite", u, re.I):
+            k = photo_key(u)
+            if k not in keys:
+                keys.add(k)
+                out.append(u)
+
+    for img in soup.find_all("img"):
+        label = f"{img.get('alt', '')} {img.get('title', '')}"
+        fig = img.find_parent("figure")
+        cap = fig.find("figcaption") if fig else None
+        box = img.find_parent(class_=PLAN_BOX)
+        if PLAN_HINT.search(label) or (cap and PLAN_HINT.search(cap.get_text(" "))) or box:
+            link = img.find_parent("a", href=True)
+            srcset = img.get("data-srcset") or img.get("srcset")
+            best = (link["href"] if link and PLAN_FILE.search(link["href"]) else
+                    srcset.split(",")[-1].strip().split(" ")[0] if srcset else
+                    img.get("data-src") or img.get("src"))
+            add(best)
+    return out[:4]
 
 
 def page_images(html, base):
@@ -281,7 +316,7 @@ def add_missing_photos(store, limit=5):
     todo = [(k, o) for k, o in store["offers"].items() if k.startswith("ibw-") and not o.get("gone")
             and o.get("photos_checked") != PHOTOS_VERSION and safe_url(o.get("url"))]
     for key, o in todo[:limit]:
-        wbs, more = company_page(o)
+        wbs, more, plans = company_page(o)
         if wbs and not ALLOW_WBS and not o.get("requested"):
             del store["offers"][key]  # gefördert/WBS: erst auf der Seite der Gesellschaft erkennbar
             continue
@@ -291,6 +326,8 @@ def add_missing_photos(store, limit=5):
         # Bild von inberlinwohnen behalten, Fotos der Gesellschaft neu (frühere Versuche hatten Ausschuss)
         first = [u for u in (o.get("images") or [])[:1] if "inberlinwohnen.de" in u]
         o["images"] = list(dict.fromkeys(first + more))
+        if plans and not any(offers.is_local(u) for u in o.get("plans") or []):
+            o["plans"] = plans
 
 
 def safe_url(u):
@@ -298,14 +335,17 @@ def safe_url(u):
 
 
 def company_page(l):
-    """Seite der Gesellschaft (nur für Treffer): (WBS-Etikett gefunden?, Fotos der Wohnung)."""
+    """Seite der Gesellschaft (nur für Treffer): (WBS-Etikett gefunden?, Fotos der Wohnung, Grundrisse)."""
     try:
         resp = wbm_bot.HTTP.get(l["url"], timeout=20)
     except requests.RequestException:
-        return False, []
+        return False, [], []
     if resp.status_code != 200:  # z.B. Angebot schon weg: Fehlerseite hat keine Wohnungsfotos
-        return False, []
-    return page_says_wbs(resp.text), page_images(resp.text, l["url"])
+        return False, [], []
+    plans = floor_plans(resp.text, l["url"])
+    keys = {photo_key(u) for u in plans}
+    photos = [u for u in page_images(resp.text, l["url"]) if photo_key(u) not in keys]
+    return page_says_wbs(resp.text), photos, plans
 
 
 def fetch_new(seen, first_run):
@@ -364,7 +404,7 @@ def main():
         recent = since is None or now - since < offers.KEEP_UNREQUESTED
         if not matches(l) or not (fresh or recent):
             continue
-        wbs, l["more_images"] = company_page(l)
+        wbs, l["more_images"], l["plans"] = company_page(l)
         if wbs and not ALLOW_WBS:
             continue
         r = rated(l)
