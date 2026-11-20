@@ -2033,7 +2033,7 @@
    "address": "Weitlingstraße 109, 10317 Berlin",
    "bezirk": "Lichtenberg",
    "images": [],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 800.51,
    "cold": 534.64,
@@ -2103,7 +2103,7 @@
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
    "photos_kept": true,
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "ibw-24604": {
    "source": "ibw",
@@ -2113,7 +2113,7 @@
    "address": "Münsterlandstraße 2, 10317 Berlin",
    "bezirk": "Lichtenberg",
    "images": [],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 730.65,
    "cold": 552.35,
@@ -2182,7 +2182,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T10:24:38Z",
    "photos_kept": true,
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "ibw-24626": {
    "source": "ibw",
@@ -2261,7 +2261,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T13:44:06Z",
    "photos_kept": true,
-   "photo_tries": 8
+   "photo_tries": 9
   },
   "ibw-24644": {
    "source": "ibw",
@@ -2707,7 +2707,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:30:19Z",
+ "updated": "2026-11-20T15:32:36Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2772,7 +2772,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:30:19Z",
+ "last_auto": "2026-11-20T15:32:36Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
