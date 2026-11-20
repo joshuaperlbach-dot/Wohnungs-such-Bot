@@ -2934,7 +2934,14 @@
    "address": "Reichweindamm 21, 13627 Berlin",
    "bezirk": "Charlottenburg-Wilmersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795170727-49qtEMOhIK.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795170727-49qtEMOhIK.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_488e8ba8-4d24-4b3c-9b1d-315061e0cb1d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_import_2019-07-02_01_0100-01611-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_a23dde92-24da-4d6d-be19-7dbc082c3fe8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_ec15612f-6802-404e-89f4-50fa2a2e17df.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_d5ec103a-ec41-4fda-889e-26e2224465b0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_96217297-bec3-4eaa-8f29-7afa98772f70.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_34bba22a-6e23-43cc-8094-a599883b2fc2.jpg"
    ],
    "rooms": 2,
    "price": 698.35,
@@ -3001,10 +3008,11 @@
     52.53624656,
     13.30221317
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 5
   }
  },
- "updated": "2026-11-20T10:35:29Z",
+ "updated": "2026-11-20T10:37:31Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3069,6 +3077,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T10:35:29Z",
+ "last_auto": "2026-11-20T10:37:31Z",
  "fix_selbstauskunft": 1
 }
