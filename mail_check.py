@@ -50,7 +50,9 @@ SEEN_FILE = Path(__file__).with_name("mail_seen.json")
 RECEIPT = (r"Formularbestätigung|für das Ausfüllen des Formulars"
            r"|automatisierten Zufallsverfahren|Damit wir Ihre Anfrage bearbeiten"
            # HOWOGE: Bestätigung eines schon gebuchten Termins (kein neuer Alarm)
-           r"|Terminbestätigung|Besichtigungstermin \(\w+\) bestätigen zu können")
+           r"|Terminbestätigung|Besichtigungstermin \(\w+\) bestätigen zu können"
+           # HOWOGE: Erinnerung an einen schon gebuchten Termin
+           r"|Erinnerung Besichtigungstermin|in Kürze findet Ihr Wohnungsbesichtigungstermin")
 # degewo will nach der Anfrage noch ein zweites Formular; erst dann wird die Anfrage aufgenommen
 FORM_NEEDED = r"füllen Sie das beigefügte Formular aus"
 FORM_LINK = re.compile(r"https://[a-z.]*degewo\.de/\S*/application/form/\S+")
