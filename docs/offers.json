@@ -1090,7 +1090,7 @@
    "reply": "einladung",
    "reply_at": "2026-11-12T16:54:25Z",
    "photos_kept": true,
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "ibw-24260": {
    "source": "ibw",
@@ -1166,7 +1166,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-11T11:28:22Z",
    "photos_kept": true,
-   "photo_tries": 1
+   "photo_tries": 2
   },
   "ibw-24318": {
    "source": "ibw",
@@ -1357,13 +1357,7 @@
    "title": "2-Zimmer-Wohnung ohne WBS in Neu-Hohenschönhausen",
    "address": "Zingster Straße 21, 13051 Berlin",
    "bezirk": "Lichtenberg",
-   "images": [
-    "img/b95eae6e4779/02.jpg",
-    "img/b95eae6e4779/03.webp",
-    "img/b95eae6e4779/04.webp",
-    "img/b95eae6e4779/05.webp",
-    "img/b95eae6e4779/06.webp"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 687.57,
@@ -1431,7 +1425,8 @@
    "requested_at": "2026-11-13T10:20:33Z",
    "reply": "einladung",
    "reply_at": "2026-11-13T11:07:45Z",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 1
   },
   "ibw-24429": {
    "source": "ibw",
@@ -1441,9 +1436,18 @@
    "address": "Sandsteinweg 31, 12349 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "img/efa4b7bea4a7/01.jpg"
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_fc558c7f-6c6e-4798-b18d-330c3a45d607.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/f/csm_6339-degewo_9185fa7b-efbb-461b-8eeb-8c4567d37b57_38c0d51131.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_eea50658-65ce-4b95-9a46-8e7bcac6b62d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_850ee9de-fe47-47aa-b62b-bcf86262297b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_25452e06-8b8c-400c-96f3-b54f6223b970.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_b37f2039-e20f-4d47-bad6-8bb6c0e66a25.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_a8b656c0-c0e2-4e59-a261-a4f1e1e57c97.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_81ed1ccc-7d58-46aa-9dc0-41524ed6612f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_f91cc751-5a5c-46b6-b275-9f77ae3c209d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6339-degewo_3219e44c-e7e4-4911-abb5-43a15764406f.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 743.72,
    "cold": 544.72,
@@ -1510,7 +1514,11 @@
    "confirm": "formular",
    "photos_kept": true,
    "reply": "absage",
-   "reply_at": "2026-11-17T11:51:26Z"
+   "reply_at": "2026-11-17T11:51:26Z",
+   "photo_tries": 0,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/f/csm_6339-degewo_67a97015-d4de-4f7b-94bf-17527d1c9a57_ebeda9f777.jpg"
+   ]
   },
   "ibw-24451": {
    "source": "ibw",
@@ -1519,11 +1527,7 @@
    "title": "Ab sofort!",
    "address": "Damerowstraße 59, 13187 Berlin",
    "bezirk": "Pankow",
-   "images": [
-    "img/4f18b57313b1/02.jpg",
-    "img/4f18b57313b1/03.webp",
-    "img/4f18b57313b1/04.webp"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 609.0,
@@ -1592,7 +1596,8 @@
    "reply": "einladung",
    "reply_at": "2026-11-19T12:35:17Z",
    "photos_kept": true,
-   "termin": "2026-11-20T12:00:00Z"
+   "termin": "2026-11-20T12:00:00Z",
+   "photo_tries": 1
   },
   "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/": {
    "source": "wbm",
@@ -2800,7 +2805,7 @@
    ]
   }
  },
- "updated": "2026-11-20T14:53:15Z",
+ "updated": "2026-11-20T14:55:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2865,7 +2870,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T14:53:15Z",
+ "last_auto": "2026-11-20T14:55:19Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
