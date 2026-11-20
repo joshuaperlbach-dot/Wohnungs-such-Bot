@@ -1935,7 +1935,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-17T17:21:24Z",
    "photos_kept": true,
-   "photo_tries": 8
+   "photo_tries": 9
   },
   "ibw-24541": {
    "source": "ibw",
@@ -2103,7 +2103,7 @@
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
    "photos_kept": true,
-   "photo_tries": 1
+   "photo_tries": 2
   },
   "ibw-24604": {
    "source": "ibw",
@@ -2182,7 +2182,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T10:24:38Z",
    "photos_kept": true,
-   "photo_tries": 1
+   "photo_tries": 2
   },
   "ibw-24626": {
    "source": "ibw",
@@ -2191,19 +2191,7 @@
    "title": "Anschauen- Einziehen",
    "address": "Münsterlandstraße 2, 10317 Berlin",
    "bezirk": "Lichtenberg",
-   "images": [
-    "img/90e10fe2b943/01.jpg",
-    "img/90e10fe2b943/02.jpg",
-    "img/90e10fe2b943/03.webp",
-    "img/90e10fe2b943/04.webp",
-    "img/90e10fe2b943/05.jpg",
-    "img/90e10fe2b943/06.webp",
-    "img/90e10fe2b943/07.jpg",
-    "img/90e10fe2b943/08.jpg",
-    "img/90e10fe2b943/09.webp",
-    "img/90e10fe2b943/10.webp",
-    "img/90e10fe2b943/11.jpg"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 730.65,
@@ -2272,7 +2260,8 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T13:44:06Z",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 1
   },
   "ibw-24636": {
    "source": "ibw",
@@ -2291,7 +2280,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_aff7e241-01a9-4de0-9b0d-ea5e985bf2da.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_f1314b3b-84e7-42ee-a60e-a6e320bbe08b.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 496.32,
    "cold": 342.32,
@@ -2356,6 +2345,10 @@
    "coord": [
     52.53913524,
     13.29881266
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_87279801-9e24-4291-ab73-183b449070ac.gif"
    ]
   },
   "ibw-24644": {
@@ -2785,7 +2778,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:13:38Z",
+ "updated": "2026-11-20T15:15:40Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2850,7 +2843,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:13:38Z",
+ "last_auto": "2026-11-20T15:15:40Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
