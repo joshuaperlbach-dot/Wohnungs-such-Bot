@@ -254,7 +254,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
    "via": "mail",
-   "photo_tries": 2,
+   "photo_tries": 3,
    "reply": "absage",
    "reply_at": "2026-11-05T20:20:37Z",
    "photos_kept": true
@@ -332,7 +332,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-03T21:56:31Z",
    "via": "mail",
-   "photo_tries": 2,
+   "photo_tries": 3,
    "reply": "absage",
    "reply_at": "2026-11-08T20:56:25Z",
    "photos_kept": true
@@ -410,7 +410,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T11:41:23Z",
    "via": "mail",
-   "photo_tries": 2,
+   "photo_tries": 3,
    "reply": "absage",
    "reply_at": "2026-11-08T21:42:31Z",
    "photos_kept": true
@@ -585,7 +585,7 @@
    "requested": "gesendet",
    "requested_at": "2026-11-04T17:40:36Z",
    "via": "mail",
-   "photo_tries": 1,
+   "photo_tries": 2,
    "reply": "absage",
    "reply_at": "2026-11-10T16:50:41Z",
    "photos_kept": true
@@ -767,14 +767,7 @@
    "title": "Wohnung in Berlin",
    "address": "Frankfurter Allee 174, 10365 Berlin",
    "bezirk": "Lichtenberg",
-   "images": [
-    "img/dbb5c03b2a81/02.jpg",
-    "img/dbb5c03b2a81/03.webp",
-    "img/dbb5c03b2a81/04.webp",
-    "img/dbb5c03b2a81/05.webp",
-    "img/dbb5c03b2a81/06.webp",
-    "img/dbb5c03b2a81/07.webp"
-   ],
+   "images": [],
    "photos_checked": 5,
    "rooms": 2,
    "price": 652.77,
@@ -840,7 +833,8 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-06T09:48:20Z",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 1
   },
   "ibw-24044": {
    "source": "ibw",
@@ -2812,7 +2806,7 @@
    ]
   }
  },
- "updated": "2026-11-20T14:31:24Z",
+ "updated": "2026-11-20T14:33:47Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2877,7 +2871,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T14:31:24Z",
+ "last_auto": "2026-11-20T14:33:47Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
