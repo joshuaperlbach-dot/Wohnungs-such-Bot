@@ -227,3 +227,13 @@ mit WebCrypto; den Schlüssel gibt Josh einmal auf dem Handy ein (oder Link #mai
 (DOI-Links) werden nie abgelegt. Beim ersten Lauf mit Schlüssel werden die Mails der letzten 14 Tage einmal
 nachgetragen (store["mail_texts"] = 1). Ohne MAIL_VIEW_KEY wird nichts abgelegt.
 Hintergrund: Die Gmail-Verbindung von Claude zeigt keine einzige WBM-Mail (filtert sie), der Bot liest per IMAP.
+
+## WBM-Ablauf (Stand 17.11.2026, aus Joshs Mails)
+Zweistufig: Die ersten Anfragen (nach Eingangszeit) bekommen die Mail "Selbstauskunft" (Profil innerhalb 24 h über
+einmal gültigen Link auf immoblue.aareon.com), alle anderen eine Absage "Auswahl ... auf Basis des zeitlichen
+Anfrageeingangs" (z.B. Kleine Andreasstr. 13.10., Wedekindstr. 6.11.). Unter den Selbstauskünften lost WBM die
+Besichtigungen aus; wer nicht gezogen wird, bekommt keine Nachricht. Selbstauskunft kam bei Karl-Marx-Allee 23
+(27.10., damals fälschlich als Absage gewertet und verpasst), Lichtenberger Str. 26 (WBS, irrelevant) und
+Muskauer Str. 22 (17.11., von Josh ausgefüllt). Automatisches Ausfüllen: Formular noch unbekannt (Link nur einmal
+gültig, der Bot darf ihn nicht zum Ansehen öffnen); Josh schickt beim nächsten Mal Screenshots. Fehlt noch das
+Secret MIETE_VERFUEGBAR, HAUSHALT_EINKOMMEN ist da.
