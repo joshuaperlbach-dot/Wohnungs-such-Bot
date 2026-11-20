@@ -2242,89 +2242,6 @@
    "requested_at": "2026-11-19T10:24:38Z",
    "photos_kept": true
   },
-  "ibw-24617": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02561-0101-0128",
-   "title": "Appartement mit Balkon und Weitblick in Alt-Hohenschönhausen neu zu vermieten",
-   "address": "Altenhofer Straße 30, 13055 Berlin",
-   "bezirk": "Lichtenberg",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795092010-Y3ETpLqQLB.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_d8579f9f-d13b-4b95-8a60-cb13a023407b.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_f6d1a041-aadd-4735-8dd9-33668de6ae9f.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_94e4b5da-a6c5-4b32-899d-2b62bfe31c37.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_20b21b60-f08a-4118-b657-ce64966a5eec.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_cea2c62d-18ee-4286-b104-08fa774bd292.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_3a1711c3-3754-4359-b1f6-62d47092e140.jpg"
-   ],
-   "photos_checked": 5,
-   "rooms": 1,
-   "price": 553.86,
-   "cold": 352.86,
-   "size": 32.6,
-   "floor": 13,
-   "levels": 18,
-   "year": 1976,
-   "stars": 2,
-   "why": "32.6 m², ~6.0 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, 1,7 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 13. Etage, Baujahr 1976, Hochhaus (18 Etagen)",
-   "points": 49,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     4.8,
-     16
-    ],
-    "Lage": [
-     2.7,
-     8
-    ],
-    "Zentrum": [
-     6.2,
-     10
-    ],
-    "ÖPNV": [
-     1.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     0.0,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-19T12:40:10Z",
-   "coord": [
-    52.53449843,
-    13.48362898
-   ]
-  },
   "ibw-24619": {
    "source": "ibw",
    "company": "gewobag",
@@ -3012,7 +2929,7 @@
    "photos_checked": 5
   }
  },
- "updated": "2026-11-20T12:39:05Z",
+ "updated": "2026-11-20T12:41:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3077,6 +2994,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T12:39:05Z",
+ "last_auto": "2026-11-20T12:41:08Z",
  "fix_selbstauskunft": 1
 }
