@@ -1,10 +1,8 @@
 {
- "day": "2026-11-20",
+ "day": "2026-11-21",
  "scanned": [
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/1-zimmer-wohnung-mit-balkon-in-mitte/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-spandau-1/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/exklusive-4-zimmer-wohnung-mit-dachterrasse-in-mitte/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/familien-maisonette-4-zimmer-wohnung-mit-2-baedern-und-terrasse/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/ihr-neues-zuhause-in-friedrichshain-helle-2-zimmer-wohnung-mit-balkon/",
@@ -12,7 +10,5 @@
  ],
  "sent": 0,
  "unclear": 0,
- "summary_day": "2026-11-20",
- "mail_checked_at": "2026-11-20T22:50:35Z",
- "alert_day_mail": "2026-11-20"
+ "summary_day": "2026-11-20"
 }
