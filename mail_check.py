@@ -166,6 +166,19 @@ def mail_id(msg):
     return hashlib.sha256(raw).hexdigest()[:16]  # nur ein Fingerabdruck landet im Repo
 
 
+# HOWOGE-Terminbestätigung: "Der Termin findet in Damerowstraße 59, ... am 20.11.2026 um 13:00 Uhr statt."
+TERMIN = re.compile(r"Termin findet .{0,120}? am (\d{1,2})\.(\d{1,2})\.(\d{4}) um (\d{1,2}):(\d{2})", re.S)
+
+
+def note_termin(store, key, text):
+    """Datum und Uhrzeit einer gebuchten Besichtigung beim Angebot merken (für die Handy-Ansicht)."""
+    m = TERMIN.search(text)
+    if not (m and key and key in store["offers"]):
+        return
+    d, mo, y, h, mi = map(int, m.groups())
+    store["offers"][key]["termin"] = offers.iso(datetime(y, mo, d, h, mi, tzinfo=wbm_bot.TZ))
+
+
 MAX_MAILS_PER_OFFER = 10
 MAIL_TEXT_CHARS = 12000
 
@@ -299,6 +312,7 @@ def process(messages, store, seen, now, passphrase=None):
             if key:
                 store["offers"][key].update(reply=kind, reply_at=offers.iso(now))
         print(f"Mail ausgewertet: {kind}, {'zugeordnet' if key else 'nicht zugeordnet'}")
+        note_termin(store, key, text)
         if kind != "bestaetigung":  # Bestätigungslinks der HOWOGE nicht ablegen
             attach_mail(store, key, msg, kind, passphrase)
         # kurzes Protokoll ohne Inhalt (die letzten 10), zur Kontrolle in offers.json
@@ -369,6 +383,13 @@ def main():
     if any("form_url" in o for o in store["offers"].values()):  # persönliche Links gehören nicht in die öffentliche Datei
         for o in store["offers"].values():
             o.pop("form_url", None)
+        offers.save(store, now)
+    if store.get("fix_termin") != 1:
+        # Die Terminbestätigung für die Damerowstraße (20.11.2026, 13 Uhr) kam, bevor der Bot Termine las
+        for o in store["offers"].values():
+            if str(o.get("address", "")).startswith("Damerowstraße 59") and not o.get("termin"):
+                o["termin"] = "2026-11-20T12:00:00Z"
+        store["fix_termin"] = 1
         offers.save(store, now)
     if store.get("fix_selbstauskunft") != 1:
         # 17.11.2026: zwei WBM-Mails "Selbstauskunft" wurden fälschlich als Absage eingetragen
