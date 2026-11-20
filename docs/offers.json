@@ -2759,9 +2759,91 @@
    ],
    "photo_tries": 0,
    "photos_checked": 5
+  },
+  "ibw-24667": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01608-0401-0252",
+   "title": "Singleapartment in Charlottenburg - ab sofort",
+   "address": "Wiersichweg 7, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795182306-kjGQm7STKo.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_6f53d737-d272-407e-8b39-809968b704d2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_95449b4a-7ec8-40d6-ad12-e4aa327cb11f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_c43d1921-d2fa-4d1b-9da9-da72a8019cc1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_f8c945ea-45f0-4ea6-9eba-ace6cf0a3e07.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_1dbd29cf-3c13-47ca-84eb-db8bb464c9ea.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 503.22,
+   "cold": 360.22,
+   "size": 37.99,
+   "floor": 7,
+   "levels": 8,
+   "year": 1963,
+   "stars": 2,
+   "why": "37.99 m², ~8.7 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, 1,0 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1963",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.9,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T13:45:06Z",
+   "coord": [
+    52.5385613,
+    13.29538256
+   ]
   }
  },
- "updated": "2026-11-20T13:46:11Z",
+ "updated": "2026-11-20T13:48:17Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2826,6 +2908,6 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T13:46:11Z",
+ "last_auto": "2026-11-20T13:48:17Z",
  "fix_selbstauskunft": 1
 }
