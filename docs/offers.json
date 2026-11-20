@@ -1865,7 +1865,7 @@
    "address": "Heinrichstraße 8A, 10317 Berlin",
    "bezirk": "Lichtenberg",
    "images": [],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 562.88,
    "cold": 413.92,
@@ -1935,7 +1935,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-17T17:21:24Z",
    "photos_kept": true,
-   "photo_tries": 9
+   "photo_tries": 10
   },
   "ibw-24541": {
    "source": "ibw",
@@ -2103,7 +2103,7 @@
    "requested_at": "2026-11-19T07:52:51Z",
    "via": "mail",
    "photos_kept": true,
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "ibw-24604": {
    "source": "ibw",
@@ -2182,7 +2182,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T10:24:38Z",
    "photos_kept": true,
-   "photo_tries": 2
+   "photo_tries": 3
   },
   "ibw-24626": {
    "source": "ibw",
@@ -2261,95 +2261,7 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-19T13:44:06Z",
    "photos_kept": true,
-   "photo_tries": 1
-  },
-  "ibw-24636": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01608-0501-0275",
-   "title": "Singleapartment am Jakob-Kaiser-Platz",
-   "address": "Heckerdamm 233, 13627 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795101367-JpWY4eMyHC.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_d4dfca44-1bea-4fd5-8895-180ac152fe45.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_fa653c3c-4a8e-456e-9dbd-c381c590f658.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_61e3a218-5bbf-488b-aaa2-c53994aec9e1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_31143741-2226-4f6a-908d-e273068d5f74.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_db0c8760-c017-45b6-982c-124e79d95116.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_aff7e241-01a9-4de0-9b0d-ea5e985bf2da.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_f1314b3b-84e7-42ee-a60e-a6e320bbe08b.jpg"
-   ],
-   "photos_checked": 6,
-   "rooms": 1,
-   "price": 496.32,
-   "cold": 342.32,
-   "size": 38.09,
-   "floor": 2,
-   "levels": 8,
-   "year": 1963,
-   "stars": 2,
-   "why": "38.09 m², ~8.5 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), Park nah, 1,0 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1963",
-   "points": 52,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     7.9,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     0.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-19T15:16:07Z",
-   "coord": [
-    52.53913524,
-    13.29881266
-   ],
-   "photo_tries": 0,
-   "plans": [
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_87279801-9e24-4291-ab73-183b449070ac.gif"
-   ]
+   "photo_tries": 2
   },
   "ibw-24644": {
    "source": "ibw",
@@ -2371,10 +2283,9 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_dbdd2e5c-c103-4b2e-9cad-6bd133d8cf0e.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_d3ce5660-46bd-4c08-904e-ea081ec989bc.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_9b09925a-f442-41b2-b521-d743c04383c8.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_fc0a95cd-60a5-4c48-98ae-f5ebcb28dd2d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/2/csm_6609-degewo_eb21acf3-b227-41b8-b9dc-2b6415c8b4ef_ff2ebbd35a.webp"
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_fc0a95cd-60a5-4c48-98ae-f5ebcb28dd2d.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 702.83,
    "cold": 488.0,
@@ -2439,6 +2350,10 @@
    "coord": [
     52.42300807,
     13.46893706
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/2/csm_6609-degewo_eb21acf3-b227-41b8-b9dc-2b6415c8b4ef_c3491f32dc.jpg"
    ]
   },
   "ibw-24646": {
@@ -2778,7 +2693,7 @@
    ]
   }
  },
- "updated": "2026-11-20T15:15:40Z",
+ "updated": "2026-11-20T15:17:44Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2843,7 +2758,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-20T15:15:40Z",
+ "last_auto": "2026-11-20T15:17:44Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
