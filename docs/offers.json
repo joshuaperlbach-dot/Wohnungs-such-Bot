@@ -2380,94 +2380,6 @@
    "photos_kept": true,
    "photo_tries": 10
   },
-  "ibw-24657": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01611-1601-0609",
-   "title": "2-Zimmer-Wohnung mit Balkon - Handwerkerobjekt",
-   "address": "Reichweindamm 21, 13627 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795170727-49qtEMOhIK.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_488e8ba8-4d24-4b3c-9b1d-315061e0cb1d.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_import_2019-07-02_01_0100-01611-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_a23dde92-24da-4d6d-be19-7dbc082c3fe8.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_ec15612f-6802-404e-89f4-50fa2a2e17df.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_d5ec103a-ec41-4fda-889e-26e2224465b0.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_96217297-bec3-4eaa-8f29-7afa98772f70.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_34bba22a-6e23-43cc-8094-a599883b2fc2.jpg"
-   ],
-   "rooms": 2,
-   "price": 698.35,
-   "cold": 486.35,
-   "size": 61.58,
-   "floor": 1,
-   "levels": 5,
-   "year": 1964,
-   "stars": 3,
-   "why": "61.58 m², ~8.2 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 0,6 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 1. Etage, Baujahr 1964",
-   "points": 65,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     8.7,
-     10
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     7.6,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     4.2,
-     5
-    ]
-   },
-   "online_since": "2026-11-20T10:32:07Z",
-   "coord": [
-    52.53624656,
-    13.30221317
-   ],
-   "photo_tries": 0,
-   "photos_checked": 6,
-   "plans": [
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_3993de8c-c58e-4416-b35f-d4d7dab9dffb.gif"
-   ]
-  },
   "ibw-24667": {
    "source": "ibw",
    "company": "gewobag",
@@ -2555,7 +2467,7 @@
    ]
   }
  },
- "updated": "2026-11-21T10:30:17Z",
+ "updated": "2026-11-21T10:32:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2620,7 +2532,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-21T10:30:17Z",
+ "last_auto": "2026-11-21T10:32:23Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
