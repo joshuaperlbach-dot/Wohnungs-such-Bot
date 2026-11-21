@@ -323,9 +323,12 @@ def add_missing_photos(store, limit=5):
         o["photo_tries"] = 0 if more else o.get("photo_tries", 0) + 1
         if more or o["photo_tries"] >= PHOTO_TRIES:
             o["photos_checked"] = PHOTOS_VERSION
-        # Bild von inberlinwohnen behalten, Fotos der Gesellschaft neu (frühere Versuche hatten Ausschuss)
-        first = [u for u in (o.get("images") or [])[:1] if "inberlinwohnen.de" in u]
-        o["images"] = list(dict.fromkeys(first + more))
+        # Schon gesicherte Fotos (angefragte Wohnung) nie ersetzen: die Originale sind oft schon gelöscht.
+        # 20.11.2026 hat genau das die Kopien von 23 Wohnungen gekostet.
+        if not (o.get("photos_kept") or any(offers.is_local(u) for u in o.get("images") or [])):
+            # Bild von inberlinwohnen behalten, Fotos der Gesellschaft neu (frühere Versuche hatten Ausschuss)
+            first = [u for u in (o.get("images") or [])[:1] if "inberlinwohnen.de" in u]
+            o["images"] = list(dict.fromkeys(first + more))
         if plans and not any(offers.is_local(u) for u in o.get("plans") or []):
             o["plans"] = plans
 
