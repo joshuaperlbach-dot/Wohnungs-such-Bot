@@ -2380,93 +2380,6 @@
    "photos_kept": true,
    "photo_tries": 10
   },
-  "ibw-24646": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01610-0101-0059",
-   "title": "1-Zimmer-Wohnung mit Balkon - ab sofort",
-   "address": "Schwambzeile 7, 13627 Berlin",
-   "bezirk": "Charlottenburg-Wilmersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795162747-rwfR9v0nBr.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_a958fc8f-005f-4c58-a21d-d01035ec358c.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_d467fdaf-7b10-4c2f-9d3c-0c9e36c213b3.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_356e1412-99d8-4ceb-8826-9ddd113316bb.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_4ab0b4c5-2f12-4e04-963f-013dc2b06cd2.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_fdaa0c3b-01a6-46c1-b002-7bdf34464024.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_8ed1c212-c48c-48a3-8a3b-716188e1f01d.jpg"
-   ],
-   "rooms": 1,
-   "price": 593.94,
-   "cold": 397.94,
-   "size": 38.0,
-   "floor": 7,
-   "levels": 8,
-   "year": 1964,
-   "stars": 2,
-   "why": "38 m², ~8.4 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), 0,8 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1964",
-   "points": 51,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     1.6,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     8.3,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     3.0,
-     5
-    ],
-    "Größe": [
-     0.9,
-     10
-    ],
-    "Zimmer": [
-     2.8,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-20T08:19:07Z",
-   "coord": [
-    52.53769102,
-    13.30037156
-   ],
-   "photo_tries": 0,
-   "photos_checked": 6,
-   "plans": [
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_6e34b8d9-ceb1-43b5-9a2a-9a728aa46cda.gif"
-   ]
-  },
   "ibw-24655": {
    "source": "ibw",
    "company": "gewobag",
@@ -2731,7 +2644,7 @@
    ]
   }
  },
- "updated": "2026-11-21T08:18:40Z",
+ "updated": "2026-11-21T08:20:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2796,7 +2709,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-21T08:18:40Z",
+ "last_auto": "2026-11-21T08:20:34Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
