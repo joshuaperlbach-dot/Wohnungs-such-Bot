@@ -1764,15 +1764,15 @@
    "address": "Muskauer Strasse 22, 10997 Berlin",
    "text": "Zur Vermietung steht eine 2-Zi.-Wohnung im Gartenhaus/Erdgeschoss. Großes Wohnzimmer mit offener Küche, separates Schlafzimmer,  Wannenbad und eine große Terrasse. Hinweis: Der Vermietungsprozess erfolgt im ersten Schritt über eine Fotodokumentation.",
    "images": [
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-22c98fbb748b7ae4346a184196e597ba.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-84ba8c6f3419192835d202638b8a107f.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-89902f28cf39fbab967dd35155540c7f.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-ac100428fee2200211fc13a83c0a8449.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-8506add3afdb781c9878805eaea64eb0.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-dbf71915fd7fffbee2936154d8d6f951.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-36c7c660e5d3bf57ebb43c840e8bcef5.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-11cfc164c798e7c7e64365c4f372108a.jpg",
-    "https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79022-80e121e7a0cb2c7db1aae02830caf2b6.jpg"
+    "img/a7ab6ad7b246/fotodoku-01.jpg",
+    "img/a7ab6ad7b246/fotodoku-02.jpg",
+    "img/a7ab6ad7b246/fotodoku-03.jpg",
+    "img/a7ab6ad7b246/fotodoku-04.jpg",
+    "img/a7ab6ad7b246/fotodoku-05.jpg",
+    "img/a7ab6ad7b246/fotodoku-06.jpg",
+    "img/a7ab6ad7b246/fotodoku-07.jpg",
+    "img/a7ab6ad7b246/fotodoku-08.jpg",
+    "img/a7ab6ad7b246/fotodoku-09.jpg"
    ],
    "bezirk": "Kreuzberg",
    "rooms": 2,
@@ -1840,7 +1840,10 @@
    "gone": true,
    "photos_kept": true,
    "reply": "selbstauskunft",
-   "reply_at": "2026-11-17T10:35:13Z"
+   "reply_at": "2026-11-17T10:35:13Z",
+   "plans": [
+    "img/a7ab6ad7b246/grundriss-01.jpg"
+   ]
   },
   "ibw-24474": {
    "source": "ibw",
@@ -2821,7 +2824,7 @@
    ]
   }
  },
- "updated": "2026-11-21T01:54:23Z",
+ "updated": "2026-11-21T01:56:19Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2886,7 +2889,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-21T01:54:23Z",
+ "last_auto": "2026-11-21T01:56:19Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1
 }
