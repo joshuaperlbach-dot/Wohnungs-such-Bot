@@ -102,6 +102,24 @@ def keep_photos(store, key, http, limit=MAX_PHOTOS):
     return total
 
 
+def relink_kept_photos(store):
+    """Liegen für ein Angebot schon gesicherte Bilder in docs/img/<ordner>/, zeigt die Liste auf diese Kopien
+    (z.B. nachdem ein Fehler die Links überschrieben hatte). Läuft vor dem Aufräumen, damit nichts verloren geht."""
+    for key, o in store["offers"].items():
+        folder = PHOTO_DIR / photo_folder(key)
+        if not folder.is_dir():
+            continue
+        files = sorted(f.name for f in folder.iterdir() if f.is_file())
+        photos = [f"img/{folder.name}/{n}" for n in files if not n.startswith("grundriss-")]
+        plans = [f"img/{folder.name}/{n}" for n in files if n.startswith("grundriss-")]
+        if photos and not any(is_local(u) for u in o.get("images") or []):
+            o["images"] = photos
+        if plans and not any(is_local(u) for u in o.get("plans") or []):
+            o["plans"] = plans
+        if photos or plans:
+            o["photos_kept"] = True
+
+
 def drop_unused_photos(store):
     """Ordner von Angeboten, die nicht mehr in der Liste stehen, wieder löschen."""
     used = {u.split("/")[1] for o in store["offers"].values()
@@ -117,6 +135,7 @@ def save(store, now):
         key: o for key, o in store["offers"].items()
         if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_UNREQUESTED)
     }
+    relink_kept_photos(store)
     drop_unused_photos(store)
     store["updated"] = iso(now)
     # Für die Anzeige in der App: lief der Bot von selbst oder von Hand? Von selbst heißt:

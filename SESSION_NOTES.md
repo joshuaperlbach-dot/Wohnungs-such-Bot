@@ -244,3 +244,9 @@ ibw_bot.floor_plans(html, base) findet den Grundriss: Gewobag <img alt="Grundris
 liefert im HTML keinen (vermutlich per JS nachgeladen). Gespeichert als offer["plans"], aus den Fotos herausgenommen,
 nach einer Anfrage mitgesichert (docs/img/<ordner>/grundriss-NN.ext). PHOTOS_VERSION 6 holt sie für gelistete
 inberlinwohnen-Angebote nach. Anzeige: Abschnitt "Grundriss" in der Anzeige, Hinweis "Grundriss" auf der Karte.
+
+## Gesicherte Fotos überschrieben (20./21.11.2026)
+Durch PHOTOS_VERSION 6 hat add_missing_photos bei angefragten Wohnungen die Links auf die gesicherten Kopien durch
+Originallinks ersetzt, drop_unused_photos hat die Kopien dann gelöscht (23 Wohnungen, 193 Bilder). Wiederhergestellt
+aus dem Git-Verlauf. Seitdem: add_missing_photos fasst gesicherte Fotos nie an, und offers.save ruft vor dem
+Aufräumen relink_kept_photos auf (liegt ein Ordner für das Angebot vor, zeigt die Liste auf die Kopien).

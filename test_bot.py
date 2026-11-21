@@ -1263,6 +1263,17 @@ def test_keep_requested_photos():
             # erneutes Eintragen (z.B. nächster Fund) überschreibt die Kopien nicht
             offers.add(store, "a", {"images": ["https://x.de/1.jpg"], "online_since": None}, datetime.now(timezone.utc))
             assert store["offers"]["a"]["images"] == imgs
+            # Links überschrieben (Fehler vom 20.11.2026): beim Speichern wieder auf die Kopien zeigen
+            store["offers"]["a"]["images"] = ["https://x.de/1.jpg"]
+            offers.relink_kept_photos(store)
+            assert store["offers"]["a"]["images"] == imgs, store["offers"]["a"]
+            # Nachprüfen der Fotos (ibw_bot.add_missing_photos) ersetzt gesicherte Kopien nie
+            import ibw_bot
+            store["offers"]["ibw-9"] = {**store["offers"]["a"], "url": "https://example.org/9"}
+            with mock.patch("ibw_bot.company_page", return_value=(False, ["https://x.de/neu.jpg"], [])):
+                ibw_bot.add_missing_photos(store)
+            assert store["offers"]["ibw-9"]["images"] == imgs
+            del store["offers"]["ibw-9"]
             # Angebot weg aus der Liste: Ordner wird gelöscht
             folder = offers.PHOTO_DIR / imgs[0].split("/")[1]
             assert folder.is_dir()
