@@ -6,9 +6,12 @@ on:
       skript:
         description: "Werkzeug aus tools/"
         default: "tools/gewobag_ansehen.py"
+      arg:
+        description: "Zusatzangabe für das Werkzeug (optional)"
+        default: ""
 
 permissions:
-  contents: read
+  contents: write   # tools/drive_fotos.py legt Bilder ab
 
 jobs:
   ansehen:
@@ -21,10 +24,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt playwright && python -m playwright install --with-deps chromium
+      - run: pip install -r requirements.txt playwright pymupdf && python -m playwright install --with-deps chromium
       - name: Seite ansehen (nur Aufbau, ohne persönliche Daten)
         env:
           SKRIPT: ${{ inputs.skript || 'tools/gewobag_ansehen.py' }}
+          ARG: ${{ inputs.arg }}
           MAIL_USER: ${{ secrets.MAIL_USER }}            # nur für tools/mail_ids.py
           MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
         run: |
