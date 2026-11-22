@@ -273,3 +273,9 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
   Arbeit=Lage, Zentrum=Zentrum+Ringbahn+ÖPNV, Kiez=Kiez+Bezirk), groß mit Prozenten in der Anzeige. "Schnitt" gibt es in den Daten nicht.
 - Ganze Seite im Look der WorkTime-App (immer dunkel, Geist/Geist Mono, erhabene Kacheln, eingelassene Schalter, Gold #c99a3b).
 - Bugfix: globale Variable `history` (Statistik) hat window.history überdeckt -> Zurück-Taste/Anzeige kaputt. Heißt jetzt histData.
+
+## 22.11.2026 – Statistik-Karte neu
+- Eigene Grundkarte docs/basemap.json (tools/basemap.py über formular.yml, Overpass): Ring, S/U-Bahn, Hauptstraßen, Wasser,
+  Parks (Rasterpunkte), Knotenbahnhöfe (Rang 1/2), Ortsteile. Beschriftungen überlappen nie (wichtigste zuerst).
+  Ab Zoom 14 blendet der normale OSM-Plan (negativ) für Straßennamen ein.
+- Wohnungspunkte in den Farben des Netzdiagramms. coords.json jetzt mit 318 Einträgen (geocode.py mit 12-min-Limit).

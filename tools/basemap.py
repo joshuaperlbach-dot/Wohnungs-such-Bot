@@ -17,6 +17,7 @@ BBOX = "52.36,13.10,52.66,13.76"
 SERVERS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 UA = {"User-Agent": "wohnungs-such-bot basemap (github.com/joshuaperlbach-dot/Wohnungs-such-Bot)"}
 
+# Nebenstraßen kommen nicht hinein: ab Zoom 14 blendet die Seite den normalen OSM-Plan ein.
 # Knotenpunkte: 1 = immer beschriftet, 2 = ab mittlerem Zoom
 HUBS = {
     "Hauptbahnhof": 1, "Alexanderplatz": 1, "Friedrichstraße": 1, "Ostkreuz": 1, "Südkreuz": 1,
@@ -39,7 +40,7 @@ QUERY = f"""[out:json][timeout:240];
   relation["type"="route"]["ref"="S41"]({BBOX});
   way["railway"="light_rail"][!"service"]({BBOX});
   way["railway"="subway"][!"service"]({BBOX});
-  way["highway"~"^(motorway|trunk|primary|secondary)$"]({BBOX});
+  way["highway"~"^(motorway|trunk|primary)$"]({BBOX});
   way["waterway"~"^(river|canal)$"]({BBOX});
   way["natural"="water"]({BBOX});
   relation["natural"="water"]({BBOX});
@@ -159,7 +160,7 @@ for e in els:
             n = clean(t.get("name", ""))
             if n in HUBS:
                 hubs.setdefault(n, []).append((e["lat"], e["lon"]))
-        elif t.get("place") and t.get("name"):
+        elif t.get("place") and t.get("name") and (t["place"] == "suburb" or (52.44 <= e["lat"] <= 52.60 and 13.22 <= e["lon"] <= 13.56)):
             out["areas"].append([t["name"], round(e["lat"], 4), round(e["lon"], 4), 1 if t["place"] == "suburb" else 2])
         continue
     if e["type"] == "relation":
@@ -172,7 +173,7 @@ for e in els:
         kind = "water" if t.get("natural") == "water" else "park"
         for r in stitch(outer):
             if r[0] == r[-1] and area_m2(r) > (20000 if kind == "water" else 80000):
-                out[kind].append(flat(r, 0.00015))
+                out[kind].append(flat(r, 0.00015 if kind == "water" else 0.00025))
         continue
     g = geom(e)
     if len(g) < 2:
@@ -186,16 +187,24 @@ for e in els:
         out["road1"].append(flat(g, 0.00012))
     elif hw == "primary":
         out["road2"].append(flat(g, 0.00012))
-    elif hw == "secondary":
-        out["road3"].append(flat(g, 0.00012))
     elif t.get("waterway"):
         out["river"].append(flat(g, 0.00012))
     elif t.get("natural") == "water" and g[0] == g[-1] and area_m2(g) > 20000:
         out["water"].append(flat(g, 0.00015))
     elif (t.get("leisure") == "park" or t.get("landuse") == "forest") and g[0] == g[-1] and area_m2(g) > 80000:
-        out["park"].append(flat(g, 0.00015))
+        out["park"].append(flat(g, 0.00025))
 for n, ps in hubs.items():
-    out["hubs"].append([n, round(sum(p[0] for p in ps) / len(ps), 4), round(sum(p[1] for p in ps) / len(ps), 4), HUBS[n]])
+    # Gleichnamige Haltestellen anderswo (z.B. Bus) nicht mitteln: der Punkt, der dem Median am nächsten liegt
+    my, mx = sorted(p[0] for p in ps)[len(ps) // 2], sorted(p[1] for p in ps)[len(ps) // 2]
+    la, lo = min(ps, key=lambda p: (p[0] - my) ** 2 + (p[1] - mx) ** 2)
+    out["hubs"].append([n, round(la, 4), round(lo, 4), HUBS[n]])
+FIXED = {"Hauptbahnhof": (52.5251, 13.3694), "Westkreuz": (52.501, 13.2832)}   # in OSM uneinheitlich benannt
+for h in out["hubs"]:
+    if h[0] in FIXED:
+        h[1], h[2] = FIXED[h[0]]
+for n, (la, lo) in FIXED.items():
+    if not any(h[0] == n for h in out["hubs"]):
+        out["hubs"].append([n, la, lo, HUBS[n]])
 out["attribution"] = "© OpenStreetMap-Mitwirkende (ODbL)"
 for k, v in out.items():
     print(k, len(v))
