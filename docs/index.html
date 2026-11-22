@@ -509,13 +509,13 @@ function renderMine(list) {
 }
 
 // ---- Tab "Statistik" ("Nachtplan"): aus dem Archiv docs/history.json (jedes passende Angebot seit 13.10.2026)
-// und docs/coords.json (Adresse -> Koordinaten, für die Karte). Jede Überschrift sagt die Erkenntnis.
-let history = null, coordsByAddr = {}, historyLoading = false;
+// und docs/coords.json (Angebot -> Koordinaten, für die Karte). Jede Überschrift sagt die Erkenntnis.
+let history = null, coordsByKey = {}, historyLoading = false;
 async function loadHistory() {
   if (historyLoading) return;
   historyLoading = true;
   const get = async f => { try { const r = await fetch(f + "?t=" + Date.now(), { cache: "no-store" }); return r.ok ? await r.json() : {}; } catch (e) { return {}; } };
-  [history, coordsByAddr] = await Promise.all([get("history.json"), get("coords.json")]);
+  [history, coordsByKey] = await Promise.all([get("history.json"), get("coords.json")]);
   historyLoading = false;
   if (view === "stats") render();
 }
@@ -601,7 +601,7 @@ function renderStats(list) {
   wrap.append(lede);
 
   // ---------- Nachtplan: jede Wohnung ein Licht
-  const pos = it => Array.isArray(it.coord) && it.coord.length === 2 ? it.coord : coordsByAddr[it.address];
+  const pos = it => Array.isArray(it.coord) && it.coord.length === 2 ? it.coord : coordsByKey[it.k];
   const lit = items.filter(it => pos(it));
   const inRing = lit.filter(it => ringInside(pos(it))).length;
   const mapSec = block(lit.length ? `Nur ${pct(inRing, lit.length)} % der passenden Wohnungen liegen im S-Bahn-Ring`
