@@ -204,23 +204,43 @@
                font-variant-numeric: tabular-nums; margin-right: 6px; }
   .lede p.go .num { color: var(--sgreen); }
   .lede small { color: var(--nm); font-size: 13.5px; margin-top: 10px; display: block; }
-  .nightmap { height: 430px; margin: 0 -16px; background: var(--nb); z-index: 0; border-top: 1px solid var(--nl); border-bottom: 1px solid var(--nl); }
+  .nightmap, .nightmap.leaflet-container { height: 470px; margin: 0 -16px; background: #050505; z-index: 0; border-top: 1px solid var(--nl); border-bottom: 1px solid var(--nl);
+              font-family: var(--sans); }
+  .nightmap .fine { filter: grayscale(1) invert(1) brightness(.85) contrast(1.1); mix-blend-mode: screen; opacity: .5; }
   .nightmap .leaflet-tile-pane { filter: grayscale(1) invert(1) brightness(.5) contrast(1.35); }
-  .nightmap .leaflet-control-attribution { background: rgba(13,13,14,.7); color: var(--nm); font-size: 10px; }
+  .nightmap:has(.park) .leaflet-tile-pane { filter: none; }
+  .nightmap .park { fill: url(#parkdots); }
+  .nightmap .water { fill: #2a2d32; }
+  .nightmap .river { stroke: #2a2d32; fill: none; }
+  .nightmap path.flat { filter: drop-shadow(0 0 3px var(--fc, #e0ac4c)); }
+  .nightmap path.flat.asked { filter: drop-shadow(0 0 6px rgba(255,255,255,.7)); }
+  .nightmap .leaflet-control-attribution { background: rgba(5,5,5,.7); color: var(--nm); font-size: 10px; }
   .nightmap .leaflet-control-attribution a { color: var(--nm); }
-  .nightmap path.lamp { filter: drop-shadow(0 0 3px rgba(255,181,71,.9)); }
-  .nightmap path.asked { filter: drop-shadow(0 0 6px rgba(255,255,255,.6)); }
-  .leaflet-tooltip.ringlabel, .leaflet-tooltip.placelabel { background: transparent; border: 0; box-shadow: none; padding: 0;
-           font: 600 12px var(--sans); text-shadow: 0 0 4px #131314, 0 0 2px #131314; }
-  .leaflet-tooltip.ringlabel { color: var(--sgreen, #00a65a); }
-  .leaflet-tooltip.placelabel { color: #fff; }
-  .leaflet-tooltip.ringlabel::before, .leaflet-tooltip.placelabel::before { display: none; }
+  .nightmap .leaflet-bar { border: 0; box-shadow: var(--sh-small); border-radius: 12px; overflow: hidden; }
+  .nightmap .leaflet-bar a.leaflet-disabled { background: #161617; color: #444; }
+  .nightmap .leaflet-bar a { background: #161617; color: var(--ni); border-bottom-color: var(--nl); width: 34px; height: 34px; line-height: 34px; }
+  .mlbl { white-space: nowrap; pointer-events: none; }
+  .mlbl span { position: absolute; transform: translateY(-50%); font-weight: 500; color: rgba(255,255,255,.5);
+               text-shadow: 0 0 3px #050505, 0 0 6px #050505, 0 0 1px #050505; }
+  .mlbl.hub span { left: 8px; font-weight: 650; font-size: 12.5px; color: #fff; letter-spacing: -.005em; }
+  .mlbl.hub.t2 span { left: 6px; font-weight: 550; font-size: 11px; color: rgba(255,255,255,.78); }
+  .mlbl.hub i { position: absolute; left: -5px; top: -5px; width: 10px; height: 10px; border-radius: 50%; background: #fff;
+                box-shadow: 0 0 0 2.5px #050505, 0 0 10px rgba(255,255,255,.55); }
+  .mlbl.hub.t2 i { left: -3.5px; top: -3.5px; width: 7px; height: 7px; box-shadow: 0 0 0 2px #050505; }
+  .mlbl.mine span { left: 9px; font-weight: 650; font-size: 12.5px; color: #050505; background: #fff; padding: 1px 6px; border-radius: 6px; text-shadow: none; }
+  .mlbl.mine i { position: absolute; left: -5px; top: -5px; width: 10px; height: 10px; background: #fff; transform: rotate(45deg); box-shadow: 0 0 0 2px #050505; }
+  .mlbl.area span { transform: translate(-50%, -50%); font-size: 11.5px; letter-spacing: .03em; color: rgba(255,255,255,.42); }
+  .mlbl.area.t2 span { font-size: 10.5px; color: rgba(255,255,255,.3); }
+  .nightmap.near .mlbl.area { display: none; }
+  .nightmap:not(.mid) .mlbl.mine span { display: none; }
   .key { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--nm); font-size: 12.5px; margin-top: 10px; align-items: center; }
   .key i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
-  .key .lampk { background: var(--amber); box-shadow: 0 0 6px var(--amber); }
-  .key .askk { background: var(--amber); width: 12px; height: 12px; border: 2px solid #fff; }
-  .key .ringk { width: 16px; height: 0; border-top: 2.5px solid var(--sgreen); border-radius: 0; }
-  .key .placek { background: #fff; }
+  .key .scalek { width: 30px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, rgb(138,134,126), rgb(222,182,58), rgb(122,196,104)); }
+  .key .topk { background: #a97df5; box-shadow: 0 0 6px #a97df5; }
+  .key .hubk { background: #fff; box-shadow: 0 0 0 2px #050505, 0 0 0 3px rgba(255,255,255,.3); }
+  .key .askk { background: rgb(122,196,104); width: 12px; height: 12px; border: 2px solid #fff; }
+  .key .ringk { width: 16px; height: 0; border-top: 3px solid #fff; border-radius: 0; }
+  .key .placek { background: #fff; border-radius: 0; transform: rotate(45deg); width: 8px; height: 8px; }
   .river { width: 100%; height: auto; display: block; overflow: visible; }
   .river text { font: 500 12.5px var(--sans); fill: var(--ni); }
   .river .sub { fill: var(--nm); font-size: 11.5px; }
@@ -573,6 +593,106 @@ const OUTCOME = {   // Wie eine Anfrage ausging (Farbe = Bedeutung, nicht Reihen
 };
 
 let tipEl = null;
+// ---- Stadtplan für die Statistik: eigene Schwarz-Weiß-Grundkarte (docs/basemap.json, aus OpenStreetMap).
+// Ring, Bahn und Knotenbahnhöfe hell, Straßen leise, Parks als Rasterpunkte. Straßennamen erst ab Zoom 14
+// (dann blendet der normale OSM-Plan negativ ein). Beschriftungen, die sich überlappen, werden ausgeblendet –
+// wichtige zuerst.
+let basemap = null;
+async function loadBasemap() {
+  if (basemap) return basemap;
+  try { const r = await fetch("basemap.json", { cache: "force-cache" }); if (r.ok) basemap = await r.json(); } catch (e) {}
+  return basemap;
+}
+(function mapDefs() {
+  const s = svgEl("svg", { width: 0, height: 0, "aria-hidden": "true", style: "position:absolute" });
+  const pat = svgEl("pattern", { id: "parkdots", width: 5, height: 5, patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" }, svgEl("defs", {}, s));
+  svgEl("circle", { cx: 2.5, cy: 2.5, r: 0.9, fill: "#fff", "fill-opacity": ".22" }, pat);
+  document.body.prepend(s);
+})();
+const pairs = f => { const a = []; for (let i = 0; i < f.length; i += 2) a.push([f[i], f[i + 1]]); return a; };
+
+function drawNightMap(L, mapBox, flats, places) {
+  const map = L.map(mapBox, { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: false, zoomControl: true,
+                              attributionControl: true, minZoom: 10, maxZoom: 17, zoomSnap: 0.5 });
+  map.attributionControl.setPrefix(false);
+  const bm = basemap;
+  const fine = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, className: "fine",
+    attribution: "© OpenStreetMap" });
+  if (!bm) fine.addTo(map);
+  if (bm) {
+    for (const [name, z] of [["water", 410], ["base", 420], ["rail", 430], ["flats", 600], ["labels", 650]]) {
+      map.createPane(name).style.zIndex = z;
+    }
+    map.getPane("labels").style.pointerEvents = "none";
+    const cv = L.canvas({ pane: "base", padding: 0.3 }), rv = L.canvas({ pane: "rail", padding: 0.3 });
+    const sv = L.svg({ pane: "water", padding: 0.3 });
+    const line = (key, o) => { for (const f of bm[key] || []) L.polyline(pairs(f), { interactive: false, ...o }).addTo(map); };
+    for (const f of bm.park || []) L.polygon(pairs(f), { renderer: sv, interactive: false, stroke: false, fillOpacity: 1, className: "park" }).addTo(map);
+    for (const f of bm.water || []) L.polygon(pairs(f), { renderer: sv, interactive: false, stroke: false, fillOpacity: 1, className: "water" }).addTo(map);
+    line("river", { renderer: sv, className: "river", weight: 3 });
+    line("road2", { renderer: cv, color: "#fff", opacity: 0.17, weight: 1 });
+    line("road1", { renderer: cv, color: "#fff", opacity: 0.26, weight: 1.7 });
+    line("ubahn", { renderer: rv, color: "#fff", opacity: 0.28, weight: 1, dashArray: "2 3" });
+    line("sbahn", { renderer: rv, color: "#fff", opacity: 0.5, weight: 1.3 });
+    line("ring", { renderer: rv, color: "#fff", opacity: 1, weight: 3 });
+
+    // Beschriftungen: Rang 0 = wichtigste
+    const labels = [];
+    const label = (ll, html, cls, rank) => {
+      const m = L.marker(ll, { pane: "labels", interactive: false, keyboard: false,
+        icon: L.divIcon({ className: "mlbl " + cls, html, iconSize: null }) }).addTo(map);
+      labels.push({ m, rank, name: html.replace(/<[^>]+>/g, "") });
+    };
+    for (const [n, la, lo, tier] of bm.hubs || []) label([la, lo], `<i></i><span>${n}</span>`, "hub t" + tier, tier === 1 ? 0 : 3);
+    for (const p of places) label([p.lat, p.lon], `<i></i><span>${p.name}</span>`, "mine", 1);
+    for (const [n, la, lo, tier] of bm.areas || []) label([la, lo], `<span>${n}</span>`, "area t" + tier, tier === 1 ? 2 : 4);
+    // unter den großen Knoten zuerst die, an denen man sich am ehesten orientiert
+    const PRIO = ["Alexanderplatz", "Hauptbahnhof", "Ostkreuz", "Südkreuz", "Gesundbrunnen", "Westkreuz", "Kottbusser Tor",
+                  "Friedrichstraße", "Zoologischer Garten", "Warschauer Straße", "Potsdamer Platz", "Hermannplatz", "Ostbahnhof"];
+    const prio = l => { const i = PRIO.indexOf(l.name); return i < 0 ? 99 : i; };
+    labels.sort((a, b) => a.rank - b.rank || prio(a) - prio(b));
+    const declutter = () => {
+      const z = map.getZoom();
+      if (z >= 14) fine.addTo(map); else fine.remove();
+      mapBox.classList.toggle("near", z >= 14);
+      mapBox.classList.toggle("mid", z >= 12);
+      const kept = [];
+      for (const { m, rank } of labels) {
+        const e = m.getElement();
+        if (!e) continue;
+        const allowed = rank <= 1 || (rank === 2 && z >= 11.5) || (rank === 3 && z >= 12.5) || (rank === 4 && z >= 13);
+        e.style.visibility = "hidden";
+        if (!allowed) continue;
+        e.style.visibility = "";
+        const parts = [...e.children].map(c => c.getBoundingClientRect()).filter(p => p.width > 0);
+        e.style.visibility = "hidden";
+        const r = { left: Math.min(...parts.map(p => p.left)), right: Math.max(...parts.map(p => p.right)),
+                    top: Math.min(...parts.map(p => p.top)), bottom: Math.max(...parts.map(p => p.bottom)) };
+        if (rank !== 1 && kept.some(k => r.left < k.right + 4 && r.right + 4 > k.left && r.top < k.bottom + 2 && r.bottom + 2 > k.top)) continue;
+        e.style.visibility = "";
+        kept.push(r);
+      }
+    };
+    map.on("zoomend moveend", declutter);
+    map.whenReady(() => setTimeout(declutter, 0));
+  } else {
+    for (const p of places) L.circleMarker([p.lat, p.lon], { radius: 5, color: "#000", weight: 2, fillColor: "#fff", fillOpacity: 1 })
+      .addTo(map).bindTooltip(p.name, { permanent: true, direction: "right", offset: [6, 0], className: "placelabel" });
+  }
+  // Wohnungen: Farbe wie im Netzdiagramm, angefragte mit weißem Ring
+  for (const it of flats) {
+    const c = radarColor(it);
+    const m = L.circleMarker(it.ll, { pane: bm ? "flats" : "overlayPane", radius: it.asked ? 6 : 3.6,
+      color: it.asked ? "#fff" : c, weight: it.asked ? 2 : 0, fillColor: c, fillOpacity: it.asked ? 1 : 0.9,
+      className: "flat" + (it.asked ? " asked" : "") }).addTo(map);
+    const pe = m.getElement && m.getElement();
+    if (pe) pe.style.setProperty("--fc", c);
+    m.on("click", e => showTip(e.originalEvent, it.tip));
+  }
+  map.fitBounds([[52.44, 13.27], [52.58, 13.56]]);
+  return map;
+}
+
 function showTip(ev, lines) {
   if (!tipEl) { tipEl = el("div", "tip"); document.body.append(tipEl); }
   tipEl.replaceChildren(el("b", null, lines[0]), ...lines.slice(1).map(t => el("span", null, t)));
@@ -638,33 +758,25 @@ function renderStats(list) {
   const inRing = lit.filter(it => ringInside(pos(it))).length;
   const mapSec = block(lit.length ? `Nur ${pct(inRing, lit.length)} % der passenden Wohnungen liegen im S-Bahn-Ring`
                                   : "Wo die passenden Wohnungen liegen",
-    lit.length < items.length * 0.8 ? `Jede Wohnung ein Licht. ${items.length - lit.length} Adressen sind noch nicht auf der Karte, der Bot trägt sie nach.`
-                                    : "Jede Wohnung ein Licht. Antippen zeigt Miete, Größe und Sterne.");
+    lit.length < items.length * 0.8 ? `Jede Wohnung ein Punkt, Farbe nach Sternen. ${items.length - lit.length} Adressen sind noch nicht auf der Karte, der Bot trägt sie nach.`
+                                    : "Jede Wohnung ein Punkt, Farbe nach Sternen wie im Netzdiagramm. Antippen zeigt Miete und Größe, zwei Finger zoomen.");
   const mapBox = el("div", "nightmap");
   mapSec.append(mapBox);
   const key = el("div", "key");
   const k = (cls, t) => { const s = el("span"); s.append(el("i", cls), document.createTextNode(t)); return s; };
-  key.append(k("lampk", "passende Wohnung"), k("askk", "angefragt"), k("ringk", "S-Bahn-Ring"));
+  key.append(k("scalek", "Wohnung, grau bis grün nach Sternen"), k("topk", "5 Sterne"),
+    k("askk", "angefragt"), k("ringk", "S-Bahn-Ring"), k("hubk", "Knotenbahnhof"));
   if (places().length) key.append(k("placek", "deine Orte"));
   mapSec.append(key);
   wrap.append(mapSec);
   requestAnimationFrame(async () => {
-    const L = await leaflet();
+    const [L] = await Promise.all([leaflet(), loadBasemap()]);
     if (!L || !mapBox.isConnected) { mapBox.style.height = "auto"; mapBox.replaceChildren(el("p", "how", "Die Karte konnte nicht laden. Prüf die Verbindung und öffne den Tab neu.")); return; }
-    const map = L.map(mapBox, { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: false, zoomControl: false, attributionControl: true });
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap" }).addTo(map);
-    L.polygon(RING, { color: "#9db58f", weight: 2.5, fill: false, interactive: false }).addTo(map);
-    L.marker(RING[4], { opacity: 0, interactive: false }).addTo(map).bindTooltip("S-Bahn-Ring", { permanent: true, direction: "right", className: "ringlabel" });
-    for (const it of [...lit].sort((a, b) => isAsked(a) - isAsked(b))) {
-      const a = isAsked(it);
-      const m = L.circleMarker(pos(it), { radius: a ? 6 : 3.4, color: a ? "#ffffff" : "#e0ac4c", weight: a ? 2 : 0,
-        fillColor: "#e0ac4c", fillOpacity: a ? 1 : 0.85, className: a ? "asked" : "lamp" }).addTo(map);
-      m.on("click", e => showTip(e.originalEvent, [`${num(it.price)} € warm, ${num(it.size)} m²`,
-        `${(it.address || "").split(",")[0]}, ${it.bezirk || ""}`, `${COMPANY[it.company] || it.company || ""}, ${"★".repeat(it.stars || 0)}${a ? ", angefragt" : ""}`]));
-    }
-    for (const p of places()) L.circleMarker([p.lat, p.lon], { radius: 5, color: "#131314", weight: 2, fillColor: "#fff", fillOpacity: 1 })
-      .addTo(map).bindTooltip(p.name, { permanent: true, direction: "right", offset: [6, 0], className: "placelabel" });
-    map.fitBounds([[52.41, 13.22], [52.61, 13.62]]);
+    const flats = [...lit].sort((a, b) => isAsked(a) - isAsked(b) || (a.points || 0) - (b.points || 0)).map(it => ({
+      ll: pos(it), asked: isAsked(it), stars: it.stars, points: it.points,
+      tip: [`${num(it.price)} € warm, ${num(it.size)} m²`, `${(it.address || "").split(",")[0]}, ${it.bezirk || ""}`,
+            `${COMPANY[it.company] || it.company || ""}, ${"★".repeat(it.stars || 0)}${isAsked(it) ? ", angefragt" : ""}`] }));
+    drawNightMap(L, mapBox, flats, places());
   });
 
   // ---------- River: was aus den Anfragen wurde
