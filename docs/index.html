@@ -219,6 +219,13 @@ function saveMarks(m) {
   try { localStorage.setItem("marks", JSON.stringify(m)); } catch (e) { /* privater Modus */ }
 }
 let marks = loadMarks();
+// "Nicht weiter verfolgen" (z.B. nach der Besichtigung): nur auf diesem Gerät
+let dropped = (() => { try { return JSON.parse(localStorage.getItem("dropped") || "{}"); } catch (e) { return {}; } })();
+function toggleDropped(key) {
+  if (dropped[key]) delete dropped[key]; else dropped[key] = new Date().toISOString();
+  try { localStorage.setItem("dropped", JSON.stringify(dropped)); } catch (e) {}
+  render();
+}
 // Angebote, deren Anfrage-Seite von hier geöffnet wurde (danach fragt der Knopf, ob es geklappt hat)
 let opened = (() => { try { return JSON.parse(localStorage.getItem("opened") || "{}"); } catch (e) { return {}; } })();
 function saveOpened() { try { localStorage.setItem("opened", JSON.stringify(opened)); } catch (e) {} }
@@ -250,6 +257,7 @@ const COMPANY = { wbm: "WBM", degewo: "degewo", howoge: "HOWOGE", gewobag: "Gewo
                   stadtundland: "Stadt und Land", berlinovo: "Berlinovo" };
 
 function state(key, o) {
+  if (dropped[key]) return { cls: "declined", label: "Nicht weiter verfolgt", note: "deine Entscheidung", locked: true };
   if (isQuiet(o)) return { cls: "declined", label: "Wohl nichts geworden", note: quietReason(o), locked: true };
   // Antwort der Gesellschaft, vom Bot aus der Mail gelesen
   if (o.termin && o.reply !== "absage") {
@@ -391,9 +399,11 @@ function viewing(o) {   // Besichtigungstermin (vom Bot aus der Terminbestätigu
 function renderMine(list) {
   const mine = all().filter(([k, o]) => isMine(k, o));
   const when = o => new Date(o.reply_at || o.requested_at || o.online_since).getTime() || 0;
-  const open = mine.filter(([, o]) => !isLost(o) && !isQuiet(o)).sort(([, a], [, b]) => when(b) - when(a));
-  const quiet = mine.filter(([, o]) => isQuiet(o)).sort(([, a], [, b]) => when(b) - when(a));
-  const lost = mine.filter(([, o]) => isLost(o)).sort(([, a], [, b]) => when(b) - when(a));
+  const gone = mine.filter(([k]) => dropped[k]);
+  const live = mine.filter(([k]) => !dropped[k]);
+  const open = live.filter(([, o]) => !isLost(o) && !isQuiet(o)).sort(([, a], [, b]) => when(b) - when(a));
+  const quiet = live.filter(([, o]) => isQuiet(o)).sort(([, a], [, b]) => when(b) - when(a));
+  const lost = live.filter(([, o]) => isLost(o)).sort(([, a], [, b]) => when(b) - when(a));
   document.getElementById("count").textContent = `(${open.length})`;
   if (!mine.length) { list.append(el("div", "empty", updated ? "Noch keine Anfragen." : "lädt …")); return; }
   list.append(el("div", "section", `Läuft gerade (${open.length})`));
@@ -406,6 +416,10 @@ function renderMine(list) {
   if (lost.length) {
     list.append(el("div", "section", `Nicht bekommen (${lost.length})`));
     for (const [key, o] of lost) list.append(makeCard(key, o));
+  }
+  if (gone.length) {
+    list.append(el("div", "section", `Nicht weiter verfolgt (${gone.length})`));
+    for (const [key, o] of gone) list.append(makeCard(key, o));
   }
 }
 
@@ -523,6 +537,12 @@ function drawDetail() {
   const edit = el("button", "places-btn", "Eigene Orte ändern");
   edit.addEventListener("click", editPlaces);
   body.append(mapBox, dist, edit);
+  if (isMine(openKey, o)) {
+    const drop = el("button", "places-btn", dropped[openKey] ? "Doch wieder verfolgen" : "Nicht weiter verfolgen");
+    drop.style.marginLeft = "8px";
+    drop.addEventListener("click", () => toggleDropped(openKey));
+    body.append(drop);
+  }
   requestAnimationFrame(() => showMap(o, mapBox, dist));
 
   if (o.parts && Object.keys(o.parts).length) {
