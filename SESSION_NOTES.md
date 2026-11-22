@@ -279,3 +279,9 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
   Parks (Rasterpunkte), Knotenbahnhöfe (Rang 1/2), Ortsteile. Beschriftungen überlappen nie (wichtigste zuerst).
   Ab Zoom 14 blendet der normale OSM-Plan (negativ) für Straßennamen ein.
 - Wohnungspunkte in den Farben des Netzdiagramms. coords.json jetzt mit 318 Einträgen (geocode.py mit 12-min-Limit).
+
+## Fahrt zur Arbeit + leiserer Stadtplan (22.11.2026)
+- Kachel und Detail zeigen die Fahrt mit Bus und Bahn zu den eigenen Orten mit "Arbeit" im Namen (max. 2), z.B.
+  "Arbeit neu 28 Min U8 › M29". Fahrplan von v6.vbb.transport.rest, direkt vom Handy, Abfahrt nächster Werktag 8 Uhr,
+  Ergebnis im localStorage. Die alte Arbeitsadresse steht NICHT im Repo; Josh trägt sie über "Eigene Orte ändern" ein.
+- Statistik-Karte: Startansicht ohne Text, Bahnhofsnamen ab Zoom 12, Ortsteile ab 12,5, der Rest später.

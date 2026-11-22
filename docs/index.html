@@ -114,6 +114,14 @@
   .main-line { font-weight: 600; font-size: 17px; margin: 5px 0 3px; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
   .main-line .u { color: var(--muted); font-weight: 450; font-size: 14px; }
   .main-line .u:not(:last-child) { margin-right: 10px; }
+  .route { display: flex; flex-wrap: wrap; gap: 3px 10px; margin-top: 5px; font-size: 13px; color: var(--muted); min-height: 18px; }
+  .route .r { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+  .route b { color: var(--ink); font-family: var(--mono); font-weight: 500; }
+  .route .ln { font-family: var(--mono); font-size: 11px; line-height: 1; padding: 3px 5px 2px; border-radius: 5px;
+               color: #0d0d0e; background: #9c988f; font-weight: 600; }
+  .route .ln.S { background: #9db58f; } .route .ln.U { background: #6f97a6; }
+  .route .ln.T { background: #c99a3b; } .route .ln.B { background: #a97df5; } .route .ln.R { background: #b83a2d; color: #ece7dc; }
+  .route .ar { color: var(--faint, #827e76); font-size: 11px; }
   .sub { color: var(--muted); font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .req { display: block; width: calc(100% - 28px); margin: 0 14px 14px; padding: 12px; border-radius: 14px;
          font-weight: 600; font-size: 15px; background: var(--panel); color: var(--idle-ink); box-shadow: var(--sh-sunk); }
@@ -666,7 +674,8 @@ function drawNightMap(L, mapBox, flats, places) {
       for (const { m, rank } of labels) {
         const e = m.getElement();
         if (!e) continue;
-        const allowed = rank <= 1 || (rank === 2 && z >= 11.5) || (rank === 3 && z >= 12.5) || (rank === 4 && z >= 13);
+        // Startansicht ohne Text, Namen kommen erst beim Reinzoomen
+        const allowed = rank === 1 || (rank === 0 && z >= 12) || (rank === 2 && z >= 12.5) || (rank === 3 && z >= 13) || (rank === 4 && z >= 13.5);
         e.style.visibility = "hidden";
         if (!allowed) continue;
         e.style.visibility = "";
@@ -1096,6 +1105,7 @@ function makeCard(key, o) {
     info.append(stars,
       mainLine(o),
       place(o),
+      routeLine(key, o),
       o.gone ? el("div", "sub gone", `${COMPANY[o.company] || o.company || ""} · nicht mehr online`)
              : el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
     tap.append(info);
@@ -1193,7 +1203,7 @@ function drawDetail() {
   mapBox.id = "map";
   const edit = el("button", "places-btn", "Eigene Orte ändern");
   edit.addEventListener("click", editPlaces);
-  body.append(mapBox, dist, edit);
+  body.append(mapBox, dist, routeLine(openKey, o, true), edit);
   if (isMine(openKey, o)) {
     const drop = el("button", "places-btn", dropped[openKey] ? "Doch wieder verfolgen" : "Nicht weiter verfolgen");
     drop.style.marginLeft = "8px";
@@ -1367,6 +1377,73 @@ async function editPlaces() {
   if (t === null) return;
   await setPlaces(t);
   if (openKey) drawDetail();
+}
+// ---- Fahrt zur Arbeit mit Bus und Bahn (VBB-Fahrplan über v6.vbb.transport.rest, direkt vom Handy).
+// Ziele sind die eigenen Orte mit "Arbeit" im Namen (stehen nur auf dem Gerät). Abfahrt: nächster Werktag 8 Uhr.
+// Ergebnis bleibt im localStorage, damit jede Strecke nur einmal gefragt wird.
+function routeTargets() {
+  const p = places(), w = p.filter(x => /arbeit|job|büro/i.test(x.name));
+  return (w.length ? w : p).slice(0, 2);
+}
+function nextWorkday8() {
+  const d = new Date(); d.setDate(d.getDate() + 1); d.setHours(8, 0, 0, 0);
+  while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1);
+  return d.toISOString();
+}
+let routeQueue = Promise.resolve();
+function fetchRoute(from, to) {
+  const key = "route:" + from.map(x => x.toFixed(4)).join(",") + "|" + to.map(x => x.toFixed(4)).join(",");
+  try { const c = localStorage.getItem(key); if (c) return Promise.resolve(JSON.parse(c)); } catch (e) {}
+  const job = routeQueue.then(async () => {
+    const q = new URLSearchParams({ "from.type": "location", "from.latitude": from[0], "from.longitude": from[1], "from.address": "Wohnung",
+      "to.type": "location", "to.latitude": to[0], "to.longitude": to[1], "to.address": "Ziel",
+      departure: nextWorkday8(), results: 3, stopovers: "false", remarks: "false", polylines: "false", language: "de" });
+    try {
+      const r = await fetch("https://v6.vbb.transport.rest/journeys?" + q);
+      if (!r.ok) return null;
+      const js = ((await r.json()).journeys || []);
+      let best = null;
+      for (const j of js) {
+        const legs = j.legs || [];
+        if (!legs.length) continue;
+        const min = Math.round((new Date(legs[legs.length - 1].arrival) - new Date(legs[0].departure)) / 60000);
+        const lines = legs.filter(l => l.line).map(l => ({ n: l.line.name, p: l.line.product }));
+        if (!best || min < best.min) best = { min, lines };
+      }
+      if (best) try { localStorage.setItem(key, JSON.stringify(best)); } catch (e) {}
+      return best;
+    } catch (e) { return null; }
+    finally { await new Promise(r => setTimeout(r, 700)); }   // höchstens ~1 Anfrage pro Sekunde
+  });
+  routeQueue = job.catch(() => null);
+  return job;
+}
+const PROD = { suburban: "S", subway: "U", tram: "T", bus: "B", regional: "R", express: "R", ferry: "B" };
+const routeSeen = typeof IntersectionObserver === "function" ? new IntersectionObserver(es => {
+  for (const e of es) if (e.isIntersecting) { routeSeen.unobserve(e.target); e.target._go(); }
+}, { rootMargin: "300px" }) : null;
+function routeLine(key, o, big) {
+  const box = el("div", "route" + (big ? " big" : ""));
+  const targets = routeTargets();
+  if (!targets.length) return box;
+  box._go = async () => {
+    const from = await offerCoord(o);
+    if (!from) return;
+    for (const t of targets) {
+      const r = await fetchRoute(from, [t.lat, t.lon]);
+      if (!r || !box.isConnected) continue;
+      const span = el("span", "r");
+      span.append(el("span", null, t.name), el("b", null, `${r.min} Min`));
+      if (!r.lines.length) span.append(el("span", null, "zu Fuß"));
+      r.lines.forEach((l, i) => {
+        if (i) span.append(el("span", "ar", "›"));
+        span.append(el("span", "ln " + (PROD[l.p] || ""), l.n));
+      });
+      box.append(span);
+    }
+  };
+  if (routeSeen) routeSeen.observe(box); else setTimeout(box._go, 0);
+  return box;
 }
 function km(a, b) {
   const r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLon = (b[1] - a[1]) * r;
