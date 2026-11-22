@@ -128,9 +128,11 @@
   .radar { flex: none; width: 132px; height: 128px; margin: -6px -8px -6px 0; display: block; overflow: visible; }
   .radar .web { fill: none; stroke: rgba(255,255,255,.09); stroke-width: 1; }
   .radar .web.outer { stroke: rgba(255,255,255,.16); }
-  .radar .shape { fill: url(#halftone); stroke: var(--star); stroke-width: 1.6; stroke-linejoin: round;
-                  filter: drop-shadow(0 0 3px rgba(201,154,59,.55)) drop-shadow(0 0 8px rgba(111,151,166,.22)); }
-  .radar .tip-dot { fill: var(--star); }
+  .radar { --rc: #c99a3b; }
+  .radar .dots circle { fill: var(--rc); }
+  .radar .shape { fill: color-mix(in srgb, var(--rc) 9%, transparent); stroke: var(--rc); stroke-width: 1.6; stroke-linejoin: round;
+                  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--rc) 55%, transparent)) drop-shadow(0 0 8px rgba(111,151,166,.22)); }
+  .radar .tip-dot { fill: var(--rc); }
   .radar text { font: 500 9.5px var(--sans); fill: var(--muted); }
   .radar.big { width: 100%; max-width: 300px; height: auto; margin: 4px auto 0; }
   .radar.big text { font-size: 11px; }
@@ -863,45 +865,71 @@ function roundTop(x, base, w, h) {
 
 // ---- Netzdiagramm: die Einzelpunkte der Bewertung, zu sechs Bereichen zusammengefasst.
 // Reihenfolge im Uhrzeigersinn ab oben: Wohnung (rechts), Lage (links).
+// Statt "Kosten" (der Preis steht schon daneben) zählt hier der Preis pro m²: 10 € = voll, 20 € = leer.
 const AXES = [
-  ["Preis", ["Kosten"]],
+  ["€/m²", null],
   ["Größe", ["Größe", "Zimmer"]],
   ["Haus", ["Baujahr", "Hochhaus", "Aufzug", "Außenbereich"]],
   ["Arbeit", ["Lage"]],
   ["Zentrum", ["Zentrum", "Ringbahn", "ÖPNV"]],
   ["Kiez", ["Kiez", "Bezirk"]],
 ];
-function axisScores(parts) {
+const clamp01 = x => Math.max(0, Math.min(1, x));
+function axisScores(o) {
+  const parts = o.parts || {};
   return AXES.map(([name, keys]) => {
+    if (!keys) {
+      const sqm = o.price && o.size ? o.price / o.size : null;
+      return { name, v: sqm ? clamp01((20 - sqm) / 10) : null,
+               label: sqm ? sqm.toLocaleString("de-DE", { maximumFractionDigits: 1 }) + " €" : "–" };
+    }
     let got = 0, max = 0;
     for (const k of keys) if (parts[k]) { got += +parts[k][0] || 0; max += +parts[k][1] || 0; }
-    return { name, v: max ? Math.max(0, Math.min(1, got / max)) : null };
+    const v = max ? clamp01(got / max) : null;
+    return { name, v, label: v == null ? "–" : Math.round(v * 100) + " %" };
   });
 }
+// Farbe nach Gesamtbewertung: grau (schwach) über gelb zu grün, 5 Sterne lila
+function radarColor(o) {
+  if ((o.stars || 0) >= 5) return "#a97df5";
+  const stops = [[45, [138, 134, 126]], [64, [222, 182, 58]], [80, [122, 196, 104]]];
+  const p = o.points == null ? 55 : o.points;
+  if (p <= stops[0][0]) return `rgb(${stops[0][1]})`;
+  for (let i = 1; i < stops.length; i++) {
+    const [p1, c1] = stops[i - 1], [p2, c2] = stops[i];
+    if (p <= p2) { const t = (p - p1) / (p2 - p1); return `rgb(${c1.map((c, j) => Math.round(c + t * (c2[j] - c)))})`; }
+  }
+  return `rgb(${stops[stops.length - 1][1]})`;
+}
 const sv = svgEl;
-// Rasterpunkte als Füllung, einmal für die ganze Seite
-(function halftoneDefs() {
-  const s = sv("svg", { width: 0, height: 0, "aria-hidden": "true", style: "position:absolute" });
-  const pat = sv("pattern", { id: "halftone", width: 3.2, height: 3.2, patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" }, sv("defs", {}, s));
-  sv("rect", { width: 3.2, height: 3.2, fill: "rgba(201,154,59,.10)" }, pat);
-  sv("circle", { cx: 1.6, cy: 1.6, r: 0.95, fill: "#c99a3b", "fill-opacity": ".85" }, pat);
-  document.body.prepend(s);
-})();
-function radar(parts, big) {
-  const sc = axisScores(parts || {});
+let radarId = 0;
+function radar(o, big) {
+  const sc = axisScores(o);
   if (sc.every(a => a.v == null)) return null;
   const R = big ? 78 : 36, pad = big ? 46 : 30, W = 2 * (R + pad), H = 2 * R + (big ? 64 : 40);
-  const cx = W / 2, cy = H / 2;
+  const cx = W / 2, cy = H / 2, color = radarColor(o);
   const svg = sv("svg", { class: "radar" + (big ? " big" : ""), viewBox: `0 0 ${W} ${H}`, role: "img" });
-  svg.setAttribute("aria-label", sc.map(a => `${a.name} ${a.v == null ? "?" : Math.round(a.v * 100) + "%"}`).join(", "));
+  svg.style.setProperty("--rc", color);
+  svg.setAttribute("aria-label", sc.map(a => `${a.name} ${a.label}`).join(", "));
   const ang = i => -Math.PI / 2 + i * 2 * Math.PI / sc.length;
   const pt = (i, r) => [cx + r * Math.cos(ang(i)), cy + r * Math.sin(ang(i))];
   for (const f of [1 / 3, 2 / 3, 1])
     sv("polygon", { class: "web" + (f === 1 ? " outer" : ""), points: sc.map((_, i) => pt(i, R * f).join(",")).join(" ") }, svg);
   sc.forEach((_, i) => { const [x, y] = pt(i, R); sv("line", { class: "web", x1: cx, y1: cy, x2: x, y2: y }, svg); });
-  const vals = sc.map(a => a.v == null ? 0.5 : a.v);
-  const shape = vals.map((v, i) => pt(i, R * Math.max(0.06, v)));
-  sv("polygon", { class: "shape", points: shape.map(p => p.join(",")).join(" ") }, svg);
+  const shape = sc.map((a, i) => pt(i, R * Math.max(0.06, a.v == null ? 0.5 : a.v)));
+  const points = shape.map(p => p.join(",")).join(" ");
+  // Halbton-Füllung: Punkte auf schrägem Raster, zur Mitte hin größer und kräftiger
+  const id = "rclip" + (++radarId);
+  sv("polygon", { points }, sv("clipPath", { id }, sv("defs", {}, svg)));
+  const dots = sv("g", { "clip-path": `url(#${id})`, class: "dots" }, svg);
+  const step = big ? 4.2 : 3.3, k = Math.SQRT1_2;
+  for (let u = -R; u <= R; u += step) for (let w = -R; w <= R; w += step) {
+    const x = (u - w) * k, y = (u + w) * k, d = Math.hypot(x, y) / R;
+    if (d > 1) continue;
+    sv("circle", { cx: (cx + x).toFixed(1), cy: (cy + y).toFixed(1), r: (step * (0.42 - 0.26 * d)).toFixed(2),
+                   "fill-opacity": (0.95 - 0.45 * d).toFixed(2) }, dots);
+  }
+  sv("polygon", { class: "shape", points }, svg);
   if (big) shape.forEach(([x, y]) => sv("circle", { class: "tip-dot", cx: x, cy: y, r: 2.4 }, svg));
   sc.forEach((a, i) => {
     const [x, y] = pt(i, R + (big ? 14 : 8));
@@ -910,10 +938,7 @@ function radar(parts, big) {
     const dy = Math.sin(ang(i)) < -0.5 ? -2 : Math.sin(ang(i)) > 0.5 ? (big ? 10 : 8) : 3;
     const t = sv("text", { x, y: y + dy, "text-anchor": anchor }, svg);
     t.textContent = a.name;
-    if (big) {
-      const v = sv("text", { class: "v", x, y: y + dy + 13, "text-anchor": anchor }, svg);
-      v.textContent = a.v == null ? "–" : Math.round(a.v * 100) + " %";
-    }
+    if (big) sv("text", { class: "v", x, y: y + dy + 13, "text-anchor": anchor }, svg).textContent = a.label;
   });
   return svg;
 }
@@ -947,7 +972,7 @@ function makeCard(key, o) {
       o.gone ? el("div", "sub gone", `${COMPANY[o.company] || o.company || ""} · nicht mehr online`)
              : el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
     tap.append(info);
-    const r = radar(o.parts);
+    const r = radar(o);
     if (r) tap.append(r);
     tap.addEventListener("click", () => openDetail(key));
     card.append(pics, tap, reqButton(key, o));
@@ -1052,7 +1077,7 @@ function drawDetail() {
 
   if (o.parts && Object.keys(o.parts).length) {
     body.append(el("h3", null, "So kommen die Sterne zustande"));
-    const big = radar(o.parts, true);
+    const big = radar(o, true);
     if (big) { const box = el("div", "radar-box"); box.append(big); body.append(box); }
     for (const [name, [got, max]] of Object.entries(o.parts).sort((a, b) => b[1][1] - a[1][1])) {
       const p = el("div", "part");
