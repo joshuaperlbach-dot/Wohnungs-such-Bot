@@ -267,3 +267,9 @@ Teile: drei Einstiegssätze, Karte mit jeder Wohnung als Licht (Koordinaten aus 
 tools/geocode.py über "Formular ansehen"; die Datei fasst der Bot nicht an), River Chart Gesellschaft -> Ergebnis,
 Punkt-Uhr Wochentag x Stunde, Gesellschaften-Raster, Preis/Größe, Wochen. Karte: OSM-Kacheln per CSS-Filter
 eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch address und coord.
+
+## 22.11.2026 – Netzdiagramm + WorkTime-Design
+- Jede Karte zeigt ein Netzdiagramm (6 Achsen aus o.parts: Preis=Kosten, Größe=Größe+Zimmer, Haus=Baujahr+Hochhaus+Aufzug+Außenbereich,
+  Arbeit=Lage, Zentrum=Zentrum+Ringbahn+ÖPNV, Kiez=Kiez+Bezirk), groß mit Prozenten in der Anzeige. "Schnitt" gibt es in den Daten nicht.
+- Ganze Seite im Look der WorkTime-App (immer dunkel, Geist/Geist Mono, erhabene Kacheln, eingelassene Schalter, Gold #c99a3b).
+- Bugfix: globale Variable `history` (Statistik) hat window.history überdeckt -> Zurück-Taste/Anzeige kaputt. Heißt jetzt histData.
