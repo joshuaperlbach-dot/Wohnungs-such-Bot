@@ -294,6 +294,14 @@
   .stats .statfoot { color: var(--nm); font-size: 12.5px; line-height: 1.45; border-top: 1px solid var(--nl); padding-top: 12px; }
   .tip { position: fixed; z-index: 50; display: none; max-width: 260px; background: #ece7dc; color: #131314; border-radius: 10px;
          padding: 7px 10px; font: 13px/1.35 var(--sans); pointer-events: none; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+  .flatpop .leaflet-popup-content-wrapper { background: #ece7dc; color: #131314; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,.5); }
+  .flatpop .leaflet-popup-tip { background: #ece7dc; }
+  .flatpop .leaflet-popup-content { margin: 9px 12px; font: 13px/1.35 var(--sans); }
+  .flatpop b { display: block; font: 600 15px var(--sans); }
+  .flatpop span { display: block; color: #5a5752; }
+  .flatpop .pop-open { display: inline-block; margin-top: 8px; padding: 6px 12px; border-radius: 999px; border: 0;
+    background: #131314; color: #ece7dc; font: 600 13px var(--sans); text-decoration: none; cursor: pointer; }
+  .flatpop .pop-gone { font-size: 11.5px; margin-top: 4px; }
   .tip b { display: block; font: 600 15px var(--sans); }
   .tip span { display: block; color: #5a5752; }
   .stats [tabindex]:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
@@ -705,10 +713,26 @@ function drawNightMap(L, mapBox, flats, places) {
     const c = radarColor(it);
     const m = L.circleMarker(it.ll, { pane: bm ? "flats" : "overlayPane", radius: it.asked ? 6 : 3.6,
       color: it.asked ? "#fff" : c, weight: it.asked ? 2 : 0, fillColor: c, fillOpacity: it.asked ? 1 : 0.9,
-      className: "flat" + (it.asked ? " asked" : "") }).addTo(map);
+      className: "flat" + (it.asked ? " asked" : ""), interactive: false }).addTo(map);
+    // unsichtbare, größere Trefferfläche, damit man die kleinen Punkte mit dem Finger trifft
+    const hit = L.circleMarker(it.ll, { pane: bm ? "flats" : "overlayPane", radius: 14, stroke: false, fillOpacity: 0, fillColor: "#000" }).addTo(map);
     const pe = m.getElement && m.getElement();
     if (pe) pe.style.setProperty("--fc", c);
-    m.on("click", e => showTip(e.originalEvent, it.tip));
+    hit.on("click", () => {
+      const box = el("div");
+      box.append(el("b", null, it.tip[0]), ...it.tip.slice(1).map(t => el("span", null, t)));
+      if (offers[it.key]) {
+        const b = el("button", "pop-open", "Wohnung öffnen");
+        b.addEventListener("click", () => { map.closePopup(); openDetail(it.key); });
+        box.append(b);
+      } else if (/^https?:/.test(it.key)) {
+        const a = el("a", "pop-open", "Anzeige ansehen");
+        a.href = it.key; a.target = "_blank"; a.rel = "noopener";
+        box.append(a, el("span", "pop-gone", "nicht mehr in der Liste, Anzeige evtl. offline"));
+      } else box.append(el("span", "pop-gone", "nicht mehr in der Liste"));
+      L.popup({ className: "flatpop", closeButton: false, offset: [0, -4], autoPanPadding: [12, 12] })
+        .setLatLng(it.ll).setContent(box).openOn(map);
+    });
   }
   map.fitBounds([[52.44, 13.27], [52.58, 13.56]]);
   return map;
@@ -780,7 +804,7 @@ function renderStats(list) {
   const mapSec = block(lit.length ? `Nur ${pct(inRing, lit.length)} % der passenden Wohnungen liegen im S-Bahn-Ring`
                                   : "Wo die passenden Wohnungen liegen",
     lit.length < items.length * 0.8 ? `Jede Wohnung ein Punkt, Farbe nach Sternen. ${items.length - lit.length} Adressen sind noch nicht auf der Karte, der Bot trägt sie nach.`
-                                    : "Jede Wohnung ein Punkt, Farbe nach Sternen wie im Netzdiagramm. Antippen zeigt Miete und Größe, zwei Finger zoomen.");
+                                    : "Jede Wohnung ein Punkt, Farbe nach Sternen wie im Netzdiagramm. Antippen zeigt Miete und Größe und öffnet die Wohnung, zwei Finger zoomen.");
   const mapBox = el("div", "nightmap");
   mapSec.append(mapBox);
   const key = el("div", "key");
@@ -794,7 +818,7 @@ function renderStats(list) {
     const [L] = await Promise.all([leaflet(), loadBasemap()]);
     if (!L || !mapBox.isConnected) { mapBox.style.height = "auto"; mapBox.replaceChildren(el("p", "how", "Die Karte konnte nicht laden. Prüf die Verbindung und öffne den Tab neu.")); return; }
     const flats = [...lit].sort((a, b) => isAsked(a) - isAsked(b) || (a.points || 0) - (b.points || 0)).map(it => ({
-      ll: pos(it), asked: isAsked(it), stars: it.stars, points: it.points,
+      ll: pos(it), key: it.k, asked: isAsked(it), stars: it.stars, points: it.points,
       tip: [`${num(it.price)} € warm, ${num(it.size)} m²`, `${(it.address || "").split(",")[0]}, ${it.bezirk || ""}`,
             `${COMPANY[it.company] || it.company || ""}, ${"★".repeat(it.stars || 0)}${isAsked(it) ? ", angefragt" : ""}`] }));
     drawNightMap(L, mapBox, flats, places());
