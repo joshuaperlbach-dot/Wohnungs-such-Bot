@@ -96,6 +96,12 @@
   .strip::-webkit-scrollbar { display: none; }
   .strip img { height: 100%; width: 82%; flex: none; object-fit: cover; scroll-snap-align: start; display: block; }
   .strip.one img { width: 100%; }
+  .strip.withplan img { width: 50%; }
+  .plantile { flex: none; width: 50%; height: 100%; position: relative; isolation: isolate; background: #0b0b0c;
+              scroll-snap-align: start; overflow: hidden; }
+  .strip.withplan .plantile img { width: 100%; height: 100%; object-fit: contain; padding: 8px;
+              filter: invert(1) grayscale(1) contrast(2) brightness(1.2) drop-shadow(0 0 .4px #fff) drop-shadow(0 0 .4px #fff); }
+  .plantile::after { content: ""; position: absolute; inset: 0; background: #e8bd5c; mix-blend-mode: multiply; pointer-events: none; }
   .strip .none { margin: auto; color: var(--faint); font: 12px var(--mono); }
   .count { position: absolute; right: 10px; top: 10px; background: rgba(13,13,14,.72); color: var(--ink);
            font: 11px var(--mono); padding: 3px 8px; border-radius: 999px; pointer-events: none; backdrop-filter: blur(6px); }
@@ -1060,7 +1066,17 @@ function makeCard(key, o) {
     const tap = el("button", "tap");
     const imgs = (o.images || []).map(imgUrl).filter(Boolean);
     const pics = el("div", "pics");
-    const strip = el("div", "strip" + (imgs.length === 1 ? " one" : ""));
+    const plans = (o.plans || []).map(imgUrl).filter(Boolean);
+    const strip = el("div", "strip" + (plans.length ? " withplan" : imgs.length === 1 ? " one" : ""));
+    // Links der Grundriss (in Gold auf Schwarz umgefärbt), daneben die Fotos zum Weiterwischen
+    if (plans.length) {
+      const tile = el("div", "plantile"), i = el("img");
+      i.loading = "lazy"; i.alt = "Grundriss"; i.referrerPolicy = "no-referrer"; i.src = plans[0];
+      i.addEventListener("error", () => tile.remove());
+      i.addEventListener("click", ev => { ev.stopPropagation(); openViewer(plans, 0); });
+      tile.append(i);
+      strip.append(tile);
+    }
     for (const src of imgs) {
       const i = el("img");
       i.loading = "lazy"; i.alt = ""; i.referrerPolicy = "no-referrer"; i.src = src;
@@ -1068,7 +1084,7 @@ function makeCard(key, o) {
       i.addEventListener("click", ev => { ev.stopPropagation(); viewFrom(strip, i); });
       strip.append(i);
     }
-    if (!imgs.length) strip.append(el("span", "none", "kein Bild"));
+    if (!imgs.length && !plans.length) strip.append(el("span", "none", "kein Bild"));
     strip.addEventListener("click", () => openDetail(key));
     pics.append(strip);
     if (imgs.length > 1) pics.append(el("span", "count", `${imgs.length} Bilder`));
@@ -1077,7 +1093,6 @@ function makeCard(key, o) {
     if (o.points != null) stars.append(el("small", null, `${o.points} Punkte`));
     const v = viewing(o);
     if (v) stars.append(el("span", "badge " + v.cls, v.text));
-    if ((o.plans || []).length) stars.append(el("span", "badge plan", "Grundriss"));
     info.append(stars,
       mainLine(o),
       place(o),
