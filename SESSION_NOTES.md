@@ -250,3 +250,11 @@ Durch PHOTOS_VERSION 6 hat add_missing_photos bei angefragten Wohnungen die Link
 Originallinks ersetzt, drop_unused_photos hat die Kopien dann gelöscht (23 Wohnungen, 193 Bilder). Wiederhergestellt
 aus dem Git-Verlauf. Seitdem: add_missing_photos fasst gesicherte Fotos nie an, und offers.save ruft vor dem
 Aufräumen relink_kept_photos auf (liegt ein Ordner für das Angebot vor, zeigt die Liste auf die Kopien).
+
+## Statistik-Tab und Archiv (22.11.2026)
+docs/history.json: dauerhaftes Archiv, ein knapper Eintrag je Angebot, das je in der Liste stand (offers.update_history
+in offers.save, Felder HISTORY_FIELDS, nie gelöscht). Einmalig aus 1893 Ständen von docs/offers.json seit 13.10.2026
+nachgebaut (319 Angebote). Der Workflow committet docs/history.json mit. Handy-Ansicht: Tab "Statistik" mit
+Kennzahlen, Weg der Anfragen (Angefragt → Antwort → weiter → eingeladen → besichtigt), Gesellschaften, Bezirken,
+Angeboten pro Woche und Sterneverteilung (eine Farbe --viz, Balken mit 4px runden Enden, Tooltip per title).
+"du" = von Hand markiert (nur auf dem Gerät) oder Eingang per Mail (via="mail").
