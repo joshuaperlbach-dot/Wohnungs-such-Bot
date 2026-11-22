@@ -250,6 +250,7 @@ const COMPANY = { wbm: "WBM", degewo: "degewo", howoge: "HOWOGE", gewobag: "Gewo
                   stadtundland: "Stadt und Land", berlinovo: "Berlinovo" };
 
 function state(key, o) {
+  if (isQuiet(o)) return { cls: "declined", label: "Wohl nichts geworden", note: quietReason(o), locked: true };
   // Antwort der Gesellschaft, vom Bot aus der Mail gelesen
   if (o.termin && o.reply !== "absage") {
     const v = viewing(o);
@@ -363,6 +364,19 @@ function isMine(key, o) {
   return o.requested === "gesendet" || o.requested === "unklar" || !!marks[key] || !!o.reply;
 }
 function isLost(o) { return o.reply === "absage" || o.confirm === "abgelaufen"; }
+// Wohl nichts geworden: Die HOWOGE lädt meist nach 1–3 Tagen ein, sonst nie; eine Einladung ohne gebuchten
+// Termin verfällt nach 24 Stunden; sonst (WBM-Los, degewo, Gewobag ...) nach zwei Wochen ohne Nachricht.
+function quietReason(o) {
+  if (isLost(o)) return null;
+  const t = v => new Date(v || 0).getTime() || 0;
+  const age = Date.now() - Math.max(t(o.requested_at), t(o.reply_at), t(o.termin));
+  if (!Math.max(t(o.requested_at), t(o.reply_at), t(o.termin))) return null;
+  if (o.reply === "einladung" && !o.termin && age > 2 * 24 * HOUR) return "Einladung verfallen";
+  if (o.company === "howoge" && !o.reply && !o.termin && age > 7 * 24 * HOUR) return "nicht ausgelost";
+  if (age > 14 * 24 * HOUR) return "seit über 2 Wochen nichts";
+  return null;
+}
+const isQuiet = o => !!quietReason(o);
 function viewing(o) {   // Besichtigungstermin (vom Bot aus der Terminbestätigung gelesen)
   const t = o.termin ? new Date(o.termin) : null;
   if (!t || !isFinite(t)) return null;
@@ -372,13 +386,18 @@ function viewing(o) {   // Besichtigungstermin (vom Bot aus der Terminbestätigu
 function renderMine(list) {
   const mine = all().filter(([k, o]) => isMine(k, o));
   const when = o => new Date(o.reply_at || o.requested_at || o.online_since).getTime() || 0;
-  const open = mine.filter(([, o]) => !isLost(o)).sort(([, a], [, b]) => when(b) - when(a));
+  const open = mine.filter(([, o]) => !isLost(o) && !isQuiet(o)).sort(([, a], [, b]) => when(b) - when(a));
+  const quiet = mine.filter(([, o]) => isQuiet(o)).sort(([, a], [, b]) => when(b) - when(a));
   const lost = mine.filter(([, o]) => isLost(o)).sort(([, a], [, b]) => when(b) - when(a));
   document.getElementById("count").textContent = `(${open.length})`;
   if (!mine.length) { list.append(el("div", "empty", updated ? "Noch keine Anfragen." : "lädt …")); return; }
   list.append(el("div", "section", `Läuft gerade (${open.length})`));
   if (!open.length) list.append(el("div", "empty", "Gerade läuft nichts."));
   for (const [key, o] of open) list.append(makeCard(key, o));
+  if (quiet.length) {
+    list.append(el("div", "section", `Wohl nichts geworden (${quiet.length})`));
+    for (const [key, o] of quiet) list.append(makeCard(key, o));
+  }
   if (lost.length) {
     list.append(el("div", "section", `Nicht bekommen (${lost.length})`));
     for (const [key, o] of lost) list.append(makeCard(key, o));
