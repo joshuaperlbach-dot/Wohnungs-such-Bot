@@ -319,7 +319,12 @@ function all() {
   // Von Hand angefragte Angebote bleiben sichtbar, auch wenn der Bot sie schon aussortiert hat.
   const merged = {};
   for (const [k, m] of Object.entries(marks)) if (m && m.offer) merged[k] = m.offer;
-  return Object.entries({ ...merged, ...offers });
+  const out = { ...merged, ...offers };
+  // Von Hand markiert: der Zeitpunkt der Markierung gilt als Anfragezeit (für "Wohl nichts geworden")
+  for (const [k, m] of Object.entries(marks)) {
+    if (out[k] && m && m.at && !out[k].requested_at) out[k] = { ...out[k], requested_at: m.at };
+  }
+  return Object.entries(out);
 }
 
 function render() {
