@@ -32,7 +32,11 @@ for key in set(hist) | set(store["offers"]) | set(extra):
 print("nachschlagen:", len(todo))
 found = 0
 cache = {}
+start = time.time()
 for key, a in todo[:400]:
+    if time.time() - start > 12 * 60:   # Zeitlimit des Workflows: lieber speichern und nochmal laufen lassen
+        print("Zeit um, Rest beim nächsten Lauf")
+        break
     if a in cache:
         coords[key] = cache[a]
         continue
