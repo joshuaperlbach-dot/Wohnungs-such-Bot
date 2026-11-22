@@ -18,6 +18,7 @@
     --idle: #d9d8d3; --idle-ink: #3b3d44;
     --late: #dcc3be; --late-ink: #5a2f29;
     --viz: #2a78d6; --viz-track: #e6e4dd;
+    --s1: #86b6ef; --s2: #5598e7; --s3: #2a78d6; --s4: #1c5cab; --s5: #104281;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -27,6 +28,7 @@
       --idle: #3a3e47; --idle-ink: #d5d6da;
       --late: #5b3f3c; --late-ink: #f1d3ce;
       --viz: #3987e5; --viz-track: #2d3139;
+      --s1: #184f95; --s2: #256abf; --s3: #3987e5; --s4: #6da7ec; --s5: #b7d3f6;
     }
   }
   * { box-sizing: border-box; }
@@ -147,22 +149,66 @@
                border-radius: 10px; margin-bottom: 8px; cursor: zoom-in; }
   .badge.plan { background: var(--chip); color: var(--ink); }
   /* Statistik */
-  .kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin: 4px 0 6px; }
-  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
-  .kpi b { display: block; font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.15; }
-  .kpi span { color: var(--muted); font-size: 13px; }
-  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 10px; }
-  .meter { display: grid; grid-template-columns: minmax(90px, 34%) 1fr auto; gap: 8px; align-items: center;
-           font-size: 14px; padding: 4px 0; font-variant-numeric: tabular-nums; }
-  .meter .bar { height: 10px; background: var(--viz-track); border-radius: 4px; overflow: hidden; }
-  .meter .bar i { display: block; height: 100%; background: var(--viz); border-radius: 0 4px 4px 0; min-width: 2px; }
-  .meter .val { color: var(--ink); font-weight: 600; min-width: 34px; text-align: right; }
-  .meter small { grid-column: 1 / -1; color: var(--muted); font-size: 12.5px; margin-top: -2px; }
-  .cols { width: 100%; height: 150px; display: block; overflow: visible; }
-  .cols rect { fill: var(--viz); }
-  .cols text { fill: var(--muted); font: 11px system-ui, sans-serif; }
-  .cols .v { fill: var(--ink); font-weight: 600; }
-  .note { color: var(--muted); font-size: 12.5px; margin: 4px 2px 0; }
+  .stats { display: grid; gap: 12px; }
+  .hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .big { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 10px; min-width: 0; }
+  .big b { display: block; font-size: 32px; line-height: 1.05; font-weight: 750; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .big span { display: block; font-weight: 600; font-size: 13.5px; margin-top: 2px; }
+  .big small { display: block; color: var(--muted); font-size: 11.5px; margin-top: 4px; line-height: 1.3; }
+  .viz { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 12px; }
+  .viz h4 { margin: 0; font-size: 16.5px; line-height: 1.3; font-weight: 700; }
+  .viz .how, .stats > .how { color: var(--muted); font-size: 12.5px; line-height: 1.4; margin: 4px 0 10px; }
+  .facts { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+  .facts li { position: relative; padding-left: 16px; font-size: 14.5px; line-height: 1.4; }
+  .facts li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 6px; height: 6px; border-radius: 50%; background: var(--s4); }
+  .stage { padding: 6px 0; border-radius: 8px; }
+  .stage.hot { background: var(--chip); }
+  .slab { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 4px; }
+  .slab b { font-variant-numeric: tabular-nums; }
+  .sbar { height: 14px; background: var(--viz-track); border-radius: 4px; overflow: hidden; }
+  .sbar i { display: block; height: 100%; border-radius: 0 4px 4px 0; }
+  .conv { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+  .statmap { height: 300px; border-radius: 10px; background: var(--chip); z-index: 0; }
+  .leaflet-tooltip.bubble-label { background: transparent; border: 0; box-shadow: none; color: #fff; font: 700 12px system-ui, sans-serif;
+                  text-shadow: 0 0 3px rgba(0,0,0,.6); padding: 0; }
+  .bubble-label::before, .place-label::before { display: none; }
+  .leaflet-tooltip.place-label { background: var(--card); color: var(--ink); border: 0; font: 600 11px system-ui, sans-serif; padding: 1px 5px; }
+  .legend { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; color: var(--muted); font-size: 12px; margin-top: 8px; }
+  .legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .legend span { margin-right: 4px; }
+  .legend .ringkey { border-radius: 50%; border: 1.6px solid var(--ink); width: 9px; height: 9px; margin-left: 6px; }
+  .plot { width: 100%; height: auto; display: block; overflow: visible; }
+  .plot .grid { stroke: var(--line); stroke-width: 1; }
+  .plot .axis { stroke: var(--muted); stroke-width: 1; opacity: .6; }
+  .plot .ref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 4; }
+  .plot .tick { fill: var(--muted); font: 10.5px system-ui, sans-serif; }
+  .plot .ref-t { font-size: 10px; }
+  .plot .val { fill: var(--ink); font: 600 10.5px system-ui, sans-serif; }
+  .plot .pt.hot circle:last-child { stroke: var(--ink); stroke-width: 2.5; }
+  .plot .col.hot path, .plot .col.hot rect:not(:first-child) { opacity: .8; }
+  .heat { display: grid; grid-template-columns: 26px repeat(8, 1fr); gap: 3px; font-size: 11px; color: var(--muted); }
+  .heat .hx { text-align: left; }
+  .heat .hy { align-self: center; }
+  .heat .cell { aspect-ratio: 1.6; border-radius: 4px; }
+  .heat .cell.hot { outline: 2px solid var(--ink); outline-offset: -1px; }
+  .crow { display: grid; grid-template-columns: 70px 1fr 56px 56px 34px; gap: 8px; align-items: center; padding: 7px 4px;
+          border-bottom: 1px solid var(--line); font-size: 13.5px; border-radius: 6px; }
+  .crow.hot { background: var(--chip); }
+  .chead, .cscale { color: var(--muted); font-size: 11.5px; border-bottom: 0; padding-bottom: 2px; }
+  .cscale { padding-top: 2px; }
+  .cname { font-weight: 600; font-size: 13px; line-height: 1.15; overflow-wrap: anywhere; }
+  .nbar { display: flex; align-items: center; gap: 5px; height: 16px; }
+  .nbar i { display: block; height: 100%; background: var(--s4); border-radius: 0 4px 4px 0; min-width: 2px; flex: none; }
+  .nbar em { font: 600 11.5px system-ui, sans-serif; font-style: normal; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .track { position: relative; height: 16px; }
+  .track::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--viz-track); border-radius: 2px; }
+  .track i { position: absolute; top: 3px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--s5);
+             box-shadow: 0 0 0 2px var(--card); }
+  .rate { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .tip { position: fixed; z-index: 50; display: none; max-width: 260px; background: var(--ink); color: var(--bg); border-radius: 8px;
+         padding: 7px 10px; font-size: 12.5px; line-height: 1.35; pointer-events: none; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+  .tip b { display: block; font-size: 14px; }
+  .tip span { display: block; opacity: .85; }
   /* Mails zur Wohnung (verschlüsselt gespeichert, Text erst nach Antippen) */
   .mail { border-bottom: 1px solid var(--line); }
   .mail > button { width: 100%; text-align: left; background: none; padding: 9px 0; display: flex; gap: 8px;
@@ -445,7 +491,8 @@ function renderMine(list) {
   }
 }
 
-// ---- Tab "Statistik": aus dem Archiv (docs/history.json, jedes passende Angebot seit 13.10.2026)
+// ---- Tab "Statistik": aus dem Archiv (docs/history.json, jedes passende Angebot seit 13.10.2026).
+// Jede Grafik hat als Überschrift die Erkenntnis, darunter eine Zeile, wie man sie liest.
 let history = null, historyLoading = false;
 async function loadHistory() {
   if (historyLoading) return;
@@ -457,127 +504,302 @@ async function loadHistory() {
   historyLoading = false;
   if (view === "stats") render();
 }
-function meter(name, value, max, text, sub) {
-  const row = el("div", "meter"), bar = el("div", "bar"), fill = el("i");
-  fill.style.width = `${max ? Math.max(1.5, 100 * value / max) : 0}%`;
-  bar.append(fill);
-  row.title = `${name}: ${text ?? value}`;
-  row.append(el("span", null, name), bar, el("span", "val", text ?? String(value)));
-  if (sub) row.append(el("small", null, sub));
-  return row;
-}
-function columns(labels, values) {   // einfache Säulen (SVG), Wert über der Säule, Tooltip per title
-  const NS = "http://www.w3.org/2000/svg", W = 340, H = 150, top = 16, base = H - 18;
-  const svg = document.createElementNS(NS, "svg");
-  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("class", "cols"); svg.setAttribute("role", "img");
-  const max = Math.max(1, ...values), n = values.length, step = W / n, bw = Math.max(4, Math.min(28, step * 0.62));
-  values.forEach((v, i) => {
-    const h = (base - top) * v / max, x = i * step + (step - bw) / 2;
-    const r = document.createElementNS(NS, "path");
-    const y = base - h, rr = Math.min(4, h / 2, bw / 2);
-    r.setAttribute("d", h > 0 ? `M${x},${base} V${y + rr} Q${x},${y} ${x + rr},${y} H${x + bw - rr} Q${x + bw},${y} ${x + bw},${y + rr} V${base} Z` : "");
-    r.setAttribute("fill", "var(--viz)");
-    const t = document.createElementNS(NS, "title"); t.textContent = `${labels[i]}: ${v}`; r.append(t);
-    svg.append(r);
-    if (v && (n <= 12 || v === max)) {
-      const tv = document.createElementNS(NS, "text"); tv.setAttribute("class", "v");
-      tv.setAttribute("x", x + bw / 2); tv.setAttribute("y", y - 4); tv.setAttribute("text-anchor", "middle"); tv.textContent = v;
-      svg.append(tv);
-    }
-    if (n <= 8 || i % Math.ceil(n / 8) === 0) {
-      const tl = document.createElementNS(NS, "text");
-      tl.setAttribute("x", x + bw / 2); tl.setAttribute("y", H - 4); tl.setAttribute("text-anchor", "middle"); tl.textContent = labels[i];
-      svg.append(tl);
-    }
-  });
-  const axis = document.createElementNS(NS, "line");
-  axis.setAttribute("x1", 0); axis.setAttribute("x2", W); axis.setAttribute("y1", base); axis.setAttribute("y2", base);
-  axis.setAttribute("stroke", "var(--line)");
-  svg.append(axis);
-  return svg;
-}
 const avg = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
-function isoWeek(d) {
-  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-  const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
-  const y0 = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
-  return Math.ceil(((t - y0) / 864e5 + 1) / 7);
+const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+const SVGNS = "http://www.w3.org/2000/svg";
+function svgEl(tag, attrs, parent) {
+  const n = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, v);
+  if (parent) parent.append(n);
+  return n;
 }
+const BEZIRK_POS = {   // ungefähre Mitte der Bezirke, für die Karte
+  "Mitte": [52.530, 13.370], "Friedrichshain-Kreuzberg": [52.503, 13.428], "Pankow": [52.590, 13.430],
+  "Charlottenburg-Wilmersdorf": [52.505, 13.280], "Spandau": [52.535, 13.200], "Steglitz-Zehlendorf": [52.435, 13.245],
+  "Tempelhof-Schöneberg": [52.455, 13.380], "Neukölln": [52.445, 13.450], "Treptow-Köpenick": [52.435, 13.590],
+  "Marzahn-Hellersdorf": [52.545, 13.590], "Lichtenberg": [52.535, 13.500], "Reinickendorf": [52.600, 13.300],
+};
+const BEZIRK_ALIAS = { "Friedrichshain": "Friedrichshain-Kreuzberg", "Kreuzberg": "Friedrichshain-Kreuzberg",
+  "Prenzlauer Berg": "Pankow", "Wedding": "Mitte", "Moabit": "Mitte", "Schöneberg": "Tempelhof-Schöneberg" };
+const bezirkOf = b => BEZIRK_ALIAS[b] || b;
+const RING = [[52.5487,13.3885],[52.5493,13.4152],[52.5448,13.4274],[52.5403,13.439],[52.5296,13.4553],[52.5239,13.465],
+  [52.5136,13.4752],[52.5031,13.4693],[52.4938,13.4613],[52.473,13.4556],[52.4693,13.4423],[52.4674,13.4313],[52.4706,13.3855],
+  [52.4753,13.3655],[52.4795,13.3521],[52.4783,13.3432],[52.4778,13.329],[52.4797,13.3126],[52.4886,13.3003],[52.4962,13.2905],
+  [52.5011,13.2838],[52.5078,13.2832],[52.5182,13.2845],[52.5303,13.2993],[52.5343,13.329],[52.5363,13.344],[52.5427,13.3661]];
+const starColor = n => `var(--s${Math.min(5, Math.max(1, Math.round(n || 1)))})`;
+const WD = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+
+// Ein Tooltip für alle Grafiken: Hover, Fokus und Antippen (Handy)
+let tipEl = null;
+function showTip(ev, lines) {
+  if (!tipEl) { tipEl = el("div", "tip"); document.body.append(tipEl); }
+  tipEl.replaceChildren(el("b", null, lines[0]), ...lines.slice(1).map(t => el("span", null, t)));
+  tipEl.style.display = "block";
+  const r = tipEl.getBoundingClientRect();
+  const x = Math.min(window.innerWidth - r.width - 8, Math.max(8, ev.clientX - r.width / 2));
+  const y = ev.clientY - r.height - 14 < 8 ? ev.clientY + 18 : ev.clientY - r.height - 14;
+  tipEl.style.left = `${x}px`; tipEl.style.top = `${y}px`;
+}
+function hideTip() { if (tipEl) tipEl.style.display = "none"; }
+function hover(node, lines) {
+  node.setAttribute("tabindex", "0");
+  node.style.cursor = "pointer";
+  const on = ev => { node.classList.add("hot"); showTip(ev.clientX != null ? ev : (() => { const b = node.getBoundingClientRect(); return { clientX: b.left + b.width / 2, clientY: b.top }; })(), lines()); };
+  node.addEventListener("pointerenter", on);
+  node.addEventListener("pointermove", on);
+  node.addEventListener("click", ev => { ev.stopPropagation(); on(ev); });
+  node.addEventListener("focus", on);
+  for (const t of ["pointerleave", "blur"]) node.addEventListener(t, () => { node.classList.remove("hot"); hideTip(); });
+}
+document.addEventListener("click", hideTip);
+window.addEventListener("scroll", hideTip, { passive: true });
+
+function card(title, how) {
+  const c = el("section", "viz");
+  c.append(el("h4", null, title));
+  if (how) c.append(el("p", "how", how));
+  return c;
+}
+
 function renderStats(list) {
   if (!history) { loadHistory(); list.append(el("div", "empty", "lädt Statistik …")); return; }
-  // Archiv + aktuelle Liste + von Hand markierte (nur auf diesem Gerät)
   const rows = { ...history };
   for (const [k, o] of all()) rows[k] = { ...(rows[k] || {}), ...o };
-  const items = Object.entries(rows).map(([k, o]) => ({ k, ...o }));
+  const items = Object.entries(rows).map(([k, o]) => ({ k, ...o, bz: bezirkOf(o.bezirk) }));
+  const isAsked = it => it.requested === "gesendet" || it.requested === "unklar" || !!marks[it.k];
+  const asked = items.filter(isAsked);
   const byHand = it => !!marks[it.k] || it.via === "mail";
-  const asked = items.filter(it => it.requested === "gesendet" || it.requested === "unklar" || marks[it.k]);
-  const bot = asked.filter(it => !byHand(it)).length, me = asked.length - bot;
+  const nBot = asked.filter(it => !byHand(it)).length, nMe = asked.length - nBot;
   const replied = asked.filter(it => it.reply);
-  const declined = asked.filter(it => it.reply === "absage").length;
-  const sa = asked.filter(it => it.reply === "selbstauskunft").length;
-  const invited = asked.filter(it => it.reply === "einladung" || it.termin).length;
-  const visited = asked.filter(it => it.termin && Date.now() > new Date(it.termin).getTime() + 30 * 60e3).length;
+  const further = asked.filter(it => ["einladung", "selbstauskunft"].includes(it.reply) || it.termin);
+  const invited = asked.filter(it => it.reply === "einladung" || it.termin);
+  const visited = asked.filter(it => it.termin && Date.now() > new Date(it.termin).getTime() + 30 * 60e3);
+  const declined = asked.filter(it => it.reply === "absage");
+  const times = items.map(it => new Date(it.online_since)).filter(d => isFinite(d));
+  const first = times.length ? new Date(Math.min(...times)) : new Date();
+  const days = Math.max(1, Math.round((Date.now() - first) / 864e5));
   document.getElementById("count").textContent = "";
-  const since = items.map(it => new Date(it.online_since).getTime()).filter(isFinite);
-  const from = since.length ? new Date(Math.min(...since)).toLocaleDateString("de-DE", { day: "numeric", month: "long" }) : "";
+  const wrap = el("div", "stats");
+  list.append(wrap);
 
-  list.append(el("div", "section", `Seit ${from}`));
-  const kpis = el("div", "kpis");
-  for (const [v, t] of [[items.length, "passende Angebote gesehen"], [asked.length, `angefragt (Bot ${bot} · du ${me})`],
-                        [declined, "Absagen"], [invited, "Einladungen"], [sa, "WBM-Selbstauskünfte"], [visited, "Besichtigungen"]]) {
-    const k = el("div", "kpi"); k.append(el("b", null, String(v)), el("span", null, t)); kpis.append(k);
+  // ---------- Kopf: drei große Zahlen
+  const hero = el("div", "hero");
+  for (const [v, t, sub] of [
+    [items.length, "passende Angebote", `seit ${first.toLocaleDateString("de-DE", { day: "numeric", month: "long" })} · ${(items.length / days).toLocaleString("de-DE", { maximumFractionDigits: 1 })} pro Tag`],
+    [asked.length, "Anfragen", `${nBot} vom Bot · ${nMe} von dir`],
+    [further.length, "eine Runde weiter", `${invited.length} Einladungen · ${visited.length} besichtigt`],
+  ]) {
+    const h = el("div", "big"); h.append(el("b", null, String(v)), el("span", null, t), el("small", null, sub)); hero.append(h);
   }
-  list.append(kpis);
+  wrap.append(hero);
 
-  list.append(el("div", "section", "Was aus den Anfragen wurde"));
-  const fun = el("div", "panel");
-  for (const [n, v] of [["Angefragt", asked.length], ["Antwort bekommen", replied.length],
-                        ["Eine Runde weiter", invited + sa], ["Eingeladen", invited], ["Besichtigt", visited]]) {
-    fun.append(meter(n, v, asked.length, `${v}`, null));
-  }
-  list.append(fun);
-
-  list.append(el("div", "section", "Gesellschaften"));
+  // ---------- Das Wichtigste (berechnete Kernsätze)
   const comp = {};
   for (const it of items) (comp[it.company || "?"] ||= []).push(it);
-  const cp = el("div", "panel");
-  const cmax = Math.max(...Object.values(comp).map(a => a.length));
-  for (const [c, a] of Object.entries(comp).sort((x, y) => y[1].length - x[1].length)) {
-    const st = avg(a.map(x => x.stars).filter(Number.isFinite)), pr = avg(a.map(x => x.price).filter(Number.isFinite));
-    const qm = avg(a.filter(x => x.price && x.size).map(x => x.price / x.size));
-    const ca = a.filter(x => asked.includes(x)), ci = ca.filter(x => x.reply === "einladung" || x.termin || x.reply === "selbstauskunft").length;
-    cp.append(meter(COMPANY[c] || c, a.length, cmax, String(a.length),
-      `Ø ${st != null ? st.toFixed(1) : "?"} ★ · Ø ${pr != null ? num(pr) : "?"} € warm · ${qm != null ? num(qm, 1) : "?"} €/m² · angefragt ${ca.length}, weiter ${ci}`));
-  }
-  list.append(cp);
+  const compStats = Object.entries(comp).map(([c, a]) => ({
+    c, n: a.length, name: COMPANY[c] || c,
+    stars: avg(a.map(x => x.stars).filter(Number.isFinite)),
+    qm: avg(a.filter(x => x.price && x.size).map(x => x.price / x.size)),
+    asked: a.filter(isAsked).length,
+    further: a.filter(x => isAsked(x) && (["einladung", "selbstauskunft"].includes(x.reply) || x.termin)).length,
+  })).sort((a, b) => b.n - a.n);
+  const solid = compStats.filter(c => c.n >= 5);
+  const best = [...solid].sort((a, b) => b.stars - a.stars)[0];
+  const cheap = [...solid].sort((a, b) => a.qm - b.qm)[0];
+  const grid = Array.from({ length: 7 }, () => Array(8).fill(0));   // Wochentag x 2-Stunden-Fenster (6–22 Uhr)
+  for (const d of times) { const h = d.getHours(); if (h >= 6 && h < 22) grid[(d.getDay() + 6) % 7][Math.floor((h - 6) / 2)]++; }
+  let peak = [0, 0, 0];
+  grid.forEach((r, i) => r.forEach((v, j) => { if (v > peak[0]) peak = [v, i, j]; }));
+  const wdTotals = grid.map(r => r.reduce((a, b) => a + b, 0));
+  const weekend = wdTotals[5] + wdTotals[6], all7 = wdTotals.reduce((a, b) => a + b, 0) || 1;
+  const facts = [
+    asked.length ? `Von ${asked.length} Anfragen kamen ${further.length} eine Runde weiter, also etwa jede ${Math.max(1, Math.round(asked.length / Math.max(1, further.length)))}.` : null,
+    best ? `Die besten Wohnungen hat ${best.name} (Ø ${best.stars.toFixed(1)} ★), die meisten ${compStats[0].name} (${compStats[0].n}).` : null,
+    cheap ? `Am günstigsten pro m² ist ${cheap.name} mit ${num(cheap.qm, 1)} € warm.` : null,
+    peak[0] ? `Neue Angebote kommen vor allem ${["montags", "dienstags", "mittwochs", "donnerstags", "freitags", "samstags", "sonntags"][peak[1]]} zwischen ${6 + 2 * peak[2]} und ${8 + 2 * peak[2]} Uhr, am Wochenende kaum (${pct(weekend, all7)} %).` : null,
+  ].filter(Boolean);
+  const fc = card("Das Wichtigste");
+  const ul = el("ul", "facts");
+  for (const f of facts) ul.append(el("li", null, f));
+  fc.append(ul);
+  wrap.append(fc);
 
-  list.append(el("div", "section", "Bezirke (die 10 häufigsten)"));
-  const bez = {};
-  for (const it of items) if (it.bezirk) (bez[it.bezirk] ||= []).push(it);
-  const bp = el("div", "panel");
-  const top = Object.entries(bez).sort((x, y) => y[1].length - x[1].length).slice(0, 10);
-  const bmax = top.length ? top[0][1].length : 1;
-  for (const [b, a] of top) {
-    const pr = avg(a.map(x => x.price).filter(Number.isFinite)), st = avg(a.map(x => x.stars).filter(Number.isFinite));
-    bp.append(meter(b, a.length, bmax, String(a.length), `Ø ${pr != null ? num(pr) : "?"} € warm · Ø ${st != null ? st.toFixed(1) : "?"} ★`));
-  }
-  list.append(bp);
+  // ---------- Trichter
+  const stages = [["Angefragt", asked.length], ["Antwort bekommen", replied.length], ["Eine Runde weiter", further.length],
+                  ["Eingeladen", invited.length], ["Besichtigt", visited.length]];
+  const funnel = card(`Nur ${pct(further.length, asked.length)} % der Anfragen kommen eine Runde weiter`,
+    "Jede Stufe als Balken, die Prozentzahl zeigt, wie viele von der Stufe davor übrig bleiben. „Eine Runde weiter“ = Einladung oder WBM-Selbstauskunft.");
+  stages.forEach(([name, v], i) => {
+    const row = el("div", "stage");
+    const bar = el("div", "sbar"); const fill = el("i");
+    fill.style.width = `${asked.length ? Math.max(2, 100 * v / asked.length) : 0}%`;
+    fill.style.background = `var(--s${5 - Math.min(3, i)})`;
+    bar.append(fill);
+    const lab = el("div", "slab"); lab.append(el("span", null, name), el("b", null, String(v)));
+    row.append(lab, bar);
+    if (i > 0) row.append(el("small", "conv", `${pct(v, stages[i - 1][1])} % von „${stages[i - 1][0]}“`));
+    hover(row, () => [`${v} ${name.toLowerCase()}`, `${pct(v, asked.length)} % aller Anfragen`]);
+    funnel.append(row);
+  });
+  const reasons = el("p", "how", `${declined.length} Absagen, ${asked.length - replied.length} ohne Antwort (bei HOWOGE und WBM heißt das meist: nicht ausgelost).`);
+  funnel.append(reasons);
+  wrap.append(funnel);
 
-  list.append(el("div", "section", "Passende Angebote pro Woche"));
-  const wk = new Map();
-  const dates = since.sort((a, b) => a - b);
-  if (dates.length) {
-    for (let t = dates[0]; t <= Date.now(); t += 7 * 864e5) wk.set(`KW ${isoWeek(new Date(t))}`, 0);
-    for (const t of dates) { const l = `KW ${isoWeek(new Date(t))}`; wk.set(l, (wk.get(l) || 0) + 1); }
-  }
-  const wp = el("div", "panel"); wp.append(columns([...wk.keys()], [...wk.values()])); list.append(wp);
+  // ---------- Karte nach Bezirk
+  const bz = {};
+  for (const it of items) if (BEZIRK_POS[it.bz]) (bz[it.bz] ||= []).push(it);
+  const bzStats = Object.entries(bz).map(([b, a]) => ({ b, n: a.length, stars: avg(a.map(x => x.stars).filter(Number.isFinite)),
+    price: avg(a.map(x => x.price).filter(Number.isFinite)), asked: a.filter(isAsked).length })).sort((a, b) => b.n - a.n);
+  const bestBz = [...bzStats].filter(x => x.n >= 3).sort((a, b) => b.stars - a.stars)[0];
+  const mapCard = card(bzStats.length ? `Die meisten Angebote in ${bzStats[0].b}, die besten in ${bestBz ? bestBz.b : "?"}` : "Bezirke",
+    "Kreisgröße = Zahl der Angebote, Farbe = Ø Sterne (Legende unten). Gestrichelt: der S-Bahn-Ring. Kreis antippen für Details.");
+  const mapBox = el("div", "statmap");
+  mapCard.append(mapBox);
+  const legend = el("div", "legend");
+  legend.append(el("span", null, "Ø Sterne"));
+  for (let i = 1; i <= 5; i++) { const sw = el("i"); sw.style.background = `var(--s${i})`; legend.append(sw, el("span", null, String(i))); }
+  mapCard.append(legend);
+  wrap.append(mapCard);
+  requestAnimationFrame(async () => {
+    const L = await leaflet();
+    if (!L || !mapBox.isConnected) { mapBox.replaceChildren(el("div", "how", "Karte konnte nicht geladen werden.")); mapBox.style.height = "auto"; return; }
+    const map = L.map(mapBox, { scrollWheelZoom: false, attributionControl: true, zoomControl: false });
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/" + (matchMedia("(prefers-color-scheme: dark)").matches ? "dark_nolabels" : "light_nolabels") + "/{z}/{x}/{y}.png",
+      { maxZoom: 18, attribution: "© OpenStreetMap, © CARTO" }).addTo(map);
+    L.polygon(RING, { color: getComputedStyle(document.body).getPropertyValue("--muted"), weight: 2, dashArray: "4 5", fill: false, interactive: false }).addTo(map);
+    const css = getComputedStyle(document.body);
+    const maxN = Math.max(1, ...bzStats.map(x => x.n));
+    for (const x of bzStats) {
+      const c = css.getPropertyValue(`--s${Math.min(5, Math.max(1, Math.round(x.stars || 1)))}`).trim();
+      const m = L.circleMarker(BEZIRK_POS[x.b], { radius: 8 + 26 * Math.sqrt(x.n / maxN), color: css.getPropertyValue("--card").trim() || "#fff",
+        weight: 2, fillColor: c, fillOpacity: 0.9 }).addTo(map);
+      m.bindTooltip(`${x.n}`, { permanent: true, direction: "center", className: "bubble-label" });
+      m.on("click", e => showTip(e.originalEvent, [`${x.b}: ${x.n} Angebote`, `Ø ${x.stars ? x.stars.toFixed(1) : "?"} ★ · Ø ${num(x.price)} € warm`, `${x.asked} davon angefragt`]));
+    }
+    for (const p of places()) L.circleMarker([p.lat, p.lon], { radius: 5, color: "#fff", weight: 2, fillColor: "#111", fillOpacity: 1 })
+      .addTo(map).bindTooltip(p.name, { permanent: true, direction: "right", offset: [6, 0], className: "place-label" });
+    map.fitBounds([[52.40, 13.20], [52.62, 13.62]]);
+  });
 
-  list.append(el("div", "section", "Sterne der passenden Angebote"));
-  const sp = el("div", "panel");
-  sp.append(columns(["1★", "2★", "3★", "4★", "5★"], [1, 2, 3, 4, 5].map(n => items.filter(it => it.stars === n).length)));
-  list.append(sp);
-  list.append(el("div", "note", "„Passend“ heißt: hat die Filter des Bots bestanden (Größe, Preis, Bezirk, kein WBS). " +
-    "Von Hand markierte Anfragen zählen nur auf diesem Gerät mit."));
+  // ---------- Preis gegen Größe
+  const pts = items.filter(it => it.price && it.size && it.size < 120 && it.price < 1400);
+  const qmAll = avg(pts.map(it => it.price / it.size));
+  const sc = card(`Im Schnitt ${num(qmAll, 1)} € warm pro m² – je weiter oben links, desto teurer`,
+    "Jeder Punkt eine Wohnung: rechts = größer, oben = teurer. Farbe = Sterne (Legende unten), Ring = von dir/dem Bot angefragt. Linien: 12, 15 und 18 € pro m².");
+  const W = 340, H = 240, ml = 34, mb = 22, mt = 8, mr = 8;
+  const xs = pts.map(p => p.size), ys = pts.map(p => p.price);
+  const x0 = 25, x1 = Math.max(75, Math.ceil(Math.max(...xs, 0) / 5) * 5), y0 = 300, y1 = Math.max(1000, Math.ceil(Math.max(...ys, 0) / 100) * 100);
+  const X = v => ml + (W - ml - mr) * (v - x0) / (x1 - x0), Y = v => H - mb - (H - mb - mt) * (v - y0) / (y1 - y0);
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "plot", role: "img", "aria-label": "Preis gegen Größe" });
+  for (let v = 400; v <= y1; v += 200) {
+    svgEl("line", { x1: ml, x2: W - mr, y1: Y(v), y2: Y(v), class: "grid" }, svg);
+    svgEl("text", { x: ml - 4, y: Y(v) + 3, "text-anchor": "end", class: "tick" }, svg).textContent = `${v} €`;
+  }
+  for (let v = 30; v <= x1; v += 10) svgEl("text", { x: X(v), y: H - 6, "text-anchor": "middle", class: "tick" }, svg).textContent = `${v} m²`;
+  svgEl("line", { x1: ml, x2: W - mr, y1: H - mb, y2: H - mb, class: "axis" }, svg);
+  for (const q of [12, 15, 18]) {   // Linien gleicher €/m², bis an den Rand gekappt
+    const xa = Math.max(x0, y0 / q), xb = Math.min(x1, y1 / q);
+    if (xb <= xa) continue;
+    svgEl("line", { x1: X(xa), y1: Y(q * xa), x2: X(xb), y2: Y(q * xb), class: "ref" }, svg);
+    const t = svgEl("text", { x: X(xb) - 2, y: Y(q * xb) + (xb === x1 ? -4 : 10), "text-anchor": "end", class: "tick ref-t" }, svg);
+    t.textContent = `${q} €/m²`;
+  }
+  for (const p of [...pts].sort((a, b) => (a.stars || 0) - (b.stars || 0))) {
+    const g = svgEl("g", { class: "pt" }, svg);
+    svgEl("circle", { cx: X(p.size), cy: Y(p.price), r: 12, fill: "transparent" }, g);   // große Trefferfläche
+    svgEl("circle", { cx: X(p.size), cy: Y(p.price), r: isAsked(p) ? 4.5 : 3.6, fill: starColor(p.stars),
+      stroke: isAsked(p) ? "var(--ink)" : "var(--card)", "stroke-width": isAsked(p) ? 1.6 : 1 }, g);
+    hover(g, () => [`${num(p.price)} € warm · ${num(p.size)} m²`, `${p.bezirk || ""} · ${COMPANY[p.company] || p.company || ""}`,
+      `${"★".repeat(p.stars || 0)} · ${num(p.price / p.size, 1)} €/m²${isAsked(p) ? " · angefragt" : ""}`]);
+  }
+  sc.append(svg);
+  const lg = el("div", "legend");
+  lg.append(el("span", null, "Sterne"));
+  for (let i = 1; i <= 5; i++) { const sw = el("i"); sw.style.background = `var(--s${i})`; lg.append(sw, el("span", null, String(i))); }
+  const ring = el("i", "ringkey"); lg.append(ring, el("span", null, "angefragt"));
+  sc.append(lg);
+  wrap.append(sc);
+
+  // ---------- Wann kommen neue Angebote?
+  const hm = card(peak[0] ? `Neue Angebote kommen werktags vormittags – am meisten ${WD[peak[1]]} ${6 + 2 * peak[2]}–${8 + 2 * peak[2]} Uhr` : "Wann neue Angebote kommen",
+    "Jedes Feld = Wochentag und Uhrzeit, je kräftiger die Farbe, desto mehr neue passende Angebote. Der Bot ist rund um die Uhr da, du musst also nicht aufpassen.");
+  const maxC = Math.max(1, ...grid.flat());
+  const table = el("div", "heat");
+  table.append(el("span"));
+  for (let j = 0; j < 8; j++) table.append(el("span", "hx", `${6 + 2 * j}`));
+  grid.forEach((r, i) => {
+    table.append(el("span", "hy", WD[i]));
+    r.forEach((v, j) => {
+      const c = el("span", "cell");
+      const lvl = v ? Math.min(5, 1 + Math.floor(4.999 * v / maxC)) : 0;
+      c.style.background = lvl ? `var(--s${lvl})` : "var(--viz-track)";
+      hover(c, () => [`${v} Angebote`, `${["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"][i]}, ${6 + 2 * j}–${8 + 2 * j} Uhr`]);
+      table.append(c);
+    });
+  });
+  hm.append(table);
+  wrap.append(hm);
+
+  // ---------- Gesellschaften im Vergleich (Punkte auf gemeinsamen Achsen)
+  const cc = card(best ? `${best.name}: wenige, aber die besten Wohnungen` : "Gesellschaften im Vergleich",
+    "Balken = Zahl der Angebote. Punkte zeigen Ø Sterne (1–5) und Ø Warmmiete pro m² (10–20 €) auf derselben Skala für alle. Rechts: wie oft eine Anfrage eine Runde weiter kam.");
+  const head = el("div", "crow chead");
+  head.append(el("span", null, ""), el("span", null, "Angebote"), el("span", null, "Ø Sterne"), el("span", null, "€/m²"), el("span", null, "weiter"));
+  cc.append(head);
+  const nMax = Math.max(1, ...compStats.map(c => c.n));
+  for (const c of compStats) {
+    const r = el("div", "crow");
+    const nb = el("div", "nbar"); const nf = el("i"); nf.style.width = `calc(${(c.n / nMax).toFixed(3)} * (100% - 30px))`; nb.append(nf, el("em", null, String(c.n)));
+    const dot = (v, lo, hi, cls) => { const t = el("div", "track " + cls); const d = el("i"); d.style.left = `${Math.max(0, Math.min(100, 100 * (v - lo) / (hi - lo)))}%`; if (v == null) d.style.display = "none"; t.append(d); return t; };
+    r.append(el("span", "cname", c.name), nb, dot(c.stars, 1, 5, "st"), dot(c.qm, 10, 20, "qm"),
+      el("span", "rate", c.asked ? `${c.further}/${c.asked}` : "–"));
+    hover(r, () => [c.name, `${c.n} Angebote · Ø ${c.stars ? c.stars.toFixed(1) : "?"} ★ · ${c.qm ? num(c.qm, 1) : "?"} €/m²`,
+      c.asked ? `${c.asked} angefragt, ${c.further} eine Runde weiter` : "noch nie angefragt"]);
+    cc.append(r);
+  }
+  const scale = el("div", "crow cscale");
+  scale.append(el("span"), el("span"), el("span", null, "1 · · · 5"), el("span", null, "10 · · · 20"), el("span"));
+  cc.append(scale);
+  wrap.append(cc);
+
+  // ---------- Wochen: passend vs. angefragt (gestapelt, gleiche Einheit)
+  const weeks = new Map();
+  const wkKey = d => { const t = new Date(d); t.setHours(0, 0, 0, 0); t.setDate(t.getDate() - (t.getDay() + 6) % 7); return t.getTime(); };
+  for (let t = wkKey(first); t <= Date.now(); t += 7 * 864e5) weeks.set(wkKey(t), [0, 0]);
+  for (const it of items) { const d = new Date(it.online_since); if (!isFinite(d)) continue; const w = weeks.get(wkKey(d)); if (w) w[isAsked(it) ? 1 : 0]++; }
+  const wv = [...weeks.entries()];
+  const lastFull = wv.length > 1 ? wv[wv.length - 2][1] : [0, 0];
+  const wc = card(`Etwa ${Math.round(avg(wv.slice(0, -1).map(([, v]) => v[0] + v[1])) || 0)} passende Angebote pro Woche`,
+    "Säule = passende Angebote der Woche, der abgesetzte Teil unten wurde angefragt. Die letzte Säule ist die laufende Woche.");
+  const WW = 340, WH = 150, wb = 18, wt = 14;
+  const wsvg = svgEl("svg", { viewBox: `0 0 ${WW} ${WH}`, class: "plot", role: "img", "aria-label": "Angebote pro Woche" });
+  const wmax = Math.max(1, ...wv.map(([, v]) => v[0] + v[1]));
+  const step = WW / Math.max(1, wv.length), bw = Math.min(30, step * 0.64);
+  wv.forEach(([t, [rest, ak]], i) => {
+    const x = i * step + (step - bw) / 2, hTot = (WH - wb - wt) * (rest + ak) / wmax, hAk = (WH - wb - wt) * ak / wmax;
+    const g = svgEl("g", { class: "col" }, wsvg);
+    svgEl("rect", { x: x - 3, y: wt - 6, width: bw + 6, height: WH - wb - wt + 6, fill: "transparent" }, g);
+    if (hTot > 0) svgEl("path", { d: roundTop(x, WH - wb, bw, hTot), fill: "var(--s2)" }, g);
+    if (hAk > 0) svgEl("rect", { x, y: WH - wb - hAk, width: bw, height: hAk, fill: "var(--s5)" }, g);
+    if (hAk > 0 && hTot - hAk > 2) svgEl("line", { x1: x, x2: x + bw, y1: WH - wb - hAk, y2: WH - wb - hAk, stroke: "var(--card)", "stroke-width": 2 }, g);
+    svgEl("text", { x: x + bw / 2, y: WH - wb - hTot - 4, "text-anchor": "middle", class: "val" }, g).textContent = rest + ak;
+    const d = new Date(t);
+    if (wv.length <= 8 || i % 2 === 0) svgEl("text", { x: x + bw / 2, y: WH - 5, "text-anchor": "middle", class: "tick" }, wsvg).textContent = `${d.getDate()}.${d.getMonth() + 1}.`;
+    hover(g, () => [`${rest + ak} passende Angebote`, `Woche ab ${d.toLocaleDateString("de-DE")}`, `${ak} angefragt`]);
+  });
+  svgEl("line", { x1: 0, x2: WW, y1: WH - wb, y2: WH - wb, class: "axis" }, wsvg);
+  wc.append(wsvg);
+  const wl = el("div", "legend");
+  const a1 = el("i"); a1.style.background = "var(--s2)"; const a2 = el("i"); a2.style.background = "var(--s5)";
+  wl.append(a1, el("span", null, "passend"), a2, el("span", null, "angefragt"));
+  wc.append(wl);
+  wrap.append(wc);
+
+  wrap.append(el("p", "how", "„Passend“ = hat die Filter des Bots bestanden (Größe, Preis, Bezirk, kein WBS). Von Hand markierte Anfragen zählen nur auf diesem Gerät mit. Alle Zahlen seit Start des Archivs am 13.10.2026."));
+}
+function roundTop(x, base, w, h) {   // Säule mit 4px runden Ecken oben
+  const r = Math.min(4, h, w / 2), y = base - h;
+  return `M${x},${base} V${y + r} Q${x},${y} ${x + r},${y} H${x + w - r} Q${x + w},${y} ${x + w},${y + r} V${base} Z`;
 }
 
 function makeCard(key, o) {
