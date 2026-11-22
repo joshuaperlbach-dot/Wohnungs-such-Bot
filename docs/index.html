@@ -122,6 +122,11 @@
                color: #0d0d0e; background: #9c988f; font-weight: 600; }
   .route .ln.S { background: #9db58f; } .route .ln.U { background: #6f97a6; }
   .route .ln.T { background: #c99a3b; } .route .ln.B { background: #a97df5; } .route .ln.R { background: #b83a2d; color: #ece7dc; }
+  .routechip { background: none; border: 0; }
+  .routechip .ln { display: inline-block; transform: translate(-50%, -50%); font-family: var(--mono); font-size: 11px; line-height: 1;
+    padding: 3px 5px 2px; border-radius: 5px; color: #0d0d0e; background: #9c988f; font-weight: 600; box-shadow: 0 0 0 2px #131314; white-space: nowrap; }
+  .routechip .ln.S { background: #9db58f; } .routechip .ln.U { background: #6f97a6; }
+  .routechip .ln.T { background: #c99a3b; } .routechip .ln.B { background: #a97df5; } .routechip .ln.R { background: #b83a2d; color: #ece7dc; }
   .route .ar { color: var(--faint, #827e76); font-size: 11px; }
   .sub { color: var(--muted); font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .req { display: block; width: calc(100% - 28px); margin: 0 14px 14px; padding: 12px; border-radius: 14px;
@@ -1392,13 +1397,27 @@ function nextWorkday8() {
   return d.toISOString();
 }
 let routeQueue = Promise.resolve();
+const routeJobs = {};
+const llOf = x => x && (x.location || x) && isFinite((x.location || x).latitude)
+  ? [+(x.location || x).latitude, +(x.location || x).longitude] : null;
+const r5 = v => Math.round(v * 1e5) / 1e5;
+function legPath(l) {   // Punkte einer Teilstrecke als [lat, lon]
+  const pts = [];
+  for (const f of (l.polyline && l.polyline.features) || []) {
+    const c = f.geometry && f.geometry.coordinates;
+    if (c && isFinite(c[1])) pts.push([r5(c[1]), r5(c[0])]);
+  }
+  if (pts.length < 2) { const a = llOf(l.origin), b = llOf(l.destination); if (a && b) return [a, b].map(q => q.map(r5)); }
+  return pts;
+}
 function fetchRoute(from, to) {
-  const key = "route:" + from.map(x => x.toFixed(4)).join(",") + "|" + to.map(x => x.toFixed(4)).join(",");
-  try { const c = localStorage.getItem(key); if (c) return Promise.resolve(JSON.parse(c)); } catch (e) {}
-  const job = routeQueue.then(async () => {
+  const key = "route2:" + from.map(x => x.toFixed(4)).join(",") + "|" + to.map(x => x.toFixed(4)).join(",");
+  if (routeJobs[key]) return routeJobs[key];
+  try { const c = localStorage.getItem(key); if (c) return (routeJobs[key] = Promise.resolve(JSON.parse(c))); } catch (e) {}
+  const job = routeJobs[key] = routeQueue.then(async () => {
     const q = new URLSearchParams({ "from.type": "location", "from.latitude": from[0], "from.longitude": from[1], "from.address": "Wohnung",
       "to.type": "location", "to.latitude": to[0], "to.longitude": to[1], "to.address": "Ziel",
-      departure: nextWorkday8(), results: 3, stopovers: "false", remarks: "false", polylines: "false", language: "de" });
+      departure: nextWorkday8(), results: 3, stopovers: "false", remarks: "false", polylines: "true", language: "de" });
     try {
       const r = await fetch("https://v6.vbb.transport.rest/journeys?" + q);
       if (!r.ok) return null;
@@ -1409,17 +1428,38 @@ function fetchRoute(from, to) {
         if (!legs.length) continue;
         const min = Math.round((new Date(legs[legs.length - 1].arrival) - new Date(legs[0].departure)) / 60000);
         const lines = legs.filter(l => l.line).map(l => ({ n: l.line.name, p: l.line.product }));
-        if (!best || min < best.min) best = { min, lines };
+        if (!best || min < best.min) best = { min, lines, legs: legs.map(l => ({ n: l.line ? l.line.name : null,
+          p: l.line ? l.line.product : "walk", pts: legPath(l) })).filter(l => l.pts.length > 1) };
       }
       if (best) try { localStorage.setItem(key, JSON.stringify(best)); } catch (e) {}
+      else delete routeJobs[key];
       return best;
-    } catch (e) { return null; }
+    } catch (e) { delete routeJobs[key]; return null; }
     finally { await new Promise(r => setTimeout(r, 700)); }   // höchstens ~1 Anfrage pro Sekunde
   });
   routeQueue = job.catch(() => null);
   return job;
 }
 const PROD = { suburban: "S", subway: "U", tram: "T", bus: "B", regional: "R", express: "R", ferry: "B" };
+const PCOL = { S: "#9db58f", U: "#6f97a6", T: "#c99a3b", B: "#a97df5", R: "#b83a2d" };
+function drawRoute(L, map, r) {
+  const all = [];
+  if (!map.getPane("route")) map.createPane("route").style.zIndex = 390;   // unter den Punkten für Wohnung und Orte
+  const pane = "route";
+  for (const l of r.legs || []) {
+    all.push(...l.pts);
+    if (l.p === "walk" || !l.n) {
+      L.polyline(l.pts, { color: "#131314", weight: 3, opacity: 0.75, dashArray: "2 6", lineCap: "round", interactive: false, pane }).addTo(map);
+      continue;
+    }
+    const c = PCOL[PROD[l.p]] || "#9c988f";
+    L.polyline(l.pts, { color: "#131314", weight: 8, opacity: 0.85, interactive: false, pane }).addTo(map);
+    L.polyline(l.pts, { color: c, weight: 5, opacity: 1, interactive: false, pane }).addTo(map);
+    L.marker(l.pts[0], { interactive: false, keyboard: false, icon: L.divIcon({ className: "routechip",
+      html: `<span class="ln ${PROD[l.p] || ""}">${l.n}</span>`, iconSize: null }) }).addTo(map);
+  }
+  return all;
+}
 const routeSeen = typeof IntersectionObserver === "function" ? new IntersectionObserver(es => {
   for (const e of es) if (e.isIntersecting) { routeSeen.unobserve(e.target); e.target._go(); }
 }, { rootMargin: "300px" }) : null;
@@ -1472,6 +1512,12 @@ async function showMap(o, box, dist) {
     parts.push(`${p.name} ${km(where, at).toLocaleString("de-DE", { maximumFractionDigits: 1 })} km`);
   }
   map.fitBounds(pts, { padding: [36, 36], maxZoom: 15 });
+  // Fahrt zur Arbeit einzeichnen, sobald der Fahrplan da ist
+  for (const t of routeTargets()) fetchRoute(where, [t.lat, t.lon]).then(r => {
+    if (!r || !box.isConnected) return;
+    const ll = drawRoute(L, map, r);
+    if (ll.length) { pts.push(...ll); map.fitBounds(pts, { padding: [36, 36], maxZoom: 15 }); }
+  });
   dist.textContent = parts.length ? "Luftlinie: " + parts.join(" · ") : "";
 }
 // Link mit #orte=Zuhause: ...; Arbeit: ... richtet die eigenen Orte auf diesem Gerät ein

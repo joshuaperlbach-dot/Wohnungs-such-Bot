@@ -284,4 +284,5 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
 - Kachel und Detail zeigen die Fahrt mit Bus und Bahn zu den eigenen Orten mit "Arbeit" im Namen (max. 2), z.B.
   "Arbeit neu 28 Min U8 › M29". Fahrplan von v6.vbb.transport.rest, direkt vom Handy, Abfahrt nächster Werktag 8 Uhr,
   Ergebnis im localStorage. Die alte Arbeitsadresse steht NICHT im Repo; Josh trägt sie über "Eigene Orte ändern" ein.
+- Lage-Karte im Detail zeichnet die Strecke in Linienfarben (S grün, U blau, Tram gold, Bus lila), Fußwege gestrichelt.
 - Statistik-Karte: Startansicht ohne Text, Bahnhofsnamen ab Zoom 12, Ortsteile ab 12,5, der Rest später.
