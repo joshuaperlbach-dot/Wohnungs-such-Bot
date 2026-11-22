@@ -6,6 +6,9 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#14161a">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="mobile-web-app-capable" content="yes">
@@ -148,67 +151,80 @@
   .plans img { display: block; width: 100%; max-height: 70vh; object-fit: contain; background: #fff;
                border-radius: 10px; margin-bottom: 8px; cursor: zoom-in; }
   .badge.plan { background: var(--chip); color: var(--ink); }
-  /* Statistik */
-  .stats { display: grid; gap: 12px; }
-  .hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .big { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 10px; min-width: 0; }
-  .big b { display: block; font-size: 32px; line-height: 1.05; font-weight: 750; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
-  .big span { display: block; font-weight: 600; font-size: 13.5px; margin-top: 2px; }
-  .big small { display: block; color: var(--muted); font-size: 11.5px; margin-top: 4px; line-height: 1.3; }
-  .viz { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 12px; }
-  .viz h4 { margin: 0; font-size: 16.5px; line-height: 1.3; font-weight: 700; }
-  .viz .how, .stats > .how { color: var(--muted); font-size: 12.5px; line-height: 1.4; margin: 4px 0 10px; }
-  .facts { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
-  .facts li { position: relative; padding-left: 16px; font-size: 14.5px; line-height: 1.4; }
-  .facts li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 6px; height: 6px; border-radius: 50%; background: var(--s4); }
-  .stage { padding: 6px 0; border-radius: 8px; }
-  .stage.hot { background: var(--chip); }
-  .slab { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 4px; }
-  .slab b { font-variant-numeric: tabular-nums; }
-  .sbar { height: 14px; background: var(--viz-track); border-radius: 4px; overflow: hidden; }
-  .sbar i { display: block; height: 100%; border-radius: 0 4px 4px 0; }
-  .conv { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
-  .statmap { height: 300px; border-radius: 10px; background: var(--chip); z-index: 0; }
-  .leaflet-tooltip.bubble-label { background: transparent; border: 0; box-shadow: none; color: #fff; font: 700 12px system-ui, sans-serif;
-                  text-shadow: 0 0 3px rgba(0,0,0,.6); padding: 0; }
-  .bubble-label::before, .place-label::before { display: none; }
-  .leaflet-tooltip.place-label { background: var(--card); color: var(--ink); border: 0; font: 600 11px system-ui, sans-serif; padding: 1px 5px; }
-  .legend { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 6px; color: var(--muted); font-size: 12px; margin-top: 8px; }
-  .legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-  .legend span { margin-right: 4px; }
-  .legend .ringkey { border-radius: 50%; border: 1.6px solid var(--ink); width: 9px; height: 9px; margin-left: 6px; }
+  /* Statistik: "Nachtplan" – Berlin bei Nacht. Natriumdampf-Laternen (Bernstein) für Wohnungen,
+     S-Bahn-Grün für den Ring und alles, was eine Runde weiter kam. Immer dunkel, egal welches Handy-Thema. */
+  body.night { background: #0d1422; }
+  body.night main { max-width: 760px; }
+  body.night header { background: #0d1422; color: #e9edf4; border-bottom-color: #24304a; }
+  body.night #status, body.night #runs { color: #8c97ac; }
+  body.night .seg { background: #1b2538; color: #c9d1de; }
+  body.night .seg[aria-pressed="true"] { background: #e9edf4; color: #0d1422; }
+  body.night #run { background: #e9edf4; color: #0d1422; }
+  .stats { --nb: #0d1422; --np: #141d2e; --nl: #24304a; --ni: #e9edf4; --nm: #8c97ac; --amber: #ffb547;
+           --sgreen: #00a65a; --slate: #56627a; --slate2: #3a4660;
+           color: var(--ni); font-family: "Barlow", system-ui, sans-serif; display: grid; gap: 34px; padding-bottom: 20px; }
+  .stats h4, .stats .lede, .stats .num { font-family: "Barlow Semi Condensed", "Barlow", system-ui, sans-serif; }
+  .stats h4 { margin: 0 0 4px; font-size: 22px; line-height: 1.15; font-weight: 600; letter-spacing: -.005em; max-width: 30ch; }
+  .stats .how { color: var(--nm); font-size: 13.5px; line-height: 1.45; margin: 0 0 12px; max-width: 58ch; }
+  .lede { margin: 6px 0 0; display: grid; gap: 2px; }
+  .lede p { margin: 0; font-size: 21px; line-height: 1.18; font-weight: 500; color: var(--nm); }
+  .lede .num { font-size: 50px; line-height: .95; font-weight: 700; color: var(--ni); letter-spacing: -.02em;
+               font-variant-numeric: tabular-nums; margin-right: 6px; }
+  .lede p.go .num { color: var(--sgreen); }
+  .lede small { color: var(--nm); font-size: 13.5px; margin-top: 10px; display: block; }
+  .nightmap { height: 430px; margin: 0 -16px; background: var(--nb); z-index: 0; border-top: 1px solid var(--nl); border-bottom: 1px solid var(--nl); }
+  .nightmap .leaflet-tile-pane { filter: grayscale(1) invert(1) brightness(.55) contrast(1.45) sepia(.4) hue-rotate(180deg) saturate(1.6); }
+  .nightmap .leaflet-control-attribution { background: rgba(13,20,34,.7); color: var(--nm); font-size: 10px; }
+  .nightmap .leaflet-control-attribution a { color: var(--nm); }
+  .nightmap path.lamp { filter: drop-shadow(0 0 3px rgba(255,181,71,.9)); }
+  .nightmap path.asked { filter: drop-shadow(0 0 6px rgba(255,255,255,.6)); }
+  .leaflet-tooltip.ringlabel, .leaflet-tooltip.placelabel { background: transparent; border: 0; box-shadow: none; padding: 0;
+           font: 600 12px "Barlow", system-ui, sans-serif; text-shadow: 0 0 4px #0d1422, 0 0 2px #0d1422; }
+  .leaflet-tooltip.ringlabel { color: var(--sgreen, #00a65a); }
+  .leaflet-tooltip.placelabel { color: #fff; }
+  .leaflet-tooltip.ringlabel::before, .leaflet-tooltip.placelabel::before { display: none; }
+  .key { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--nm); font-size: 12.5px; margin-top: 10px; align-items: center; }
+  .key i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
+  .key .lampk { background: var(--amber); box-shadow: 0 0 6px var(--amber); }
+  .key .askk { background: var(--amber); width: 12px; height: 12px; border: 2px solid #fff; }
+  .key .ringk { width: 16px; height: 0; border-top: 2.5px solid var(--sgreen); border-radius: 0; }
+  .key .placek { background: #fff; }
+  .river { width: 100%; height: auto; display: block; overflow: visible; }
+  .river text { font: 500 12.5px "Barlow", system-ui, sans-serif; fill: var(--ni); }
+  .river .sub { fill: var(--nm); font-size: 11.5px; }
+  .river .band { opacity: .55; transition: opacity .15s; }
+  .river .band.hot { opacity: .95; }
+  .clock { width: 100%; height: auto; display: block; }
+  .clock text { font: 500 11px "Barlow", system-ui, sans-serif; fill: var(--nm); }
+  .clock .cellbg { fill: #172136; }
+  .clock .cell.hot .cellbg { fill: #22304b; }
+  .clock .dot { fill: var(--amber); }
+  .firms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--nl); border: 1px solid var(--nl); border-radius: 10px; overflow: hidden; }
+  .firm { background: var(--nb); padding: 12px 12px 11px; display: grid; gap: 6px; min-width: 0; }
+  .firm.hot { background: #121b2b; }
+  .firm:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .firm h5 { margin: 0; font: 600 15px "Barlow", system-ui, sans-serif; color: var(--ni); }
+  .firm .num { font-size: 34px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .firm .num small { font: 500 13px "Barlow", system-ui, sans-serif; color: var(--nm); margin-left: 4px; }
+  .firm dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: 12.5px; }
+  .firm dt { color: var(--nm); }
+  .firm dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+  .firm .stars { color: var(--amber); letter-spacing: 1px; }
+  .firm .best { color: var(--sgreen); }
   .plot { width: 100%; height: auto; display: block; overflow: visible; }
-  .plot .grid { stroke: var(--line); stroke-width: 1; }
-  .plot .axis { stroke: var(--muted); stroke-width: 1; opacity: .6; }
-  .plot .ref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 4; }
-  .plot .tick { fill: var(--muted); font: 10.5px system-ui, sans-serif; }
-  .plot .ref-t { font-size: 10px; }
-  .plot .val { fill: var(--ink); font: 600 10.5px system-ui, sans-serif; }
-  .plot .pt.hot circle:last-child { stroke: var(--ink); stroke-width: 2.5; }
+  .plot .grid { stroke: var(--nl); stroke-width: 1; }
+  .plot .axis { stroke: var(--slate); stroke-width: 1; }
+  .plot .ref { stroke: var(--slate); stroke-width: 1; stroke-dasharray: 3 4; }
+  .plot .tick { fill: var(--nm); font: 11px "Barlow", system-ui, sans-serif; }
+  .plot .val { fill: var(--ni); font: 600 11.5px "Barlow", system-ui, sans-serif; }
+  .plot .pt.hot circle:last-child { stroke: #fff; stroke-width: 2.5; }
   .plot .col.hot path, .plot .col.hot rect:not(:first-child) { opacity: .8; }
-  .heat { display: grid; grid-template-columns: 26px repeat(8, 1fr); gap: 3px; font-size: 11px; color: var(--muted); }
-  .heat .hx { text-align: left; }
-  .heat .hy { align-self: center; }
-  .heat .cell { aspect-ratio: 1.6; border-radius: 4px; }
-  .heat .cell.hot { outline: 2px solid var(--ink); outline-offset: -1px; }
-  .crow { display: grid; grid-template-columns: 70px 1fr 56px 56px 34px; gap: 8px; align-items: center; padding: 7px 4px;
-          border-bottom: 1px solid var(--line); font-size: 13.5px; border-radius: 6px; }
-  .crow.hot { background: var(--chip); }
-  .chead, .cscale { color: var(--muted); font-size: 11.5px; border-bottom: 0; padding-bottom: 2px; }
-  .cscale { padding-top: 2px; }
-  .cname { font-weight: 600; font-size: 13px; line-height: 1.15; overflow-wrap: anywhere; }
-  .nbar { display: flex; align-items: center; gap: 5px; height: 16px; }
-  .nbar i { display: block; height: 100%; background: var(--s4); border-radius: 0 4px 4px 0; min-width: 2px; flex: none; }
-  .nbar em { font: 600 11.5px system-ui, sans-serif; font-style: normal; color: var(--ink); font-variant-numeric: tabular-nums; }
-  .track { position: relative; height: 16px; }
-  .track::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--viz-track); border-radius: 2px; }
-  .track i { position: absolute; top: 3px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--s5);
-             box-shadow: 0 0 0 2px var(--card); }
-  .rate { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
-  .tip { position: fixed; z-index: 50; display: none; max-width: 260px; background: var(--ink); color: var(--bg); border-radius: 8px;
-         padding: 7px 10px; font-size: 12.5px; line-height: 1.35; pointer-events: none; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
-  .tip b { display: block; font-size: 14px; }
-  .tip span { display: block; opacity: .85; }
+  .stats .statfoot { color: var(--nm); font-size: 12.5px; line-height: 1.45; border-top: 1px solid var(--nl); padding-top: 12px; }
+  .tip { position: fixed; z-index: 50; display: none; max-width: 260px; background: #e9edf4; color: #0d1422; border-radius: 8px;
+         padding: 7px 10px; font: 13px/1.35 "Barlow", system-ui, sans-serif; pointer-events: none; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+  .tip b { display: block; font: 600 15px "Barlow Semi Condensed", "Barlow", system-ui, sans-serif; }
+  .tip span { display: block; color: #3a4660; }
+  .stats [tabindex]:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
   /* Mails zur Wohnung (verschlüsselt gespeichert, Text erst nach Antippen) */
   .mail { border-bottom: 1px solid var(--line); }
   .mail > button { width: 100%; text-align: left; background: none; padding: 9px 0; display: flex; gap: 8px;
@@ -427,6 +443,7 @@ function render() {
   run.textContent = waiting ? "läuft …" : "Bot starten";
   document.querySelectorAll("[data-view]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
   document.getElementById("filters").style.display = view === "offers" ? "" : "none";
+  document.body.classList.toggle("night", view === "stats");
   const list = document.getElementById("list");
   list.replaceChildren();
   if (view === "mine") {
@@ -491,16 +508,14 @@ function renderMine(list) {
   }
 }
 
-// ---- Tab "Statistik": aus dem Archiv (docs/history.json, jedes passende Angebot seit 13.10.2026).
-// Jede Grafik hat als Überschrift die Erkenntnis, darunter eine Zeile, wie man sie liest.
-let history = null, historyLoading = false;
+// ---- Tab "Statistik" ("Nachtplan"): aus dem Archiv docs/history.json (jedes passende Angebot seit 13.10.2026)
+// und docs/coords.json (Angebot -> Koordinaten, für die Karte). Jede Überschrift sagt die Erkenntnis.
+let history = null, coordsByKey = {}, historyLoading = false;
 async function loadHistory() {
   if (historyLoading) return;
   historyLoading = true;
-  try {
-    const r = await fetch("history.json?t=" + Date.now(), { cache: "no-store" });
-    history = r.ok ? await r.json() : {};
-  } catch (e) { history = {}; }
+  const get = async f => { try { const r = await fetch(f + "?t=" + Date.now(), { cache: "no-store" }); return r.ok ? await r.json() : {}; } catch (e) { return {}; } };
+  [history, coordsByKey] = await Promise.all([get("history.json"), get("coords.json")]);
   historyLoading = false;
   if (view === "stats") render();
 }
@@ -513,23 +528,18 @@ function svgEl(tag, attrs, parent) {
   if (parent) parent.append(n);
   return n;
 }
-const BEZIRK_POS = {   // ungefähre Mitte der Bezirke, für die Karte
-  "Mitte": [52.530, 13.370], "Friedrichshain-Kreuzberg": [52.503, 13.428], "Pankow": [52.590, 13.430],
-  "Charlottenburg-Wilmersdorf": [52.505, 13.280], "Spandau": [52.535, 13.200], "Steglitz-Zehlendorf": [52.435, 13.245],
-  "Tempelhof-Schöneberg": [52.455, 13.380], "Neukölln": [52.445, 13.450], "Treptow-Köpenick": [52.435, 13.590],
-  "Marzahn-Hellersdorf": [52.545, 13.590], "Lichtenberg": [52.535, 13.500], "Reinickendorf": [52.600, 13.300],
-};
-const BEZIRK_ALIAS = { "Friedrichshain": "Friedrichshain-Kreuzberg", "Kreuzberg": "Friedrichshain-Kreuzberg",
-  "Prenzlauer Berg": "Pankow", "Wedding": "Mitte", "Moabit": "Mitte", "Schöneberg": "Tempelhof-Schöneberg" };
-const bezirkOf = b => BEZIRK_ALIAS[b] || b;
 const RING = [[52.5487,13.3885],[52.5493,13.4152],[52.5448,13.4274],[52.5403,13.439],[52.5296,13.4553],[52.5239,13.465],
   [52.5136,13.4752],[52.5031,13.4693],[52.4938,13.4613],[52.473,13.4556],[52.4693,13.4423],[52.4674,13.4313],[52.4706,13.3855],
   [52.4753,13.3655],[52.4795,13.3521],[52.4783,13.3432],[52.4778,13.329],[52.4797,13.3126],[52.4886,13.3003],[52.4962,13.2905],
   [52.5011,13.2838],[52.5078,13.2832],[52.5182,13.2845],[52.5303,13.2993],[52.5343,13.329],[52.5363,13.344],[52.5427,13.3661]];
-const starColor = n => `var(--s${Math.min(5, Math.max(1, Math.round(n || 1)))})`;
-const WD = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+const WDL = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"];
+const OUTCOME = {   // Wie eine Anfrage ausging (Farbe = Bedeutung, nicht Reihenfolge)
+  weiter: { name: "Eine Runde weiter", color: "var(--sgreen)" },
+  offen: { name: "Läuft noch", color: "var(--amber)" },
+  still: { name: "Keine Antwort", color: "var(--slate)" },
+  absage: { name: "Absage", color: "var(--slate2)" },
+};
 
-// Ein Tooltip für alle Grafiken: Hover, Fokus und Antippen (Handy)
 let tipEl = null;
 function showTip(ev, lines) {
   if (!tipEl) { tipEl = el("div", "tip"); document.body.append(tipEl); }
@@ -544,37 +554,36 @@ function hideTip() { if (tipEl) tipEl.style.display = "none"; }
 function hover(node, lines) {
   node.setAttribute("tabindex", "0");
   node.style.cursor = "pointer";
-  const on = ev => { node.classList.add("hot"); showTip(ev.clientX != null ? ev : (() => { const b = node.getBoundingClientRect(); return { clientX: b.left + b.width / 2, clientY: b.top }; })(), lines()); };
+  const at = ev => ev && ev.clientX != null ? ev : (() => { const b = node.getBoundingClientRect(); return { clientX: b.left + b.width / 2, clientY: b.top }; })();
+  const on = ev => { node.classList.add("hot"); showTip(at(ev), lines()); };
   node.addEventListener("pointerenter", on);
   node.addEventListener("pointermove", on);
   node.addEventListener("click", ev => { ev.stopPropagation(); on(ev); });
-  node.addEventListener("focus", on);
+  node.addEventListener("focus", () => on());
   for (const t of ["pointerleave", "blur"]) node.addEventListener(t, () => { node.classList.remove("hot"); hideTip(); });
 }
 document.addEventListener("click", hideTip);
 window.addEventListener("scroll", hideTip, { passive: true });
-
-function card(title, how) {
-  const c = el("section", "viz");
+function block(title, how) {
+  const c = el("section");
   c.append(el("h4", null, title));
   if (how) c.append(el("p", "how", how));
   return c;
 }
 
 function renderStats(list) {
-  if (!history) { loadHistory(); list.append(el("div", "empty", "lädt Statistik …")); return; }
+  if (!history) { loadHistory(); list.append(el("div", "empty", "Statistik lädt …")); return; }
   const rows = { ...history };
   for (const [k, o] of all()) rows[k] = { ...(rows[k] || {}), ...o };
-  const items = Object.entries(rows).map(([k, o]) => ({ k, ...o, bz: bezirkOf(o.bezirk) }));
+  const items = Object.entries(rows).map(([k, o]) => ({ k, ...o }));
   const isAsked = it => it.requested === "gesendet" || it.requested === "unklar" || !!marks[it.k];
   const asked = items.filter(isAsked);
   const byHand = it => !!marks[it.k] || it.via === "mail";
+  const outcome = it => it.reply === "absage" || it.confirm === "abgelaufen" ? "absage"
+    : ["einladung", "selbstauskunft"].includes(it.reply) || it.termin ? "weiter" : quietReason(it) ? "still" : "offen";
   const nBot = asked.filter(it => !byHand(it)).length, nMe = asked.length - nBot;
-  const replied = asked.filter(it => it.reply);
-  const further = asked.filter(it => ["einladung", "selbstauskunft"].includes(it.reply) || it.termin);
-  const invited = asked.filter(it => it.reply === "einladung" || it.termin);
+  const further = asked.filter(it => outcome(it) === "weiter");
   const visited = asked.filter(it => it.termin && Date.now() > new Date(it.termin).getTime() + 30 * 60e3);
-  const declined = asked.filter(it => it.reply === "absage");
   const times = items.map(it => new Date(it.online_since)).filter(d => isFinite(d));
   const first = times.length ? new Date(Math.min(...times)) : new Date();
   const days = Math.max(1, Math.round((Date.now() - first) / 864e5));
@@ -582,222 +591,242 @@ function renderStats(list) {
   const wrap = el("div", "stats");
   list.append(wrap);
 
-  // ---------- Kopf: drei große Zahlen
-  const hero = el("div", "hero");
-  for (const [v, t, sub] of [
-    [items.length, "passende Angebote", `seit ${first.toLocaleDateString("de-DE", { day: "numeric", month: "long" })} · ${(items.length / days).toLocaleString("de-DE", { maximumFractionDigits: 1 })} pro Tag`],
-    [asked.length, "Anfragen", `${nBot} vom Bot · ${nMe} von dir`],
-    [further.length, "eine Runde weiter", `${invited.length} Einladungen · ${visited.length} besichtigt`],
-  ]) {
-    const h = el("div", "big"); h.append(el("b", null, String(v)), el("span", null, t), el("small", null, sub)); hero.append(h);
-  }
-  wrap.append(hero);
+  // ---------- Einstieg: drei Sätze statt Kacheln
+  const lede = el("div", "lede");
+  const line = (n, text, cls) => { const p = el("p", cls); p.append(el("span", "num", String(n)), document.createTextNode(text)); return p; };
+  lede.append(line(items.length, "Wohnungen passten zu deiner Suche."),
+    line(asked.length, `hast du angefragt, ${nBot} davon der Bot.`),
+    line(further.length, further.length === 1 ? "kam eine Runde weiter." : "kamen eine Runde weiter.", "go"),
+    el("small", null, `Seit ${first.toLocaleDateString("de-DE", { day: "numeric", month: "long" })}, im Schnitt ${(items.length / days).toLocaleString("de-DE", { maximumFractionDigits: 1 })} passende Angebote am Tag. ${visited.length} Besichtigung${visited.length === 1 ? "" : "en"}.`));
+  wrap.append(lede);
 
-  // ---------- Das Wichtigste (berechnete Kernsätze)
-  const comp = {};
-  for (const it of items) (comp[it.company || "?"] ||= []).push(it);
-  const compStats = Object.entries(comp).map(([c, a]) => ({
-    c, n: a.length, name: COMPANY[c] || c,
-    stars: avg(a.map(x => x.stars).filter(Number.isFinite)),
-    qm: avg(a.filter(x => x.price && x.size).map(x => x.price / x.size)),
-    asked: a.filter(isAsked).length,
-    further: a.filter(x => isAsked(x) && (["einladung", "selbstauskunft"].includes(x.reply) || x.termin)).length,
-  })).sort((a, b) => b.n - a.n);
-  const solid = compStats.filter(c => c.n >= 5);
-  const best = [...solid].sort((a, b) => b.stars - a.stars)[0];
-  const cheap = [...solid].sort((a, b) => a.qm - b.qm)[0];
-  const grid = Array.from({ length: 7 }, () => Array(8).fill(0));   // Wochentag x 2-Stunden-Fenster (6–22 Uhr)
-  for (const d of times) { const h = d.getHours(); if (h >= 6 && h < 22) grid[(d.getDay() + 6) % 7][Math.floor((h - 6) / 2)]++; }
-  let peak = [0, 0, 0];
-  grid.forEach((r, i) => r.forEach((v, j) => { if (v > peak[0]) peak = [v, i, j]; }));
-  const wdTotals = grid.map(r => r.reduce((a, b) => a + b, 0));
-  const weekend = wdTotals[5] + wdTotals[6], all7 = wdTotals.reduce((a, b) => a + b, 0) || 1;
-  const facts = [
-    asked.length ? `Von ${asked.length} Anfragen kamen ${further.length} eine Runde weiter, also etwa jede ${Math.max(1, Math.round(asked.length / Math.max(1, further.length)))}.` : null,
-    best ? `Die besten Wohnungen hat ${best.name} (Ø ${best.stars.toFixed(1)} ★), die meisten ${compStats[0].name} (${compStats[0].n}).` : null,
-    cheap ? `Am günstigsten pro m² ist ${cheap.name} mit ${num(cheap.qm, 1)} € warm.` : null,
-    peak[0] ? `Neue Angebote kommen vor allem ${["montags", "dienstags", "mittwochs", "donnerstags", "freitags", "samstags", "sonntags"][peak[1]]} zwischen ${6 + 2 * peak[2]} und ${8 + 2 * peak[2]} Uhr, am Wochenende kaum (${pct(weekend, all7)} %).` : null,
-  ].filter(Boolean);
-  const fc = card("Das Wichtigste");
-  const ul = el("ul", "facts");
-  for (const f of facts) ul.append(el("li", null, f));
-  fc.append(ul);
-  wrap.append(fc);
-
-  // ---------- Trichter
-  const stages = [["Angefragt", asked.length], ["Antwort bekommen", replied.length], ["Eine Runde weiter", further.length],
-                  ["Eingeladen", invited.length], ["Besichtigt", visited.length]];
-  const funnel = card(`Nur ${pct(further.length, asked.length)} % der Anfragen kommen eine Runde weiter`,
-    "Jede Stufe als Balken, die Prozentzahl zeigt, wie viele von der Stufe davor übrig bleiben. „Eine Runde weiter“ = Einladung oder WBM-Selbstauskunft.");
-  stages.forEach(([name, v], i) => {
-    const row = el("div", "stage");
-    const bar = el("div", "sbar"); const fill = el("i");
-    fill.style.width = `${asked.length ? Math.max(2, 100 * v / asked.length) : 0}%`;
-    fill.style.background = `var(--s${5 - Math.min(3, i)})`;
-    bar.append(fill);
-    const lab = el("div", "slab"); lab.append(el("span", null, name), el("b", null, String(v)));
-    row.append(lab, bar);
-    if (i > 0) row.append(el("small", "conv", `${pct(v, stages[i - 1][1])} % von „${stages[i - 1][0]}“`));
-    hover(row, () => [`${v} ${name.toLowerCase()}`, `${pct(v, asked.length)} % aller Anfragen`]);
-    funnel.append(row);
-  });
-  const reasons = el("p", "how", `${declined.length} Absagen, ${asked.length - replied.length} ohne Antwort (bei HOWOGE und WBM heißt das meist: nicht ausgelost).`);
-  funnel.append(reasons);
-  wrap.append(funnel);
-
-  // ---------- Karte nach Bezirk
-  const bz = {};
-  for (const it of items) if (BEZIRK_POS[it.bz]) (bz[it.bz] ||= []).push(it);
-  const bzStats = Object.entries(bz).map(([b, a]) => ({ b, n: a.length, stars: avg(a.map(x => x.stars).filter(Number.isFinite)),
-    price: avg(a.map(x => x.price).filter(Number.isFinite)), asked: a.filter(isAsked).length })).sort((a, b) => b.n - a.n);
-  const bestBz = [...bzStats].filter(x => x.n >= 3).sort((a, b) => b.stars - a.stars)[0];
-  const mapCard = card(bzStats.length ? `Die meisten Angebote in ${bzStats[0].b}, die besten in ${bestBz ? bestBz.b : "?"}` : "Bezirke",
-    "Kreisgröße = Zahl der Angebote, Farbe = Ø Sterne (Legende unten). Gestrichelt: der S-Bahn-Ring. Kreis antippen für Details.");
-  const mapBox = el("div", "statmap");
-  mapCard.append(mapBox);
-  const legend = el("div", "legend");
-  legend.append(el("span", null, "Ø Sterne"));
-  for (let i = 1; i <= 5; i++) { const sw = el("i"); sw.style.background = `var(--s${i})`; legend.append(sw, el("span", null, String(i))); }
-  mapCard.append(legend);
-  wrap.append(mapCard);
+  // ---------- Nachtplan: jede Wohnung ein Licht
+  const pos = it => Array.isArray(it.coord) && it.coord.length === 2 ? it.coord : coordsByKey[it.k];
+  const lit = items.filter(it => pos(it));
+  const inRing = lit.filter(it => ringInside(pos(it))).length;
+  const mapSec = block(lit.length ? `Nur ${pct(inRing, lit.length)} % der passenden Wohnungen liegen im S-Bahn-Ring`
+                                  : "Wo die passenden Wohnungen liegen",
+    lit.length < items.length * 0.8 ? `Jede Wohnung ein Licht. ${items.length - lit.length} Adressen sind noch nicht auf der Karte, der Bot trägt sie nach.`
+                                    : "Jede Wohnung ein Licht. Antippen zeigt Miete, Größe und Sterne.");
+  const mapBox = el("div", "nightmap");
+  mapSec.append(mapBox);
+  const key = el("div", "key");
+  const k = (cls, t) => { const s = el("span"); s.append(el("i", cls), document.createTextNode(t)); return s; };
+  key.append(k("lampk", "passende Wohnung"), k("askk", "angefragt"), k("ringk", "S-Bahn-Ring"));
+  if (places().length) key.append(k("placek", "deine Orte"));
+  mapSec.append(key);
+  wrap.append(mapSec);
   requestAnimationFrame(async () => {
     const L = await leaflet();
-    if (!L || !mapBox.isConnected) { mapBox.replaceChildren(el("div", "how", "Karte konnte nicht geladen werden.")); mapBox.style.height = "auto"; return; }
-    const map = L.map(mapBox, { scrollWheelZoom: false, attributionControl: true, zoomControl: false });
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/" + (matchMedia("(prefers-color-scheme: dark)").matches ? "dark_nolabels" : "light_nolabels") + "/{z}/{x}/{y}.png",
-      { maxZoom: 18, attribution: "© OpenStreetMap, © CARTO" }).addTo(map);
-    L.polygon(RING, { color: getComputedStyle(document.body).getPropertyValue("--muted"), weight: 2, dashArray: "4 5", fill: false, interactive: false }).addTo(map);
-    const css = getComputedStyle(document.body);
-    const maxN = Math.max(1, ...bzStats.map(x => x.n));
-    for (const x of bzStats) {
-      const c = css.getPropertyValue(`--s${Math.min(5, Math.max(1, Math.round(x.stars || 1)))}`).trim();
-      const m = L.circleMarker(BEZIRK_POS[x.b], { radius: 8 + 26 * Math.sqrt(x.n / maxN), color: css.getPropertyValue("--card").trim() || "#fff",
-        weight: 2, fillColor: c, fillOpacity: 0.9 }).addTo(map);
-      m.bindTooltip(`${x.n}`, { permanent: true, direction: "center", className: "bubble-label" });
-      m.on("click", e => showTip(e.originalEvent, [`${x.b}: ${x.n} Angebote`, `Ø ${x.stars ? x.stars.toFixed(1) : "?"} ★ · Ø ${num(x.price)} € warm`, `${x.asked} davon angefragt`]));
+    if (!L || !mapBox.isConnected) { mapBox.style.height = "auto"; mapBox.replaceChildren(el("p", "how", "Die Karte konnte nicht laden. Prüf die Verbindung und öffne den Tab neu.")); return; }
+    const map = L.map(mapBox, { scrollWheelZoom: false, zoomControl: false, attributionControl: true });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap" }).addTo(map);
+    L.polygon(RING, { color: "#00a65a", weight: 2.5, fill: false, interactive: false }).addTo(map);
+    L.marker(RING[4], { opacity: 0, interactive: false }).addTo(map).bindTooltip("S-Bahn-Ring", { permanent: true, direction: "right", className: "ringlabel" });
+    for (const it of [...lit].sort((a, b) => isAsked(a) - isAsked(b))) {
+      const a = isAsked(it);
+      const m = L.circleMarker(pos(it), { radius: a ? 6 : 3.4, color: a ? "#ffffff" : "#ffb547", weight: a ? 2 : 0,
+        fillColor: "#ffb547", fillOpacity: a ? 1 : 0.85, className: a ? "asked" : "lamp" }).addTo(map);
+      m.on("click", e => showTip(e.originalEvent, [`${num(it.price)} € warm, ${num(it.size)} m²`,
+        `${(it.address || "").split(",")[0]}, ${it.bezirk || ""}`, `${COMPANY[it.company] || it.company || ""}, ${"★".repeat(it.stars || 0)}${a ? ", angefragt" : ""}`]));
     }
-    for (const p of places()) L.circleMarker([p.lat, p.lon], { radius: 5, color: "#fff", weight: 2, fillColor: "#111", fillOpacity: 1 })
-      .addTo(map).bindTooltip(p.name, { permanent: true, direction: "right", offset: [6, 0], className: "place-label" });
-    map.fitBounds([[52.40, 13.20], [52.62, 13.62]]);
+    for (const p of places()) L.circleMarker([p.lat, p.lon], { radius: 5, color: "#0d1422", weight: 2, fillColor: "#fff", fillOpacity: 1 })
+      .addTo(map).bindTooltip(p.name, { permanent: true, direction: "right", offset: [6, 0], className: "placelabel" });
+    map.fitBounds([[52.41, 13.22], [52.61, 13.62]]);
   });
+
+  // ---------- River: was aus den Anfragen wurde
+  const counts = {}; for (const o of Object.keys(OUTCOME)) counts[o] = 0;
+  for (const it of asked) counts[outcome(it)]++;
+  const riv = block(`Von ${asked.length} Anfragen kamen ${counts.weiter} weiter, ${counts.absage} endeten mit Absage`,
+    "Links die Gesellschaften, rechts was aus den Anfragen wurde. Je breiter das Band, desto mehr Anfragen. „Keine Antwort“ heißt bei HOWOGE und WBM meist: nicht ausgelost.");
+  riv.append(river(asked, outcome));
+  wrap.append(riv);
+
+  // ---------- Punkt-Uhr: wann neue Angebote kommen
+  const cells = Array.from({ length: 7 }, () => Array(16).fill(0));   // Wochentag x Stunde 6–21
+  for (const d of times) { const h = d.getHours(); if (h >= 6 && h < 22) cells[(d.getDay() + 6) % 7][h - 6]++; }
+  let peak = [0, 0, 0];
+  cells.forEach((r, i) => r.forEach((v, j) => { if (v > peak[0]) peak = [v, i, j]; }));
+  const we = cells[5].concat(cells[6]).reduce((a, b) => a + b, 0), tot = cells.flat().reduce((a, b) => a + b, 0) || 1;
+  const clk = block(peak[0] ? `Die meisten Angebote kommen ${WDL[peak[1]].toLowerCase()}s gegen ${6 + peak[2]} Uhr, am Wochenende fast keine`
+                            : "Wann neue Angebote kommen",
+    `Jeder Punkt ist eine Wohnung, nach Wochentag und Uhrzeit, zu der sie online ging. Samstag und Sonntag zusammen: ${pct(we, tot)} %.`);
+  clk.append(dotClock(cells));
+  wrap.append(clk);
+
+  // ---------- Gesellschaften
+  const comp = {};
+  for (const it of items) (comp[it.company || "?"] ||= []).push(it);
+  const cs = Object.entries(comp).map(([c, a]) => ({ c, a, name: COMPANY[c] || c,
+    stars: avg(a.map(x => x.stars).filter(Number.isFinite)), qm: avg(a.filter(x => x.price && x.size).map(x => x.price / x.size)),
+    asked: a.filter(isAsked).length, weiter: a.filter(x => isAsked(x) && outcome(x) === "weiter").length })).sort((x, y) => y.a.length - x.a.length);
+  const solid = cs.filter(c => c.a.length >= 5);
+  const best = [...solid].sort((a, b) => b.stars - a.stars)[0], cheap = [...solid].sort((a, b) => a.qm - b.qm)[0];
+  const fsec = block(best && cheap ? `${best.name} hat die besten Wohnungen, ${cheap.name} die günstigsten pro m²` : "Gesellschaften",
+    "Wie viele passende Angebote jede Gesellschaft hatte, wie gut und wie teuer sie im Schnitt waren und wie deine Anfragen dort liefen.");
+  const firms = el("div", "firms");
+  for (const c of cs) {
+    const f = el("div", "firm");
+    const n = el("div", "num"); n.append(document.createTextNode(String(c.a.length)), el("small", null, c.a.length === 1 ? "Angebot" : "Angebote"));
+    const dl = el("dl");
+    const row = (t, v, cls) => { dl.append(el("dt", null, t)); const d = el("dd", cls, v); dl.append(d); };
+    row("Sterne", c.stars != null ? `${"★".repeat(Math.round(c.stars))} ${c.stars.toFixed(1).replace(".", ",")}` : "–", "stars");
+    row("pro m²", c.qm != null ? `${num(c.qm, 1)} €` : "–");
+    row("Anfragen", c.asked ? `${c.weiter} von ${c.asked} weiter` : "keine", c.weiter ? "best" : "");
+    f.append(el("h5", null, c.name), n, dl);
+    hover(f, () => [c.name, `${c.a.length} passende Angebote`, c.asked ? `${c.asked} angefragt, ${c.weiter} eine Runde weiter` : "noch nie angefragt"]);
+    firms.append(f);
+  }
+  fsec.append(firms);
+  wrap.append(fsec);
 
   // ---------- Preis gegen Größe
   const pts = items.filter(it => it.price && it.size && it.size < 120 && it.price < 1400);
   const qmAll = avg(pts.map(it => it.price / it.size));
-  const sc = card(`Im Schnitt ${num(qmAll, 1)} € warm pro m² – je weiter oben links, desto teurer`,
-    "Jeder Punkt eine Wohnung: rechts = größer, oben = teurer. Farbe = Sterne (Legende unten), Ring = von dir/dem Bot angefragt. Linien: 12, 15 und 18 € pro m².");
-  const W = 340, H = 240, ml = 34, mb = 22, mt = 8, mr = 8;
-  const xs = pts.map(p => p.size), ys = pts.map(p => p.price);
-  const x0 = 25, x1 = Math.max(75, Math.ceil(Math.max(...xs, 0) / 5) * 5), y0 = 300, y1 = Math.max(1000, Math.ceil(Math.max(...ys, 0) / 100) * 100);
-  const X = v => ml + (W - ml - mr) * (v - x0) / (x1 - x0), Y = v => H - mb - (H - mb - mt) * (v - y0) / (y1 - y0);
-  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "plot", role: "img", "aria-label": "Preis gegen Größe" });
-  for (let v = 400; v <= y1; v += 200) {
-    svgEl("line", { x1: ml, x2: W - mr, y1: Y(v), y2: Y(v), class: "grid" }, svg);
-    svgEl("text", { x: ml - 4, y: Y(v) + 3, "text-anchor": "end", class: "tick" }, svg).textContent = `${v} €`;
-  }
-  for (let v = 30; v <= x1; v += 10) svgEl("text", { x: X(v), y: H - 6, "text-anchor": "middle", class: "tick" }, svg).textContent = `${v} m²`;
-  svgEl("line", { x1: ml, x2: W - mr, y1: H - mb, y2: H - mb, class: "axis" }, svg);
-  for (const q of [12, 15, 18]) {   // Linien gleicher €/m², bis an den Rand gekappt
-    const xa = Math.max(x0, y0 / q), xb = Math.min(x1, y1 / q);
-    if (xb <= xa) continue;
-    svgEl("line", { x1: X(xa), y1: Y(q * xa), x2: X(xb), y2: Y(q * xb), class: "ref" }, svg);
-    const t = svgEl("text", { x: X(xb) - 2, y: Y(q * xb) + (xb === x1 ? -4 : 10), "text-anchor": "end", class: "tick ref-t" }, svg);
-    t.textContent = `${q} €/m²`;
-  }
-  for (const p of [...pts].sort((a, b) => (a.stars || 0) - (b.stars || 0))) {
-    const g = svgEl("g", { class: "pt" }, svg);
-    svgEl("circle", { cx: X(p.size), cy: Y(p.price), r: 12, fill: "transparent" }, g);   // große Trefferfläche
-    svgEl("circle", { cx: X(p.size), cy: Y(p.price), r: isAsked(p) ? 4.5 : 3.6, fill: starColor(p.stars),
-      stroke: isAsked(p) ? "var(--ink)" : "var(--card)", "stroke-width": isAsked(p) ? 1.6 : 1 }, g);
-    hover(g, () => [`${num(p.price)} € warm · ${num(p.size)} m²`, `${p.bezirk || ""} · ${COMPANY[p.company] || p.company || ""}`,
-      `${"★".repeat(p.stars || 0)} · ${num(p.price / p.size, 1)} €/m²${isAsked(p) ? " · angefragt" : ""}`]);
-  }
-  sc.append(svg);
-  const lg = el("div", "legend");
-  lg.append(el("span", null, "Sterne"));
-  for (let i = 1; i <= 5; i++) { const sw = el("i"); sw.style.background = `var(--s${i})`; lg.append(sw, el("span", null, String(i))); }
-  const ring = el("i", "ringkey"); lg.append(ring, el("span", null, "angefragt"));
-  sc.append(lg);
+  const sc = block(`Im Schnitt zahlst du ${num(qmAll, 1)} € warm pro m²`,
+    "Jede Wohnung ein Punkt: rechts größer, oben teurer. Gestrichelt: 12, 15 und 18 € pro m². Weiß umrandet: angefragt.");
+  sc.append(scatter(pts, isAsked));
   wrap.append(sc);
 
-  // ---------- Wann kommen neue Angebote?
-  const hm = card(peak[0] ? `Neue Angebote kommen werktags vormittags – am meisten ${WD[peak[1]]} ${6 + 2 * peak[2]}–${8 + 2 * peak[2]} Uhr` : "Wann neue Angebote kommen",
-    "Jedes Feld = Wochentag und Uhrzeit, je kräftiger die Farbe, desto mehr neue passende Angebote. Der Bot ist rund um die Uhr da, du musst also nicht aufpassen.");
-  const maxC = Math.max(1, ...grid.flat());
-  const table = el("div", "heat");
-  table.append(el("span"));
-  for (let j = 0; j < 8; j++) table.append(el("span", "hx", `${6 + 2 * j}`));
-  grid.forEach((r, i) => {
-    table.append(el("span", "hy", WD[i]));
-    r.forEach((v, j) => {
-      const c = el("span", "cell");
-      const lvl = v ? Math.min(5, 1 + Math.floor(4.999 * v / maxC)) : 0;
-      c.style.background = lvl ? `var(--s${lvl})` : "var(--viz-track)";
-      hover(c, () => [`${v} Angebote`, `${["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"][i]}, ${6 + 2 * j}–${8 + 2 * j} Uhr`]);
-      table.append(c);
-    });
-  });
-  hm.append(table);
-  wrap.append(hm);
-
-  // ---------- Gesellschaften im Vergleich (Punkte auf gemeinsamen Achsen)
-  const cc = card(best ? `${best.name}: wenige, aber die besten Wohnungen` : "Gesellschaften im Vergleich",
-    "Balken = Zahl der Angebote. Punkte zeigen Ø Sterne (1–5) und Ø Warmmiete pro m² (10–20 €) auf derselben Skala für alle. Rechts: wie oft eine Anfrage eine Runde weiter kam.");
-  const head = el("div", "crow chead");
-  head.append(el("span", null, ""), el("span", null, "Angebote"), el("span", null, "Ø Sterne"), el("span", null, "€/m²"), el("span", null, "weiter"));
-  cc.append(head);
-  const nMax = Math.max(1, ...compStats.map(c => c.n));
-  for (const c of compStats) {
-    const r = el("div", "crow");
-    const nb = el("div", "nbar"); const nf = el("i"); nf.style.width = `calc(${(c.n / nMax).toFixed(3)} * (100% - 30px))`; nb.append(nf, el("em", null, String(c.n)));
-    const dot = (v, lo, hi, cls) => { const t = el("div", "track " + cls); const d = el("i"); d.style.left = `${Math.max(0, Math.min(100, 100 * (v - lo) / (hi - lo)))}%`; if (v == null) d.style.display = "none"; t.append(d); return t; };
-    r.append(el("span", "cname", c.name), nb, dot(c.stars, 1, 5, "st"), dot(c.qm, 10, 20, "qm"),
-      el("span", "rate", c.asked ? `${c.further}/${c.asked}` : "–"));
-    hover(r, () => [c.name, `${c.n} Angebote · Ø ${c.stars ? c.stars.toFixed(1) : "?"} ★ · ${c.qm ? num(c.qm, 1) : "?"} €/m²`,
-      c.asked ? `${c.asked} angefragt, ${c.further} eine Runde weiter` : "noch nie angefragt"]);
-    cc.append(r);
-  }
-  const scale = el("div", "crow cscale");
-  scale.append(el("span"), el("span"), el("span", null, "1 · · · 5"), el("span", null, "10 · · · 20"), el("span"));
-  cc.append(scale);
-  wrap.append(cc);
-
-  // ---------- Wochen: passend vs. angefragt (gestapelt, gleiche Einheit)
+  // ---------- Wochen
   const weeks = new Map();
   const wkKey = d => { const t = new Date(d); t.setHours(0, 0, 0, 0); t.setDate(t.getDate() - (t.getDay() + 6) % 7); return t.getTime(); };
   for (let t = wkKey(first); t <= Date.now(); t += 7 * 864e5) weeks.set(wkKey(t), [0, 0]);
   for (const it of items) { const d = new Date(it.online_since); if (!isFinite(d)) continue; const w = weeks.get(wkKey(d)); if (w) w[isAsked(it) ? 1 : 0]++; }
   const wv = [...weeks.entries()];
-  const lastFull = wv.length > 1 ? wv[wv.length - 2][1] : [0, 0];
-  const wc = card(`Etwa ${Math.round(avg(wv.slice(0, -1).map(([, v]) => v[0] + v[1])) || 0)} passende Angebote pro Woche`,
-    "Säule = passende Angebote der Woche, der abgesetzte Teil unten wurde angefragt. Die letzte Säule ist die laufende Woche.");
-  const WW = 340, WH = 150, wb = 18, wt = 14;
-  const wsvg = svgEl("svg", { viewBox: `0 0 ${WW} ${WH}`, class: "plot", role: "img", "aria-label": "Angebote pro Woche" });
-  const wmax = Math.max(1, ...wv.map(([, v]) => v[0] + v[1]));
-  const step = WW / Math.max(1, wv.length), bw = Math.min(30, step * 0.64);
+  const wsec = block(`Jede Woche etwa ${Math.round(avg(wv.slice(0, -1).map(([, v]) => v[0] + v[1])) || 0)} passende Angebote`,
+    "Höhe = passende Angebote der Woche, grüner Teil = angefragt. Die letzte Säule ist die laufende Woche.");
+  wsec.append(weekBars(wv));
+  wrap.append(wsec);
+
+  wrap.append(el("p", "statfoot", "„Passend“ heißt: hat die Filter des Bots bestanden (Größe, Preis, Bezirk, kein WBS). Von Hand markierte Anfragen zählen nur auf diesem Gerät mit."));
+}
+
+function ringInside(c) {   // Punkt im Polygon des S-Bahn-Rings (wie rating.py, ohne Toleranz)
+  let inside = false;
+  for (let i = 0, j = RING.length - 1; i < RING.length; j = i++) {
+    const [yi, xi] = RING[i], [yj, xj] = RING[j];
+    if ((yi > c[0]) !== (yj > c[0]) && c[1] < xi + (c[0] - yi) * (xj - xi) / (yj - yi)) inside = !inside;
+  }
+  return inside;
+}
+
+function river(asked, outcome) {   // Sankey: Gesellschaft -> Ergebnis
+  const W = 360, unit = Math.max(6, Math.min(12, 300 / Math.max(1, asked.length))), gap = 10, lx = 92, rx = W - 112, nw = 8;
+  const left = {}, right = {}, link = {};
+  for (const it of asked) {
+    const c = COMPANY[it.company] || it.company || "?", o = outcome(it);
+    left[c] = (left[c] || 0) + 1; right[o] = (right[o] || 0) + 1;
+    link[c + "|" + o] = (link[c + "|" + o] || 0) + 1;
+  }
+  const L = Object.entries(left).sort((a, b) => b[1] - a[1]);
+  const R = Object.keys(OUTCOME).filter(o => right[o]).map(o => [o, right[o]]);
+  const hL = L.reduce((s, [, v]) => s + v * unit, 0) + gap * (L.length - 1);
+  const hR = R.reduce((s, [, v]) => s + v * unit, 0) + gap * (R.length - 1);
+  const H = Math.max(hL, hR) + 8;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "river", role: "img", "aria-label": "Was aus den Anfragen wurde" });
+  const place = (arr, h) => { let y = (H - h) / 2; const pos = {}; for (const [n, v] of arr) { pos[n] = { y, h: v * unit, off: 0 }; y += v * unit + gap; } return pos; };
+  const pl = place(L, hL), pr = place(R, hR);
+  for (const [o] of R) for (const [c] of L) {   // Bänder, sortiert nach Ergebnis, damit sie sich wenig kreuzen
+    const v = link[c + "|" + o]; if (!v) continue;
+    const a = pl[c], b = pr[o], h = v * unit, y0 = a.y + a.off, y1 = b.y + b.off;
+    a.off += h; b.off += h;
+    const x0 = lx + nw, x1 = rx, mx = (x0 + x1) / 2;
+    const band = svgEl("path", { d: `M${x0},${y0} C${mx},${y0} ${mx},${y1} ${x1},${y1} V${y1 + h} C${mx},${y1 + h} ${mx},${y0 + h} ${x0},${y0 + h} Z`,
+      fill: OUTCOME[o].color, class: "band" }, svg);
+    hover(band, () => [`${v} Anfrage${v === 1 ? "" : "n"}`, `${c} → ${OUTCOME[o].name}`]);
+  }
+  for (const [c, v] of L) {
+    const p = pl[c];
+    svgEl("rect", { x: lx, y: p.y, width: nw, height: p.h, rx: 2, fill: "var(--ni)" }, svg);
+    const t = svgEl("text", { x: lx - 8, y: p.y + p.h / 2 + 4, "text-anchor": "end" }, svg); t.textContent = c;
+    const n = svgEl("text", { x: lx - 8, y: p.y + p.h / 2 + 17, "text-anchor": "end", class: "sub" }, svg);
+    if (p.h > 14) n.textContent = `${v}`;
+  }
+  for (const [o, v] of R) {
+    const p = pr[o];
+    svgEl("rect", { x: rx, y: p.y, width: nw, height: p.h, rx: 2, fill: OUTCOME[o].color }, svg);
+    const t = svgEl("text", { x: rx + nw + 8, y: p.y + p.h / 2 - 2 }, svg); t.textContent = OUTCOME[o].name;
+    const n = svgEl("text", { x: rx + nw + 8, y: p.y + p.h / 2 + 12, class: "sub" }, svg); n.textContent = `${v} Anfrage${v === 1 ? "" : "n"}`;
+  }
+  return svg;
+}
+
+function dotClock(cells) {   // Wochentag x Stunde, jeder Punkt eine Wohnung (bis 9 Punkte je Feld, darüber heller)
+  const W = 360, lw = 26, top = 16, cw = (W - lw) / 16, ch = 24;
+  const H = top + 7 * ch;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "clock", role: "img", "aria-label": "Wann neue Angebote kommen" });
+  for (let j = 0; j < 16; j += 2) { const t = svgEl("text", { x: lw + j * cw + 2, y: 11 }, svg); t.textContent = `${6 + j}`; }
+  const WD = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+  cells.forEach((r, i) => {
+    const ty = svgEl("text", { x: 0, y: top + i * ch + ch / 2 + 4 }, svg); ty.textContent = WD[i];
+    r.forEach((v, j) => {
+      const g = svgEl("g", { class: "cell" }, svg);
+      const x = lw + j * cw, y = top + i * ch;
+      svgEl("rect", { x: x + 1, y: y + 1, width: cw - 2, height: ch - 2, rx: 3, class: "cellbg" }, g);
+      const n = Math.min(9, v), d = 4.2, pad = (cw - 3 * d - 4) / 2;
+      for (let q = 0; q < n; q++) {
+        svgEl("circle", { cx: x + pad + d / 2 + (q % 3) * (d + 2), cy: y + (ch - 3 * d - 4) / 2 + d / 2 + Math.floor(q / 3) * (d + 2), r: d / 2,
+          class: "dot", opacity: v > 9 ? 1 : 0.9 }, g);
+      }
+      hover(g, () => [`${v} Wohnung${v === 1 ? "" : "en"}`, `${["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"][i]}, ${6 + j}–${7 + j} Uhr`]);
+    });
+  });
+  return svg;
+}
+
+function scatter(pts, isAsked) {
+  const W = 360, H = 250, ml = 38, mb = 22, mt = 8, mr = 8;
+  const x0 = 25, x1 = Math.max(75, Math.ceil(Math.max(0, ...pts.map(p => p.size)) / 5) * 5);
+  const y0 = 300, y1 = Math.max(1000, Math.ceil(Math.max(0, ...pts.map(p => p.price)) / 100) * 100);
+  const X = v => ml + (W - ml - mr) * (v - x0) / (x1 - x0), Y = v => H - mb - (H - mb - mt) * (v - y0) / (y1 - y0);
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "plot", role: "img", "aria-label": "Preis gegen Größe" });
+  for (let v = 400; v <= y1; v += 200) {
+    svgEl("line", { x1: ml, x2: W - mr, y1: Y(v), y2: Y(v), class: "grid" }, svg);
+    svgEl("text", { x: ml - 5, y: Y(v) + 4, "text-anchor": "end", class: "tick" }, svg).textContent = `${v} €`;
+  }
+  for (let v = 30; v <= x1; v += 10) svgEl("text", { x: X(v), y: H - 5, "text-anchor": "middle", class: "tick" }, svg).textContent = `${v} m²`;
+  svgEl("line", { x1: ml, x2: W - mr, y1: H - mb, y2: H - mb, class: "axis" }, svg);
+  for (const q of [12, 15, 18]) {
+    const xa = Math.max(x0, y0 / q), xb = Math.min(x1, y1 / q);
+    if (xb <= xa) continue;
+    svgEl("line", { x1: X(xa), y1: Y(q * xa), x2: X(xb), y2: Y(q * xb), class: "ref" }, svg);
+    svgEl("text", { x: X(xb) - 2, y: Y(q * xb) + (xb === x1 ? -5 : 12), "text-anchor": "end", class: "tick" }, svg).textContent = `${q} €/m²`;
+  }
+  for (const p of [...pts].sort((a, b) => isAsked(a) - isAsked(b))) {
+    const a = isAsked(p);
+    const g = svgEl("g", { class: "pt" }, svg);
+    svgEl("circle", { cx: X(p.size), cy: Y(p.price), r: 12, fill: "transparent" }, g);
+    svgEl("circle", { cx: X(p.size), cy: Y(p.price), r: a ? 4.6 : 3.2, fill: "var(--amber)", "fill-opacity": a ? 1 : 0.7,
+      stroke: a ? "#fff" : "none", "stroke-width": 1.6 }, g);
+    hover(g, () => [`${num(p.price)} € warm, ${num(p.size)} m²`, `${p.bezirk || ""}, ${COMPANY[p.company] || p.company || ""}`,
+      `${"★".repeat(p.stars || 0)} ${num(p.price / p.size, 1)} €/m²${a ? ", angefragt" : ""}`]);
+  }
+  return svg;
+}
+
+function weekBars(wv) {
+  const W = 360, H = 160, wb = 20, wt = 16;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, class: "plot", role: "img", "aria-label": "Angebote pro Woche" });
+  const max = Math.max(1, ...wv.map(([, v]) => v[0] + v[1]));
+  const step = W / Math.max(1, wv.length), bw = Math.min(30, step * 0.6);
   wv.forEach(([t, [rest, ak]], i) => {
-    const x = i * step + (step - bw) / 2, hTot = (WH - wb - wt) * (rest + ak) / wmax, hAk = (WH - wb - wt) * ak / wmax;
-    const g = svgEl("g", { class: "col" }, wsvg);
-    svgEl("rect", { x: x - 3, y: wt - 6, width: bw + 6, height: WH - wb - wt + 6, fill: "transparent" }, g);
-    if (hTot > 0) svgEl("path", { d: roundTop(x, WH - wb, bw, hTot), fill: "var(--s2)" }, g);
-    if (hAk > 0) svgEl("rect", { x, y: WH - wb - hAk, width: bw, height: hAk, fill: "var(--s5)" }, g);
-    if (hAk > 0 && hTot - hAk > 2) svgEl("line", { x1: x, x2: x + bw, y1: WH - wb - hAk, y2: WH - wb - hAk, stroke: "var(--card)", "stroke-width": 2 }, g);
-    svgEl("text", { x: x + bw / 2, y: WH - wb - hTot - 4, "text-anchor": "middle", class: "val" }, g).textContent = rest + ak;
+    const x = i * step + (step - bw) / 2, hT = (H - wb - wt) * (rest + ak) / max, hA = (H - wb - wt) * ak / max;
+    const g = svgEl("g", { class: "col" }, svg);
+    svgEl("rect", { x: x - 3, y: wt - 6, width: bw + 6, height: H - wb - wt + 6, fill: "transparent" }, g);
+    if (hT > 0) svgEl("path", { d: roundTop(x, H - wb, bw, hT), fill: "var(--amber)", "fill-opacity": 0.55 }, g);
+    if (hA > 0) svgEl("rect", { x, y: H - wb - hA, width: bw, height: hA, fill: "var(--sgreen)" }, g);
+    if (hA > 0 && hT - hA > 2) svgEl("line", { x1: x, x2: x + bw, y1: H - wb - hA, y2: H - wb - hA, stroke: "var(--nb)", "stroke-width": 2 }, g);
+    svgEl("text", { x: x + bw / 2, y: H - wb - hT - 5, "text-anchor": "middle", class: "val" }, g).textContent = rest + ak;
     const d = new Date(t);
-    if (wv.length <= 8 || i % 2 === 0) svgEl("text", { x: x + bw / 2, y: WH - 5, "text-anchor": "middle", class: "tick" }, wsvg).textContent = `${d.getDate()}.${d.getMonth() + 1}.`;
+    if (wv.length <= 8 || i % 2 === 0) svgEl("text", { x: x + bw / 2, y: H - 5, "text-anchor": "middle", class: "tick" }, svg).textContent = `${d.getDate()}.${d.getMonth() + 1}.`;
     hover(g, () => [`${rest + ak} passende Angebote`, `Woche ab ${d.toLocaleDateString("de-DE")}`, `${ak} angefragt`]);
   });
-  svgEl("line", { x1: 0, x2: WW, y1: WH - wb, y2: WH - wb, class: "axis" }, wsvg);
-  wc.append(wsvg);
-  const wl = el("div", "legend");
-  const a1 = el("i"); a1.style.background = "var(--s2)"; const a2 = el("i"); a2.style.background = "var(--s5)";
-  wl.append(a1, el("span", null, "passend"), a2, el("span", null, "angefragt"));
-  wc.append(wl);
-  wrap.append(wc);
-
-  wrap.append(el("p", "how", "„Passend“ = hat die Filter des Bots bestanden (Größe, Preis, Bezirk, kein WBS). Von Hand markierte Anfragen zählen nur auf diesem Gerät mit. Alle Zahlen seit Start des Archivs am 13.10.2026."));
+  svgEl("line", { x1: 0, x2: W, y1: H - wb, y2: H - wb, class: "axis" }, svg);
+  return svg;
 }
-function roundTop(x, base, w, h) {   // Säule mit 4px runden Ecken oben
+function roundTop(x, base, w, h) {
   const r = Math.min(4, h, w / 2), y = base - h;
   return `M${x},${base} V${y + r} Q${x},${y} ${x + r},${y} H${x + w - r} Q${x + w},${y} ${x + w},${y + r} V${base} Z`;
 }
