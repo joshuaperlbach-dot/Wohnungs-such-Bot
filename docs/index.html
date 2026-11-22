@@ -17,6 +17,7 @@
     --sent: #1f8f4e; --sent-ink: #ffffff;
     --idle: #d9d8d3; --idle-ink: #3b3d44;
     --late: #dcc3be; --late-ink: #5a2f29;
+    --viz: #2a78d6; --viz-track: #e6e4dd;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -25,6 +26,7 @@
       --sent: #2aa55d; --sent-ink: #06170d;
       --idle: #3a3e47; --idle-ink: #d5d6da;
       --late: #5b3f3c; --late-ink: #f1d3ce;
+      --viz: #3987e5; --viz-track: #2d3139;
     }
   }
   * { box-sizing: border-box; }
@@ -144,6 +146,23 @@
   .plans img { display: block; width: 100%; max-height: 70vh; object-fit: contain; background: #fff;
                border-radius: 10px; margin-bottom: 8px; cursor: zoom-in; }
   .badge.plan { background: var(--chip); color: var(--ink); }
+  /* Statistik */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin: 4px 0 6px; }
+  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+  .kpi b { display: block; font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.15; }
+  .kpi span { color: var(--muted); font-size: 13px; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+  .meter { display: grid; grid-template-columns: minmax(90px, 34%) 1fr auto; gap: 8px; align-items: center;
+           font-size: 14px; padding: 4px 0; font-variant-numeric: tabular-nums; }
+  .meter .bar { height: 10px; background: var(--viz-track); border-radius: 4px; overflow: hidden; }
+  .meter .bar i { display: block; height: 100%; background: var(--viz); border-radius: 0 4px 4px 0; min-width: 2px; }
+  .meter .val { color: var(--ink); font-weight: 600; min-width: 34px; text-align: right; }
+  .meter small { grid-column: 1 / -1; color: var(--muted); font-size: 12.5px; margin-top: -2px; }
+  .cols { width: 100%; height: 150px; display: block; overflow: visible; }
+  .cols rect { fill: var(--viz); }
+  .cols text { fill: var(--muted); font: 11px system-ui, sans-serif; }
+  .cols .v { fill: var(--ink); font-weight: 600; }
+  .note { color: var(--muted); font-size: 12.5px; margin: 4px 2px 0; }
   /* Mails zur Wohnung (verschlüsselt gespeichert, Text erst nach Antippen) */
   .mail { border-bottom: 1px solid var(--line); }
   .mail > button { width: 100%; text-align: left; background: none; padding: 9px 0; display: flex; gap: 8px;
@@ -171,6 +190,7 @@
   <div class="bar tabs">
     <button class="seg" data-view="offers">Angebote</button>
     <button class="seg" data-view="mine">Meine Anfragen</button>
+    <button class="seg" data-view="stats">Statistik</button>
   </div>
   <div class="bar" id="filters">
     <button class="seg" data-min="0">Alle</button>
@@ -207,7 +227,7 @@ const DISPATCH = "https://api.github.com/repos/joshuaperlbach-dot/Wohnungs-such-
 let offers = {}, updated = null, lastAuto = null, lastManual = null, startedAt = 0;
 let minStars = 0, openKey = null;
 // Tab: alle Angebote oder nur die eigenen Anfragen (merkt sich das Gerät)
-let view = (() => { try { return localStorage.getItem("view") === "mine" ? "mine" : "offers"; } catch (e) { return "offers"; } })();
+let view = (() => { try { const v = localStorage.getItem("view"); return v === "mine" || v === "stats" ? v : "offers"; } catch (e) { return "offers"; } })();
 // Sortierung merkt sich das Gerät
 let newestFirst = (() => { try { return localStorage.getItem("sort") === "new"; } catch (e) { return false; } })();
 
@@ -360,11 +380,13 @@ function render() {
   run.disabled = waiting;
   run.textContent = waiting ? "läuft …" : "Bot starten";
   document.querySelectorAll("[data-view]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
-  document.getElementById("filters").style.display = view === "mine" ? "none" : "";
+  document.getElementById("filters").style.display = view === "offers" ? "" : "none";
   const list = document.getElementById("list");
   list.replaceChildren();
   if (view === "mine") {
     renderMine(list);
+  } else if (view === "stats") {
+    renderStats(list);
   } else {
     if (!items.length) list.append(el("div", "empty", updated ? "Gerade keine passenden Angebote." : "lädt …"));
     for (const [key, o] of items) list.append(makeCard(key, o));
@@ -421,6 +443,141 @@ function renderMine(list) {
     list.append(el("div", "section", `Nicht weiter verfolgt (${gone.length})`));
     for (const [key, o] of gone) list.append(makeCard(key, o));
   }
+}
+
+// ---- Tab "Statistik": aus dem Archiv (docs/history.json, jedes passende Angebot seit 13.10.2026)
+let history = null, historyLoading = false;
+async function loadHistory() {
+  if (historyLoading) return;
+  historyLoading = true;
+  try {
+    const r = await fetch("history.json?t=" + Date.now(), { cache: "no-store" });
+    history = r.ok ? await r.json() : {};
+  } catch (e) { history = {}; }
+  historyLoading = false;
+  if (view === "stats") render();
+}
+function meter(name, value, max, text, sub) {
+  const row = el("div", "meter"), bar = el("div", "bar"), fill = el("i");
+  fill.style.width = `${max ? Math.max(1.5, 100 * value / max) : 0}%`;
+  bar.append(fill);
+  row.title = `${name}: ${text ?? value}`;
+  row.append(el("span", null, name), bar, el("span", "val", text ?? String(value)));
+  if (sub) row.append(el("small", null, sub));
+  return row;
+}
+function columns(labels, values) {   // einfache Säulen (SVG), Wert über der Säule, Tooltip per title
+  const NS = "http://www.w3.org/2000/svg", W = 340, H = 150, top = 16, base = H - 18;
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("class", "cols"); svg.setAttribute("role", "img");
+  const max = Math.max(1, ...values), n = values.length, step = W / n, bw = Math.max(4, Math.min(28, step * 0.62));
+  values.forEach((v, i) => {
+    const h = (base - top) * v / max, x = i * step + (step - bw) / 2;
+    const r = document.createElementNS(NS, "path");
+    const y = base - h, rr = Math.min(4, h / 2, bw / 2);
+    r.setAttribute("d", h > 0 ? `M${x},${base} V${y + rr} Q${x},${y} ${x + rr},${y} H${x + bw - rr} Q${x + bw},${y} ${x + bw},${y + rr} V${base} Z` : "");
+    r.setAttribute("fill", "var(--viz)");
+    const t = document.createElementNS(NS, "title"); t.textContent = `${labels[i]}: ${v}`; r.append(t);
+    svg.append(r);
+    if (v && (n <= 12 || v === max)) {
+      const tv = document.createElementNS(NS, "text"); tv.setAttribute("class", "v");
+      tv.setAttribute("x", x + bw / 2); tv.setAttribute("y", y - 4); tv.setAttribute("text-anchor", "middle"); tv.textContent = v;
+      svg.append(tv);
+    }
+    if (n <= 8 || i % Math.ceil(n / 8) === 0) {
+      const tl = document.createElementNS(NS, "text");
+      tl.setAttribute("x", x + bw / 2); tl.setAttribute("y", H - 4); tl.setAttribute("text-anchor", "middle"); tl.textContent = labels[i];
+      svg.append(tl);
+    }
+  });
+  const axis = document.createElementNS(NS, "line");
+  axis.setAttribute("x1", 0); axis.setAttribute("x2", W); axis.setAttribute("y1", base); axis.setAttribute("y2", base);
+  axis.setAttribute("stroke", "var(--line)");
+  svg.append(axis);
+  return svg;
+}
+const avg = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
+function isoWeek(d) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
+  const y0 = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+  return Math.ceil(((t - y0) / 864e5 + 1) / 7);
+}
+function renderStats(list) {
+  if (!history) { loadHistory(); list.append(el("div", "empty", "lädt Statistik …")); return; }
+  // Archiv + aktuelle Liste + von Hand markierte (nur auf diesem Gerät)
+  const rows = { ...history };
+  for (const [k, o] of all()) rows[k] = { ...(rows[k] || {}), ...o };
+  const items = Object.entries(rows).map(([k, o]) => ({ k, ...o }));
+  const byHand = it => !!marks[it.k] || it.via === "mail";
+  const asked = items.filter(it => it.requested === "gesendet" || it.requested === "unklar" || marks[it.k]);
+  const bot = asked.filter(it => !byHand(it)).length, me = asked.length - bot;
+  const replied = asked.filter(it => it.reply);
+  const declined = asked.filter(it => it.reply === "absage").length;
+  const sa = asked.filter(it => it.reply === "selbstauskunft").length;
+  const invited = asked.filter(it => it.reply === "einladung" || it.termin).length;
+  const visited = asked.filter(it => it.termin && Date.now() > new Date(it.termin).getTime() + 30 * 60e3).length;
+  document.getElementById("count").textContent = "";
+  const since = items.map(it => new Date(it.online_since).getTime()).filter(isFinite);
+  const from = since.length ? new Date(Math.min(...since)).toLocaleDateString("de-DE", { day: "numeric", month: "long" }) : "";
+
+  list.append(el("div", "section", `Seit ${from}`));
+  const kpis = el("div", "kpis");
+  for (const [v, t] of [[items.length, "passende Angebote gesehen"], [asked.length, `angefragt (Bot ${bot} · du ${me})`],
+                        [declined, "Absagen"], [invited, "Einladungen"], [sa, "WBM-Selbstauskünfte"], [visited, "Besichtigungen"]]) {
+    const k = el("div", "kpi"); k.append(el("b", null, String(v)), el("span", null, t)); kpis.append(k);
+  }
+  list.append(kpis);
+
+  list.append(el("div", "section", "Was aus den Anfragen wurde"));
+  const fun = el("div", "panel");
+  for (const [n, v] of [["Angefragt", asked.length], ["Antwort bekommen", replied.length],
+                        ["Eine Runde weiter", invited + sa], ["Eingeladen", invited], ["Besichtigt", visited]]) {
+    fun.append(meter(n, v, asked.length, `${v}`, null));
+  }
+  list.append(fun);
+
+  list.append(el("div", "section", "Gesellschaften"));
+  const comp = {};
+  for (const it of items) (comp[it.company || "?"] ||= []).push(it);
+  const cp = el("div", "panel");
+  const cmax = Math.max(...Object.values(comp).map(a => a.length));
+  for (const [c, a] of Object.entries(comp).sort((x, y) => y[1].length - x[1].length)) {
+    const st = avg(a.map(x => x.stars).filter(Number.isFinite)), pr = avg(a.map(x => x.price).filter(Number.isFinite));
+    const qm = avg(a.filter(x => x.price && x.size).map(x => x.price / x.size));
+    const ca = a.filter(x => asked.includes(x)), ci = ca.filter(x => x.reply === "einladung" || x.termin || x.reply === "selbstauskunft").length;
+    cp.append(meter(COMPANY[c] || c, a.length, cmax, String(a.length),
+      `Ø ${st != null ? st.toFixed(1) : "?"} ★ · Ø ${pr != null ? num(pr) : "?"} € warm · ${qm != null ? num(qm, 1) : "?"} €/m² · angefragt ${ca.length}, weiter ${ci}`));
+  }
+  list.append(cp);
+
+  list.append(el("div", "section", "Bezirke (die 10 häufigsten)"));
+  const bez = {};
+  for (const it of items) if (it.bezirk) (bez[it.bezirk] ||= []).push(it);
+  const bp = el("div", "panel");
+  const top = Object.entries(bez).sort((x, y) => y[1].length - x[1].length).slice(0, 10);
+  const bmax = top.length ? top[0][1].length : 1;
+  for (const [b, a] of top) {
+    const pr = avg(a.map(x => x.price).filter(Number.isFinite)), st = avg(a.map(x => x.stars).filter(Number.isFinite));
+    bp.append(meter(b, a.length, bmax, String(a.length), `Ø ${pr != null ? num(pr) : "?"} € warm · Ø ${st != null ? st.toFixed(1) : "?"} ★`));
+  }
+  list.append(bp);
+
+  list.append(el("div", "section", "Passende Angebote pro Woche"));
+  const wk = new Map();
+  const dates = since.sort((a, b) => a - b);
+  if (dates.length) {
+    for (let t = dates[0]; t <= Date.now(); t += 7 * 864e5) wk.set(`KW ${isoWeek(new Date(t))}`, 0);
+    for (const t of dates) { const l = `KW ${isoWeek(new Date(t))}`; wk.set(l, (wk.get(l) || 0) + 1); }
+  }
+  const wp = el("div", "panel"); wp.append(columns([...wk.keys()], [...wk.values()])); list.append(wp);
+
+  list.append(el("div", "section", "Sterne der passenden Angebote"));
+  const sp = el("div", "panel");
+  sp.append(columns(["1★", "2★", "3★", "4★", "5★"], [1, 2, 3, 4, 5].map(n => items.filter(it => it.stars === n).length)));
+  list.append(sp);
+  list.append(el("div", "note", "„Passend“ heißt: hat die Filter des Bots bestanden (Größe, Preis, Bezirk, kein WBS). " +
+    "Von Hand markierte Anfragen zählen nur auf diesem Gerät mit."));
 }
 
 function makeCard(key, o) {

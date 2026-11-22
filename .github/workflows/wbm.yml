@@ -86,7 +86,7 @@ jobs:
         run: |
           git config user.name "wbm-bot"
           git config user.email "wbm-bot@users.noreply.github.com"
-          for f in seen.json seen_ibw.json mail_seen.json watch.json stats.json docs/offers.json; do if [ -f "$f" ]; then git add "$f"; fi; done
+          for f in seen.json seen_ibw.json mail_seen.json watch.json stats.json docs/offers.json docs/history.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git add -A docs/img 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "seen aktualisiert"

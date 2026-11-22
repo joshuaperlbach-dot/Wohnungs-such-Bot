@@ -11,6 +11,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 FILE = Path(__file__).parent / "docs" / "offers.json"
+# Dauerhaftes Archiv für den Statistik-Tab: ein knapper Eintrag je Angebot, wird nie gelöscht
+HISTORY_FILE = FILE.parent / "history.json"
+HISTORY_FIELDS = ("company", "bezirk", "rooms", "size", "price", "stars", "points", "online_since", "requested",
+                  "requested_at", "via", "reply", "reply_at", "termin", "source")
 # Fotos angefragter Wohnungen werden kopiert: Die Gesellschaften löschen sie, sobald das Angebot offline ist
 PHOTO_DIR = FILE.parent / "img"
 MAX_PHOTOS = 15
@@ -130,6 +134,25 @@ def drop_unused_photos(store):
                 shutil.rmtree(d, ignore_errors=True)
 
 
+def update_history(store):
+    """Archiv nachführen: jedes Angebot, das je in der Liste stand, mit seinen letzten bekannten Werten."""
+    path = HISTORY_FILE if FILE.parent == HISTORY_FILE.parent else FILE.parent / "history.json"
+    try:
+        hist = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        hist = {}
+    changed = False
+    for key, o in store["offers"].items():
+        h = hist.setdefault(key, {})
+        for f in HISTORY_FIELDS:
+            if o.get(f) is not None and h.get(f) != o[f]:
+                h[f] = o[f]
+                changed = True
+    if changed or not path.exists():
+        path.parent.mkdir(exist_ok=True)
+        path.write_text(json.dumps(hist, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
 def save(store, now):
     store["offers"] = {
         key: o for key, o in store["offers"].items()
@@ -137,6 +160,7 @@ def save(store, now):
     }
     relink_kept_photos(store)
     drop_unused_photos(store)
+    update_history(store)
     store["updated"] = iso(now)
     # Für die Anzeige in der App: lief der Bot von selbst oder von Hand? Von selbst heißt:
     # GitHub-Zeitplan oder der Wecker (cron-job.org). Nur der Knopf in der App meldet sich als "app".

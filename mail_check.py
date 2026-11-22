@@ -391,6 +391,13 @@ def main():
                 o["termin"] = "2026-11-20T12:00:00Z"
         store["fix_termin"] = 1
         offers.save(store, now)
+    if store.get("fix_kma") != 1:
+        # Laut Josh war die WBM-Mail zur Karl-Marx-Allee 23 (27.10.2026) eine Selbstauskunft, keine Absage
+        for o in store["offers"].values():
+            if str(o.get("address", "")).startswith("Karl-Marx-Allee 23") and o.get("reply") == "absage":
+                o["reply"] = "selbstauskunft"
+        store["fix_kma"] = 1
+        offers.save(store, now)
     if store.get("fix_selbstauskunft") != 1:
         # 17.11.2026: zwei WBM-Mails "Selbstauskunft" wurden fälschlich als Absage eingetragen
         for o in store["offers"].values():
