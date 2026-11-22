@@ -649,7 +649,7 @@ function renderStats(list) {
   requestAnimationFrame(async () => {
     const L = await leaflet();
     if (!L || !mapBox.isConnected) { mapBox.style.height = "auto"; mapBox.replaceChildren(el("p", "how", "Die Karte konnte nicht laden. Prüf die Verbindung und öffne den Tab neu.")); return; }
-    const map = L.map(mapBox, { scrollWheelZoom: false, zoomControl: false, attributionControl: true });
+    const map = L.map(mapBox, { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: false, zoomControl: false, attributionControl: true });
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: "© OpenStreetMap" }).addTo(map);
     L.polygon(RING, { color: "#9db58f", weight: 2.5, fill: false, interactive: false }).addTo(map);
     L.marker(RING[4], { opacity: 0, interactive: false }).addTo(map).bindTooltip("S-Bahn-Ring", { permanent: true, direction: "right", className: "ringlabel" });
@@ -1228,7 +1228,8 @@ async function showMap(o, box, dist) {
   const L = await leaflet();
   if (!box.isConnected) return;
   if (!L) { box.style.height = "auto"; box.replaceChildren(el("div", "dist", "Karte konnte nicht geladen werden.")); return; }
-  const map = L.map(box, { scrollWheelZoom: false });
+  // Auf dem Handy scrollt ein Finger die Seite, zwei Finger verschieben und zoomen die Karte
+  const map = L.map(box, { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: false });
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
               { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(map);
   const label = (m, text) => m.bindTooltip(text, { permanent: true, direction: "top", offset: [0, -8] });
