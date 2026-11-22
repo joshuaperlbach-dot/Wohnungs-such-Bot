@@ -258,3 +258,12 @@ nachgebaut (319 Angebote). Der Workflow committet docs/history.json mit. Handy-A
 Kennzahlen, Weg der Anfragen (Angefragt → Antwort → weiter → eingeladen → besichtigt), Gesellschaften, Bezirken,
 Angeboten pro Woche und Sterneverteilung (eine Farbe --viz, Balken mit 4px runden Enden, Tooltip per title).
 "du" = von Hand markiert (nur auf dem Gerät) oder Eingang per Mail (via="mail").
+
+## Statistik "Nachtplan" (22.11.2026)
+Neu gestaltet mit dem frontend-design-Skill nach Joshs Referenzen (dunkle Stadtkarte mit Lichtpunkten, Kachel-Dashboard,
+Punkt-Raster, River Chart). Thema: Berlin bei Nacht. Natriumdampf-Bernstein (#ffb547) = Wohnungen, S-Bahn-Grün
+(#00a65a) = Ring und "eine Runde weiter", Nachtblau #0d1422. Schrift Barlow / Barlow Semi Condensed (Google Fonts).
+Teile: drei Einstiegssätze, Karte mit jeder Wohnung als Licht (Koordinaten aus docs/coords.json, gefüllt von
+tools/geocode.py über "Formular ansehen"; die Datei fasst der Bot nicht an), River Chart Gesellschaft -> Ergebnis,
+Punkt-Uhr Wochentag x Stunde, Gesellschaften-Raster, Preis/Größe, Wochen. Karte: OSM-Kacheln per CSS-Filter
+eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch address und coord.

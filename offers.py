@@ -14,7 +14,7 @@ FILE = Path(__file__).parent / "docs" / "offers.json"
 # Dauerhaftes Archiv für den Statistik-Tab: ein knapper Eintrag je Angebot, wird nie gelöscht
 HISTORY_FILE = FILE.parent / "history.json"
 HISTORY_FIELDS = ("company", "bezirk", "rooms", "size", "price", "stars", "points", "online_since", "requested",
-                  "requested_at", "via", "reply", "reply_at", "termin", "source")
+                  "requested_at", "via", "reply", "reply_at", "termin", "source", "address", "coord")
 # Fotos angefragter Wohnungen werden kopiert: Die Gesellschaften löschen sie, sobald das Angebot offline ist
 PHOTO_DIR = FILE.parent / "img"
 MAX_PHOTOS = 15
