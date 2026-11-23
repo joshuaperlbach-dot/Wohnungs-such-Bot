@@ -286,3 +286,5 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
   Ergebnis im localStorage. Die alte Arbeitsadresse steht NICHT im Repo; Josh trägt sie über "Eigene Orte ändern" ein.
 - Lage-Karte im Detail zeichnet die Strecke in Linienfarben (S grün, U blau, Tram gold, Bus lila), Fußwege gestrichelt.
 - Statistik-Karte: Startansicht ohne Text, Bahnhofsnamen ab Zoom 12, Ortsteile ab 12,5, der Rest später.
+- 23.11.2026: Arbeitsweg-Ziel für die Bewertung ("Lage") ist jetzt die Arbeit in Alt-Hohenschönhausen, absichtlich auf
+  ~1 km gerundet (52.55, 13.50). Genaue Adresse nur in den eigenen Orten auf dem Handy. Gilt für neue Angebote.
