@@ -1386,6 +1386,16 @@ async function offerCoord(o) {
   if (Array.isArray(o.coord) && o.coord.length === 2 && o.coord.every(isFinite)) return o.coord.map(Number);
   return o.address ? geocode(o.address) : null;
 }
+// Einmalig (23.11.2026): Arbeit bleibt bis auf Weiteres am alten Ort – "Arbeit neu" fällt weg, "Arbeit jetzt" heißt "Arbeit"
+try {
+  const p = JSON.parse(localStorage.getItem("places") || "null");
+  if (Array.isArray(p) && !localStorage.getItem("places-mig-1123")) {
+    const q = p.filter(x => !/^arbeit neu$/i.test(x.name.trim()))
+               .map(x => /^arbeit (jetzt|alt)$/i.test(x.name.trim()) ? { ...x, name: "Arbeit" } : x);
+    localStorage.setItem("places", JSON.stringify(q));
+  }
+  localStorage.setItem("places-mig-1123", "1");
+} catch (e) {}
 function places() {
   try { const p = JSON.parse(localStorage.getItem("places") || "null"); if (Array.isArray(p)) return p; } catch (e) {}
   return DEFAULT_PLACES;
