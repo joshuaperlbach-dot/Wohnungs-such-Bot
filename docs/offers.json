@@ -2639,9 +2639,98 @@
     52.42346717,
     13.58918006
    ]
+  },
+  "ibw-24689": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02563-0103-0130",
+   "title": "Singleappartement mit geräumigen Balkon in Lichtenberg und im Zweitbezug neu zu vermieten",
+   "address": "Rhinstraße 143B, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795440610-dto5my9BIf.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_93e3aafe-ebb8-46c8-9650-914e3f5ab07b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_e1007b72-63a6-489a-b7b8-1a6998efb50e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_cec0e005-c708-4daf-9b5a-b1bd4bf7020f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_7196107e-8c5d-4b7a-aced-03bdafa1d90d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_125d6ece-0ce1-4341-ace0-df2bd4aba34f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_51b40399-3267-4e2e-92bf-8ee91cb8a60d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_99e2dad2-a7ab-4e7e-8723-fb10cf1455c7.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_8c205177-cb80-43b5-8877-20d2972ee275.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_9679944b-66c4-4746-95ba-6af440c50094.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_49b13175-ac0c-4984-ae89-e6b394224e81.gif"
+   ],
+   "rooms": 1,
+   "price": 810.28,
+   "cold": 658.0,
+   "size": 47.0,
+   "floor": 7,
+   "levels": 8,
+   "year": 2022,
+   "stars": 2,
+   "why": "47 m², ~2.3 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 3,4 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 2022",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     15.2,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     7.6,
+     8
+    ],
+    "Zentrum": [
+     2.4,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-23T13:30:11Z",
+   "coord": [
+    52.53186971,
+    13.51653664
+   ]
   }
  },
- "updated": "2026-11-23T13:30:54Z",
+ "updated": "2026-11-23T13:33:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2706,7 +2795,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-23T13:30:54Z",
+ "last_auto": "2026-11-23T13:33:08Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
