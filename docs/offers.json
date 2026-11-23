@@ -2556,9 +2556,92 @@
     52.55564156,
     13.36848642
    ]
+  },
+  "ibw-24687": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-62401-0008-0301.html",
+   "title": "Nachmieter gesucht!",
+   "address": "Igelsteig 1, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795440308-GxwqxlEOCQ.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6635-degewo_0bca9b0a-d736-42b7-952e-4ce9389173ff.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/b/csm_6635-degewo_4016162e-632d-48a6-ba20-5d76aa40e1d0_81cb15b7be.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/c/csm_6635-degewo_4698b936-201a-4ecf-9105-2e327bac5dc8_defb506fc4.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/f/csm_6635-degewo_a037fbe8-db48-4213-856d-5c05f3a62891_1400a1bc79.jpg"
+   ],
+   "rooms": 2,
+   "price": 717.25,
+   "cold": 460.81,
+   "size": 49.99,
+   "floor": 3,
+   "levels": 4,
+   "year": 1961,
+   "stars": 2,
+   "why": "49.99 m², ~15.3 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), 10,6 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 3. Etage, Baujahr 1961",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-23T13:25:08Z",
+   "coord": [
+    52.42346717,
+    13.58918006
+   ]
   }
  },
- "updated": "2026-11-23T13:24:54Z",
+ "updated": "2026-11-23T13:26:58Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2623,7 +2706,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-23T13:24:54Z",
+ "last_auto": "2026-11-23T13:26:58Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
