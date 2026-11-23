@@ -1324,7 +1324,9 @@
    "photo_tries": 0,
    "plans": [
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/0/csm_6214-degewo_afa9cf62-8b5a-44f7-87da-ce416e0dfea7_46da9cc6a3.jpg"
-   ]
+   ],
+   "reply": "absage",
+   "reply_at": "2026-11-23T11:23:26Z"
   },
   "ibw-24364": {
    "source": "ibw",
@@ -2556,16 +2558,10 @@
    ]
   }
  },
- "updated": "2026-11-23T11:23:08Z",
+ "updated": "2026-11-23T11:25:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T07:52:51Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1926
-  },
   {
    "at": "2026-11-19T08:02:53Z",
    "kind": "eingang",
@@ -2619,9 +2615,15 @@
    "kind": "selbstauskunft",
    "matched": true,
    "chars": 1067
+  },
+  {
+   "at": "2026-11-23T11:23:26Z",
+   "kind": "absage",
+   "matched": true,
+   "chars": 2278
   }
  ],
- "last_auto": "2026-11-23T11:23:08Z",
+ "last_auto": "2026-11-23T11:25:05Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
