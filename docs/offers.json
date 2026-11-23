@@ -1665,8 +1665,8 @@
    "requested": "gesendet",
    "confirm": "bestaetigt",
    "requested_at": "2026-11-16T13:14:40Z",
-   "reply": "einladung",
-   "reply_at": "2026-11-19T12:35:17Z",
+   "reply": "selbstauskunft",
+   "reply_at": "2026-11-23T07:24:48Z",
    "photos_kept": true,
    "termin": "2026-11-20T12:00:00Z",
    "photo_tries": 10
@@ -2381,16 +2381,10 @@
    "photo_tries": 10
   }
  },
- "updated": "2026-11-23T07:24:31Z",
+ "updated": "2026-11-23T07:26:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T07:42:51Z",
-   "kind": "bestaetigung",
-   "matched": false,
-   "chars": 3650
-  },
   {
    "at": "2026-11-19T07:52:51Z",
    "kind": "eingang",
@@ -2444,9 +2438,15 @@
    "kind": "bestaetigung",
    "matched": true,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-23T07:24:48Z",
+   "kind": "selbstauskunft",
+   "matched": true,
+   "chars": 1067
   }
  ],
- "last_auto": "2026-11-23T07:24:31Z",
+ "last_auto": "2026-11-23T07:26:28Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
