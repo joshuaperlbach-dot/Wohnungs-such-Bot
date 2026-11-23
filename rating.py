@@ -14,7 +14,7 @@ from pathlib import Path
 
 import requests
 
-WORK = (52.5037, 13.4107)  # Moritzplatz (Arbeitsweg-Ziel)
+WORK = (52.55, 13.50)  # Arbeit (seit 23.11.2026), absichtlich auf ~1 km gerundet: genaue Adresse nicht ins öffentliche Repo
 UA = {"User-Agent": "wbm-wohnungsbot (privates Projekt)"}
 
 # Preis: bis SOFT_PRICE alles gut, bis HARD_PRICE absolute Obergrenze
