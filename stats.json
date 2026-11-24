@@ -1,12 +1,9 @@
 {
- "day": "2026-11-24",
+ "day": "2026-11-25",
  "scanned": [
   "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-friedrichshain/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte-mit-wbs-160-220/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/3-zimmer-wohnung-in-kreuzberg-mit-wbs-160-220/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/abendsonne-inklusive-dachgeschosswohnung-mit-grosszuegiger-westterrasse-2-zimmer-wohnung-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/ankommen-und-wohlfuehlen-2-zimmer-wohnung-in-spandau/",
-  "https://www.wbm.de/wohnungen-berlin/angebote/details/ankommen-und-wohlfuehlen-in-einer-dachgeschosswohnung-mit-3-zimmern-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/dachgeschoss-traum-mit-freiraum-licht-luft-und-lebensqualitaet-3-zimmer-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/familiengerechte-4-zimmer-wohnung-mit-balkon-in-spandau/",
   "https://www.wbm.de/wohnungen-berlin/angebote/details/family-apartment-mit-4-zimmern-und-dachterrasse-in-mitte/",
@@ -18,6 +15,5 @@
  ],
  "sent": 0,
  "unclear": 0,
- "summary_day": "2026-11-24",
- "mail_checked_at": "2026-11-24T22:56:26Z"
+ "summary_day": "2026-11-24"
 }
