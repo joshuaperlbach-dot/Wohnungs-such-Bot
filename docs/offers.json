@@ -2832,7 +2832,21 @@
    "address": "Iranische Straße 4B, 13347 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795503545-bF3m94Pheh.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795503545-bF3m94Pheh.webp?q=80&w=900&fm=jpg",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_f3d36bc7-a070-4286-ac6e-36dd4d9d2a97.jpg?itok=cXnnpjmW",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_b989cfc7-abab-4605-b286-c4a3e2a7ee59.jpg?itok=ScpacMCl",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_9cf26c6a-2c11-43fd-84c4-69516c54ca9d.jpg?itok=5DcXhqmR",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_62d97f27-4b48-4930-87e5-e1d3c75c484b.jpg?itok=O4F-7pXG",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_536a971d-530a-4276-83cf-2acd2c953dc6.jpg?itok=YGN0PNZ6",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_f5f92cb4-82d7-4ca2-a191-cd601979c04c.jpg?itok=9LsuYnnw",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_1a0e30b2-728d-4f21-b782-8f7bcc0155c7.jpg?itok=4ppdZXiq",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_ac3dcfe6-be62-41ab-8298-184f8a016226.jpg?itok=iMiS9C2w",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_aa7d1c0c-8a5f-4ae4-be3d-238c80f6bec6.jpg?itok=JAoVQpmQ",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_63aca674-8000-453f-8f5b-021373ac0f2a.jpg?itok=mdPXZn4i",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_70806ee5-89b8-4393-8e1a-f275db74e47f.jpg?itok=utx95QE1",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_9836749f-bf81-4193-85a9-07ec0c96198d.jpg?itok=hu-NvAnK",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_6b9cba52-3488-4288-9ba0-7d9c02aa5cd2.jpg?itok=YbBRK-ki",
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_c33950f4-b817-46d2-8487-45306709f62a.jpg?itok=uNMX84Wr"
    ],
    "rooms": 2,
    "price": 773.16,
@@ -2898,10 +2912,14 @@
     52.55564156,
     13.36848642
    ],
-   "photo_tries": 2
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/wohnungen/berlinovo_abfb7dd1-e305-4492-9fd1-07f48569448c.jpg?itok=6TeiupER"
+   ]
   }
  },
- "updated": "2026-11-24T07:04:45Z",
+ "updated": "2026-11-24T07:06:44Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2966,7 +2984,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-24T07:04:45Z",
+ "last_auto": "2026-11-24T07:06:44Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
