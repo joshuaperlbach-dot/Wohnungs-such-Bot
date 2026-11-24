@@ -6,6 +6,7 @@ Nicht angefragte Angebote fliegen nach einem Tag raus, angefragte bleiben 30 Tag
 import hashlib
 import json
 import os
+import re
 import shutil
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -106,6 +107,24 @@ def keep_photos(store, key, http, limit=MAX_PHOTOS):
     return total
 
 
+DRUPAL_STYLE = re.compile(r"(/sites/default/files)/styles/[^/]+/public/")
+
+
+def full_size(url):
+    """Vorschaubild -> Original. Berlinovo (Drupal) liefert .../files/styles/object_details_thumb/public/x.jpg?itok=..
+    als kleines Vorschaubild, das Original liegt unter .../files/x.jpg."""
+    if isinstance(url, str) and DRUPAL_STYLE.search(url):
+        return DRUPAL_STYLE.sub(r"\1/", url).split("?")[0]
+    return url
+
+
+def use_full_size(store):
+    for o in store["offers"].values():
+        for field in ("images", "plans"):
+            if o.get(field):
+                o[field] = list(dict.fromkeys(full_size(u) for u in o[field]))
+
+
 def relink_kept_photos(store):
     """Liegen für ein Angebot schon gesicherte Bilder in docs/img/<ordner>/, zeigt die Liste auf diese Kopien
     (z.B. nachdem ein Fehler die Links überschrieben hatte). Läuft vor dem Aufräumen, damit nichts verloren geht."""
@@ -158,6 +177,7 @@ def save(store, now):
         key: o for key, o in store["offers"].items()
         if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_UNREQUESTED)
     }
+    use_full_size(store)
     relink_kept_photos(store)
     drop_unused_photos(store)
     update_history(store)
