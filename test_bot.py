@@ -1365,6 +1365,19 @@ def test_floor_plans():
     assert d["images"] == ["https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-foto.jpg"], d
     assert ibw_bot.floor_plans("<img src='/a.jpg' alt='Küche'>", "https://x.de/") == []
 
+def test_berlinovo_full_size_photos():
+    import ibw_bot
+    thumb = ("https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/"
+             "wohnungen/berlinovo_ab.jpg?itok=X04n2Pxd")
+    full = "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_ab.jpg"
+    assert offers.full_size(thumb) == full
+    assert offers.full_size("https://www.wbm.de/a.jpg?x=1") == "https://www.wbm.de/a.jpg?x=1"
+    store = {"offers": {"ibw-1": {"images": [thumb, full, "https://x.de/b.jpg"]}}}
+    offers.use_full_size(store)
+    assert store["offers"]["ibw-1"]["images"] == [full, "https://x.de/b.jpg"]
+    assert ibw_bot.page_images(f'<img src="{thumb}">', "https://www.berlinovo.de/wohnung/x") == [full]
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

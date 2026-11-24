@@ -286,7 +286,7 @@ def page_images(html, base):
     found += [a["href"] for a in soup.find_all("a", href=True)]
     out, keys = [], {}
     for u in found:
-        u = urljoin(base, u.strip())
+        u = offers.full_size(urljoin(base, u.strip()))
         if not (u.startswith("https://") and IMG_FILE.search(u) and not IMG_SKIP.search(u)):
             continue
         key = photo_key(u)
