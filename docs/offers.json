@@ -2382,96 +2382,6 @@
    "photos_kept": true,
    "photo_tries": 10
   },
-  "ibw-24677": {
-   "source": "ibw",
-   "company": "berlinovo",
-   "url": "https://www.berlinovo.de/de/wohnung-id/1230-2388-3111",
-   "title": "Iranische Straße 4b, 2 Zimmer, 1.OG, Rechts 6",
-   "address": "Iranische Straße 4B, 13347 Berlin",
-   "bezirk": "Mitte",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795427644-B5siH6rop3.webp?q=80&w=900&fm=jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_db1e69d4-b62a-4e24-afac-868faa481944.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_0f4f4d59-f94a-4cde-a8c8-443d2640c846.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_a8f65089-8748-40de-a717-1e7b36c769e5.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_58540d3f-9d9b-43bf-a65b-7a4b679639c5.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_06aa75c2-9016-4470-8d29-e604a5ddd0b8.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_69dffb3d-d708-4b87-b094-a49036f717a1.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_f6a4717c-79ed-42d6-a699-de5ed0932381.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_bb7b81b4-0373-42c8-91ba-5855cec99d8e.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_585997b4-3f80-48e1-86a2-4ddf99481a80.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_42d78b82-3c9f-46be-9614-7070f7250e68.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_1f9c6f9a-ce7a-4b8c-87c4-c823ebcb466d.jpg"
-   ],
-   "photos_checked": 6,
-   "plans": [
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_a6b7d485-4950-461c-9ca9-438fb3299538.jpg"
-   ],
-   "rooms": 2,
-   "price": 773.16,
-   "cold": 565.73,
-   "size": 37.72,
-   "floor": 1,
-   "year": 2026,
-   "stars": 3,
-   "why": "37.72 m², ~8.9 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), 1,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2026",
-   "points": 66,
-   "parts": {
-    "Kosten": [
-     18.1,
-     20
-    ],
-    "Kiez": [
-     9.4,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     7.2,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     5.6,
-     8
-    ],
-    "Hochhaus": [
-     2.5,
-     5
-    ],
-    "Größe": [
-     0.8,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-23T09:54:04Z",
-   "coord": [
-    52.55564156,
-    13.36848642
-   ]
-  },
   "ibw-24687": {
    "source": "ibw",
    "company": "degewo",
@@ -2834,7 +2744,7 @@
    ]
   }
  },
- "updated": "2026-11-24T09:52:16Z",
+ "updated": "2026-11-24T09:54:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2899,7 +2809,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-24T09:52:16Z",
+ "last_auto": "2026-11-24T09:54:20Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
