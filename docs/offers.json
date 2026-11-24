@@ -2663,7 +2663,10 @@
    "address": "Joachimstraße 6, 12555 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795532886-vUvQSV6WKy.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795532886-vUvQSV6WKy.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6685-degewo_9078c385-7045-4d5d-a4a9-ad691f2ade39.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6685-degewo_c5a5f667-6d6c-4b19-bffe-8834a2ff99f2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6685-degewo_fa10be7c-d722-4e94-b2e8-0476c31bc991.jpg"
    ],
    "rooms": 1,
    "price": 882.0,
@@ -2730,10 +2733,14 @@
     52.45328509,
     13.57099349
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/9/csm_6685-degewo_282eca6d-9526-4c35-81d0-460e65cf956d_50c686b9ec.jpg"
+   ]
   }
  },
- "updated": "2026-11-24T15:11:21Z",
+ "updated": "2026-11-24T15:13:27Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2798,7 +2805,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-24T15:11:21Z",
+ "last_auto": "2026-11-24T15:13:27Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
