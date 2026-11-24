@@ -2579,7 +2579,10 @@
    "address": "Am Kietzer Feld 12, 12557 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795528387-EKoq0rIgJL.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795528387-EKoq0rIgJL.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6681-degewo_10d3f1df-dba9-41f8-8962-65ec4ebf2740.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6681-degewo_f8d37d38-60da-42cc-ba34-1ae085c4b41c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/4/csm_6681-degewo_e75af9d5-fc42-44cb-8ee5-039909f063c1_bd6bb76dc7.webp"
    ],
    "rooms": 2,
    "price": 664.31,
@@ -2646,10 +2649,14 @@
     52.42306239,
     13.58909151
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/e/f/csm_6681-degewo_f3e3c460-8727-4c6a-9114-1335e2b2e9f8_20d7c8b366.jpg"
+   ]
   }
  },
- "updated": "2026-11-24T13:55:07Z",
+ "updated": "2026-11-24T13:57:06Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2714,7 +2721,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-24T13:55:07Z",
+ "last_auto": "2026-11-24T13:57:06Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
