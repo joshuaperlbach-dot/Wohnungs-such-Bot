@@ -2382,91 +2382,6 @@
    "photos_kept": true,
    "photo_tries": 10
   },
-  "ibw-24675": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00186-0102-0097",
-   "title": "2 Zimmer am Volkspark Prenzlauer Berg ohne WBS",
-   "address": "Hanns-Eisler-Straße 88, 10409 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795422665-KVpbqjZBuC.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_import_2019-07-02_01_1000-00186-bild1-hausansicht.jpg.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_70afeca4-2908-49d6-95c6-1cf0402a3d27.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_ace7255f-5ccd-420c-af27-1eddb202d521.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_5563f34e-9760-4d54-b57e-c7209b2a47e0.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_4b2f3f79-02cd-4e91-9838-6e425b5c4fa4.jpg"
-   ],
-   "photos_checked": 6,
-   "plans": [
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_3590fb1e-2f99-45de-b1ef-fbaf3de3e653.gif"
-   ],
-   "rooms": 2,
-   "price": 694.95,
-   "cold": 441.95,
-   "size": 55.57,
-   "floor": 6,
-   "levels": 10,
-   "year": 1977,
-   "stars": 3,
-   "why": "55.57 m², ~4.9 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Park nah, 0,6 km außerhalb S-Bahn-Ring, Aufzug, 6. Etage, Baujahr 1977, Hochhaus (10 Etagen)",
-   "points": 62,
-   "parts": {
-    "Kosten": [
-     20.0,
-     20
-    ],
-    "Kiez": [
-     3.2,
-     16
-    ],
-    "Lage": [
-     4.2,
-     8
-    ],
-    "Zentrum": [
-     8.7,
-     10
-    ],
-    "ÖPNV": [
-     2.2,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     1.5,
-     5
-    ],
-    "Größe": [
-     5.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     0.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-23T08:31:06Z",
-   "coord": [
-    52.53974966,
-    13.45122121
-   ]
-  },
   "ibw-24677": {
    "source": "ibw",
    "company": "berlinovo",
@@ -2919,7 +2834,7 @@
    ]
   }
  },
- "updated": "2026-11-24T08:30:10Z",
+ "updated": "2026-11-24T08:32:23Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2984,7 +2899,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-24T08:30:10Z",
+ "last_auto": "2026-11-24T08:32:23Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
