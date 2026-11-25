@@ -2376,9 +2376,1918 @@
    ],
    "photo_tries": 10,
    "photos_checked": 6
+  },
+  "ibw-24736": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-41103-0059-0102.html",
+   "title": "Nachmieter gesucht! Neubauwohnung mit Terasse",
+   "address": "Joachimstraße 6, 12555 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795532886-vUvQSV6WKy.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6685-degewo_9078c385-7045-4d5d-a4a9-ad691f2ade39.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6685-degewo_c5a5f667-6d6c-4b19-bffe-8834a2ff99f2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6685-degewo_fa10be7c-d722-4e94-b2e8-0476c31bc991.jpg"
+   ],
+   "rooms": 1,
+   "price": 882.0,
+   "cold": 737.47,
+   "size": 39.82,
+   "floor": 1,
+   "levels": 4,
+   "year": 2018,
+   "stars": 2,
+   "why": "39.82 m², ~11.8 km zur Arbeit (Luftlinie), Kiez wenig los (41 Lokale/Läden), Park nah, 8,1 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2018",
+   "points": 43,
+   "parts": {
+    "Kosten": [
+     8.2,
+     20
+    ],
+    "Kiez": [
+     7.4,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-24T15:08:06Z",
+   "coord": [
+    52.45328509,
+    13.57099349
+   ],
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/9/csm_6685-degewo_282eca6d-9526-4c35-81d0-460e65cf956d_50c686b9ec.jpg"
+   ]
+  },
+  "ibw-24733": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-60305-0019-0301.html",
+   "title": "Nachmieter gesucht!",
+   "address": "Am Kietzer Feld 12, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795528387-EKoq0rIgJL.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6681-degewo_10d3f1df-dba9-41f8-8962-65ec4ebf2740.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6681-degewo_f8d37d38-60da-42cc-ba34-1ae085c4b41c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/4/csm_6681-degewo_e75af9d5-fc42-44cb-8ee5-039909f063c1_bd6bb76dc7.webp"
+   ],
+   "rooms": 2,
+   "price": 664.31,
+   "cold": 425.45,
+   "size": 48.65,
+   "floor": 3,
+   "levels": 4,
+   "year": 1960,
+   "stars": 2,
+   "why": "48.65 m², ~15.3 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), 10,6 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 3. Etage, Baujahr 1960",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-24T13:53:07Z",
+   "coord": [
+    52.42306239,
+    13.58909151
+   ],
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/e/f/csm_6681-degewo_f3e3c460-8727-4c6a-9114-1335e2b2e9f8_20d7c8b366.jpg"
+   ]
+  },
+  "ibw-24700": {
+   "source": "ibw",
+   "company": "berlinovo",
+   "url": "https://www.berlinovo.de/de/wohnung-id/1230-2388-3311",
+   "title": "Iranische Straße 4b, 2 Zimmer, 3.OG, Rechts 6",
+   "address": "Iranische Straße 4B, 13347 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795503545-bF3m94Pheh.webp?q=80&w=900&fm=jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_f3d36bc7-a070-4286-ac6e-36dd4d9d2a97.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_b989cfc7-abab-4605-b286-c4a3e2a7ee59.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_9cf26c6a-2c11-43fd-84c4-69516c54ca9d.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_62d97f27-4b48-4930-87e5-e1d3c75c484b.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_536a971d-530a-4276-83cf-2acd2c953dc6.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_f5f92cb4-82d7-4ca2-a191-cd601979c04c.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_1a0e30b2-728d-4f21-b782-8f7bcc0155c7.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_ac3dcfe6-be62-41ab-8298-184f8a016226.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_aa7d1c0c-8a5f-4ae4-be3d-238c80f6bec6.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_63aca674-8000-453f-8f5b-021373ac0f2a.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_70806ee5-89b8-4393-8e1a-f275db74e47f.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_9836749f-bf81-4193-85a9-07ec0c96198d.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_6b9cba52-3488-4288-9ba0-7d9c02aa5cd2.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_c33950f4-b817-46d2-8487-45306709f62a.jpg"
+   ],
+   "rooms": 2,
+   "price": 773.16,
+   "cold": 565.73,
+   "size": 37.72,
+   "floor": 3,
+   "year": 2026,
+   "stars": 3,
+   "why": "37.72 m², ~8.9 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), 1,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2026",
+   "points": 66,
+   "parts": {
+    "Kosten": [
+     18.1,
+     20
+    ],
+    "Kiez": [
+     9.4,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.2,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     0.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-24T06:59:06Z",
+   "coord": [
+    52.55564156,
+    13.36848642
+   ],
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_abfb7dd1-e305-4492-9fd1-07f48569448c.jpg"
+   ]
+  },
+  "ibw-24699": {
+   "source": "ibw",
+   "company": "berlinovo",
+   "url": "https://www.berlinovo.de/de/wohnung-id/1230-2388-3213",
+   "title": "Iranische Straße 4b, 2 Zimmer, 2.OG, Rechts 7",
+   "address": "Iranische Straße 4B, 13347 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795502825-6De3TqzIzE.webp?q=80&w=900&fm=jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_a821beac-3203-4f83-a37a-2e9b117a3c50.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_e3f7d9e3-b279-4c7a-9d91-a305404aab51.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_0f9b3fb8-0cba-49bf-8687-4bca38043551.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_c013358d-322d-48a3-bbc4-e7e9c10bd4d0.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_e78fc707-f758-4262-99ad-267fc2d6b4a1.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_66d6e38c-79d7-4eb2-afc7-6b31b635161c.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_bfd7e31d-0da5-457f-b7a6-75236ecd9039.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_7d5a04d3-5950-4de2-b15d-256498641fc1.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_ab90fd7c-7408-49be-ad00-2af3cba1abc5.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_5586f9d9-a44e-4785-93dd-c765dc052cef.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_5f54fdc3-b429-4902-9fe3-fe125737e43d.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_04e14298-a1b2-4efc-8a4b-9f1a52d3ccea.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_7b244b3b-1bdf-4196-9348-7a1cbe906f6b.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_76b77db2-a3b2-4023-bb10-cbeeadc100d1.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_7a9e7db9-3fac-4706-8c1a-1bbeab79b4fa.jpg"
+   ],
+   "rooms": 2,
+   "price": 773.16,
+   "cold": 565.73,
+   "size": 37.72,
+   "floor": 2,
+   "year": 2026,
+   "stars": 3,
+   "why": "37.72 m², ~8.9 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), 1,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2026",
+   "points": 66,
+   "parts": {
+    "Kosten": [
+     18.1,
+     20
+    ],
+    "Kiez": [
+     9.4,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.2,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     0.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-24T06:47:05Z",
+   "coord": [
+    52.55564156,
+    13.36848642
+   ],
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_22a9710a-eaa2-433b-ba99-b12eae79218e.jpg"
+   ]
+  },
+  "ibw-24687": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-62401-0008-0301.html",
+   "title": "Nachmieter gesucht!",
+   "address": "Igelsteig 1, 12557 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795440308-GxwqxlEOCQ.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6635-degewo_0bca9b0a-d736-42b7-952e-4ce9389173ff.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/b/csm_6635-degewo_4016162e-632d-48a6-ba20-5d76aa40e1d0_81cb15b7be.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/3/c/csm_6635-degewo_4698b936-201a-4ecf-9105-2e327bac5dc8_defb506fc4.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/f/csm_6635-degewo_a037fbe8-db48-4213-856d-5c05f3a62891_1400a1bc79.jpg"
+   ],
+   "rooms": 2,
+   "price": 717.25,
+   "cold": 460.81,
+   "size": 49.99,
+   "floor": 3,
+   "levels": 4,
+   "year": 1961,
+   "stars": 2,
+   "why": "49.99 m², ~15.3 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), 10,6 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 3. Etage, Baujahr 1961",
+   "points": 48,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-23T13:25:08Z",
+   "coord": [
+    52.42346717,
+    13.58918006
+   ]
+  },
+  "ibw-24689": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02563-0103-0130",
+   "title": "Singleappartement mit geräumigen Balkon in Lichtenberg und im Zweitbezug neu zu vermieten",
+   "address": "Rhinstraße 143B, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795440610-dto5my9BIf.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_93e3aafe-ebb8-46c8-9650-914e3f5ab07b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_e1007b72-63a6-489a-b7b8-1a6998efb50e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_cec0e005-c708-4daf-9b5a-b1bd4bf7020f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_7196107e-8c5d-4b7a-aced-03bdafa1d90d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_125d6ece-0ce1-4341-ace0-df2bd4aba34f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_51b40399-3267-4e2e-92bf-8ee91cb8a60d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_99e2dad2-a7ab-4e7e-8723-fb10cf1455c7.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_8c205177-cb80-43b5-8877-20d2972ee275.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_9679944b-66c4-4746-95ba-6af440c50094.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02563-0103-0130/gewobag_49b13175-ac0c-4984-ae89-e6b394224e81.gif"
+   ],
+   "rooms": 1,
+   "price": 810.28,
+   "cold": 658.0,
+   "size": 47.0,
+   "floor": 7,
+   "levels": 8,
+   "year": 2022,
+   "stars": 2,
+   "why": "47 m², ~2.3 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 3,4 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 2022",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     15.2,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     7.6,
+     8
+    ],
+    "Zentrum": [
+     2.4,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-23T13:30:11Z",
+   "coord": [
+    52.53186971,
+    13.51653664
+   ]
+  },
+  "ibw-24677": {
+   "source": "ibw",
+   "company": "berlinovo",
+   "url": "https://www.berlinovo.de/de/wohnung-id/1230-2388-3111",
+   "title": "Iranische Straße 4b, 2 Zimmer, 1.OG, Rechts 6",
+   "address": "Iranische Straße 4B, 13347 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795427644-B5siH6rop3.webp?q=80&w=900&fm=jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_db1e69d4-b62a-4e24-afac-868faa481944.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_0f4f4d59-f94a-4cde-a8c8-443d2640c846.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_a8f65089-8748-40de-a717-1e7b36c769e5.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_58540d3f-9d9b-43bf-a65b-7a4b679639c5.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_06aa75c2-9016-4470-8d29-e604a5ddd0b8.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_69dffb3d-d708-4b87-b094-a49036f717a1.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_f6a4717c-79ed-42d6-a699-de5ed0932381.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_bb7b81b4-0373-42c8-91ba-5855cec99d8e.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_585997b4-3f80-48e1-86a2-4ddf99481a80.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_42d78b82-3c9f-46be-9614-7070f7250e68.jpg",
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_1f9c6f9a-ce7a-4b8c-87c4-c823ebcb466d.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_a6b7d485-4950-461c-9ca9-438fb3299538.jpg"
+   ],
+   "rooms": 2,
+   "price": 773.16,
+   "cold": 565.73,
+   "size": 37.72,
+   "floor": 1,
+   "year": 2026,
+   "stars": 3,
+   "why": "37.72 m², ~8.9 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), 1,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2026",
+   "points": 66,
+   "parts": {
+    "Kosten": [
+     18.1,
+     20
+    ],
+    "Kiez": [
+     9.4,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.2,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     0.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-23T09:54:04Z",
+   "coord": [
+    52.55564156,
+    13.36848642
+   ]
+  },
+  "ibw-24675": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00186-0102-0097",
+   "title": "2 Zimmer am Volkspark Prenzlauer Berg ohne WBS",
+   "address": "Hanns-Eisler-Straße 88, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795422665-KVpbqjZBuC.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_import_2019-07-02_01_1000-00186-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_70afeca4-2908-49d6-95c6-1cf0402a3d27.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_ace7255f-5ccd-420c-af27-1eddb202d521.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_5563f34e-9760-4d54-b57e-c7209b2a47e0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_4b2f3f79-02cd-4e91-9838-6e425b5c4fa4.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00186-0102-0097/gewobag_3590fb1e-2f99-45de-b1ef-fbaf3de3e653.gif"
+   ],
+   "rooms": 2,
+   "price": 694.95,
+   "cold": 441.95,
+   "size": 55.57,
+   "floor": 6,
+   "levels": 10,
+   "year": 1977,
+   "stars": 3,
+   "why": "55.57 m², ~4.9 km zur Arbeit (Luftlinie), Kiez wenig los (9 Lokale/Läden), Park nah, 0,6 km außerhalb S-Bahn-Ring, Aufzug, 6. Etage, Baujahr 1977, Hochhaus (10 Etagen)",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     4.2,
+     8
+    ],
+    "Zentrum": [
+     8.7,
+     10
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     5.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-23T08:31:06Z",
+   "coord": [
+    52.53974966,
+    13.45122121
+   ]
+  },
+  "ibw-24667": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01608-0401-0252",
+   "title": "Singleapartment in Charlottenburg - ab sofort",
+   "address": "Wiersichweg 7, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795182306-kjGQm7STKo.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_6f53d737-d272-407e-8b39-809968b704d2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_95449b4a-7ec8-40d6-ad12-e4aa327cb11f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_c43d1921-d2fa-4d1b-9da9-da72a8019cc1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_f8c945ea-45f0-4ea6-9eba-ace6cf0a3e07.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_1dbd29cf-3c13-47ca-84eb-db8bb464c9ea.jpg"
+   ],
+   "photos_checked": 6,
+   "rooms": 1,
+   "price": 503.22,
+   "cold": 360.22,
+   "size": 37.99,
+   "floor": 7,
+   "levels": 8,
+   "year": 1963,
+   "stars": 2,
+   "why": "37.99 m², ~8.7 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, 1,0 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1963",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.9,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T13:45:06Z",
+   "coord": [
+    52.5385613,
+    13.29538256
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0401-0252/gewobag_53f7ef87-b3f4-485c-bc47-90d462b3d202.gif"
+   ]
+  },
+  "ibw-24655": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-76801-0101-0028",
+   "title": "Studentenapartment zu vermieten",
+   "address": "Bremer Straße 11, 10551 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795170247-rPIEwuXjWL.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_ef6f8e3f-28ba-42ae-927e-692bfbd4da93.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_021ae06e-c973-4f1f-a5da-6db78f53371e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_8d7e44de-4a66-47bd-a288-69e38ea7cb24.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_7459d7cd-be5b-4fb5-8ac0-5551716ed662.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_b010c25f-c0dd-4806-beeb-6c68b3a215ac.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_b4e967aa-503b-4967-a071-c566dda20a8c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_092f301a-690a-4ace-ba48-0cbb405b0490.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_17f7a21e-7994-499a-9218-4c0ba2e7f1d6.jpg"
+   ],
+   "photos_checked": 6,
+   "rooms": 1,
+   "price": 463.71,
+   "cold": 463.71,
+   "size": 24.97,
+   "floor": 3,
+   "levels": 7,
+   "year": 2021,
+   "stars": 4,
+   "why": "24.97 m², ~5.7 km zur Arbeit (Luftlinie), Kiez lebendig (254 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2021",
+   "points": 75,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     15.3,
+     16
+    ],
+    "Lage": [
+     3.1,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T10:24:07Z",
+   "coord": [
+    52.52936785,
+    13.33860784
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0101-0028/gewobag_db13e652-2a93-4394-9cf6-718bee1c9c7d.gif"
+   ]
+  },
+  "ibw-24657": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01611-1601-0609",
+   "title": "2-Zimmer-Wohnung mit Balkon - Handwerkerobjekt",
+   "address": "Reichweindamm 21, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795170727-49qtEMOhIK.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_488e8ba8-4d24-4b3c-9b1d-315061e0cb1d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_import_2019-07-02_01_0100-01611-bild1-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_a23dde92-24da-4d6d-be19-7dbc082c3fe8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_ec15612f-6802-404e-89f4-50fa2a2e17df.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_d5ec103a-ec41-4fda-889e-26e2224465b0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_96217297-bec3-4eaa-8f29-7afa98772f70.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_34bba22a-6e23-43cc-8094-a599883b2fc2.jpg"
+   ],
+   "rooms": 2,
+   "price": 698.35,
+   "cold": 486.35,
+   "size": 61.58,
+   "floor": 1,
+   "levels": 5,
+   "year": 1964,
+   "stars": 3,
+   "why": "61.58 m², ~8.2 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 0,6 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 1. Etage, Baujahr 1964",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     8.7,
+     10
+    ],
+    "ÖPNV": [
+     2.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T10:32:07Z",
+   "coord": [
+    52.53624656,
+    13.30221317
+   ],
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01611-1601-0609/gewobag_3993de8c-c58e-4416-b35f-d4d7dab9dffb.gif"
+   ]
+  },
+  "ibw-24646": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01610-0101-0059",
+   "title": "1-Zimmer-Wohnung mit Balkon - ab sofort",
+   "address": "Schwambzeile 7, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795162747-rwfR9v0nBr.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_a958fc8f-005f-4c58-a21d-d01035ec358c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_d467fdaf-7b10-4c2f-9d3c-0c9e36c213b3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_356e1412-99d8-4ceb-8826-9ddd113316bb.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_4ab0b4c5-2f12-4e04-963f-013dc2b06cd2.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_fdaa0c3b-01a6-46c1-b002-7bdf34464024.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_8ed1c212-c48c-48a3-8a3b-716188e1f01d.jpg"
+   ],
+   "rooms": 1,
+   "price": 593.94,
+   "cold": 397.94,
+   "size": 38.0,
+   "floor": 7,
+   "levels": 8,
+   "year": 1964,
+   "stars": 2,
+   "why": "38 m², ~8.4 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), 0,8 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1964",
+   "points": 51,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     8.3,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T08:19:07Z",
+   "coord": [
+    52.53769102,
+    13.30037156
+   ],
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01610-0101-0059/gewobag_6e34b8d9-ceb1-43b5-9a2a-9a728aa46cda.gif"
+   ]
+  },
+  "ibw-24644": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00666-1031-1202.html",
+   "title": "2 Zimmer in der Gropiusstadt",
+   "address": "Friedrich-Kayßler-Weg 5, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795158908-K4Ibtz26ev.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_581b84c8-f904-4cd3-8111-6f6e7f438a0f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/7/4/csm_6609-degewo_0fbabf5a-4f12-4457-a7b1-8a1b13e1a6b8_fc9b4b94d3.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/1/b/csm_6609-degewo_6f077f60-2945-4d0f-8045-117695555a17_31e857427e.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/d/1/csm_6609-degewo_bdf19655-1ad0-4fa3-bbe4-5b04b381288a_03c2516aa1.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_70e1ec7f-97c7-48ab-a8a2-0a5842fdd8c5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_2457d65a-497a-4848-b91b-546f2bd094f1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_5baf80ba-9385-4655-81c7-a67ea85f59d6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_7b820e99-c045-4a96-a6ea-2b72d81f0927.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_dbdd2e5c-c103-4b2e-9cad-6bd133d8cf0e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_d3ce5660-46bd-4c08-904e-ea081ec989bc.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_9b09925a-f442-41b2-b521-d743c04383c8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6609-degewo_fc0a95cd-60a5-4c48-98ae-f5ebcb28dd2d.jpg"
+   ],
+   "photos_checked": 6,
+   "rooms": 2,
+   "price": 702.83,
+   "cold": 488.0,
+   "size": 60.69,
+   "floor": 12,
+   "levels": 12,
+   "year": 1968,
+   "stars": 2,
+   "why": "60.69 m², ~9.8 km zur Arbeit (Luftlinie), Kiez wenig los (29 Lokale/Läden), Park nah, 5,4 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 12. Etage, Baujahr 1968, Hochhaus (12 Etagen)",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     5.9,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     7.3,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T07:15:08Z",
+   "coord": [
+    52.42300807,
+    13.46893706
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/a/2/csm_6609-degewo_eb21acf3-b227-41b8-b9dc-2b6415c8b4ef_c3491f32dc.jpg"
+   ]
+  },
+  "ibw-24636": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-01608-0501-0275",
+   "title": "Singleapartment am Jakob-Kaiser-Platz",
+   "address": "Heckerdamm 233, 13627 Berlin",
+   "bezirk": "Charlottenburg-Wilmersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795101367-JpWY4eMyHC.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_d4dfca44-1bea-4fd5-8895-180ac152fe45.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_fa653c3c-4a8e-456e-9dbd-c381c590f658.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_61e3a218-5bbf-488b-aaa2-c53994aec9e1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_31143741-2226-4f6a-908d-e273068d5f74.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_db0c8760-c017-45b6-982c-124e79d95116.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_aff7e241-01a9-4de0-9b0d-ea5e985bf2da.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_f1314b3b-84e7-42ee-a60e-a6e320bbe08b.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 496.32,
+   "cold": 342.32,
+   "size": 38.09,
+   "floor": 2,
+   "levels": 8,
+   "year": 1963,
+   "stars": 2,
+   "why": "38.09 m², ~8.5 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), Park nah, 1,0 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 1963",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     7.9,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.9,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T15:16:07Z",
+   "coord": [
+    52.53913524,
+    13.29881266
+   ]
+  },
+  "ibw-24617": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02561-0101-0128",
+   "title": "Appartement mit Balkon und Weitblick in Alt-Hohenschönhausen neu zu vermieten",
+   "address": "Altenhofer Straße 30, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795092010-Y3ETpLqQLB.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_d8579f9f-d13b-4b95-8a60-cb13a023407b.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_f6d1a041-aadd-4735-8dd9-33668de6ae9f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_94e4b5da-a6c5-4b32-899d-2b62bfe31c37.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_20b21b60-f08a-4118-b657-ce64966a5eec.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_cea2c62d-18ee-4286-b104-08fa774bd292.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_3a1711c3-3754-4359-b1f6-62d47092e140.jpg"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 553.86,
+   "cold": 352.86,
+   "size": 32.6,
+   "floor": 13,
+   "levels": 18,
+   "year": 1976,
+   "stars": 2,
+   "why": "32.6 m², ~6.0 km zur Arbeit (Luftlinie), Kiez wenig los (22 Lokale/Läden), Park nah, 1,7 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 13. Etage, Baujahr 1976, Hochhaus (18 Etagen)",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     4.8,
+     16
+    ],
+    "Lage": [
+     2.7,
+     8
+    ],
+    "Zentrum": [
+     6.2,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T12:40:10Z",
+   "coord": [
+    52.53449843,
+    13.48362898
+   ]
+  },
+  "ibw-24619": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-76801-0201-0077",
+   "title": "Studentenapartment zu vermieten",
+   "address": "Bremer Straße 12, 10551 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795092127-XixlpKDvm1.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_ef6f8e3f-28ba-42ae-927e-692bfbd4da93.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_021ae06e-c973-4f1f-a5da-6db78f53371e.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_0f3484d9-9abf-455b-8184-1f6303d4159f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_3e1eadf9-2649-438a-9356-39ecf1952906.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_61de5885-b541-41d2-9919-f4b58a198b57.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_b4e967aa-503b-4967-a071-c566dda20a8c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_092f301a-690a-4ace-ba48-0cbb405b0490.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_17f7a21e-7994-499a-9218-4c0ba2e7f1d6.jpg"
+   ],
+   "rooms": 1,
+   "price": 463.71,
+   "cold": 463.71,
+   "size": 26.99,
+   "floor": 2,
+   "levels": 6,
+   "year": 2021,
+   "stars": 4,
+   "why": "26.99 m², ~5.6 km zur Arbeit (Luftlinie), Kiez lebendig (242 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2021",
+   "points": 77,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     15.1,
+     16
+    ],
+    "Lage": [
+     3.2,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T12:42:07Z",
+   "coord": [
+    52.52955248,
+    13.33920761
+   ],
+   "photo_tries": 0,
+   "photos_checked": 5
+  },
+  "ibw-24620": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02132-0101-0031",
+   "title": "Studentenapartment zu vermieten",
+   "address": "Amrumer Straße 36, 13353 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795092430-FDcN8z9thG.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_0808a198-e8f8-4631-b5a3-a121139775b9.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_5eaf6b21-9d1b-452a-922a-8168014b14c6.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_97c42450-95e9-4770-9b5a-9ab29e49648f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_1a06287a-5755-4ab6-bd98-8b65a8304f95.jpg"
+   ],
+   "rooms": 1,
+   "price": 365.36,
+   "cold": 365.36,
+   "size": 25.6,
+   "floor": 1,
+   "levels": 6,
+   "year": 2019,
+   "stars": 3,
+   "why": "25.6 m², ~6.5 km zur Arbeit (Luftlinie), Kiez wenig los (59 Lokale/Läden), 0,9 km außerhalb S-Bahn-Ring, Aufzug, 1. Etage, Baujahr 2019",
+   "points": 60,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.4,
+     16
+    ],
+    "Lage": [
+     2.0,
+     8
+    ],
+    "Zentrum": [
+     7.9,
+     10
+    ],
+    "ÖPNV": [
+     2.6,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T12:47:10Z",
+   "coord": [
+    52.54596627,
+    13.34476231
+   ],
+   "photo_tries": 0,
+   "photos_checked": 5
+  },
+  "ibw-24605": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1140-00644-0241-2201.html",
+   "title": "1 Zimmer mit tollem Blick",
+   "address": "Zwickauer Damm 12, 12353 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795083968-wVqFIyprON.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_257dcd93-b824-4236-9940-cd2c1c6525eb.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/5/csm_6578-degewo_d3a1e5bc-ac5c-4403-993f-d10cae3f3740_56cbb6e329.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_436cc8a9-658d-4c8a-9451-fc65e61280d0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_4db5e133-763b-42e0-a4de-e6226283856b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/e/7/csm_6578-degewo_c3a12855-de66-4e07-b070-16c4544d0bdc_6f91053c85.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_46b9af91-36de-4388-9d38-6df6dceb046b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_97ab79dd-16bb-45ee-9e68-bc24c72d49a2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_c8095d6e-8923-479b-813d-0de9c9be171c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_9ef2c8b7-f69c-48fb-ab27-283639910ce2.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/f/csm_6578-degewo_9da1d4e6-f450-42a9-877c-5a32638c62c7_284dab791d.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 1,
+   "price": 611.03,
+   "cold": 428.13,
+   "size": 46.78,
+   "floor": 22,
+   "levels": 27,
+   "year": 1968,
+   "stars": 2,
+   "why": "46.78 m², ~10.2 km zur Arbeit (Luftlinie), Kiez wenig los (45 Lokale/Läden), Park nah, 5,8 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 22. Etage, Baujahr 1968, Hochhaus (27 Etagen)",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     7.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     3.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T10:26:08Z",
+   "coord": [
+    52.42300962,
+    13.48312511
+   ]
+  },
+  "ibw-24607": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14559-2.html?t=ibw",
+   "title": "** Modernes Wohnen im Neubau - 2 Zimmer Wohnung mit Balkon und offener Wohnküche ohne WBS **",
+   "address": "Anne-Frank-Straße 2, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795084448-6TQe9kbZIX.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/5/2/csm_93854c2af97790a1bc8cdf3a9a29443e_18bf241bd2.webp",
+    "https://www.howoge.de/fileadmin/_processed_/1/a/csm_aa4306967357921e375fcde2ae014fd6_11d810c190.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/b/csm_048be903251734dd35d4866681d19526_f743a891c1.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/2/csm_e2820fa525f3f9e5fecc18f59d3e158a_e3bebda427.webp",
+    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
+    "https://www.howoge.de/fileadmin/_processed_/6/b/csm_058f96ed2d916373e02a7eb8d19ce5a0_c6f3ea5960.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 916.0,
+   "cold": 677.5,
+   "size": 53.0,
+   "floor": 2,
+   "levels": 6,
+   "year": 2025,
+   "stars": 2,
+   "why": "53 m², ~13.5 km zur Arbeit (Luftlinie), Kiez wenig los (1 Lokale/Läden), Park nah, 8,9 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2025",
+   "points": 42,
+   "parts": {
+    "Kosten": [
+     4.1,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     1.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T10:34:09Z",
+   "coord": [
+    52.40919969,
+    13.53475235
+   ]
+  },
+  "ibw-24600": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-40504-0104-0110",
+   "title": "Schöne Neubau-Wohnung für Singles",
+   "address": "Franz-Klühs-Straße 9, 10969 Berlin",
+   "bezirk": "Friedrichshain-Kreuzberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795081448-kgCONMXWw4.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_e50fda2d-29ee-4eca-8789-db9b998f86d5.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_bd3b925b-344d-4c0c-9d28-952271e3fb1c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_98afae45-a11a-45c1-97aa-bc6ae0140c91.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_8e1704b1-7f67-4eb5-8bcc-8cb1b02fb471.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_bcf9af8c-49c7-4302-aae6-99d9c98e3db8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_5b4e73e3-4e90-49e6-aa47-ae42469df936.jpg"
+   ],
+   "rooms": 1,
+   "price": 857.45,
+   "cold": 722.45,
+   "size": 39.63,
+   "floor": 6,
+   "levels": 7,
+   "year": 2020,
+   "stars": 3,
+   "why": "39.63 m², ~1.3 km zur Arbeit (Luftlinie), Kiez mittel (93 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2020",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     11.1,
+     20
+    ],
+    "Kiez": [
+     10.9,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     1.3,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T09:44:08Z",
+   "coord": [
+    52.50085985,
+    13.39265297
+   ],
+   "photo_tries": 0,
+   "photos_checked": 5
+  },
+  "ibw-24596": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02562-0102-0145",
+   "title": "Singleappartement im obersten Stockwerk bereits vorzeitig ab sofort neu zu vermieten",
+   "address": "Rhinstraße 147, 10315 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795078630-BaBz7mJ2h6.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_import_2019-07-02_01_0100-02562-0102-bild2-hausansicht.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_7bdfc73c-9368-4a8c-abb4-ad523a6efe0f.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_b01206cd-5566-467c-80f8-14b13a15f018.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_cc1977ae-1f72-43b0-8069-f0ff264b26c9.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_197d1484-dadc-4642-b436-46e8b9e6e351.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_6a710608-4343-4ce1-999e-15d686d9411a.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_edc8dc20-1219-4eed-a20b-8142f857de30.jpg"
+   ],
+   "rooms": 1,
+   "price": 389.21,
+   "cold": 280.21,
+   "size": 27.1,
+   "floor": 7,
+   "levels": 8,
+   "year": 1975,
+   "stars": 1,
+   "why": "27.1 m², ~7.9 km zur Arbeit (Luftlinie), Kiez wenig los (10 Lokale/Läden), Park nah, 3,5 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 7. Etage, Baujahr 1975",
+   "points": 39,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.1,
+     8
+    ],
+    "Zentrum": [
+     2.2,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T08:57:10Z",
+   "coord": [
+    52.53174178,
+    13.51785716
+   ],
+   "photo_tries": 0,
+   "photos_checked": 5
+  },
+  "ibw-24591": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-70608-0010-0402.html",
+   "title": "Schöner Ausblick über die Bölschestraße",
+   "address": "Bölschestraße 103, 12587 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795071304-UnVGAcf1G5.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_7f1ecaf9-600c-4d67-8eac-8ee68262f723.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/5/csm_6566-degewo_9b51c315-f742-40c8-a41c-ea63d9ca0491_82cac82775.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_f677ea00-2711-4b17-8fc8-eb0c9c433b00.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_c27d7747-77a6-4010-9159-f130c17d9188.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_0f59ed3c-5d0f-4a28-82f0-b9b57b4eeec7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_5d9d3d29-20ce-4b29-a576-4882f7ae0973.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_a3daeee6-85a0-495f-8329-e19e63040547.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_b0ca2093-98a7-447a-ba43-d3ac978e37e6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/8/csm_6566-degewo_0299ed37-77aa-4f3e-878c-82e87732a446_d203a39d8c.webp"
+   ],
+   "photos_checked": 5,
+   "rooms": 2,
+   "price": 744.88,
+   "cold": 555.36,
+   "size": 55.91,
+   "floor": 4,
+   "levels": 4,
+   "year": 1874,
+   "stars": 2,
+   "why": "55.91 m², ~15.6 km zur Arbeit (Luftlinie), Kiez mittel (131 Lokale/Läden), 11,7 km außerhalb S-Bahn-Ring (weit draußen), 4. Etage, Baujahr 1874",
+   "points": 62,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.8,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     1.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-19T06:55:05Z",
+   "coord": [
+    52.45210888,
+    13.62458394
+   ]
   }
  },
- "updated": "2026-11-25T18:20:44Z",
+ "updated": "2026-11-25T18:22:36Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2443,7 +4352,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-25T18:20:44Z",
+ "last_auto": "2026-11-25T18:22:36Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
