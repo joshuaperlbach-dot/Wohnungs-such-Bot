@@ -2382,100 +2382,6 @@
    "photos_kept": true,
    "photo_tries": 10
   },
-  "ibw-24700": {
-   "source": "ibw",
-   "company": "berlinovo",
-   "url": "https://www.berlinovo.de/de/wohnung-id/1230-2388-3311",
-   "title": "Iranische Straße 4b, 2 Zimmer, 3.OG, Rechts 6",
-   "address": "Iranische Straße 4B, 13347 Berlin",
-   "bezirk": "Mitte",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795503545-bF3m94Pheh.webp?q=80&w=900&fm=jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_f3d36bc7-a070-4286-ac6e-36dd4d9d2a97.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_b989cfc7-abab-4605-b286-c4a3e2a7ee59.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_9cf26c6a-2c11-43fd-84c4-69516c54ca9d.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_62d97f27-4b48-4930-87e5-e1d3c75c484b.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_536a971d-530a-4276-83cf-2acd2c953dc6.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_f5f92cb4-82d7-4ca2-a191-cd601979c04c.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_1a0e30b2-728d-4f21-b782-8f7bcc0155c7.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_ac3dcfe6-be62-41ab-8298-184f8a016226.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_aa7d1c0c-8a5f-4ae4-be3d-238c80f6bec6.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_63aca674-8000-453f-8f5b-021373ac0f2a.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_70806ee5-89b8-4393-8e1a-f275db74e47f.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_9836749f-bf81-4193-85a9-07ec0c96198d.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_6b9cba52-3488-4288-9ba0-7d9c02aa5cd2.jpg",
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_c33950f4-b817-46d2-8487-45306709f62a.jpg"
-   ],
-   "rooms": 2,
-   "price": 773.16,
-   "cold": 565.73,
-   "size": 37.72,
-   "floor": 3,
-   "year": 2026,
-   "stars": 3,
-   "why": "37.72 m², ~8.9 km zur Arbeit (Luftlinie), Kiez mittel (94 Lokale/Läden), 1,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2026",
-   "points": 66,
-   "parts": {
-    "Kosten": [
-     18.1,
-     20
-    ],
-    "Kiez": [
-     9.4,
-     16
-    ],
-    "Lage": [
-     0.0,
-     8
-    ],
-    "Zentrum": [
-     7.2,
-     10
-    ],
-    "ÖPNV": [
-     3.0,
-     3
-    ],
-    "Bezirk": [
-     2.1,
-     3
-    ],
-    "Baujahr": [
-     5.6,
-     8
-    ],
-    "Hochhaus": [
-     2.5,
-     5
-    ],
-    "Größe": [
-     0.8,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-24T06:59:06Z",
-   "coord": [
-    52.55564156,
-    13.36848642
-   ],
-   "photo_tries": 0,
-   "photos_checked": 6,
-   "plans": [
-    "https://www.berlinovo.de/sites/default/files/images/wohnungen/berlinovo_abfb7dd1-e305-4492-9fd1-07f48569448c.jpg"
-   ]
-  },
   "ibw-24733": {
    "source": "ibw",
    "company": "degewo",
@@ -2645,7 +2551,7 @@
    ]
   }
  },
- "updated": "2026-11-25T06:58:31Z",
+ "updated": "2026-11-25T07:00:28Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2710,7 +2616,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-25T06:58:31Z",
+ "last_auto": "2026-11-25T07:00:28Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
