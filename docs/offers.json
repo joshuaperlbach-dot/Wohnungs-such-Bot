@@ -3978,10 +3978,9 @@
     "https://www.howoge.de/fileadmin/_processed_/a/b/csm_048be903251734dd35d4866681d19526_f743a891c1.webp",
     "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
     "https://www.howoge.de/fileadmin/_processed_/0/2/csm_e2820fa525f3f9e5fecc18f59d3e158a_e3bebda427.webp",
-    "https://www.howoge.de/fileadmin/_processed_/0/6/csm_19bb1c02176be713960b5486d6407cff_7ef5310d94.webp",
-    "https://www.howoge.de/fileadmin/_processed_/6/b/csm_058f96ed2d916373e02a7eb8d19ce5a0_c6f3ea5960.webp"
+    "https://www.howoge.de/fileadmin/_processed_/4/2/csm_b2312cec9e10724148929554caee7ece_7043c4fb91.webp"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 916.0,
    "cold": 677.5,
@@ -4046,6 +4045,10 @@
    "coord": [
     52.40919969,
     13.53475235
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/6/b/csm_058f96ed2d916373e02a7eb8d19ce5a0_b0b90ac63a.webp"
    ]
   },
   "ibw-24600": {
@@ -4130,7 +4133,10 @@
     13.39265297
    ],
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_d68bce1b-8720-4ff4-bf75-6dc3167d2965.gif"
+   ]
   },
   "ibw-24596": {
    "source": "ibw",
@@ -4215,7 +4221,10 @@
     13.51785716
    ],
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02562-0102-0145/gewobag_b1d56a55-9c09-4d3d-a6bb-8b226fa5b0ea.gif"
+   ]
   },
   "ibw-24591": {
    "source": "ibw",
@@ -4233,10 +4242,9 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_0f59ed3c-5d0f-4a28-82f0-b9b57b4eeec7.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_5d9d3d29-20ce-4b29-a576-4882f7ae0973.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_a3daeee6-85a0-495f-8329-e19e63040547.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_b0ca2093-98a7-447a-ba43-d3ac978e37e6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/8/csm_6566-degewo_0299ed37-77aa-4f3e-878c-82e87732a446_d203a39d8c.webp"
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6566-degewo_b0ca2093-98a7-447a-ba43-d3ac978e37e6.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 2,
    "price": 744.88,
    "cold": 555.36,
@@ -4301,10 +4309,14 @@
    "coord": [
     52.45210888,
     13.62458394
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/8/8/csm_6566-degewo_0299ed37-77aa-4f3e-878c-82e87732a446_00dc1e2e6a.jpg"
    ]
   }
  },
- "updated": "2026-11-25T18:24:45Z",
+ "updated": "2026-11-25T18:27:15Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4369,7 +4381,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-25T18:24:45Z",
+ "last_auto": "2026-11-25T18:27:15Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
