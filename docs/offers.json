@@ -2625,10 +2625,11 @@
     52.47475509,
     13.48784016
    ],
-   "photo_tries": 9
+   "photo_tries": 10,
+   "photos_checked": 6
   }
  },
- "updated": "2026-11-25T10:18:38Z",
+ "updated": "2026-11-25T10:20:45Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -2693,7 +2694,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-25T10:18:38Z",
+ "last_auto": "2026-11-25T10:20:45Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
