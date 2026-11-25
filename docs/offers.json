@@ -3541,7 +3541,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_aff7e241-01a9-4de0-9b0d-ea5e985bf2da.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_f1314b3b-84e7-42ee-a60e-a6e320bbe08b.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 496.32,
    "cold": 342.32,
@@ -3606,6 +3606,10 @@
    "coord": [
     52.53913524,
     13.29881266
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-01608-0501-0275/gewobag_87279801-9e24-4291-ab73-183b449070ac.gif"
    ]
   },
   "ibw-24617": {
@@ -3624,7 +3628,7 @@
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_cea2c62d-18ee-4286-b104-08fa774bd292.jpg",
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_3a1711c3-3754-4359-b1f6-62d47092e140.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 553.86,
    "cold": 352.86,
@@ -3689,6 +3693,10 @@
    "coord": [
     52.53449843,
     13.48362898
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02561-0101-0128/gewobag_c7e3d4ca-a57c-4b11-b742-4f73c8a20883.gif"
    ]
   },
   "ibw-24619": {
@@ -3775,7 +3783,10 @@
     13.33920761
    ],
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-76801-0201-0077/gewobag_609e49df-6749-4faf-8aa0-1386f3ce0229.gif"
+   ]
   },
   "ibw-24620": {
    "source": "ibw",
@@ -3857,7 +3868,10 @@
     13.34476231
    ],
    "photo_tries": 0,
-   "photos_checked": 5
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02132-0101-0031/gewobag_8eefb0cc-2074-432d-8049-dcd1de7525b1.gif"
+   ]
   },
   "ibw-24605": {
    "source": "ibw",
@@ -3876,10 +3890,9 @@
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_46b9af91-36de-4388-9d38-6df6dceb046b.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_97ab79dd-16bb-45ee-9e68-bc24c72d49a2.jpg",
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_c8095d6e-8923-479b-813d-0de9c9be171c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_9ef2c8b7-f69c-48fb-ab27-283639910ce2.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/f/csm_6578-degewo_9da1d4e6-f450-42a9-877c-5a32638c62c7_284dab791d.webp"
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6578-degewo_9ef2c8b7-f69c-48fb-ab27-283639910ce2.jpg"
    ],
-   "photos_checked": 5,
+   "photos_checked": 6,
    "rooms": 1,
    "price": 611.03,
    "cold": 428.13,
@@ -3944,6 +3957,10 @@
    "coord": [
     52.42300962,
     13.48312511
+   ],
+   "photo_tries": 0,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/5/f/csm_6578-degewo_9da1d4e6-f450-42a9-877c-5a32638c62c7_eec7087536.jpg"
    ]
   },
   "ibw-24607": {
@@ -4287,7 +4304,7 @@
    ]
   }
  },
- "updated": "2026-11-25T18:22:36Z",
+ "updated": "2026-11-25T18:24:45Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4352,7 +4369,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-25T18:22:36Z",
+ "last_auto": "2026-11-25T18:24:45Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
