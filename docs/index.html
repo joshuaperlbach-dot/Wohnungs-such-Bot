@@ -383,6 +383,16 @@ function saveMarks(m) {
 let marks = loadMarks();
 // "Nicht weiter verfolgen" (z.B. nach der Besichtigung): nur auf diesem Gerät
 let dropped = (() => { try { return JSON.parse(localStorage.getItem("dropped") || "{}"); } catch (e) { return {}; } })();
+// Einmalig (25.11.2026, nach Durchsicht der Mails): Besichtigung Damerowstraße hat nicht gefallen, WBM-Lose
+// (Muskauer, Lichtenberger, Karl-Marx-Allee) ohne Nachricht, HOWOGE ohne Einladung bzw. Einladung verfallen
+try {
+  if (!localStorage.getItem("dropped-mig-1125")) {
+    const now = new Date().toISOString();
+    for (const k of ["https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-mitte/", "ibw-24009", "ibw-24131", "ibw-24145", "ibw-24260", "ibw-24377", "ibw-24451", "https://www.wbm.de/wohnungen-berlin/angebote/details/mit-wbs100-1402-zimmer-wohnung-in-friedrichshain/", "https://www.wbm.de/wohnungen-berlin/angebote/details/2-zimmer-wohnung-in-kreuzberg/", "ibw-24540"]) if (!dropped[k]) dropped[k] = now;
+    localStorage.setItem("dropped", JSON.stringify(dropped));
+    localStorage.setItem("dropped-mig-1125", "1");
+  }
+} catch (e) {}
 function toggleDropped(key) {
   if (dropped[key]) delete dropped[key]; else dropped[key] = new Date().toISOString();
   try { localStorage.setItem("dropped", JSON.stringify(dropped)); } catch (e) {}
