@@ -288,3 +288,6 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
 - Statistik-Karte: Startansicht ohne Text, Bahnhofsnamen ab Zoom 12, Ortsteile ab 12,5, der Rest später.
 - 23.11.2026: Arbeitsweg-Ziel für die Bewertung ("Lage") ist jetzt die Arbeit in Alt-Hohenschönhausen, absichtlich auf
   ~1 km gerundet (52.55, 13.50). Genaue Adresse nur in den eigenen Orten auf dem Handy. Gilt für neue Angebote.
+- 25.11.2026: Nicht angefragte Angebote bleiben 7 Tage in der Liste (offers.KEEP_LISTED), vorher 24 Stunden.
+  ibw_bot schaut ein Angebot weiter nur 24 h lang erneut an (KEEP_UNREQUESTED). 22 schon gelöschte Angebote der
+  letzten Woche kommen aus docs/restore_offers.json (aus dem Git-Verlauf) zurück, offers.save fügt sie einmal ein.

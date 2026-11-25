@@ -20,7 +20,8 @@ HISTORY_FIELDS = ("company", "bezirk", "rooms", "size", "price", "stars", "point
 PHOTO_DIR = FILE.parent / "img"
 MAX_PHOTOS = 15
 MAX_PHOTO_BYTES = 4_000_000
-KEEP_UNREQUESTED = timedelta(hours=24)
+KEEP_UNREQUESTED = timedelta(hours=24)  # so lange schaut ibw_bot ein Angebot erneut an
+KEEP_LISTED = timedelta(days=7)  # so lange bleibt ein nicht angefragtes Angebot in der Liste (Wunsch 25.11.2026)
 KEEP_REQUESTED = timedelta(days=30)
 REQUESTED = ("gesendet", "unklar")  # Anfrage ist raus (bei "unklar" ohne klare Bestätigung)
 
@@ -172,10 +173,21 @@ def update_history(store):
         path.write_text(json.dumps(hist, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
 
+def restore(store, now, path=None):
+    """Angebote zurückholen, die nach der alten 24-Stunden-Regel schon gelöscht waren (aus dem Git-Verlauf)."""
+    path = path or FILE.parent / "restore_offers.json"
+    if not path.exists():
+        return
+    for key, o in json.loads(path.read_text(encoding="utf-8")).items():
+        if key not in store["offers"] and age(o, now) < KEEP_LISTED:
+            store["offers"][key] = o
+
+
 def save(store, now):
+    restore(store, now)
     store["offers"] = {
         key: o for key, o in store["offers"].items()
-        if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_UNREQUESTED)
+        if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_LISTED)
     }
     use_full_size(store)
     relink_kept_photos(store)
