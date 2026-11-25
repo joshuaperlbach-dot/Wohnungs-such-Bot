@@ -16,5 +16,7 @@
  ],
  "sent": 0,
  "unclear": 0,
- "summary_day": "2026-11-25"
+ "summary_day": "2026-11-25",
+ "mail_checked_at": "2026-11-25T23:00:59Z",
+ "alert_day_since": "2026-11-25T23:01:01Z"
 }
