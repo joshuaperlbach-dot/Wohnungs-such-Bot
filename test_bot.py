@@ -563,7 +563,7 @@ def test_offers_list_for_app():
     hours = lambda h: offers.iso(now - timedelta(hours=h))
     store = {"offers": {}}
     offers.add(store, "neu", {"title": "Neu", "online_since": hours(1)}, now)
-    offers.add(store, "alt", {"title": "Alt", "online_since": hours(25)}, now)
+    offers.add(store, "alt", {"title": "Alt", "online_since": hours(8 * 24)}, now)  # nicht angefragt: 7 Tage
     offers.add(store, "alt-angefragt", {"title": "Alt, angefragt", "online_since": hours(25), "requested": "gesendet"}, now)
     offers.add(store, "ohne-zeit", {"title": "Ohne Zeit", "online_since": None}, now)
     # spätere Aktualisierung ohne Status löscht die Anfrage nicht und verschiebt "online seit" nicht
@@ -1364,6 +1364,19 @@ def test_floor_plans():
     assert d["plans"] == ["https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-5e6e.jpg"], d
     assert d["images"] == ["https://www.wbm.de/fileadmin/user_upload/tx_openimmo/connection-3/images/79040-foto.jpg"], d
     assert ibw_bot.floor_plans("<img src='/a.jpg' alt='Küche'>", "https://x.de/") == []
+
+def test_restore_deleted_offers():
+    from datetime import datetime, timedelta, timezone
+    now = datetime(2026, 11, 25, 18, 0, tzinfo=timezone.utc)
+    with tempfile.TemporaryDirectory() as td:
+        f = Path(td) / "r.json"
+        f.write_text(json.dumps({"a": {"online_since": offers.iso(now - timedelta(days=2))},
+                                 "b": {"online_since": offers.iso(now - timedelta(days=9))},
+                                 "c": {"online_since": offers.iso(now), "title": "alt"}}))
+        store = {"offers": {"c": {"title": "neu"}}}
+        offers.restore(store, now, f)
+    assert sorted(store["offers"]) == ["a", "c"] and store["offers"]["c"]["title"] == "neu"
+
 
 def test_berlinovo_full_size_photos():
     import ibw_bot
