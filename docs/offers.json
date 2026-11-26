@@ -3778,9 +3778,101 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-26T10:26:49Z",
    "photos_kept": true
+  },
+  "ibw-24858": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1100-41908-0118-0105.html",
+   "title": "*Neubau in Altglienicke – modernes Wohnen im Grünen*",
+   "address": "Kleeblattstraße 8, 12524 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795697887-Ud623ItSUA.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_021e2bb4-a02a-4696-a072-a03c9a4303f6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_16a069c7-500d-4935-8d1e-d25978ab5d13.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/0/csm_6755-degewo_2f2d954d-71c7-49e2-ac73-521ec560ea6c_d545250779.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_6edc5369-7e87-4b1a-84ab-5d6ba16ec47d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_2560b08d-717c-4da4-9a06-7fa0cd9234a3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_07983b03-ee62-470b-aef6-c40b3053c9a8.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_dc73a8e3-455f-473f-b22b-ff07633ceda5.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_b18782c7-afd1-48eb-b155-bd66266665a9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_ab36113e-7dfe-4065-abb1-9b16f6ba0286.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_b57d98f5-14a9-4542-b8cc-dbc2fa517e0c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/e/0/csm_6755-degewo_d257544f-5e7a-4aaa-abfa-f1c544562a12_ab9153bd67.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6755-degewo_47cf3d86-5664-4a21-8729-10e4483e3be2.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/2/csm_6755-degewo_fbbf53b3-621e-48b3-9e44-78e94dab4e4a_dd761026fa.jpg"
+   ],
+   "rooms": 1,
+   "price": 864.94,
+   "cold": 696.48,
+   "size": 43.53,
+   "floor": 1,
+   "levels": 3,
+   "year": 2027,
+   "stars": 2,
+   "why": "43.53 m², ~16.1 km zur Arbeit (Luftlinie), Kiez wenig los (0 Lokale/Läden), Park nah, 9,7 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 1. Etage, Baujahr 2027",
+   "points": 41,
+   "parts": {
+    "Kosten": [
+     10.2,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     2.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T12:58:07Z",
+   "coord": [
+    52.40866713,
+    13.55373804
+   ]
   }
  },
- "updated": "2026-11-26T12:58:21Z",
+ "updated": "2026-11-26T13:00:30Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3845,7 +3937,7 @@
    "chars": 1913
   }
  ],
- "last_auto": "2026-11-26T12:58:21Z",
+ "last_auto": "2026-11-26T13:00:30Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
