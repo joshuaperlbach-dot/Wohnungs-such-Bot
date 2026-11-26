@@ -3879,16 +3879,10 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-26T18:50:05Z",
+ "updated": "2026-11-26T18:53:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T11:53:12Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 2821
-  },
   {
    "at": "2026-11-19T12:13:23Z",
    "kind": "absage",
@@ -3942,9 +3936,15 @@
    "kind": "formular",
    "matched": true,
    "chars": 2778
+  },
+  {
+   "at": "2026-11-26T18:50:39Z",
+   "kind": "formular",
+   "matched": false,
+   "chars": 2818
   }
  ],
- "last_auto": "2026-11-26T18:50:05Z",
+ "last_auto": "2026-11-26T18:53:08Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
