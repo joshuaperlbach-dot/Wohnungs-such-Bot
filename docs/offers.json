@@ -4041,16 +4041,10 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-26T10:36:49Z",
+ "updated": "2026-11-26T10:38:51Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T10:24:52Z",
-   "kind": "bestaetigung",
-   "matched": true,
-   "chars": 3650
-  },
   {
    "at": "2026-11-19T10:35:22Z",
    "kind": "eingang",
@@ -4104,9 +4098,15 @@
    "kind": "bestaetigung",
    "matched": true,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-26T10:37:06Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1929
   }
  ],
- "last_auto": "2026-11-26T10:36:49Z",
+ "last_auto": "2026-11-26T10:38:51Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
