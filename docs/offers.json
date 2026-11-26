@@ -3945,86 +3945,9 @@
    },
    "online_since": "2026-11-26T19:37:02Z",
    "gone": true
-  },
-  "ibw-24899": {
-   "source": "ibw",
-   "company": "gewobag",
-   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00267-0101-0003",
-   "title": "2 Zimmerwohnung ab Sofort!",
-   "address": "Lilli-Henoch-Straße 17, 10405 Berlin",
-   "bezirk": "Pankow",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795727947-vm9wVlIfwA.webp?q=80&w=900&fm=jpg"
-   ],
-   "rooms": 2,
-   "price": 824.27,
-   "cold": 437.27,
-   "size": 62.8,
-   "floor": 1,
-   "levels": 17,
-   "year": 1985,
-   "stars": 3,
-   "why": "62.8 m², ~4.6 km zur Arbeit (Luftlinie), Kiez mittel (74 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 1985, Hochhaus (17 Etagen)",
-   "points": 70,
-   "parts": {
-    "Kosten": [
-     14.1,
-     20
-    ],
-    "Kiez": [
-     9.9,
-     16
-    ],
-    "Lage": [
-     4.5,
-     8
-    ],
-    "Zentrum": [
-     10.0,
-     10
-    ],
-    "ÖPNV": [
-     2.6,
-     3
-    ],
-    "Bezirk": [
-     3.0,
-     3
-    ],
-    "Baujahr": [
-     0.8,
-     8
-    ],
-    "Hochhaus": [
-     0.0,
-     5
-    ],
-    "Größe": [
-     7.9,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-26T21:19:07Z",
-   "coord": [
-    52.53969883,
-    13.43401541
-   ],
-   "photo_tries": 1
   }
  },
- "updated": "2026-11-26T21:21:06Z",
+ "updated": "2026-11-26T21:23:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4089,7 +4012,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-26T21:21:06Z",
+ "last_auto": "2026-11-26T21:23:10Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
