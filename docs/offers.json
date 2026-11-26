@@ -4039,18 +4039,100 @@
    ],
    "photo_tries": 0,
    "photos_checked": 6
+  },
+  "ibw-24839": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20108-39.html?t=ibw",
+   "title": "ohne WBS - unrenoviert",
+   "address": "Franz-Jacob-Straße 12, 10369 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "img/fe5c7bd2fd33/01.jpg",
+    "img/fe5c7bd2fd33/02.jpg",
+    "img/fe5c7bd2fd33/03.webp",
+    "img/fe5c7bd2fd33/04.webp",
+    "img/fe5c7bd2fd33/05.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "img/fe5c7bd2fd33/grundriss-01.webp"
+   ],
+   "rooms": 2,
+   "price": 619.23,
+   "cold": 405.94,
+   "size": 52.42,
+   "floor": 6,
+   "levels": 21,
+   "year": 1977,
+   "stars": 3,
+   "why": "52.42 m², ~3.2 km zur Arbeit (Luftlinie), Kiez mittel (70 Lokale/Läden), Park nah, 0,5 km außerhalb S-Bahn-Ring, Aufzug, 6. Etage, Baujahr 1977, Hochhaus (21 Etagen)",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.7,
+     16
+    ],
+    "Lage": [
+     6.4,
+     8
+    ],
+    "Zentrum": [
+     8.8,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     5.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T10:25:11Z",
+   "coord": [
+    52.52854156,
+    13.46836401
+   ],
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
+   "requested_at": "2026-11-26T10:26:49Z",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-26T10:26:36Z",
+ "updated": "2026-11-26T10:28:55Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T08:02:53Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1910
-  },
   {
    "at": "2026-11-19T10:24:52Z",
    "kind": "bestaetigung",
@@ -4104,9 +4186,15 @@
    "kind": "absage",
    "matched": true,
    "chars": 2278
+  },
+  {
+   "at": "2026-11-26T10:27:04Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-26T10:26:36Z",
+ "last_auto": "2026-11-26T10:28:55Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
