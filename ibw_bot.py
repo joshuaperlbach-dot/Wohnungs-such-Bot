@@ -333,6 +333,73 @@ def add_missing_photos(store, limit=5):
             o["plans"] = plans
 
 
+# ---- "Wenn Geld egal wäre" (Wunsch 26.11.2026): die krassesten Angebote, auch zu teuer, zu groß oder
+# außerhalb der Wunschbezirke. Bewertet wird alles außer dem Preis. Nur ohne WBS, nicht WBM (eigener Bot).
+DREAM_MIN = 62          # Punkte ohne Kosten (0-100), ab hier kommt ein Angebot in den Traum-Tab
+DREAM_MAX = 40          # höchstens so viele (die besten)
+DREAM_PAGES = 3         # Seiten der Gesellschaft pro Lauf (Fotos, WBS-Banner)
+
+
+def dream_points(r):
+    parts = {k: v for k, v in (r.parts or {}).items() if k != "Kosten"}
+    total = sum(v[1] for v in parts.values())
+    return round(100 * sum(v[0] for v in parts.values()) / total) if total else 0
+
+
+def dream_reasons(l):
+    """Warum das Angebot nicht in der normalen Liste steht."""
+    why = []
+    if (l["price"] or 0) > MAX_WARMMIETE:
+        why.append(f"{l['price']:.0f} € warm")
+    elif (l["cold"] or 0) > MAX_KALTMIETE:
+        why.append(f"{l['cold']:.0f} € kalt")
+    if l["rooms"] is not None and l["rooms"] > MAX_ROOMS:
+        why.append(f"{l['rooms']:g} Zimmer")
+    if l["district"] is False:
+        why.append(f"{l['bezirk']}")
+    return why
+
+
+def dream_candidate(l):
+    if l["company"] in SKIP_COMPANIES or (l["wbs"] or title_says_wbs(l["title"])) and not ALLOW_WBS:
+        return False
+    if re.search(r"Senioren|ab \d\d Jahre", l["title"], re.I):
+        return False
+    return not matches(l) and bool(dream_reasons(l))
+
+
+def add_dream(store, l, now):
+    r = rated(l)
+    pts = dream_points(r)
+    if pts < DREAM_MIN:
+        return
+    entry = app_offer(l, r)
+    entry.update(dream=pts, why_not=dream_reasons(l))
+    old = store.setdefault("dream", {}).get(f"ibw-{l['id']}")
+    if old:  # Fotos und Prüfung vom letzten Mal behalten
+        entry.update({k: old[k] for k in ("images", "plans", "dream_checked") if old.get(k)})
+    store["dream"][f"ibw-{l['id']}"] = entry
+
+
+def check_dream(store, limit=DREAM_PAGES):
+    """Pro Lauf ein paar Traum-Angebote auf der Seite der Gesellschaft ansehen: Fotos holen, WBS aussortieren."""
+    dream = store.get("dream") or {}
+    todo = sorted(((k, o) for k, o in dream.items() if not o.get("dream_checked") and safe_url(o.get("url"))),
+                  key=lambda x: -x[1].get("dream", 0))
+    for key, o in todo[:limit]:
+        wbs, more, plans = company_page(o)
+        if wbs and not ALLOW_WBS:
+            del dream[key]
+            continue
+        first = [u for u in (o.get("images") or [])[:1] if "inberlinwohnen.de" in u]
+        o["images"] = list(dict.fromkeys(first + more))
+        o["plans"] = plans or None
+        o["dream_checked"] = True
+    # nur die besten behalten
+    keep = sorted(dream, key=lambda k: -dream[k].get("dream", 0))[:DREAM_MAX]
+    store["dream"] = {k: dream[k] for k in keep}
+
+
 def safe_url(u):
     return u if isinstance(u, str) and u.startswith("https://") else None
 
@@ -401,6 +468,14 @@ def main():
     person, missing = wbm_bot.load_person()
     sends = 0
     hits = []
+    # Traum-Tab einmal mit allen Angeboten füllen, danach nur noch die neuen
+    dream_pool = new
+    if "dream" not in store and not first_run:
+        dream_pool, _ = fetch_new(set(), True)
+        store["dream"] = {}
+    for l in dream_pool:
+        if dream_candidate(l):
+            add_dream(store, l, now)
     for l in new:
         fresh = l["id"] not in seen
         since = offers.parse_time(l["online_since"])
@@ -431,6 +506,7 @@ def main():
             hits.append((r.stars, l, r[0], r[1], request))
     hits.sort(key=lambda h: -h[0])  # beste zuerst
     add_missing_photos(store)
+    check_dream(store)
     wbm_bot.keep_requested_photos(store)  # Fotos angefragter Wohnungen sichern (auch die von WBM)
     store["ibw_seeded"] = store.get("ibw_seeded") or not problem
     offers.save(store, now)

@@ -120,7 +120,7 @@ def full_size(url):
 
 
 def use_full_size(store):
-    for o in store["offers"].values():
+    for o in list(store["offers"].values()) + list((store.get("dream") or {}).values()):
         for field in ("images", "plans"):
             if o.get(field):
                 o[field] = list(dict.fromkeys(full_size(u) for u in o[field]))
@@ -189,6 +189,8 @@ def save(store, now):
         key: o for key, o in store["offers"].items()
         if age(o, now) < (KEEP_REQUESTED if o.get("requested") in REQUESTED else KEEP_LISTED)
     }
+    if "dream" in store:  # Traum-Tab: 7 Tage wie die nicht angefragten Angebote
+        store["dream"] = {k: o for k, o in store["dream"].items() if age(o, now) < KEEP_LISTED}
     use_full_size(store)
     relink_kept_photos(store)
     drop_unused_photos(store)

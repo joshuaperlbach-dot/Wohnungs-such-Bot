@@ -1378,6 +1378,31 @@ def test_restore_deleted_offers():
     assert sorted(store["offers"]) == ["a", "c"] and store["offers"]["c"]["title"] == "neu"
 
 
+def test_dream_tab():
+    import ibw_bot
+    from datetime import datetime, timezone
+    now = datetime(2026, 11, 26, 12, 0, tzinfo=timezone.utc)
+    ls = ibw_bot.parse_page("".join([ibw_card(1), ibw_card(2, wbs="erforderlich"), ibw_card(3, company="wbm", total="1.400,00 €"),
+                                     ibw_card(5, rooms="3,0", total="1.600,00 €"), ibw_card(6, total="1.274,60 €")]))
+    cand = [l["id"] for l in ls if ibw_bot.dream_candidate(l)]
+    assert sorted(map(str, cand)) == ["5", "6"], cand  # passend, WBS und WBM nicht
+    l5 = next(l for l in ls if str(l["id"]) == "5")
+    assert ibw_bot.dream_reasons(l5) == ["1600 € warm", "3 Zimmer"], ibw_bot.dream_reasons(l5)
+    store = {"offers": {}}
+    old_min = ibw_bot.DREAM_MIN
+    ibw_bot.DREAM_MIN = 0
+    try:
+        for l in ls:
+            if ibw_bot.dream_candidate(l):
+                ibw_bot.add_dream(store, l, now)
+    finally:
+        ibw_bot.DREAM_MIN = old_min
+    assert sorted(store["dream"]) == ["ibw-5", "ibw-6"] and store["dream"]["ibw-6"]["why_not"] == ["1275 € warm"]
+    with mock.patch.object(ibw_bot, "company_page", lambda o: (o["url"].endswith("/5"), ["https://x.de/a.jpg"], [])):
+        ibw_bot.check_dream(store)
+    assert list(store["dream"]) == ["ibw-6"] and store["dream"]["ibw-6"]["dream_checked"]  # 5 hatte WBS-Banner
+
+
 def test_berlinovo_full_size_photos():
     import ibw_bot
     thumb = ("https://www.berlinovo.de/sites/default/files/styles/object_details_thumb/public/images/"

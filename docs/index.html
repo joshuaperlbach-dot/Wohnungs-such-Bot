@@ -78,10 +78,16 @@
   #filters { background: var(--panel); box-shadow: var(--sh-sunk); border-radius: 999px; padding: 3px; gap: 2px; flex-wrap: nowrap; }
   #filters .seg { padding: 7px 11px; }
   .gap { flex: 1; }
-  .tabs { margin-top: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+  .tabs { margin-top: 12px; display: grid; grid-template-columns: repeat(4, auto); gap: 0;
           background: var(--panel); box-shadow: var(--sh-sunk); border-radius: 999px; padding: 3px; }
   .tabs .seg { font-weight: 550; padding: 9px 6px; display: flex; align-items: center; justify-content: center; gap: 7px; }
   .tabs .seg[aria-pressed="true"]::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--star); }
+  .dreamhead { margin: 18px 4px 16px; display: grid; gap: 4px; }
+  .dreamhead b { font-size: 20px; font-weight: 600; color: var(--ink); }
+  .dreamhead span { color: var(--muted); font-size: 13.5px; line-height: 1.4; }
+  .whynot { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+  .whynot span { font: 500 11.5px var(--mono); padding: 3px 7px; border-radius: 6px; color: #a97df5;
+                 background: color-mix(in srgb, #a97df5 14%, transparent); }
   .section { font-size: 14px; font-weight: 550; color: var(--muted); margin: 26px 4px 10px; display: flex; gap: 8px; align-items: baseline; }
   .badge { display: inline-block; border-radius: 999px; padding: 2px 8px; font: 600 11px var(--mono);
            margin-left: 8px; letter-spacing: .02em; vertical-align: 1px; background: var(--sent); color: var(--sent-ink); }
@@ -331,7 +337,8 @@
   <div id="runs"></div>
   <div class="bar tabs">
     <button class="seg" data-view="offers">Angebote</button>
-    <button class="seg" data-view="mine">Meine Anfragen</button>
+    <button class="seg" data-view="mine">Anfragen</button>
+    <button class="seg" data-view="dream">Traum</button>
     <button class="seg" data-view="stats">Statistik</button>
   </div>
   <div class="bar" id="filters">
@@ -366,10 +373,10 @@ const HOUR = 3600e3;
 const LATE_AFTER = 2 * HOUR;          // rötlich: so lange online und keine Anfrage
 const STALE_AFTER = 45 * 60e3;        // Warnung: Bot hat so lange nichts aktualisiert
 const DISPATCH = "https://api.github.com/repos/joshuaperlbach-dot/Wohnungs-such-Bot/actions/workflows/wbm.yml/dispatches";
-let offers = {}, updated = null, lastAuto = null, lastManual = null, startedAt = 0;
+let offers = {}, dream = {}, updated = null, lastAuto = null, lastManual = null, startedAt = 0;
 let minStars = 0, openKey = null;
 // Tab: alle Angebote oder nur die eigenen Anfragen (merkt sich das Gerät)
-let view = (() => { try { const v = localStorage.getItem("view"); return v === "mine" || v === "stats" ? v : "offers"; } catch (e) { return "offers"; } })();
+let view = (() => { try { const v = localStorage.getItem("view"); return v === "mine" || v === "stats" || v === "dream" ? v : "offers"; } catch (e) { return "offers"; } })();
 // Sortierung merkt sich das Gerät
 let newestFirst = (() => { try { return localStorage.getItem("sort") === "new"; } catch (e) { return false; } })();
 
@@ -540,11 +547,32 @@ function render() {
     renderMine(list);
   } else if (view === "stats") {
     renderStats(list);
+  } else if (view === "dream") {
+    renderDream(list);
   } else {
     if (!items.length) list.append(el("div", "empty", updated ? "Gerade keine passenden Angebote." : "lädt …"));
     for (const [key, o] of items) list.append(makeCard(key, o));
   }
   if (openKey) drawDetail();
+}
+
+// ---- Tab "Traum" ("if money didn't matter"): die krassesten Wohnungen, bewertet ohne den Preis.
+// Der Bot sammelt dafür auch zu teure, zu große und Wohnungen außerhalb der Wunschbezirke (offers.json "dream").
+function dreamPoints(o) {
+  if (o.dream != null) return o.dream;
+  const p = Object.entries(o.parts || {}).filter(([k]) => k !== "Kosten");
+  const max = p.reduce((a, [, v]) => a + v[1], 0);
+  return max ? Math.round(100 * p.reduce((a, [, v]) => a + v[0], 0) / max) : 0;
+}
+function renderDream(list) {
+  const items = [...Object.entries(dream), ...all().filter(([k, o]) => !dream[k] && dreamPoints(o) >= 62)]
+    .sort(([, a], [, b]) => dreamPoints(b) - dreamPoints(a));
+  const head = el("div", "dreamhead");
+  head.append(el("b", null, "Wenn Geld egal wäre"),
+    el("span", null, "Die besten Wohnungen der letzten 7 Tage, bewertet nach allem außer dem Preis. Auch zu teure, zu große und welche außerhalb deiner Bezirke."));
+  list.append(head);
+  if (!items.length) list.append(el("div", "empty", "Der Bot sammelt noch, schau nach dem nächsten Lauf wieder rein."));
+  for (const [key, o] of items) list.append(makeCard(key, o, true));
 }
 
 // ---- Tab "Meine Anfragen": oben was läuft, darunter die Absagen; Besichtigungen markiert
@@ -1110,7 +1138,7 @@ function radar(o, big) {
   return svg;
 }
 
-function makeCard(key, o) {
+function makeCard(key, o, dreamView) {
     const card = el("article", "card");
     const tap = el("button", "tap");
     const imgs = (o.images || []).map(imgUrl).filter(Boolean);
@@ -1139,12 +1167,18 @@ function makeCard(key, o) {
     if (imgs.length > 1) pics.append(el("span", "count", `${imgs.length} Bilder`));
     const info = el("div", "info");
     const stars = el("div", "stars", "★".repeat(o.stars || 0) + "☆".repeat(5 - (o.stars || 0)));
-    if (o.points != null) stars.append(el("small", null, `${o.points} Punkte`));
+    if (dreamView) stars.append(el("small", null, `${dreamPoints(o)} ohne Preis`));
+    else if (o.points != null) stars.append(el("small", null, `${o.points} Punkte`));
     const v = viewing(o);
     if (v) stars.append(el("span", "badge " + v.cls, v.text));
     info.append(stars,
       mainLine(o),
       place(o),
+      ...(dreamView && (o.why_not || []).length ? [(() => {
+        const w = el("div", "whynot");
+        for (const t of o.why_not) w.append(el("span", null, t));
+        return w;
+      })()] : []),
       o.gone ? el("div", "sub gone", `${COMPANY[o.company] || o.company || ""} · nicht mehr online`)
              : el("div", "sub", `${COMPANY[o.company] || o.company || ""} · online ${ago(o.online_since).replace("vor ", "seit ")}`));
     tap.append(info);
@@ -1152,7 +1186,8 @@ function makeCard(key, o) {
     if (r) tap.append(r);
     tap.append(routeLine(key, o));   // volle Breite unter Text und Netzdiagramm
     tap.addEventListener("click", () => openDetail(key));
-    card.append(pics, tap, reqButton(key, o));
+    card.append(pics, tap);
+    if (!dreamView || !dream[key]) card.append(reqButton(key, o));
     return card;
 }
 
@@ -1182,7 +1217,7 @@ function row(table, label, value) {
 
 function drawDetail() {
   const dlg = document.getElementById("detail");
-  const o = Object.fromEntries(all())[openKey];
+  const o = Object.fromEntries(all())[openKey] || dream[openKey];
   if (!o) { dlg.close(); openKey = null; return; }
   const sheet = el("div", "sheet");
   const close = el("button", "close", "✕");
@@ -1610,6 +1645,7 @@ async function refresh() {
     if (!r.ok) throw new Error(r.status);
     const data = await r.json();
     offers = data.offers || {};
+    dream = data.dream || {};
     updated = data.updated || null;
     lastAuto = data.last_auto || null;
     lastManual = data.last_manual || null;
