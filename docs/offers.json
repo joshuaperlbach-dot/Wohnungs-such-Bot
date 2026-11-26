@@ -3879,7 +3879,7 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-26T18:34:38Z",
+ "updated": "2026-11-26T18:36:40Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3944,7 +3944,7 @@
    "chars": 2778
   }
  ],
- "last_auto": "2026-11-26T18:34:38Z",
+ "last_auto": "2026-11-26T18:36:40Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4144,10 +4144,15 @@
    "address": "Neustrelitzer Straße 65D, 13055 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795614130-uRoH0jKh8T.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795614130-uRoH0jKh8T.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/e/9/csm_a1482f4ea5b43ce8500a51d70ebd27d3_150d99755d.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
    ],
    "photos_checked": null,
-   "plans": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/e/1/csm_7509f840dcf90b59f9c2ab0f90695b32_1a8398daf7.webp"
+   ],
    "rooms": 4,
    "price": 1682.24,
    "cold": 1280.0,
@@ -4217,7 +4222,8 @@
    "why_not": [
     "1682 € warm",
     "4 Zimmer"
-   ]
+   ],
+   "dream_checked": true
   },
   "ibw-24659": {
    "source": "ibw",
@@ -4227,10 +4233,31 @@
    "address": "Hellersdorfer Straße 91B, 12619 Berlin",
    "bezirk": "Marzahn-Hellersdorf",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795171870-dFdzYDtH3e.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795171870-dFdzYDtH3e.webp?q=80&w=900&fm=jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/a/8/csm_20261026_095836_789d1ca769.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/f/a/csm_20261026_103810_6ebdda23f0.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/1/9/csm_20261026_103759_9349229e66.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/9/b/csm_20261026_103749_64576e2393.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/b/a/csm_20261026_103727_dbd60c6c17.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/6/c/csm_20261026_103659_486d5ba5fb.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/2/4/csm_20261026_103603_69ced73116.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/d/2/csm_20261026_103608_38cbc44154.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/e/8/csm_20261026_103818_8471641f91.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/7/5/csm_20261026_103739_67c3d398b8.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/d/2/csm_GESOBAU-Wohnen-Leistungen_31f4e24e5d.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/7/2/csm_Internetversorgung_dc640d5ef5.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/a/1/csm_Provisionsfreie_Vermietung_28_f0cda56b2e.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/9/d/csm_GESOBAU-Mieterstrom_9559294090.jpg",
+    "https://www.gesobau.de/fileadmin/_processed_/1/e/csm_Marzahn-Hellersdorf_Kienberg_1245951895_a8936cb971.jpg",
+    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Hellersdorf/03229-0-FNA-FAS-FOT_2307_003_WHG_3229_Alte_Hellersd_54-56_web.JPG",
+    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Hellersdorf/03243-0-FNA-FIR-FOT_2308_004_Stadtpark_web.JPG",
+    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Hellersdorf/Eroeffnung_Stadtplatz_Hellersdorf-0984.jpg",
+    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Shutterstock/Marzahn-Hellersdorf_Fluss_Wuhle_2165265841_klein.jpg"
    ],
    "photos_checked": null,
-   "plans": null,
+   "plans": [
+    "https://www.gesobau.de/fileadmin/Immomio/10-03209-00002-1020-883f5c09-bc4a-4e90-8456-9c8743d08f5f/Grundriss.JPG"
+   ],
    "rooms": 4,
    "price": 1612.05,
    "cold": 1267.23,
@@ -4298,7 +4325,8 @@
     "1612 € warm",
     "4 Zimmer",
     "Marzahn-Hellersdorf"
-   ]
+   ],
+   "dream_checked": true
   },
   "ibw-24800": {
    "source": "ibw",
@@ -4308,10 +4336,17 @@
    "address": "Frankfurter Allee 218, 10365 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795615030-Gcxo5En9B0.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795615030-Gcxo5En9B0.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/2/2/csm_64e30e734f0a30264d9bab655e937aaa_a7a22b939a.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/8/csm_2b93be79ce479a9ec7ea613ee187dc9e_c056b79b49.webp",
+    "https://www.howoge.de/fileadmin/_processed_/4/2/csm_b2312cec9e10724148929554caee7ece_66901e35ee.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
    ],
    "photos_checked": null,
-   "plans": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/b/1/csm_f2ea9802d65182da2956c14bdc9dc358_f9c3c22af5.webp"
+   ],
    "rooms": 2,
    "price": 1065.91,
    "cold": 765.0,
@@ -4380,7 +4415,8 @@
    "dream": 68,
    "why_not": [
     "1066 € warm"
-   ]
+   ],
+   "dream_checked": true
   }
  }
 }
