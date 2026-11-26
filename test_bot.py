@@ -1378,12 +1378,14 @@ def test_restore_deleted_offers():
     assert sorted(store["offers"]) == ["a", "c"] and store["offers"]["c"]["title"] == "neu"
 
 
-def test_three_rooms_listed_but_not_sent():
+def test_three_rooms_listed_and_sent():
     import ibw_bot
     l = ibw_bot.parse_page(ibw_card(1, rooms="3,0"))[0]
     assert ibw_bot.matches(l)
     class R: stars = 5
-    assert not ibw_bot.can_request({**l, "district": True, "wbs": False}, R())
+    assert ibw_bot.can_request({**l, "district": True, "wbs": False}, R()) == (l["company"] in ibw_bot.SENDERS)
+    four = ibw_bot.parse_page(ibw_card(3, rooms="4,0"))[0]
+    assert not ibw_bot.matches(four) and not ibw_bot.can_request({**four, "district": True, "wbs": False}, R())
     two = ibw_bot.parse_page(ibw_card(2))[0]
     assert ibw_bot.can_request({**two, "district": True, "wbs": False}, R()) == (two["company"] in ibw_bot.SENDERS)
 
