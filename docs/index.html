@@ -565,11 +565,12 @@ function dreamPoints(o) {
   return max ? Math.round(100 * p.reduce((a, [, v]) => a + v[0], 0) / max) : 0;
 }
 function renderDream(list) {
-  const items = [...Object.entries(dream), ...all().filter(([k, o]) => !dream[k] && dreamPoints(o) >= 62 && !isMine(k, o) && !dropped[k] && !o.gone)]
+  // nur Wohnungen, die nicht in die normale Liste passen (zu teuer, zu groß, zu weit draußen)
+  const items = Object.entries(dream).filter(([k, o]) => !isMine(k, o) && !dropped[k])
     .sort(([, a], [, b]) => dreamPoints(b) - dreamPoints(a));
   const head = el("div", "dreamhead");
   head.append(el("b", null, "Wenn Geld egal wäre"),
-    el("span", null, "Die besten Wohnungen der letzten 7 Tage, bewertet nach allem außer dem Preis. Auch zu teure, zu große und welche außerhalb deiner Bezirke."));
+    el("span", null, "Wohnungen der letzten 7 Tage, die zu teuer, zu groß oder zu weit draußen sind. Bewertet nach allem außer dem Preis."));
   list.append(head);
   if (!items.length) list.append(el("div", "empty", "Der Bot sammelt noch, schau nach dem nächsten Lauf wieder rein."));
   for (const [key, o] of items) list.append(makeCard(key, o, true));
