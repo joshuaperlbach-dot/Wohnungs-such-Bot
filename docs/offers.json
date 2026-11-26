@@ -3879,7 +3879,7 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-26T18:29:57Z",
+ "updated": "2026-11-26T18:34:38Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3944,8 +3944,443 @@
    "chars": 2778
   }
  ],
- "last_auto": "2026-11-26T18:29:57Z",
+ "last_auto": "2026-11-26T18:34:38Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
- "fix_kma": 1
+ "fix_kma": 1,
+ "dream": {
+  "ibw-24870": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1500-02004-0016-0101.html",
+   "title": "3-Zimmer-Wohnung im schönen Prenzlberg zu vermieten",
+   "address": "Dunckerstraße 43, 10439 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795700349-cbgy20e8fV.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_bdb7035f-a54b-4354-8d91-7bc20ac4c1f9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_3f09b8ea-8ab8-454b-9b53-06066fccf1b0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_183fef26-17bc-47ad-90b4-a36a1ac1e166.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_e8a02413-987d-4634-ae1c-09847b02c8c9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_d4766fe0-d646-47dd-8d22-56abeee75d3c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_dd56a796-9040-4971-9585-ab1cd7492d39.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_c1a5c703-e1f5-49ab-b68d-de9eb549d456.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_9c95d577-de52-4eff-b4ce-1d6d0dbf125a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_cf78887d-70aa-4c27-ac7c-bc303b019eb7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_4f27a232-aef4-4685-bd51-b2c7adf8a868.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_442daf31-0098-482c-a8d0-ce20d6e06e93.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_7039dad4-f311-471b-91e6-d7c134e3fdf1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_fcc8346e-dfb5-41c2-b88e-52b1de17d00a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_8361c053-7b00-4455-a0cd-52050dc69880.jpg"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/6/csm_6766-degewo_74a8eb13-d10d-48a4-a446-5e4b0af9c694_2d8f1a0ceb.jpg"
+   ],
+   "rooms": 3,
+   "price": 782.76,
+   "cold": 557.71,
+   "size": 61.83,
+   "floor": 1,
+   "levels": 5,
+   "year": 1928,
+   "stars": 4,
+   "why": "61.83 m², ~4.8 km zur Arbeit (Luftlinie), Kiez mittel (87 Lokale/Läden), Park nah, 0,6 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 1. Etage, Baujahr 1928",
+   "points": 84,
+   "parts": {
+    "Kosten": [
+     17.4,
+     20
+    ],
+    "Kiez": [
+     10.6,
+     16
+    ],
+    "Lage": [
+     4.2,
+     8
+    ],
+    "Zentrum": [
+     8.6,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T13:39:10.000000Z",
+   "coord": [
+    52.55093334,
+    13.42871831
+   ],
+   "dream": 83,
+   "why_not": [
+    "3 Zimmer"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24896": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20872-42.html?t=ibw",
+   "title": "Tolle 3-Zimmer-Wohnung im gepflegten Altbau ohne WBS.\nvorzeitiger Mieterwechsel zum 01.01.2027 mögli",
+   "address": "Hendrichplatz 27, 10367 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795713549-pkWdt3FvSc.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/9/1/csm_fbb85ce4cef016c65c894d00230a0d34_d0b313ed1b.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/b/d/csm_92b55320e2dea5f840c1feef3c5c0acc_ebca640939.webp"
+   ],
+   "rooms": 3,
+   "price": 857.75,
+   "cold": 647.75,
+   "size": 64.71,
+   "floor": 2,
+   "levels": 4,
+   "year": 1935,
+   "stars": 4,
+   "why": "64.71 m², ~3.5 km zur Arbeit (Luftlinie), Kiez wenig los (43 Lokale/Läden), Park nah, 0,9 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 2. Etage, Baujahr 1935",
+   "points": 73,
+   "parts": {
+    "Kosten": [
+     11.1,
+     20
+    ],
+    "Kiez": [
+     7.6,
+     16
+    ],
+    "Lage": [
+     6.0,
+     8
+    ],
+    "Zentrum": [
+     8.0,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     8.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T17:19:09.000000Z",
+   "coord": [
+    52.52005012,
+    13.48410393
+   ],
+   "dream": 77,
+   "why_not": [
+    "3 Zimmer"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24792": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10482-81.html?t=ibw",
+   "title": "4-Zimmer-Wohnung (ohne WBS)",
+   "address": "Neustrelitzer Straße 65D, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795614130-uRoH0jKh8T.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": null,
+   "plans": null,
+   "rooms": 4,
+   "price": 1682.24,
+   "cold": 1280.0,
+   "size": 80.0,
+   "floor": 4,
+   "levels": 5,
+   "year": 2021,
+   "stars": 3,
+   "why": "80 m², ~1.4 km zur Arbeit (Luftlinie), Kiez wenig los (50 Lokale/Läden), Park nah, 2,7 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 4. Etage, Baujahr 2021",
+   "points": 60,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     8.3,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     4.1,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     10.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-25T13:42:10.000000Z",
+   "coord": [
+    52.53791501,
+    13.49707973
+   ],
+   "dream": 76,
+   "why_not": [
+    "1682 € warm",
+    "4 Zimmer"
+   ]
+  },
+  "ibw-24659": {
+   "source": "ibw",
+   "company": "gesobau",
+   "url": "https://www.gesobau.de/?immo_ref=10-03209-00002-1020-d3c95f5a-8efa-43cc-808e-1538657319cf",
+   "title": "Hier wachsen Kinderherzen – Ihre neue Familienwohnung",
+   "address": "Hellersdorfer Straße 91B, 12619 Berlin",
+   "bezirk": "Marzahn-Hellersdorf",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795171870-dFdzYDtH3e.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": null,
+   "plans": null,
+   "rooms": 4,
+   "price": 1612.05,
+   "cold": 1267.23,
+   "size": 86.5,
+   "floor": 1,
+   "levels": 6,
+   "year": 2026,
+   "stars": 3,
+   "why": "86.5 m², Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2026",
+   "points": 57,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     8.0,
+     16
+    ],
+    "Lage": [
+     4.0,
+     8
+    ],
+    "Zentrum": [
+     5.0,
+     10
+    ],
+    "ÖPNV": [
+     1.5,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     10.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-20T10:51:11.000000Z",
+   "coord": null,
+   "dream": 71,
+   "why_not": [
+    "1612 € warm",
+    "4 Zimmer",
+    "Marzahn-Hellersdorf"
+   ]
+  },
+  "ibw-24800": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-14563-292.html?t=ibw",
+   "title": "Hell geschnittene Wohnung für Singles und Paare mit guten Anbindungen an die Öffentlichen Verkehrsmi",
+   "address": "Frankfurter Allee 218, 10365 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795615030-Gcxo5En9B0.webp?q=80&w=900&fm=jpg"
+   ],
+   "photos_checked": null,
+   "plans": null,
+   "rooms": 2,
+   "price": 1065.91,
+   "cold": 765.0,
+   "size": 51.0,
+   "floor": 16,
+   "levels": 22,
+   "year": 2022,
+   "stars": 2,
+   "why": "51 m², ~4.3 km zur Arbeit (Luftlinie), Kiez mittel (159 Lokale/Läden), 1,4 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 16. Etage, Baujahr 2022, Hochhaus (22 Etagen)",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     11.6,
+     16
+    ],
+    "Lage": [
+     4.9,
+     8
+    ],
+    "Zentrum": [
+     6.9,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     4.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-25T13:57:10.000000Z",
+   "coord": [
+    52.51124625,
+    13.49553618
+   ],
+   "dream": 68,
+   "why_not": [
+    "1066 € warm"
+   ]
+  }
+ }
 }
