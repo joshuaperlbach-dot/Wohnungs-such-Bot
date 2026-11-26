@@ -4137,9 +4137,86 @@
    "plans": [
     "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-40504-0104-0110/gewobag_d68bce1b-8720-4ff4-bf75-6dc3167d2965.gif"
    ]
+  },
+  "ibw-24827": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1300-31303-0049-0101.html",
+   "title": "2 Zimmer Wohnung mit großem Balkon",
+   "address": "Güldenauer Weg 78B, 12555 Berlin",
+   "bezirk": "Treptow-Köpenick",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795683489-WU7xbFA7XQ.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 636.84,
+   "cold": 453.34,
+   "size": 51.84,
+   "floor": 1,
+   "levels": 4,
+   "year": 1960,
+   "stars": 2,
+   "why": "51.84 m², ~10.9 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), 8,5 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 1. Etage, Baujahr 1960",
+   "points": 52,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     1.6,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     4.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T08:58:09Z",
+   "coord": [
+    52.46515756,
+    13.58085394
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-26T08:58:35Z",
+ "updated": "2026-11-26T09:00:41Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4204,7 +4281,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-26T08:58:35Z",
+ "last_auto": "2026-11-26T09:00:41Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
