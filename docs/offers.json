@@ -3877,9 +3877,76 @@
    "requested_at": "2026-11-26T17:42:28Z",
    "confirm": "formular",
    "photos_kept": true
+  },
+  "https://www.wbm.de/wohnungen-berlin/angebote/details/?tx_openimmo_immobilie%5Baction%5D=show&tx_openimmo_immobilie%5Bcontroller%5D=Immobilie&tx_openimmo_immobilie%5Bimmobilie%5D=79120&cHash=bd7e9ae01b474ff4e69b95f490590d12": {
+   "source": "wbm",
+   "company": "wbm",
+   "url": "https://www.wbm.de/wohnungen-berlin/angebote/details/?tx_openimmo_immobilie%5Baction%5D=show&tx_openimmo_immobilie%5Bcontroller%5D=Immobilie&tx_openimmo_immobilie%5Bimmobilie%5D=79120&cHash=bd7e9ae01b474ff4e69b95f490590d12",
+   "title": "Angebot nicht mehr verfügbar",
+   "address": "",
+   "text": "",
+   "images": [],
+   "bezirk": "Friedrichshain",
+   "rooms": 1,
+   "price": 743.89,
+   "size": 42.25,
+   "stars": 3,
+   "why": "42.25 m², ~4.7 km zur Arbeit (Luftlinie), Kiez mittel (192 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring",
+   "points": 67,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     14.1,
+     16
+    ],
+    "Lage": [
+     4.4,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     4.0,
+     8
+    ],
+    "Hochhaus": [
+     2.5,
+     5
+    ],
+    "Größe": [
+     2.1,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T19:37:02Z"
   }
  },
- "updated": "2026-11-26T19:36:06Z",
+ "updated": "2026-11-26T19:37:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3944,7 +4011,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-26T19:36:06Z",
+ "last_auto": "2026-11-26T19:37:02Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
