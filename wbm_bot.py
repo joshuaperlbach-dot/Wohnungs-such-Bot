@@ -41,7 +41,8 @@ P = "tx_powermail_pi1[field]"
 
 # --- Kriterien ---
 MIN_ROOMS = 1
-MAX_ROOMS = 2
+MAX_ROOMS = 3        # in der Liste (3 Zimmer seit 26.11.2026)
+MAX_ROOMS_SEND = 2   # automatisch angefragt wird weiter nur bis 2 Zimmer
 MAX_WARMMIETE = 950.0
 MAX_KALTMIETE = 900.0  # steht nur im Exposé; unbekannt = kein Ausschluss
 ALLOW_WBS = False
@@ -156,16 +157,16 @@ def matches(l):
     if l.get("district") is None:  # Bezirk unklar: melden, aber Zimmer/Preis müssen passen
         return (MIN_ROOMS <= l["rooms"] <= MAX_ROOMS and l["price"] <= MAX_WARMMIETE
                 and (ALLOW_WBS or not l["wbs"]))
-    return matches_strict(l)
+    return matches_strict(l, MAX_ROOMS)
 
 
-def matches_strict(l):
+def matches_strict(l, max_rooms=MAX_ROOMS_SEND):
     """Für automatisches Senden: nur wenn alles sicher bekannt ist und passt."""
     if l.get("district") is not True:  # nur senden, wenn der Bezirk sicher passt
         return False
     if l["price"] is None or l["rooms"] is None:
         return False
-    if not (MIN_ROOMS <= l["rooms"] <= MAX_ROOMS):
+    if not (MIN_ROOMS <= l["rooms"] <= max_rooms):
         return False
     if l["price"] > MAX_WARMMIETE:
         return False
