@@ -4146,7 +4146,8 @@
    "address": "Güldenauer Weg 78B, 12555 Berlin",
    "bezirk": "Treptow-Köpenick",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795683489-WU7xbFA7XQ.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795683489-WU7xbFA7XQ.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6738-degewo_7a70d715-57a3-4951-825a-1884b64fc90f.jpg"
    ],
    "rooms": 2,
    "price": 636.84,
@@ -4213,10 +4214,11 @@
     52.46515756,
     13.58085394
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 6
   }
  },
- "updated": "2026-11-26T09:00:41Z",
+ "updated": "2026-11-26T09:02:45Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4281,7 +4283,7 @@
    "chars": 2278
   }
  ],
- "last_auto": "2026-11-26T09:00:41Z",
+ "last_auto": "2026-11-26T09:02:45Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
