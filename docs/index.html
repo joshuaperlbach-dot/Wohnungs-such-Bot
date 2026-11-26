@@ -565,7 +565,7 @@ function dreamPoints(o) {
   return max ? Math.round(100 * p.reduce((a, [, v]) => a + v[0], 0) / max) : 0;
 }
 function renderDream(list) {
-  const items = [...Object.entries(dream), ...all().filter(([k, o]) => !dream[k] && dreamPoints(o) >= 62)]
+  const items = [...Object.entries(dream), ...all().filter(([k, o]) => !dream[k] && dreamPoints(o) >= 62 && !isMine(k, o) && !dropped[k] && !o.gone)]
     .sort(([, a], [, b]) => dreamPoints(b) - dreamPoints(a));
   const head = el("div", "dreamhead");
   head.append(el("b", null, "Wenn Geld egal wäre"),
