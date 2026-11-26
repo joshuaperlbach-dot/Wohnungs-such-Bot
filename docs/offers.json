@@ -3870,9 +3870,100 @@
     52.40866713,
     13.55373804
    ]
+  },
+  "ibw-24876": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1500-02005-0040-0503.html",
+   "title": "Sonnige 2-Zimmer-Wohnung im Szenebezirk",
+   "address": "Kuglerstraße 94, 10439 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795702509-bL35Y9NVRu.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_aefc7cd7-0da0-46d7-998f-04bf87740905.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_c0703620-198f-4952-a6d8-10b17ac333c3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_c936f045-130f-46a6-8dcb-f973d8ef5f52.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_61791ded-ad56-4b43-88f5-10cd73513c41.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_3fb0a5a8-f041-4579-b5f0-49bed8d380d6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_c2e1c52d-9010-494d-b96a-daddbaeaa70c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_67a06755-5899-4f85-b7f7-6f92bb73f6ef.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_8e7dca02-c272-4d62-bfd1-aaef5d35ff91.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_f4a70a30-b4eb-4f8a-acf5-e2dcbd6ca562.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_61ecd681-074c-49af-9f7d-2dad6ae873c1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_e5b3e35e-ac74-42c0-bbce-e2ee7bb2c4fa.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/0/csm_6769-degewo_a9065608-2475-4bee-b6bf-d2cbc9180243_e7747e7f23.jpg"
+   ],
+   "rooms": 2,
+   "price": 632.26,
+   "cold": 440.88,
+   "size": 48.7,
+   "floor": 5,
+   "levels": 5,
+   "year": 1953,
+   "stars": 4,
+   "why": "48.7 m², ~4.9 km zur Arbeit (Luftlinie), Kiez mittel (91 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, 5. Etage, Baujahr 1953",
+   "points": 70,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.8,
+     16
+    ],
+    "Lage": [
+     4.2,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     3.2,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     3.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-26T14:15:10Z",
+   "coord": [
+    52.5494512,
+    13.42794284
+   ]
   }
  },
- "updated": "2026-11-26T14:14:59Z",
+ "updated": "2026-11-26T14:17:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -3937,7 +4028,7 @@
    "chars": 1913
   }
  ],
- "last_auto": "2026-11-26T14:14:59Z",
+ "last_auto": "2026-11-26T14:17:03Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
