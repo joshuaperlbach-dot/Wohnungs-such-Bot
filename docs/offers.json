@@ -3947,7 +3947,7 @@
    "gone": true
   }
  },
- "updated": "2026-11-26T22:42:40Z",
+ "updated": "2026-11-26T22:44:38Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4012,7 +4012,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-26T22:42:40Z",
+ "last_auto": "2026-11-26T22:44:38Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
