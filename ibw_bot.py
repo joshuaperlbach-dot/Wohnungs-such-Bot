@@ -220,7 +220,7 @@ SENDERS = {"howoge": howoge.send_request}
 def can_request(l, r):
     """Automatisch anfragen nur, wenn alles sicher bekannt ist und passt (wie beim WBM-Bot)."""
     return (l["company"] in SENDERS and l["district"] is True and l["wbs"] is False
-            and l["price"] is not None and l["rooms"] is not None
+            and l["price"] is not None and l["rooms"] is not None and l["rooms"] <= wbm_bot.MAX_ROOMS_SEND
             and r.stars >= wbm_bot.MIN_STARS_SEND)
 
 

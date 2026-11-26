@@ -484,7 +484,7 @@ def test_ibw_parse_and_filter():
         ibw_card(2, wbs="erforderlich"),
         ibw_card(3, company="wbm"),                  # macht der WBM-Bot
         ibw_card(4, bezirk="Spandau"),
-        ibw_card(5, rooms="3,0"),
+        ibw_card(5, rooms="4,0"),
         ibw_card(6, total="1.074,60 €"),
         ibw_card(7, net="910,00", total="940,00 €"),  # zu teuer kalt
         ibw_card(8, bezirk="Lichtenberg", plz="10319"),
@@ -1378,16 +1378,26 @@ def test_restore_deleted_offers():
     assert sorted(store["offers"]) == ["a", "c"] and store["offers"]["c"]["title"] == "neu"
 
 
+def test_three_rooms_listed_but_not_sent():
+    import ibw_bot
+    l = ibw_bot.parse_page(ibw_card(1, rooms="3,0"))[0]
+    assert ibw_bot.matches(l)
+    class R: stars = 5
+    assert not ibw_bot.can_request({**l, "district": True, "wbs": False}, R())
+    two = ibw_bot.parse_page(ibw_card(2))[0]
+    assert ibw_bot.can_request({**two, "district": True, "wbs": False}, R()) == (two["company"] in ibw_bot.SENDERS)
+
+
 def test_dream_tab():
     import ibw_bot
     from datetime import datetime, timezone
     now = datetime(2026, 11, 26, 12, 0, tzinfo=timezone.utc)
     ls = ibw_bot.parse_page("".join([ibw_card(1), ibw_card(2, wbs="erforderlich"), ibw_card(3, company="wbm", total="1.400,00 €"),
-                                     ibw_card(5, rooms="3,0", total="1.600,00 €"), ibw_card(6, total="1.274,60 €")]))
+                                     ibw_card(5, rooms="4,0", total="1.600,00 €"), ibw_card(6, total="1.274,60 €")]))
     cand = [l["id"] for l in ls if ibw_bot.dream_candidate(l)]
     assert sorted(map(str, cand)) == ["5", "6"], cand  # passend, WBS und WBM nicht
     l5 = next(l for l in ls if str(l["id"]) == "5")
-    assert ibw_bot.dream_reasons(l5) == ["1600 € warm", "3 Zimmer"], ibw_bot.dream_reasons(l5)
+    assert ibw_bot.dream_reasons(l5) == ["1600 € warm", "4 Zimmer"], ibw_bot.dream_reasons(l5)
     store = {"offers": {}}
     old_min = ibw_bot.DREAM_MIN
     ibw_bot.DREAM_MIN = 0
