@@ -34,7 +34,7 @@ jobs:
         timeout-minutes: 4
         env:
           WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = HOWOGE wirklich anfragen, sonst Trockenlauf
-          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}      # höchste Gesamtmiete für Anfragen; leer = keine Grenze
+          MAX_WARM_SEND: ${{ secrets.MAX_WARM_SEND || vars.MAX_WARM_SEND }}      # höchste Gesamtmiete für Anfragen; leer = keine Grenze
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RUN_SOURCE: ${{ inputs.source }}
@@ -75,7 +75,7 @@ jobs:
         timeout-minutes: 5
         env:
           WBM_SEND: ${{ vars.WBM_SEND }}               # 1 = wirklich senden, sonst Trockenlauf
-          MAX_WARM_SEND: ${{ vars.MAX_WARM_SEND }}     # höchste Gesamtmiete für Anfragen; leer = keine Grenze
+          MAX_WARM_SEND: ${{ secrets.MAX_WARM_SEND || vars.MAX_WARM_SEND }}     # höchste Gesamtmiete für Anfragen; leer = keine Grenze
           WBM_PERSON_JSON: ${{ secrets.WBM_PERSON_JSON }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           RUN_SOURCE: ${{ inputs.source }}

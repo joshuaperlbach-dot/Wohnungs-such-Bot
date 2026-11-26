@@ -63,7 +63,7 @@ OTHER_DISTRICTS = [
 
 
 def send_cap():
-    """Höchste Gesamtmiete, bis zu der automatisch angefragt wird (Repo-Variable MAX_WARM_SEND).
+    """Höchste Gesamtmiete, bis zu der automatisch angefragt wird (Secret MAX_WARM_SEND, im Log verdeckt; alte Repo-Variable geht auch).
     Vermieter verlangen meist das Dreifache der Miete als Nettoeinkommen; teurere Angebote
     werden nur gemeldet. None = keine Grenze gesetzt."""
     try:
