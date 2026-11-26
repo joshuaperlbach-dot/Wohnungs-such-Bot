@@ -3791,22 +3791,22 @@
    "address": "Kuglerstraße 94, 10439 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795702509-bL35Y9NVRu.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_aefc7cd7-0da0-46d7-998f-04bf87740905.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_c0703620-198f-4952-a6d8-10b17ac333c3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_c936f045-130f-46a6-8dcb-f973d8ef5f52.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_61791ded-ad56-4b43-88f5-10cd73513c41.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_3fb0a5a8-f041-4579-b5f0-49bed8d380d6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_c2e1c52d-9010-494d-b96a-daddbaeaa70c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_67a06755-5899-4f85-b7f7-6f92bb73f6ef.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_8e7dca02-c272-4d62-bfd1-aaef5d35ff91.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_f4a70a30-b4eb-4f8a-acf5-e2dcbd6ca562.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_61ecd681-074c-49af-9f7d-2dad6ae873c1.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6769-degewo_e5b3e35e-ac74-42c0-bbce-e2ee7bb2c4fa.jpg"
+    "img/085adb32c011/01.jpg",
+    "img/085adb32c011/02.jpg",
+    "img/085adb32c011/03.jpg",
+    "img/085adb32c011/04.jpg",
+    "img/085adb32c011/05.jpg",
+    "img/085adb32c011/06.jpg",
+    "img/085adb32c011/07.jpg",
+    "img/085adb32c011/08.jpg",
+    "img/085adb32c011/09.jpg",
+    "img/085adb32c011/10.jpg",
+    "img/085adb32c011/11.jpg",
+    "img/085adb32c011/12.jpg"
    ],
    "photos_checked": 6,
    "plans": [
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/0/csm_6769-degewo_a9065608-2475-4bee-b6bf-d2cbc9180243_e7747e7f23.jpg"
+    "img/085adb32c011/grundriss-01.jpg"
    ],
    "rooms": 2,
    "price": 632.26,
@@ -3872,19 +3872,17 @@
    "coord": [
     52.5494512,
     13.42794284
-   ]
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-26T17:42:28Z",
+   "confirm": "formular",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-26T17:42:08Z",
+ "updated": "2026-11-26T17:45:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T11:07:48Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1911
-  },
   {
    "at": "2026-11-19T11:53:12Z",
    "kind": "absage",
@@ -3938,9 +3936,15 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1913
+  },
+  {
+   "at": "2026-11-26T17:42:28Z",
+   "kind": "formular",
+   "matched": true,
+   "chars": 2778
   }
  ],
- "last_auto": "2026-11-26T17:42:08Z",
+ "last_auto": "2026-11-26T17:45:02Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1
