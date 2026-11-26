@@ -42,7 +42,7 @@ P = "tx_powermail_pi1[field]"
 # --- Kriterien ---
 MIN_ROOMS = 1
 MAX_ROOMS = 3        # in der Liste (3 Zimmer seit 26.11.2026)
-MAX_ROOMS_SEND = 2   # automatisch angefragt wird weiter nur bis 2 Zimmer
+MAX_ROOMS_SEND = 3   # auch 3 Zimmer automatisch anfragen (Wunsch 26.11.2026), gleiche Sternegrenze
 MAX_WARMMIETE = 950.0
 MAX_KALTMIETE = 900.0  # steht nur im Exposé; unbekannt = kein Ausschluss
 ALLOW_WBS = False

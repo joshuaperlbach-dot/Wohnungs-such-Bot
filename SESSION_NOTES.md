@@ -291,7 +291,7 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
 - 25.11.2026: Nicht angefragte Angebote bleiben 7 Tage in der Liste (offers.KEEP_LISTED), vorher 24 Stunden.
   ibw_bot schaut ein Angebot weiter nur 24 h lang erneut an (KEEP_UNREQUESTED). 22 schon gelöschte Angebote der
   letzten Woche kommen aus docs/restore_offers.json (aus dem Git-Verlauf) zurück, offers.save fügt sie einmal ein.
-- 26.11.2026: 3-Zimmer-Wohnungen kommen in die Liste (MAX_ROOMS 3), automatisch angefragt wird weiter nur bis 2 Zimmer (MAX_ROOMS_SEND).
+- 26.11.2026: 3-Zimmer-Wohnungen kommen in die Liste (MAX_ROOMS 3), automatisch angefragt auch (MAX_ROOMS_SEND 3, gleiche Sternegrenze).
 - 26.11.2026: Tab "Traum" (if money didn't matter). ibw_bot sammelt Angebote, die nur wegen Preis, Zimmerzahl
   oder Bezirk nicht passen (ohne WBS, ohne WBM), bewertet ohne "Kosten" (dream_points, ab 62, max. 40, 7 Tage)
   in offers.json "dream". Pro Lauf 3 davon auf der Seite der Gesellschaft ansehen (Fotos, WBS-Banner raus).
