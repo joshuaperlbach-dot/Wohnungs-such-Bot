@@ -4049,9 +4049,86 @@
    "via": "mail",
    "photos_kept": true,
    "photo_tries": 0
+  },
+  "ibw-24900": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W1500-00701-0064-0501.html",
+   "title": "Achtung, hereinspaziert ich bin für Sie saniert!",
+   "address": "Glasgower Straße 17, 13349 Berlin",
+   "bezirk": "Mitte",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795762685-WOuQ15B07l.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 3,
+   "price": 725.55,
+   "cold": 542.97,
+   "size": 62.96,
+   "floor": 5,
+   "levels": 5,
+   "year": 1928,
+   "stars": 4,
+   "why": "62.96 m², ~10.8 km zur Arbeit (Luftlinie), Kiez mittel (84 Lokale/Läden), Park nah, 2,2 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 5. Etage, Baujahr 1928",
+   "points": 73,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     10.5,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     5.1,
+     10
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     8.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T06:58:05Z",
+   "coord": [
+    52.55761612,
+    13.34148579
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-27T06:58:33Z",
+ "updated": "2026-11-27T07:00:37Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4116,7 +4193,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T06:58:33Z",
+ "last_auto": "2026-11-27T07:00:37Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
