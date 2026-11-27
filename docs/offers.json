@@ -4057,9 +4057,86 @@
    "plans": [
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/d/csm_6791-degewo_1e167515-f0b3-4bfb-b9b0-96cd8e0568cd_cf70438ab3.jpg"
    ]
+  },
+  "ibw-24903": {
+   "source": "ibw",
+   "company": "degewo",
+   "url": "https://www.degewo.de/de/properties/W3110-00617-0097-0301.html",
+   "title": "Nachmieter gesucht in Britz!",
+   "address": "Holzmindener Straße 37, 12347 Berlin",
+   "bezirk": "Neukölln",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795766529-RbHrKpFc4w.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 816.32,
+   "cold": 595.72,
+   "size": 62.32,
+   "floor": 3,
+   "levels": 3,
+   "year": 1930,
+   "stars": 3,
+   "why": "62.32 m², ~11.4 km zur Arbeit (Luftlinie), Kiez wenig los (59 Lokale/Läden), Park nah, 1,4 km außerhalb S-Bahn-Ring, Balkon/Terrasse, 3. Etage, Baujahr 1930",
+   "points": 70,
+   "parts": {
+    "Kosten": [
+     14.7,
+     20
+    ],
+    "Kiez": [
+     9.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     6.8,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.8,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T08:02:09Z",
+   "coord": [
+    52.45481154,
+    13.43632246
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-27T08:03:16Z",
+ "updated": "2026-11-27T08:05:25Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4124,7 +4201,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T08:03:16Z",
+ "last_auto": "2026-11-27T08:05:25Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
