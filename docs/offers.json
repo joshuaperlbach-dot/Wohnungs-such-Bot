@@ -4141,9 +4141,100 @@
     52.56908958,
     13.5185009
    ]
+  },
+  "ibw-24905": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00398-0104-0072",
+   "title": "Wohnung mit Balkon im Hochparterre in Prenzlauer Berg ab sofort neu zu vermieten",
+   "address": "Storkower Straße 18, 10409 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795770070-7dG8dO0kDw.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_1adf4e50-51d9-4c7d-933e-c4d920251c2c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_7bffb861-c02f-4760-bf50-afd0ba45007c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_06b8ea65-c895-46ed-b829-4d5eb49761d3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_7b4b596e-d5de-44f4-ba98-15d0f87614d9.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_ef32ef7d-2075-4c95-bc79-dc09eb44222d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_4dad6cdb-1c65-44f7-88ae-b5867f4b668d.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_7cee166e-a9f4-4904-8c5e-7984adeeefa1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_5797db86-ecc4-424f-8728-6a0f5872b620.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_557aeb21-03f7-48f0-aa6a-8ebf06bee771.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_9683ee1c-244f-472c-b50a-0f426e9ad6e3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_df215434-d33a-4507-9853-09032df00b4b.jpg"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_560bc967-ef2e-45a6-90fc-726526a8f413.gif"
+   ],
+   "rooms": 2,
+   "price": 838.34,
+   "cold": 534.34,
+   "size": 57.76,
+   "floor": 0,
+   "levels": 5,
+   "year": 1928,
+   "stars": 4,
+   "why": "57.76 m², ~4.1 km zur Arbeit (Luftlinie), Kiez mittel (82 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, EG, Baujahr 1928",
+   "points": 79,
+   "parts": {
+    "Kosten": [
+     12.9,
+     20
+    ],
+    "Kiez": [
+     10.4,
+     16
+    ],
+    "Lage": [
+     5.2,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     1.8,
+     3
+    ],
+    "Bezirk": [
+     3.0,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T09:01:10Z",
+   "coord": [
+    52.54019013,
+    13.44114096
+   ]
   }
  },
- "updated": "2026-11-27T09:02:41Z",
+ "updated": "2026-11-27T09:04:51Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4208,7 +4299,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T09:02:41Z",
+ "last_auto": "2026-11-27T09:04:51Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
