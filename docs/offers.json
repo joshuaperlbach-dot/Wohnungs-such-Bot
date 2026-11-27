@@ -4066,7 +4066,12 @@
    "address": "Holzmindener Straße 37, 12347 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795766529-RbHrKpFc4w.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795766529-RbHrKpFc4w.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6792-degewo_94c4b2ce-ce83-41ec-862d-89d7d23520b6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/5/csm_6792-degewo_b7c41165-a3c3-47df-b085-4cb661c327c2_77cb22ac09.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6792-degewo_2a518766-0f36-4526-859e-e52a9aef7fe6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6792-degewo_4241b561-8cfb-40dc-9d3d-1bef87b7bf7f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/9/csm_6792-degewo_f0f4beb6-0b07-4c19-ba1f-95c7cd008e56_930379f42e.webp"
    ],
    "rooms": 2,
    "price": 816.32,
@@ -4133,10 +4138,14 @@
     52.45481154,
     13.43632246
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/8/csm_6792-degewo_ee506dbf-91c1-4d4e-9131-39fcea0a64d1_53099b212c.jpg"
+   ]
   }
  },
- "updated": "2026-11-27T08:05:25Z",
+ "updated": "2026-11-27T08:07:32Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4201,7 +4210,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T08:05:25Z",
+ "last_auto": "2026-11-27T08:07:32Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
