@@ -4381,9 +4381,86 @@
     52.572141,
     13.50090508
    ]
+  },
+  "ibw-24927": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/6027-32595-0102-0157",
+   "title": "Neubauwohnung im Erstbezug mit Fußbodenheizung",
+   "address": "Landsberger Allee 341, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795779727-zuYyH7Rc25.webp?q=80&w=900&fm=jpg"
+   ],
+   "rooms": 2,
+   "price": 799.71,
+   "cold": 645.31,
+   "size": 40.63,
+   "floor": 5,
+   "levels": 8,
+   "year": 2026,
+   "stars": 2,
+   "why": "40.63 m², ~1.8 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), Park nah, 3,4 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 5. Etage, Baujahr 2026",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     16.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     2.5,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     1.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T11:42:07Z",
+   "coord": [
+    52.53549459,
+    13.51188242
+   ],
+   "photo_tries": 1
   }
  },
- "updated": "2026-11-27T11:43:40Z",
+ "updated": "2026-11-27T11:45:41Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4448,7 +4525,7 @@
    "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T11:43:40Z",
+ "last_auto": "2026-11-27T11:45:41Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
