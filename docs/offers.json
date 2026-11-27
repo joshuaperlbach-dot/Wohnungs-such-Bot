@@ -4297,9 +4297,93 @@
     52.55443952,
     13.41823038
    ]
+  },
+  "ibw-24912": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-12477-71.html?t=ibw",
+   "title": "Helle 2 Zimmerwohnung",
+   "address": "Ribnitzer Straße 4, 13051 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795776370-GwD9bRe9Zt.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/f/e/csm_2348b27a7c2fb7e7a48130f8ec3acf70_cdc7706359.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/b/7/csm_d60e92a7e203847ddbbaf94e4a9b853d_a447159370.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/5/2/csm_d58c529612b696b96c11a09b407f7690_e27ed382da.webp"
+   ],
+   "rooms": 2,
+   "price": 518.67,
+   "cold": 363.92,
+   "size": 45.76,
+   "floor": 8,
+   "levels": 11,
+   "year": 1986,
+   "stars": 2,
+   "why": "45.76 m², ~2.5 km zur Arbeit (Luftlinie), Kiez wenig los (35 Lokale/Läden), Park nah, 5,5 km außerhalb S-Bahn-Ring (weit draußen), Aufzug, 8. Etage, Baujahr 1986, Hochhaus (11 Etagen)",
+   "points": 54,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.7,
+     16
+    ],
+    "Lage": [
+     7.4,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     2.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     3.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T10:46:10Z",
+   "coord": [
+    52.572141,
+    13.50090508
+   ]
   }
  },
- "updated": "2026-11-27T10:46:52Z",
+ "updated": "2026-11-27T10:49:01Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4364,7 +4448,7 @@
    "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T10:46:52Z",
+ "last_auto": "2026-11-27T10:49:01Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
