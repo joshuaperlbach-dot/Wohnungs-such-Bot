@@ -4569,7 +4569,7 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-27T14:43:56Z",
+ "updated": "2026-11-27T14:46:02Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4634,7 +4634,7 @@
    "chars": 3650
   }
  ],
- "last_auto": "2026-11-27T14:43:56Z",
+ "last_auto": "2026-11-27T14:46:02Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4996,6 +4996,182 @@
    "why_not": [
     "1663 € warm",
     "4 Zimmer"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24942": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20600-149.html?t=ibw",
+   "title": "2-Zimmer-Wohnung (ohne WBS)",
+   "address": "Gärtnerstraße 12, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795790588-Fh2OyaLfPX.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/c/c/csm_86edd6a292d7a36b16a293a00ba989aa_c73d93c986.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/a/a/csm_012234e09c0c5928a424e6479664a973_1d57a94e87.webp"
+   ],
+   "rooms": 2,
+   "price": 1110.17,
+   "cold": 900.0,
+   "size": 60.0,
+   "floor": 2,
+   "levels": 6,
+   "year": 2016,
+   "stars": 2,
+   "why": "60 m², ~0.4 km zur Arbeit (Luftlinie), Kiez wenig los (49 Lokale/Läden), Park nah, 3,5 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2016",
+   "points": 57,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     8.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     2.2,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     7.1,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T14:43:09.000000Z",
+   "coord": [
+    52.54625371,
+    13.50147361
+   ],
+   "dream": 71,
+   "why_not": [
+    "1110 € warm"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24943": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20600-58.html?t=ibw",
+   "title": "2-Zimmer-Wohnung (ohne WBS)",
+   "address": "Gärtnerstraße 8, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795790648-BuBgYL48dV.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/d/4/csm_20fc49f336a7f7d16ebb745974c52f25_8588a0e2c7.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/8/2/csm_243786e60350974ab0d9f6c981807230_3d5d660e82.webp"
+   ],
+   "rooms": 2,
+   "price": 1073.02,
+   "cold": 880.0,
+   "size": 55.0,
+   "floor": 2,
+   "levels": 6,
+   "year": 2016,
+   "stars": 2,
+   "why": "55 m², ~0.4 km zur Arbeit (Luftlinie), Kiez wenig los (48 Lokale/Läden), Park nah, 3,5 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 2. Etage, Baujahr 2016",
+   "points": 55,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     8.1,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     2.2,
+     10
+    ],
+    "ÖPNV": [
+     2.8,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.7,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T14:44:08.000000Z",
+   "coord": [
+    52.54676498,
+    13.50078409
+   ],
+   "dream": 69,
+   "why_not": [
+    "1073 € warm"
    ],
    "dream_checked": true
   },
