@@ -4481,22 +4481,10 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-27T14:08:24Z",
+ "updated": "2026-11-27T14:10:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-26T10:37:06Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1929
-  },
-  {
-   "at": "2026-11-26T11:09:27Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 1913
-  },
   {
    "at": "2026-11-26T17:42:28Z",
    "kind": "formular",
@@ -4544,9 +4532,21 @@
    "kind": "bestaetigung",
    "matched": true,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-27T14:08:51Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1924
+  },
+  {
+   "at": "2026-11-27T14:08:51Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1908
   }
  ],
- "last_auto": "2026-11-27T14:08:24Z",
+ "last_auto": "2026-11-27T14:10:34Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4815,6 +4815,98 @@
    "dream": 68,
    "why_not": [
     "1066 € warm"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24936": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/7100-70701-0201-0278",
+   "title": "Wohnen am Volkspark",
+   "address": "Steinacher Straße 5, 10825 Berlin",
+   "bezirk": "Tempelhof-Schöneberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795788427-Wlzyol7lPM.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_66373416-9b64-4d71-82ef-3057962c6f5a.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_c332825d-4917-4a61-90ea-03c2aa65adef.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_fc9821cf-0dc6-4940-bd5b-9937e20ebdcd.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_b8776503-ce94-4848-8d34-71588bbb5ae4.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_f982de1a-3c7c-4bf7-9d91-e278b4b57b62.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_a0f74250-b029-42bf-a6de-39444a4ffa21.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_94709d68-efe3-4657-8674-d0e8da9e50e6.jpg"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/7100-70701-0201-0278/gewobag_61c891a0-dffe-4c9b-b85b-68482c4d7565.gif"
+   ],
+   "rooms": 1.5,
+   "price": 654.84,
+   "cold": 436.84,
+   "size": 52.88,
+   "floor": 2,
+   "levels": 4,
+   "year": 1961,
+   "stars": 4,
+   "why": "52.88 m², ~13.0 km zur Arbeit (Luftlinie), Kiez mittel (123 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, 2. Etage, Baujahr 1961",
+   "points": 71,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     12.1,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     5.1,
+     10
+    ],
+    "Zimmer": [
+     5.2,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T14:07:07.000000Z",
+   "coord": [
+    52.48437567,
+    13.34062751
+   ],
+   "dream": 64,
+   "why_not": [
+    "Tempelhof-Schöneberg"
    ],
    "dream_checked": true
   },
