@@ -4394,9 +4394,89 @@
    },
    "online_since": "2026-11-27T09:57:02Z",
    "gone": true
+  },
+  "ibw-24910": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/0100-02549-0102-0015",
+   "title": "Vorfristig zum 16.12.2026... Einkommensgrenzen beachten...",
+   "address": "Trelleborger Straße 7, 13189 Berlin",
+   "bezirk": "Pankow",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795773611-wSF7dT27dn.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02549-0102-0015/gewobag_edcff9e5-fe89-4690-b1ae-a302b8248115.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02549-0102-0015/gewobag_6838e17e-3b81-44a7-914d-36e410479a53.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02549-0102-0015/gewobag_00f808fc-b846-477a-8ef1-e625ef9f9fc3.jpg"
+   ],
+   "photos_checked": 6,
+   "rooms": 1,
+   "price": 599.0,
+   "cold": 438.14,
+   "size": 37.79,
+   "floor": 1,
+   "levels": 4,
+   "year": 1897,
+   "stars": 3,
+   "why": "37.79 m², ~5.6 km zur Arbeit (Luftlinie), Kiez mittel (146 Lokale/Läden), 0,6 km außerhalb S-Bahn-Ring, 1. Etage, Baujahr 1897",
+   "points": 68,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     11.3,
+     16
+    ],
+    "Lage": [
+     3.3,
+     8
+    ],
+    "Zentrum": [
+     8.7,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     2.1,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.8,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T10:00:11Z",
+   "coord": [
+    52.55443952,
+    13.41823038
+   ]
   }
  },
- "updated": "2026-11-27T10:00:01Z",
+ "updated": "2026-11-27T10:02:08Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4461,7 +4541,7 @@
    "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T10:00:01Z",
+ "last_auto": "2026-11-27T10:02:08Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
