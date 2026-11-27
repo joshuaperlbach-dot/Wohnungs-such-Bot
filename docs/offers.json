@@ -4232,18 +4232,100 @@
     52.54019013,
     13.44114096
    ]
+  },
+  "ibw-24906": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20108-39.html?t=ibw",
+   "title": "ohne WBS - unrenoviert",
+   "address": "Franz-Jacob-Straße 12, 10369 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "img/5e84ceeff4ed/01.jpg",
+    "img/5e84ceeff4ed/02.jpg",
+    "img/5e84ceeff4ed/03.webp",
+    "img/5e84ceeff4ed/04.webp",
+    "img/5e84ceeff4ed/05.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "img/5e84ceeff4ed/grundriss-01.webp"
+   ],
+   "rooms": 2,
+   "price": 619.23,
+   "cold": 405.94,
+   "size": 52.42,
+   "floor": 6,
+   "levels": 21,
+   "year": 1977,
+   "stars": 3,
+   "why": "52.42 m², ~3.2 km zur Arbeit (Luftlinie), Kiez mittel (70 Lokale/Läden), Park nah, 0,5 km außerhalb S-Bahn-Ring, Aufzug, 6. Etage, Baujahr 1977, Hochhaus (21 Etagen)",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     9.7,
+     16
+    ],
+    "Lage": [
+     6.4,
+     8
+    ],
+    "Zentrum": [
+     8.8,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     0.0,
+     5
+    ],
+    "Größe": [
+     5.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     0.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T09:16:10Z",
+   "coord": [
+    52.52854156,
+    13.46836401
+   ],
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
+   "requested_at": "2026-11-27T09:17:26Z",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-27T09:17:00Z",
+ "updated": "2026-11-27T09:19:20Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T12:13:23Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 2880
-  },
   {
    "at": "2026-11-19T12:35:17Z",
    "kind": "einladung",
@@ -4297,9 +4379,15 @@
    "kind": "formular",
    "matched": false,
    "chars": 2818
+  },
+  {
+   "at": "2026-11-27T09:17:42Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-27T09:17:00Z",
+ "last_auto": "2026-11-27T09:19:20Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
