@@ -4481,7 +4481,7 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-27T14:33:22Z",
+ "updated": "2026-11-27T14:35:24Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4546,7 +4546,7 @@
    "chars": 1908
   }
  ],
- "last_auto": "2026-11-27T14:33:22Z",
+ "last_auto": "2026-11-27T14:35:24Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4817,6 +4817,96 @@
    "dream": 76,
    "why_not": [
     "1682 € warm",
+    "4 Zimmer"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24939": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20778-166.html?t=ibw",
+   "title": "4-Zimmer-Wohnung (ohne WBS)",
+   "address": "Genslerstraße 17D, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795789927-pF93Tzf3V9.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/1/5/csm_6e13ea61c6ec5f92514ee2297ab16186_52ac119b60.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/3/4/csm_a40e2061c735ffa5816e45909b0742e4_1af8e7df22.webp"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/d/e/csm_c1c06c45131bf1ffe86f6abbb931e39c_019d29883e.webp"
+   ],
+   "rooms": 4,
+   "price": 1663.15,
+   "cold": 1288.0,
+   "size": 92.0,
+   "floor": 3,
+   "levels": 6,
+   "year": 2019,
+   "stars": 3,
+   "why": "92 m², ~1.2 km zur Arbeit (Luftlinie), Kiez wenig los (31 Lokale/Läden), Park nah, 2,8 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 3. Etage, Baujahr 2019",
+   "points": 58,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     6.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     3.7,
+     10
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     10.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T14:32:07.000000Z",
+   "coord": [
+    52.53968866,
+    13.49823341
+   ],
+   "dream": 72,
+   "why_not": [
+    "1663 € warm",
     "4 Zimmer"
    ],
    "dream_checked": true
