@@ -3954,7 +3954,21 @@
    "address": "Dunckerstraße 43, 10439 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "img/d463bea8bf10/01.jpg"
+    "img/d463bea8bf10/01.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_bdb7035f-a54b-4354-8d91-7bc20ac4c1f9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_3f09b8ea-8ab8-454b-9b53-06066fccf1b0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_183fef26-17bc-47ad-90b4-a36a1ac1e166.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_e8a02413-987d-4634-ae1c-09847b02c8c9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_d4766fe0-d646-47dd-8d22-56abeee75d3c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_dd56a796-9040-4971-9585-ab1cd7492d39.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_c1a5c703-e1f5-49ab-b68d-de9eb549d456.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_9c95d577-de52-4eff-b4ce-1d6d0dbf125a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_cf78887d-70aa-4c27-ac7c-bc303b019eb7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_4f27a232-aef4-4685-bd51-b2c7adf8a868.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_442daf31-0098-482c-a8d0-ce20d6e06e93.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_7039dad4-f311-471b-91e6-d7c134e3fdf1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_fcc8346e-dfb5-41c2-b88e-52b1de17d00a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_8361c053-7b00-4455-a0cd-52050dc69880.jpg"
    ],
    "photos_checked": 6,
    "plans": [
@@ -4037,7 +4051,7 @@
    "photo_tries": 0
   }
  },
- "updated": "2026-11-27T01:10:53Z",
+ "updated": "2026-11-27T01:12:51Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4102,7 +4116,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T01:10:53Z",
+ "last_auto": "2026-11-27T01:12:51Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4477,5 +4491,6 @@
    ],
    "dream_checked": true
   }
- }
+ },
+ "fix_duncker_photos": 1
 }
