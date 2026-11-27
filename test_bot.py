@@ -1390,6 +1390,13 @@ def test_three_rooms_listed_and_sent():
     assert ibw_bot.can_request({**two, "district": True, "wbs": False}, R()) == (two["company"] in ibw_bot.SENDERS)
 
 
+def test_mail_moves_dream_offer_to_list():
+    import mail_check
+    store = {"offers": {}, "dream": {"ibw-1": {"address": "Dunckerstraße 43, 10439 Berlin"}}}
+    assert mail_check.find_offer(store, "Ihre Anfrage zur Wohnung Dunckerstr. 43 in Berlin", any_offer=True) == "ibw-1"
+    assert "ibw-1" in store["offers"] and not store["dream"]
+
+
 def test_dream_tab():
     import ibw_bot
     from datetime import datetime, timezone

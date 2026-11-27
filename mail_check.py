@@ -92,13 +92,32 @@ def street_of(address):
 
 
 def find_offer(store, text, any_offer=False):
-    """Das angefragte Angebot (mit any_offer: irgendein Angebot), dessen Straße und Hausnummer in der Mail steht."""
+    """Das angefragte Angebot (mit any_offer: irgendein Angebot), dessen Straße und Hausnummer in der Mail steht.
+    Mit any_offer zählen auch Angebote aus dem Traum-Tab: die wandern dann in die normale Liste."""
     haystack = f" {norm(text)} "
     for key, o in store["offers"].items():
         street = street_of(o.get("address") or "")
         if (any_offer or o.get("requested") in offers.REQUESTED) and street and f" {street} " in haystack:
             return key
+    if any_offer:
+        for key, o in list((store.get("dream") or {}).items()):
+            street = street_of(o.get("address") or "")
+            if street and f" {street} " in haystack:
+                store["offers"][key] = store["dream"].pop(key)
+                return key
     return None
+
+
+# Einmalig: von Hand angefragt, die Bestätigung kam, als das Angebot noch im Traum-Tab lag (26.11.2026)
+REQUESTED_FROM_DREAM = {"ibw-24870": "2026-11-26T18:43:20Z"}
+
+
+def promote_requested_dream(store):
+    for key, at in REQUESTED_FROM_DREAM.items():
+        o = (store.get("dream") or {}).pop(key, None)
+        if o and key not in store["offers"]:
+            o.update(requested="gesendet", requested_at=at, via="mail")
+            store["offers"][key] = o
 
 
 def body_text(msg):
@@ -252,6 +271,7 @@ def process(messages, store, seen, now, passphrase=None):
     notes = []
     forms = []  # zweite degewo-Formulare, die degewo_form.py gleich ausfüllt
     expire_confirmations(store, now)
+    promote_requested_dream(store)
     for o in store["offers"].values():  # früher gespeicherte persönliche Links aus der öffentlichen Datei entfernen
         o.pop("form_url", None)
     for msg in messages:
