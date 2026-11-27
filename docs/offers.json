@@ -3956,9 +3956,9 @@
    "images": [
     "img/d463bea8bf10/01.jpg"
    ],
-   "photos_checked": null,
+   "photos_checked": 6,
    "plans": [
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/6/6/csm_6766-degewo_74a8eb13-d10d-48a4-a446-5e4b0af9c694_2d8f1a0ceb.jpg"
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/4/0/csm_6789-degewo_85fdba0c-e8b2-4a6f-89d3-0cb95e5190e0_1ae6621727.jpg"
    ],
    "rooms": 3,
    "price": 782.76,
@@ -4033,10 +4033,11 @@
    "requested": "gesendet",
    "requested_at": "2026-11-26T18:43:20Z",
    "via": "mail",
-   "photos_kept": true
+   "photos_kept": true,
+   "photo_tries": 0
   }
  },
- "updated": "2026-11-27T01:08:42Z",
+ "updated": "2026-11-27T01:10:53Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4101,7 +4102,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T01:08:42Z",
+ "last_auto": "2026-11-27T01:10:53Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
