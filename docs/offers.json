@@ -4056,9 +4056,94 @@
    "plans": [
     "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/8/csm_6792-degewo_ee506dbf-91c1-4d4e-9131-39fcea0a64d1_53099b212c.jpg"
    ]
+  },
+  "ibw-24904": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-13287-54.html?t=ibw",
+   "title": "schöne kleine 2- Zimmerwohnung ohne WBS über den Dächern Berlin. ",
+   "address": "Grevesmühlener Straße 32, 13059 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795767968-9E7iyomN2X.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/e/5/csm_dba355c713038310af88d3635ab17b12_3a2d6c6fc8.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/5/csm_b7920aada8794ed4baeee840d93d115c_56947555c6.webp",
+    "https://www.howoge.de/fileadmin/_processed_/c/f/csm_6d80555ae8543e3e3b574af74599b7e8_d3c8133566.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/4/9/csm_7fae7eb5447c7e8b313e2e63ecd1384c_819c458405.webp"
+   ],
+   "rooms": 2,
+   "price": 590.23,
+   "cold": 386.93,
+   "size": 47.47,
+   "floor": 7,
+   "levels": 11,
+   "year": 1989,
+   "stars": 2,
+   "why": "47.47 m², ~2.5 km zur Arbeit (Luftlinie), Kiez wenig los (34 Lokale/Läden), Park nah, 6,1 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 1989, Hochhaus (11 Etagen)",
+   "points": 61,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     6.6,
+     16
+    ],
+    "Lage": [
+     7.4,
+     8
+    ],
+    "Zentrum": [
+     0.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     1.5,
+     5
+    ],
+    "Größe": [
+     3.6,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T08:26:08Z",
+   "coord": [
+    52.56908958,
+    13.5185009
+   ]
   }
  },
- "updated": "2026-11-27T08:25:49Z",
+ "updated": "2026-11-27T08:27:56Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4123,7 +4208,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T08:25:49Z",
+ "last_auto": "2026-11-27T08:27:56Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
