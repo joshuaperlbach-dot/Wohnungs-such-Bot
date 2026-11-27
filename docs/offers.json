@@ -3878,27 +3878,21 @@
    "address": "Glasgower Straße 17, 13349 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795762685-WOuQ15B07l.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_0e58d252-11e7-4ede-aae3-25d98c11df01.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/d/csm_6791-degewo_7d9b2120-833e-4661-8cb5-750b28e5e66e_3f819cd74a.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/8/csm_6791-degewo_ed0ef14c-8c94-4497-962d-607294085bad_5ffaa4e0fd.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_2ae0c2e1-541d-4b4b-8c73-d766b569266f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_06827044-20bf-4f21-94e9-9f2e0398159d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_329d6c26-af67-4308-a691-169624a2bf8c.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_21c8d3ea-3f72-4ae7-a49b-382efc903c55.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_4baa6cc0-5dad-4c6d-b7db-2664b9b07970.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_1423a599-c7b1-47c0-97b1-b6edfd84af75.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_0ed09aea-a083-4e87-956a-1e21e178d94e.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_bf008736-e06b-4de0-b4a9-956796d54ecf.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_7b2df57a-0b4a-46be-ba35-42868704805b.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_d6a6711d-7a96-45ee-8c7d-dcd34b0304f6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_f4bf381b-92e8-40aa-ac74-60ad1fb7e4e9.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_5a630092-fc50-423c-bb08-e30009158b3d.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_a86b6759-dd10-42d0-8fc6-7a09df7282e0.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_10dd4027-5e42-4146-89c9-b8192210868a.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_186035b5-7a8b-4bca-b5c4-5812d10d8dc3.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_268f6430-3d5e-43ce-8e50-0f2d3529ae27.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_4378f296-ffec-4cbd-b941-817e84ad0c90.jpg"
+    "img/dc3dad5c9bd8/01.jpg",
+    "img/dc3dad5c9bd8/02.jpg",
+    "img/dc3dad5c9bd8/03.webp",
+    "img/dc3dad5c9bd8/04.webp",
+    "img/dc3dad5c9bd8/05.jpg",
+    "img/dc3dad5c9bd8/06.jpg",
+    "img/dc3dad5c9bd8/07.jpg",
+    "img/dc3dad5c9bd8/08.jpg",
+    "img/dc3dad5c9bd8/09.jpg",
+    "img/dc3dad5c9bd8/10.jpg",
+    "img/dc3dad5c9bd8/11.jpg",
+    "img/dc3dad5c9bd8/12.jpg",
+    "img/dc3dad5c9bd8/13.jpg",
+    "img/dc3dad5c9bd8/14.jpg",
+    "img/dc3dad5c9bd8/15.jpg"
    ],
    "rooms": 3,
    "price": 725.55,
@@ -3968,8 +3962,12 @@
    "photo_tries": 0,
    "photos_checked": 6,
    "plans": [
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/d/csm_6791-degewo_1e167515-f0b3-4bfb-b9b0-96cd8e0568cd_cf70438ab3.jpg"
-   ]
+    "img/dc3dad5c9bd8/grundriss-01.jpg"
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-27T09:27:42Z",
+   "confirm": "formular",
+   "photos_kept": true
   },
   "ibw-24903": {
    "source": "ibw",
@@ -3979,12 +3977,12 @@
    "address": "Holzmindener Straße 37, 12347 Berlin",
    "bezirk": "Neukölln",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795766529-RbHrKpFc4w.webp?q=80&w=900&fm=jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6792-degewo_94c4b2ce-ce83-41ec-862d-89d7d23520b6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/5/csm_6792-degewo_b7c41165-a3c3-47df-b085-4cb661c327c2_77cb22ac09.webp",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6792-degewo_2a518766-0f36-4526-859e-e52a9aef7fe6.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6792-degewo_4241b561-8cfb-40dc-9d3d-1bef87b7bf7f.jpg",
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/0/9/csm_6792-degewo_f0f4beb6-0b07-4c19-ba1f-95c7cd008e56_930379f42e.webp"
+    "img/3ad6f8991736/01.jpg",
+    "img/3ad6f8991736/02.jpg",
+    "img/3ad6f8991736/03.webp",
+    "img/3ad6f8991736/04.jpg",
+    "img/3ad6f8991736/05.jpg",
+    "img/3ad6f8991736/06.webp"
    ],
    "rooms": 2,
    "price": 816.32,
@@ -4054,8 +4052,12 @@
    "photo_tries": 0,
    "photos_checked": 6,
    "plans": [
-    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/9/8/csm_6792-degewo_ee506dbf-91c1-4d4e-9131-39fcea0a64d1_53099b212c.jpg"
-   ]
+    "img/3ad6f8991736/grundriss-01.jpg"
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-27T09:27:42Z",
+   "confirm": "formular",
+   "photos_kept": true
   },
   "ibw-24904": {
    "source": "ibw",
@@ -4150,22 +4152,22 @@
    "address": "Storkower Straße 18, 10409 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795770070-7dG8dO0kDw.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_1adf4e50-51d9-4c7d-933e-c4d920251c2c.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_7bffb861-c02f-4760-bf50-afd0ba45007c.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_06b8ea65-c895-46ed-b829-4d5eb49761d3.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_7b4b596e-d5de-44f4-ba98-15d0f87614d9.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_ef32ef7d-2075-4c95-bc79-dc09eb44222d.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_4dad6cdb-1c65-44f7-88ae-b5867f4b668d.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_7cee166e-a9f4-4904-8c5e-7984adeeefa1.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_5797db86-ecc4-424f-8728-6a0f5872b620.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_557aeb21-03f7-48f0-aa6a-8ebf06bee771.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_9683ee1c-244f-472c-b50a-0f426e9ad6e3.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_df215434-d33a-4507-9853-09032df00b4b.jpg"
+    "img/7f3cea9db3ed/01.jpg",
+    "img/7f3cea9db3ed/02.jpg",
+    "img/7f3cea9db3ed/03.jpg",
+    "img/7f3cea9db3ed/04.jpg",
+    "img/7f3cea9db3ed/05.jpg",
+    "img/7f3cea9db3ed/06.jpg",
+    "img/7f3cea9db3ed/07.jpg",
+    "img/7f3cea9db3ed/08.jpg",
+    "img/7f3cea9db3ed/09.jpg",
+    "img/7f3cea9db3ed/10.jpg",
+    "img/7f3cea9db3ed/11.jpg",
+    "img/7f3cea9db3ed/12.jpg"
    ],
    "photos_checked": 6,
    "plans": [
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00398-0104-0072/gewobag_560bc967-ef2e-45a6-90fc-726526a8f413.gif"
+    "img/7f3cea9db3ed/grundriss-01.gif"
    ],
    "rooms": 2,
    "price": 838.34,
@@ -4231,7 +4233,11 @@
    "coord": [
     52.54019013,
     13.44114096
-   ]
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-27T09:27:42Z",
+   "via": "mail",
+   "photos_kept": true
   },
   "ibw-24906": {
    "source": "ibw",
@@ -4322,28 +4328,10 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-27T09:27:15Z",
+ "updated": "2026-11-27T09:30:33Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-19T12:35:17Z",
-   "kind": "einladung",
-   "matched": true,
-   "chars": 1742
-  },
-  {
-   "at": "2026-11-19T13:44:19Z",
-   "kind": "bestaetigung",
-   "matched": true,
-   "chars": 3650
-  },
-  {
-   "at": "2026-11-23T07:24:48Z",
-   "kind": "selbstauskunft",
-   "matched": true,
-   "chars": 1067
-  },
   {
    "at": "2026-11-23T11:23:26Z",
    "kind": "absage",
@@ -4385,9 +4373,27 @@
    "kind": "bestaetigung",
    "matched": true,
    "chars": 3650
+  },
+  {
+   "at": "2026-11-27T09:27:42Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2447
+  },
+  {
+   "at": "2026-11-27T09:27:42Z",
+   "kind": "formular",
+   "matched": true,
+   "chars": 2761
+  },
+  {
+   "at": "2026-11-27T09:27:42Z",
+   "kind": "formular",
+   "matched": true,
+   "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T09:27:15Z",
+ "last_auto": "2026-11-27T09:30:33Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
