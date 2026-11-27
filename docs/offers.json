@@ -4058,7 +4058,27 @@
    "address": "Glasgower Straße 17, 13349 Berlin",
    "bezirk": "Mitte",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795762685-WOuQ15B07l.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795762685-WOuQ15B07l.webp?q=80&w=900&fm=jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_0e58d252-11e7-4ede-aae3-25d98c11df01.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/2/d/csm_6791-degewo_7d9b2120-833e-4661-8cb5-750b28e5e66e_3f819cd74a.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/f/8/csm_6791-degewo_ed0ef14c-8c94-4497-962d-607294085bad_5ffaa4e0fd.webp",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_2ae0c2e1-541d-4b4b-8c73-d766b569266f.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_06827044-20bf-4f21-94e9-9f2e0398159d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_329d6c26-af67-4308-a691-169624a2bf8c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_21c8d3ea-3f72-4ae7-a49b-382efc903c55.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_4baa6cc0-5dad-4c6d-b7db-2664b9b07970.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_1423a599-c7b1-47c0-97b1-b6edfd84af75.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_0ed09aea-a083-4e87-956a-1e21e178d94e.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_bf008736-e06b-4de0-b4a9-956796d54ecf.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_7b2df57a-0b4a-46be-ba35-42868704805b.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_d6a6711d-7a96-45ee-8c7d-dcd34b0304f6.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_f4bf381b-92e8-40aa-ac74-60ad1fb7e4e9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_5a630092-fc50-423c-bb08-e30009158b3d.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_a86b6759-dd10-42d0-8fc6-7a09df7282e0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_10dd4027-5e42-4146-89c9-b8192210868a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_186035b5-7a8b-4bca-b5c4-5812d10d8dc3.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_268f6430-3d5e-43ce-8e50-0f2d3529ae27.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6791-degewo_4378f296-ffec-4cbd-b941-817e84ad0c90.jpg"
    ],
    "rooms": 3,
    "price": 725.55,
@@ -4125,10 +4145,14 @@
     52.55761612,
     13.34148579
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/_processed_/b/d/csm_6791-degewo_1e167515-f0b3-4bfb-b9b0-96cd8e0568cd_cf70438ab3.jpg"
+   ]
   }
  },
- "updated": "2026-11-27T07:00:37Z",
+ "updated": "2026-11-27T07:03:04Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4193,7 +4217,7 @@
    "chars": 2818
   }
  ],
- "last_auto": "2026-11-27T07:00:37Z",
+ "last_auto": "2026-11-27T07:03:04Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
