@@ -461,6 +461,48 @@ def test_over_limit_best_stars_first_rest_next_run():
             assert len(sent) == 5, sent  # danach nichts mehr, nie doppelt
 
 
+def test_wbm_form_not_ready_yet_retry():
+    """26.11.2026: Angebot stand schon in der Liste, die Seite zeigte aber noch kein Formular."""
+    page = "<div class='list'>" + card("w0", "Schöne 2 Zimmer", "800,00", "60", 2) + "</div>"
+    env = {"WBM_SEND": "1", "WBM_NAME": "M", "WBM_VORNAME": "M", "WBM_EMAIL": "m@x.de"}
+    calls = {"expose": 0}
+    sent, notes = [], []
+
+    def get(url, **kw):
+        if url == wbm_bot.URL:
+            return mock.Mock(text=page, status_code=200)
+        calls["expose"] += 1
+        ready = calls["expose"] > (99 if calls.get("never") else 3)
+        return mock.Mock(text=FORM_HTML if ready else "<h1>Angebot nicht mehr verfügbar</h1>", status_code=200)
+
+    def post(url, **kw):
+        sent.append(1)
+        return mock.Mock(status_code=200, text="Vielen Dank")
+
+    with tempfile.TemporaryDirectory() as td:
+        wbm_bot.SEEN_FILE = Path(td) / "seen.json"
+        wbm_bot.STATS_FILE = Path(td) / "stats.json"
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
+                mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
+                mock.patch("wbm_bot.notify", notes.append), \
+                mock.patch("wbm_bot.rating.rate_listing", lambda l, t="": ("★★★★", "")):
+            wbm_bot.main()
+            assert sent == [1], (sent, calls)  # im selben Lauf nachgesehen und gesendet
+        # Formular kommt gar nicht: in den nächsten Läufen erneut, aber nur eine Push-Meldung
+        wbm_bot.SEEN_FILE.unlink()
+        wbm_bot.STATS_FILE.unlink()
+        calls.update(expose=0, never=True)
+        sent.clear(); notes.clear()
+        with mock.patch.dict(os.environ, env), mock.patch("wbm_bot.HTTP.get", get), \
+                mock.patch("wbm_bot.HTTP.post", post), mock.patch("wbm_bot.time.sleep"), \
+                mock.patch("wbm_bot.notify", notes.append), \
+                mock.patch("wbm_bot.rating.rate_listing", lambda l, t="": ("★★★★", "")):
+            for _ in range(wbm_bot.FORM_RETRY_RUNS + 2):
+                wbm_bot.main()
+        assert sent == [] and len(notes) == 1, notes
+        assert json.loads(wbm_bot.SEEN_FILE.read_text())  # nach den Versuchen als gesehen gemerkt
+
+
 def ibw_card(id, company="degewo", rooms="2,0", net="600,00", total="750,00 €", wbs="nicht erforderlich",
              bezirk="Pankow", plz="10439", lat="52.5480", lon="13.4190"):
     """Nachbau einer Karte von inberlinwohnen.de (Livewire-Format wie auf der echten Seite)."""
