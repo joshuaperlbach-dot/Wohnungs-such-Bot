@@ -4226,10 +4226,10 @@
    "address": "Trelleborger Straße 7, 13189 Berlin",
    "bezirk": "Pankow",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795773611-wSF7dT27dn.webp?q=80&w=900&fm=jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02549-0102-0015/gewobag_edcff9e5-fe89-4690-b1ae-a302b8248115.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02549-0102-0015/gewobag_6838e17e-3b81-44a7-914d-36e410479a53.jpg",
-    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/0100-02549-0102-0015/gewobag_00f808fc-b846-477a-8ef1-e625ef9f9fc3.jpg"
+    "img/d938debffb03/01.jpg",
+    "img/d938debffb03/02.jpg",
+    "img/d938debffb03/03.jpg",
+    "img/d938debffb03/04.jpg"
    ],
    "photos_checked": 6,
    "rooms": 1,
@@ -4296,7 +4296,11 @@
    "coord": [
     52.55443952,
     13.41823038
-   ]
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-27T13:41:31Z",
+   "via": "mail",
+   "photos_kept": true
   },
   "ibw-24912": {
    "source": "ibw",
@@ -4474,16 +4478,10 @@
    ]
   }
  },
- "updated": "2026-11-27T13:41:06Z",
+ "updated": "2026-11-27T13:43:14Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-23T11:23:26Z",
-   "kind": "absage",
-   "matched": true,
-   "chars": 2278
-  },
   {
    "at": "2026-11-26T10:27:04Z",
    "kind": "bestaetigung",
@@ -4537,9 +4535,15 @@
    "kind": "formular",
    "matched": true,
    "chars": 2815
+  },
+  {
+   "at": "2026-11-27T13:41:31Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 2385
   }
  ],
- "last_auto": "2026-11-27T13:41:06Z",
+ "last_auto": "2026-11-27T13:43:14Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
