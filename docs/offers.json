@@ -4383,7 +4383,7 @@
    ]
   }
  },
- "updated": "2026-11-27T11:10:17Z",
+ "updated": "2026-11-27T11:12:34Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4448,7 +4448,7 @@
    "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T11:10:17Z",
+ "last_auto": "2026-11-27T11:12:34Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4717,6 +4717,101 @@
    "dream": 68,
    "why_not": [
     "1066 € warm"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24921": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/6027-32595-0102-0193",
+   "title": "Neubauwohnung im Erstbezug mit Dachterrasse und 2 Duschbädern / Ideal für 2er-WG`s",
+   "address": "Landsberger Allee 341, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795777749-Q6o9mrtvRS.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_e9292982-c19d-4d54-a810-d6143404c861.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_0524cc31-b404-4658-8654-048d3073fd9a.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_46c92b25-9342-4306-aa48-b9e85ff7dbab.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_b09ef530-8519-4d6d-8b37-f5181710e744.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_c882dfad-0e71-44de-82b8-f372a2749d42.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_da0d21a6-3426-417f-a93e-d6eccf2ff0d0.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_29a0890d-d120-4576-ad83-0772f56208b8.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_19ed10a2-9882-4928-87b4-61c2a5be2063.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_61414ac6-b083-494f-8d14-5332f8268666.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_3d96c504-8363-424d-a907-d646a8578d2e.jpg"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0193/gewobag_531efcb3-a319-439a-87fd-1c9464678710.gif"
+   ],
+   "rooms": 3,
+   "price": 1207.54,
+   "cold": 974.4,
+   "size": 61.35,
+   "floor": 7,
+   "levels": 8,
+   "year": 2026,
+   "stars": 2,
+   "why": "61.35 m², ~1.8 km zur Arbeit (Luftlinie), Kiez wenig los (12 Lokale/Läden), Park nah, 3,4 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, Aufzug, 7. Etage, Baujahr 2026",
+   "points": 49,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     2.5,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     7.5,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T11:09:09.000000Z",
+   "coord": [
+    52.53549459,
+    13.51188242
+   ],
+   "dream": 62,
+   "why_not": [
+    "1208 € warm"
    ],
    "dream_checked": true
   }
