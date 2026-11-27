@@ -4383,7 +4383,7 @@
    ]
   }
  },
- "updated": "2026-11-27T10:50:53Z",
+ "updated": "2026-11-27T10:53:05Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4448,7 +4448,7 @@
    "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T10:50:53Z",
+ "last_auto": "2026-11-27T10:53:05Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -4627,109 +4627,6 @@
    "why_not": [
     "1682 € warm",
     "4 Zimmer"
-   ],
-   "dream_checked": true
-  },
-  "ibw-24659": {
-   "source": "ibw",
-   "company": "gesobau",
-   "url": "https://www.gesobau.de/?immo_ref=10-03209-00002-1020-d3c95f5a-8efa-43cc-808e-1538657319cf",
-   "title": "Hier wachsen Kinderherzen – Ihre neue Familienwohnung",
-   "address": "Hellersdorfer Straße 91B, 12619 Berlin",
-   "bezirk": "Marzahn-Hellersdorf",
-   "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795171870-dFdzYDtH3e.webp?q=80&w=900&fm=jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/a/8/csm_20261026_095836_789d1ca769.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/f/a/csm_20261026_103810_6ebdda23f0.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/1/9/csm_20261026_103759_9349229e66.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/9/b/csm_20261026_103749_64576e2393.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/b/a/csm_20261026_103727_dbd60c6c17.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/6/c/csm_20261026_103659_486d5ba5fb.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/2/4/csm_20261026_103603_69ced73116.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/d/2/csm_20261026_103608_38cbc44154.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/e/8/csm_20261026_103818_8471641f91.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/7/5/csm_20261026_103739_67c3d398b8.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/d/2/csm_GESOBAU-Wohnen-Leistungen_31f4e24e5d.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/7/2/csm_Internetversorgung_dc640d5ef5.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/a/1/csm_Provisionsfreie_Vermietung_28_f0cda56b2e.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/9/d/csm_GESOBAU-Mieterstrom_9559294090.jpg",
-    "https://www.gesobau.de/fileadmin/_processed_/1/e/csm_Marzahn-Hellersdorf_Kienberg_1245951895_a8936cb971.jpg",
-    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Hellersdorf/03229-0-FNA-FAS-FOT_2307_003_WHG_3229_Alte_Hellersd_54-56_web.JPG",
-    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Hellersdorf/03243-0-FNA-FIR-FOT_2308_004_Stadtpark_web.JPG",
-    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Hellersdorf/Eroeffnung_Stadtplatz_Hellersdorf-0984.jpg",
-    "https://www.gesobau.de/fileadmin/user_upload/01_Mieten/Bilder/Stadtteilseiten/Marzahn-Hellersdorf/Shutterstock/Marzahn-Hellersdorf_Fluss_Wuhle_2165265841_klein.jpg"
-   ],
-   "photos_checked": null,
-   "plans": [
-    "https://www.gesobau.de/fileadmin/Immomio/10-03209-00002-1020-883f5c09-bc4a-4e90-8456-9c8743d08f5f/Grundriss.JPG"
-   ],
-   "rooms": 4,
-   "price": 1612.05,
-   "cold": 1267.23,
-   "size": 86.5,
-   "floor": 1,
-   "levels": 6,
-   "year": 2026,
-   "stars": 3,
-   "why": "86.5 m², Balkon/Terrasse, Aufzug, 1. Etage, Baujahr 2026",
-   "points": 57,
-   "parts": {
-    "Kosten": [
-     0.0,
-     20
-    ],
-    "Kiez": [
-     8.0,
-     16
-    ],
-    "Lage": [
-     4.0,
-     8
-    ],
-    "Zentrum": [
-     5.0,
-     10
-    ],
-    "ÖPNV": [
-     1.5,
-     3
-    ],
-    "Bezirk": [
-     0.9,
-     3
-    ],
-    "Baujahr": [
-     5.6,
-     8
-    ],
-    "Hochhaus": [
-     5.0,
-     5
-    ],
-    "Größe": [
-     10.0,
-     10
-    ],
-    "Zimmer": [
-     7.0,
-     7
-    ],
-    "Außenbereich": [
-     5.0,
-     5
-    ],
-    "Aufzug": [
-     5.0,
-     5
-    ]
-   },
-   "online_since": "2026-11-20T10:51:11.000000Z",
-   "coord": null,
-   "dream": 71,
-   "why_not": [
-    "1612 € warm",
-    "4 Zimmer",
-    "Marzahn-Hellersdorf"
    ],
    "dream_checked": true
   },
