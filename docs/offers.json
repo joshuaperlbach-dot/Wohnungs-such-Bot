@@ -4481,7 +4481,7 @@
    "photos_kept": true
   }
  },
- "updated": "2026-11-27T14:10:34Z",
+ "updated": "2026-11-27T14:12:50Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4546,11 +4546,104 @@
    "chars": 1908
   }
  ],
- "last_auto": "2026-11-27T14:10:34Z",
+ "last_auto": "2026-11-27T14:12:50Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
  "dream": {
+  "ibw-24938": {
+   "source": "ibw",
+   "company": "gewobag",
+   "url": "https://www.gewobag.de/fuer-mietinteressentinnen/mietangebote/1000-00700-0101-0009",
+   "title": "Altbau mit Balkon - Weihnachten in Schöneberg",
+   "address": "Ebersstraße 56, 10827 Berlin",
+   "bezirk": "Tempelhof-Schöneberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795788546-YPGvfGzgqU.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_import_2019-07-02_01_1000-00700-0101-0012-bild1-haus.jpg.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_b516d071-86e5-4ca7-8cae-f744eef326e6.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_0c60deaf-42a4-4c8e-8d36-e7af5b40eff5.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_45a1db09-2023-491b-b3ce-ec478fef52c3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_06eff387-1f04-42ed-bec6-4b79be7d1291.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_6e965258-2580-404c-bef6-536fd0b52cde.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_20316ab9-25ea-4ded-8602-3b142ecb3e37.jpg"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/1000-00700-0101-0009/gewobag_2dd0e09d-83b0-4837-9307-e365128d80b8.gif"
+   ],
+   "rooms": 3,
+   "price": 1209.89,
+   "cold": 804.89,
+   "size": 95.65,
+   "floor": 3,
+   "levels": 5,
+   "year": 1900,
+   "stars": 3,
+   "why": "95.65 m², ~13.1 km zur Arbeit (Luftlinie), Kiez mittel (150 Lokale/Läden), Park nah, innerhalb S-Bahn-Ring, Balkon/Terrasse, 3. Etage, Baujahr 1900",
+   "points": 64,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     13.0,
+     16
+    ],
+    "Lage": [
+     0.0,
+     8
+    ],
+    "Zentrum": [
+     10.0,
+     10
+    ],
+    "ÖPNV": [
+     3.0,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     8.0,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     10.0,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     2.5,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T14:09:06.000000Z",
+   "coord": [
+    52.47837966,
+    13.34583635
+   ],
+   "dream": 81,
+   "why_not": [
+    "1210 € warm",
+    "Tempelhof-Schöneberg"
+   ],
+   "dream_checked": true
+  },
   "ibw-24896": {
    "source": "ibw",
    "company": "howoge",
