@@ -86,24 +86,27 @@ def keep_photos(store, key, http, limit=MAX_PHOTOS):
     folder = photo_folder(key)
     total = 0
     for field, prefix in (("images", ""), ("plans", "grundriss-")):
-        out = []
+        out, failed = [], []
         for i, url in enumerate(u for u in (o.get(field) or []) if not is_local(u)):
             if len(out) >= limit or not str(url).startswith("https://"):
                 continue
             try:
                 r = http.get(url, timeout=15)
             except Exception:
+                failed.append(url)
                 continue
             kind = r.headers.get("Content-Type", "")
             if r.status_code != 200 or not kind.startswith("image/") or len(r.content) > MAX_PHOTO_BYTES:
+                if r.status_code not in (404, 410):  # wirklich weg: nicht behalten
+                    failed.append(url)
                 continue
             ext = {"image/png": "png", "image/webp": "webp", "image/gif": "gif"}.get(kind.split(";")[0], "jpg")
             (PHOTO_DIR / folder).mkdir(parents=True, exist_ok=True)
             name = f"{prefix}{i + 1:02d}.{ext}"
             (PHOTO_DIR / folder / name).write_bytes(r.content)
             out.append(f"img/{folder}/{name}")
-        if out:
-            o[field] = out
+        if out:  # nicht kopierbare Bilder behalten (Seite kurz weg, zu groß): sonst fehlen sie in der Liste
+            o[field] = out + failed
         total += len(out)
     return total
 

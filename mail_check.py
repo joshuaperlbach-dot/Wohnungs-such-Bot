@@ -112,6 +112,24 @@ def find_offer(store, text, any_offer=False):
 REQUESTED_FROM_DREAM = {"ibw-24870": "2026-11-26T18:43:20Z"}
 
 
+DUNCKER_PHOTOS = [
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_bdb7035f-a54b-4354-8d91-7bc20ac4c1f9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_3f09b8ea-8ab8-454b-9b53-06066fccf1b0.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_183fef26-17bc-47ad-90b4-a36a1ac1e166.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_e8a02413-987d-4634-ae1c-09847b02c8c9.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_d4766fe0-d646-47dd-8d22-56abeee75d3c.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_dd56a796-9040-4971-9585-ab1cd7492d39.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_c1a5c703-e1f5-49ab-b68d-de9eb549d456.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_9c95d577-de52-4eff-b4ce-1d6d0dbf125a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_cf78887d-70aa-4c27-ac7c-bc303b019eb7.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_4f27a232-aef4-4685-bd51-b2c7adf8a868.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_442daf31-0098-482c-a8d0-ce20d6e06e93.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_7039dad4-f311-471b-91e6-d7c134e3fdf1.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_fcc8346e-dfb5-41c2-b88e-52b1de17d00a.jpg",
+    "https://www.degewo.de/fileadmin/user_upload/tx_openimmo/connection-1/images/6766-degewo_8361c053-7b00-4455-a0cd-52050dc69880.jpg"
+]
+
+
 def promote_requested_dream(store):
     moved = False
     for key, at in REQUESTED_FROM_DREAM.items():
@@ -429,6 +447,12 @@ def main():
         store["fix_selbstauskunft"] = 1
         offers.save(store, now)
     if promote_requested_dream(store):
+        offers.save(store, now)
+    if store.get("fix_duncker_photos") != 1 and "ibw-24870" in store["offers"]:
+        # 27.11.2026: Beim Sichern der Fotos gingen 14 Bilder verloren (nicht kopierbare wurden verworfen)
+        o = store["offers"]["ibw-24870"]
+        o["images"] = list(dict.fromkeys((o.get("images") or []) + DUNCKER_PHOTOS))
+        store["fix_duncker_photos"] = 1
         offers.save(store, now)
     last = offers.parse_time(stats.get("mail_checked_at"))
     waiting = any(o.get("confirm") == "offen" for o in store["offers"].values())
