@@ -4390,7 +4390,17 @@
    "address": "Landsberger Allee 341, 13055 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795779727-zuYyH7Rc25.webp?q=80&w=900&fm=jpg"
+    "https://www.inberlinwohnen.de/img/images/apartments/1795779727-zuYyH7Rc25.webp?q=80&w=900&fm=jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_9a2693ba-2fe5-46f3-9b6e-494de0479248.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_e9292982-c19d-4d54-a810-d6143404c861.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_0524cc31-b404-4658-8654-048d3073fd9a.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_399022c8-db10-4772-a08b-719613df181c.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_2b04e226-e340-49f2-b57e-951f8223b48a.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_ae7f7bbd-7700-4387-92e9-9ef5d685e4c7.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_3d600a12-b66b-4af3-b014-23ecbb7b4013.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_5288ea2f-3538-4a77-bba3-8674aff54cb3.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_adbe7e1d-64ad-432b-872b-e92c9dc37ec1.jpg",
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_d027bb10-b033-431c-9c71-ee68e5068839.jpg"
    ],
    "rooms": 2,
    "price": 799.71,
@@ -4457,10 +4467,14 @@
     52.53549459,
     13.51188242
    ],
-   "photo_tries": 1
+   "photo_tries": 0,
+   "photos_checked": 6,
+   "plans": [
+    "https://www.gewobag.de/wp-content/uploads/gewo-immo-media/6027-32595-0102-0157/gewobag_cd06ab1b-8ee2-42e3-b926-a938ff1f002d.gif"
+   ]
   }
  },
- "updated": "2026-11-27T11:45:41Z",
+ "updated": "2026-11-27T11:47:48Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4525,7 +4539,7 @@
    "chars": 2815
   }
  ],
- "last_auto": "2026-11-27T11:45:41Z",
+ "last_auto": "2026-11-27T11:47:48Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
