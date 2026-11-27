@@ -417,6 +417,15 @@ def fetch_page():
     return html, listings, problem or check_page(html, listings)
 
 
+# WBM zeigt ein Angebot manchmal schon in der Liste, bevor die Seite mit dem Formular frei ist
+# ("Angebot nicht mehr verfügbar"), 26.11.2026 so verpasst. Dann im Lauf ein paar Mal nachsehen
+# und in den nächsten Läufen erneut versuchen (ohne neue Push-Meldung).
+FORM_RETRIES = 6
+FORM_RETRY_WAIT = 5
+FORM_RETRY_RUNS = 5
+NO_FORM = "Formular nicht gefunden"
+
+
 def wait_for_new(seen, deadline):
     """Seite laden, bis ein neues passendes Angebot da ist, die Seite klemmt oder die Zeit um ist."""
     while True:
@@ -506,6 +515,18 @@ def main():
         save_seen(seen)
         if l["url"] in sending:
             status, info = send_request(l, person, send, expose(l))
+            for _ in range(FORM_RETRIES):
+                if (status, info) != ("fehler", NO_FORM):
+                    break
+                time.sleep(FORM_RETRY_WAIT)
+                exposes[l["url"]] = fetch_expose(l["url"])
+                status, info = send_request(l, person, send, exposes[l["url"]])
+            if (status, info) == ("fehler", NO_FORM):
+                tries = stats.setdefault("form_retry", {})
+                tries[l["url"]] = tries.get(l["url"], 0) + 1
+                if tries[l["url"]] < FORM_RETRY_RUNS:
+                    seen.discard(l["url"])  # beim nächsten Lauf noch einmal
+                    save_seen(seen)
             if status in ("gesendet", "unklar"):
                 stats["sent"] += 1
             if status == "unklar":
@@ -513,6 +534,8 @@ def main():
             time.sleep(2)
         results.append((l, status, info))
     for l, status, info in results:
+        if (status, info) == ("fehler", NO_FORM) and stats.get("form_retry", {}).get(l["url"], 0) > 1:
+            continue  # schon gemeldet, nur erneuter Versuch
         line = f"WBM: {l['rooms']} Zi, {l['price']} € warm"
         stars, why = rate(l)
         if stars:

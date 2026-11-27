@@ -296,3 +296,6 @@ eingedunkelt (kein API-Schlüssel nötig). history.json enthält jetzt auch addr
   oder Bezirk nicht passen (ohne WBS, ohne WBM), bewertet ohne "Kosten" (dream_points, ab 62, max. 40, 7 Tage)
   in offers.json "dream". Pro Lauf 3 davon auf der Seite der Gesellschaft ansehen (Fotos, WBS-Banner raus).
   Beim ersten Lauf einmal alle Seiten von inberlinwohnen. Der Tab zeigt dazu passende Angebote ab 62.
+- 27.11.2026: WBM-Angebot 26.11. 19:37 (1 Zi, Friedrichshain) verpasst: in der Liste, aber die Seite zeigte schon
+  "Angebot nicht mehr verfügbar" (kein Formular). Jetzt: im Lauf bis 6x alle 5 s nachsehen, danach bis zu 5 Läufe
+  erneut versuchen (stats.form_retry), nur eine Push-Meldung.
