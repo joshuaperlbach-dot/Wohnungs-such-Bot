@@ -113,11 +113,14 @@ REQUESTED_FROM_DREAM = {"ibw-24870": "2026-11-26T18:43:20Z"}
 
 
 def promote_requested_dream(store):
+    moved = False
     for key, at in REQUESTED_FROM_DREAM.items():
         o = (store.get("dream") or {}).pop(key, None)
         if o and key not in store["offers"]:
             o.update(requested="gesendet", requested_at=at, via="mail")
             store["offers"][key] = o
+            moved = True
+    return moved
 
 
 def body_text(msg):
@@ -424,6 +427,8 @@ def main():
             if o.get("company") == "wbm" and o.get("reply") == "absage" and str(o.get("reply_at", "")) >= "2026-11-17":
                 o["reply"] = "selbstauskunft"
         store["fix_selbstauskunft"] = 1
+        offers.save(store, now)
+    if promote_requested_dream(store):
         offers.save(store, now)
     last = offers.parse_time(stats.get("mail_checked_at"))
     waiting = any(o.get("confirm") == "offen" for o in store["offers"].values())
