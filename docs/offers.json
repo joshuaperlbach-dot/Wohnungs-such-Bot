@@ -4479,18 +4479,100 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-27T13:57:55Z",
    "photos_kept": true
+  },
+  "ibw-24940": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1770-20778-183.html?t=ibw",
+   "title": "1-Zimmer-Wohnung (ohne WBS)",
+   "address": "Genslerstraße 17D, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "img/23e3efa98bfb/01.jpg",
+    "img/23e3efa98bfb/02.jpg",
+    "img/23e3efa98bfb/03.webp",
+    "img/23e3efa98bfb/04.webp",
+    "img/23e3efa98bfb/05.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "img/23e3efa98bfb/grundriss-01.webp"
+   ],
+   "rooms": 1,
+   "price": 763.11,
+   "cold": 600.0,
+   "size": 40.0,
+   "floor": 5,
+   "levels": 6,
+   "year": 2019,
+   "stars": 3,
+   "why": "40 m², ~1.2 km zur Arbeit (Luftlinie), Kiez wenig los (31 Lokale/Läden), Park nah, 2,8 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 5. Etage, Baujahr 2019",
+   "points": 64,
+   "parts": {
+    "Kosten": [
+     19.0,
+     20
+    ],
+    "Kiez": [
+     6.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     3.7,
+     10
+    ],
+    "ÖPNV": [
+     1.4,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     1.4,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-27T14:34:06Z",
+   "coord": [
+    52.53968866,
+    13.49823341
+   ],
+   "requested": "gesendet",
+   "confirm": "bestaetigt",
+   "requested_at": "2026-11-27T14:35:40Z",
+   "photos_kept": true
   }
  },
- "updated": "2026-11-27T14:35:24Z",
+ "updated": "2026-11-27T14:37:42Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-26T17:42:28Z",
-   "kind": "formular",
-   "matched": true,
-   "chars": 2778
-  },
   {
    "at": "2026-11-26T18:50:39Z",
    "kind": "formular",
@@ -4544,9 +4626,15 @@
    "kind": "eingang",
    "matched": true,
    "chars": 1908
+  },
+  {
+   "at": "2026-11-27T14:35:51Z",
+   "kind": "bestaetigung",
+   "matched": true,
+   "chars": 3650
   }
  ],
- "last_auto": "2026-11-27T14:35:24Z",
+ "last_auto": "2026-11-27T14:37:42Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
