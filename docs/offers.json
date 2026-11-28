@@ -4567,9 +4567,93 @@
    "confirm": "bestaetigt",
    "requested_at": "2026-11-27T14:35:40Z",
    "photos_kept": true
+  },
+  "ibw-24953": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10564-104.html?t=ibw",
+   "title": "3-Zimmer-Wohnung (ohne WBS)",
+   "address": "Joachimsthaler Straße 20, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795857308-rn73X3ZGnY.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/0/3/csm_6b65653974ef4158680c847c6439d5de_8ea274241d.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
+    "https://www.howoge.de/fileadmin/_processed_/2/1/csm_3430aded3a78816fa1092b49571e91d7_e308648fb2.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/d/d/csm_86dc4383fdd6e554e75ac60aead1916e_3b8a0c3709.webp"
+   ],
+   "rooms": 3,
+   "price": 621.9,
+   "cold": 422.5,
+   "size": 59.0,
+   "floor": 1,
+   "levels": 5,
+   "year": 1979,
+   "stars": 2,
+   "why": "59 m², ~1.4 km zur Arbeit (Luftlinie), Kiez wenig los (8 Lokale/Läden), Park nah, 3,1 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 1. Etage, Baujahr 1979",
+   "points": 65,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     3.2,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     6.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     4.2,
+     5
+    ]
+   },
+   "online_since": "2026-11-28T09:15:08Z",
+   "coord": [
+    52.53787306,
+    13.50407605
+   ]
   }
  },
- "updated": "2026-11-28T09:14:56Z",
+ "updated": "2026-11-28T09:17:03Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4634,7 +4718,7 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-28T09:14:56Z",
+ "last_auto": "2026-11-28T09:17:03Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
@@ -5262,6 +5346,94 @@
    "dream": 68,
    "why_not": [
     "1066 € warm"
+   ],
+   "dream_checked": true
+  },
+  "ibw-24952": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10482-39.html?t=ibw",
+   "title": "2-Zimmer-Wohnung (ohne WBS)",
+   "address": "Neustrelitzer Straße 65, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795857247-H0EkJjg0Cp.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/6/e/csm_e32d8aeffedc76c966fdbf64e5c98377_789a785463.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+   ],
+   "photos_checked": null,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/4/c/csm_89094bd092fe6c8adf417cdf91553588_78f0f4c2a3.webp"
+   ],
+   "rooms": 2,
+   "price": 1145.45,
+   "cold": 884.0,
+   "size": 52.0,
+   "floor": 6,
+   "levels": 7,
+   "year": 2021,
+   "stars": 2,
+   "why": "52 m², ~1.4 km zur Arbeit (Luftlinie), Kiez wenig los (47 Lokale/Läden), Park nah, 2,6 km außerhalb S-Bahn-Ring, Balkon/Terrasse, Aufzug, 6. Etage, Baujahr 2021",
+   "points": 53,
+   "parts": {
+    "Kosten": [
+     0.0,
+     20
+    ],
+    "Kiez": [
+     8.0,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     4.1,
+     10
+    ],
+    "ÖPNV": [
+     1.6,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     5.6,
+     8
+    ],
+    "Hochhaus": [
+     3.0,
+     5
+    ],
+    "Größe": [
+     4.9,
+     10
+    ],
+    "Zimmer": [
+     7.0,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     5.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-28T09:14:07.000000Z",
+   "coord": [
+    52.53763778,
+    13.49691434
+   ],
+   "dream": 66,
+   "why_not": [
+    "1145 € warm"
    ],
    "dream_checked": true
   },
