@@ -4651,9 +4651,94 @@
     52.53787306,
     13.50407605
    ]
+  },
+  "ibw-24954": {
+   "source": "ibw",
+   "company": "howoge",
+   "url": "https://www.howoge.de/wohnungen-gewerbe/wohnungssuche/detail/1771-10564-18.html?t=ibw",
+   "title": "1-Zimmer-Wohnung (ohne WBS)",
+   "address": "Plauener Straße 28, 13055 Berlin",
+   "bezirk": "Lichtenberg",
+   "images": [
+    "https://www.inberlinwohnen.de/img/images/apartments/1795857366-fL1xGVuSF3.webp?q=80&w=900&fm=jpg",
+    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
+    "https://www.howoge.de/fileadmin/_processed_/b/d/csm_fd716e5d62b3c36c42beb537105a3c76_ad553983de.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/6/csm_17c720229f07d9bb4639d29bb5457687_86bb5aa291.webp",
+    "https://www.howoge.de/fileadmin/_processed_/a/7/csm_622004a42398ad4286d1debb51f9af66_93f01d8799.webp",
+    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp"
+   ],
+   "photos_checked": 6,
+   "plans": [
+    "https://www.howoge.de/fileadmin/_processed_/7/5/csm_adfef7ae577d277963c1ad2737263c59_55a1ffad50.webp"
+   ],
+   "rooms": 1,
+   "price": 409.72,
+   "cold": 301.13,
+   "size": 32.13,
+   "floor": 5,
+   "levels": 5,
+   "year": 1979,
+   "stars": 2,
+   "why": "32.13 m², ~1.3 km zur Arbeit (Luftlinie), Kiez wenig los (7 Lokale/Läden), Park nah, 3,1 km außerhalb S-Bahn-Ring (weit draußen), Balkon/Terrasse, 5. Etage, Baujahr 1979",
+   "points": 50,
+   "parts": {
+    "Kosten": [
+     20.0,
+     20
+    ],
+    "Kiez": [
+     3.2,
+     16
+    ],
+    "Lage": [
+     8.0,
+     8
+    ],
+    "Zentrum": [
+     3.1,
+     10
+    ],
+    "ÖPNV": [
+     1.2,
+     3
+    ],
+    "Bezirk": [
+     0.9,
+     3
+    ],
+    "Baujahr": [
+     0.8,
+     8
+    ],
+    "Hochhaus": [
+     5.0,
+     5
+    ],
+    "Größe": [
+     0.0,
+     10
+    ],
+    "Zimmer": [
+     2.8,
+     7
+    ],
+    "Außenbereich": [
+     5.0,
+     5
+    ],
+    "Aufzug": [
+     0.0,
+     5
+    ]
+   },
+   "online_since": "2026-11-28T09:16:06Z",
+   "coord": [
+    52.53825463,
+    13.50420492
+   ]
   }
  },
- "updated": "2026-11-28T09:17:03Z",
+ "updated": "2026-11-28T09:19:10Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
@@ -4718,7 +4803,7 @@
    "chars": 1912
   }
  ],
- "last_auto": "2026-11-28T09:17:03Z",
+ "last_auto": "2026-11-28T09:19:10Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
