@@ -4576,15 +4576,15 @@
    "address": "Joachimsthaler Straße 20, 13055 Berlin",
    "bezirk": "Lichtenberg",
    "images": [
-    "https://www.inberlinwohnen.de/img/images/apartments/1795857308-rn73X3ZGnY.webp?q=80&w=900&fm=jpg",
-    "https://www.howoge.de/fileadmin/user_upload/Wohnungen-und-Gewerbe/Wohnugsexpose/HOWOGE-Expose-WBS-xl.jpg",
-    "https://www.howoge.de/fileadmin/_processed_/0/3/csm_6b65653974ef4158680c847c6439d5de_8ea274241d.webp",
-    "https://www.howoge.de/typo3temp/assets/_processed_/b/2/csm_map-background_16c14e3882.webp",
-    "https://www.howoge.de/fileadmin/_processed_/2/1/csm_3430aded3a78816fa1092b49571e91d7_e308648fb2.webp"
+    "img/5ac70a64ef1d/01.jpg",
+    "img/5ac70a64ef1d/02.jpg",
+    "img/5ac70a64ef1d/03.webp",
+    "img/5ac70a64ef1d/04.webp",
+    "img/5ac70a64ef1d/05.webp"
    ],
    "photos_checked": 6,
    "plans": [
-    "https://www.howoge.de/fileadmin/_processed_/d/d/csm_86dc4383fdd6e554e75ac60aead1916e_3b8a0c3709.webp"
+    "img/5ac70a64ef1d/grundriss-01.webp"
    ],
    "rooms": 3,
    "price": 621.9,
@@ -4650,7 +4650,11 @@
    "coord": [
     52.53787306,
     13.50407605
-   ]
+   ],
+   "requested": "gesendet",
+   "requested_at": "2026-11-28T11:59:55Z",
+   "via": "mail",
+   "photos_kept": true
   },
   "ibw-24954": {
    "source": "ibw",
@@ -4738,22 +4742,10 @@
    ]
   }
  },
- "updated": "2026-11-28T11:59:37Z",
+ "updated": "2026-11-28T12:01:35Z",
  "last_manual": "2026-10-15T10:26:17Z",
  "ibw_seeded": true,
  "mail_log": [
-  {
-   "at": "2026-11-27T09:27:42Z",
-   "kind": "eingang",
-   "matched": true,
-   "chars": 2447
-  },
-  {
-   "at": "2026-11-27T09:27:42Z",
-   "kind": "formular",
-   "matched": true,
-   "chars": 2761
-  },
   {
    "at": "2026-11-27T09:27:42Z",
    "kind": "formular",
@@ -4801,9 +4793,21 @@
    "kind": "eingang",
    "matched": false,
    "chars": 1912
+  },
+  {
+   "at": "2026-11-28T11:59:55Z",
+   "kind": "bestaetigung",
+   "matched": false,
+   "chars": 3650
+  },
+  {
+   "at": "2026-11-28T11:59:55Z",
+   "kind": "eingang",
+   "matched": true,
+   "chars": 1932
   }
  ],
- "last_auto": "2026-11-28T11:59:37Z",
+ "last_auto": "2026-11-28T12:01:35Z",
  "fix_selbstauskunft": 1,
  "fix_termin": 1,
  "fix_kma": 1,
